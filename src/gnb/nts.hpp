@@ -267,6 +267,7 @@ struct NmGnbSctp : NtsMessage
     int clientId{};
 
     // CONNECTION_REQUEST
+	std::string nodeType{}; // Added by Philip Astillo
     std::string localAddress{};
     uint16_t localPort{};
     std::string remoteAddress{};
@@ -343,6 +344,7 @@ struct NmGnbXnapClientCon : NtsMessage
 	int socketId;
 	 sctp::PayloadProtocolId ppid{};
 	NtsTask *associatedTask;
+	std::string nodeType;
 	
 	explicit NmGnbXnapClientCon(PR present): NtsMessage(NtsMessageType::XNAP_CLIENT), present(present)
 	{

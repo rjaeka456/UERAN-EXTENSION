@@ -74,14 +74,14 @@ GNodeB::~GNodeB()
 void GNodeB::start()
 {
 	
-	taskBase->appTask->start();
+	//taskBase->appTask->start();
     taskBase->sctpTask->start();
     taskBase->ngapTask->start();
 	taskBase->sctpXnapTask->start();
 	taskBase->xnapTask->start();
-    taskBase->rrcTask->start();
-    taskBase->rlsTask->start();
-    taskBase->gtpTask->start();
+    //taskBase->rrcTask->start();
+    //taskBase->rlsTask->start();
+    //taskBase->gtpTask->start();
 }
 
 void GNodeB::pushCommand(std::unique_ptr<app::GnbCliCommand> cmd, const InetAddress &address)

@@ -38,6 +38,7 @@ namespace nr::gnb
 			std::unordered_map<int, XnapGnbContext *> m_gnbCtx;
 			
 			XnapServer *m_xnapServer;
+			SctpTask *m_sctpServer;
 			
 		public:
 			explicit XnapTask(TaskBase *base);

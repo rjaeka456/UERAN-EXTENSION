@@ -33,13 +33,12 @@ class SctpTask : public NtsTask
     {
         int id;
         sctp::SctpClient *client;
-		
         ScopedThread *receiverThread;
         sctp::ISctpHandler *handler;
         NtsTask *associatedTask;
 		
 		//Added by Philip Astillo
-		sctp::SctpServer *server;
+		std::string nodeType;
 		std::string remoteAddress;
     };
 	
@@ -69,6 +68,7 @@ class SctpTask : public NtsTask
 
   public:
     explicit SctpTask(TaskBase *base, const std::string appType);
+	explicit SctpTask(LogBase *logBase);
     ~SctpTask() override = default;
 
   protected:
@@ -83,8 +83,8 @@ class SctpTask : public NtsTask
     void receiveSctpConnectionSetupRequest(int clientId, const std::string &localAddress, uint16_t localPort,
                                            const std::string &remoteAddress, uint16_t remotePort,
                                            sctp::PayloadProtocolId ppid, NtsTask *associatedTask);
-    void receiveAssociationSetup(int clientId, int associationId, int inStreams, int outStreams);
-    void receiveAssociationShutdown(int clientId);
+    void receiveAssociationSetup(int clientId, int associationId, int inStreams, int outStreams, const std::string &remoteAddress);
+    void receiveAssociationShutdown(int clientId, const std::string &shutAddress);
     void receiveClientReceive(int clientId, uint16_t stream, UniqueBuffer &&buffer);
     void receiveUnhandledNotification(int clientId);
     void receiveConnectionClose(int clientId);
@@ -93,11 +93,11 @@ class SctpTask : public NtsTask
 	// =========================== Added by Philip Astillo =================================
 									   
 									   
-	void initiateXnSetupRequest(int clientId, std::string &localAddress, uint16_t localPort,
+	void connectXnapServer(int clientId, std::string &localAddress, uint16_t localPort,
 											  const std::string &remoteAddress, uint16_t remotePort,
-											  sctp::PayloadProtocolId ppid, NtsTask *associatedTask);
+											  sctp::PayloadProtocolId ppid, NtsTask *associatedTask, const std::string &nodeType);
 											  
-	void registerAcceptedClient(int socketId, sctp::PayloadProtocolId ppid, NtsTask * associatedTask);						
+	void registerAcceptedClient(int socketId, sctp::PayloadProtocolId ppid, NtsTask * associatedTask, const std::string &nodeType);						
 
 	void receiveXnSetupResponse(int clientId, int associationId, int inStreams, int outStreams);
 	

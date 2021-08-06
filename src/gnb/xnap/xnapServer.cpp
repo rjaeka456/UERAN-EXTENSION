@@ -24,7 +24,7 @@ XnapServer::XnapServer(TaskBase *base)
 	m_logger = base->logBase->makeUniqueLogger("xnap-serv");
 	try
 	{
-		m_sctpServer = new sctp::SctpServer(base->config->xnapIp, (uint16_t)sctp::ComPort::XNAP);
+		m_xnapServer = new sctp::SctpServer(base->config->xnapIp, (uint16_t)sctp::ComPort::XNAP);
 		localAddress = base->config->xnapIp;
 	}
 	catch(const LibError &e)
@@ -44,24 +44,24 @@ void XnapServer::onStart()
 {
 	try
 	{
-		m_sctpServer->bind(localAddress, (uint16_t)sctp::ComPort::XNAP);
+		m_xnapServer->bind(localAddress, (uint16_t)sctp::ComPort::XNAP);
 	}
 	catch(const sctp::SctpError &exec)
 	{
 		m_logger->err("Binding xnap server to [%s:%d failed]. %s", localAddress.c_str(), (uint16_t)sctp::ComPort::XNAP, exec.what());
-		delete m_sctpServer;
+		delete m_xnapServer;
 		return;
 	}
 	
 	try
 	{
 		m_logger->info("SCTP-XNAP Server listening [%s:%d]", localAddress.c_str(), (uint16_t)sctp::ComPort::XNAP);
-		m_sctpServer->listen();
+		m_xnapServer->listen();
 	}
 	catch (const sctp::SctpError &exec)
 	{
 		m_logger->err("Listening xnap server to %s:%d failed. %s", localAddress.c_str(), (uint16_t)sctp::ComPort::XNAP, exec.what());
-		delete m_sctpServer;
+		delete m_xnapServer;
 		return;
 	}
 }
@@ -73,7 +73,7 @@ void XnapServer::onLoop()
 		std::string clientIp="";
 		int clientId=-1;
 		uint16_t clientPort = 0;
-		m_sctpServer->accept(clientIp, clientId, clientPort);
+		m_xnapServer->accept(clientIp, clientId, clientPort);
 		
 		//m_logger->info("SCTP-XNAP server accepted client [%s:%d]", clientIp.c_str(), clientPort);
 		
@@ -85,7 +85,7 @@ void XnapServer::onLoop()
 	catch(const sctp::SctpError &exec)
 	{
 		m_logger->err("Accepting xnap clients to %s:%d failed. %s", localAddress.c_str(), (uint16_t)sctp::ComPort::XNAP, exec.what());
-		delete m_sctpServer;
+		delete m_xnapServer;
 		return;
 	}
 }

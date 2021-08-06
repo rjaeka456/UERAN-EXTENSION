@@ -15,67 +15,6 @@
 namespace nr::gnb
 {
 	
-class SctpHandler : public sctp::ISctpHandler
-{
-  private:
-    SctpTask *const sctpTask;
-    int clientId;
-
-  public:
-    SctpHandler(SctpTask *const sctpTask, int clientId) : sctpTask(sctpTask), clientId(clientId)
-    {
-    }
-
-  private:
-    void onAssociationSetup(int associationId, int inStreams, int outStreams) override
-    {
-        auto *w = new NmGnbSctp(NmGnbSctp::ASSOCIATION_SETUP);
-        w->clientId = clientId;
-        w->associationId = associationId;
-        w->inStreams = inStreams;
-        w->outStreams = outStreams;
-        sctpTask->push(w);
-    }
-
-    void onAssociationShutdown() override
-    {
-        auto *w = new NmGnbSctp(NmGnbSctp::ASSOCIATION_SHUTDOWN);
-        w->clientId = clientId;
-        sctpTask->push(w);
-    }
-
-    void onMessage(const uint8_t *buffer, size_t length, uint16_t stream) override
-    {
-        auto *data = new uint8_t[length];
-        std::memcpy(data, buffer, length);
-
-        auto *w = new NmGnbSctp(NmGnbSctp::RECEIVE_MESSAGE);
-        w->clientId = clientId;
-        w->buffer = UniqueBuffer{data, length};
-        w->stream = stream;
-        sctpTask->push(w);
-    }
-
-    void onUnhandledNotification() override
-    {
-        auto *w = new NmGnbSctp(NmGnbSctp::UNHANDLED_NOTIFICATION);
-        w->clientId = clientId;
-        sctpTask->push(w);
-    }
-};
-
-
-[[noreturn]] static void ReceiverThread(std::pair<sctp::SctpClient *, sctp::ISctpHandler *> *args)
-{
-    sctp::SctpClient *client = args->first;
-    sctp::ISctpHandler *handler = args->second;
-
-    delete args;
-
-    while (true)
-        client->receive(handler);
-}
-
 //======================================================================//
 
 	XnapTask::XnapTask(TaskBase *base) : m_base{base}
@@ -84,12 +23,15 @@ class SctpHandler : public sctp::ISctpHandler
 		
 		m_xnapServer = new XnapServer(base);	
 		m_xnapServer->initialize(this);
+		
+		m_sctpServer = new SctpTask(base->logBase);
 	}
 	
 	void XnapTask::onStart()
 	{
+		m_sctpServer->start();
 		m_xnapServer->start();	
-
+		
 		// This part associate the xnap layer with ngap layer
 		auto *msg = new NmGnbXnapToNgap(NmGnbXnapToNgap::XNAP_NGAP_ASSOC);
 		msg->associatedTask = this;
@@ -110,6 +52,7 @@ class SctpHandler : public sctp::ISctpHandler
 			msg1->localAddress = m_base->config->xnapIp;
 			msg1->localPort = 0;
 			msg1->associatedTask = this;
+			msg1->nodeType = "client";
 			m_base->sctpXnapTask->push(msg1);
 		}
 	}
@@ -128,7 +71,10 @@ class SctpHandler : public sctp::ISctpHandler
 				switch(w->present)
 				{
 					case NmGnbSctp::ASSOCIATION_SETUP:
-						m_logger->debug("Association setup succesful");
+						m_logger->debug("Association setup of [%s] to [%s] successful", w->nodeType.c_str(), w->remoteAddress.c_str());
+						break;
+					case NmGnbSctp::ASSOCIATION_SHUTDOWN:
+						m_logger->debug("Association shutdown of [%s] to [%s] successful", w->nodeType.c_str(), w->remoteAddress.c_str());
 						break;
 					default:
 						m_logger->unhandledNts(msg);

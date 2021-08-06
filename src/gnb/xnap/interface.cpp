@@ -9,10 +9,14 @@ namespace nr::gnb
 {
 	void XnapTask::registerAcceptedClient(int socketId)
 	{
+		
+		m_logger->info("New Gnode Client is being registered to client-info-list (server)");
+		
 		auto *msg = new NmGnbXnapClientCon(NmGnbXnapClientCon::XNAP_CLIENT_ENTRY);
 		msg->socketId = socketId;
 		msg->associatedTask = this;
 		msg->ppid = sctp::PayloadProtocolId::XNAP;
-		m_base->sctpXnapTask->push(msg);
+		msg->nodeType = "server";
+		m_sctpServer->push(msg);
 	}	
 }// namespace nr::gnb

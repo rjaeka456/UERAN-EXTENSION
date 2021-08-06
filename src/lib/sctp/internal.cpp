@@ -200,7 +200,7 @@ void ReceiveMessage(int sd, uint32_t ppid, ISctpHandler *handler)
     int r = sctp_recvmsg(sd, (void *)buffer, RECEIVE_BUFFER_SIZE, (sockaddr *)&addr, &fromLen, &info, &flags);
 	
 	char *connected_ip = inet_ntoa(addr.sin_addr);
-	std::string ipStr = std::string(connected_ip);
+	std::string senderAddr = std::string(connected_ip);
 	//std::cout << "Ip Address of peer: " << ipStr << " : " << ntohs(addr.sin_port) << std::endl;
 	
 
@@ -220,7 +220,7 @@ void ReceiveMessage(int sd, uint32_t ppid, ISctpHandler *handler)
         if (notification->sn_header.sn_type == sctp_sn_type::SCTP_SHUTDOWN_EVENT)
         {
             if (handler)
-                handler->onAssociationShutdown();
+                handler->onAssociationShutdown(senderAddr);
         }
         else if (notification->sn_header.sn_type == sctp_sn_type::SCTP_ASSOC_CHANGE)
         {
@@ -237,12 +237,12 @@ void ReceiveMessage(int sd, uint32_t ppid, ISctpHandler *handler)
                         ThrowError("SCTP_STATUS obtaining failed: ", errno);
 
                     if (handler)
-                        handler->onAssociationSetup(status.sstat_assoc_id, status.sstat_instrms, status.sstat_outstrms);
+                        handler->onAssociationSetup(status.sstat_assoc_id, status.sstat_instrms, status.sstat_outstrms, senderAddr);
                 }
                 else if (sac->sac_state == sctp_sac_state::SCTP_COMM_LOST)
                 {
                     if (handler)
-                        handler->onAssociationShutdown();
+                        handler->onAssociationShutdown(senderAddr);
                 }
                 else
                 {

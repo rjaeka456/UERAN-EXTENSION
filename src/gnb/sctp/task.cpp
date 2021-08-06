@@ -56,20 +56,22 @@ class SctpHandler : public sctp::ISctpHandler
     }
 
   private:
-    void onAssociationSetup(int associationId, int inStreams, int outStreams) override
+    void onAssociationSetup(int associationId, int inStreams, int outStreams, std::string senderAddress) override
     {
         auto *w = new NmGnbSctp(NmGnbSctp::ASSOCIATION_SETUP);
         w->clientId = clientId;
+		w->remoteAddress = senderAddress;
         w->associationId = associationId;
         w->inStreams = inStreams;
         w->outStreams = outStreams;
         sctpTask->push(w);
     }
 
-    void onAssociationShutdown() override
+    void onAssociationShutdown(std::string shutAddress) override
     {
         auto *w = new NmGnbSctp(NmGnbSctp::ASSOCIATION_SHUTDOWN);
         w->clientId = clientId;
+		w->remoteAddress = shutAddress;
         sctpTask->push(w);
     }
 
@@ -111,6 +113,11 @@ SctpTask::SctpTask(TaskBase *base, const std::string appType) : m_base{base}, m_
     m_logger = base->logBase->makeUniqueLogger("sctp" + appType);
 }
 
+SctpTask::SctpTask(LogBase *logBase) : m_clients{}
+{
+	m_logger = logBase->makeUniqueLogger("sctp-serv");
+}
+
 void SctpTask::onStart()
 {
 }
@@ -139,11 +146,11 @@ void SctpTask::onLoop()
             break;
         }
         case NmGnbSctp::ASSOCIATION_SETUP: {
-            receiveAssociationSetup(w->clientId, w->associationId, w->inStreams, w->outStreams);
+            receiveAssociationSetup(w->clientId, w->associationId, w->inStreams, w->outStreams, w->remoteAddress);
             break;
         }
         case NmGnbSctp::ASSOCIATION_SHUTDOWN: {
-            receiveAssociationShutdown(w->clientId);
+            receiveAssociationShutdown(w->clientId, w->remoteAddress);
             break;
         }
         case NmGnbSctp::RECEIVE_MESSAGE: {
@@ -161,8 +168,8 @@ void SctpTask::onLoop()
 		
 		// =============== Added by Philip Astillo =============================================
 		case NmGnbSctp::XN_SCTP_CONNECT:{
-			initiateXnSetupRequest(w->clientId, w->localAddress, w->localPort, w->remoteAddress, 
-											   w->remotePort, w->ppid, w->associatedTask);
+			connectXnapServer(w->clientId, w->localAddress, w->localPort, w->remoteAddress, 
+											   w->remotePort, w->ppid, w->associatedTask, w->nodeType);
 			break;
 		}
 		case NmGnbSctp::XN_SETUP_RESPONSE:{
@@ -184,7 +191,7 @@ void SctpTask::onLoop()
 		switch(w->present)
 		{
 			case NmGnbXnapClientCon::XNAP_CLIENT_ENTRY:
-					registerAcceptedClient(w->socketId, w->ppid, w->associatedTask);
+					registerAcceptedClient(w->socketId, w->ppid, w->associatedTask, w->nodeType);
 					break;
 			default:
 					m_logger->unhandledNts(msg);
@@ -216,7 +223,6 @@ void SctpTask::DeleteClientEntry(ClientEntry *entry)
     entry->associatedTask = nullptr;
     delete entry->receiverThread;
     delete entry->client;
-	delete entry->server; //Added by Philip Astillo
     delete entry->handler;
     delete entry;
 }
@@ -269,30 +275,32 @@ void SctpTask::receiveSctpConnectionSetupRequest(int clientId, const std::string
         new std::pair<sctp::SctpClient *, sctp::ISctpHandler *>(client, handler));
 }
 
-void SctpTask::receiveAssociationSetup(int clientId, int associationId, int inStreams, int outStreams)
+void SctpTask::receiveAssociationSetup(int clientId, int associationId, int inStreams, int outStreams, const std::string &remoteAddress)
 {
-    m_logger->debug("SCTP association setup ascId[%d]", associationId);
-
+    //m_logger->debug("SCTP association setup ascId[%d]", associationId);
+	
     ClientEntry *entry = m_clients[clientId];
     if (entry == nullptr)
     {
         m_logger->warn("Client entry not found for id: %d", clientId);
         return;
     }
+	entry->remoteAddress = remoteAddress;
 
     // Notify the relevant task
     auto *msg = new NmGnbSctp(NmGnbSctp::ASSOCIATION_SETUP);
+	msg->remoteAddress = remoteAddress;
     msg->clientId = clientId;
     msg->associationId = associationId;
     msg->inStreams = inStreams;
     msg->outStreams = outStreams;
+	msg->nodeType = entry->nodeType;
     entry->associatedTask->push(msg);
 }
 
-void SctpTask::receiveAssociationShutdown(int clientId)
+void SctpTask::receiveAssociationShutdown(int clientId, const std::string &shutAddress)
 {
-    m_logger->debug("SCTP association shutdown (clientId: %d)", clientId);
-
+    //m_logger->debug("SCTP association shutdown (clientId: %d)", clientId);
     ClientEntry *entry = m_clients[clientId];
     if (entry == nullptr)
     {
@@ -303,6 +311,8 @@ void SctpTask::receiveAssociationShutdown(int clientId)
     // Notify the relevant task
     auto *msg = new NmGnbSctp(NmGnbSctp::ASSOCIATION_SHUTDOWN);
     msg->clientId = clientId;
+	msg->remoteAddress = shutAddress;
+	msg->nodeType = entry->nodeType;
     entry->associatedTask->push(msg);
 }
 
@@ -329,7 +339,7 @@ void SctpTask::receiveUnhandledNotification(int clientId)
     // Because some notification may be received after shutdown.
 
     // Print warning
-    m_logger->warn("Unhandled SCTP notification received");
+    //m_logger->warn("Unhandled SCTP notification received");
 }
 
 void SctpTask::receiveConnectionClose(int clientId)
@@ -369,9 +379,9 @@ void SctpTask::receiveSendMessage(int clientId, uint16_t stream, UniqueBuffer &&
 
 // ================================= Added by Philip Astillo ===================================
 
-void SctpTask::initiateXnSetupRequest(int clientId, std::string &localAddress, uint16_t localPort,
-														  const std::string &remoteAddress, uint16_t remotePort,
-														  sctp::PayloadProtocolId ppid, NtsTask *associatedTask)
+void SctpTask::connectXnapServer(int clientId, std::string &localAddress, uint16_t localPort,
+													const std::string &remoteAddress, uint16_t remotePort,
+													sctp::PayloadProtocolId ppid, NtsTask *associatedTask, const std::string &nodeType)
 {
 	m_logger->info("Trying to establish SCTP-XNAP socket connection ...(%s:%d)", remoteAddress.c_str(), remotePort);
 	
@@ -389,13 +399,24 @@ void SctpTask::initiateXnSetupRequest(int clientId, std::string &localAddress, u
 		return;
 	}
 	m_logger->info("SCTP-XNAP client connection is established (%s:%d)", remoteAddress.c_str(), remotePort);
+	
+	sctp::ISctpHandler *handler = new SctpHandler(this, clientId);
+	auto *entry = new ClientEntry;
+    m_clients[clientId] = entry;
+	
+	entry->id = clientId;
+	entry->client = client;
+	entry->handler = handler;
+	entry->nodeType = nodeType;
+	entry->associatedTask = associatedTask;
+	entry->receiverThread = new ScopedThread(
+        [](void *arg) { ReceiverThread(reinterpret_cast<std::pair<sctp::SctpClient *, sctp::ISctpHandler *> *>(arg)); },
+        new std::pair<sctp::SctpClient *, sctp::ISctpHandler *>(client, handler));
+	
 }
 
-void SctpTask::registerAcceptedClient(int socketId, sctp::PayloadProtocolId ppid, NtsTask * associatedTask)
+void SctpTask::registerAcceptedClient(int socketId, sctp::PayloadProtocolId ppid, NtsTask * associatedTask, const std::string &nodeType)
 {
-	
-	m_logger->info("New Gnode Client is registered");
-	
 	auto *client = new sctp::SctpClient(socketId, ppid);
 	sctp::ISctpHandler *handler = new SctpHandler(this, socketId);
 
@@ -407,6 +428,7 @@ void SctpTask::registerAcceptedClient(int socketId, sctp::PayloadProtocolId ppid
     entry->client = client;
     entry->handler = handler;
     entry->associatedTask = associatedTask;
+	entry->nodeType = nodeType;
     entry->receiverThread = new ScopedThread(
         [](void *arg) { ReceiverThread(reinterpret_cast<std::pair<sctp::SctpClient *, sctp::ISctpHandler *> *>(arg)); },
         new std::pair<sctp::SctpClient *, sctp::ISctpHandler *>(client, handler));
@@ -417,8 +439,6 @@ void SctpTask::receiveXnSetupResponse(int clientId, int associationId, int inStr
 	
 	
 }
-
-
 
 
 //==========================================================================================

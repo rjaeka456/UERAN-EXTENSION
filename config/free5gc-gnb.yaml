@@ -18,7 +18,7 @@ amfConfigs:
 
 # List of associated gNB address information
 gnbAssocConfigs:
-  - address: 192.168.22.149
+  - address: 127.0.0.1 #192.168.22.149
     port: 38422
 
 # List of supported S-NSSAIs by this gNB

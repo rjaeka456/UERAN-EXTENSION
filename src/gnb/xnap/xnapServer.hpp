@@ -23,7 +23,7 @@ class XnapServer : public NtsTask
 {
 	private:
 		std::unique_ptr<Logger> m_logger;
-		sctp::SctpServer *m_sctpServer;
+		sctp::SctpServer *m_xnapServer;
 		NtsTask *m_mainTask;
 		
 		std::string localAddress;

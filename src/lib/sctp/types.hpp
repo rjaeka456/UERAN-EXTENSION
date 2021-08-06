@@ -46,8 +46,8 @@ class ISctpHandler
   public:
     virtual ~ISctpHandler() = default;
 
-    virtual void onAssociationSetup(int associationId, int inStreams, int outStreams) = 0;
-    virtual void onAssociationShutdown() = 0;
+    virtual void onAssociationSetup(int associationId, int inStreams, int outStreams, std::string senderAddress) = 0;
+    virtual void onAssociationShutdown(std::string shutAddress) = 0;
     virtual void onMessage(const uint8_t *buffer, size_t length, uint16_t stream) = 0;
     virtual void onUnhandledNotification() = 0;
 };
