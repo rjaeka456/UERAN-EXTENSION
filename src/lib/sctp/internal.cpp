@@ -109,14 +109,40 @@ void CloseSocket(int sd)
     close(sd);
 }
 
-void Accept(int sd)
+//void Accept(int sd)
+// Edited by Philip Astillo
+std::string Accept(int sd, int &nsd, uint16_t &port)
 {
-    sockaddr saddr{};
-    socklen_t saddr_size{};
+    //sockaddr saddr{};
+    //socklen_t saddr_size{};
 
-    int clientSd = accept(sd, &saddr, &saddr_size);
-    if (clientSd < 0)
+    sockaddr_in siaddr{};
+    socklen_t siaddr_size{};
+
+    //int clientSd = accept(sd, &saddr, &saddr_size);
+    nsd = accept(sd, (struct sockaddr*) &siaddr, &siaddr_size);	// Edited by Philip Astillo
+
+    //if (clientSd < 0)
+    if (nsd < 0)
+    {
         ThrowError("SCTP accept failure: ", errno);
+    }
+    // Added by Philip Astillo
+    else
+    {
+        char *connected_ip = inet_ntoa(siaddr.sin_addr);
+        port = ntohs(siaddr.sin_port);
+        std::string ipStr = std::string(connected_ip);
+        // int ip4 = int(siaddr.sin_addr.s_addr&0xFF);
+        // int ip3 = int((siaddr.sin_addr.s_addr&0xFF00)>>8);
+        // int ip2 = int((siaddr.sin_addr.s_addr&0xFF0000)>>16);
+        // int ip1 = int((siaddr.sin_addr.s_addr&0xFF000000)>>24);
+
+        // std::string ipStr = std::to_string(ip4) + "." + std::to_string(ip3) + "." + std::to_string(ip2) + "." + std::to_string(ip1);
+        // std::cout << "At accept function --> Ip Address of client: " << ipStr << std::endl;
+
+        return ipStr;
+    }
 }
 
 void Connect(int sd, const std::string &address, uint16_t port)

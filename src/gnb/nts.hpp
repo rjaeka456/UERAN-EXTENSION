@@ -250,6 +250,13 @@ struct NmGnbSctp : NtsMessage
         RECEIVE_MESSAGE,
         SEND_MESSAGE,
         UNHANDLED_NOTIFICATION,
+
+        // Added by Philip Astillo
+        XN_SCTP_CONNECT,
+        XN_SETUP_REQUEST,
+        XN_SETUP_RESPONSE,
+        XN_SETUP_FAILURE,
+
     } present;
 
     // CONNECTION_REQUEST
@@ -262,6 +269,7 @@ struct NmGnbSctp : NtsMessage
     int clientId{};
 
     // CONNECTION_REQUEST
+    std::string nodeType{}; // Added by Philip Astillo
     std::string localAddress{};
     uint16_t localPort{};
     std::string remoteAddress{};
@@ -308,5 +316,42 @@ struct NmGnbCliCommand : NtsMessage
     {
     }
 };
+
+// Added by Philip Astillo
+struct NmGnbXnapToNgap : NtsMessage
+{
+    enum PR
+    {
+        XNAP_NGAP_ASSOC,
+        XNAP_NGAP_DEASSOC,
+        UNHANDLED_NOTIFICATION,
+    }present;
+
+    NtsTask *associatedTask{};
+
+    explicit NmGnbXnapToNgap(PR present): NtsMessage(NtsMessageType::XNAP_TO_NGAP), present(present)
+    {
+    }
+};
+
+struct NmGnbXnapClientCon : NtsMessage
+{
+
+    enum PR
+    {
+        XNAP_CLIENT_CON,
+        XNAP_CLIENT_ENTRY,
+    }present;
+
+    int socketId;
+    sctp::PayloadProtocolId ppid{};
+    NtsTask *associatedTask;
+    std::string nodeType;
+
+    explicit NmGnbXnapClientCon(PR present): NtsMessage(NtsMessageType::XNAP_CLIENT), present(present)
+    {
+    }
+};
+
 
 } // namespace nr::gnb

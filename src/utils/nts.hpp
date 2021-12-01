@@ -58,6 +58,9 @@ enum class NtsMessageType
     UE_RLS_TO_RLS,
 	UE_NAS_TO_APP,
 	UE_NAS_TO_RLS,
+
+    XNAP_TO_NGAP, // Added by Philip Astillo
+    XNAP_CLIENT, // Added by Philip Astillo
 };
 
 struct NtsMessage
@@ -137,6 +140,9 @@ class NtsTask
     bool setTimer(int timerId, int64_t delayMs);
 
     bool setTimerAbsolute(int timerId, int64_t timeMs);
+
+
+    TimerInfo * getTimer(); // =======Added by Philip Astillo =============
 
   protected:
     // NtsTask gives the ownership of NtsMessage* to the taker (actually almost always it's its itself)

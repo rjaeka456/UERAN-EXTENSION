@@ -19,7 +19,15 @@ namespace sctp
 
 enum class PayloadProtocolId
 {
-    NGAP = 60
+    NGAP = 60,
+    XNAP, // Added by Philip Astillo
+};
+
+// Added by Philip Astillo
+enum class ComPort
+{
+    NGAP = 38412,
+    XNAP = 38422,
 };
 
 class SctpError : public std::runtime_error

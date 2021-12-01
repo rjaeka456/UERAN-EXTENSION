@@ -24,7 +24,7 @@ namespace nr::gnb
 
 class SctpTask : public NtsTask
 {
-  private:
+  public: // Philip Astillo changed to public
     struct ClientEntry
     {
         int id;
@@ -32,6 +32,10 @@ class SctpTask : public NtsTask
         ScopedThread *receiverThread;
         sctp::ISctpHandler *handler;
         NtsTask *associatedTask;
+
+        //Added by Philip Astillo
+        std::string nodeType;
+        std::string remoteAddress;
     };
 
   private:
@@ -39,9 +43,13 @@ class SctpTask : public NtsTask
     std::unique_ptr<Logger> m_logger;
     std::unordered_map<int, ClientEntry *> m_clients;
 
+    ScopedThread *listenThread;	// Added by Philip Astillo
+
     friend class GnbCmdHandler;
 
   public:
+    explicit SctpTask(TaskBase *base, const std::string appType);
+    explicit SctpTask(LogBase *logBase);
     explicit SctpTask(TaskBase *base);
     ~SctpTask() override = default;
 
@@ -63,6 +71,17 @@ class SctpTask : public NtsTask
     void receiveUnhandledNotification(int clientId);
     void receiveConnectionClose(int clientId);
     void receiveSendMessage(int clientId, uint16_t stream, UniqueBuffer &&buffer);
+
+    // =========================== Added by Philip Astillo =================================
+
+
+    void connectXnapServer(int clientId, std::string &localAddress, uint16_t localPort,
+                           const std::string &remoteAddress, uint16_t remotePort,
+                           sctp::PayloadProtocolId ppid, NtsTask *associatedTask, const std::string &nodeType);
+
+    void registerAcceptedClient(int socketId, sctp::PayloadProtocolId ppid, NtsTask * associatedTask, const std::string &nodeType);
+
+    void receiveXnSetupResponse(int clientId, int associationId, int inStreams, int outStreams);
 };
 
 } // namespace nr::gnb

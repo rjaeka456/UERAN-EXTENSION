@@ -40,6 +40,7 @@ namespace nr::gnb
 {
 
 class SctpTask;
+class XnapTask;
 class GnbRrcTask;
 class GtpTask;
 class GnbAppTask;
@@ -55,6 +56,8 @@ class NgapTask : public NtsTask
     long m_ueNgapIdCounter;
     uint32_t m_downlinkTeidCounter;
     bool m_isInitialized;
+
+    NtsTask * m_xnapAssociation;
 
     friend class GnbCmdHandler;
 

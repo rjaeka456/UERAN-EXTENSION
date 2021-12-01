@@ -16,13 +16,18 @@ namespace sctp
 class SctpServer
 {
   private:
-    int sd;
+    const int sd;	// Edited by Philip Astillo
 
   public:
     SctpServer(const std::string &address, uint16_t port);
     ~SctpServer();
 
-    void start();
+    //void start();
+
+    //========== Edited by Philip Astillo
+    void accept(std::string &clientIp, int &clientId, uint16_t &clientPort);
+    void bind(const std::string &address, uint16_t port);
+    void listen();
 
     // TODO: Other functionalities
 };

@@ -23,6 +23,26 @@ sctp::SctpClient::SctpClient(PayloadProtocolId ppid) : sd(CreateSocket()), ppid(
     }
 }
 
+sctp::SctpClient::SctpClient(int socketId, PayloadProtocolId ppid) : sd(socketId), ppid(ppid)
+{
+}
+
+// =============== Added by Philip Astillo ===================
+/*sctp::SctpClient::SctpClient(PayloadProtocolId ppid, int nsd) : sd(-1), ppid(ppid), assoc(nsd)
+{
+    try
+    {
+        SetInitOptions(sd, 10, 10, 10, 10 * 1000);
+        SetEventOptions(sd);
+    }
+    catch (const std::exception &e)
+    {
+        CloseSocket(nsd);
+        throw;
+    }
+}*/
+//=====================================================
+
 sctp::SctpClient::~SctpClient()
 {
     CloseSocket(sd);

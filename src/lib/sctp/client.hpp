@@ -22,8 +22,12 @@ class SctpClient
     const int sd;
     const PayloadProtocolId ppid;
 
+    int assoc;	// Added by Philip Astillo
+
   public:
     explicit SctpClient(PayloadProtocolId ppid);
+    explicit SctpClient(int socketId, PayloadProtocolId ppid);
+    //explicit SctpClient(PayloadProtocolId ppid, int nsd);	// Added by Philip Astillo
     ~SctpClient();
 
     void bind(const std::string &address, uint16_t port);

@@ -29,6 +29,7 @@ class GtpTask;
 class NgapTask;
 class GnbRrcTask;
 class GnbRlsTask;
+class XnapTask; // Added by Philip Astillo
 class SctpTask;
 
 enum class EAmfState
@@ -104,6 +105,14 @@ struct NgapAmfContext
     OverloadInfo overloadInfo{};
     std::vector<ServedGuami *> servedGuamiList{};
     std::vector<PlmnSupport *> plmnSupportList{};
+};
+
+// Added by Philip Astillo
+struct XnapGnbContext
+{
+    int ctxId{};
+    std::string address{};
+    uint16_t port{};
 };
 
 struct RlsUeContext
@@ -300,6 +309,13 @@ struct GnbAmfConfig
     uint16_t port{};
 };
 
+// Added by Philip Astillo
+struct GnbAssociatedConfig
+{
+    std::string address{};
+    uint16_t port{};
+};
+
 struct GnbConfig
 {
     /* Read from config file */
@@ -309,9 +325,11 @@ struct GnbConfig
     int tac{};
     NetworkSlice nssai{};
     std::vector<GnbAmfConfig> amfConfigs{};
+    std::vector<GnbAssociatedConfig> gnbAssocConfigs{};  //Added by Philip Astillo
     std::string portalIp{};
     std::string ngapIp{};
     std::string gtpIp{};
+    std::string xnapIp{};
     std::optional<std::string> gtpAdvertiseIp{};
     bool ignoreStreamIds{};
 
@@ -343,7 +361,11 @@ struct TaskBase
     NgapTask *ngapTask{};
     GnbRrcTask *rrcTask{};
     SctpTask *sctpTask{};
+    SctpTask *sctpXnapTask{}; // Added by Philip Astillo
     GnbRlsTask *rlsTask{};
+
+    // ==== Added by Philip Astillo =======
+    XnapTask *xnapTask{};
 };
 
 Json ToJson(const GnbStatusInfo &v);

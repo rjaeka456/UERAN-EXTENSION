@@ -51,6 +51,7 @@ static nr::gnb::GnbConfig *ReadConfigYaml()
     result->portalIp = yaml::GetIp4(config, "linkIp");
     result->ngapIp = yaml::GetIp4(config, "ngapIp");
     result->gtpIp = yaml::GetIp4(config, "gtpIp");
+    result->xnapIp = yaml::GetIp4(config, "xnapIp");
 
     if (yaml::HasField(config, "gtpAdvertiseIp"))
         result->gtpAdvertiseIp = yaml::GetIp4(config, "gtpAdvertiseIp");
@@ -67,6 +68,17 @@ static nr::gnb::GnbConfig *ReadConfigYaml()
         c.port = static_cast<uint16_t>(yaml::GetInt32(amfConfig, "port", 1024, 65535));
         result->amfConfigs.push_back(c);
     }
+
+    // =============== Added by Philip Astillo ===============================
+    for (auto &gnbAssocConfig : yaml::GetSequence(config, "gnbAssocConfigs"))
+    {
+        nr::gnb::GnbAssociatedConfig c{};
+        c.address = yaml::GetIp4(gnbAssocConfig, "address");
+        c.port = static_cast<uint16_t>(yaml::GetInt32(gnbAssocConfig, "port", 1024, 65535));
+        result->gnbAssocConfigs.push_back(c);
+
+    }
+    //================================================================
 
     for (auto &nssai : yaml::GetSequence(config, "slices"))
     {

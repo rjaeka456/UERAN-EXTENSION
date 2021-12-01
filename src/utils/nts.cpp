@@ -115,6 +115,13 @@ bool NtsTask::setTimerAbsolute(int timerId, int64_t timeMs)
     return true;
 }
 
+// =======Added by Philip Astillo =============
+TimerInfo * NtsTask::getTimer()
+{
+    return timerBase.getAndRemoveExpiredTimer();
+}
+//=====================================
+
 NtsMessage *NtsTask::poll()
 {
     {

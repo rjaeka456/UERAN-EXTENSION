@@ -88,6 +88,22 @@ void NgapTask::onLoop()
         }
         break;
     }
+
+    case NtsMessageType::XNAP_TO_NGAP:
+    {
+        auto *w = dynamic_cast<NmGnbXnapToNgap *>(msg);
+        switch(w->present)
+        {
+        case NmGnbXnapToNgap::XNAP_NGAP_ASSOC:
+            m_xnapAssociation = w->associatedTask;
+            m_logger->info("NGAP and XNAP interface are now associated.");
+            break;
+        default:
+            m_logger->unhandledNts(msg);
+            break;
+        }
+        break;
+    }
     default: {
         m_logger->unhandledNts(msg);
         break;
