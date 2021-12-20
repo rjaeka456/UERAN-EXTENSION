@@ -5,7 +5,7 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "XnSetupFailure.h"
+#include "ASN_XNAP_XnSetupFailure.h"
 
 asn_TYPE_member_t asn_MBR_XnSetupFailure_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct XnSetupFailure, protocolIEs),

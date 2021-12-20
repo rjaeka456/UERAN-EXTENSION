@@ -5,7 +5,7 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "XnSetupResponse.h"
+#include "ASN_XNAP_XnSetupResponse.h"
 
 asn_TYPE_member_t asn_MBR_XnSetupResponse_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct XnSetupResponse, protocolIEs),

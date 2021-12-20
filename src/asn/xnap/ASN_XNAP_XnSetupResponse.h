@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "ProtocolIE-Container.h"
+#include "ASN_XNAP_ProtocolIE-Container.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
