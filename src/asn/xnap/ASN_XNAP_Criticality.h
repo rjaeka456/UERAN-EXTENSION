@@ -26,7 +26,7 @@ extern "C" {
    } e_Criticality;
 
    /* Criticality */
-   typedef long	 Criticality_t;
+   typedef long	 ASN_XNAP_Criticality_t;
 
    /* Implementation */
    extern asn_per_constraints_t asn_PER_type_Criticality_constr_1;

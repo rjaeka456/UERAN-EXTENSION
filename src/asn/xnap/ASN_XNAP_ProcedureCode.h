@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* ProcedureCode */
-typedef long	 ProcedureCode_t;
+typedef long	 ASN_XNAP_ProcedureCode_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_ProcedureCode_constr_1;

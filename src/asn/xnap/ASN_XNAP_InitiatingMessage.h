@@ -110,8 +110,8 @@ typedef enum ASN_XNAP_InitiatingMessage__value_PR {
 
 /* InitiatingMessage */
 typedef struct ASN_XNAP_InitiatingMessage {
-	ProcedureCode_t	 procedureCode;
-	Criticality_t	 criticality;
+    ASN_XNAP_ProcedureCode_t	 procedureCode;
+    ASN_XNAP_Criticality_t	 criticality;
 	struct ASN_XNAP_InitiatingMessage__value {
         ASN_XNAP_InitiatingMessage__value_PR present;
 		union ASN_XNAP_InitiatingMessage__value_u {
