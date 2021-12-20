@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.17)
 file(GLOB_RECURSE HDR_FILES *.hpp)
 file(GLOB_RECURSE SRC_FILES *.cpp)
 
-add_library(common-lib ${HDR_FILES} ${SRC_FILES})
+add_library(common-lib ${HDR_FILES} ${SRC_FILES} asn/xnap.cpp asn/xnap.hpp asn/xnap_msg.hpp)
 
 target_compile_options(common-lib PRIVATE -Wall -Wextra -pedantic -Wno-unused-parameter)
 
