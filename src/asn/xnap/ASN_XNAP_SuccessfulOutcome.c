@@ -5,7 +5,7 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "SuccessfulOutcome.h"
+#include "ASN_XNAP_SuccessfulOutcome.h"
 
 static const long asn_VAL_1_id_handoverPreparation = 0;
 static const long asn_VAL_1_reject = 0;
