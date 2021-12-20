@@ -4,22 +4,51 @@
 
 extern "C"
 {
-    struct ASN_XNAP_XNAP_PDU;
+    struct ASN_XNAP_XnAP_PDU;
     struct ASN_XNAP_InitiatingMessage;
     struct ASN_XNAP_SuccessfulOutcome;
     struct ASN_XNAP_UnsuccessfulOutcome;
 
-    struct ASN_XNAP_XNSetupFailure;
-    struct ASN_XNAP_XNSetupRequest;
-    struct ASN_XNAP_XNSetupResponse;
+    struct ASN_XNAP_XnSetupFailure;
+    struct ASN_XNAP_XnSetupRequest;
+    struct ASN_XNAP_XnSetupResponse;
 }
 
 namespace asn::xnap
 {
 enum class XnapMessageType
 {
-    XNSetupFailure,
-    XNSetupRequest,
-    XNSetupResponse,
+    XnSetupFailure,
+    XnSetupRequest,
+    XnSetupResponse,
+};
+
+template <XnapMessageType T>
+struct XnapMessageEnumToType
+{
+};
+
+template <>
+struct XnapMessageEnumToType<XnapMessageType::XnSetupRequest>
+{
+    typedef ASN_XNAP_XnSetupRequest T;
+};
+
+template <typename T>
+struct XnapMessageTypeToEnum;
+
+template <>
+struct XnapMessageTypeToEnum<ASN_XNAP_XnSetupRequest>
+{
+    enum
+    {
+        V = (int)XnapMessageType::XnSetupRequest
+    };
+};
+
+template <typename T>
+struct XnapMessageToIeType
+{
+    typedef typename std::remove_reference<decltype(*T{}.protocolIEs.list.array[0])>::type value;
 };
 } // namespace asn:xnap

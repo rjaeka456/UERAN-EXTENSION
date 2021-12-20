@@ -34,9 +34,9 @@ struct SuccessfulOutcome;
 struct UnsuccessfulOutcome;
 
 /* XnAP-PDU */
-typedef struct XnAP_PDU {
+typedef struct ASN_XNAP_XnAP_PDU {
 	XnAP_PDU_PR present;
-	union XnAP_PDU_u {
+	union ASN_XNAP_XnAP_PDU_u {
 		struct InitiatingMessage	*initiatingMessage;
 		struct SuccessfulOutcome	*successfulOutcome;
 		struct UnsuccessfulOutcome	*unsuccessfulOutcome;

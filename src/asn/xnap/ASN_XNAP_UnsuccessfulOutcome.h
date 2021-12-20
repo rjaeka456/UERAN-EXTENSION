@@ -99,17 +99,17 @@ typedef struct UnsuccessfulOutcome {
 	struct UnsuccessfulOutcome__value {
 		UnsuccessfulOutcome__value_PR present;
 		union UnsuccessfulOutcome__value_u {
-			HandoverPreparationFailure_t	 HandoverPreparationFailure;
-			RetrieveUEContextFailure_t	 RetrieveUEContextFailure;
-			SNodeAdditionRequestReject_t	 SNodeAdditionRequestReject;
-			SNodeModificationRequestReject_t	 SNodeModificationRequestReject;
-			SNodeModificationRefuse_t	 SNodeModificationRefuse;
-			SNodeReleaseReject_t	 SNodeReleaseReject;
-			SNodeChangeRefuse_t	 SNodeChangeRefuse;
-			XnRemovalFailure_t	 XnRemovalFailure;
+//			HandoverPreparationFailure_t	 HandoverPreparationFailure;
+//			RetrieveUEContextFailure_t	 RetrieveUEContextFailure;
+//			SNodeAdditionRequestReject_t	 SNodeAdditionRequestReject;
+//			SNodeModificationRequestReject_t	 SNodeModificationRequestReject;
+//			SNodeModificationRefuse_t	 SNodeModificationRefuse;
+//			SNodeReleaseReject_t	 SNodeReleaseReject;
+//			SNodeChangeRefuse_t	 SNodeChangeRefuse;
+//			XnRemovalFailure_t	 XnRemovalFailure;
 			XnSetupFailure_t	 XnSetupFailure;
-			NGRANNodeConfigurationUpdateFailure_t	 NGRANNodeConfigurationUpdateFailure;
-			CellActivationFailure_t	 CellActivationFailure;
+//			NGRANNodeConfigurationUpdateFailure_t	 NGRANNodeConfigurationUpdateFailure;
+//			CellActivationFailure_t	 CellActivationFailure;
 		} choice;
 		
 		/* Context for parsing across buffer boundaries */

@@ -4,6 +4,11 @@
 
 #include "task.hpp"
 
+#include <lib/asn/xnap.hpp>
+#include <gnb/app/task.hpp>
+#include <gnb/rrc/task.hpp>
+#include <gnb/sctp/task.hpp>
+
 #include <asn/xnap/ASN_XNAP_XnAP-PDU.h>
 #include <asn/xnap/ASN_XNAP_XnSetupRequest.h>
 

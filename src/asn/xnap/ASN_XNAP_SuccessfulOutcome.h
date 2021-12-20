@@ -102,20 +102,20 @@ typedef struct SuccessfulOutcome {
 	struct SuccessfulOutcome__value {
 		SuccessfulOutcome__value_PR present;
 		union SuccessfulOutcome__value_u {
-			HandoverRequestAcknowledge_t	 HandoverRequestAcknowledge;
-			RetrieveUEContextResponse_t	 RetrieveUEContextResponse;
-			SNodeAdditionRequestAcknowledge_t	 SNodeAdditionRequestAcknowledge;
-			SNodeModificationRequestAcknowledge_t	 SNodeModificationRequestAcknowledge;
-			SNodeModificationConfirm_t	 SNodeModificationConfirm;
-			SNodeReleaseRequestAcknowledge_t	 SNodeReleaseRequestAcknowledge;
-			SNodeReleaseConfirm_t	 SNodeReleaseConfirm;
-			SNodeChangeConfirm_t	 SNodeChangeConfirm;
-			XnRemovalResponse_t	 XnRemovalResponse;
+//			HandoverRequestAcknowledge_t	 HandoverRequestAcknowledge;
+//			RetrieveUEContextResponse_t	 RetrieveUEContextResponse;
+//			SNodeAdditionRequestAcknowledge_t	 SNodeAdditionRequestAcknowledge;
+//			SNodeModificationRequestAcknowledge_t	 SNodeModificationRequestAcknowledge;
+//			SNodeModificationConfirm_t	 SNodeModificationConfirm;
+//			SNodeReleaseRequestAcknowledge_t	 SNodeReleaseRequestAcknowledge;
+//			SNodeReleaseConfirm_t	 SNodeReleaseConfirm;
+//			SNodeChangeConfirm_t	 SNodeChangeConfirm;
+//			XnRemovalResponse_t	 XnRemovalResponse;
 			XnSetupResponse_t	 XnSetupResponse;
-			NGRANNodeConfigurationUpdateAcknowledge_t	 NGRANNodeConfigurationUpdateAcknowledge;
-			E_UTRA_NR_CellResourceCoordinationResponse_t	 E_UTRA_NR_CellResourceCoordinationResponse;
-			CellActivationResponse_t	 CellActivationResponse;
-			ResetResponse_t	 ResetResponse;
+//			NGRANNodeConfigurationUpdateAcknowledge_t	 NGRANNodeConfigurationUpdateAcknowledge;
+//			E_UTRA_NR_CellResourceCoordinationResponse_t	 E_UTRA_NR_CellResourceCoordinationResponse;
+//			CellActivationResponse_t	 CellActivationResponse;
+//			ResetResponse_t	 ResetResponse;
 		} choice;
 		
 		/* Context for parsing across buffer boundaries */

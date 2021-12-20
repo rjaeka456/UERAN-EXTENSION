@@ -17,7 +17,7 @@ static asn_per_constraints_t asn_PER_type_XnAP_PDU_constr_1 CC_NOTUSED = {
 	0, 0	/* No PER value map */
 };
 static asn_TYPE_member_t asn_MBR_XnAP_PDU_1[] = {
-	{ ATF_POINTER, 0, offsetof(struct XnAP_PDU, choice.initiatingMessage),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_XnAP_PDU, choice.initiatingMessage),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_InitiatingMessage,
@@ -26,7 +26,7 @@ static asn_TYPE_member_t asn_MBR_XnAP_PDU_1[] = {
 		0, 0, /* No default value */
 		"initiatingMessage"
 		},
-	{ ATF_POINTER, 0, offsetof(struct XnAP_PDU, choice.successfulOutcome),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_XnAP_PDU, choice.successfulOutcome),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_SuccessfulOutcome,
@@ -35,7 +35,7 @@ static asn_TYPE_member_t asn_MBR_XnAP_PDU_1[] = {
 		0, 0, /* No default value */
 		"successfulOutcome"
 		},
-	{ ATF_POINTER, 0, offsetof(struct XnAP_PDU, choice.unsuccessfulOutcome),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_XnAP_PDU, choice.unsuccessfulOutcome),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_UnsuccessfulOutcome,
@@ -51,10 +51,10 @@ static const asn_TYPE_tag2member_t asn_MAP_XnAP_PDU_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* unsuccessfulOutcome */
 };
 static asn_CHOICE_specifics_t asn_SPC_XnAP_PDU_specs_1 = {
-	sizeof(struct XnAP_PDU),
-	offsetof(struct XnAP_PDU, _asn_ctx),
-	offsetof(struct XnAP_PDU, present),
-	sizeof(((struct XnAP_PDU *)0)->present),
+	sizeof(struct ASN_XNAP_XnAP_PDU),
+	offsetof(struct ASN_XNAP_XnAP_PDU, _asn_ctx),
+	offsetof(struct ASN_XNAP_XnAP_PDU, present),
+	sizeof(((struct ASN_XNAP_XnAP_PDU *)0)->present),
 	asn_MAP_XnAP_PDU_tag2el_1,
 	3,	/* Count of tags in the map */
 	0, 0,
