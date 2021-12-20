@@ -233,7 +233,7 @@ select_InitiatingMessage_criticality_type(const asn_TYPE_descriptor_t *parent_ty
 	size_t constraining_column = 3; /* &procedureCode */
 	size_t for_column = 4; /* &criticality */
 	size_t row;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct InitiatingMessage, procedureCode));
+	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct ASN_XNAP_InitiatingMessage, procedureCode));
 	
 	for(row=0; row < itable->rows_count; row++) {
 	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
@@ -275,7 +275,7 @@ select_InitiatingMessage_value_type(const asn_TYPE_descriptor_t *parent_type, co
 	size_t constraining_column = 3; /* &procedureCode */
 	size_t for_column = 0; /* &InitiatingMessage */
 	size_t row;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct InitiatingMessage, procedureCode));
+	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct ASN_XNAP_InitiatingMessage, procedureCode));
 	
 	for(row=0; row < itable->rows_count; row++) {
 	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
@@ -407,7 +407,7 @@ static asn_TYPE_member_t asn_MBR_value_4[] = {
 //		0, 0, /* No default value */
 //		"XnRemovalRequest"
 //		},
-	{ ATF_NOFLAGS, 0, offsetof(struct InitiatingMessage__value, choice.XnSetupRequest),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_InitiatingMessage__value, choice.XnSetupRequest),
 		(ASN_TAG_CLASS_UNIVERSAL | (16 << 2)),
 		0,
 		&asn_DEF_XnSetupRequest,
@@ -600,10 +600,10 @@ static const asn_TYPE_tag2member_t asn_MAP_value_tag2el_4[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (16 << 2)), 26, -26, 0 } /* SecondaryRATDataUsageReport */
 };
 static asn_CHOICE_specifics_t asn_SPC_value_specs_4 = {
-	sizeof(struct InitiatingMessage__value),
-	offsetof(struct InitiatingMessage__value, _asn_ctx),
-	offsetof(struct InitiatingMessage__value, present),
-	sizeof(((struct InitiatingMessage__value *)0)->present),
+	sizeof(struct ASN_XNAP_InitiatingMessage__value),
+	offsetof(struct ASN_XNAP_InitiatingMessage__value, _asn_ctx),
+	offsetof(struct ASN_XNAP_InitiatingMessage__value, present),
+	sizeof(((struct ASN_XNAP_InitiatingMessage__value *)0)->present),
 	asn_MAP_value_tag2el_4,
 	27,	/* Count of tags in the map */
 	0, 0,
@@ -625,7 +625,7 @@ asn_TYPE_descriptor_t asn_DEF_value_4 = {
 };
 
 asn_TYPE_member_t asn_MBR_InitiatingMessage_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct InitiatingMessage, procedureCode),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_InitiatingMessage, procedureCode),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProcedureCode,
@@ -634,7 +634,7 @@ asn_TYPE_member_t asn_MBR_InitiatingMessage_1[] = {
 		0, 0, /* No default value */
 		"procedureCode"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct InitiatingMessage, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_InitiatingMessage, criticality),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_Criticality,
@@ -643,7 +643,7 @@ asn_TYPE_member_t asn_MBR_InitiatingMessage_1[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct InitiatingMessage, value),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_InitiatingMessage, value),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_value_4,
@@ -662,8 +662,8 @@ static const asn_TYPE_tag2member_t asn_MAP_InitiatingMessage_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* value */
 };
 asn_SEQUENCE_specifics_t asn_SPC_InitiatingMessage_specs_1 = {
-	sizeof(struct InitiatingMessage),
-	offsetof(struct InitiatingMessage, _asn_ctx),
+	sizeof(struct ASN_XNAP_InitiatingMessage),
+	offsetof(struct ASN_XNAP_InitiatingMessage, _asn_ctx),
 	asn_MAP_InitiatingMessage_tag2el_1,
 	3,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */

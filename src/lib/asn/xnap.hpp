@@ -13,6 +13,10 @@
 namespace asn::xnap
 {
 
+ASN_XNAP_XnAP_PDU *XnapPduFromPduDescription(ASN_XNAP_InitiatingMessage *desc);
+ASN_XNAP_XnAP_PDU *XnapPduFromPduDescription(ASN_XNAP_SuccessfulOutcome *desc);
+ASN_XNAP_XnAP_PDU *XnapPduFromPduDescription(ASN_XNAP_UnsuccessfulOutcome *desc);
+
 int GetPduDescription(XnapMessageType messageType);
 int GetProcedureCode(XnapMessageType messageType);
 int GetProcedureCriticality(XnapMessageType messageType);

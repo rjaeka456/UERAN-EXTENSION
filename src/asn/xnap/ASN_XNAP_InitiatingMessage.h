@@ -77,7 +77,7 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum InitiatingMessage__value_PR {
+typedef enum ASN_XNAP_InitiatingMessage__value_PR {
 	InitiatingMessage__value_PR_NOTHING,	/* No components present */
 	InitiatingMessage__value_PR_HandoverRequest,
 	InitiatingMessage__value_PR_RetrieveUEContextRequest,
@@ -106,15 +106,15 @@ typedef enum InitiatingMessage__value_PR {
 	InitiatingMessage__value_PR_NotificationControlIndication,
 	InitiatingMessage__value_PR_ActivityNotification,
 	InitiatingMessage__value_PR_SecondaryRATDataUsageReport
-} InitiatingMessage__value_PR;
+} ASN_XNAP_InitiatingMessage__value_PR;
 
 /* InitiatingMessage */
-typedef struct InitiatingMessage {
+typedef struct ASN_XNAP_InitiatingMessage {
 	ProcedureCode_t	 procedureCode;
 	Criticality_t	 criticality;
-	struct InitiatingMessage__value {
-		InitiatingMessage__value_PR present;
-		union InitiatingMessage__value_u {
+	struct ASN_XNAP_InitiatingMessage__value {
+        ASN_XNAP_InitiatingMessage__value_PR present;
+		union ASN_XNAP_InitiatingMessage__value_u {
 //			HandoverRequest_t	 HandoverRequest;
 //			RetrieveUEContextRequest_t	 RetrieveUEContextRequest;
 //			SNodeAdditionRequest_t	 SNodeAdditionRequest;
