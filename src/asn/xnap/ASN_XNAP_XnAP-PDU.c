@@ -10,6 +10,7 @@
 #include "ASN_XNAP_InitiatingMessage.h"
 #include "ASN_XNAP_SuccessfulOutcome.h"
 #include "ASN_XNAP_UnsuccessfulOutcome.h"
+
 static asn_per_constraints_t asn_PER_type_XnAP_PDU_constr_1 CC_NOTUSED = {
 	{ APC_CONSTRAINED | APC_EXTENSIBLE,  2,  2,  0,  2 }	/* (0..2,...) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
