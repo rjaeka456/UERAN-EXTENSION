@@ -19,27 +19,27 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum XnAP_PDU_PR {
+typedef enum ASN_XNAP_XnAP_PDU_PR {
 	XnAP_PDU_PR_NOTHING,	/* No components present */
-	XnAP_PDU_PR_initiatingMessage,
-	XnAP_PDU_PR_successfulOutcome,
-	XnAP_PDU_PR_unsuccessfulOutcome
+    ASN_XNAP_XnAP_PDU_PR_initiatingMessage,
+    ASN_XNAP_XnAP_PDU_PR_successfulOutcome,
+    ASN_XNAP_XnAP_PDU_PR_unsuccessfulOutcome
 	/* Extensions may appear below */
 	
-} XnAP_PDU_PR;
+} ASN_XNAP_XnAP_PDU_PR;
 
 /* Forward declarations */
-struct InitiatingMessage;
-struct SuccessfulOutcome;
-struct UnsuccessfulOutcome;
+struct ASN_XNAP_InitiatingMessage;
+struct ASN_XNAP_SuccessfulOutcome;
+struct ASN_XNAP_UnsuccessfulOutcome;
 
 /* XnAP-PDU */
 typedef struct ASN_XNAP_XnAP_PDU {
-	XnAP_PDU_PR present;
+    ASN_XNAP_XnAP_PDU_PR present;
 	union ASN_XNAP_XnAP_PDU_u {
-		struct InitiatingMessage	*initiatingMessage;
-		struct SuccessfulOutcome	*successfulOutcome;
-		struct UnsuccessfulOutcome	*unsuccessfulOutcome;
+		struct ASN_XNAP_InitiatingMessage	*initiatingMessage;
+		struct ASN_XNAP_SuccessfulOutcome	*successfulOutcome;
+		struct ASN_XNAP_UnsuccessfulOutcome	*unsuccessfulOutcome;
 		/*
 		 * This type is extensible,
 		 * possible extensions are below.
@@ -48,7 +48,7 @@ typedef struct ASN_XNAP_XnAP_PDU {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} XnAP_PDU_t;
+} ASN_XNAP_XnAP_PDU_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_XnAP_PDU;

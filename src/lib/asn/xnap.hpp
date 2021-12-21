@@ -24,7 +24,20 @@ int GetProcedurePresent(XnapMessageType messageType);
 
 void *NewDescFromMessageType(XnapMessageType type, void *&pOutDescription);
 
+template <typename TMessage>
+inline void AddProtocolIe(TMessage &msg, typename XnapMessageToIeType<TMessage>::value *element)
+{
+    ASN_SEQUENCE_ADD(&msg.protocolIEs.list, element);
 
+    // Protocol IE fields must be sorted according to ASN definition order.
+    // Using 'present' here because it is consistent with ASN definition order;
+    // This is not a constant-time operation.
+    std::stable_sort(
+        msg.protocolIEs.list.array, msg.protocolIEs.list.array + msg.protocolIEs.list.count,
+        [](typename XnapMessageToIeType<TMessage>::value *a, typename XnapMessageToIeType<TMessage>::value *b) {
+            return a->value.present < b->value.present;
+        });
+}
 
 template <typename T>
 inline ASN_XNAP_XnAP_PDU *NewMessagePdu(std::vector<typename XnapMessageToIeType<T>::value *> ies)

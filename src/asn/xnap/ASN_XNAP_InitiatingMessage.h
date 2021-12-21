@@ -124,7 +124,7 @@ typedef struct ASN_XNAP_InitiatingMessage {
 //			SNodeReleaseRequired_t	 SNodeReleaseRequired;
 //			SNodeChangeRequired_t	 SNodeChangeRequired;
 //			XnRemovalRequest_t	 XnRemovalRequest;
-			XnSetupRequest_t	 XnSetupRequest;
+            ASN_XNAP_XnSetupRequest_t	 XnSetupRequest;
 //			NGRANNodeConfigurationUpdate_t	 NGRANNodeConfigurationUpdate;
 //			E_UTRA_NR_CellResourceCoordinationRequest_t	 E_UTRA_NR_CellResourceCoordinationRequest;
 //			CellActivationRequest_t	 CellActivationRequest;
@@ -150,7 +150,7 @@ typedef struct ASN_XNAP_InitiatingMessage {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} InitiatingMessage_t;
+} ASN_XNAP_InitiatingMessage_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_InitiatingMessage;

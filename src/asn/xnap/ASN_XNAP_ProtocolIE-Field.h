@@ -25,17 +25,25 @@ extern "C" {
 #endif
 
    /* Dependencies */
-   typedef enum ProtocolIE_Field_5957P0__value_PR {
+   typedef enum ASN_XNAP_ProtocolIE_Field_5957P0__value_PR {
        ProtocolIE_Field_5957P0__value_PR_NOTHING,	/* No components present */
 
-   } ProtocolIE_Field_5957P0__value_PR;
+   } ASN_XNAP_ProtocolIE_Field_5957P0__value_PR;
+   typedef enum ASN_XNAP_XnSetupRequestIEs__value_PR {
+       ASN_XNAP_XnSetupRequestIEs__value_PR_NOTHING,	/* No components present */
+       ASN_XNAP_XnSetupRequestIEs__value_PR_GlobalRANNodeID,
+       ASN_XNAP_XnSetupRequestIEs__value_PR_RANNodeName,
+       ASN_XNAP_XnSetupRequestIEs__value_PR_SupportedTAList,
+       ASN_XNAP_XnSetupRequestIEs__value_PR_PagingDRX,
+       ASN_NGAP_NGSetupRequestIEs__value_PR_UERetentionInformation
+   } ASN_XNAP_XnSetupRequestIEs__value_PR;
 
-   /* ProtocolIE-Field */
+   /* ASN_XNAP_ProtocolIE-Field */
    typedef struct ProtocolIE_Field_5957P0 {
-       ProtocolIE_ID_t	 id;
-       Criticality_t	 criticality;
+       ASN_XNAP_ProtocolIE_ID_t	 id;
+       ASN_XNAP_Criticality_t	 criticality;
        struct ProtocolIE_Field_5957P0__value {
-           ProtocolIE_Field_5957P0__value_PR present;
+           ASN_XNAP_ProtocolIE_Field_5957P0__value_PR present;
            union ProtocolIE_Field_5957P0__value_u {
            } choice;
 
@@ -45,7 +53,27 @@ extern "C" {
 
        /* Context for parsing across buffer boundaries */
        asn_struct_ctx_t _asn_ctx;
-   } ProtocolIE_Field_5957P0_t;
+   } ASN_XNAP_ProtocolIE_Field_5957P0_t;
+   typedef struct ASN_XNAP_XnSetupRequestIEs {
+       ASN_XNAP_ProtocolIE_ID_t	 id;
+       ASN_XNAP_Criticality_t	 criticality;
+       struct ASN_XNAP_XnSetupRequestIEs__value {
+           ASN_XNAP_XnSetupRequestIEs__value_PR present;
+           union ASN_XNAP_XnSetupRequestIEs__ASN_XNAP_value_u {
+               ASN_NGAP_GlobalRANNodeID_t	 GlobalRANNodeID;
+               ASN_NGAP_RANNodeName_t	 RANNodeName;
+               ASN_NGAP_SupportedTAList_t	 SupportedTAList;
+               ASN_NGAP_PagingDRX_t	 PagingDRX;
+               ASN_NGAP_UERetentionInformation_t	 UERetentionInformation;
+           } choice;
+
+           /* Context for parsing across buffer boundaries */
+           asn_struct_ctx_t _asn_ctx;
+       } value;
+
+       /* Context for parsing across buffer boundaries */
+       asn_struct_ctx_t _asn_ctx;
+   } ASN_XNAP_XnSetupRequestIEs_t;
 
    /* Implementation */
    extern asn_TYPE_descriptor_t asn_DEF_ProtocolIE_Field_5957P0;

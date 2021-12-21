@@ -51,4 +51,10 @@ struct XnapMessageToIeType
 {
     typedef typename std::remove_reference<decltype(*T{}.protocolIEs.list.array[0])>::type value;
 };
+
+template <typename T>
+struct XnapMessageToIeUnionType
+{
+    typedef decltype(typename XnapMessageToIeType<T>::value{}.value.choice) value;
+};
 } // namespace asn:xnap

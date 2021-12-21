@@ -90,15 +90,15 @@ typedef enum UnsuccessfulOutcome__value_PR {
 	UnsuccessfulOutcome__value_PR_XnSetupFailure,
 	UnsuccessfulOutcome__value_PR_NGRANNodeConfigurationUpdateFailure,
 	UnsuccessfulOutcome__value_PR_CellActivationFailure
-} UnsuccessfulOutcome__value_PR;
+} ASN_XNAP_UnsuccessfulOutcome__value_PR;
 
 /* UnsuccessfulOutcome */
-typedef struct UnsuccessfulOutcome {
-	ProcedureCode_t	 procedureCode;
-	Criticality_t	 criticality;
-	struct UnsuccessfulOutcome__value {
-		UnsuccessfulOutcome__value_PR present;
-		union UnsuccessfulOutcome__value_u {
+typedef struct ASN_XNAP_UnsuccessfulOutcome {
+    ASN_XNAP_ProcedureCode_t	 procedureCode;
+    ASN_XNAP_Criticality_t	 criticality;
+	struct ASN_XNAP_UnsuccessfulOutcome__value {
+        ASN_XNAP_UnsuccessfulOutcome__value_PR present;
+		union ASN_XNAP_UnsuccessfulOutcome__value_u {
 //			HandoverPreparationFailure_t	 HandoverPreparationFailure;
 //			RetrieveUEContextFailure_t	 RetrieveUEContextFailure;
 //			SNodeAdditionRequestReject_t	 SNodeAdditionRequestReject;
@@ -107,7 +107,7 @@ typedef struct UnsuccessfulOutcome {
 //			SNodeReleaseReject_t	 SNodeReleaseReject;
 //			SNodeChangeRefuse_t	 SNodeChangeRefuse;
 //			XnRemovalFailure_t	 XnRemovalFailure;
-			XnSetupFailure_t	 XnSetupFailure;
+            ASN_XNAP_XnSetupFailure_t	 XnSetupFailure;
 //			NGRANNodeConfigurationUpdateFailure_t	 NGRANNodeConfigurationUpdateFailure;
 //			CellActivationFailure_t	 CellActivationFailure;
 		} choice;
@@ -118,12 +118,12 @@ typedef struct UnsuccessfulOutcome {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} UnsuccessfulOutcome_t;
+} ASN_XNAP_UnsuccessfulOutcome_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_UnsuccessfulOutcome;
-extern asn_SEQUENCE_specifics_t asn_SPC_UnsuccessfulOutcome_specs_1;
-extern asn_TYPE_member_t asn_MBR_UnsuccessfulOutcome_1[3];
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_UnsuccessfulOutcome;
+extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_UnsuccessfulOutcome_specs_1;
+extern asn_TYPE_member_t asn_MBR_ASN_XNAP_UnsuccessfulOutcome_1[3];
 
 #ifdef __cplusplus
 }

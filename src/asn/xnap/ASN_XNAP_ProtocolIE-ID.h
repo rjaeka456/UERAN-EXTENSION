@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
    /* ProtocolIE-ID */
-   typedef long	 ProtocolIE_ID_t;
+   typedef long	 ASN_XNAP_ProtocolIE_ID_t;
 
    /* Implementation */
    extern asn_per_constraints_t asn_PER_type_ProtocolIE_ID_constr_1;

@@ -19,11 +19,11 @@ extern "C" {
 #endif
 
    /* Dependencies */
-   typedef enum Criticality {
+   typedef enum ASN_XNAP_Criticality {
        Criticality_reject	= 0,
        Criticality_ignore	= 1,
        Criticality_notify	= 2
-   } e_Criticality;
+   } e_ASN_XNAP_Criticality;
 
    /* Criticality */
    typedef long	 ASN_XNAP_Criticality_t;

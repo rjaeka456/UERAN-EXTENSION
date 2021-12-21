@@ -2,8 +2,29 @@
 #include "utils.hpp"
 #include "utils/common.hpp"
 
+#include <algorithm>
+#include <functional>
+#include <exception>
+#include <stdexcept>
+
+#include <asn/xnap/ASN_XNAP_InitiatingMessage.h>
+#include <asn/xnap/ASN_XNAP_SuccessfulOutcome.h>
+#include <asn/xnap/ASN_XNAP_UnsuccessfulOutcome.h>
+#include <asn/xnap/ASN_XNAP_XnAP-PDU.h>
+#include <asn/xnap/ASN_XNAP_XnSetupFailure.h>
+#include <asn/xnap/ASN_XNAP_XnSetupRequest.h>
+#include <asn/xnap/ASN_XNAP_XnSetupResponse.h>
+
 namespace asn::xnap
 {
+
+ASN_XNAP_XnAP_PDU *XnapPduFromPduDescription(ASN_XNAP_InitiatingMessage *desc)
+{
+    auto pdu = asn::New<ASN_XNAP_XnAP_PDU>();
+    pdu->present = ASN_XNAP_XnAP_PDU_PR_initiatingMessage;
+    pdu->choice.initiatingMessage = desc;
+    return pdu;
+}
 
 int GetPduDescription(XnapMessageType messageType)
 {
@@ -108,7 +129,7 @@ void *NewDescFromMessageType(XnapMessageType type, void *&pOutDescription)
 
     if (pduDescription == 0)
     {
-        auto *desc = asn::New<ASN_XNAP_InitiatingMessage>();
+        ASN_XNAP_InitiatingMessage* desc = asn::New<ASN_XNAP_InitiatingMessage>();
         desc->procedureCode = GetProcedureCode(type);
         desc->criticality = GetProcedureCriticality(type);
         desc->value.present = static_cast<ASN_XNAP_InitiatingMessage__value_PR>(GetProcedurePresent(type));
@@ -255,7 +276,7 @@ void *NewDescFromMessageType(XnapMessageType type, void *&pOutDescription)
         switch (type)
         {
         case XnapMessageType::XnSetupFailure:
-            return &desc->value.choice.NGSetupFailure;
+            return &desc->value.choice.XnSetupFailure;
         default:
             assert(false);
             break;
@@ -265,4 +286,32 @@ void *NewDescFromMessageType(XnapMessageType type, void *&pOutDescription)
     assert(false);
     return nullptr;
 }
+int GetProcedureCode(XnapMessageType messageType)
+{
+    switch (messageType)
+    {
+    case XnapMessageType::XnSetupFailure:
+    case XnapMessageType::XnSetupRequest:
+    case XnapMessageType::XnSetupResponse:
+        return 0;
+    default:
+        assert(false);
+        break;
+    }
+
+    return 0;
+}
+int GetProcedureCriticality(XnapMessageType messageType)
+{
+    switch (messageType)
+    {
+    case XnapMessageType::XnSetupFailure:
+    case XnapMessageType::XnSetupRequest:
+    case XnapMessageType::XnSetupResponse:
+        return 0;
+    default:
+        return 2;
+    }
+}
+
 } // namespace asn:xnap

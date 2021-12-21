@@ -107,9 +107,9 @@ static const asn_ioc_cell_t asn_IOS_XNAP_ELEMENTARY_PROCEDURES_1_rows[] = {
 //	{ "&UnsuccessfulOutcome", aioc__type, &asn_DEF_XnRemovalFailure },
 	{ "&procedureCode", aioc__value, &asn_DEF_ProcedureCode, &asn_VAL_9_id_xnRemoval },
 	{ "&criticality", aioc__value, &asn_DEF_Criticality, &asn_VAL_9_reject },
-	{ "&InitiatingMessage", aioc__type, &asn_DEF_XnSetupRequest },
-	{ "&SuccessfulOutcome", aioc__type, &asn_DEF_XnSetupResponse },
-	{ "&UnsuccessfulOutcome", aioc__type, &asn_DEF_XnSetupFailure },
+	{ "&InitiatingMessage", aioc__type, &asn_DEF_ASN_XNAP_XnSetupRequest },
+	{ "&SuccessfulOutcome", aioc__type, &asn_DEF_ASN_XNAP_XnSetupResponse },
+	{ "&UnsuccessfulOutcome", aioc__type, &asn_DEF_ASN_XNAP_XnSetupFailure },
 	{ "&procedureCode", aioc__value, &asn_DEF_ProcedureCode, &asn_VAL_10_id_xnSetup },
 	{ "&criticality", aioc__value, &asn_DEF_Criticality, &asn_VAL_10_reject },
 //	{ "&InitiatingMessage", aioc__type, &asn_DEF_NGRANNodeConfigurationUpdate },
@@ -233,7 +233,7 @@ select_SuccessfulOutcome_criticality_type(const asn_TYPE_descriptor_t *parent_ty
 	size_t constraining_column = 3; /* &procedureCode */
 	size_t for_column = 4; /* &criticality */
 	size_t row;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct SuccessfulOutcome, procedureCode));
+	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct ASN_XNAP_SuccessfulOutcome, procedureCode));
 	
 	for(row=0; row < itable->rows_count; row++) {
 	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
@@ -275,7 +275,7 @@ select_SuccessfulOutcome_value_type(const asn_TYPE_descriptor_t *parent_type, co
 	size_t constraining_column = 3; /* &procedureCode */
 	size_t for_column = 1; /* &SuccessfulOutcome */
 	size_t row;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct SuccessfulOutcome, procedureCode));
+	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct ASN_XNAP_SuccessfulOutcome, procedureCode));
 	
 	for(row=0; row < itable->rows_count; row++) {
 	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
@@ -407,10 +407,10 @@ static asn_TYPE_member_t asn_MBR_value_4[] = {
 //		0, 0, /* No default value */
 //		"XnRemovalResponse"
 //		},
-	{ ATF_NOFLAGS, 0, offsetof(struct SuccessfulOutcome__value, choice.XnSetupResponse),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_SuccessfulOutcome__value, choice.XnSetupResponse),
 		(ASN_TAG_CLASS_UNIVERSAL | (16 << 2)),
 		0,
-		&asn_DEF_XnSetupResponse,
+		&asn_DEF_ASN_XNAP_XnSetupResponse,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
@@ -470,10 +470,10 @@ static const asn_TYPE_tag2member_t asn_MAP_value_tag2el_4[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (16 << 2)), 13, -13, 0 } /* ResetResponse */
 };
 static asn_CHOICE_specifics_t asn_SPC_value_specs_4 = {
-	sizeof(struct SuccessfulOutcome__value),
-	offsetof(struct SuccessfulOutcome__value, _asn_ctx),
-	offsetof(struct SuccessfulOutcome__value, present),
-	sizeof(((struct SuccessfulOutcome__value *)0)->present),
+	sizeof(struct ASN_XNAP_SuccessfulOutcome__value),
+	offsetof(struct ASN_XNAP_SuccessfulOutcome__value, _asn_ctx),
+	offsetof(struct ASN_XNAP_SuccessfulOutcome__value, present),
+	sizeof(((struct ASN_XNAP_SuccessfulOutcome__value *)0)->present),
 	asn_MAP_value_tag2el_4,
 	14,	/* Count of tags in the map */
 	0, 0,
@@ -495,7 +495,7 @@ asn_TYPE_descriptor_t asn_DEF_value_4 = {
 };
 
 asn_TYPE_member_t asn_MBR_SuccessfulOutcome_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct SuccessfulOutcome, procedureCode),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_SuccessfulOutcome, procedureCode),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProcedureCode,
@@ -504,7 +504,7 @@ asn_TYPE_member_t asn_MBR_SuccessfulOutcome_1[] = {
 		0, 0, /* No default value */
 		"procedureCode"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct SuccessfulOutcome, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_SuccessfulOutcome, criticality),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_Criticality,
@@ -513,7 +513,7 @@ asn_TYPE_member_t asn_MBR_SuccessfulOutcome_1[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct SuccessfulOutcome, value),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_SuccessfulOutcome, value),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_value_4,
@@ -532,8 +532,8 @@ static const asn_TYPE_tag2member_t asn_MAP_SuccessfulOutcome_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* value */
 };
 asn_SEQUENCE_specifics_t asn_SPC_SuccessfulOutcome_specs_1 = {
-	sizeof(struct SuccessfulOutcome),
-	offsetof(struct SuccessfulOutcome, _asn_ctx),
+	sizeof(struct ASN_XNAP_SuccessfulOutcome),
+	offsetof(struct ASN_XNAP_SuccessfulOutcome, _asn_ctx),
 	asn_MAP_SuccessfulOutcome_tag2el_1,
 	3,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */

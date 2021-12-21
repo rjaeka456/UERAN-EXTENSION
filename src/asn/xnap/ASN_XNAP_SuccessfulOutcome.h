@@ -93,15 +93,15 @@ typedef enum SuccessfulOutcome__value_PR {
 	SuccessfulOutcome__value_PR_E_UTRA_NR_CellResourceCoordinationResponse,
 	SuccessfulOutcome__value_PR_CellActivationResponse,
 	SuccessfulOutcome__value_PR_ResetResponse
-} SuccessfulOutcome__value_PR;
+} ASN_XNAP_SuccessfulOutcome__value_PR;
 
 /* SuccessfulOutcome */
-typedef struct SuccessfulOutcome {
-	ProcedureCode_t	 procedureCode;
-	Criticality_t	 criticality;
-	struct SuccessfulOutcome__value {
-		SuccessfulOutcome__value_PR present;
-		union SuccessfulOutcome__value_u {
+typedef struct ASN_XNAP_SuccessfulOutcome {
+	ASN_XNAP_ProcedureCode_t	 procedureCode;
+    ASN_XNAP_Criticality_t	 criticality;
+	struct ASN_XNAP_SuccessfulOutcome__value {
+        ASN_XNAP_SuccessfulOutcome__value_PR present;
+		union ASN_XNAP_SuccessfulOutcome__value_u {
 //			HandoverRequestAcknowledge_t	 HandoverRequestAcknowledge;
 //			RetrieveUEContextResponse_t	 RetrieveUEContextResponse;
 //			SNodeAdditionRequestAcknowledge_t	 SNodeAdditionRequestAcknowledge;
@@ -111,7 +111,7 @@ typedef struct SuccessfulOutcome {
 //			SNodeReleaseConfirm_t	 SNodeReleaseConfirm;
 //			SNodeChangeConfirm_t	 SNodeChangeConfirm;
 //			XnRemovalResponse_t	 XnRemovalResponse;
-			XnSetupResponse_t	 XnSetupResponse;
+            ASN_XNAP_XnSetupResponse_t	 XnSetupResponse;
 //			NGRANNodeConfigurationUpdateAcknowledge_t	 NGRANNodeConfigurationUpdateAcknowledge;
 //			E_UTRA_NR_CellResourceCoordinationResponse_t	 E_UTRA_NR_CellResourceCoordinationResponse;
 //			CellActivationResponse_t	 CellActivationResponse;
@@ -124,7 +124,7 @@ typedef struct SuccessfulOutcome {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} SuccessfulOutcome_t;
+} ASN_XNAP_SuccessfulOutcome_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_SuccessfulOutcome;

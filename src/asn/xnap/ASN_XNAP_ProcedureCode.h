@@ -33,6 +33,7 @@ xer_type_decoder_f ProcedureCode_decode_xer;
 xer_type_encoder_f ProcedureCode_encode_xer;
 per_type_decoder_f ProcedureCode_decode_uper;
 per_type_encoder_f ProcedureCode_encode_uper;
+#define ASN_XNAP_ProcedureCode_id_XNSetup	((ASN_XNAP_ProcedureCode_t)0)
 
 #ifdef __cplusplus
 }

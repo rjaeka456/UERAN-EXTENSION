@@ -20,7 +20,7 @@ extern "C" {
 #endif
 
    /* Forward declarations */
-   struct ProtocolIE_Field;
+   struct ASN_XNAP_ProtocolIE_Field;
 
    /* ProtocolIE-Container */
    typedef struct ProtocolIE_Container_5952P0 {
@@ -28,10 +28,10 @@ extern "C" {
 
        /* Context for parsing across buffer boundaries */
        asn_struct_ctx_t _asn_ctx;
-   } ProtocolIE_Container_5952P0_t;
+   } ASN_XNAP_ProtocolIE_Container_5952P0_t;
 
    /* Implementation */
-   extern asn_TYPE_descriptor_t asn_DEF_ProtocolIE_Container_5952P0;
+   extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_ProtocolIE_Container_5952P0;
    extern asn_SET_OF_specifics_t asn_SPC_ProtocolIE_Container_5952P0_specs_1;
    extern asn_TYPE_member_t asn_MBR_ProtocolIE_Container_5952P0_1[1];
    extern asn_per_constraints_t asn_PER_type_ProtocolIE_Container_5952P0_constr_1;

@@ -416,7 +416,6 @@ select_InitiatingMessage_ASN_NGAP_criticality_type(const asn_TYPE_descriptor_t *
 	size_t for_column = 4; /* &criticality */
 	size_t row, presence_index = 0;
 	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct ASN_NGAP_InitiatingMessage, procedureCode));
-	
 	for(row=0; row < itable->rows_count; row++) {
 	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
 	    const asn_ioc_cell_t *type_cell = &itable->rows[row * itable->columns_count + for_column];

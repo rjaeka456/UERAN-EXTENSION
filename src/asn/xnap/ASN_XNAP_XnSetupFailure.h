@@ -20,8 +20,8 @@ extern "C" {
 #endif
 
 /* XnSetupFailure */
-typedef struct XnSetupFailure {
-	ProtocolIE_Container_5952P0_t	 protocolIEs;
+typedef struct ASN_XNAP_XnSetupFailure {
+    ASN_XNAP_ProtocolIE_Container_5952P0_t	 protocolIEs;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -29,12 +29,12 @@ typedef struct XnSetupFailure {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} XnSetupFailure_t;
+} ASN_XNAP_XnSetupFailure_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_XnSetupFailure;
-extern asn_SEQUENCE_specifics_t asn_SPC_XnSetupFailure_specs_1;
-extern asn_TYPE_member_t asn_MBR_XnSetupFailure_1[1];
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_XnSetupFailure;
+extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_XnSetupFailure_specs_1;
+extern asn_TYPE_member_t asn_MBR_ASN_XNAP_XnSetupFailure_1[1];
 
 #ifdef __cplusplus
 }
