@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "E-UTRAARFCN.h"
-#include "E-UTRATransmissionBandwidth.h"
+#include "ASN_XNAP_E-UTRAARFCN.h"
+#include "ASN_XNAP_E-UTRATransmissionBandwidth.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -21,15 +21,15 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* ServedCellInformation-E-UTRA-FDDInfo */
-typedef struct ServedCellInformation_E_UTRA_FDDInfo {
-	E_UTRAARFCN_t	 ul_earfcn;
-	E_UTRAARFCN_t	 dl_earfcn;
-	E_UTRATransmissionBandwidth_t	 ul_e_utraTxBW;
-	E_UTRATransmissionBandwidth_t	 dl_e_utraTxBW;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_ServedCellInformation_E_UTRA_FDDInfo {
+    ASN_XNAP_E_UTRAARFCN_t	 ul_earfcn;
+    ASN_XNAP_E_UTRAARFCN_t	 dl_earfcn;
+    ASN_XNAP_E_UTRATransmissionBandwidth_t	 ul_e_utraTxBW;
+    ASN_XNAP_E_UTRATransmissionBandwidth_t	 dl_e_utraTxBW;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -37,12 +37,12 @@ typedef struct ServedCellInformation_E_UTRA_FDDInfo {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} ServedCellInformation_E_UTRA_FDDInfo_t;
+} ASN_XNAP_ServedCellInformation_E_UTRA_FDDInfo_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_ServedCellInformation_E_UTRA_FDDInfo;
-extern asn_SEQUENCE_specifics_t asn_SPC_ServedCellInformation_E_UTRA_FDDInfo_specs_1;
-extern asn_TYPE_member_t asn_MBR_ServedCellInformation_E_UTRA_FDDInfo_1[5];
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_ServedCellInformation_E_UTRA_FDDInfo;
+extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_ServedCellInformation_E_UTRA_FDDInfo_specs_1;
+extern asn_TYPE_member_t asn_MBR_ASN_XNAP_ServedCellInformation_E_UTRA_FDDInfo_1[5];
 
 #ifdef __cplusplus
 }
