@@ -5,14 +5,14 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "GlobalgNB-ID.h"
+#include "ASN_XNAP_GlobalgNB-ID.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_GlobalgNB_ID_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct GlobalgNB_ID, plmn_id),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_PLMN_Identity,
+		&asn_DEF_ASN_XNAP_PLMN_Identity,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
@@ -21,7 +21,7 @@ asn_TYPE_member_t asn_MBR_GlobalgNB_ID_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct GlobalgNB_ID, gnb_id),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		+1,	/* EXPLICIT tag at current level */
-		&asn_DEF_GNB_ID_Choice,
+		&asn_DEF_ASN_XNAP_GNB_ID_Choice,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
@@ -30,7 +30,7 @@ asn_TYPE_member_t asn_MBR_GlobalgNB_ID_1[] = {
 	{ ATF_POINTER, 1, offsetof(struct GlobalgNB_ID, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ProtocolExtensionContainer_6001P0,
+		&asn_DEF_ASN_XNAP_ProtocolExtensionContainer_6001P0,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
@@ -41,21 +41,21 @@ static const int asn_MAP_GlobalgNB_ID_oms_1[] = { 2 };
 static const ber_tlv_tag_t asn_DEF_GlobalgNB_ID_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_GlobalgNB_ID_tag2el_1[] = {
+static const asn_TYPE_tag2member_t asn_MAP_ASN_XNAP_GlobalgNB_ID_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* plmn-id */
     { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* gnb-id */
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_GlobalgNB_ID_specs_1 = {
-	sizeof(struct GlobalgNB_ID),
-	offsetof(struct GlobalgNB_ID, _asn_ctx),
-	asn_MAP_GlobalgNB_ID_tag2el_1,
+	sizeof(struct ASN_XNAP_GlobalgNB_ID),
+	offsetof(struct ASN_XNAP_GlobalgNB_ID, _asn_ctx),
+	asn_MAP_ASN_XNAP_GlobalgNB_ID_tag2el_1,
 	3,	/* Count of tags in the map */
-	asn_MAP_GlobalgNB_ID_oms_1,	/* Optional members */
+	asn_MAP_ASN_XNAP_GlobalgNB_ID_oms_1,	/* Optional members */
 	1, 0,	/* Root/Additions */
 	3,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_GlobalgNB_ID = {
+asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_GlobalgNB_ID = {
 	"GlobalgNB-ID",
 	"GlobalgNB-ID",
 	&asn_OP_SEQUENCE,
