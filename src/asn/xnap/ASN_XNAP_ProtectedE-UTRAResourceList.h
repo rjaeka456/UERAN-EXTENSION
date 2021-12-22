@@ -20,15 +20,15 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtectedE_UTRAResource_Item;
+struct ASN_XNAP_ProtectedE_UTRAResource_Item;
 
 /* ProtectedE-UTRAResourceList */
-typedef struct ProtectedE_UTRAResourceList {
-	A_SEQUENCE_OF(struct ProtectedE_UTRAResource_Item) list;
+typedef struct ASN_XNAP_ProtectedE_UTRAResourceList {
+	A_SEQUENCE_OF(struct ASN_XNAP_ProtectedE_UTRAResource_Item) list;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} ProtectedE_UTRAResourceList_t;
+} ASN_XNAP_ProtectedE_UTRAResourceList_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_ProtectedE_UTRAResourceList;

@@ -19,17 +19,17 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum NumberOfAntennaPorts_E_UTRA {
-	NumberOfAntennaPorts_E_UTRA_an1	= 0,
-	NumberOfAntennaPorts_E_UTRA_an2	= 1,
-	NumberOfAntennaPorts_E_UTRA_an4	= 2
+typedef enum ASN_XNAP_NumberOfAntennaPorts_E_UTRA {
+    ASN_XNAP_NumberOfAntennaPorts_E_UTRA_an1	= 0,
+    ASN_XNAP_NumberOfAntennaPorts_E_UTRA_an2	= 1,
+    ASN_XNAP_NumberOfAntennaPorts_E_UTRA_an4	= 2
 	/*
 	 * Enumeration is extensible
 	 */
-} e_NumberOfAntennaPorts_E_UTRA;
+} e_ASN_XNAP_NumberOfAntennaPorts_E_UTRA;
 
 /* NumberOfAntennaPorts-E-UTRA */
-typedef long	 NumberOfAntennaPorts_E_UTRA_t;
+typedef long	 ASN_XNAP_NumberOfAntennaPorts_E_UTRA_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_NumberOfAntennaPorts_E_UTRA_constr_1;

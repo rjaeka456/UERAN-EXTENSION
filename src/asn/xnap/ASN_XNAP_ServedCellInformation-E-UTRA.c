@@ -83,8 +83,8 @@ static const ber_tlv_tag_t asn_DEF_broadcastPLMNs_tags_6[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_SET_OF_specifics_t asn_SPC_broadcastPLMNs_specs_6 = {
-	sizeof(struct ServedCellInformation_E_UTRA__broadcastPLMNs),
-	offsetof(struct ServedCellInformation_E_UTRA__broadcastPLMNs, _asn_ctx),
+	sizeof(struct ASN_XNAP_ServedCellInformation_E_UTRA__broadcastPLMNs),
+	offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA__broadcastPLMNs, _asn_ctx),
 	0,	/* XER encoding is XMLDelimitedItemList */
 };
 static /* Use -fall-defs-global to expose */
@@ -181,43 +181,43 @@ asn_TYPE_descriptor_t asn_DEF_bandwidthReducedSI_17 = {
 };
 
 asn_TYPE_member_t asn_MBR_ServedCellInformation_E_UTRA_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct ServedCellInformation_E_UTRA, e_utra_pci),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA, e_utra_pci),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_E_UTRAPCI,
+		&asn_DEF_ASN_XNAP_E_UTRAPCI,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
 		"e-utra-pci"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct ServedCellInformation_E_UTRA, e_utra_cgi),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA, e_utra_cgi),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_E_UTRA_CGI,
+		&asn_DEF_ASN_XNAP_E_UTRA_CGI,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
 		"e-utra-cgi"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct ServedCellInformation_E_UTRA, tac),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA, tac),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_TAC,
+		&asn_DEF_ASN_XNAP_TAC,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
 		"tac"
 		},
-	{ ATF_POINTER, 1, offsetof(struct ServedCellInformation_E_UTRA, ranac),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA, ranac),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_RANAC,
+		&asn_DEF_ASN_XNAP_RANAC,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
 		"ranac"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct ServedCellInformation_E_UTRA, broadcastPLMNs),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA, broadcastPLMNs),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		0,
 		&asn_DEF_broadcastPLMNs_6,
@@ -226,16 +226,16 @@ asn_TYPE_member_t asn_MBR_ServedCellInformation_E_UTRA_1[] = {
 		0, 0, /* No default value */
 		"broadcastPLMNs"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct ServedCellInformation_E_UTRA, e_utra_mode_info),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA, e_utra_mode_info),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		+1,	/* EXPLICIT tag at current level */
-		&asn_DEF_ServedCellInformation_E_UTRA_ModeInfo,
+		&asn_DEF_ASN_XNAP_ServedCellInformation_E_UTRA_ModeInfo,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
 		"e-utra-mode-info"
 		},
-	{ ATF_POINTER, 8, offsetof(struct ServedCellInformation_E_UTRA, numberofAntennaPorts),
+	{ ATF_POINTER, 8, offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA, numberofAntennaPorts),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NumberOfAntennaPorts_E_UTRA,
@@ -244,34 +244,34 @@ asn_TYPE_member_t asn_MBR_ServedCellInformation_E_UTRA_1[] = {
 		0, 0, /* No default value */
 		"numberofAntennaPorts"
 		},
-	{ ATF_POINTER, 7, offsetof(struct ServedCellInformation_E_UTRA, prach_configuration),
+	{ ATF_POINTER, 7, offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA, prach_configuration),
 		(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_E_UTRAPRACHConfiguration,
+		&asn_DEF_ASN_XNAP_E_UTRAPRACHConfiguration,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
 		"prach-configuration"
 		},
-	{ ATF_POINTER, 6, offsetof(struct ServedCellInformation_E_UTRA, mBSFNsubframeInfo),
+	{ ATF_POINTER, 6, offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA, mBSFNsubframeInfo),
 		(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_MBSFNSubframeInfo_E_UTRA,
+		&asn_DEF_ASN_XNAP_MBSFNSubframeInfo_E_UTRA,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
 		"mBSFNsubframeInfo"
 		},
-	{ ATF_POINTER, 5, offsetof(struct ServedCellInformation_E_UTRA, multibandInfo),
+	{ ATF_POINTER, 5, offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA, multibandInfo),
 		(ASN_TAG_CLASS_CONTEXT | (9 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_E_UTRAMultibandInfoList,
+		&asn_DEF_ASN_XNAP_E_UTRAMultibandInfoList,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
 		"multibandInfo"
 		},
-	{ ATF_POINTER, 4, offsetof(struct ServedCellInformation_E_UTRA, freqBandIndicatorPriority),
+	{ ATF_POINTER, 4, offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA, freqBandIndicatorPriority),
 		(ASN_TAG_CLASS_CONTEXT | (10 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_freqBandIndicatorPriority_13,
@@ -280,7 +280,7 @@ asn_TYPE_member_t asn_MBR_ServedCellInformation_E_UTRA_1[] = {
 		0, 0, /* No default value */
 		"freqBandIndicatorPriority"
 		},
-	{ ATF_POINTER, 3, offsetof(struct ServedCellInformation_E_UTRA, bandwidthReducedSI),
+	{ ATF_POINTER, 3, offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA, bandwidthReducedSI),
 		(ASN_TAG_CLASS_CONTEXT | (11 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_bandwidthReducedSI_17,
@@ -289,19 +289,19 @@ asn_TYPE_member_t asn_MBR_ServedCellInformation_E_UTRA_1[] = {
 		0, 0, /* No default value */
 		"bandwidthReducedSI"
 		},
-	{ ATF_POINTER, 2, offsetof(struct ServedCellInformation_E_UTRA, protectedE_UTRAResourceIndication),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA, protectedE_UTRAResourceIndication),
 		(ASN_TAG_CLASS_CONTEXT | (12 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ProtectedE_UTRAResourceIndication,
+		&asn_DEF_ASN_XNAP_ProtectedE_UTRAResourceIndication,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
 		"protectedE-UTRAResourceIndication"
 		},
-	{ ATF_POINTER, 1, offsetof(struct ServedCellInformation_E_UTRA, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (13 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ProtocolExtensionContainer_6001P0,
+		&asn_DEF_ASN_XNAP_ProtocolExtensionContainer_6001P0,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
@@ -329,8 +329,8 @@ static const asn_TYPE_tag2member_t asn_MAP_ServedCellInformation_E_UTRA_tag2el_1
     { (ASN_TAG_CLASS_CONTEXT | (13 << 2)), 13, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_ServedCellInformation_E_UTRA_specs_1 = {
-	sizeof(struct ServedCellInformation_E_UTRA),
-	offsetof(struct ServedCellInformation_E_UTRA, _asn_ctx),
+	sizeof(struct ASN_XNAP_ServedCellInformation_E_UTRA),
+	offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA, _asn_ctx),
 	asn_MAP_ServedCellInformation_E_UTRA_tag2el_1,
 	14,	/* Count of tags in the map */
 	asn_MAP_ServedCellInformation_E_UTRA_oms_1,	/* Optional members */

@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "ServedCellInformation-E-UTRA-TDDInfo.h"
+#include "ASN_XNAP_ServedCellInformation-E-UTRA-TDDInfo.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 /*
  * This type is implemented using NativeEnumerated,
  * so here we adjust the DEF accordingly.
@@ -67,25 +67,25 @@ asn_TYPE_descriptor_t asn_DEF_subframeAssignmnet_4 = {
 };
 
 asn_TYPE_member_t asn_MBR_ServedCellInformation_E_UTRA_TDDInfo_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct ServedCellInformation_E_UTRA_TDDInfo, earfcn),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo, earfcn),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_E_UTRAARFCN,
+		&asn_DEF_ASN_XNAP_E_UTRAARFCN,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
 		"earfcn"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct ServedCellInformation_E_UTRA_TDDInfo, e_utraTxBW),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo, e_utraTxBW),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_E_UTRATransmissionBandwidth,
+		&asn_DEF_ASN_XNAP_E_UTRATransmissionBandwidth,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
 		"e-utraTxBW"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct ServedCellInformation_E_UTRA_TDDInfo, subframeAssignmnet),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo, subframeAssignmnet),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_subframeAssignmnet_4,
@@ -94,7 +94,7 @@ asn_TYPE_member_t asn_MBR_ServedCellInformation_E_UTRA_TDDInfo_1[] = {
 		0, 0, /* No default value */
 		"subframeAssignmnet"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct ServedCellInformation_E_UTRA_TDDInfo, specialSubframeInfo),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo, specialSubframeInfo),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_SpecialSubframeInfo_E_UTRA,
@@ -103,10 +103,10 @@ asn_TYPE_member_t asn_MBR_ServedCellInformation_E_UTRA_TDDInfo_1[] = {
 		0, 0, /* No default value */
 		"specialSubframeInfo"
 		},
-	{ ATF_POINTER, 1, offsetof(struct ServedCellInformation_E_UTRA_TDDInfo, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ProtocolExtensionContainer_6001P0,
+		&asn_DEF_ASN_XNAP_ProtocolExtensionContainer_6001P0,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
@@ -125,8 +125,8 @@ static const asn_TYPE_tag2member_t asn_MAP_ServedCellInformation_E_UTRA_TDDInfo_
     { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_ServedCellInformation_E_UTRA_TDDInfo_specs_1 = {
-	sizeof(struct ServedCellInformation_E_UTRA_TDDInfo),
-	offsetof(struct ServedCellInformation_E_UTRA_TDDInfo, _asn_ctx),
+	sizeof(struct ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo),
+	offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo, _asn_ctx),
 	asn_MAP_ServedCellInformation_E_UTRA_TDDInfo_tag2el_1,
 	5,	/* Count of tags in the map */
 	asn_MAP_ServedCellInformation_E_UTRA_TDDInfo_oms_1,	/* Optional members */

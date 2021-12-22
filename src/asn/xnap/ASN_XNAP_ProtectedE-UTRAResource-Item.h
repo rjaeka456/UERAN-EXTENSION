@@ -14,7 +14,7 @@
 /* Including external dependencies */
 #include <NativeEnumerated.h>
 #include <BIT_STRING.h>
-#include "ProtectedE-UTRAFootprintTimePattern.h"
+#include "ASN_XNAP_ProtectedE-UTRAFootprintTimePattern.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -22,25 +22,25 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum ProtectedE_UTRAResource_Item__resourceType {
-	ProtectedE_UTRAResource_Item__resourceType_downlinknonCRS	= 0,
-	ProtectedE_UTRAResource_Item__resourceType_cRS	= 1,
-	ProtectedE_UTRAResource_Item__resourceType_uplink	= 2
+typedef enum ASN_XNAP_ProtectedE_UTRAResource_Item__resourceType {
+    ASN_XNAP_ProtectedE_UTRAResource_Item__resourceType_downlinknonCRS	= 0,
+    ASN_XNAP_ProtectedE_UTRAResource_Item__resourceType_cRS	= 1,
+    ASN_XNAP_ProtectedE_UTRAResource_Item__resourceType_uplink	= 2
 	/*
 	 * Enumeration is extensible
 	 */
-} e_ProtectedE_UTRAResource_Item__resourceType;
+} e_ASN_XNAP_ProtectedE_UTRAResource_Item__resourceType;
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* ProtectedE-UTRAResource-Item */
-typedef struct ProtectedE_UTRAResource_Item {
+typedef struct ASN_XNAP_ProtectedE_UTRAResource_Item {
 	long	 resourceType;
 	BIT_STRING_t	 intra_PRBProtectedResourceFootprint;
 	BIT_STRING_t	 protectedFootprintFrequencyPattern;
-	ProtectedE_UTRAFootprintTimePattern_t	 protectedFootprintTimePattern;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+    ASN_XNAP_ProtectedE_UTRAFootprintTimePattern_t	 protectedFootprintTimePattern;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -48,7 +48,7 @@ typedef struct ProtectedE_UTRAResource_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} ProtectedE_UTRAResource_Item_t;
+} ASN_XNAP_ProtectedE_UTRAResource_Item_t;
 
 /* Implementation */
 /* extern asn_TYPE_descriptor_t asn_DEF_resourceType_2;	// (Use -fall-defs-global to expose) */

@@ -40,9 +40,9 @@ typedef struct ASN_XNAP_SpecialSubframeInfo_E_UTRA {
 } ASN_XNAP_SpecialSubframeInfo_E_UTRA_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_SpecialSubframeInfo_E_UTRA;
-extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_SpecialSubframeInfo_E_UTRA_specs_1;
-extern asn_TYPE_member_t asn_MBR_ASN_XNAP_SpecialSubframeInfo_E_UTRA_1[4];
+extern asn_TYPE_descriptor_t asn_DEF_SpecialSubframeInfo_E_UTRA;
+extern asn_SEQUENCE_specifics_t asn_SPC_SpecialSubframeInfo_E_UTRA_specs_1;
+extern asn_TYPE_member_t asn_MBR_SpecialSubframeInfo_E_UTRA_1[4];
 
 #ifdef __cplusplus
 }

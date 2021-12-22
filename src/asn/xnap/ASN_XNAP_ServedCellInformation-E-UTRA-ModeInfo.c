@@ -28,7 +28,7 @@ asn_TYPE_member_t asn_MBR_ASN_XNAP_ServedCellInformation_E_UTRA_ModeInfo_1[] = {
 	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA_ModeInfo, choice.tdd),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo,
+		&asn_DEF_ServedCellInformation_E_UTRA_TDDInfo,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */

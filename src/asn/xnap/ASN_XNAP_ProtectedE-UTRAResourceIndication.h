@@ -13,8 +13,8 @@
 
 /* Including external dependencies */
 #include "ASN_XNAP_ActivationSFN.h"
-#include "ProtectedE-UTRAResourceList.h"
-#include "MBSFNControlRegionLength.h"
+#include "ASN_XNAP_ProtectedE-UTRAResourceList.h"
+#include "ASN_XNAP_MBSFNControlRegionLength.h"
 #include <NativeInteger.h>
 #include <constr_SEQUENCE.h>
 
@@ -23,15 +23,15 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* ProtectedE-UTRAResourceIndication */
-typedef struct ProtectedE_UTRAResourceIndication {
-	ActivationSFN_t	 activationSFN;
-	ProtectedE_UTRAResourceList_t	 protectedResourceList;
-	MBSFNControlRegionLength_t	*mbsfnControlRegionLength	/* OPTIONAL */;
+typedef struct ASN_XNAP_ProtectedE_UTRAResourceIndication {
+    ASN_XNAP_ActivationSFN_t	 activationSFN;
+    ASN_XNAP_ProtectedE_UTRAResourceList_t	 protectedResourceList;
+    ASN_XNAP_MBSFNControlRegionLength_t	*mbsfnControlRegionLength	/* OPTIONAL */;
 	long	 pDCCHRegionLength;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -39,12 +39,12 @@ typedef struct ProtectedE_UTRAResourceIndication {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} ProtectedE_UTRAResourceIndication_t;
+} ASN_XNAP_ProtectedE_UTRAResourceIndication_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_ProtectedE_UTRAResourceIndication;
-extern asn_SEQUENCE_specifics_t asn_SPC_ProtectedE_UTRAResourceIndication_specs_1;
-extern asn_TYPE_member_t asn_MBR_ProtectedE_UTRAResourceIndication_1[5];
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_ProtectedE_UTRAResourceIndication;
+extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_ProtectedE_UTRAResourceIndication_specs_1;
+extern asn_TYPE_member_t asn_MBR_ASN_XNAP_ProtectedE_UTRAResourceIndication_1[5];
 
 #ifdef __cplusplus
 }

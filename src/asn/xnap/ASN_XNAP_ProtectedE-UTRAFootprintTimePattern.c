@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "ProtectedE-UTRAFootprintTimePattern.h"
+#include "ASN_XNAP_ProtectedE-UTRAFootprintTimePattern.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 static int
 memb_protectedFootprintTimeperiodicity_constraint_1(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
@@ -69,7 +69,7 @@ static asn_per_constraints_t asn_PER_memb_protectedFootrpintStartTime_constr_3 C
 	0, 0	/* No PER value map */
 };
 asn_TYPE_member_t asn_MBR_ProtectedE_UTRAFootprintTimePattern_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct ProtectedE_UTRAFootprintTimePattern, protectedFootprintTimeperiodicity),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ProtectedE_UTRAFootprintTimePattern, protectedFootprintTimeperiodicity),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NativeInteger,
@@ -78,7 +78,7 @@ asn_TYPE_member_t asn_MBR_ProtectedE_UTRAFootprintTimePattern_1[] = {
 		0, 0, /* No default value */
 		"protectedFootprintTimeperiodicity"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct ProtectedE_UTRAFootprintTimePattern, protectedFootrpintStartTime),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ProtectedE_UTRAFootprintTimePattern, protectedFootrpintStartTime),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NativeInteger,
@@ -87,10 +87,10 @@ asn_TYPE_member_t asn_MBR_ProtectedE_UTRAFootprintTimePattern_1[] = {
 		0, 0, /* No default value */
 		"protectedFootrpintStartTime"
 		},
-	{ ATF_POINTER, 1, offsetof(struct ProtectedE_UTRAFootprintTimePattern, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_ProtectedE_UTRAFootprintTimePattern, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ProtocolExtensionContainer_6001P0,
+		&asn_DEF_ASN_XNAP_ProtocolExtensionContainer_6001P0,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
@@ -107,8 +107,8 @@ static const asn_TYPE_tag2member_t asn_MAP_ProtectedE_UTRAFootprintTimePattern_t
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_ProtectedE_UTRAFootprintTimePattern_specs_1 = {
-	sizeof(struct ProtectedE_UTRAFootprintTimePattern),
-	offsetof(struct ProtectedE_UTRAFootprintTimePattern, _asn_ctx),
+	sizeof(struct ASN_XNAP_ProtectedE_UTRAFootprintTimePattern),
+	offsetof(struct ASN_XNAP_ProtectedE_UTRAFootprintTimePattern, _asn_ctx),
 	asn_MAP_ProtectedE_UTRAFootprintTimePattern_tag2el_1,
 	3,	/* Count of tags in the map */
 	asn_MAP_ProtectedE_UTRAFootprintTimePattern_oms_1,	/* Optional members */

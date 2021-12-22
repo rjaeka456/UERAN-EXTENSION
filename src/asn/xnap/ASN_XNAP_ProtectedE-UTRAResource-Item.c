@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "ProtectedE-UTRAResource-Item.h"
+#include "ASN_XNAP_ProtectedE-UTRAResource-Item.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 /*
  * This type is implemented using NativeEnumerated,
  * so here we adjust the DEF accordingly.
@@ -131,7 +131,7 @@ asn_TYPE_descriptor_t asn_DEF_resourceType_2 = {
 };
 
 asn_TYPE_member_t asn_MBR_ProtectedE_UTRAResource_Item_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct ProtectedE_UTRAResource_Item, resourceType),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ProtectedE_UTRAResource_Item, resourceType),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_resourceType_2,
@@ -140,7 +140,7 @@ asn_TYPE_member_t asn_MBR_ProtectedE_UTRAResource_Item_1[] = {
 		0, 0, /* No default value */
 		"resourceType"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct ProtectedE_UTRAResource_Item, intra_PRBProtectedResourceFootprint),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ProtectedE_UTRAResource_Item, intra_PRBProtectedResourceFootprint),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_BIT_STRING,
@@ -149,7 +149,7 @@ asn_TYPE_member_t asn_MBR_ProtectedE_UTRAResource_Item_1[] = {
 		0, 0, /* No default value */
 		"intra-PRBProtectedResourceFootprint"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct ProtectedE_UTRAResource_Item, protectedFootprintFrequencyPattern),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ProtectedE_UTRAResource_Item, protectedFootprintFrequencyPattern),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_BIT_STRING,
@@ -158,7 +158,7 @@ asn_TYPE_member_t asn_MBR_ProtectedE_UTRAResource_Item_1[] = {
 		0, 0, /* No default value */
 		"protectedFootprintFrequencyPattern"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct ProtectedE_UTRAResource_Item, protectedFootprintTimePattern),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ProtectedE_UTRAResource_Item, protectedFootprintTimePattern),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtectedE_UTRAFootprintTimePattern,
@@ -167,10 +167,10 @@ asn_TYPE_member_t asn_MBR_ProtectedE_UTRAResource_Item_1[] = {
 		0, 0, /* No default value */
 		"protectedFootprintTimePattern"
 		},
-	{ ATF_POINTER, 1, offsetof(struct ProtectedE_UTRAResource_Item, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_ProtectedE_UTRAResource_Item, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ProtocolExtensionContainer_6001P0,
+		&asn_DEF_ASN_XNAP_ProtocolExtensionContainer_6001P0,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
@@ -189,8 +189,8 @@ static const asn_TYPE_tag2member_t asn_MAP_ProtectedE_UTRAResource_Item_tag2el_1
     { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_ProtectedE_UTRAResource_Item_specs_1 = {
-	sizeof(struct ProtectedE_UTRAResource_Item),
-	offsetof(struct ProtectedE_UTRAResource_Item, _asn_ctx),
+	sizeof(struct ASN_XNAP_ProtectedE_UTRAResource_Item),
+	offsetof(struct ASN_XNAP_ProtectedE_UTRAResource_Item, _asn_ctx),
 	asn_MAP_ProtectedE_UTRAResource_Item_tag2el_1,
 	5,	/* Count of tags in the map */
 	asn_MAP_ProtectedE_UTRAResource_Item_oms_1,	/* Optional members */

@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PLMN-Identity.h"
+#include "ASN_XNAP_PLMN-Identity.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,12 +20,12 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* ServedCellInformation-E-UTRA-perBPLMN */
-typedef struct ServedCellInformation_E_UTRA_perBPLMN {
-	PLMN_Identity_t	 plmn_id;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_ServedCellInformation_E_UTRA_perBPLMN {
+    ASN_XNAP_PLMN_Identity_t	 plmn_id;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -33,7 +33,7 @@ typedef struct ServedCellInformation_E_UTRA_perBPLMN {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} ServedCellInformation_E_UTRA_perBPLMN_t;
+} ASN_XNAP_ServedCellInformation_E_UTRA_perBPLMN_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_ServedCellInformation_E_UTRA_perBPLMN;

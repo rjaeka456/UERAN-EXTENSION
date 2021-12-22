@@ -57,9 +57,9 @@ typedef struct ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo {
 
 /* Implementation */
 /* extern asn_TYPE_descriptor_t asn_DEF_subframeAssignmnet_4;	// (Use -fall-defs-global to expose) */
-extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo;
-extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo_specs_1;
-extern asn_TYPE_member_t asn_MBR_ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo_1[5];
+extern asn_TYPE_descriptor_t asn_DEF_ServedCellInformation_E_UTRA_TDDInfo;
+extern asn_SEQUENCE_specifics_t asn_SPC_ServedCellInformation_E_UTRA_TDDInfo_specs_1;
+extern asn_TYPE_member_t asn_MBR_ServedCellInformation_E_UTRA_TDDInfo_1[5];
 
 #ifdef __cplusplus
 }

@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* ActivationSFN */
-typedef long	 ActivationSFN_t;
+typedef long	 ASN_XNAP_ActivationSFN_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_ActivationSFN_constr_1;
