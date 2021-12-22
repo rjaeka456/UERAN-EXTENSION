@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PLMN-Identity.h"
-#include "NR-Cell-Identity.h"
+#include "ASN_XNAP_PLMN-Identity.h"
+#include "ASN_XNAP_NR-Cell-Identity.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -25,8 +25,8 @@ struct ProtocolExtensionContainer;
 
 /* NR-CGI */
 typedef struct NR_CGI {
-	PLMN_Identity_t	 plmn_id;
-	NR_Cell_Identity_t	 nr_CI;
+    ASN_XNAP_PLMN_Identity_t	 plmn_id;
+    ASN_XNAP_NR_Cell_Identity_t	 nr_CI;
 	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
@@ -38,9 +38,9 @@ typedef struct NR_CGI {
 } NR_CGI_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_NR_CGI;
-extern asn_SEQUENCE_specifics_t asn_SPC_NR_CGI_specs_1;
-extern asn_TYPE_member_t asn_MBR_NR_CGI_1[3];
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_NR_CGI;
+extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_NR_CGI_specs_1;
+extern asn_TYPE_member_t asn_MBR_ASN_XNAP_NR_CGI_1[3];
 
 #ifdef __cplusplus
 }
