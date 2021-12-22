@@ -19,11 +19,11 @@ extern "C" {
 #endif
 
 /* RANAC */
-typedef long	 RANAC_t;
+typedef long	 ASN_XNAP_RANAC_t;
 
 /* Implementation */
-extern asn_per_constraints_t asn_PER_type_RANAC_constr_1;
-extern asn_TYPE_descriptor_t asn_DEF_RANAC;
+extern asn_per_constraints_t asn_PER_type_ASN_XNAP_RANAC_constr_1;
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_RANAC;
 asn_struct_free_f RANAC_free;
 asn_struct_print_f RANAC_print;
 asn_constr_check_f RANAC_constraint;

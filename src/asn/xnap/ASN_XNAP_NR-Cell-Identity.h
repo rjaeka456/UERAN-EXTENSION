@@ -19,11 +19,11 @@ extern "C" {
 #endif
 
 /* NR-Cell-Identity */
-typedef BIT_STRING_t	 NR_Cell_Identity_t;
+typedef BIT_STRING_t	 ASN_XNAP_NR_Cell_Identity_t;
 
 /* Implementation */
-extern asn_per_constraints_t asn_PER_type_NR_Cell_Identity_constr_1;
-extern asn_TYPE_descriptor_t asn_DEF_NR_Cell_Identity;
+extern asn_per_constraints_t asn_PER_type_ASN_XNAP_NR_Cell_Identity_constr_1;
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_NR_Cell_Identity;
 asn_struct_free_f NR_Cell_Identity_free;
 asn_struct_print_f NR_Cell_Identity_print;
 asn_constr_check_f NR_Cell_Identity_constraint;

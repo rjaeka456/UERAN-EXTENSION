@@ -47,7 +47,7 @@ static const asn_TYPE_tag2member_t asn_MAP_BroadcastPLMNinTAISupport_Item_tag2el
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* iE-Extension */
 };
 asn_SEQUENCE_specifics_t asn_SPC_BroadcastPLMNinTAISupport_Item_specs_1 = {
-	sizeof(struct BroadcastPLMNinTAISupport_Item),
+	sizeof(struct ASN_XNAP_BroadcastPLMNinTAISupport_Item),
 	offsetof(struct ASN_XNAP_BroadcastPLMNinTAISupport_Item, _asn_ctx),
 	asn_MAP_BroadcastPLMNinTAISupport_Item_tag2el_1,
 	3,	/* Count of tags in the map */
@@ -55,7 +55,7 @@ asn_SEQUENCE_specifics_t asn_SPC_BroadcastPLMNinTAISupport_Item_specs_1 = {
 	1, 0,	/* Root/Additions */
 	3,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_BroadcastPLMNinTAISupport_Item = {
+asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_BroadcastPLMNinTAISupport_Item = {
 	"BroadcastPLMNinTAISupport-Item",
 	"BroadcastPLMNinTAISupport-Item",
 	&asn_OP_SEQUENCE,
