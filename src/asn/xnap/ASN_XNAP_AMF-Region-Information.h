@@ -20,18 +20,18 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct GlobalAMF_Region_Information;
+struct ASN_XNAP_GlobalAMF_Region_Information;
 
 /* AMF-Region-Information */
-typedef struct AMF_Region_Information {
-	A_SEQUENCE_OF(struct GlobalAMF_Region_Information) list;
+typedef struct ASN_XNAP_AMF_Region_Information {
+	A_SEQUENCE_OF(struct ASN_XNAP_GlobalAMF_Region_Information) list;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} AMF_Region_Information_t;
+} ASN_XNAP_AMF_Region_Information_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_AMF_Region_Information;
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_AMF_Region_Information;
 
 #ifdef __cplusplus
 }
