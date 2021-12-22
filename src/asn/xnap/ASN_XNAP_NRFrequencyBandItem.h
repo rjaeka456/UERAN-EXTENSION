@@ -20,14 +20,14 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct SupportedSULBandList;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_SupportedSULBandList;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* NRFrequencyBandItem */
-typedef struct NRFrequencyBandItem {
-	NRFrequencyBand_t	 nr_frequency_band;
-	struct SupportedSULBandList	*supported_SUL_Band_List	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+typedef struct ASN_XNAP_NRFrequencyBandItem {
+    ASN_XNAP_NRFrequencyBand_t	 nr_frequency_band;
+	struct ASN_XNAP_SupportedSULBandList	*supported_SUL_Band_List	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -35,12 +35,12 @@ typedef struct NRFrequencyBandItem {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} NRFrequencyBandItem_t;
+} ASN_XNAP_NRFrequencyBandItem_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_NRFrequencyBandItem;
-extern asn_SEQUENCE_specifics_t asn_SPC_NRFrequencyBandItem_specs_1;
-extern asn_TYPE_member_t asn_MBR_NRFrequencyBandItem_1[3];
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_NRFrequencyBandItem;
+extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_NRFrequencyBandItem_specs_1;
+extern asn_TYPE_member_t asn_MBR_ASN_XNAP_NRFrequencyBandItem_1[3];
 
 #ifdef __cplusplus
 }
