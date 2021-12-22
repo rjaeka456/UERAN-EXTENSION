@@ -5,10 +5,10 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "ASN_XNAP_NRFrequencyBand.h"
+#include "E-UTRAARFCN.h"
 
 int
-NRFrequencyBand_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
+E_UTRAARFCN_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
 	long value;
 	
@@ -21,7 +21,7 @@ NRFrequencyBand_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
 	
 	value = *(const long *)sptr;
 	
-	if((value >= 1 && value <= 1024)) {
+	if((value >= 0 && value <= 262143)) {
 		/* Constraint check succeeded */
 		return 0;
 	} else {
@@ -36,25 +36,25 @@ NRFrequencyBand_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
  * This type is implemented using NativeInteger,
  * so here we adjust the DEF accordingly.
  */
-asn_per_constraints_t asn_PER_type_ASN_XNAP_NRFrequencyBand_constr_1 CC_NOTUSED = {
-	{ APC_CONSTRAINED | APC_EXTENSIBLE,  10,  10,  1,  1024 }	/* (1..1024,...) */,
+asn_per_constraints_t asn_PER_type_E_UTRAARFCN_constr_1 CC_NOTUSED = {
+	{ APC_CONSTRAINED,	 18, -1,  0,  262143 }	/* (0..262143) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static const ber_tlv_tag_t asn_DEF_ASN_XNAP_NRFrequencyBand_tags_1[] = {
+static const ber_tlv_tag_t asn_DEF_E_UTRAARFCN_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (2 << 2))
 };
-asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_NRFrequencyBand = {
-	"NRFrequencyBand",
-	"NRFrequencyBand",
+asn_TYPE_descriptor_t asn_DEF_E_UTRAARFCN = {
+	"E-UTRAARFCN",
+	"E-UTRAARFCN",
 	&asn_OP_NativeInteger,
-	asn_DEF_ASN_XNAP_NRFrequencyBand_tags_1,
-	sizeof(asn_DEF_ASN_XNAP_NRFrequencyBand_tags_1)
-		/sizeof(asn_DEF_ASN_XNAP_NRFrequencyBand_tags_1[0]), /* 1 */
-	asn_DEF_ASN_XNAP_NRFrequencyBand_tags_1,	/* Same as above */
-	sizeof(asn_DEF_ASN_XNAP_NRFrequencyBand_tags_1)
-		/sizeof(asn_DEF_ASN_XNAP_NRFrequencyBand_tags_1[0]), /* 1 */
-	{ 0, &asn_PER_type_ASN_XNAP_NRFrequencyBand_constr_1, NRFrequencyBand_constraint },
+	asn_DEF_E_UTRAARFCN_tags_1,
+	sizeof(asn_DEF_E_UTRAARFCN_tags_1)
+		/sizeof(asn_DEF_E_UTRAARFCN_tags_1[0]), /* 1 */
+	asn_DEF_E_UTRAARFCN_tags_1,	/* Same as above */
+	sizeof(asn_DEF_E_UTRAARFCN_tags_1)
+		/sizeof(asn_DEF_E_UTRAARFCN_tags_1[0]), /* 1 */
+	{ 0, &asn_PER_type_E_UTRAARFCN_constr_1, E_UTRAARFCN_constraint },
 	0, 0,	/* No members */
 	0	/* No specifics */
 };

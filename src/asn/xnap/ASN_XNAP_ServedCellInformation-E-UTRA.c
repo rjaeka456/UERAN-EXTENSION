@@ -5,14 +5,14 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "ServedCellInformation-E-UTRA.h"
+#include "ASN_XNAP_ServedCellInformation-E-UTRA.h"
 
-#include "E-UTRAPRACHConfiguration.h"
-#include "MBSFNSubframeInfo-E-UTRA.h"
-#include "E-UTRAMultibandInfoList.h"
-#include "ProtectedE-UTRAResourceIndication.h"
-#include "ProtocolExtensionContainer.h"
-#include "ServedCellInformation-E-UTRA-perBPLMN.h"
+#include "ASN_XNAP_E-UTRAPRACHConfiguration.h"
+#include "ASN_XNAP_MBSFNSubframeInfo-E-UTRA.h"
+#include "ASN_XNAP_E-UTRAMultibandInfoList.h"
+#include "ASN_XNAP_ProtectedE-UTRAResourceIndication.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ServedCellInformation-E-UTRA-perBPLMN.h"
 /*
  * This type is implemented using NativeEnumerated,
  * so here we adjust the DEF accordingly.

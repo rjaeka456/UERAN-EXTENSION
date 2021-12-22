@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "ServedCellInformation-E-UTRA.h"
+#include "ASN_XNAP_ServedCellInformation-E-UTRA.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,16 +20,16 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct NeighbourInformation_NR;
-struct NeighbourInformation_E_UTRA;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_NeighbourInformation_NR;
+struct ASN_XNAP_NeighbourInformation_E_UTRA;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* ServedCells-E-UTRA-Item */
-typedef struct ServedCells_E_UTRA_Item {
-	ServedCellInformation_E_UTRA_t	 served_cell_info_E_UTRA;
-	struct NeighbourInformation_NR	*neighbour_info_NR	/* OPTIONAL */;
-	struct NeighbourInformation_E_UTRA	*neighbour_info_E_UTRA	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_ServedCells_E_UTRA_Item {
+    ASN_XNAP_ServedCellInformation_E_UTRA_t	 served_cell_info_E_UTRA;
+	struct ASN_XNAP_NeighbourInformation_NR	*neighbour_info_NR	/* OPTIONAL */;
+	struct ASN_XNAP_NeighbourInformation_E_UTRA	*neighbour_info_E_UTRA	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -37,12 +37,12 @@ typedef struct ServedCells_E_UTRA_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} ServedCells_E_UTRA_Item_t;
+} ASN_XNAP_ServedCells_E_UTRA_Item_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_ServedCells_E_UTRA_Item;
-extern asn_SEQUENCE_specifics_t asn_SPC_ServedCells_E_UTRA_Item_specs_1;
-extern asn_TYPE_member_t asn_MBR_ServedCells_E_UTRA_Item_1[4];
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_ServedCells_E_UTRA_Item;
+extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_ServedCells_E_UTRA_Item_specs_1;
+extern asn_TYPE_member_t asn_MBR_ASN_XNAP_ServedCells_E_UTRA_Item_1[4];
 
 #ifdef __cplusplus
 }

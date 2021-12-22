@@ -20,21 +20,21 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ServedCells_E_UTRA_Item;
+struct ASN_XNAP_ServedCells_E_UTRA_Item;
 
 /* ServedCells-E-UTRA */
-typedef struct ServedCells_E_UTRA {
-	A_SEQUENCE_OF(struct ServedCells_E_UTRA_Item) list;
+typedef struct ASN_XNAP_ServedCells_E_UTRA {
+	A_SEQUENCE_OF(struct ASN_XNAP_ServedCells_E_UTRA_Item) list;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} ServedCells_E_UTRA_t;
+} ASN_XNAP_ServedCells_E_UTRA_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_ServedCells_E_UTRA;
-extern asn_SET_OF_specifics_t asn_SPC_ServedCells_E_UTRA_specs_1;
-extern asn_TYPE_member_t asn_MBR_ServedCells_E_UTRA_1[1];
-extern asn_per_constraints_t asn_PER_type_ServedCells_E_UTRA_constr_1;
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_ServedCells_E_UTRA;
+extern asn_SET_OF_specifics_t asn_SPC_ASN_XNAP_ServedCells_E_UTRA_specs_1;
+extern asn_TYPE_member_t asn_MBR_ASN_XNAP_ServedCells_E_UTRA_1[1];
+extern asn_per_constraints_t asn_PER_type_ASN_XNAP_ServedCells_E_UTRA_constr_1;
 
 #ifdef __cplusplus
 }

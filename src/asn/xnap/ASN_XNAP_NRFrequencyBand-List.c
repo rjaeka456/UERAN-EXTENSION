@@ -8,43 +8,43 @@
 #include "ASN_XNAP_NRFrequencyBand-List.h"
 
 #include "ASN_XNAP_NRFrequencyBandItem.h"
-asn_per_constraints_t asn_PER_type_NRFrequencyBand_List_constr_1 CC_NOTUSED = {
+asn_per_constraints_t asn_PER_type_ASN_XNAP_NRFrequencyBand_List_constr_1 CC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	{ APC_CONSTRAINED,	 5,  5,  1,  32 }	/* (SIZE(1..32)) */,
 	0, 0	/* No PER value map */
 };
-asn_TYPE_member_t asn_MBR_NRFrequencyBand_List_1[] = {
+asn_TYPE_member_t asn_MBR_ASN_XNAP_NRFrequencyBand_List_1[] = {
 	{ ATF_POINTER, 0, 0,
 		(ASN_TAG_CLASS_UNIVERSAL | (16 << 2)),
 		0,
-		&asn_DEF_NRFrequencyBandItem,
+		&asn_DEF_ASN_XNAP_NRFrequencyBandItem,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
 		""
 		},
 };
-static const ber_tlv_tag_t asn_DEF_NRFrequencyBand_List_tags_1[] = {
+static const ber_tlv_tag_t asn_DEF_ASN_XNAP_NRFrequencyBand_List_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-asn_SET_OF_specifics_t asn_SPC_NRFrequencyBand_List_specs_1 = {
-	sizeof(struct NRFrequencyBand_List),
-	offsetof(struct NRFrequencyBand_List, _asn_ctx),
+asn_SET_OF_specifics_t asn_SPC_ASN_XNAP_NRFrequencyBand_List_specs_1 = {
+	sizeof(struct ASN_XNAP_NRFrequencyBand_List),
+	offsetof(struct ASN_XNAP_NRFrequencyBand_List, _asn_ctx),
 	0,	/* XER encoding is XMLDelimitedItemList */
 };
-asn_TYPE_descriptor_t asn_DEF_NRFrequencyBand_List = {
+asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_NRFrequencyBand_List = {
 	"NRFrequencyBand-List",
 	"NRFrequencyBand-List",
 	&asn_OP_SEQUENCE_OF,
-	asn_DEF_NRFrequencyBand_List_tags_1,
-	sizeof(asn_DEF_NRFrequencyBand_List_tags_1)
-		/sizeof(asn_DEF_NRFrequencyBand_List_tags_1[0]), /* 1 */
-	asn_DEF_NRFrequencyBand_List_tags_1,	/* Same as above */
-	sizeof(asn_DEF_NRFrequencyBand_List_tags_1)
-		/sizeof(asn_DEF_NRFrequencyBand_List_tags_1[0]), /* 1 */
-	{ 0, &asn_PER_type_NRFrequencyBand_List_constr_1, SEQUENCE_OF_constraint },
-	asn_MBR_NRFrequencyBand_List_1,
+	asn_DEF_ASN_XNAP_NRFrequencyBand_List_tags_1,
+	sizeof(asn_DEF_ASN_XNAP_NRFrequencyBand_List_tags_1)
+		/sizeof(asn_DEF_ASN_XNAP_NRFrequencyBand_List_tags_1[0]), /* 1 */
+	asn_DEF_ASN_XNAP_NRFrequencyBand_List_tags_1,	/* Same as above */
+	sizeof(asn_DEF_ASN_XNAP_NRFrequencyBand_List_tags_1)
+		/sizeof(asn_DEF_ASN_XNAP_NRFrequencyBand_List_tags_1[0]), /* 1 */
+	{ 0, &asn_PER_type_ASN_XNAP_NRFrequencyBand_List_constr_1, SEQUENCE_OF_constraint },
+	asn_MBR_ASN_XNAP_NRFrequencyBand_List_1,
 	1,	/* Single element */
-	&asn_SPC_NRFrequencyBand_List_specs_1	/* Additional specs */
+	&asn_SPC_ASN_XNAP_NRFrequencyBand_List_specs_1	/* Additional specs */
 };
 

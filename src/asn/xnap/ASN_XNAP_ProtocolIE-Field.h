@@ -22,6 +22,7 @@
 #include "ASN_XNAP_GlobalNG-RANNode-ID.h"
 #include "ASN_XNAP_TAISupport-List.h"
 #include "ASN_XNAP_AMF-Region-Information.h"
+#include "ASN_XNAP_ServedCells-NR.h"
 
 #ifdef __cplusplus
 extern "C" {
