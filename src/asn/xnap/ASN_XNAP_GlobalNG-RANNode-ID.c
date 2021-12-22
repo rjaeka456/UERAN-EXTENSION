@@ -37,7 +37,7 @@ asn_TYPE_member_t asn_MBR_ASN_XNAP_GlobalNG_RANNode_ID_1[] = {
 	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_GlobalNG_RANNode_ID, choice.choice_extension),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ProtocolIE_Single_Container_5954P0,
+		&asn_DEF_ASN_XNAP_ProtocolIE_Single_Container_5954P0,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
@@ -50,10 +50,10 @@ static const asn_TYPE_tag2member_t asn_MAP_GlobalNG_RANNode_ID_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* choice-extension */
 };
 asn_CHOICE_specifics_t asn_SPC_GlobalNG_RANNode_ID_specs_1 = {
-	sizeof(struct GlobalNG_RANNode_ID),
-	offsetof(struct GlobalNG_RANNode_ID, _asn_ctx),
-	offsetof(struct GlobalNG_RANNode_ID, present),
-	sizeof(((struct GlobalNG_RANNode_ID *)0)->present),
+	sizeof(struct ASN_XNAP_GlobalNG_RANNode_ID),
+	offsetof(struct ASN_XNAP_GlobalNG_RANNode_ID, _asn_ctx),
+	offsetof(struct ASN_XNAP_GlobalNG_RANNode_ID, present),
+	sizeof(((struct ASN_XNAP_GlobalNG_RANNode_ID *)0)->present),
 	asn_MAP_GlobalNG_RANNode_ID_tag2el_1,
 	3,	/* Count of tags in the map */
 	0, 0,
@@ -67,8 +67,8 @@ asn_TYPE_descriptor_t asn_DEF_GlobalNG_RANNode_ID = {
 	0,	/* No effective tags (count) */
 	0,	/* No tags (pointer) */
 	0,	/* No tags (count) */
-	{ 0, &asn_PER_type_GlobalNG_RANNode_ID_constr_1, CHOICE_constraint },
-	asn_MBR_GlobalNG_RANNode_ID_1,
+	{ 0, &asn_PER_type_ASN_XNAP_GlobalNG_RANNode_ID_constr_1, CHOICE_constraint },
+	asn_MBR_ASN_XNAP_GlobalNG_RANNode_ID_1,
 	3,	/* Elements count */
 	&asn_SPC_GlobalNG_RANNode_ID_specs_1	/* Additional specs */
 };
