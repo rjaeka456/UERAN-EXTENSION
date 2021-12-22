@@ -5,14 +5,14 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "BroadcastPLMNinTAISupport-Item.h"
+#include "ASN_XNAP_BroadcastPLMNinTAISupport-Item.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_BroadcastPLMNinTAISupport_Item_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct BroadcastPLMNinTAISupport_Item, plmn_id),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_PLMN_Identity,
+		&asn_DEF_ASN_XNAP_PLMN_Identity,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
@@ -21,7 +21,7 @@ asn_TYPE_member_t asn_MBR_BroadcastPLMNinTAISupport_Item_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct BroadcastPLMNinTAISupport_Item, tAISliceSupport_List),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_SliceSupport_List,
+		&asn_DEF_ASN_XNAP_SliceSupport_List,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
@@ -30,7 +30,7 @@ asn_TYPE_member_t asn_MBR_BroadcastPLMNinTAISupport_Item_1[] = {
 	{ ATF_POINTER, 1, offsetof(struct BroadcastPLMNinTAISupport_Item, iE_Extension),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ProtocolExtensionContainer_6001P0,
+		&asn_DEF_ASN_XNAP_ProtocolExtensionContainer_6001P0,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
@@ -48,7 +48,7 @@ static const asn_TYPE_tag2member_t asn_MAP_BroadcastPLMNinTAISupport_Item_tag2el
 };
 asn_SEQUENCE_specifics_t asn_SPC_BroadcastPLMNinTAISupport_Item_specs_1 = {
 	sizeof(struct BroadcastPLMNinTAISupport_Item),
-	offsetof(struct BroadcastPLMNinTAISupport_Item, _asn_ctx),
+	offsetof(struct ASN_XNAP_BroadcastPLMNinTAISupport_Item, _asn_ctx),
 	asn_MAP_BroadcastPLMNinTAISupport_Item_tag2el_1,
 	3,	/* Count of tags in the map */
 	asn_MAP_BroadcastPLMNinTAISupport_Item_oms_1,	/* Optional members */
