@@ -19,30 +19,30 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum SpecialSubframePatterns_E_UTRA {
-	SpecialSubframePatterns_E_UTRA_ssp0	= 0,
-	SpecialSubframePatterns_E_UTRA_ssp1	= 1,
-	SpecialSubframePatterns_E_UTRA_ssp2	= 2,
-	SpecialSubframePatterns_E_UTRA_ssp3	= 3,
-	SpecialSubframePatterns_E_UTRA_ssp4	= 4,
-	SpecialSubframePatterns_E_UTRA_ssp5	= 5,
-	SpecialSubframePatterns_E_UTRA_ssp6	= 6,
-	SpecialSubframePatterns_E_UTRA_ssp7	= 7,
-	SpecialSubframePatterns_E_UTRA_ssp8	= 8,
-	SpecialSubframePatterns_E_UTRA_ssp9	= 9,
-	SpecialSubframePatterns_E_UTRA_ssp10	= 10
+typedef enum ASN_XNAP_SpecialSubframePatterns_E_UTRA {
+    ASN_XNAP_SpecialSubframePatterns_E_UTRA_ssp0	= 0,
+    ASN_XNAP_SpecialSubframePatterns_E_UTRA_ssp1	= 1,
+    ASN_XNAP_SpecialSubframePatterns_E_UTRA_ssp2	= 2,
+    ASN_XNAP_SpecialSubframePatterns_E_UTRA_ssp3	= 3,
+    ASN_XNAP_SpecialSubframePatterns_E_UTRA_ssp4	= 4,
+    ASN_XNAP_SpecialSubframePatterns_E_UTRA_ssp5	= 5,
+    ASN_XNAP_SpecialSubframePatterns_E_UTRA_ssp6	= 6,
+    ASN_XNAP_SpecialSubframePatterns_E_UTRA_ssp7	= 7,
+    ASN_XNAP_SpecialSubframePatterns_E_UTRA_ssp8	= 8,
+    ASN_XNAP_SpecialSubframePatterns_E_UTRA_ssp9	= 9,
+    ASN_XNAP_SpecialSubframePatterns_E_UTRA_ssp10	= 10
 	/*
 	 * Enumeration is extensible
 	 */
-} e_SpecialSubframePatterns_E_UTRA;
+} e_ASN_XNAP_SpecialSubframePatterns_E_UTRA;
 
 /* SpecialSubframePatterns-E-UTRA */
-typedef long	 SpecialSubframePatterns_E_UTRA_t;
+typedef long	 ASN_XNAP_SpecialSubframePatterns_E_UTRA_t;
 
 /* Implementation */
-extern asn_per_constraints_t asn_PER_type_SpecialSubframePatterns_E_UTRA_constr_1;
-extern asn_TYPE_descriptor_t asn_DEF_SpecialSubframePatterns_E_UTRA;
-extern const asn_INTEGER_specifics_t asn_SPC_SpecialSubframePatterns_E_UTRA_specs_1;
+extern asn_per_constraints_t asn_PER_type_ASN_XNAP_SpecialSubframePatterns_E_UTRA_constr_1;
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_SpecialSubframePatterns_E_UTRA;
+extern const asn_INTEGER_specifics_t asn_SPC_ASN_XNAP_SpecialSubframePatterns_E_UTRA_specs_1;
 asn_struct_free_f SpecialSubframePatterns_E_UTRA_free;
 asn_struct_print_f SpecialSubframePatterns_E_UTRA_print;
 asn_constr_check_f SpecialSubframePatterns_E_UTRA_constraint;

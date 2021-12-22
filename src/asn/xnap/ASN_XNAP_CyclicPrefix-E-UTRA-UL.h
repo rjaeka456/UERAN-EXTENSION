@@ -19,21 +19,21 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum CyclicPrefix_E_UTRA_UL {
-	CyclicPrefix_E_UTRA_UL_normal	= 0,
-	CyclicPrefix_E_UTRA_UL_extended	= 1
+typedef enum ASN_XNAP_CyclicPrefix_E_UTRA_UL {
+    ASN_XNAP_CyclicPrefix_E_UTRA_UL_normal	= 0,
+    ASN_XNAP_CyclicPrefix_E_UTRA_UL_extended	= 1
 	/*
 	 * Enumeration is extensible
 	 */
-} e_CyclicPrefix_E_UTRA_UL;
+} e_ASN_XNAP_CyclicPrefix_E_UTRA_UL;
 
 /* CyclicPrefix-E-UTRA-UL */
-typedef long	 CyclicPrefix_E_UTRA_UL_t;
+typedef long	 ASN_XNAP_CyclicPrefix_E_UTRA_UL_t;
 
 /* Implementation */
-extern asn_per_constraints_t asn_PER_type_CyclicPrefix_E_UTRA_UL_constr_1;
-extern asn_TYPE_descriptor_t asn_DEF_CyclicPrefix_E_UTRA_UL;
-extern const asn_INTEGER_specifics_t asn_SPC_CyclicPrefix_E_UTRA_UL_specs_1;
+extern asn_per_constraints_t asn_PER_type_ASN_XNAP_CyclicPrefix_E_UTRA_UL_constr_1;
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_CyclicPrefix_E_UTRA_UL;
+extern const asn_INTEGER_specifics_t asn_SPC_ASN_XNAP_CyclicPrefix_E_UTRA_UL_specs_1;
 asn_struct_free_f CyclicPrefix_E_UTRA_UL_free;
 asn_struct_print_f CyclicPrefix_E_UTRA_UL_print;
 asn_constr_check_f CyclicPrefix_E_UTRA_UL_constraint;
