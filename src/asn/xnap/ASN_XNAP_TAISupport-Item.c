@@ -5,10 +5,10 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "TAISupport-Item.h"
+#include "ASN_XNAP_TAISupport-Item.h"
 
-#include "ProtocolExtensionContainer.h"
-#include "BroadcastPLMNinTAISupport-Item.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
+#include "ASN_XNAP_BroadcastPLMNinTAISupport-Item.h"
 static int
 memb_broadcastPLMNs_constraint_1(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
