@@ -20,21 +20,21 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ServedCells_NR_Item;
+struct ASN_XNAP_ServedCells_NR_Item;
 
 /* ServedCells-NR */
-typedef struct ServedCells_NR {
-	A_SEQUENCE_OF(struct ServedCells_NR_Item) list;
+typedef struct ASN_XNAP_ServedCells_NR {
+	A_SEQUENCE_OF(struct ASN_XNAP_ServedCells_NR_Item) list;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} ServedCells_NR_t;
+} ASN_XNAP_ServedCells_NR_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_ServedCells_NR;
-extern asn_SET_OF_specifics_t asn_SPC_ServedCells_NR_specs_1;
-extern asn_TYPE_member_t asn_MBR_ServedCells_NR_1[1];
-extern asn_per_constraints_t asn_PER_type_ServedCells_NR_constr_1;
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_ServedCells_NR;
+extern asn_SET_OF_specifics_t asn_SPC_ASN_XNAP_ServedCells_NR_specs_1;
+extern asn_TYPE_member_t asn_MBR_ASN_XNAP_ServedCells_NR_1[1];
+extern asn_per_constraints_t asn_PER_type_ASN_XNAP_ServedCells_NR_constr_1;
 
 #ifdef __cplusplus
 }

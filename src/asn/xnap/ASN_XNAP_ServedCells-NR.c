@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "ServedCells-NR.h"
+#include "ASN_XNAP_ServedCells-NR.h"
 
-#include "ServedCells-NR-Item.h"
+#include "ASN_XNAP_ServedCells-NR-Item.h"
 asn_per_constraints_t asn_PER_type_ServedCells_NR_constr_1 CC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	{ APC_CONSTRAINED,	 14,  14,  1,  16384 }	/* (SIZE(1..16384)) */,
