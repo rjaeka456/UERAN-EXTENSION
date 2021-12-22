@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "E-UTRAPRACHConfiguration.h"
+#include "ASN_XNAP_E-UTRAPRACHConfiguration.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 /*
  * This type is implemented using NativeEnumerated,
  * so here we adjust the DEF accordingly.
@@ -176,8 +176,8 @@ asn_TYPE_descriptor_t asn_DEF_highSpeedFlag_4 = {
 	&asn_SPC_highSpeedFlag_specs_4	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_E_UTRAPRACHConfiguration_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct E_UTRAPRACHConfiguration, rootSequenceIndex),
+asn_TYPE_member_t asn_MBR_ASN_XNAP_E_UTRAPRACHConfiguration_1[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_E_UTRAPRACHConfiguration, rootSequenceIndex),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NativeInteger,
@@ -186,7 +186,7 @@ asn_TYPE_member_t asn_MBR_E_UTRAPRACHConfiguration_1[] = {
 		0, 0, /* No default value */
 		"rootSequenceIndex"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct E_UTRAPRACHConfiguration, zeroCorrelationIndex),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_E_UTRAPRACHConfiguration, zeroCorrelationIndex),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NativeInteger,
@@ -195,7 +195,7 @@ asn_TYPE_member_t asn_MBR_E_UTRAPRACHConfiguration_1[] = {
 		0, 0, /* No default value */
 		"zeroCorrelationIndex"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct E_UTRAPRACHConfiguration, highSpeedFlag),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_E_UTRAPRACHConfiguration, highSpeedFlag),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_highSpeedFlag_4,
@@ -204,7 +204,7 @@ asn_TYPE_member_t asn_MBR_E_UTRAPRACHConfiguration_1[] = {
 		0, 0, /* No default value */
 		"highSpeedFlag"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct E_UTRAPRACHConfiguration, prach_FreqOffset),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_E_UTRAPRACHConfiguration, prach_FreqOffset),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NativeInteger,
@@ -213,7 +213,7 @@ asn_TYPE_member_t asn_MBR_E_UTRAPRACHConfiguration_1[] = {
 		0, 0, /* No default value */
 		"prach-FreqOffset"
 		},
-	{ ATF_POINTER, 2, offsetof(struct E_UTRAPRACHConfiguration, prach_ConfigIndex),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_E_UTRAPRACHConfiguration, prach_ConfigIndex),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NativeInteger,
@@ -222,21 +222,21 @@ asn_TYPE_member_t asn_MBR_E_UTRAPRACHConfiguration_1[] = {
 		0, 0, /* No default value */
 		"prach-ConfigIndex"
 		},
-	{ ATF_POINTER, 1, offsetof(struct E_UTRAPRACHConfiguration, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_E_UTRAPRACHConfiguration, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ProtocolExtensionContainer_6001P0,
+		&asn_DEF_ASN_XNAP_ProtocolExtensionContainer_6001P0,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
 		"iE-Extensions"
 		},
 };
-static const int asn_MAP_E_UTRAPRACHConfiguration_oms_1[] = { 4, 5 };
-static const ber_tlv_tag_t asn_DEF_E_UTRAPRACHConfiguration_tags_1[] = {
+static const int asn_MAP_ASN_XNAP_E_UTRAPRACHConfiguration_oms_1[] = { 4, 5 };
+static const ber_tlv_tag_t asn_DEF_ASN_XNAP_E_UTRAPRACHConfiguration_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_E_UTRAPRACHConfiguration_tag2el_1[] = {
+static const asn_TYPE_tag2member_t asn_MAP_ASN_XNAP_E_UTRAPRACHConfiguration_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* rootSequenceIndex */
     { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* zeroCorrelationIndex */
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* highSpeedFlag */
@@ -244,28 +244,28 @@ static const asn_TYPE_tag2member_t asn_MAP_E_UTRAPRACHConfiguration_tag2el_1[] =
     { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 }, /* prach-ConfigIndex */
     { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* iE-Extensions */
 };
-asn_SEQUENCE_specifics_t asn_SPC_E_UTRAPRACHConfiguration_specs_1 = {
-	sizeof(struct E_UTRAPRACHConfiguration),
-	offsetof(struct E_UTRAPRACHConfiguration, _asn_ctx),
-	asn_MAP_E_UTRAPRACHConfiguration_tag2el_1,
+asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_E_UTRAPRACHConfiguration_specs_1 = {
+	sizeof(struct ASN_XNAP_E_UTRAPRACHConfiguration),
+	offsetof(struct ASN_XNAP_E_UTRAPRACHConfiguration, _asn_ctx),
+	asn_MAP_ASN_XNAP_E_UTRAPRACHConfiguration_tag2el_1,
 	6,	/* Count of tags in the map */
-	asn_MAP_E_UTRAPRACHConfiguration_oms_1,	/* Optional members */
+	asn_MAP_ASN_XNAP_E_UTRAPRACHConfiguration_oms_1,	/* Optional members */
 	2, 0,	/* Root/Additions */
 	6,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_E_UTRAPRACHConfiguration = {
+asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_E_UTRAPRACHConfiguration = {
 	"E-UTRAPRACHConfiguration",
 	"E-UTRAPRACHConfiguration",
 	&asn_OP_SEQUENCE,
-	asn_DEF_E_UTRAPRACHConfiguration_tags_1,
-	sizeof(asn_DEF_E_UTRAPRACHConfiguration_tags_1)
-		/sizeof(asn_DEF_E_UTRAPRACHConfiguration_tags_1[0]), /* 1 */
-	asn_DEF_E_UTRAPRACHConfiguration_tags_1,	/* Same as above */
-	sizeof(asn_DEF_E_UTRAPRACHConfiguration_tags_1)
-		/sizeof(asn_DEF_E_UTRAPRACHConfiguration_tags_1[0]), /* 1 */
+	asn_DEF_ASN_XNAP_E_UTRAPRACHConfiguration_tags_1,
+	sizeof(asn_DEF_ASN_XNAP_E_UTRAPRACHConfiguration_tags_1)
+		/sizeof(asn_DEF_ASN_XNAP_E_UTRAPRACHConfiguration_tags_1[0]), /* 1 */
+	asn_DEF_ASN_XNAP_E_UTRAPRACHConfiguration_tags_1,	/* Same as above */
+	sizeof(asn_DEF_ASN_XNAP_E_UTRAPRACHConfiguration_tags_1)
+		/sizeof(asn_DEF_ASN_XNAP_E_UTRAPRACHConfiguration_tags_1[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_E_UTRAPRACHConfiguration_1,
+	asn_MBR_ASN_XNAP_E_UTRAPRACHConfiguration_1,
 	6,	/* Elements count */
-	&asn_SPC_E_UTRAPRACHConfiguration_specs_1	/* Additional specs */
+	&asn_SPC_ASN_XNAP_E_UTRAPRACHConfiguration_specs_1	/* Additional specs */
 };
 

@@ -21,25 +21,25 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum E_UTRAPRACHConfiguration__highSpeedFlag {
-	E_UTRAPRACHConfiguration__highSpeedFlag_true	= 0,
-	E_UTRAPRACHConfiguration__highSpeedFlag_false	= 1
+typedef enum ASN_XNAP_E_UTRAPRACHConfiguration__highSpeedFlag {
+    ASN_XNAP_E_UTRAPRACHConfiguration__highSpeedFlag_true	= 0,
+    ASN_XNAP_E_UTRAPRACHConfiguration__highSpeedFlag_false	= 1
 	/*
 	 * Enumeration is extensible
 	 */
-} e_E_UTRAPRACHConfiguration__highSpeedFlag;
+} e_ASN_XNAP_E_UTRAPRACHConfiguration__highSpeedFlag;
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* E-UTRAPRACHConfiguration */
-typedef struct E_UTRAPRACHConfiguration {
+typedef struct ASN_XNAP_E_UTRAPRACHConfiguration {
 	long	 rootSequenceIndex;
 	long	 zeroCorrelationIndex;
 	long	 highSpeedFlag;
 	long	 prach_FreqOffset;
 	long	*prach_ConfigIndex	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -47,13 +47,13 @@ typedef struct E_UTRAPRACHConfiguration {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} E_UTRAPRACHConfiguration_t;
+} ASN_XNAP_E_UTRAPRACHConfiguration_t;
 
 /* Implementation */
 /* extern asn_TYPE_descriptor_t asn_DEF_highSpeedFlag_4;	// (Use -fall-defs-global to expose) */
-extern asn_TYPE_descriptor_t asn_DEF_E_UTRAPRACHConfiguration;
-extern asn_SEQUENCE_specifics_t asn_SPC_E_UTRAPRACHConfiguration_specs_1;
-extern asn_TYPE_member_t asn_MBR_E_UTRAPRACHConfiguration_1[6];
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_E_UTRAPRACHConfiguration;
+extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_E_UTRAPRACHConfiguration_specs_1;
+extern asn_TYPE_member_t asn_MBR_ASN_XNAP_E_UTRAPRACHConfiguration_1[6];
 
 #ifdef __cplusplus
 }

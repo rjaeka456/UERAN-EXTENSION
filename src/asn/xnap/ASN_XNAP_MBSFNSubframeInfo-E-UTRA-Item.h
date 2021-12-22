@@ -14,7 +14,7 @@
 /* Including external dependencies */
 #include <NativeEnumerated.h>
 #include <NativeInteger.h>
-#include "MBSFNSubframeAllocation-E-UTRA.h"
+#include "ASN_XNAP_MBSFNSubframeAllocation-E-UTRA.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -22,27 +22,27 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum MBSFNSubframeInfo_E_UTRA_Item__radioframeAllocationPeriod {
-	MBSFNSubframeInfo_E_UTRA_Item__radioframeAllocationPeriod_n1	= 0,
-	MBSFNSubframeInfo_E_UTRA_Item__radioframeAllocationPeriod_n2	= 1,
-	MBSFNSubframeInfo_E_UTRA_Item__radioframeAllocationPeriod_n4	= 2,
-	MBSFNSubframeInfo_E_UTRA_Item__radioframeAllocationPeriod_n8	= 3,
-	MBSFNSubframeInfo_E_UTRA_Item__radioframeAllocationPeriod_n16	= 4,
-	MBSFNSubframeInfo_E_UTRA_Item__radioframeAllocationPeriod_n32	= 5
+typedef enum ASN_XNAP_MBSFNSubframeInfo_E_UTRA_Item__radioframeAllocationPeriod {
+    ASN_XNAP_MBSFNSubframeInfo_E_UTRA_Item__radioframeAllocationPeriod_n1	= 0,
+    ASN_XNAP_MBSFNSubframeInfo_E_UTRA_Item__radioframeAllocationPeriod_n2	= 1,
+    ASN_XNAP_MBSFNSubframeInfo_E_UTRA_Item__radioframeAllocationPeriod_n4	= 2,
+    ASN_XNAP_MBSFNSubframeInfo_E_UTRA_Item__radioframeAllocationPeriod_n8	= 3,
+    ASN_XNAP_MBSFNSubframeInfo_E_UTRA_Item__radioframeAllocationPeriod_n16	= 4,
+    ASN_XNAP_MBSFNSubframeInfo_E_UTRA_Item__radioframeAllocationPeriod_n32	= 5
 	/*
 	 * Enumeration is extensible
 	 */
-} e_MBSFNSubframeInfo_E_UTRA_Item__radioframeAllocationPeriod;
+} e_ASN_XNAP_MBSFNSubframeInfo_E_UTRA_Item__radioframeAllocationPeriod;
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* MBSFNSubframeInfo-E-UTRA-Item */
-typedef struct MBSFNSubframeInfo_E_UTRA_Item {
+typedef struct ASN_XNAP_MBSFNSubframeInfo_E_UTRA_Item {
 	long	 radioframeAllocationPeriod;
 	long	 radioframeAllocationOffset;
-	MBSFNSubframeAllocation_E_UTRA_t	 subframeAllocation;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+    ASN_XNAP_MBSFNSubframeAllocation_E_UTRA_t	 subframeAllocation;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -50,13 +50,13 @@ typedef struct MBSFNSubframeInfo_E_UTRA_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} MBSFNSubframeInfo_E_UTRA_Item_t;
+} ASN_XNAP_MBSFNSubframeInfo_E_UTRA_Item_t;
 
 /* Implementation */
 /* extern asn_TYPE_descriptor_t asn_DEF_radioframeAllocationPeriod_2;	// (Use -fall-defs-global to expose) */
-extern asn_TYPE_descriptor_t asn_DEF_MBSFNSubframeInfo_E_UTRA_Item;
-extern asn_SEQUENCE_specifics_t asn_SPC_MBSFNSubframeInfo_E_UTRA_Item_specs_1;
-extern asn_TYPE_member_t asn_MBR_MBSFNSubframeInfo_E_UTRA_Item_1[4];
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_MBSFNSubframeInfo_E_UTRA_Item;
+extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_MBSFNSubframeInfo_E_UTRA_Item_specs_1;
+extern asn_TYPE_member_t asn_MBR_ASN_XNAP_MBSFNSubframeInfo_E_UTRA_Item_1[4];
 
 #ifdef __cplusplus
 }
