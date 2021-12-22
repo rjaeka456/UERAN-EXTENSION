@@ -12,10 +12,10 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "E-UTRAARFCN.h"
-#include "E-UTRATransmissionBandwidth.h"
+#include "ASN_XNAP_E-UTRAARFCN.h"
+#include "ASN_XNAP_E-UTRATransmissionBandwidth.h"
 #include <NativeEnumerated.h>
-#include "SpecialSubframeInfo-E-UTRA.h"
+#include "ASN_XNAP_SpecialSubframeInfo-E-UTRA.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -23,29 +23,29 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum ServedCellInformation_E_UTRA_TDDInfo__subframeAssignmnet {
-	ServedCellInformation_E_UTRA_TDDInfo__subframeAssignmnet_sa0	= 0,
-	ServedCellInformation_E_UTRA_TDDInfo__subframeAssignmnet_sa1	= 1,
-	ServedCellInformation_E_UTRA_TDDInfo__subframeAssignmnet_sa2	= 2,
-	ServedCellInformation_E_UTRA_TDDInfo__subframeAssignmnet_sa3	= 3,
-	ServedCellInformation_E_UTRA_TDDInfo__subframeAssignmnet_sa4	= 4,
-	ServedCellInformation_E_UTRA_TDDInfo__subframeAssignmnet_sa5	= 5,
-	ServedCellInformation_E_UTRA_TDDInfo__subframeAssignmnet_sa6	= 6
+typedef enum ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo__subframeAssignmnet {
+    ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo__subframeAssignmnet_sa0	= 0,
+    ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo__subframeAssignmnet_sa1	= 1,
+    ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo__subframeAssignmnet_sa2	= 2,
+    ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo__subframeAssignmnet_sa3	= 3,
+    ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo__subframeAssignmnet_sa4	= 4,
+    ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo__subframeAssignmnet_sa5	= 5,
+    ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo__subframeAssignmnet_sa6	= 6
 	/*
 	 * Enumeration is extensible
 	 */
-} e_ServedCellInformation_E_UTRA_TDDInfo__subframeAssignmnet;
+} e_ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo__subframeAssignmnet;
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* ServedCellInformation-E-UTRA-TDDInfo */
-typedef struct ServedCellInformation_E_UTRA_TDDInfo {
-	E_UTRAARFCN_t	 earfcn;
-	E_UTRATransmissionBandwidth_t	 e_utraTxBW;
+typedef struct ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo {
+    ASN_XNAP_E_UTRAARFCN_t	 earfcn;
+    ASN_XNAP_E_UTRATransmissionBandwidth_t	 e_utraTxBW;
 	long	 subframeAssignmnet;
-	SpecialSubframeInfo_E_UTRA_t	 specialSubframeInfo;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+    ASN_XNAP_SpecialSubframeInfo_E_UTRA_t	 specialSubframeInfo;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -53,13 +53,13 @@ typedef struct ServedCellInformation_E_UTRA_TDDInfo {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} ServedCellInformation_E_UTRA_TDDInfo_t;
+} ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo_t;
 
 /* Implementation */
 /* extern asn_TYPE_descriptor_t asn_DEF_subframeAssignmnet_4;	// (Use -fall-defs-global to expose) */
-extern asn_TYPE_descriptor_t asn_DEF_ServedCellInformation_E_UTRA_TDDInfo;
-extern asn_SEQUENCE_specifics_t asn_SPC_ServedCellInformation_E_UTRA_TDDInfo_specs_1;
-extern asn_TYPE_member_t asn_MBR_ServedCellInformation_E_UTRA_TDDInfo_1[5];
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo;
+extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo_specs_1;
+extern asn_TYPE_member_t asn_MBR_ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo_1[5];
 
 #ifdef __cplusplus
 }

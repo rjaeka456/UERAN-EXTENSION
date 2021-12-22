@@ -19,26 +19,26 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum E_UTRATransmissionBandwidth {
-	E_UTRATransmissionBandwidth_bw6	= 0,
-	E_UTRATransmissionBandwidth_bw15	= 1,
-	E_UTRATransmissionBandwidth_bw25	= 2,
-	E_UTRATransmissionBandwidth_bw50	= 3,
-	E_UTRATransmissionBandwidth_bw75	= 4,
-	E_UTRATransmissionBandwidth_bw100	= 5,
+typedef enum ASN_XNAP_E_UTRATransmissionBandwidth {
+    ASN_XNAP_E_UTRATransmissionBandwidth_bw6	= 0,
+    ASN_XNAP_E_UTRATransmissionBandwidth_bw15	= 1,
+    ASN_XNAP_E_UTRATransmissionBandwidth_bw25	= 2,
+    ASN_XNAP_E_UTRATransmissionBandwidth_bw50	= 3,
+    ASN_XNAP_E_UTRATransmissionBandwidth_bw75	= 4,
+    ASN_XNAP_E_UTRATransmissionBandwidth_bw100	= 5,
 	/*
 	 * Enumeration is extensible
 	 */
-	E_UTRATransmissionBandwidth_bw1	= 6
-} e_E_UTRATransmissionBandwidth;
+    ASN_XNAP_E_UTRATransmissionBandwidth_bw1	= 6
+} e_ASN_XNAP_E_UTRATransmissionBandwidth;
 
 /* E-UTRATransmissionBandwidth */
-typedef long	 E_UTRATransmissionBandwidth_t;
+typedef long	 ASN_XNAP_E_UTRATransmissionBandwidth_t;
 
 /* Implementation */
-extern asn_per_constraints_t asn_PER_type_E_UTRATransmissionBandwidth_constr_1;
-extern asn_TYPE_descriptor_t asn_DEF_E_UTRATransmissionBandwidth;
-extern const asn_INTEGER_specifics_t asn_SPC_E_UTRATransmissionBandwidth_specs_1;
+extern asn_per_constraints_t asn_PER_type_ASN_XNAP_E_UTRATransmissionBandwidth_constr_1;
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_E_UTRATransmissionBandwidth;
+extern const asn_INTEGER_specifics_t asn_SPC_ASN_XNAP_E_UTRATransmissionBandwidth_specs_1;
 asn_struct_free_f E_UTRATransmissionBandwidth_free;
 asn_struct_print_f E_UTRATransmissionBandwidth_print;
 asn_constr_check_f E_UTRATransmissionBandwidth_constraint;

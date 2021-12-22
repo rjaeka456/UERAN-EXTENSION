@@ -5,18 +5,18 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "E-UTRATransmissionBandwidth.h"
+#include "ASN_XNAP_E-UTRATransmissionBandwidth.h"
 
 /*
  * This type is implemented using NativeEnumerated,
  * so here we adjust the DEF accordingly.
  */
-asn_per_constraints_t asn_PER_type_E_UTRATransmissionBandwidth_constr_1 CC_NOTUSED = {
+asn_per_constraints_t asn_PER_type_ASN_XNAP_E_UTRATransmissionBandwidth_constr_1 CC_NOTUSED = {
 	{ APC_CONSTRAINED | APC_EXTENSIBLE,  3,  3,  0,  5 }	/* (0..5,...) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static const asn_INTEGER_enum_map_t asn_MAP_E_UTRATransmissionBandwidth_value2enum_1[] = {
+static const asn_INTEGER_enum_map_t asn_MAP_ASN_XNAP_E_UTRATransmissionBandwidth_value2enum_1[] = {
 	{ 0,	3,	"bw6" },
 	{ 1,	4,	"bw15" },
 	{ 2,	4,	"bw25" },
@@ -26,7 +26,7 @@ static const asn_INTEGER_enum_map_t asn_MAP_E_UTRATransmissionBandwidth_value2en
 	{ 6,	3,	"bw1" }
 	/* This list is extensible */
 };
-static const unsigned int asn_MAP_E_UTRATransmissionBandwidth_enum2value_1[] = {
+static const unsigned int asn_MAP_ASN_XNAP_E_UTRATransmissionBandwidth_enum2value_1[] = {
 	6,	/* bw1(6) */
 	5,	/* bw100(5) */
 	1,	/* bw15(1) */
@@ -36,30 +36,30 @@ static const unsigned int asn_MAP_E_UTRATransmissionBandwidth_enum2value_1[] = {
 	4	/* bw75(4) */
 	/* This list is extensible */
 };
-const asn_INTEGER_specifics_t asn_SPC_E_UTRATransmissionBandwidth_specs_1 = {
-	asn_MAP_E_UTRATransmissionBandwidth_value2enum_1,	/* "tag" => N; sorted by tag */
-	asn_MAP_E_UTRATransmissionBandwidth_enum2value_1,	/* N => "tag"; sorted by N */
+const asn_INTEGER_specifics_t asn_SPC_ASN_XNAP_E_UTRATransmissionBandwidth_specs_1 = {
+	asn_MAP_ASN_XNAP_E_UTRATransmissionBandwidth_value2enum_1,	/* "tag" => N; sorted by tag */
+	asn_MAP_ASN_XNAP_E_UTRATransmissionBandwidth_enum2value_1,	/* N => "tag"; sorted by N */
 	7,	/* Number of elements in the maps */
 	7,	/* Extensions before this member */
 	1,	/* Strict enumeration */
 	0,	/* Native long size */
 	0
 };
-static const ber_tlv_tag_t asn_DEF_E_UTRATransmissionBandwidth_tags_1[] = {
+static const ber_tlv_tag_t asn_DEF_ASN_XNAP_E_UTRATransmissionBandwidth_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
 };
-asn_TYPE_descriptor_t asn_DEF_E_UTRATransmissionBandwidth = {
+asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_E_UTRATransmissionBandwidth = {
 	"E-UTRATransmissionBandwidth",
 	"E-UTRATransmissionBandwidth",
 	&asn_OP_NativeEnumerated,
-	asn_DEF_E_UTRATransmissionBandwidth_tags_1,
-	sizeof(asn_DEF_E_UTRATransmissionBandwidth_tags_1)
-		/sizeof(asn_DEF_E_UTRATransmissionBandwidth_tags_1[0]), /* 1 */
-	asn_DEF_E_UTRATransmissionBandwidth_tags_1,	/* Same as above */
-	sizeof(asn_DEF_E_UTRATransmissionBandwidth_tags_1)
-		/sizeof(asn_DEF_E_UTRATransmissionBandwidth_tags_1[0]), /* 1 */
-	{ 0, &asn_PER_type_E_UTRATransmissionBandwidth_constr_1, NativeEnumerated_constraint },
+	asn_DEF_ASN_XNAP_E_UTRATransmissionBandwidth_tags_1,
+	sizeof(asn_DEF_ASN_XNAP_E_UTRATransmissionBandwidth_tags_1)
+		/sizeof(asn_DEF_ASN_XNAP_E_UTRATransmissionBandwidth_tags_1[0]), /* 1 */
+	asn_DEF_ASN_XNAP_E_UTRATransmissionBandwidth_tags_1,	/* Same as above */
+	sizeof(asn_DEF_ASN_XNAP_E_UTRATransmissionBandwidth_tags_1)
+		/sizeof(asn_DEF_ASN_XNAP_E_UTRATransmissionBandwidth_tags_1[0]), /* 1 */
+	{ 0, &asn_PER_type_ASN_XNAP_E_UTRATransmissionBandwidth_constr_1, NativeEnumerated_constraint },
 	0, 0,	/* Defined elsewhere */
-	&asn_SPC_E_UTRATransmissionBandwidth_specs_1	/* Additional specs */
+	&asn_SPC_ASN_XNAP_E_UTRATransmissionBandwidth_specs_1	/* Additional specs */
 };
 
