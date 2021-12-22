@@ -20,6 +20,7 @@
 #include <constr_CHOICE.h>
 #include <constr_SEQUENCE.h>
 #include "ASN_XNAP_GlobalNG-RANNode-ID.h"
+#include "ASN_XNAP_TAISupport-List.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -62,7 +63,7 @@ extern "C" {
            ASN_XNAP_XnSetupRequestIEs__value_PR present;
            union ASN_XNAP_XnSetupRequestIEs__ASN_XNAP_value_u {
                ASN_XNAP_GlobalNG_RANNode_ID_t	 GlobalNGRANNodeID;
-               ASN_NGAP_RANNodeName_t	 RANNodeName;
+               ASN_XNAP_TAISupport_List_t 	 TAISupportList;
                ASN_NGAP_SupportedTAList_t	 SupportedTAList;
                ASN_NGAP_PagingDRX_t	 PagingDRX;
                ASN_NGAP_UERetentionInformation_t	 UERetentionInformation;

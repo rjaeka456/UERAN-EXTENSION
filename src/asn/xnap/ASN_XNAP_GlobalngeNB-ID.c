@@ -5,14 +5,14 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "GlobalngeNB-ID.h"
+#include "ASN_XNAP_GlobalngeNB-ID.h"
 
-#include "ProtocolExtensionContainer.h"
-asn_TYPE_member_t asn_MBR_GlobalngeNB_ID_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct GlobalngeNB_ID, plmn_id),
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
+asn_TYPE_member_t asn_MBR_ASN_XNAP_GlobalngeNB_ID_1[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_GlobalngeNB_ID, plmn_id),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_PLMN_Identity,
+		&asn_DEF_ASN_XNAP_PLMN_Identity,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */

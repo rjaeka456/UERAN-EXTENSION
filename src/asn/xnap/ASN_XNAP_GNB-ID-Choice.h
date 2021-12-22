@@ -20,32 +20,32 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum GNB_ID_Choice_PR {
-	GNB_ID_Choice_PR_NOTHING,	/* No components present */
-	GNB_ID_Choice_PR_gnb_ID,
-	GNB_ID_Choice_PR_choice_extension
-} GNB_ID_Choice_PR;
+typedef enum ASN_XNAP_GNB_ID_Choice_PR {
+    ASN_XNAP_GNB_ID_Choice_PR_NOTHING,	/* No components present */
+    ASN_XNAP_GNB_ID_Choice_PR_gnb_ID,
+    ASN_XNAP_GNB_ID_Choice_PR_choice_extension
+} ASN_XNAP_GNB_ID_Choice_PR;
 
 /* Forward declarations */
-struct ProtocolIE_Single_Container;
+struct ASN_XNAP_ProtocolIE_Single_Container;
 
 /* GNB-ID-Choice */
-typedef struct GNB_ID_Choice {
-	GNB_ID_Choice_PR present;
-	union GNB_ID_Choice_u {
+typedef struct ASN_XNAP_GNB_ID_Choice {
+    ASN_XNAP_GNB_ID_Choice_PR present;
+	union ASN_XNAP_GNB_ID_Choice_u {
 		BIT_STRING_t	 gnb_ID;
-		struct ProtocolIE_Single_Container	*choice_extension;
+		struct ASN_XNAP_ProtocolIE_Single_Container	*choice_extension;
 	} choice;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} GNB_ID_Choice_t;
+} ASN_XNAP_GNB_ID_Choice_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_GNB_ID_Choice;
-extern asn_CHOICE_specifics_t asn_SPC_GNB_ID_Choice_specs_1;
-extern asn_TYPE_member_t asn_MBR_GNB_ID_Choice_1[2];
-extern asn_per_constraints_t asn_PER_type_GNB_ID_Choice_constr_1;
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_GNB_ID_Choice;
+extern asn_CHOICE_specifics_t asn_SPC_ASN_XNAP_GNB_ID_Choice_specs_1;
+extern asn_TYPE_member_t asn_MBR_ASN_XNAP_GNB_ID_Choice_1[2];
+extern asn_per_constraints_t asn_PER_type_ASN_XNAP_GNB_ID_Choice_constr_1;
 
 #ifdef __cplusplus
 }

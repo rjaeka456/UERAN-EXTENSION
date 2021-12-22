@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PLMN-Identity.h"
-#include "ENB-ID-Choice.h"
+#include "ASN_XNAP_PLMN-Identity.h"
+#include "ASN_XNAP_ENB-ID-Choice.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -21,13 +21,13 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* GlobalngeNB-ID */
-typedef struct GlobalngeNB_ID {
-	PLMN_Identity_t	 plmn_id;
-	ENB_ID_Choice_t	 enb_id;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_GlobalngeNB_ID {
+    ASN_XNAP_PLMN_Identity_t	 plmn_id;
+    ASN_XNAP_ENB_ID_Choice_t	 enb_id;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -35,12 +35,12 @@ typedef struct GlobalngeNB_ID {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} GlobalngeNB_ID_t;
+} ASN_XNAP_GlobalngeNB_ID_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_GlobalngeNB_ID;
-extern asn_SEQUENCE_specifics_t asn_SPC_GlobalngeNB_ID_specs_1;
-extern asn_TYPE_member_t asn_MBR_GlobalngeNB_ID_1[3];
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_GlobalngeNB_ID;
+extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_GlobalngeNB_ID_specs_1;
+extern asn_TYPE_member_t asn_MBR_ASN_XNAP_GlobalngeNB_ID_1[3];
 
 #ifdef __cplusplus
 }
