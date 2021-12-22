@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "E-UTRAFrequencyBandIndicator.h"
+#include "ASN_XNAP_E-UTRAFrequencyBandIndicator.h"
 #include <asn_SEQUENCE_OF.h>
 #include <constr_SEQUENCE_OF.h>
 
@@ -21,18 +21,18 @@ extern "C" {
 #endif
 
 /* E-UTRAMultibandInfoList */
-typedef struct E_UTRAMultibandInfoList {
-	A_SEQUENCE_OF(E_UTRAFrequencyBandIndicator_t) list;
+typedef struct ASN_XNAP_E_UTRAMultibandInfoList {
+	A_SEQUENCE_OF(ASN_XNAP_E_UTRAFrequencyBandIndicator_t) list;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} E_UTRAMultibandInfoList_t;
+} ASN_XNAP_E_UTRAMultibandInfoList_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_E_UTRAMultibandInfoList;
-extern asn_SET_OF_specifics_t asn_SPC_E_UTRAMultibandInfoList_specs_1;
-extern asn_TYPE_member_t asn_MBR_E_UTRAMultibandInfoList_1[1];
-extern asn_per_constraints_t asn_PER_type_E_UTRAMultibandInfoList_constr_1;
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_E_UTRAMultibandInfoList;
+extern asn_SET_OF_specifics_t asn_SPC_ASN_XNAP_E_UTRAMultibandInfoList_specs_1;
+extern asn_TYPE_member_t asn_MBR_ASN_XNAP_E_UTRAMultibandInfoList_1[1];
+extern asn_per_constraints_t asn_PER_type_ASN_XNAP_E_UTRAMultibandInfoList_constr_1;
 
 #ifdef __cplusplus
 }

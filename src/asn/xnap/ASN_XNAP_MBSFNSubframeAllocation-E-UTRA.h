@@ -20,34 +20,34 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum MBSFNSubframeAllocation_E_UTRA_PR {
-	MBSFNSubframeAllocation_E_UTRA_PR_NOTHING,	/* No components present */
-	MBSFNSubframeAllocation_E_UTRA_PR_oneframe,
-	MBSFNSubframeAllocation_E_UTRA_PR_fourframes,
-	MBSFNSubframeAllocation_E_UTRA_PR_choice_extension
-} MBSFNSubframeAllocation_E_UTRA_PR;
+typedef enum ASN_XNAP_MBSFNSubframeAllocation_E_UTRA_PR {
+    ASN_XNAP_MBSFNSubframeAllocation_E_UTRA_PR_NOTHING,	/* No components present */
+    ASN_XNAP_MBSFNSubframeAllocation_E_UTRA_PR_oneframe,
+    ASN_XNAP_MBSFNSubframeAllocation_E_UTRA_PR_fourframes,
+    ASN_XNAP_MBSFNSubframeAllocation_E_UTRA_PR_choice_extension
+} ASN_XNAP_MBSFNSubframeAllocation_E_UTRA_PR;
 
 /* Forward declarations */
-struct ProtocolIE_Single_Container;
+struct ASN_XNAP_ProtocolIE_Single_Container;
 
 /* MBSFNSubframeAllocation-E-UTRA */
-typedef struct MBSFNSubframeAllocation_E_UTRA {
-	MBSFNSubframeAllocation_E_UTRA_PR present;
-	union MBSFNSubframeAllocation_E_UTRA_u {
+typedef struct ASN_XNAP_MBSFNSubframeAllocation_E_UTRA {
+    ASN_XNAP_MBSFNSubframeAllocation_E_UTRA_PR present;
+	union ASN_XNAP_MBSFNSubframeAllocation_E_UTRA_u {
 		BIT_STRING_t	 oneframe;
 		BIT_STRING_t	 fourframes;
-		struct ProtocolIE_Single_Container	*choice_extension;
+		struct ASN_XNAP_ProtocolIE_Single_Container	*choice_extension;
 	} choice;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} MBSFNSubframeAllocation_E_UTRA_t;
+} ASN_XNAP_MBSFNSubframeAllocation_E_UTRA_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_MBSFNSubframeAllocation_E_UTRA;
-extern asn_CHOICE_specifics_t asn_SPC_MBSFNSubframeAllocation_E_UTRA_specs_1;
-extern asn_TYPE_member_t asn_MBR_MBSFNSubframeAllocation_E_UTRA_1[3];
-extern asn_per_constraints_t asn_PER_type_MBSFNSubframeAllocation_E_UTRA_constr_1;
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_MBSFNSubframeAllocation_E_UTRA;
+extern asn_CHOICE_specifics_t asn_SPC_ASN_XNAP_MBSFNSubframeAllocation_E_UTRA_specs_1;
+extern asn_TYPE_member_t asn_MBR_ASN_XNAP_MBSFNSubframeAllocation_E_UTRA_1[3];
+extern asn_per_constraints_t asn_PER_type_ASN_XNAP_MBSFNSubframeAllocation_E_UTRA_constr_1;
 
 #ifdef __cplusplus
 }
