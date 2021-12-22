@@ -12,9 +12,9 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "SpecialSubframePatterns-E-UTRA.h"
-#include "CyclicPrefix-E-UTRA-DL.h"
-#include "CyclicPrefix-E-UTRA-UL.h"
+#include "ASN_XNAP_SpecialSubframePatterns-E-UTRA.h"
+#include "ASN_XNAP_CyclicPrefix-E-UTRA-DL.h"
+#include "ASN_XNAP_CyclicPrefix-E-UTRA-UL.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -22,14 +22,14 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* SpecialSubframeInfo-E-UTRA */
-typedef struct SpecialSubframeInfo_E_UTRA {
-	SpecialSubframePatterns_E_UTRA_t	 specialSubframePattern;
-	CyclicPrefix_E_UTRA_DL_t	 cyclicPrefixDL;
-	CyclicPrefix_E_UTRA_UL_t	 cyclicPrefixUL;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_SpecialSubframeInfo_E_UTRA {
+    ASN_XNAP_SpecialSubframePatterns_E_UTRA_t	 specialSubframePattern;
+    ASN_XNAP_CyclicPrefix_E_UTRA_DL_t	 cyclicPrefixDL;
+    ASN_XNAP_CyclicPrefix_E_UTRA_UL_t	 cyclicPrefixUL;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -37,12 +37,12 @@ typedef struct SpecialSubframeInfo_E_UTRA {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} SpecialSubframeInfo_E_UTRA_t;
+} ASN_XNAP_SpecialSubframeInfo_E_UTRA_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_SpecialSubframeInfo_E_UTRA;
-extern asn_SEQUENCE_specifics_t asn_SPC_SpecialSubframeInfo_E_UTRA_specs_1;
-extern asn_TYPE_member_t asn_MBR_SpecialSubframeInfo_E_UTRA_1[4];
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_SpecialSubframeInfo_E_UTRA;
+extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_SpecialSubframeInfo_E_UTRA_specs_1;
+extern asn_TYPE_member_t asn_MBR_ASN_XNAP_SpecialSubframeInfo_E_UTRA_1[4];
 
 #ifdef __cplusplus
 }
