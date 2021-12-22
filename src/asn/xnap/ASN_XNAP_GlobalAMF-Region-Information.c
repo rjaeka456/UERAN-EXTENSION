@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "GlobalAMF-Region-Information.h"
+#include "ASN_XNAP_GlobalAMF-Region-Information.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 static int
 memb_amf_region_id_constraint_1(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
@@ -44,17 +44,17 @@ static asn_per_constraints_t asn_PER_memb_amf_region_id_constr_3 CC_NOTUSED = {
 	{ APC_CONSTRAINED,	 0,  0,  8,  8 }	/* (SIZE(8..8)) */,
 	0, 0	/* No PER value map */
 };
-asn_TYPE_member_t asn_MBR_GlobalAMF_Region_Information_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct GlobalAMF_Region_Information, plmn_ID),
+asn_TYPE_member_t asn_MBR_ASN_XNAP_GlobalAMF_Region_Information_1[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_GlobalAMF_Region_Information, plmn_ID),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_PLMN_Identity,
+		&asn_DEF_ASN_XNAP_PLMN_Identity,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
 		"plmn-ID"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct GlobalAMF_Region_Information, amf_region_id),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_GlobalAMF_Region_Information, amf_region_id),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_BIT_STRING,
@@ -63,47 +63,47 @@ asn_TYPE_member_t asn_MBR_GlobalAMF_Region_Information_1[] = {
 		0, 0, /* No default value */
 		"amf-region-id"
 		},
-	{ ATF_POINTER, 1, offsetof(struct GlobalAMF_Region_Information, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_GlobalAMF_Region_Information, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ProtocolExtensionContainer_6001P0,
+		&asn_DEF_ASN_XNAP_ProtocolExtensionContainer_6001P0,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
 		"iE-Extensions"
 		},
 };
-static const int asn_MAP_GlobalAMF_Region_Information_oms_1[] = { 2 };
-static const ber_tlv_tag_t asn_DEF_GlobalAMF_Region_Information_tags_1[] = {
+static const int asn_MAP_ASN_XNAP_GlobalAMF_Region_Information_oms_1[] = { 2 };
+static const ber_tlv_tag_t asn_DEF_ASN_XNAP_GlobalAMF_Region_Information_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_GlobalAMF_Region_Information_tag2el_1[] = {
+static const asn_TYPE_tag2member_t asn_MAP_ASN_XNAP_GlobalAMF_Region_Information_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* plmn-ID */
     { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* amf-region-id */
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* iE-Extensions */
 };
-asn_SEQUENCE_specifics_t asn_SPC_GlobalAMF_Region_Information_specs_1 = {
-	sizeof(struct GlobalAMF_Region_Information),
-	offsetof(struct GlobalAMF_Region_Information, _asn_ctx),
-	asn_MAP_GlobalAMF_Region_Information_tag2el_1,
+asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_GlobalAMF_Region_Information_specs_1 = {
+	sizeof(struct ASN_XNAP_GlobalAMF_Region_Information),
+	offsetof(struct ASN_XNAP_GlobalAMF_Region_Information, _asn_ctx),
+	asn_MAP_ASN_XNAP_GlobalAMF_Region_Information_tag2el_1,
 	3,	/* Count of tags in the map */
-	asn_MAP_GlobalAMF_Region_Information_oms_1,	/* Optional members */
+	asn_MAP_ASN_XNAP_GlobalAMF_Region_Information_oms_1,	/* Optional members */
 	1, 0,	/* Root/Additions */
 	3,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_GlobalAMF_Region_Information = {
+asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_GlobalAMF_Region_Information = {
 	"GlobalAMF-Region-Information",
 	"GlobalAMF-Region-Information",
 	&asn_OP_SEQUENCE,
-	asn_DEF_GlobalAMF_Region_Information_tags_1,
-	sizeof(asn_DEF_GlobalAMF_Region_Information_tags_1)
-		/sizeof(asn_DEF_GlobalAMF_Region_Information_tags_1[0]), /* 1 */
-	asn_DEF_GlobalAMF_Region_Information_tags_1,	/* Same as above */
-	sizeof(asn_DEF_GlobalAMF_Region_Information_tags_1)
-		/sizeof(asn_DEF_GlobalAMF_Region_Information_tags_1[0]), /* 1 */
+	asn_DEF_ASN_XNAP_GlobalAMF_Region_Information_tags_1,
+	sizeof(asn_DEF_ASN_XNAP_GlobalAMF_Region_Information_tags_1)
+		/sizeof(asn_DEF_ASN_XNAP_GlobalAMF_Region_Information_tags_1[0]), /* 1 */
+	asn_DEF_ASN_XNAP_GlobalAMF_Region_Information_tags_1,	/* Same as above */
+	sizeof(asn_DEF_ASN_XNAP_GlobalAMF_Region_Information_tags_1)
+		/sizeof(asn_DEF_ASN_XNAP_GlobalAMF_Region_Information_tags_1[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_GlobalAMF_Region_Information_1,
+	asn_MBR_ASN_XNAP_GlobalAMF_Region_Information_1,
 	3,	/* Elements count */
-	&asn_SPC_GlobalAMF_Region_Information_specs_1	/* Additional specs */
+	&asn_SPC_ASN_XNAP_GlobalAMF_Region_Information_specs_1	/* Additional specs */
 };
 

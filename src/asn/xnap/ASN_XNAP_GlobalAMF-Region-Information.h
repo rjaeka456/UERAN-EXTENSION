@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PLMN-Identity.h"
+#include "ASN_XNAP_PLMN-Identity.h"
 #include <BIT_STRING.h>
 #include <constr_SEQUENCE.h>
 
@@ -21,13 +21,13 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* GlobalAMF-Region-Information */
-typedef struct GlobalAMF_Region_Information {
-	PLMN_Identity_t	 plmn_ID;
+typedef struct ASN_XNAP_GlobalAMF_Region_Information {
+	ASN_XNAP_PLMN_Identity_t	 plmn_ID;
 	BIT_STRING_t	 amf_region_id;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -35,12 +35,12 @@ typedef struct GlobalAMF_Region_Information {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} GlobalAMF_Region_Information_t;
+} ASN_XNAP_GlobalAMF_Region_Information_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_GlobalAMF_Region_Information;
-extern asn_SEQUENCE_specifics_t asn_SPC_GlobalAMF_Region_Information_specs_1;
-extern asn_TYPE_member_t asn_MBR_GlobalAMF_Region_Information_1[3];
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_GlobalAMF_Region_Information;
+extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_GlobalAMF_Region_Information_specs_1;
+extern asn_TYPE_member_t asn_MBR_ASN_XNAP_GlobalAMF_Region_Information_1[3];
 
 #ifdef __cplusplus
 }

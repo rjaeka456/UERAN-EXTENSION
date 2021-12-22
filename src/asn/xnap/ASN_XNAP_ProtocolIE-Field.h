@@ -21,6 +21,7 @@
 #include <constr_SEQUENCE.h>
 #include "ASN_XNAP_GlobalNG-RANNode-ID.h"
 #include "ASN_XNAP_TAISupport-List.h"
+#include "ASN_XNAP_AMF-Region-Information.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -64,9 +65,10 @@ extern "C" {
            union ASN_XNAP_XnSetupRequestIEs__ASN_XNAP_value_u {
                ASN_XNAP_GlobalNG_RANNode_ID_t	 GlobalNGRANNodeID;
                ASN_XNAP_TAISupport_List_t 	 TAISupportList;
-               ASN_NGAP_SupportedTAList_t	 SupportedTAList;
-               ASN_NGAP_PagingDRX_t	 PagingDRX;
-               ASN_NGAP_UERetentionInformation_t	 UERetentionInformation;
+               ASN_XNAP_AMF_Region_Information_t 	 SupportedTAList;
+               ASN_XNAP_ServedCells_NR_t	 ServedCellsNR;
+               ASN_XNAP_ServedCells_E_UTRA_t	 ServedCellsEUTRA;
+               ASN_XNAP_InterfaceInstanceIndication_t InterfaceInstanceIndication;
            } choice;
 
            /* Context for parsing across buffer boundaries */
