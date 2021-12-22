@@ -5,12 +5,12 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "CriticalityDiagnostics.h"
+#include "ASN_XNAP_CriticalityDiagnostics.h"
 
-#include "CriticalityDiagnostics-IE-List.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_CriticalityDiagnostics-IE-List.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 static asn_TYPE_member_t asn_MBR_CriticalityDiagnostics_1[] = {
-	{ ATF_POINTER, 5, offsetof(struct CriticalityDiagnostics, procedureCode),
+	{ ATF_POINTER, 5, offsetof(struct ASN_XNAP_CriticalityDiagnostics, procedureCode),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProcedureCode,
@@ -19,7 +19,7 @@ static asn_TYPE_member_t asn_MBR_CriticalityDiagnostics_1[] = {
 		0, 0, /* No default value */
 		"procedureCode"
 		},
-	{ ATF_POINTER, 4, offsetof(struct CriticalityDiagnostics, triggeringMessage),
+	{ ATF_POINTER, 4, offsetof(struct ASN_XNAP_CriticalityDiagnostics, triggeringMessage),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_TriggeringMessage,
@@ -28,7 +28,7 @@ static asn_TYPE_member_t asn_MBR_CriticalityDiagnostics_1[] = {
 		0, 0, /* No default value */
 		"triggeringMessage"
 		},
-	{ ATF_POINTER, 3, offsetof(struct CriticalityDiagnostics, procedureCriticality),
+	{ ATF_POINTER, 3, offsetof(struct ASN_XNAP_CriticalityDiagnostics, procedureCriticality),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_Criticality,
@@ -37,7 +37,7 @@ static asn_TYPE_member_t asn_MBR_CriticalityDiagnostics_1[] = {
 		0, 0, /* No default value */
 		"procedureCriticality"
 		},
-	{ ATF_POINTER, 2, offsetof(struct CriticalityDiagnostics, iEsCriticalityDiagnostics),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_CriticalityDiagnostics, iEsCriticalityDiagnostics),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_CriticalityDiagnostics_IE_List,
@@ -46,7 +46,7 @@ static asn_TYPE_member_t asn_MBR_CriticalityDiagnostics_1[] = {
 		0, 0, /* No default value */
 		"iEsCriticalityDiagnostics"
 		},
-	{ ATF_POINTER, 1, offsetof(struct CriticalityDiagnostics, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_CriticalityDiagnostics, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -68,8 +68,8 @@ static const asn_TYPE_tag2member_t asn_MAP_CriticalityDiagnostics_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* iE-Extensions */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_CriticalityDiagnostics_specs_1 = {
-	sizeof(struct CriticalityDiagnostics),
-	offsetof(struct CriticalityDiagnostics, _asn_ctx),
+	sizeof(struct ASN_XNAP_CriticalityDiagnostics),
+	offsetof(struct ASN_XNAP_CriticalityDiagnostics, _asn_ctx),
 	asn_MAP_CriticalityDiagnostics_tag2el_1,
 	5,	/* Count of tags in the map */
 	asn_MAP_CriticalityDiagnostics_oms_1,	/* Optional members */

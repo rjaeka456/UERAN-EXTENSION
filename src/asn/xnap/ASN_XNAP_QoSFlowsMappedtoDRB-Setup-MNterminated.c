@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "QoSFlowsMappedtoDRB-Setup-MNterminated.h"
+#include "ASN_XNAP_QoSFlowsMappedtoDRB-Setup-MNterminated.h"
 
-#include "QoSFlowsMappedtoDRB-Setup-MNterminated-Item.h"
+#include "ASN_XNAP_QoSFlowsMappedtoDRB-Setup-MNterminated-Item.h"
 asn_per_constraints_t asn_PER_type_QoSFlowsMappedtoDRB_Setup_MNterminated_constr_1 CC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	{ APC_CONSTRAINED,	 6,  6,  1,  64 }	/* (SIZE(1..64)) */,
@@ -28,8 +28,8 @@ static const ber_tlv_tag_t asn_DEF_QoSFlowsMappedtoDRB_Setup_MNterminated_tags_1
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 asn_SET_OF_specifics_t asn_SPC_QoSFlowsMappedtoDRB_Setup_MNterminated_specs_1 = {
-	sizeof(struct QoSFlowsMappedtoDRB_Setup_MNterminated),
-	offsetof(struct QoSFlowsMappedtoDRB_Setup_MNterminated, _asn_ctx),
+	sizeof(struct ASN_XNAP_QoSFlowsMappedtoDRB_Setup_MNterminated),
+	offsetof(struct ASN_XNAP_QoSFlowsMappedtoDRB_Setup_MNterminated, _asn_ctx),
 	0,	/* XER encoding is XMLDelimitedItemList */
 };
 asn_TYPE_descriptor_t asn_DEF_QoSFlowsMappedtoDRB_Setup_MNterminated = {

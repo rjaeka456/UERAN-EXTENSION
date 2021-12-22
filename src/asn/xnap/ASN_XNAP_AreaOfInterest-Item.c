@@ -5,12 +5,12 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "AreaOfInterest-Item.h"
+#include "ASN_XNAP_AreaOfInterest-Item.h"
 
-#include "ListOfTAIsinAoI.h"
-#include "ListOfCells.h"
-#include "ListOfRANNodesinAoI.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ListOfTAIsinAoI.h"
+#include "ASN_XNAP_ListOfCells.h"
+#include "ASN_XNAP_ListOfRANNodesinAoI.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_AreaOfInterest_Item_1[] = {
 	{ ATF_POINTER, 3, offsetof(struct AreaOfInterest_Item, listOfTAIsinAoI),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),

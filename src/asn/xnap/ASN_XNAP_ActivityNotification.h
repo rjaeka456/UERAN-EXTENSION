@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "ProtocolIE-Container.h"
+#include "ASN_XNAP_ProtocolIE-Container.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -21,7 +21,7 @@ extern "C" {
 
 /* ActivityNotification */
 typedef struct ActivityNotification {
-	ProtocolIE_Container_5952P0_t	 protocolIEs;
+    ASN_XNAP_ProtocolIE_Container_5952P0_t	 protocolIEs;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.

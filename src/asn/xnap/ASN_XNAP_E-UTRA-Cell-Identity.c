@@ -42,25 +42,25 @@ E_UTRA_Cell_Identity_constraint(const asn_TYPE_descriptor_t *td, const void *spt
  * This type is implemented using BIT_STRING,
  * so here we adjust the DEF accordingly.
  */
-asn_per_constraints_t asn_PER_type_ASN_XNAP_E_UTRA_Cell_Identity_constr_1 CC_NOTUSED = {
+asn_per_constraints_t asn_PER_type_E_UTRA_Cell_Identity_constr_1 CC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	{ APC_CONSTRAINED,	 0,  0,  28,  28 }	/* (SIZE(28..28)) */,
 	0, 0	/* No PER value map */
 };
-static const ber_tlv_tag_t asn_DEF_ASN_XNAP_E_UTRA_Cell_Identity_tags_1[] = {
+static const ber_tlv_tag_t asn_DEF_E_UTRA_Cell_Identity_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (3 << 2))
 };
-asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_E_UTRA_Cell_Identity = {
+asn_TYPE_descriptor_t asn_DEF_E_UTRA_Cell_Identity = {
 	"E-UTRA-Cell-Identity",
 	"E-UTRA-Cell-Identity",
 	&asn_OP_BIT_STRING,
-	asn_DEF_ASN_XNAP_E_UTRA_Cell_Identity_tags_1,
-	sizeof(asn_DEF_ASN_XNAP_E_UTRA_Cell_Identity_tags_1)
-		/sizeof(asn_DEF_ASN_XNAP_E_UTRA_Cell_Identity_tags_1[0]), /* 1 */
-	asn_DEF_ASN_XNAP_E_UTRA_Cell_Identity_tags_1,	/* Same as above */
-	sizeof(asn_DEF_ASN_XNAP_E_UTRA_Cell_Identity_tags_1)
-		/sizeof(asn_DEF_ASN_XNAP_E_UTRA_Cell_Identity_tags_1[0]), /* 1 */
-	{ 0, &asn_PER_type_ASN_XNAP_E_UTRA_Cell_Identity_constr_1, E_UTRA_Cell_Identity_constraint },
+	asn_DEF_E_UTRA_Cell_Identity_tags_1,
+	sizeof(asn_DEF_E_UTRA_Cell_Identity_tags_1)
+		/sizeof(asn_DEF_E_UTRA_Cell_Identity_tags_1[0]), /* 1 */
+	asn_DEF_E_UTRA_Cell_Identity_tags_1,	/* Same as above */
+	sizeof(asn_DEF_E_UTRA_Cell_Identity_tags_1)
+		/sizeof(asn_DEF_E_UTRA_Cell_Identity_tags_1[0]), /* 1 */
+	{ 0, &asn_PER_type_E_UTRA_Cell_Identity_constr_1, E_UTRA_Cell_Identity_constraint },
 	0, 0,	/* No members */
 	&asn_SPC_BIT_STRING_specs	/* Additional specs */
 };

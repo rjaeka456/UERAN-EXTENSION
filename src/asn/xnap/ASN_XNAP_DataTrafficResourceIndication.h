@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "ActivationSFN.h"
-#include "SharedResourceType.h"
+#include "ASN_XNAP_ActivationSFN.h"
+#include "ASN_XNAP_SharedResourceType.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -26,7 +26,7 @@ struct ProtocolExtensionContainer;
 
 /* DataTrafficResourceIndication */
 typedef struct DataTrafficResourceIndication {
-	ActivationSFN_t	 activationSFN;
+    ASN_XNAP_ActivationSFN_t	 activationSFN;
 	SharedResourceType_t	 sharedResourceType;
 	struct ReservedSubframePattern	*reservedSubframePattern	/* OPTIONAL */;
 	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;

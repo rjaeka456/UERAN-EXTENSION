@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "Configuration-successfully-applied.h"
+#include "ASN_XNAP_Configuration-successfully-applied.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_Configuration_successfully_applied_1[] = {
 	{ ATF_POINTER, 2, offsetof(struct Configuration_successfully_applied, m_NG_RANNode_to_S_NG_RANNode_Container),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),

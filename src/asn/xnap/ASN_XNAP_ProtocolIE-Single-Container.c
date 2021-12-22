@@ -14,7 +14,7 @@
 static const ber_tlv_tag_t asn_DEF_ProtocolIE_Single_Container_5954P0_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_ProtocolIE_Single_Container_5954P0 = {
+asn_TYPE_descriptor_t asn_DEF_ProtocolIE_Single_Container_5954P0 = {
 	"ProtocolIE-Single-Container",
 	"ProtocolIE-Single-Container",
 	&asn_OP_SEQUENCE,

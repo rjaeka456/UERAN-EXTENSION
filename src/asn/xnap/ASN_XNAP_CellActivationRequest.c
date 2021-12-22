@@ -5,10 +5,10 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "CellActivationRequest.h"
+#include "ASN_XNAP_CellActivationRequest.h"
 
 asn_TYPE_member_t asn_MBR_CellActivationRequest_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct CellActivationRequest, protocolIEs),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_CellActivationRequest, protocolIEs),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolIE_Container_5952P0,
@@ -25,8 +25,8 @@ static const asn_TYPE_tag2member_t asn_MAP_CellActivationRequest_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* protocolIEs */
 };
 asn_SEQUENCE_specifics_t asn_SPC_CellActivationRequest_specs_1 = {
-	sizeof(struct CellActivationRequest),
-	offsetof(struct CellActivationRequest, _asn_ctx),
+	sizeof(struct ASN_XNAP_CellActivationRequest),
+	offsetof(struct ASN_XNAP_CellActivationRequest, _asn_ctx),
 	asn_MAP_CellActivationRequest_tag2el_1,
 	1,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */

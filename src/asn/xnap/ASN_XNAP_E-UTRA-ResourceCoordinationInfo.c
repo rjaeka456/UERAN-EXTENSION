@@ -5,10 +5,10 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "E-UTRA-ResourceCoordinationInfo.h"
+#include "ASN_XNAP_E-UTRA-ResourceCoordinationInfo.h"
 
-#include "NR-CGI.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_NR-CGI.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 static int
 memb_ul_coordination_info_constraint_1(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {

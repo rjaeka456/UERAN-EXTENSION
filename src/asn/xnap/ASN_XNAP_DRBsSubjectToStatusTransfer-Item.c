@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "DRBsSubjectToStatusTransfer-Item.h"
+#include "ASN_XNAP_DRBsSubjectToStatusTransfer-Item.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_DRBsSubjectToStatusTransfer_Item_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct DRBsSubjectToStatusTransfer_Item, drbID),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),

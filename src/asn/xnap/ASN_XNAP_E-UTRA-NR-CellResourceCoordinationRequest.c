@@ -5,7 +5,7 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "E-UTRA-NR-CellResourceCoordinationRequest.h"
+#include "ASN_XNAP_E-UTRA-NR-CellResourceCoordinationRequest.h"
 
 asn_TYPE_member_t asn_MBR_E_UTRA_NR_CellResourceCoordinationRequest_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct E_UTRA_NR_CellResourceCoordinationRequest, protocolIEs),

@@ -24,7 +24,7 @@ extern "C" {
 struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* BroadcastPLMNinTAISupport-Item */
-typedef struct BroadcastPLMNinTAISupport_Item {
+typedef struct ASN_XNAP_BroadcastPLMNinTAISupport_Item {
     ASN_XNAP_PLMN_Identity_t	 plmn_id;
     ASN_XNAP_SliceSupport_List_t	 tAISliceSupport_List;
 	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;

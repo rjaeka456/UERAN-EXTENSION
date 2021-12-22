@@ -5,10 +5,10 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "CellActivationFailure.h"
+#include "ASN_XNAP_CellActivationFailure.h"
 
 asn_TYPE_member_t asn_MBR_CellActivationFailure_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct CellActivationFailure, protocolIEs),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_CellActivationFailure, protocolIEs),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolIE_Container_5952P0,
@@ -25,8 +25,8 @@ static const asn_TYPE_tag2member_t asn_MAP_CellActivationFailure_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* protocolIEs */
 };
 asn_SEQUENCE_specifics_t asn_SPC_CellActivationFailure_specs_1 = {
-	sizeof(struct CellActivationFailure),
-	offsetof(struct CellActivationFailure, _asn_ctx),
+	sizeof(struct ASN_XNAP_CellActivationFailure),
+	offsetof(struct ASN_XNAP_CellActivationFailure, _asn_ctx),
 	asn_MAP_CellActivationFailure_tag2el_1,
 	1,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */

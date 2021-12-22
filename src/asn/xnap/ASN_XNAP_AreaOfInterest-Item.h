@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "RequestReferenceID.h"
+#include "ASN_XNAP_RequestReferenceID.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus

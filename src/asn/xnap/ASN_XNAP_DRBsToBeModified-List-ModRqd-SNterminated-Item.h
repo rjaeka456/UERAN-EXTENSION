@@ -12,9 +12,9 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "DRB-ID.h"
-#include "PDCPDuplicationConfiguration.h"
-#include "DuplicationActivation.h"
+#include "ASN_XNAP_DRB-ID.h"
+#include "ASN_XNAP_PDCPDuplicationConfiguration.h"
+#include "ASN_XNAP_DuplicationActivation.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus

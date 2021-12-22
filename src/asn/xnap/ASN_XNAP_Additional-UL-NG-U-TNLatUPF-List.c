@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "Additional-UL-NG-U-TNLatUPF-List.h"
+#include "ASN_XNAP_Additional-UL-NG-U-TNLatUPF-List.h"
 
-#include "Additional-UL-NG-U-TNLatUPF-Item.h"
+#include "ASN_XNAP_Additional-UL-NG-U-TNLatUPF-Item.h"
 static asn_per_constraints_t asn_PER_type_Additional_UL_NG_U_TNLatUPF_List_constr_1 CC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	{ APC_CONSTRAINED,	 2,  2,  1,  3 }	/* (SIZE(1..3)) */,

@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "DataForwardingInfoFromTargetNGRANnode.h"
+#include "ASN_XNAP_DataForwardingInfoFromTargetNGRANnode.h"
 
-#include "UPTransportLayerInformation.h"
-#include "DataForwardingResponseDRBItemList.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_UPTransportLayerInformation.h"
+#include "ASN_XNAP_DataForwardingResponseDRBItemList.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_DataForwardingInfoFromTargetNGRANnode_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct DataForwardingInfoFromTargetNGRANnode, qosFlowsAcceptedForDataForwarding_List),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),

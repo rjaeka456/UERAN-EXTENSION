@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "AllocationandRetentionPriority.h"
+#include "ASN_XNAP_AllocationandRetentionPriority.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 /*
  * This type is implemented using NativeEnumerated,
  * so here we adjust the DEF accordingly.
@@ -135,7 +135,7 @@ asn_TYPE_descriptor_t asn_DEF_pre_emption_vulnerability_7 = {
 };
 
 asn_TYPE_member_t asn_MBR_AllocationandRetentionPriority_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct AllocationandRetentionPriority, priorityLevel),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_AllocationandRetentionPriority, priorityLevel),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NativeInteger,
@@ -144,7 +144,7 @@ asn_TYPE_member_t asn_MBR_AllocationandRetentionPriority_1[] = {
 		0, 0, /* No default value */
 		"priorityLevel"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct AllocationandRetentionPriority, pre_emption_capability),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_AllocationandRetentionPriority, pre_emption_capability),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_pre_emption_capability_3,
@@ -153,7 +153,7 @@ asn_TYPE_member_t asn_MBR_AllocationandRetentionPriority_1[] = {
 		0, 0, /* No default value */
 		"pre-emption-capability"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct AllocationandRetentionPriority, pre_emption_vulnerability),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_AllocationandRetentionPriority, pre_emption_vulnerability),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_pre_emption_vulnerability_7,
@@ -162,7 +162,7 @@ asn_TYPE_member_t asn_MBR_AllocationandRetentionPriority_1[] = {
 		0, 0, /* No default value */
 		"pre-emption-vulnerability"
 		},
-	{ ATF_POINTER, 1, offsetof(struct AllocationandRetentionPriority, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_AllocationandRetentionPriority, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -183,8 +183,8 @@ static const asn_TYPE_tag2member_t asn_MAP_AllocationandRetentionPriority_tag2el
     { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_AllocationandRetentionPriority_specs_1 = {
-	sizeof(struct AllocationandRetentionPriority),
-	offsetof(struct AllocationandRetentionPriority, _asn_ctx),
+	sizeof(struct ASN_XNAP_AllocationandRetentionPriority),
+	offsetof(struct ASN_XNAP_AllocationandRetentionPriority, _asn_ctx),
 	asn_MAP_AllocationandRetentionPriority_tag2el_1,
 	4,	/* Count of tags in the map */
 	asn_MAP_AllocationandRetentionPriority_oms_1,	/* Optional members */

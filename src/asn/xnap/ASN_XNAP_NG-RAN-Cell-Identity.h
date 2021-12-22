@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "NR-Cell-Identity.h"
-#include "E-UTRA-Cell-Identity.h"
+#include "ASN_XNAP_NR-Cell-Identity.h"
+#include "ASN_XNAP_E-UTRA-Cell-Identity.h"
 #include <constr_CHOICE.h>
 
 #ifdef __cplusplus
@@ -21,28 +21,28 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum NG_RAN_Cell_Identity_PR {
-	NG_RAN_Cell_Identity_PR_NOTHING,	/* No components present */
-	NG_RAN_Cell_Identity_PR_nr,
-	NG_RAN_Cell_Identity_PR_e_utra,
-	NG_RAN_Cell_Identity_PR_choice_extension
-} NG_RAN_Cell_Identity_PR;
+typedef enum ASN_XNAP_NG_RAN_Cell_Identity_PR {
+    ASN_XNAP_NG_RAN_Cell_Identity_PR_NOTHING,	/* No components present */
+    ASN_XNAP_NG_RAN_Cell_Identity_PR_nr,
+    ASN_XNAP_NG_RAN_Cell_Identity_PR_e_utra,
+    ASN_XNAP_NG_RAN_Cell_Identity_PR_choice_extension
+} ASN_XNAP_NG_RAN_Cell_Identity_PR;
 
 /* Forward declarations */
-struct ProtocolIE_Single_Container;
+struct ASN_XNAP_ProtocolIE_Single_Container;
 
 /* NG-RAN-Cell-Identity */
-typedef struct NG_RAN_Cell_Identity {
-	NG_RAN_Cell_Identity_PR present;
-	union NG_RAN_Cell_Identity_u {
-		NR_Cell_Identity_t	 nr;
-		E_UTRA_Cell_Identity_t	 e_utra;
-		struct ProtocolIE_Single_Container	*choice_extension;
+typedef struct ASN_XNAP_NG_RAN_Cell_Identity {
+    ASN_XNAP_NG_RAN_Cell_Identity_PR present;
+	union ASN_XNAP_NG_RAN_Cell_Identity_u {
+        ASN_XNAP_NR_Cell_Identity_t	 nr;
+        ASN_XNAP_E_UTRA_Cell_Identity_t	 e_utra;
+		struct ASN_XNAP_ProtocolIE_Single_Container	*choice_extension;
 	} choice;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} NG_RAN_Cell_Identity_t;
+} ASN_XNAP_NG_RAN_Cell_Identity_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_NG_RAN_Cell_Identity;

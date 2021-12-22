@@ -12,12 +12,12 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "DRB-ID.h"
-#include "UPTransportParameters.h"
-#include "RLCMode.h"
-#include "QoSFlowLevelQoSParameters.h"
-#include "DuplicationActivation.h"
-#include "QoSFlowsMappedtoDRB-Setup-MNterminated.h"
+#include "ASN_XNAP_DRB-ID.h"
+#include "ASN_XNAP_UPTransportParameters.h"
+#include "ASN_XNAP_RLCMode.h"
+#include "ASN_XNAP_QoSFlowLevelQoSParameters.h"
+#include "ASN_XNAP_DuplicationActivation.h"
+#include "ASN_XNAP_QoSFlowsMappedtoDRB-Setup-MNterminated.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -25,23 +25,23 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ULConfiguration;
-struct PDCPSNLength;
-struct UPTransportParameters;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ULConfiguration;
+struct ASN_XNAP_PDCPSNLength;
+struct ASN_XNAP_UPTransportParameters;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* DRBsToBeSetupList-Setup-MNterminated-Item */
-typedef struct DRBsToBeSetupList_Setup_MNterminated_Item {
-	DRB_ID_t	 drb_ID;
-	UPTransportParameters_t	 mN_UL_PDCP_UP_TNLInfo;
-	RLCMode_t	 rLC_Mode;
-	struct ULConfiguration	*uL_Configuration	/* OPTIONAL */;
-	QoSFlowLevelQoSParameters_t	 dRB_QoS;
-	struct PDCPSNLength	*pDCP_SNLength	/* OPTIONAL */;
-	struct UPTransportParameters	*secondary_MN_UL_PDCP_UP_TNLInfo	/* OPTIONAL */;
-	DuplicationActivation_t	*duplicationActivation	/* OPTIONAL */;
-	QoSFlowsMappedtoDRB_Setup_MNterminated_t	 qoSFlowsMappedtoDRB_Setup_MNterminated;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_DRBsToBeSetupList_Setup_MNterminated_Item {
+    ASN_XNAP_DRB_ID_t	 drb_ID;
+    ASN_XNAP_UPTransportParameters_t	 mN_UL_PDCP_UP_TNLInfo;
+    ASN_XNAP_RLCMode_t	 rLC_Mode;
+	struct ASN_XNAP_ULConfiguration	*uL_Configuration	/* OPTIONAL */;
+    ASN_XNAP_QoSFlowLevelQoSParameters_t	 dRB_QoS;
+	struct ASN_XNAP_PDCPSNLength	*pDCP_SNLength	/* OPTIONAL */;
+	struct ASN_XNAP_UPTransportParameters	*secondary_MN_UL_PDCP_UP_TNLInfo	/* OPTIONAL */;
+    ASN_XNAP_DuplicationActivation_t	*duplicationActivation	/* OPTIONAL */;
+    ASN_XNAP_QoSFlowsMappedtoDRB_Setup_MNterminated_t	 qoSFlowsMappedtoDRB_Setup_MNterminated;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -49,7 +49,7 @@ typedef struct DRBsToBeSetupList_Setup_MNterminated_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} DRBsToBeSetupList_Setup_MNterminated_Item_t;
+} ASN_XNAP_DRBsToBeSetupList_Setup_MNterminated_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_DRBsToBeSetupList_Setup_MNterminated_Item;

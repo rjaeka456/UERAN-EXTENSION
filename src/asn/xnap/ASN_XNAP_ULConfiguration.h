@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "UL-UE-Configuration.h"
+#include "ASN_XNAP_UL-UE-Configuration.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus

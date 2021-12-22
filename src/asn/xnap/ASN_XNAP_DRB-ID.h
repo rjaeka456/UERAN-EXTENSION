@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* DRB-ID */
-typedef long	 DRB_ID_t;
+typedef long	 ASN_XNAP_DRB_ID_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_DRB_ID_constr_1;

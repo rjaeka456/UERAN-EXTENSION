@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "QoSFLowsAcceptedToBeForwarded-List.h"
+#include "ASN_XNAP_QoSFLowsAcceptedToBeForwarded-List.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus

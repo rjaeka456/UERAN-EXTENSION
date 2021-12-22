@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "DRB-ID.h"
-#include "DRBBStatusTransferChoice.h"
+#include "ASN_XNAP_DRB-ID.h"
+#include "ASN_XNAP_DRBBStatusTransferChoice.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -21,14 +21,14 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* DRBsSubjectToStatusTransfer-Item */
 typedef struct DRBsSubjectToStatusTransfer_Item {
 	DRB_ID_t	 drbID;
 	DRBBStatusTransferChoice_t	 pdcpStatusTransfer_UL;
 	DRBBStatusTransferChoice_t	 pdcpStatusTransfer_DL;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.

@@ -12,9 +12,9 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "DRB-ID.h"
-#include "UPTransportLayerInformation.h"
-#include "LCID.h"
+#include "ASN_XNAP_DRB-ID.h"
+#include "ASN_XNAP_UPTransportLayerInformation.h"
+#include "ASN_XNAP_LCID.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -22,18 +22,18 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct UPTransportLayerInformation;
-struct RLC_Status;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_UPTransportLayerInformation;
+struct ASN_XNAP_RLC_Status;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* DRBsToBeModified-List-ModRqd-MNterminated-Item */
-typedef struct DRBsToBeModified_List_ModRqd_MNterminated_Item {
-	DRB_ID_t	 drb_ID;
-	UPTransportLayerInformation_t	 sN_DL_SCG_UP_TNLInfo;
-	struct UPTransportLayerInformation	*secondary_SN_DL_SCG_UP_TNLInfo	/* OPTIONAL */;
-	LCID_t	*lCID	/* OPTIONAL */;
-	struct RLC_Status	*rlc_status	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_DRBsToBeModified_List_ModRqd_MNterminated_Item {
+    ASN_XNAP_DRB_ID_t	 drb_ID;
+    ASN_XNAP_UPTransportLayerInformation_t	 sN_DL_SCG_UP_TNLInfo;
+	struct ASN_XNAP_UPTransportLayerInformation	*secondary_SN_DL_SCG_UP_TNLInfo	/* OPTIONAL */;
+    ASN_XNAP_LCID_t	*lCID	/* OPTIONAL */;
+	struct ASN_XNAP_RLC_Status	*rlc_status	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -41,7 +41,7 @@ typedef struct DRBsToBeModified_List_ModRqd_MNterminated_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} DRBsToBeModified_List_ModRqd_MNterminated_Item_t;
+} ASN_XNAP_DRBsToBeModified_List_ModRqd_MNterminated_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_DRBsToBeModified_List_ModRqd_MNterminated_Item;

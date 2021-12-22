@@ -12,10 +12,10 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "BroadcastEUTRAPLMNs.h"
-#include "TAC.h"
-#include "E-UTRA-Cell-Identity.h"
-#include "RANAC.h"
+#include "ASN_XNAP_BroadcastEUTRAPLMNs.h"
+#include "ASN_XNAP_TAC.h"
+#include "ASN_XNAP_E-UTRA-Cell-Identity.h"
+#include "ASN_XNAP_RANAC.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -23,15 +23,15 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* BPLMN-ID-Info-EUTRA-Item */
-typedef struct BPLMN_ID_Info_EUTRA_Item {
+typedef struct ASN_XNAP_BPLMN_ID_Info_EUTRA_Item {
 	BroadcastEUTRAPLMNs_t	 broadcastPLMNs;
-	TAC_t	 tac;
-	E_UTRA_Cell_Identity_t	 e_utraCI;
-	RANAC_t	*ranac	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+    ASN_XNAP_TAC_t	 tac;
+    ASN_XNAP_E_UTRA_Cell_Identity_t	 e_utraCI;
+    ASN_XNAP_RANAC_t	*ranac	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -39,7 +39,7 @@ typedef struct BPLMN_ID_Info_EUTRA_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} BPLMN_ID_Info_EUTRA_Item_t;
+} ASN_XNAP_BPLMN_ID_Info_EUTRA_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_BPLMN_ID_Info_EUTRA_Item;

@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "DRB-List-withCause-Item.h"
+#include "ASN_XNAP_DRB-List-withCause-Item.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_DRB_List_withCause_Item_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct DRB_List_withCause_Item, drb_id),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_DRB_List_withCause_Item, drb_id),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_DRB_ID,
@@ -18,7 +18,7 @@ asn_TYPE_member_t asn_MBR_DRB_List_withCause_Item_1[] = {
 		0, 0, /* No default value */
 		"drb-id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct DRB_List_withCause_Item, cause),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_DRB_List_withCause_Item, cause),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_Cause,
@@ -27,7 +27,7 @@ asn_TYPE_member_t asn_MBR_DRB_List_withCause_Item_1[] = {
 		0, 0, /* No default value */
 		"cause"
 		},
-	{ ATF_POINTER, 2, offsetof(struct DRB_List_withCause_Item, rLC_Mode),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_DRB_List_withCause_Item, rLC_Mode),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_RLCMode,
@@ -36,7 +36,7 @@ asn_TYPE_member_t asn_MBR_DRB_List_withCause_Item_1[] = {
 		0, 0, /* No default value */
 		"rLC-Mode"
 		},
-	{ ATF_POINTER, 1, offsetof(struct DRB_List_withCause_Item, iE_Extension),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_DRB_List_withCause_Item, iE_Extension),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -57,8 +57,8 @@ static const asn_TYPE_tag2member_t asn_MAP_DRB_List_withCause_Item_tag2el_1[] = 
     { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* iE-Extension */
 };
 asn_SEQUENCE_specifics_t asn_SPC_DRB_List_withCause_Item_specs_1 = {
-	sizeof(struct DRB_List_withCause_Item),
-	offsetof(struct DRB_List_withCause_Item, _asn_ctx),
+	sizeof(struct ASN_XNAP_DRB_List_withCause_Item),
+	offsetof(struct ASN_XNAP_DRB_List_withCause_Item, _asn_ctx),
 	asn_MAP_DRB_List_withCause_Item_tag2el_1,
 	4,	/* Count of tags in the map */
 	asn_MAP_DRB_List_withCause_Item_oms_1,	/* Optional members */

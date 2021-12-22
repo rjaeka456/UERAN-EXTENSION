@@ -13,7 +13,7 @@
 
 /* Including external dependencies */
 #include <BIT_STRING.h>
-#include "COUNT-PDCP-SN18.h"
+#include "ASN_XNAP_COUNT-PDCP-SN18.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus

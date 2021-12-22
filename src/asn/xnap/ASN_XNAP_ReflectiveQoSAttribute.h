@@ -19,15 +19,15 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum ReflectiveQoSAttribute {
-	ReflectiveQoSAttribute_subject_to_reflective_QoS	= 0
+typedef enum ASN_XNAP_ReflectiveQoSAttribute {
+    ASN_XNAP_ReflectiveQoSAttribute_subject_to_reflective_QoS	= 0
 	/*
 	 * Enumeration is extensible
 	 */
-} e_ReflectiveQoSAttribute;
+} e_ASN_XNAP_ReflectiveQoSAttribute;
 
 /* ReflectiveQoSAttribute */
-typedef long	 ReflectiveQoSAttribute_t;
+typedef long	 ASN_XNAP_ReflectiveQoSAttribute_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_ReflectiveQoSAttribute_constr_1;

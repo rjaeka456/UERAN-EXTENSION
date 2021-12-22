@@ -19,16 +19,16 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum DuplicationActivation {
-	DuplicationActivation_active	= 0,
-	DuplicationActivation_inactive	= 1
+typedef enum ASN_XNAP_DuplicationActivation {
+    ASN_XNAP_DuplicationActivation_active	= 0,
+    ASN_XNAP_DuplicationActivation_inactive	= 1
 	/*
 	 * Enumeration is extensible
 	 */
-} e_DuplicationActivation;
+} e_ASN_XNAP_DuplicationActivation;
 
 /* DuplicationActivation */
-typedef long	 DuplicationActivation_t;
+typedef long	 ASN_XNAP_DuplicationActivation_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_DuplicationActivation_constr_1;

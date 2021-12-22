@@ -5,7 +5,7 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "C-RNTI.h"
+#include "ASN_XNAP_C-RNTI.h"
 
 int
 C_RNTI_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,

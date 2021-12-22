@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "UPTransportLayerInformation.h"
+#include "ASN_XNAP_UPTransportLayerInformation.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus

@@ -21,30 +21,30 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum AllocationandRetentionPriority__pre_emption_capability {
-	AllocationandRetentionPriority__pre_emption_capability_shall_not_trigger_preemptdatDion	= 0,
-	AllocationandRetentionPriority__pre_emption_capability_may_trigger_preemption	= 1
+typedef enum ASN_XNAP_AllocationandRetentionPriority__pre_emption_capability {
+    ASN_XNAP_AllocationandRetentionPriority__pre_emption_capability_shall_not_trigger_preemptdatDion	= 0,
+    ASN_XNAP_AllocationandRetentionPriority__pre_emption_capability_may_trigger_preemption	= 1
 	/*
 	 * Enumeration is extensible
 	 */
-} e_AllocationandRetentionPriority__pre_emption_capability;
-typedef enum AllocationandRetentionPriority__pre_emption_vulnerability {
-	AllocationandRetentionPriority__pre_emption_vulnerability_not_preemptable	= 0,
-	AllocationandRetentionPriority__pre_emption_vulnerability_preemptable	= 1
+} e_ASN_XNAP_AllocationandRetentionPriority__pre_emption_capability;
+typedef enum ASN_XNAP_AllocationandRetentionPriority__pre_emption_vulnerability {
+    ASN_XNAP_AllocationandRetentionPriority__pre_emption_vulnerability_not_preemptable	= 0,
+    ASN_XNAP_AllocationandRetentionPriority__pre_emption_vulnerability_preemptable	= 1
 	/*
 	 * Enumeration is extensible
 	 */
-} e_AllocationandRetentionPriority__pre_emption_vulnerability;
+} e_ASN_XNAP_AllocationandRetentionPriority__pre_emption_vulnerability;
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* AllocationandRetentionPriority */
-typedef struct AllocationandRetentionPriority {
+typedef struct ASN_XNAP_AllocationandRetentionPriority {
 	long	 priorityLevel;
 	long	 pre_emption_capability;
 	long	 pre_emption_vulnerability;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -52,7 +52,7 @@ typedef struct AllocationandRetentionPriority {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} AllocationandRetentionPriority_t;
+} ASN_XNAP_AllocationandRetentionPriority_t;
 
 /* Implementation */
 /* extern asn_TYPE_descriptor_t asn_DEF_pre_emption_capability_3;	// (Use -fall-defs-global to expose) */

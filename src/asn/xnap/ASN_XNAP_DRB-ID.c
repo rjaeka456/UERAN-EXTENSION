@@ -5,7 +5,7 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "DRB-ID.h"
+#include "ASN_XNAP_DRB-ID.h"
 
 int
 DRB_ID_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,

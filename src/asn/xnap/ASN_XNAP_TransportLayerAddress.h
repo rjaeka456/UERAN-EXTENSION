@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* TransportLayerAddress */
-typedef BIT_STRING_t	 TransportLayerAddress_t;
+typedef BIT_STRING_t	 ASN_XNAP_TransportLayerAddress_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_TransportLayerAddress_constr_1;

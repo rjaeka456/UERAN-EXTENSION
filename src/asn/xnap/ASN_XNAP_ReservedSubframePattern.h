@@ -14,7 +14,7 @@
 /* Including external dependencies */
 #include <NativeEnumerated.h>
 #include <BIT_STRING.h>
-#include "MBSFNControlRegionLength.h"
+#include "ASN_XNAP_MBSFNControlRegionLength.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -37,7 +37,7 @@ struct ProtocolExtensionContainer;
 typedef struct ReservedSubframePattern {
 	long	 subframeType;
 	BIT_STRING_t	 reservedSubframePattern;
-	MBSFNControlRegionLength_t	*mbsfnControlRegionLength	/* OPTIONAL */;
+    ASN_XNAP_MBSFNControlRegionLength_t	*mbsfnControlRegionLength	/* OPTIONAL */;
 	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,

@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "Additional-UL-NG-U-TNLatUPF-Item.h"
+#include "ASN_XNAP_Additional-UL-NG-U-TNLatUPF-Item.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_Additional_UL_NG_U_TNLatUPF_Item_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct Additional_UL_NG_U_TNLatUPF_Item, additional_UL_NG_U_TNLatUPF),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),

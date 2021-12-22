@@ -12,9 +12,9 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "ProcedureCode.h"
-#include "TriggeringMessage.h"
-#include "Criticality.h"
+#include "ASN_XNAP_ProcedureCode.h"
+#include "ASN_XNAP_TriggeringMessage.h"
+#include "ASN_XNAP_Criticality.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -22,16 +22,16 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct CriticalityDiagnostics_IE_List;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_CriticalityDiagnostics_IE_List;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* CriticalityDiagnostics */
-typedef struct CriticalityDiagnostics {
-	ProcedureCode_t	*procedureCode	/* OPTIONAL */;
-	TriggeringMessage_t	*triggeringMessage	/* OPTIONAL */;
-	Criticality_t	*procedureCriticality	/* OPTIONAL */;
-	struct CriticalityDiagnostics_IE_List	*iEsCriticalityDiagnostics	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_CriticalityDiagnostics {
+    ASN_XNAP_ProcedureCode_t	*procedureCode	/* OPTIONAL */;
+    ASN_XNAP_TriggeringMessage_t	*triggeringMessage	/* OPTIONAL */;
+    ASN_XNAP_Criticality_t	*procedureCriticality	/* OPTIONAL */;
+	struct ASN_XNAP_CriticalityDiagnostics_IE_List	*iEsCriticalityDiagnostics	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -39,7 +39,7 @@ typedef struct CriticalityDiagnostics {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} CriticalityDiagnostics_t;
+} ASN_XNAP_CriticalityDiagnostics_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_CriticalityDiagnostics;

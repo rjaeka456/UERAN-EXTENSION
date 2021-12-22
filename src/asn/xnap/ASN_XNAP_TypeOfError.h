@@ -19,16 +19,16 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum TypeOfError {
-	TypeOfError_not_understood	= 0,
-	TypeOfError_missing	= 1
+typedef enum ASN_XNAP_TypeOfError {
+    ASN_XNAP_TypeOfError_not_understood	= 0,
+    ASN_XNAP_TypeOfError_missing	= 1
 	/*
 	 * Enumeration is extensible
 	 */
-} e_TypeOfError;
+} e_ASN_XNAP_TypeOfError;
 
 /* TypeOfError */
-typedef long	 TypeOfError_t;
+typedef long	 ASN_XNAP_TypeOfError_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_TypeOfError_constr_1;

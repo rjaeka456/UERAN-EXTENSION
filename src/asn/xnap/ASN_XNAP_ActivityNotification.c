@@ -5,7 +5,7 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "ActivityNotification.h"
+#include "ASN_XNAP_ActivityNotification.h"
 
 asn_TYPE_member_t asn_MBR_ActivityNotification_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct ActivityNotification, protocolIEs),

@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "Configuration-rejected-by-M-NG-RANNode.h"
+#include "ASN_XNAP_Configuration-rejected-by-M-NG-RANNode.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_Configuration_rejected_by_M_NG_RANNode_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct Configuration_rejected_by_M_NG_RANNode, cause),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),

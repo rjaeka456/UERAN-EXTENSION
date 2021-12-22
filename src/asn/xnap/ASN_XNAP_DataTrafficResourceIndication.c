@@ -5,10 +5,10 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "DataTrafficResourceIndication.h"
+#include "ASN_XNAP_DataTrafficResourceIndication.h"
 
-#include "ReservedSubframePattern.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ReservedSubframePattern.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_DataTrafficResourceIndication_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct DataTrafficResourceIndication, activationSFN),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),

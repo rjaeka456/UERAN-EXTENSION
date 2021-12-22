@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* InterfaceInstanceIndication */
-typedef long	 InterfaceInstanceIndication_t;
+typedef long	 ASN_XNAP_InterfaceInstanceIndication_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_InterfaceInstanceIndication;

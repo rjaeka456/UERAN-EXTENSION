@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "Cause.h"
+#include "ASN_XNAP_Cause.h"
 #include <OCTET_STRING.h>
 #include <constr_SEQUENCE.h>
 

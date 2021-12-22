@@ -5,10 +5,10 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "AssistanceDataForRANPaging.h"
+#include "ASN_XNAP_AssistanceDataForRANPaging.h"
 
-#include "RANPagingAttemptInfo.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_RANPagingAttemptInfo.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 static asn_TYPE_member_t asn_MBR_AssistanceDataForRANPaging_1[] = {
 	{ ATF_POINTER, 2, offsetof(struct AssistanceDataForRANPaging, ran_paging_attempt_info),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),

@@ -36,25 +36,25 @@ RANAC_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
  * This type is implemented using NativeInteger,
  * so here we adjust the DEF accordingly.
  */
-asn_per_constraints_t asn_PER_type_ASN_XNAP_RANAC_constr_1 CC_NOTUSED = {
+asn_per_constraints_t asn_PER_type_RANAC_constr_1 CC_NOTUSED = {
 	{ APC_CONSTRAINED,	 8,  8,  0,  255 }	/* (0..255) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static const ber_tlv_tag_t asn_DEF_ASN_XNAP_RANAC_tags_1[] = {
+static const ber_tlv_tag_t asn_DEF_RANAC_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (2 << 2))
 };
 asn_TYPE_descriptor_t asn_DEF_RANAC = {
 	"RANAC",
 	"RANAC",
 	&asn_OP_NativeInteger,
-	asn_DEF_ASN_XNAP_RANAC_tags_1,
-	sizeof(asn_DEF_ASN_XNAP_RANAC_tags_1)
-		/sizeof(asn_DEF_ASN_XNAP_RANAC_tags_1[0]), /* 1 */
-	asn_DEF_ASN_XNAP_RANAC_tags_1,	/* Same as above */
-	sizeof(asn_DEF_ASN_XNAP_RANAC_tags_1)
-		/sizeof(asn_DEF_ASN_XNAP_RANAC_tags_1[0]), /* 1 */
-	{ 0, &asn_PER_type_ASN_XNAP_RANAC_constr_1, RANAC_constraint },
+	asn_DEF_RANAC_tags_1,
+	sizeof(asn_DEF_RANAC_tags_1)
+		/sizeof(asn_DEF_RANAC_tags_1[0]), /* 1 */
+	asn_DEF_RANAC_tags_1,	/* Same as above */
+	sizeof(asn_DEF_RANAC_tags_1)
+		/sizeof(asn_DEF_RANAC_tags_1[0]), /* 1 */
+	{ 0, &asn_PER_type_RANAC_constr_1, RANAC_constraint },
 	0, 0,	/* No members */
 	0	/* No specifics */
 };

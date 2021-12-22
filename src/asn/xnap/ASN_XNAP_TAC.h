@@ -22,8 +22,8 @@ extern "C" {
 typedef OCTET_STRING_t	 ASN_XNAP_TAC_t;
 
 /* Implementation */
-extern asn_per_constraints_t asn_PER_type_ASN_XNAP_TAC_constr_1;
-extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_TAC;
+extern asn_per_constraints_t asn_PER_type_TAC_constr_1;
+extern asn_TYPE_descriptor_t asn_DEF_TAC;
 asn_struct_free_f TAC_free;
 asn_struct_print_f TAC_print;
 asn_constr_check_f TAC_constraint;

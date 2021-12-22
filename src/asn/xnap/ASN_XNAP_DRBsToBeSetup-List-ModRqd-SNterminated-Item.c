@@ -5,12 +5,12 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "DRBsToBeSetup-List-ModRqd-SNterminated-Item.h"
+#include "ASN_XNAP_DRBsToBeSetup-List-ModRqd-SNterminated-Item.h"
 
-#include "PDCPSNLength.h"
-#include "UPTransportParameters.h"
-#include "ULConfiguration.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_PDCPSNLength.h"
+#include "ASN_XNAP_UPTransportParameters.h"
+#include "ASN_XNAP_ULConfiguration.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_DRBsToBeSetup_List_ModRqd_SNterminated_Item_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct DRBsToBeSetup_List_ModRqd_SNterminated_Item, drb_ID),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),

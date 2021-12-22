@@ -12,9 +12,9 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "QoSCharacteristics.h"
-#include "AllocationandRetentionPriority.h"
-#include "ReflectiveQoSAttribute.h"
+#include "ASN_XNAP_QoSCharacteristics.h"
+#include "ASN_XNAP_AllocationandRetentionPriority.h"
+#include "ASN_XNAP_ReflectiveQoSAttribute.h"
 #include <NativeEnumerated.h>
 #include <constr_SEQUENCE.h>
 
@@ -23,25 +23,25 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum QoSFlowLevelQoSParameters__additionalQoSflowInfo {
-	QoSFlowLevelQoSParameters__additionalQoSflowInfo_more_likely	= 0
+typedef enum ASN_XNAP_QoSFlowLevelQoSParameters__additionalQoSflowInfo {
+    ASN_XNAP_QoSFlowLevelQoSParameters__additionalQoSflowInfo_more_likely	= 0
 	/*
 	 * Enumeration is extensible
 	 */
-} e_QoSFlowLevelQoSParameters__additionalQoSflowInfo;
+} e_ASN_XNAP_QoSFlowLevelQoSParameters__additionalQoSflowInfo;
 
 /* Forward declarations */
-struct GBRQoSFlowInfo;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_GBRQoSFlowInfo;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* QoSFlowLevelQoSParameters */
-typedef struct QoSFlowLevelQoSParameters {
-	QoSCharacteristics_t	 qos_characteristics;
-	AllocationandRetentionPriority_t	 allocationAndRetentionPrio;
-	struct GBRQoSFlowInfo	*gBRQoSFlowInfo	/* OPTIONAL */;
-	ReflectiveQoSAttribute_t	*relectiveQoS	/* OPTIONAL */;
+typedef struct ASN_XNAP_QoSFlowLevelQoSParameters {
+    ASN_XNAP_QoSCharacteristics_t	 qos_characteristics;
+    ASN_XNAP_AllocationandRetentionPriority_t	 allocationAndRetentionPrio;
+	struct ASN_XNAP_GBRQoSFlowInfo	*gBRQoSFlowInfo	/* OPTIONAL */;
+    ASN_XNAP_ReflectiveQoSAttribute_t	*relectiveQoS	/* OPTIONAL */;
 	long	*additionalQoSflowInfo	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -49,7 +49,7 @@ typedef struct QoSFlowLevelQoSParameters {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} QoSFlowLevelQoSParameters_t;
+} ASN_XNAP_QoSFlowLevelQoSParameters_t;
 
 /* Implementation */
 /* extern asn_TYPE_descriptor_t asn_DEF_additionalQoSflowInfo_6;	// (Use -fall-defs-global to expose) */

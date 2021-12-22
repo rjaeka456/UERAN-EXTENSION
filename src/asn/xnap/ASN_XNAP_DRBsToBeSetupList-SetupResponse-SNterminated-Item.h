@@ -12,12 +12,12 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "DRB-ID.h"
-#include "UPTransportParameters.h"
-#include "QoSFlowLevelQoSParameters.h"
-#include "RLCMode.h"
-#include "DuplicationActivation.h"
-#include "QoSFlowsMappedtoDRB-SetupResponse-SNterminated.h"
+#include "ASN_XNAP_DRB-ID.h"
+#include "ASN_XNAP_UPTransportParameters.h"
+#include "ASN_XNAP_QoSFlowLevelQoSParameters.h"
+#include "ASN_XNAP_RLCMode.h"
+#include "ASN_XNAP_DuplicationActivation.h"
+#include "ASN_XNAP_QoSFlowsMappedtoDRB-SetupResponse-SNterminated.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -25,23 +25,23 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct PDCPSNLength;
-struct ULConfiguration;
-struct UPTransportParameters;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_PDCPSNLength;
+struct ASN_XNAP_ULConfiguration;
+struct ASN_XNAP_UPTransportParameters;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* DRBsToBeSetupList-SetupResponse-SNterminated-Item */
-typedef struct DRBsToBeSetupList_SetupResponse_SNterminated_Item {
-	DRB_ID_t	 drb_ID;
-	UPTransportParameters_t	 sN_UL_PDCP_UP_TNLInfo;
-	QoSFlowLevelQoSParameters_t	 dRB_QoS;
-	struct PDCPSNLength	*pDCP_SNLength	/* OPTIONAL */;
-	RLCMode_t	 rLC_Mode;
-	struct ULConfiguration	*uL_Configuration	/* OPTIONAL */;
-	struct UPTransportParameters	*secondary_SN_UL_PDCP_UP_TNLInfo	/* OPTIONAL */;
-	DuplicationActivation_t	*duplicationActivation	/* OPTIONAL */;
-	QoSFlowsMappedtoDRB_SetupResponse_SNterminated_t	 qoSFlowsMappedtoDRB_SetupResponse_SNterminated;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_DRBsToBeSetupList_SetupResponse_SNterminated_Item {
+    ASN_XNAP_DRB_ID_t	 drb_ID;
+    ASN_XNAP_UPTransportParameters_t	 sN_UL_PDCP_UP_TNLInfo;
+    ASN_XNAP_QoSFlowLevelQoSParameters_t	 dRB_QoS;
+	struct ASN_XNAP_PDCPSNLength	*pDCP_SNLength	/* OPTIONAL */;
+    ASN_XNAP_RLCMode_t	 rLC_Mode;
+	struct ASN_XNAP_ULConfiguration	*uL_Configuration	/* OPTIONAL */;
+	struct ASN_XNAP_UPTransportParameters	*secondary_SN_UL_PDCP_UP_TNLInfo	/* OPTIONAL */;
+    ASN_XNAP_DuplicationActivation_t	*duplicationActivation	/* OPTIONAL */;
+    ASN_XNAP_QoSFlowsMappedtoDRB_SetupResponse_SNterminated_t	 qoSFlowsMappedtoDRB_SetupResponse_SNterminated;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.

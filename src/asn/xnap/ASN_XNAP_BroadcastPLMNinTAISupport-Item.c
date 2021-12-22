@@ -9,16 +9,16 @@
 
 #include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_BroadcastPLMNinTAISupport_Item_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct BroadcastPLMNinTAISupport_Item, plmn_id),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_BroadcastPLMNinTAISupport_Item, plmn_id),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ASN_XNAP_PLMN_Identity,
+		&asn_DEF_PLMN_Identity,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
 		"plmn-id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct BroadcastPLMNinTAISupport_Item, tAISliceSupport_List),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_BroadcastPLMNinTAISupport_Item, tAISliceSupport_List),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ASN_XNAP_SliceSupport_List,
@@ -27,10 +27,10 @@ asn_TYPE_member_t asn_MBR_BroadcastPLMNinTAISupport_Item_1[] = {
 		0, 0, /* No default value */
 		"tAISliceSupport-List"
 		},
-	{ ATF_POINTER, 1, offsetof(struct BroadcastPLMNinTAISupport_Item, iE_Extension),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_BroadcastPLMNinTAISupport_Item, iE_Extension),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ASN_XNAP_ProtocolExtensionContainer_6001P0,
+		&asn_DEF_ProtocolExtensionContainer_6001P0,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
@@ -55,7 +55,7 @@ asn_SEQUENCE_specifics_t asn_SPC_BroadcastPLMNinTAISupport_Item_specs_1 = {
 	1, 0,	/* Root/Additions */
 	3,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_BroadcastPLMNinTAISupport_Item = {
+asn_TYPE_descriptor_t asn_DEF_BroadcastPLMNinTAISupport_Item = {
 	"BroadcastPLMNinTAISupport-Item",
 	"BroadcastPLMNinTAISupport-Item",
 	&asn_OP_SEQUENCE,

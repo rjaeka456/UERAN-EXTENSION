@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PER-Scalar.h"
-#include "PER-Exponent.h"
+#include "ASN_XNAP_PER-Scalar.h"
+#include "ASN_XNAP_PER-Exponent.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus

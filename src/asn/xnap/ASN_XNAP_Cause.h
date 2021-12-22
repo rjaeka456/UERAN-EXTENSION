@@ -12,10 +12,10 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "CauseRadioNetworkLayer.h"
-#include "CauseTransportLayer.h"
-#include "CauseProtocol.h"
-#include "CauseMisc.h"
+#include "ASN_XNAP_CauseRadioNetworkLayer.h"
+#include "ASN_XNAP_CauseTransportLayer.h"
+#include "ASN_XNAP_CauseProtocol.h"
+#include "ASN_XNAP_CauseMisc.h"
 #include <constr_CHOICE.h>
 
 #ifdef __cplusplus

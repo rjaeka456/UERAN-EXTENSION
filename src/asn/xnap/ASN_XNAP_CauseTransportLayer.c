@@ -5,7 +5,7 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "CauseTransportLayer.h"
+#include "ASN_XNAP_CauseTransportLayer.h"
 
 /*
  * This type is implemented using NativeEnumerated,

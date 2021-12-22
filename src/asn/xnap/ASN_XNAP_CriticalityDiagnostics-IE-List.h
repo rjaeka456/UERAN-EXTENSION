@@ -13,9 +13,9 @@
 
 /* Including external dependencies */
 #include <asn_SEQUENCE_OF.h>
-#include "Criticality.h"
-#include "ProtocolIE-ID.h"
-#include "TypeOfError.h"
+#include "ASN_XNAP_Criticality.h"
+#include "ASN_XNAP_ProtocolIE-ID.h"
+#include "ASN_XNAP_TypeOfError.h"
 #include <constr_SEQUENCE.h>
 #include <constr_SEQUENCE_OF.h>
 
@@ -24,14 +24,14 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* Forward definitions */
-typedef struct CriticalityDiagnostics_IE_List__Member {
-	Criticality_t	 iECriticality;
-	ProtocolIE_ID_t	 iE_ID;
-	TypeOfError_t	 typeOfError;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_CriticalityDiagnostics_IE_List__Member {
+    ASN_XNAP_Criticality_t	 iECriticality;
+    ASN_XNAP_ProtocolIE_ID_t	 iE_ID;
+    ASN_XNAP_TypeOfError_t	 typeOfError;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -39,15 +39,15 @@ typedef struct CriticalityDiagnostics_IE_List__Member {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} CriticalityDiagnostics_IE_List__Member;
+} ASN_XNAP_CriticalityDiagnostics_IE_List__Member;
 
 /* CriticalityDiagnostics-IE-List */
-typedef struct CriticalityDiagnostics_IE_List {
-	A_SEQUENCE_OF(CriticalityDiagnostics_IE_List__Member) list;
+typedef struct ASN_XNAP_CriticalityDiagnostics_IE_List {
+	A_SEQUENCE_OF(ASN_XNAP_CriticalityDiagnostics_IE_List__Member) list;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} CriticalityDiagnostics_IE_List_t;
+} ASN_XNAP_CriticalityDiagnostics_IE_List_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_CriticalityDiagnostics_IE_List;

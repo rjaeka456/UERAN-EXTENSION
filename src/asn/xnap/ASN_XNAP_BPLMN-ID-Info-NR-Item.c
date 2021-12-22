@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "BPLMN-ID-Info-NR-Item.h"
+#include "ASN_XNAP_BPLMN-ID-Info-NR-Item.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_BPLMN_ID_Info_NR_Item_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct BPLMN_ID_Info_NR_Item, broadcastPLMNs),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),

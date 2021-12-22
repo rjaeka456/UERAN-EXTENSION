@@ -5,7 +5,7 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "E-UTRA-CoordinationAssistanceInfo.h"
+#include "ASN_XNAP_E-UTRA-CoordinationAssistanceInfo.h"
 
 /*
  * This type is implemented using NativeEnumerated,

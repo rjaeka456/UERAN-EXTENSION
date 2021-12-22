@@ -19,14 +19,14 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum TriggeringMessage {
-	TriggeringMessage_initiating_message	= 0,
-	TriggeringMessage_successful_outcome	= 1,
-	TriggeringMessage_unsuccessful_outcome	= 2
-} e_TriggeringMessage;
+typedef enum ASN_XNAP_TriggeringMessage {
+    ASN_XNAP_TriggeringMessage_initiating_message	= 0,
+    ASN_XNAP_TriggeringMessage_successful_outcome	= 1,
+    ASN_XNAP_TriggeringMessage_unsuccessful_outcome	= 2
+} e_ASN_XNAP_TriggeringMessage;
 
 /* TriggeringMessage */
-typedef long	 TriggeringMessage_t;
+typedef long	 ASN_XNAP_TriggeringMessage_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_TriggeringMessage_constr_1;

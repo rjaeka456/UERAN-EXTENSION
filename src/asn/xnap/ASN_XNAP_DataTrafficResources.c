@@ -5,7 +5,7 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "DataTrafficResources.h"
+#include "ASN_XNAP_DataTrafficResources.h"
 
 int
 DataTrafficResources_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,

@@ -12,9 +12,9 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "DRB-ID.h"
-#include "UPTransportParameters.h"
-#include "LCID.h"
+#include "ASN_XNAP_DRB-ID.h"
+#include "ASN_XNAP_UPTransportParameters.h"
+#include "ASN_XNAP_LCID.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus

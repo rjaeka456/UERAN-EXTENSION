@@ -12,10 +12,10 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "BroadcastPLMNs.h"
-#include "TAC.h"
-#include "NR-Cell-Identity.h"
-#include "RANAC.h"
+#include "ASN_XNAP_BroadcastPLMNs.h"
+#include "ASN_XNAP_TAC.h"
+#include "ASN_XNAP_NR-Cell-Identity.h"
+#include "ASN_XNAP_RANAC.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -23,15 +23,15 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* BPLMN-ID-Info-NR-Item */
 typedef struct BPLMN_ID_Info_NR_Item {
-	BroadcastPLMNs_t	 broadcastPLMNs;
-	TAC_t	 tac;
-	NR_Cell_Identity_t	 nr_CI;
-	RANAC_t	*ranac	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+    ASN_XNAP_BroadcastPLMNs_t	 broadcastPLMNs;
+    ASN_XNAP_TAC_t	 tac;
+    ASN_XNAP_NR_Cell_Identity_t	 nr_CI;
+    ASN_XNAP_RANAC_t	*ranac	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.

@@ -5,13 +5,13 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "DRBsToBeModifiedList-Modification-MNterminated-Item.h"
+#include "ASN_XNAP_DRBsToBeModifiedList-Modification-MNterminated-Item.h"
 
-#include "UPTransportParameters.h"
-#include "QoSFlowLevelQoSParameters.h"
-#include "ULConfiguration.h"
-#include "QoSFlowsMappedtoDRB-Setup-MNterminated.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_UPTransportParameters.h"
+#include "ASN_XNAP_QoSFlowLevelQoSParameters.h"
+#include "ASN_XNAP_ULConfiguration.h"
+#include "ASN_XNAP_QoSFlowsMappedtoDRB-Setup-MNterminated.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_DRBsToBeModifiedList_Modification_MNterminated_Item_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct DRBsToBeModifiedList_Modification_MNterminated_Item, drb_ID),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),

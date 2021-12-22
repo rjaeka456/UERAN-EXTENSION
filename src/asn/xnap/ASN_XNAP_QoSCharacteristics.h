@@ -19,30 +19,30 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum QoSCharacteristics_PR {
-	QoSCharacteristics_PR_NOTHING,	/* No components present */
-	QoSCharacteristics_PR_non_dynamic,
-	QoSCharacteristics_PR_dynamic,
-	QoSCharacteristics_PR_choice_extension
-} QoSCharacteristics_PR;
+typedef enum ASN_XNAP_QoSCharacteristics_PR {
+    ASN_XNAP_QoSCharacteristics_PR_NOTHING,	/* No components present */
+    ASN_XNAP_QoSCharacteristics_PR_non_dynamic,
+    ASN_XNAP_QoSCharacteristics_PR_dynamic,
+    ASN_XNAP_QoSCharacteristics_PR_choice_extension
+} ASN_XNAP_QoSCharacteristics_PR;
 
 /* Forward declarations */
-struct NonDynamic5QIDescriptor;
-struct Dynamic5QIDescriptor;
-struct ProtocolIE_Single_Container;
+struct ASN_XNAP_NonDynamic5QIDescriptor;
+struct ASN_XNAP_Dynamic5QIDescriptor;
+struct ASN_XNAP_ProtocolIE_Single_Container;
 
 /* QoSCharacteristics */
-typedef struct QoSCharacteristics {
-	QoSCharacteristics_PR present;
-	union QoSCharacteristics_u {
-		struct NonDynamic5QIDescriptor	*non_dynamic;
-		struct Dynamic5QIDescriptor	*dynamic;
-		struct ProtocolIE_Single_Container	*choice_extension;
+typedef struct ASN_XNAP_QoSCharacteristics {
+    ASN_XNAP_QoSCharacteristics_PR present;
+	union ASN_XNAP_QoSCharacteristics_u {
+		struct ASN_XNAP_NonDynamic5QIDescriptor	*non_dynamic;
+		struct ASN_XNAP_Dynamic5QIDescriptor	*dynamic;
+		struct ASN_XNAP_ProtocolIE_Single_Container	*choice_extension;
 	} choice;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} QoSCharacteristics_t;
+} ASN_XNAP_QoSCharacteristics_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_QoSCharacteristics;

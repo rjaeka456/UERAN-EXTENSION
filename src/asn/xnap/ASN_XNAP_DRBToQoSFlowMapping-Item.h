@@ -12,9 +12,9 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "DRB-ID.h"
-#include "QoSFlows-List.h"
-#include "RLCMode.h"
+#include "ASN_XNAP_DRB-ID.h"
+#include "ASN_XNAP_QoSFlows-List.h"
+#include "ASN_XNAP_RLCMode.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus

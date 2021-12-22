@@ -19,18 +19,18 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum RLCMode {
-	RLCMode_rlc_am	= 0,
-	RLCMode_rlc_um_bidirectional	= 1,
-	RLCMode_rlc_um_unidirectional_ul	= 2,
-	RLCMode_rlc_um_unidirectional_dl	= 3
+typedef enum ASN_XNAP_RLCMode {
+    ASN_XNAP_RLCMode_rlc_am	= 0,
+    ASN_XNAP_RLCMode_rlc_um_bidirectional	= 1,
+    ASN_XNAP_RLCMode_rlc_um_unidirectional_ul	= 2,
+    ASN_XNAP_RLCMode_rlc_um_unidirectional_dl	= 3
 	/*
 	 * Enumeration is extensible
 	 */
-} e_RLCMode;
+} e_ASN_XNAP_RLCMode;
 
 /* RLCMode */
-typedef long	 RLCMode_t;
+typedef long	 ASN_XNAP_RLCMode_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_RLCMode_constr_1;

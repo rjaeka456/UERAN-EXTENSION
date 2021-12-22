@@ -5,10 +5,10 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "DRBsAdmittedList-ModConfirm-SNterminated-Item.h"
+#include "ASN_XNAP_DRBsAdmittedList-ModConfirm-SNterminated-Item.h"
 
-#include "UPTransportParameters.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_UPTransportParameters.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_DRBsAdmittedList_ModConfirm_SNterminated_Item_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct DRBsAdmittedList_ModConfirm_SNterminated_Item, drb_ID),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),

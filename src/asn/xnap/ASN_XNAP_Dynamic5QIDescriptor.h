@@ -12,13 +12,13 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PriorityLevelQoS.h"
-#include "PacketDelayBudget.h"
-#include "PacketErrorRate.h"
-#include "FiveQI.h"
+#include "ASN_XNAP_PriorityLevelQoS.h"
+#include "ASN_XNAP_PacketDelayBudget.h"
+#include "ASN_XNAP_PacketErrorRate.h"
+#include "ASN_XNAP_FiveQI.h"
 #include <NativeEnumerated.h>
-#include "AveragingWindow.h"
-#include "MaximumDataBurstVolume.h"
+#include "ASN_XNAP_AveragingWindow.h"
+#include "ASN_XNAP_MaximumDataBurstVolume.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus

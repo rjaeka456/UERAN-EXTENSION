@@ -37,25 +37,25 @@ PLMN_Identity_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
  * This type is implemented using OCTET_STRING,
  * so here we adjust the DEF accordingly.
  */
-asn_per_constraints_t asn_PER_type_ASN_XNAP_PLMN_Identity_constr_1 CC_NOTUSED = {
+asn_per_constraints_t asn_PER_type_PLMN_Identity_constr_1 CC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	{ APC_CONSTRAINED,	 0,  0,  3,  3 }	/* (SIZE(3..3)) */,
 	0, 0	/* No PER value map */
 };
-static const ber_tlv_tag_t asn_DEF_ASN_XNAP_PLMN_Identity_tags_1[] = {
+static const ber_tlv_tag_t asn_DEF_PLMN_Identity_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (4 << 2))
 };
-asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_PLMN_Identity = {
+asn_TYPE_descriptor_t asn_DEF_PLMN_Identity = {
 	"PLMN-Identity",
 	"PLMN-Identity",
 	&asn_OP_OCTET_STRING,
-	asn_DEF_ASN_XNAP_PLMN_Identity_tags_1,
-	sizeof(asn_DEF_ASN_XNAP_PLMN_Identity_tags_1)
-		/sizeof(asn_DEF_ASN_XNAP_PLMN_Identity_tags_1[0]), /* 1 */
-	asn_DEF_ASN_XNAP_PLMN_Identity_tags_1,	/* Same as above */
-	sizeof(asn_DEF_ASN_XNAP_PLMN_Identity_tags_1)
-		/sizeof(asn_DEF_ASN_XNAP_PLMN_Identity_tags_1[0]), /* 1 */
-	{ 0, &asn_PER_type_ASN_XNAP_PLMN_Identity_constr_1, PLMN_Identity_constraint },
+	asn_DEF_PLMN_Identity_tags_1,
+	sizeof(asn_DEF_PLMN_Identity_tags_1)
+		/sizeof(asn_DEF_PLMN_Identity_tags_1[0]), /* 1 */
+	asn_DEF_PLMN_Identity_tags_1,	/* Same as above */
+	sizeof(asn_DEF_PLMN_Identity_tags_1)
+		/sizeof(asn_DEF_PLMN_Identity_tags_1[0]), /* 1 */
+	{ 0, &asn_PER_type_PLMN_Identity_constr_1, PLMN_Identity_constraint },
 	0, 0,	/* No members */
 	&asn_SPC_OCTET_STRING_specs	/* Additional specs */
 };

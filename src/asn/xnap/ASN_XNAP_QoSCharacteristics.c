@@ -5,18 +5,18 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "QoSCharacteristics.h"
+#include "ASN_XNAP_QoSCharacteristics.h"
 
-#include "NonDynamic5QIDescriptor.h"
-#include "Dynamic5QIDescriptor.h"
-#include "ProtocolIE-Single-Container.h"
+#include "ASN_XNAP_NonDynamic5QIDescriptor.h"
+#include "ASN_XNAP_Dynamic5QIDescriptor.h"
+#include "ASN_XNAP_ProtocolIE-Single-Container.h"
 asn_per_constraints_t asn_PER_type_QoSCharacteristics_constr_1 CC_NOTUSED = {
 	{ APC_CONSTRAINED,	 2,  2,  0,  2 }	/* (0..2) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
 asn_TYPE_member_t asn_MBR_QoSCharacteristics_1[] = {
-	{ ATF_POINTER, 0, offsetof(struct QoSCharacteristics, choice.non_dynamic),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_QoSCharacteristics, choice.non_dynamic),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NonDynamic5QIDescriptor,
@@ -25,7 +25,7 @@ asn_TYPE_member_t asn_MBR_QoSCharacteristics_1[] = {
 		0, 0, /* No default value */
 		"non-dynamic"
 		},
-	{ ATF_POINTER, 0, offsetof(struct QoSCharacteristics, choice.dynamic),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_QoSCharacteristics, choice.dynamic),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_Dynamic5QIDescriptor,
@@ -34,7 +34,7 @@ asn_TYPE_member_t asn_MBR_QoSCharacteristics_1[] = {
 		0, 0, /* No default value */
 		"dynamic"
 		},
-	{ ATF_POINTER, 0, offsetof(struct QoSCharacteristics, choice.choice_extension),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_QoSCharacteristics, choice.choice_extension),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolIE_Single_Container_5954P0,
@@ -50,10 +50,10 @@ static const asn_TYPE_tag2member_t asn_MAP_QoSCharacteristics_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* choice-extension */
 };
 asn_CHOICE_specifics_t asn_SPC_QoSCharacteristics_specs_1 = {
-	sizeof(struct QoSCharacteristics),
-	offsetof(struct QoSCharacteristics, _asn_ctx),
-	offsetof(struct QoSCharacteristics, present),
-	sizeof(((struct QoSCharacteristics *)0)->present),
+	sizeof(struct ASN_XNAP_QoSCharacteristics),
+	offsetof(struct ASN_XNAP_QoSCharacteristics, _asn_ctx),
+	offsetof(struct ASN_XNAP_QoSCharacteristics, present),
+	sizeof(((struct ASN_XNAP_QoSCharacteristics *)0)->present),
 	asn_MAP_QoSCharacteristics_tag2el_1,
 	3,	/* Count of tags in the map */
 	0, 0,

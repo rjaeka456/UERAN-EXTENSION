@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "DRB-ID.h"
+#include "ASN_XNAP_DRB-ID.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,15 +20,15 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct UPTransportLayerInformation;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_UPTransportLayerInformation;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* DataForwardingResponseDRBItem */
-typedef struct DataForwardingResponseDRBItem {
-	DRB_ID_t	 drb_ID;
-	struct UPTransportLayerInformation	*dlForwardingUPTNL	/* OPTIONAL */;
-	struct UPTransportLayerInformation	*ulForwardingUPTNL	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+typedef struct ASN_XNAP_DataForwardingResponseDRBItem {
+    ASN_XNAP_DRB_ID_t	 drb_ID;
+	struct ASN_XNAP_UPTransportLayerInformation	*dlForwardingUPTNL	/* OPTIONAL */;
+	struct ASN_XNAP_UPTransportLayerInformation	*ulForwardingUPTNL	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -36,7 +36,7 @@ typedef struct DataForwardingResponseDRBItem {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} DataForwardingResponseDRBItem_t;
+} ASN_XNAP_DataForwardingResponseDRBItem_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_DataForwardingResponseDRBItem;

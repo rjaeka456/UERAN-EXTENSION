@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "Reestablishment-Indication.h"
+#include "ASN_XNAP_Reestablishment-Indication.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus

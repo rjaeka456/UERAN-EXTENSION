@@ -22,7 +22,7 @@ extern "C" {
 typedef ASN_XNAP_ProtocolIE_Field_5957P0_t	 ASN_XNAP_ProtocolIE_Single_Container_5954P0_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_ProtocolIE_Single_Container_5954P0;
+extern asn_TYPE_descriptor_t asn_DEF_ProtocolIE_Single_Container_5954P0;
 asn_struct_free_f ProtocolIE_Single_Container_5954P0_free;
 asn_struct_print_f ProtocolIE_Single_Container_5954P0_print;
 asn_constr_check_f ProtocolIE_Single_Container_5954P0_constraint;

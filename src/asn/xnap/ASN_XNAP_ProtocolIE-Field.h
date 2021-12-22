@@ -23,6 +23,8 @@
 #include "ASN_XNAP_TAISupport-List.h"
 #include "ASN_XNAP_AMF-Region-Information.h"
 #include "ASN_XNAP_ServedCells-NR.h"
+#include "ASN_XNAP_ServedCells-E-UTRA.h"
+#include "ASN_XNAP_InterfaceInstanceIndication.h"
 
 #ifdef __cplusplus
 extern "C" {

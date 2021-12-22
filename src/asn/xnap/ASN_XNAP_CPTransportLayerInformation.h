@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "TransportLayerAddress.h"
+#include "ASN_XNAP_TransportLayerAddress.h"
 #include <constr_CHOICE.h>
 
 #ifdef __cplusplus
@@ -20,26 +20,26 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum CPTransportLayerInformation_PR {
-	CPTransportLayerInformation_PR_NOTHING,	/* No components present */
-	CPTransportLayerInformation_PR_endpointIPAddress,
-	CPTransportLayerInformation_PR_choice_extension
-} CPTransportLayerInformation_PR;
+typedef enum ASN_XNAP_CPTransportLayerInformation_PR {
+    ASN_XNAP_CPTransportLayerInformation_PR_NOTHING,	/* No components present */
+    ASN_XNAP_CPTransportLayerInformation_PR_endpointIPAddress,
+    ASN_XNAP_CPTransportLayerInformation_PR_choice_extension
+} ASN_XNAP_CPTransportLayerInformation_PR;
 
 /* Forward declarations */
-struct ProtocolIE_Single_Container;
+struct ASN_XNAP_ProtocolIE_Single_Container;
 
 /* CPTransportLayerInformation */
-typedef struct CPTransportLayerInformation {
-	CPTransportLayerInformation_PR present;
-	union CPTransportLayerInformation_u {
-		TransportLayerAddress_t	 endpointIPAddress;
-		struct ProtocolIE_Single_Container	*choice_extension;
+typedef struct ASN_XNAP_CPTransportLayerInformation {
+    ASN_XNAP_CPTransportLayerInformation_PR present;
+	union ASN_XNAP_CPTransportLayerInformation_u {
+        ASN_XNAP_TransportLayerAddress_t	 endpointIPAddress;
+		struct ASN_XNAP_ProtocolIE_Single_Container	*choice_extension;
 	} choice;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} CPTransportLayerInformation_t;
+} ASN_XNAP_CPTransportLayerInformation_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_CPTransportLayerInformation;

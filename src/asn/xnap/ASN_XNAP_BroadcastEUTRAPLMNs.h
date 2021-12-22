@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PLMN-Identity.h"
+#include "ASN_XNAP_PLMN-Identity.h"
 #include <asn_SEQUENCE_OF.h>
 #include <constr_SEQUENCE_OF.h>
 
@@ -22,7 +22,7 @@ extern "C" {
 
 /* BroadcastEUTRAPLMNs */
 typedef struct BroadcastEUTRAPLMNs {
-	A_SEQUENCE_OF(PLMN_Identity_t) list;
+	A_SEQUENCE_OF(ASN_XNAP_PLMN_Identity_t) list;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;

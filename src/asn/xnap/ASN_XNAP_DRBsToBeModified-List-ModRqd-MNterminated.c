@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "DRBsToBeModified-List-ModRqd-MNterminated.h"
+#include "ASN_XNAP_DRBsToBeModified-List-ModRqd-MNterminated.h"
 
-#include "DRBsToBeModified-List-ModRqd-MNterminated-Item.h"
+#include "ASN_XNAP_DRBsToBeModified-List-ModRqd-MNterminated-Item.h"
 asn_per_constraints_t asn_PER_type_DRBsToBeModified_List_ModRqd_MNterminated_constr_1 CC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	{ APC_CONSTRAINED,	 5,  5,  1,  32 }	/* (SIZE(1..32)) */,
