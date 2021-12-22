@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "ActivationSFN.h"
+#include "ASN_XNAP_ActivationSFN.h"
 #include "ProtectedE-UTRAResourceList.h"
 #include "MBSFNControlRegionLength.h"
 #include <NativeInteger.h>
