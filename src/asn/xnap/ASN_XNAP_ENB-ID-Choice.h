@@ -20,36 +20,36 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum ENB_ID_Choice_PR {
-	ENB_ID_Choice_PR_NOTHING,	/* No components present */
-	ENB_ID_Choice_PR_enb_ID_macro,
-	ENB_ID_Choice_PR_enb_ID_shortmacro,
-	ENB_ID_Choice_PR_enb_ID_longmacro,
-	ENB_ID_Choice_PR_choice_extension
-} ENB_ID_Choice_PR;
+typedef enum ASN_XNAP_ENB_ID_Choice_PR {
+    ASN_XNAP_ENB_ID_Choice_PR_NOTHING,	/* No components present */
+    ASN_XNAP_ENB_ID_Choice_PR_enb_ID_macro,
+    ASN_XNAP_ENB_ID_Choice_PR_enb_ID_shortmacro,
+    ASN_XNAP_ENB_ID_Choice_PR_enb_ID_longmacro,
+    ASN_XNAP_ENB_ID_Choice_PR_choice_extension
+} ASN_XNAP_ENB_ID_Choice_PR;
 
 /* Forward declarations */
-struct ProtocolIE_Single_Container;
+struct ASN_XNAP_ProtocolIE_Single_Container;
 
 /* ENB-ID-Choice */
-typedef struct ENB_ID_Choice {
-	ENB_ID_Choice_PR present;
-	union ENB_ID_Choice_u {
+typedef struct ASN_XNAP_ENB_ID_Choice {
+    ASN_XNAP_ENB_ID_Choice_PR present;
+	union ASN_XNAP_ENB_ID_Choice_u {
 		BIT_STRING_t	 enb_ID_macro;
 		BIT_STRING_t	 enb_ID_shortmacro;
 		BIT_STRING_t	 enb_ID_longmacro;
-		struct ProtocolIE_Single_Container	*choice_extension;
+		struct ASN_XNAP_ProtocolIE_Single_Container	*choice_extension;
 	} choice;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} ENB_ID_Choice_t;
+} ASN_XNAP_ENB_ID_Choice_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_ENB_ID_Choice;
-extern asn_CHOICE_specifics_t asn_SPC_ENB_ID_Choice_specs_1;
-extern asn_TYPE_member_t asn_MBR_ENB_ID_Choice_1[4];
-extern asn_per_constraints_t asn_PER_type_ENB_ID_Choice_constr_1;
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_ENB_ID_Choice;
+extern asn_CHOICE_specifics_t asn_SPC_ASN_XNAP_ENB_ID_Choice_specs_1;
+extern asn_TYPE_member_t asn_MBR_ASN_XNAP_ENB_ID_Choice_1[4];
+extern asn_per_constraints_t asn_PER_type_ASN_XNAP_ENB_ID_Choice_constr_1;
 
 #ifdef __cplusplus
 }

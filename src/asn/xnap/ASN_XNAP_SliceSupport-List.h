@@ -20,21 +20,21 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct S_NSSAI;
+struct ASN_XNAP_S_NSSAI;
 
 /* SliceSupport-List */
-typedef struct SliceSupport_List {
-	A_SEQUENCE_OF(struct S_NSSAI) list;
+typedef struct ASN_XNAP_SliceSupport_List {
+	A_SEQUENCE_OF(struct ASN_XNAP_S_NSSAI) list;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} SliceSupport_List_t;
+} ASN_XNAP_SliceSupport_List_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_SliceSupport_List;
-extern asn_SET_OF_specifics_t asn_SPC_SliceSupport_List_specs_1;
-extern asn_TYPE_member_t asn_MBR_SliceSupport_List_1[1];
-extern asn_per_constraints_t asn_PER_type_SliceSupport_List_constr_1;
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_SliceSupport_List;
+extern asn_SET_OF_specifics_t asn_SPC_ASN_XNAP_SliceSupport_List_specs_1;
+extern asn_TYPE_member_t asn_MBR_ASN_XNAP_SliceSupport_List_1[1];
+extern asn_per_constraints_t asn_PER_type_ASN_XNAP_SliceSupport_List_constr_1;
 
 #ifdef __cplusplus
 }
