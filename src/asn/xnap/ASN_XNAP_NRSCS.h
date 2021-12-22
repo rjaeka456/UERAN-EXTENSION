@@ -19,23 +19,23 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum NRSCS {
-	NRSCS_scs15	= 0,
-	NRSCS_scs30	= 1,
-	NRSCS_scs60	= 2,
-	NRSCS_scs120	= 3
+typedef enum ASN_XNAP_NRSCS {
+    ASN_XNAP_NRSCS_scs15	= 0,
+    ASN_XNAP_NRSCS_scs30	= 1,
+    ASN_XNAP_NRSCS_scs60	= 2,
+    ASN_XNAP_NRSCS_scs120	= 3
 	/*
 	 * Enumeration is extensible
 	 */
-} e_NRSCS;
+} e_ASN_XNAP_NRSCS;
 
 /* NRSCS */
-typedef long	 NRSCS_t;
+typedef long	 ASN_XNAP_NRSCS_t;
 
 /* Implementation */
-extern asn_per_constraints_t asn_PER_type_NRSCS_constr_1;
-extern asn_TYPE_descriptor_t asn_DEF_NRSCS;
-extern const asn_INTEGER_specifics_t asn_SPC_NRSCS_specs_1;
+extern asn_per_constraints_t asn_PER_type_ASN_XNAP_NRSCS_constr_1;
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_NRSCS;
+extern const asn_INTEGER_specifics_t asn_SPC_ASN_XNAP_NRSCS_specs_1;
 asn_struct_free_f NRSCS_free;
 asn_struct_print_f NRSCS_print;
 asn_constr_check_f NRSCS_constraint;

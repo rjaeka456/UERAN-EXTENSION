@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "NRARFCN.h"
-#include "NRFrequencyBand-List.h"
+#include "ASN_XNAP_NRARFCN.h"
+#include "ASN_XNAP_NRFrequencyBand-List.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -21,15 +21,15 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct SUL_Information;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_SUL_Information;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* NRFrequencyInfo */
-typedef struct NRFrequencyInfo {
-	NRARFCN_t	 nrARFCN;
-	struct SUL_Information	*sul_information	/* OPTIONAL */;
-	NRFrequencyBand_List_t	 frequencyBand_List;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+typedef struct ASN_XNAP_NRFrequencyInfo {
+    ASN_XNAP_NRARFCN_t	 nrARFCN;
+	struct ASN_XNAP_SUL_Information	*sul_information	/* OPTIONAL */;
+    ASN_XNAP_NRFrequencyBand_List_t	 frequencyBand_List;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -37,12 +37,12 @@ typedef struct NRFrequencyInfo {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} NRFrequencyInfo_t;
+} ASN_XNAP_NRFrequencyInfo_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_NRFrequencyInfo;
-extern asn_SEQUENCE_specifics_t asn_SPC_NRFrequencyInfo_specs_1;
-extern asn_TYPE_member_t asn_MBR_NRFrequencyInfo_1[4];
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_NRFrequencyInfo;
+extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_NRFrequencyInfo_specs_1;
+extern asn_TYPE_member_t asn_MBR_ASN_XNAP_NRFrequencyInfo_1[4];
 
 #ifdef __cplusplus
 }
