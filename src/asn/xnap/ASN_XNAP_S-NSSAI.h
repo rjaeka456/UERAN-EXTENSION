@@ -20,13 +20,13 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* S-NSSAI */
-typedef struct S_NSSAI {
+typedef struct ASN_XNAP_S_NSSAI {
 	OCTET_STRING_t	 sst;
 	OCTET_STRING_t	*sd	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -34,12 +34,12 @@ typedef struct S_NSSAI {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} S_NSSAI_t;
+} ASN_XNAP_S_NSSAI_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_S_NSSAI;
-extern asn_SEQUENCE_specifics_t asn_SPC_S_NSSAI_specs_1;
-extern asn_TYPE_member_t asn_MBR_S_NSSAI_1[3];
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_S_NSSAI;
+extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_S_NSSAI_specs_1;
+extern asn_TYPE_member_t asn_MBR_ASN_XNAP_S_NSSAI_1[3];
 
 #ifdef __cplusplus
 }
