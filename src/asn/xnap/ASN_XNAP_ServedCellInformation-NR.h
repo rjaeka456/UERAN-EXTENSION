@@ -12,14 +12,14 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "NRPCI.h"
-#include "NR-CGI.h"
-#include "TAC.h"
-#include "RANAC.h"
-#include "BroadcastPLMNs.h"
-#include "NRModeInfo.h"
+#include "ASN_XNAP_NRPCI.h"
+#include "ASN_XNAP_NR-CGI.h"
+#include "ASN_XNAP_TAC.h"
+#include "ASN_XNAP_RANAC.h"
+#include "ASN_XNAP_BroadcastPLMNs.h"
+#include "ASN_XNAP_NRModeInfo.h"
 #include <OCTET_STRING.h>
-#include "Connectivity-Support.h"
+#include "ASN_XNAP_Connectivity-Support.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -27,19 +27,19 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* ServedCellInformation-NR */
-typedef struct ServedCellInformation_NR {
-	NRPCI_t	 nrPCI;
-	NR_CGI_t	 cellID;
-	TAC_t	 tac;
-	RANAC_t	*ranac	/* OPTIONAL */;
-	BroadcastPLMNs_t	 broadcastPLMN;
-	NRModeInfo_t	 nrModeInfo;
+typedef struct ASN_XNAP_ServedCellInformation_NR {
+    ASN_XNAP_NRPCI_t	 nrPCI;
+    ASN_XNAP_NR_CGI_t	 cellID;
+    ASN_XNAP_TAC_t	 tac;
+    ASN_XNAP_RANAC_t	*ranac	/* OPTIONAL */;
+    ASN_XNAP_BroadcastPLMNs_t	 broadcastPLMN;
+    ASN_XNAP_NRModeInfo_t	 nrModeInfo;
 	OCTET_STRING_t	 measurementTimingConfiguration;
-	Connectivity_Support_t	 connectivitySupport;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+    ASN_XNAP_Connectivity_Support_t	 connectivitySupport;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -47,12 +47,12 @@ typedef struct ServedCellInformation_NR {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} ServedCellInformation_NR_t;
+} ASN_XNAP_ServedCellInformation_NR_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_ServedCellInformation_NR;
-extern asn_SEQUENCE_specifics_t asn_SPC_ServedCellInformation_NR_specs_1;
-extern asn_TYPE_member_t asn_MBR_ServedCellInformation_NR_1[9];
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_ServedCellInformation_NR;
+extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_ServedCellInformation_NR_specs_1;
+extern asn_TYPE_member_t asn_MBR_ASN_XNAP_ServedCellInformation_NR_1[9];
 
 #ifdef __cplusplus
 }
