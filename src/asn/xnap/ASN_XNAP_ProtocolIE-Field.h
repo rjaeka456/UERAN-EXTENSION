@@ -60,7 +60,7 @@ extern "C" {
        struct ASN_XNAP_XnSetupRequestIEs__value {
            ASN_XNAP_XnSetupRequestIEs__value_PR present;
            union ASN_XNAP_XnSetupRequestIEs__ASN_XNAP_value_u {
-               ASN_NGAP_GlobalRANNodeID_t	 GlobalRANNodeID;
+               ASN_XNAP_GlobalRANNodeID_t	 GlobalRANNodeID;
                ASN_NGAP_RANNodeName_t	 RANNodeName;
                ASN_NGAP_SupportedTAList_t	 SupportedTAList;
                ASN_NGAP_PagingDRX_t	 PagingDRX;

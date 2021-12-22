@@ -31,6 +31,14 @@ class XnapTask : public NtsTask
   private:
     /* Message Generation functions */
     ASN_XNAP_XNAP_PDU* msgXnSetupRequest();
+    ASN_XNAP_XNAP_PDU* msgXnSetupResponse();
+    ASN_XNAP_XNAP_PDU* msgXnSetupFailure();
+    ASN_XNAP_XNAP_PDU* msgHandoverRequest();
+    ASN_XNAP_XNAP_PDU* msgHandoverRequestAcknowledge();
+    ASN_XNAP_XNAP_PDU* msgHandoverPreparationFailure();
+    ASN_XNAP_XNAP_PDU* msgSNStatusTransfer();
+    ASN_XNAP_XNAP_PDU* msgUEContextRelease();
+
 };
 
 } // namespace nr::gnb
