@@ -19,36 +19,36 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum ServedCellInformation_E_UTRA_ModeInfo_PR {
-	ServedCellInformation_E_UTRA_ModeInfo_PR_NOTHING,	/* No components present */
-	ServedCellInformation_E_UTRA_ModeInfo_PR_fdd,
-	ServedCellInformation_E_UTRA_ModeInfo_PR_tdd,
-	ServedCellInformation_E_UTRA_ModeInfo_PR_choice_extension
-} ServedCellInformation_E_UTRA_ModeInfo_PR;
+typedef enum ASN_XNAP_ServedCellInformation_E_UTRA_ModeInfo_PR {
+    ASN_XNAP_ServedCellInformation_E_UTRA_ModeInfo_PR_NOTHING,	/* No components present */
+    ASN_XNAP_ServedCellInformation_E_UTRA_ModeInfo_PR_fdd,
+    ASN_XNAP_ServedCellInformation_E_UTRA_ModeInfo_PR_tdd,
+    ASN_XNAP_ServedCellInformation_E_UTRA_ModeInfo_PR_choice_extension
+} ASN_XNAP_ServedCellInformation_E_UTRA_ModeInfo_PR;
 
 /* Forward declarations */
-struct ServedCellInformation_E_UTRA_FDDInfo;
-struct ServedCellInformation_E_UTRA_TDDInfo;
-struct ProtocolIE_Single_Container;
+struct ASN_XNAP_ServedCellInformation_E_UTRA_FDDInfo;
+struct ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo;
+struct ASN_XNAP_ProtocolIE_Single_Container;
 
 /* ServedCellInformation-E-UTRA-ModeInfo */
-typedef struct ServedCellInformation_E_UTRA_ModeInfo {
-	ServedCellInformation_E_UTRA_ModeInfo_PR present;
-	union ServedCellInformation_E_UTRA_ModeInfo_u {
-		struct ServedCellInformation_E_UTRA_FDDInfo	*fdd;
-		struct ServedCellInformation_E_UTRA_TDDInfo	*tdd;
-		struct ProtocolIE_Single_Container	*choice_extension;
+typedef struct ASN_XNAP_ServedCellInformation_E_UTRA_ModeInfo {
+    ASN_XNAP_ServedCellInformation_E_UTRA_ModeInfo_PR present;
+	union ASN_XNAP_ServedCellInformation_E_UTRA_ModeInfo_u {
+		struct ASN_XNAP_ServedCellInformation_E_UTRA_FDDInfo	*fdd;
+		struct ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo	*tdd;
+		struct ASN_XNAP_ProtocolIE_Single_Container	*choice_extension;
 	} choice;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} ServedCellInformation_E_UTRA_ModeInfo_t;
+} ASN_XNAP_ServedCellInformation_E_UTRA_ModeInfo_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_ServedCellInformation_E_UTRA_ModeInfo;
-extern asn_CHOICE_specifics_t asn_SPC_ServedCellInformation_E_UTRA_ModeInfo_specs_1;
-extern asn_TYPE_member_t asn_MBR_ServedCellInformation_E_UTRA_ModeInfo_1[3];
-extern asn_per_constraints_t asn_PER_type_ServedCellInformation_E_UTRA_ModeInfo_constr_1;
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_ServedCellInformation_E_UTRA_ModeInfo;
+extern asn_CHOICE_specifics_t asn_SPC_ASN_XNAP_ServedCellInformation_E_UTRA_ModeInfo_specs_1;
+extern asn_TYPE_member_t asn_MBR_ASN_XNAP_ServedCellInformation_E_UTRA_ModeInfo_1[3];
+extern asn_per_constraints_t asn_PER_type_ASN_XNAP_ServedCellInformation_E_UTRA_ModeInfo_constr_1;
 
 #ifdef __cplusplus
 }

@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PLMN-Identity.h"
-#include "E-UTRA-Cell-Identity.h"
+#include "ASN_XNAP_PLMN-Identity.h"
+#include "ASN_XNAP_E-UTRA-Cell-Identity.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -21,13 +21,13 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* E-UTRA-CGI */
-typedef struct E_UTRA_CGI {
-	PLMN_Identity_t	 plmn_id;
-	E_UTRA_Cell_Identity_t	 e_utra_CI;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+typedef struct ASN_XNAP_E_UTRA_CGI {
+    ASN_XNAP_PLMN_Identity_t	 plmn_id;
+    ASN_XNAP_E_UTRA_Cell_Identity_t	 e_utra_CI;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -35,12 +35,12 @@ typedef struct E_UTRA_CGI {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} E_UTRA_CGI_t;
+} ASN_XNAP_E_UTRA_CGI_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_E_UTRA_CGI;
-extern asn_SEQUENCE_specifics_t asn_SPC_E_UTRA_CGI_specs_1;
-extern asn_TYPE_member_t asn_MBR_E_UTRA_CGI_1[3];
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_E_UTRA_CGI;
+extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_E_UTRA_CGI_specs_1;
+extern asn_TYPE_member_t asn_MBR_ASN_XNAP_E_UTRA_CGI_1[3];
 
 #ifdef __cplusplus
 }
