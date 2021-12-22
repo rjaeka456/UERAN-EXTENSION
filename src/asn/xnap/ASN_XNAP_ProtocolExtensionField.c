@@ -5,7 +5,7 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "ProtocolExtensionField.h"
+#include "ASN_XNAP_ProtocolExtensionField.h"
 
 static const asn_ioc_cell_t asn_IOS_UEContextInfoHORequest_ExtIEs_1_rows[] = {
 	
@@ -92,10 +92,10 @@ static asn_per_constraints_t asn_PER_memb_extensionValue_constr_4 CC_NOTUSED = {
 	0, 0	/* No PER value map */
 };
 static asn_CHOICE_specifics_t asn_SPC_extensionValue_specs_4 = {
-	sizeof(struct ProtocolExtensionField_6004P0__extensionValue),
-	offsetof(struct ProtocolExtensionField_6004P0__extensionValue, _asn_ctx),
-	offsetof(struct ProtocolExtensionField_6004P0__extensionValue, present),
-	sizeof(((struct ProtocolExtensionField_6004P0__extensionValue *)0)->present),
+	sizeof(struct ASN_XNAP_ProtocolExtensionField_6004P0__extensionValue),
+	offsetof(struct ASN_XNAP_ProtocolExtensionField_6004P0__extensionValue, _asn_ctx),
+	offsetof(struct ASN_XNAP_ProtocolExtensionField_6004P0__extensionValue, present),
+	sizeof(((struct ASN_XNAP_ProtocolExtensionField_6004P0__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -115,8 +115,8 @@ asn_TYPE_descriptor_t asn_DEF_extensionValue_4 = {
 	&asn_SPC_extensionValue_specs_4	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_ProtocolExtensionField_6004P0_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct ProtocolExtensionField_6004P0, id),
+asn_TYPE_member_t asn_MBR_ASN_XNAP_ProtocolExtensionField_6004P0_1[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ProtocolExtensionField_6004P0, id),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolIE_ID,
@@ -125,7 +125,7 @@ asn_TYPE_member_t asn_MBR_ProtocolExtensionField_6004P0_1[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct ProtocolExtensionField_6004P0, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ProtocolExtensionField_6004P0, criticality),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_Criticality,
@@ -134,7 +134,7 @@ asn_TYPE_member_t asn_MBR_ProtocolExtensionField_6004P0_1[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct ProtocolExtensionField_6004P0, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ProtocolExtensionField_6004P0, extensionValue),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_extensionValue_4,
@@ -144,35 +144,35 @@ asn_TYPE_member_t asn_MBR_ProtocolExtensionField_6004P0_1[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_ProtocolExtensionField_6004P0_tags_1[] = {
+static const ber_tlv_tag_t asn_DEF_ASN_XNAP_ProtocolExtensionField_6004P0_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_ProtocolExtensionField_6004P0_tag2el_1[] = {
+static const asn_TYPE_tag2member_t asn_MAP_ASN_XNAP_ProtocolExtensionField_6004P0_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* criticality */
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* extensionValue */
 };
-asn_SEQUENCE_specifics_t asn_SPC_ProtocolExtensionField_6004P0_specs_1 = {
-	sizeof(struct ProtocolExtensionField_6004P0),
-	offsetof(struct ProtocolExtensionField_6004P0, _asn_ctx),
-	asn_MAP_ProtocolExtensionField_6004P0_tag2el_1,
+asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_ProtocolExtensionField_6004P0_specs_1 = {
+	sizeof(struct ASN_XNAP_ProtocolExtensionField_6004P0),
+	offsetof(struct ASN_XNAP_ProtocolExtensionField_6004P0, _asn_ctx),
+	asn_MAP_ASN_XNAP_ProtocolExtensionField_6004P0_tag2el_1,
 	3,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_ProtocolExtensionField_6004P0 = {
+asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_ProtocolExtensionField_6004P0 = {
 	"ProtocolExtensionField",
 	"ProtocolExtensionField",
 	&asn_OP_SEQUENCE,
-	asn_DEF_ProtocolExtensionField_6004P0_tags_1,
-	sizeof(asn_DEF_ProtocolExtensionField_6004P0_tags_1)
-		/sizeof(asn_DEF_ProtocolExtensionField_6004P0_tags_1[0]), /* 1 */
-	asn_DEF_ProtocolExtensionField_6004P0_tags_1,	/* Same as above */
-	sizeof(asn_DEF_ProtocolExtensionField_6004P0_tags_1)
-		/sizeof(asn_DEF_ProtocolExtensionField_6004P0_tags_1[0]), /* 1 */
+	asn_DEF_ASN_XNAP_ProtocolExtensionField_6004P0_tags_1,
+	sizeof(asn_DEF_ASN_XNAP_ProtocolExtensionField_6004P0_tags_1)
+		/sizeof(asn_DEF_ASN_XNAP_ProtocolExtensionField_6004P0_tags_1[0]), /* 1 */
+	asn_DEF_ASN_XNAP_ProtocolExtensionField_6004P0_tags_1,	/* Same as above */
+	sizeof(asn_DEF_ASN_XNAP_ProtocolExtensionField_6004P0_tags_1)
+		/sizeof(asn_DEF_ASN_XNAP_ProtocolExtensionField_6004P0_tags_1[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_ProtocolExtensionField_6004P0_1,
+	asn_MBR_ASN_XNAP_ProtocolExtensionField_6004P0_1,
 	3,	/* Elements count */
-	&asn_SPC_ProtocolExtensionField_6004P0_specs_1	/* Additional specs */
+	&asn_SPC_ASN_XNAP_ProtocolExtensionField_6004P0_specs_1	/* Additional specs */
 };
 

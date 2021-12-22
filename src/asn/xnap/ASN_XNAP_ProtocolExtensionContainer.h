@@ -24,7 +24,7 @@ struct ASN_XNAP_ProtocolExtensionField;
 
 /* ProtocolExtensionContainer */
 typedef struct ASN_XNAP_ProtocolExtensionContainer_6001P0 {
-	A_SEQUENCE_OF(struct ProtocolExtensionField) list;
+	A_SEQUENCE_OF(struct ASN_XNAP_ProtocolExtensionField) list;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;

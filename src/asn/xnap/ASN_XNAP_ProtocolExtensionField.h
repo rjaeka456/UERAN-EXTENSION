@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "ProtocolIE-ID.h"
-#include "Criticality.h"
+#include "ASN_XNAP_ProtocolIE-ID.h"
+#include "ASN_XNAP_Criticality.h"
 #include <ANY.h>
 #include <asn_ioc.h>
 #include <OPEN_TYPE.h>
@@ -25,18 +25,18 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum ProtocolExtensionField_6004P0__extensionValue_PR {
+typedef enum ASN_XNAP_ProtocolExtensionField_6004P0__extensionValue_PR {
 	ProtocolExtensionField_6004P0__extensionValue_PR_NOTHING,	/* No components present */
 	
-} ProtocolExtensionField_6004P0__extensionValue_PR;
+} ASN_XNAP_ProtocolExtensionField_6004P0__extensionValue_PR;
 
 /* ProtocolExtensionField */
-typedef struct ProtocolExtensionField_6004P0 {
-	ProtocolIE_ID_t	 id;
-	Criticality_t	 criticality;
-	struct ProtocolExtensionField_6004P0__extensionValue {
-		ProtocolExtensionField_6004P0__extensionValue_PR present;
-		union ProtocolExtensionField_6004P0__extensionValue_u {
+typedef struct ASN_XNAP_ProtocolExtensionField_6004P0 {
+    ASN_XNAP_ProtocolIE_ID_t	 id;
+    ASN_XNAP_Criticality_t	 criticality;
+	struct ASN_XNAP_ProtocolExtensionField_6004P0__extensionValue {
+        ASN_XNAP_ProtocolExtensionField_6004P0__extensionValue_PR present;
+		union ASN_XNAP_ProtocolExtensionField_6004P0__extensionValue_u {
 		} choice;
 		
 		/* Context for parsing across buffer boundaries */
@@ -45,12 +45,12 @@ typedef struct ProtocolExtensionField_6004P0 {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} ProtocolExtensionField_6004P0_t;
+} ASN_XNAP_ProtocolExtensionField_6004P0_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_ProtocolExtensionField_6004P0;
-extern asn_SEQUENCE_specifics_t asn_SPC_ProtocolExtensionField_6004P0_specs_1;
-extern asn_TYPE_member_t asn_MBR_ProtocolExtensionField_6004P0_1[3];
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_ProtocolExtensionField_6004P0;
+extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_ProtocolExtensionField_6004P0_specs_1;
+extern asn_TYPE_member_t asn_MBR_ASN_XNAP_ProtocolExtensionField_6004P0_1[3];
 
 #ifdef __cplusplus
 }

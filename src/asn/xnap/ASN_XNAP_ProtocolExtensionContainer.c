@@ -8,43 +8,43 @@
 #include "ASN_XNAP_ProtocolExtensionContainer.h"
 
 #include "ASN_XNAP_ProtocolExtensionField.h"
-asn_per_constraints_t asn_PER_type_ProtocolExtensionContainer_6001P0_constr_1 CC_NOTUSED = {
+asn_per_constraints_t asn_PER_type_ASN_XNAP_ProtocolExtensionContainer_6001P0_constr_1 CC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	{ APC_CONSTRAINED,	 16,  16,  1,  65535 }	/* (SIZE(1..65535)) */,
 	0, 0	/* No PER value map */
 };
-asn_TYPE_member_t asn_MBR_ProtocolExtensionContainer_6001P0_1[] = {
+asn_TYPE_member_t asn_MBR_ASN_XNAP_ProtocolExtensionContainer_6001P0_1[] = {
 	{ ATF_POINTER, 0, 0,
 		(ASN_TAG_CLASS_UNIVERSAL | (16 << 2)),
 		0,
-		&asn_DEF_ProtocolExtensionField_6004P0,
+		&asn_DEF_ASN_XNAP_ProtocolExtensionField_6004P0,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
 		""
 		},
 };
-static const ber_tlv_tag_t asn_DEF_ProtocolExtensionContainer_6001P0_tags_1[] = {
+static const ber_tlv_tag_t asn_DEF_ASN_XNAP_ProtocolExtensionContainer_6001P0_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-asn_SET_OF_specifics_t asn_SPC_ProtocolExtensionContainer_6001P0_specs_1 = {
-	sizeof(struct ProtocolExtensionContainer_6001P0),
-	offsetof(struct ProtocolExtensionContainer_6001P0, _asn_ctx),
+asn_SET_OF_specifics_t asn_SPC_ASN_XNAP_ProtocolExtensionContainer_6001P0_specs_1 = {
+	sizeof(struct ASN_XNAP_ProtocolExtensionContainer_6001P0),
+	offsetof(struct ASN_XNAP_ProtocolExtensionContainer_6001P0, _asn_ctx),
 	0,	/* XER encoding is XMLDelimitedItemList */
 };
-asn_TYPE_descriptor_t asn_DEF_ProtocolExtensionContainer_6001P0 = {
+asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_ProtocolExtensionContainer_6001P0 = {
 	"ProtocolExtensionContainer",
 	"ProtocolExtensionContainer",
 	&asn_OP_SEQUENCE_OF,
-	asn_DEF_ProtocolExtensionContainer_6001P0_tags_1,
-	sizeof(asn_DEF_ProtocolExtensionContainer_6001P0_tags_1)
-		/sizeof(asn_DEF_ProtocolExtensionContainer_6001P0_tags_1[0]), /* 1 */
-	asn_DEF_ProtocolExtensionContainer_6001P0_tags_1,	/* Same as above */
-	sizeof(asn_DEF_ProtocolExtensionContainer_6001P0_tags_1)
-		/sizeof(asn_DEF_ProtocolExtensionContainer_6001P0_tags_1[0]), /* 1 */
-	{ 0, &asn_PER_type_ProtocolExtensionContainer_6001P0_constr_1, SEQUENCE_OF_constraint },
-	asn_MBR_ProtocolExtensionContainer_6001P0_1,
+	asn_DEF_ASN_XNAP_ProtocolExtensionContainer_6001P0_tags_1,
+	sizeof(asn_DEF_ASN_XNAP_ProtocolExtensionContainer_6001P0_tags_1)
+		/sizeof(asn_DEF_ASN_XNAP_ProtocolExtensionContainer_6001P0_tags_1[0]), /* 1 */
+	asn_DEF_ASN_XNAP_ProtocolExtensionContainer_6001P0_tags_1,	/* Same as above */
+	sizeof(asn_DEF_ASN_XNAP_ProtocolExtensionContainer_6001P0_tags_1)
+		/sizeof(asn_DEF_ASN_XNAP_ProtocolExtensionContainer_6001P0_tags_1[0]), /* 1 */
+	{ 0, &asn_PER_type_ASN_XNAP_ProtocolExtensionContainer_6001P0_constr_1, SEQUENCE_OF_constraint },
+	asn_MBR_ASN_XNAP_ProtocolExtensionContainer_6001P0_1,
 	1,	/* Single element */
-	&asn_SPC_ProtocolExtensionContainer_6001P0_specs_1	/* Additional specs */
+	&asn_SPC_ASN_XNAP_ProtocolExtensionContainer_6001P0_specs_1	/* Additional specs */
 };
 
