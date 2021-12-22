@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "NRFrequencyInfo.h"
-#include "NRTransmissionBandwidth.h"
+#include "ASN_XNAP_NRFrequencyInfo.h"
+#include "ASN_XNAP_NRTransmissionBandwidth.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -21,15 +21,15 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* NRModeInfoFDD */
-typedef struct NRModeInfoFDD {
-	NRFrequencyInfo_t	 ulNRFrequencyInfo;
-	NRFrequencyInfo_t	 dlNRFrequencyInfo;
-	NRTransmissionBandwidth_t	 ulNRTransmissonBandwidth;
-	NRTransmissionBandwidth_t	 dlNRTransmissonBandwidth;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+typedef struct ASN_XNAP_NRModeInfoFDD {
+    ASN_XNAP_NRFrequencyInfo_t	 ulNRFrequencyInfo;
+    ASN_XNAP_NRFrequencyInfo_t	 dlNRFrequencyInfo;
+    ASN_XNAP_NRTransmissionBandwidth_t	 ulNRTransmissonBandwidth;
+    ASN_XNAP_NRTransmissionBandwidth_t	 dlNRTransmissonBandwidth;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -37,12 +37,12 @@ typedef struct NRModeInfoFDD {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} NRModeInfoFDD_t;
+} ASN_XNAP_NRModeInfoFDD_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_NRModeInfoFDD;
-extern asn_SEQUENCE_specifics_t asn_SPC_NRModeInfoFDD_specs_1;
-extern asn_TYPE_member_t asn_MBR_NRModeInfoFDD_1[5];
+extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_NRModeInfoFDD;
+extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_NRModeInfoFDD_specs_1;
+extern asn_TYPE_member_t asn_MBR_ASN_XNAP_NRModeInfoFDD_1[5];
 
 #ifdef __cplusplus
 }
