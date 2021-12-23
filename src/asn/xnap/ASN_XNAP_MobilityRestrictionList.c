@@ -5,12 +5,12 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "MobilityRestrictionList.h"
+#include "ASN_XNAP_MobilityRestrictionList.h"
 
-#include "RAT-RestrictionsList.h"
-#include "ForbiddenAreaList.h"
-#include "ServiceAreaList.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_RAT-RestrictionsList.h"
+#include "ASN_XNAP_ForbiddenAreaList.h"
+#include "ASN_XNAP_ServiceAreaList.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 static int
 memb_equivalent_PLMNs_constraint_1(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
@@ -63,8 +63,8 @@ static const ber_tlv_tag_t asn_DEF_equivalent_PLMNs_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_SET_OF_specifics_t asn_SPC_equivalent_PLMNs_specs_3 = {
-	sizeof(struct MobilityRestrictionList__equivalent_PLMNs),
-	offsetof(struct MobilityRestrictionList__equivalent_PLMNs, _asn_ctx),
+	sizeof(struct ASN_XNAP_MobilityRestrictionList__equivalent_PLMNs),
+	offsetof(struct ASN_XNAP_MobilityRestrictionList__equivalent_PLMNs, _asn_ctx),
 	0,	/* XER encoding is XMLDelimitedItemList */
 };
 static /* Use -fall-defs-global to expose */
@@ -85,7 +85,7 @@ asn_TYPE_descriptor_t asn_DEF_equivalent_PLMNs_3 = {
 };
 
 asn_TYPE_member_t asn_MBR_MobilityRestrictionList_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct MobilityRestrictionList, serving_PLMN),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_MobilityRestrictionList, serving_PLMN),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PLMN_Identity,
@@ -94,7 +94,7 @@ asn_TYPE_member_t asn_MBR_MobilityRestrictionList_1[] = {
 		0, 0, /* No default value */
 		"serving-PLMN"
 		},
-	{ ATF_POINTER, 5, offsetof(struct MobilityRestrictionList, equivalent_PLMNs),
+	{ ATF_POINTER, 5, offsetof(struct ASN_XNAP_MobilityRestrictionList, equivalent_PLMNs),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		0,
 		&asn_DEF_equivalent_PLMNs_3,
@@ -103,7 +103,7 @@ asn_TYPE_member_t asn_MBR_MobilityRestrictionList_1[] = {
 		0, 0, /* No default value */
 		"equivalent-PLMNs"
 		},
-	{ ATF_POINTER, 4, offsetof(struct MobilityRestrictionList, rat_Restrictions),
+	{ ATF_POINTER, 4, offsetof(struct ASN_XNAP_MobilityRestrictionList, rat_Restrictions),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_RAT_RestrictionsList,
@@ -112,7 +112,7 @@ asn_TYPE_member_t asn_MBR_MobilityRestrictionList_1[] = {
 		0, 0, /* No default value */
 		"rat-Restrictions"
 		},
-	{ ATF_POINTER, 3, offsetof(struct MobilityRestrictionList, forbiddenAreaInformation),
+	{ ATF_POINTER, 3, offsetof(struct ASN_XNAP_MobilityRestrictionList, forbiddenAreaInformation),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ForbiddenAreaList,
@@ -121,7 +121,7 @@ asn_TYPE_member_t asn_MBR_MobilityRestrictionList_1[] = {
 		0, 0, /* No default value */
 		"forbiddenAreaInformation"
 		},
-	{ ATF_POINTER, 2, offsetof(struct MobilityRestrictionList, serviceAreaInformation),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_MobilityRestrictionList, serviceAreaInformation),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ServiceAreaList,
@@ -130,7 +130,7 @@ asn_TYPE_member_t asn_MBR_MobilityRestrictionList_1[] = {
 		0, 0, /* No default value */
 		"serviceAreaInformation"
 		},
-	{ ATF_POINTER, 1, offsetof(struct MobilityRestrictionList, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_MobilityRestrictionList, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -153,8 +153,8 @@ static const asn_TYPE_tag2member_t asn_MAP_MobilityRestrictionList_tag2el_1[] = 
     { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_MobilityRestrictionList_specs_1 = {
-	sizeof(struct MobilityRestrictionList),
-	offsetof(struct MobilityRestrictionList, _asn_ctx),
+	sizeof(struct ASN_XNAP_MobilityRestrictionList),
+	offsetof(struct ASN_XNAP_MobilityRestrictionList, _asn_ctx),
 	asn_MAP_MobilityRestrictionList_tag2el_1,
 	6,	/* Count of tags in the map */
 	asn_MAP_MobilityRestrictionList_oms_1,	/* Optional members */

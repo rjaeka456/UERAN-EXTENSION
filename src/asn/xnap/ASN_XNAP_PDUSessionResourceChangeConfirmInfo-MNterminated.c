@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "PDUSessionResourceChangeConfirmInfo-MNterminated.h"
+#include "ASN_XNAP_PDUSessionResourceChangeConfirmInfo-MNterminated.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_PDUSessionResourceChangeConfirmInfo_MNterminated_1[] = {
 	{ ATF_POINTER, 1, offsetof(struct PDUSessionResourceChangeConfirmInfo_MNterminated, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),

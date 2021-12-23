@@ -5,10 +5,10 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "ResourceCoordResponse-gNB-initiated.h"
+#include "ASN_XNAP_ResourceCoordResponse-gNB-initiated.h"
 
-#include "ProtocolExtensionContainer.h"
-#include "NR-CGI.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
+#include "ASN_XNAP_NR-CGI.h"
 static int
 memb_listofNRCells_constraint_1(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
@@ -61,8 +61,8 @@ static const ber_tlv_tag_t asn_DEF_listofNRCells_tags_4[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_SET_OF_specifics_t asn_SPC_listofNRCells_specs_4 = {
-	sizeof(struct ResourceCoordResponse_gNB_initiated__listofNRCells),
-	offsetof(struct ResourceCoordResponse_gNB_initiated__listofNRCells, _asn_ctx),
+	sizeof(struct ASN_XNAP_ResourceCoordResponse_gNB_initiated__listofNRCells),
+	offsetof(struct ASN_XNAP_ResourceCoordResponse_gNB_initiated__listofNRCells, _asn_ctx),
 	0,	/* XER encoding is XMLDelimitedItemList */
 };
 static /* Use -fall-defs-global to expose */
@@ -83,7 +83,7 @@ asn_TYPE_descriptor_t asn_DEF_listofNRCells_4 = {
 };
 
 asn_TYPE_member_t asn_MBR_ResourceCoordResponse_gNB_initiated_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct ResourceCoordResponse_gNB_initiated, dataTrafficResourceIndication),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ResourceCoordResponse_gNB_initiated, dataTrafficResourceIndication),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_DataTrafficResourceIndication,
@@ -92,7 +92,7 @@ asn_TYPE_member_t asn_MBR_ResourceCoordResponse_gNB_initiated_1[] = {
 		0, 0, /* No default value */
 		"dataTrafficResourceIndication"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct ResourceCoordResponse_gNB_initiated, spectrumSharingGroupID),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ResourceCoordResponse_gNB_initiated, spectrumSharingGroupID),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_SpectrumSharingGroupID,
@@ -101,7 +101,7 @@ asn_TYPE_member_t asn_MBR_ResourceCoordResponse_gNB_initiated_1[] = {
 		0, 0, /* No default value */
 		"spectrumSharingGroupID"
 		},
-	{ ATF_POINTER, 2, offsetof(struct ResourceCoordResponse_gNB_initiated, listofNRCells),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_ResourceCoordResponse_gNB_initiated, listofNRCells),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		0,
 		&asn_DEF_listofNRCells_4,
@@ -110,7 +110,7 @@ asn_TYPE_member_t asn_MBR_ResourceCoordResponse_gNB_initiated_1[] = {
 		0, 0, /* No default value */
 		"listofNRCells"
 		},
-	{ ATF_POINTER, 1, offsetof(struct ResourceCoordResponse_gNB_initiated, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_ResourceCoordResponse_gNB_initiated, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -131,8 +131,8 @@ static const asn_TYPE_tag2member_t asn_MAP_ResourceCoordResponse_gNB_initiated_t
     { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_ResourceCoordResponse_gNB_initiated_specs_1 = {
-	sizeof(struct ResourceCoordResponse_gNB_initiated),
-	offsetof(struct ResourceCoordResponse_gNB_initiated, _asn_ctx),
+	sizeof(struct ASN_XNAP_ResourceCoordResponse_gNB_initiated),
+	offsetof(struct ASN_XNAP_ResourceCoordResponse_gNB_initiated, _asn_ctx),
 	asn_MAP_ResourceCoordResponse_gNB_initiated_tag2el_1,
 	4,	/* Count of tags in the map */
 	asn_MAP_ResourceCoordResponse_gNB_initiated_oms_1,	/* Optional members */

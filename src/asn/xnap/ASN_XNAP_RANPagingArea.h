@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PLMN-Identity.h"
-#include "RANPagingAreaChoice.h"
+#include "ASN_XNAP_PLMN-Identity.h"
+#include "ASN_XNAP_RANPagingAreaChoice.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -21,13 +21,13 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* RANPagingArea */
-typedef struct RANPagingArea {
-	PLMN_Identity_t	 pLMN_Identity;
-	RANPagingAreaChoice_t	 rANPagingAreaChoice;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_RANPagingArea {
+    ASN_XNAP_PLMN_Identity_t	 pLMN_Identity;
+    ASN_XNAP_RANPagingAreaChoice_t	 rANPagingAreaChoice;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -35,7 +35,7 @@ typedef struct RANPagingArea {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} RANPagingArea_t;
+} ASN_XNAP_RANPagingArea_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_RANPagingArea;

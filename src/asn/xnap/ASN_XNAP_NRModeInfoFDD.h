@@ -40,9 +40,9 @@ typedef struct ASN_XNAP_NRModeInfoFDD {
 } ASN_XNAP_NRModeInfoFDD_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_NRModeInfoFDD;
-extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_NRModeInfoFDD_specs_1;
-extern asn_TYPE_member_t asn_MBR_ASN_XNAP_NRModeInfoFDD_1[5];
+extern asn_TYPE_descriptor_t asn_DEF_NRModeInfoFDD;
+extern asn_SEQUENCE_specifics_t asn_SPC_NRModeInfoFDD_specs_1;
+extern asn_TYPE_member_t asn_MBR_NRModeInfoFDD_1[5];
 
 #ifdef __cplusplus
 }

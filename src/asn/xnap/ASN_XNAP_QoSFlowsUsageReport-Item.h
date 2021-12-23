@@ -12,9 +12,9 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "QoSFlowIdentifier.h"
+#include "ASN_XNAP_QoSFlowIdentifier.h"
 #include <NativeEnumerated.h>
-#include "VolumeTimedReportList.h"
+#include "ASN_XNAP_VolumeTimedReportList.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -22,23 +22,23 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum QoSFlowsUsageReport_Item__rATType {
-	QoSFlowsUsageReport_Item__rATType_nr	= 0,
-	QoSFlowsUsageReport_Item__rATType_eutra	= 1
+typedef enum ASN_XNAP_QoSFlowsUsageReport_Item__rATType {
+    ASN_XNAP_QoSFlowsUsageReport_Item__rATType_nr	= 0,
+    ASN_XNAP_QoSFlowsUsageReport_Item__rATType_eutra	= 1
 	/*
 	 * Enumeration is extensible
 	 */
-} e_QoSFlowsUsageReport_Item__rATType;
+} e_ASN_XNAP_QoSFlowsUsageReport_Item__rATType;
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* QoSFlowsUsageReport-Item */
-typedef struct QoSFlowsUsageReport_Item {
-	QoSFlowIdentifier_t	 qosFlowIdentifier;
+typedef struct ASN_XNAP_QoSFlowsUsageReport_Item {
+    ASN_XNAP_QoSFlowIdentifier_t	 qosFlowIdentifier;
 	long	 rATType;
-	VolumeTimedReportList_t	 qoSFlowsTimedReportList;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+    ASN_XNAP_VolumeTimedReportList_t	 qoSFlowsTimedReportList;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -46,7 +46,7 @@ typedef struct QoSFlowsUsageReport_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} QoSFlowsUsageReport_Item_t;
+} ASN_XNAP_QoSFlowsUsageReport_Item_t;
 
 /* Implementation */
 /* extern asn_TYPE_descriptor_t asn_DEF_rATType_3;	// (Use -fall-defs-global to expose) */

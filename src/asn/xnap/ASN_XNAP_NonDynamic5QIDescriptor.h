@@ -12,10 +12,10 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "FiveQI.h"
-#include "PriorityLevelQoS.h"
-#include "AveragingWindow.h"
-#include "MaximumDataBurstVolume.h"
+#include "ASN_XNAP_FiveQI.h"
+#include "ASN_XNAP_PriorityLevelQoS.h"
+#include "ASN_XNAP_AveragingWindow.h"
+#include "ASN_XNAP_MaximumDataBurstVolume.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -23,15 +23,15 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* NonDynamic5QIDescriptor */
-typedef struct NonDynamic5QIDescriptor {
-	FiveQI_t	 fiveQI;
-	PriorityLevelQoS_t	*priorityLevelQoS	/* OPTIONAL */;
-	AveragingWindow_t	*averagingWindow	/* OPTIONAL */;
-	MaximumDataBurstVolume_t	*maximumDataBurstVolume	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+typedef struct ASN_XNAP_NonDynamic5QIDescriptor {
+    ASN_XNAP_FiveQI_t	 fiveQI;
+    ASN_XNAP_PriorityLevelQoS_t	*priorityLevelQoS	/* OPTIONAL */;
+    ASN_XNAP_AveragingWindow_t	*averagingWindow	/* OPTIONAL */;
+    ASN_XNAP_MaximumDataBurstVolume_t	*maximumDataBurstVolume	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -39,7 +39,7 @@ typedef struct NonDynamic5QIDescriptor {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} NonDynamic5QIDescriptor_t;
+} ASN_XNAP_NonDynamic5QIDescriptor_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_NonDynamic5QIDescriptor;

@@ -20,18 +20,18 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct UPTransportParameters;
-struct QoSFlowLevelQoSParameters;
-struct QoSFlowsMappedtoDRB_SetupResponse_SNterminated;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_UPTransportParameters;
+struct ASN_XNAP_QoSFlowLevelQoSParameters;
+struct ASN_XNAP_QoSFlowsMappedtoDRB_SetupResponse_SNterminated;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* DRBsToBeModifiedList-ModificationResponse-SNterminated-Item */
-typedef struct DRBsToBeModifiedList_ModificationResponse_SNterminated_Item {
-	DRB_ID_t	 drb_ID;
-	struct UPTransportParameters	*sN_UL_PDCP_UP_TNLInfo	/* OPTIONAL */;
-	struct QoSFlowLevelQoSParameters	*dRB_QoS	/* OPTIONAL */;
-	struct QoSFlowsMappedtoDRB_SetupResponse_SNterminated	*qoSFlowsMappedtoDRB_SetupResponse_SNterminated	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_DRBsToBeModifiedList_ModificationResponse_SNterminated_Item {
+    ASN_XNAP_DRB_ID_t	 drb_ID;
+	struct ASN_XNAP_UPTransportParameters	*sN_UL_PDCP_UP_TNLInfo	/* OPTIONAL */;
+	struct ASN_XNAP_QoSFlowLevelQoSParameters	*dRB_QoS	/* OPTIONAL */;
+	struct ASN_XNAP_QoSFlowsMappedtoDRB_SetupResponse_SNterminated	*qoSFlowsMappedtoDRB_SetupResponse_SNterminated	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -39,7 +39,7 @@ typedef struct DRBsToBeModifiedList_ModificationResponse_SNterminated_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} DRBsToBeModifiedList_ModificationResponse_SNterminated_Item_t;
+} ASN_XNAP_DRBsToBeModifiedList_ModificationResponse_SNterminated_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_DRBsToBeModifiedList_ModificationResponse_SNterminated_Item;

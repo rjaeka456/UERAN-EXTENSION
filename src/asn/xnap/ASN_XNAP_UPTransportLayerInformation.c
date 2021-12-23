@@ -5,17 +5,17 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "UPTransportLayerInformation.h"
+#include "ASN_XNAP_UPTransportLayerInformation.h"
 
-#include "GTPtunnelTransportLayerInformation.h"
-#include "ProtocolIE-Single-Container.h"
+#include "ASN_XNAP_GTPtunnelTransportLayerInformation.h"
+#include "ASN_XNAP_ProtocolIE-Single-Container.h"
 asn_per_constraints_t asn_PER_type_UPTransportLayerInformation_constr_1 CC_NOTUSED = {
 	{ APC_CONSTRAINED,	 1,  1,  0,  1 }	/* (0..1) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
 asn_TYPE_member_t asn_MBR_UPTransportLayerInformation_1[] = {
-	{ ATF_POINTER, 0, offsetof(struct UPTransportLayerInformation, choice.gtpTunnel),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_UPTransportLayerInformation, choice.gtpTunnel),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_GTPtunnelTransportLayerInformation,
@@ -24,7 +24,7 @@ asn_TYPE_member_t asn_MBR_UPTransportLayerInformation_1[] = {
 		0, 0, /* No default value */
 		"gtpTunnel"
 		},
-	{ ATF_POINTER, 0, offsetof(struct UPTransportLayerInformation, choice.choice_extension),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_UPTransportLayerInformation, choice.choice_extension),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolIE_Single_Container_5954P0,
@@ -39,10 +39,10 @@ static const asn_TYPE_tag2member_t asn_MAP_UPTransportLayerInformation_tag2el_1[
     { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* choice-extension */
 };
 asn_CHOICE_specifics_t asn_SPC_UPTransportLayerInformation_specs_1 = {
-	sizeof(struct UPTransportLayerInformation),
-	offsetof(struct UPTransportLayerInformation, _asn_ctx),
-	offsetof(struct UPTransportLayerInformation, present),
-	sizeof(((struct UPTransportLayerInformation *)0)->present),
+	sizeof(struct ASN_XNAP_UPTransportLayerInformation),
+	offsetof(struct ASN_XNAP_UPTransportLayerInformation, _asn_ctx),
+	offsetof(struct ASN_XNAP_UPTransportLayerInformation, present),
+	sizeof(((struct ASN_XNAP_UPTransportLayerInformation *)0)->present),
 	asn_MAP_UPTransportLayerInformation_tag2el_1,
 	2,	/* Count of tags in the map */
 	0, 0,

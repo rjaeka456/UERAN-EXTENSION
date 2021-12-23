@@ -19,19 +19,19 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum CauseMisc {
-	CauseMisc_control_processing_overload	= 0,
-	CauseMisc_hardware_failure	= 1,
-	CauseMisc_o_and_M_intervention	= 2,
-	CauseMisc_not_enough_user_plane_processing_resources	= 3,
-	CauseMisc_unspecified	= 4
+typedef enum ASN_XNAP_CauseMisc {
+    ASN_XNAP_CauseMisc_control_processing_overload	= 0,
+    ASN_XNAP_CauseMisc_hardware_failure	= 1,
+    ASN_XNAP_CauseMisc_o_and_M_intervention	= 2,
+    ASN_XNAP_CauseMisc_not_enough_user_plane_processing_resources	= 3,
+    ASN_XNAP_CauseMisc_unspecified	= 4
 	/*
 	 * Enumeration is extensible
 	 */
-} e_CauseMisc;
+} e_ASN_XNAP_CauseMisc;
 
 /* CauseMisc */
-typedef long	 CauseMisc_t;
+typedef long	 ASN_XNAP_CauseMisc_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_CauseMisc_constr_1;

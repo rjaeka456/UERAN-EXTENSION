@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* NG-RANnodeUEXnAPID */
-typedef unsigned long	 NG_RANnodeUEXnAPID_t;
+typedef unsigned long	 ASN_XNAP_NG_RANnodeUEXnAPID_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_NG_RANnodeUEXnAPID_constr_1;

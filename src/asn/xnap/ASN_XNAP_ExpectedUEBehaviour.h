@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "ExpectedHOInterval.h"
-#include "ExpectedUEMobility.h"
+#include "ASN_XNAP_ExpectedHOInterval.h"
+#include "ASN_XNAP_ExpectedUEMobility.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -21,17 +21,17 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ExpectedUEActivityBehaviour;
-struct ExpectedUEMovingTrajectory;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ExpectedUEActivityBehaviour;
+struct ASN_XNAP_ExpectedUEMovingTrajectory;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* ExpectedUEBehaviour */
-typedef struct ExpectedUEBehaviour {
-	struct ExpectedUEActivityBehaviour	*expectedUEActivityBehaviour	/* OPTIONAL */;
-	ExpectedHOInterval_t	*expectedHOInterval	/* OPTIONAL */;
-	ExpectedUEMobility_t	*expectedUEMobility	/* OPTIONAL */;
-	struct ExpectedUEMovingTrajectory	*expectedUEMovingTrajectory	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_ExpectedUEBehaviour {
+	struct ASN_XNAP_ExpectedUEActivityBehaviour	*expectedUEActivityBehaviour	/* OPTIONAL */;
+    ASN_XNAP_ExpectedHOInterval_t	*expectedHOInterval	/* OPTIONAL */;
+    ASN_XNAP_ExpectedUEMobility_t	*expectedUEMobility	/* OPTIONAL */;
+	struct ASN_XNAP_ExpectedUEMovingTrajectory	*expectedUEMovingTrajectory	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -39,7 +39,7 @@ typedef struct ExpectedUEBehaviour {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} ExpectedUEBehaviour_t;
+} ASN_XNAP_ExpectedUEBehaviour_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_ExpectedUEBehaviour;

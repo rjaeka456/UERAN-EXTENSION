@@ -38,9 +38,9 @@ typedef struct ASN_XNAP_GlobalgNB_ID {
 } ASN_XNAP_GlobalgNB_ID_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_GlobalgNB_ID;
-extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_GlobalgNB_ID_specs_1;
-extern asn_TYPE_member_t asn_MBR_ASN_XNAP_GlobalgNB_ID_1[3];
+extern asn_TYPE_descriptor_t asn_DEF_GlobalgNB_ID;
+extern asn_SEQUENCE_specifics_t asn_SPC_GlobalgNB_ID_specs_1;
+extern asn_TYPE_member_t asn_MBR_GlobalgNB_ID_1[3];
 
 #ifdef __cplusplus
 }

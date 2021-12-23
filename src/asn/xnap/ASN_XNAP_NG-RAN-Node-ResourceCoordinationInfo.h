@@ -19,27 +19,27 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum NG_RAN_Node_ResourceCoordinationInfo_PR {
-	NG_RAN_Node_ResourceCoordinationInfo_PR_NOTHING,	/* No components present */
-	NG_RAN_Node_ResourceCoordinationInfo_PR_eutra_resource_coordination_info,
-	NG_RAN_Node_ResourceCoordinationInfo_PR_nr_resource_coordination_info
-} NG_RAN_Node_ResourceCoordinationInfo_PR;
+typedef enum ASN_XNAP_NG_RAN_Node_ResourceCoordinationInfo_PR {
+    ASN_XNAP_NG_RAN_Node_ResourceCoordinationInfo_PR_NOTHING,	/* No components present */
+    ASN_XNAP_NG_RAN_Node_ResourceCoordinationInfo_PR_eutra_resource_coordination_info,
+    ASN_XNAP_NG_RAN_Node_ResourceCoordinationInfo_PR_nr_resource_coordination_info
+} ASN_XNAP_NG_RAN_Node_ResourceCoordinationInfo_PR;
 
 /* Forward declarations */
-struct E_UTRA_ResourceCoordinationInfo;
-struct NR_ResourceCoordinationInfo;
+struct ASN_XNAP_E_UTRA_ResourceCoordinationInfo;
+struct ASN_XNAP_NR_ResourceCoordinationInfo;
 
 /* NG-RAN-Node-ResourceCoordinationInfo */
-typedef struct NG_RAN_Node_ResourceCoordinationInfo {
-	NG_RAN_Node_ResourceCoordinationInfo_PR present;
-	union NG_RAN_Node_ResourceCoordinationInfo_u {
-		struct E_UTRA_ResourceCoordinationInfo	*eutra_resource_coordination_info;
-		struct NR_ResourceCoordinationInfo	*nr_resource_coordination_info;
+typedef struct ASN_XNAP_NG_RAN_Node_ResourceCoordinationInfo {
+    ASN_XNAP_NG_RAN_Node_ResourceCoordinationInfo_PR present;
+	union ASN_XNAP_NG_RAN_Node_ResourceCoordinationInfo_u {
+		struct ASN_XNAP_E_UTRA_ResourceCoordinationInfo	*eutra_resource_coordination_info;
+		struct ASN_XNAP_NR_ResourceCoordinationInfo	*nr_resource_coordination_info;
 	} choice;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} NG_RAN_Node_ResourceCoordinationInfo_t;
+} ASN_XNAP_NG_RAN_Node_ResourceCoordinationInfo_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_NG_RAN_Node_ResourceCoordinationInfo;

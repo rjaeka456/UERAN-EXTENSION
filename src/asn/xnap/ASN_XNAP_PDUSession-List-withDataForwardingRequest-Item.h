@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PDUSession-ID.h"
+#include "ASN_XNAP_PDUSession-ID.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,16 +20,16 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct DataforwardingandOffloadingInfofromSource;
-struct DRBToQoSFlowMapping_List;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_DataforwardingandOffloadingInfofromSource;
+struct ASN_XNAP_DRBToQoSFlowMapping_List;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* PDUSession-List-withDataForwardingRequest-Item */
-typedef struct PDUSession_List_withDataForwardingRequest_Item {
-	PDUSession_ID_t	 pduSessionId;
-	struct DataforwardingandOffloadingInfofromSource	*dataforwardingInfofromSource	/* OPTIONAL */;
-	struct DRBToQoSFlowMapping_List	*dRBtoBeReleasedList	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+typedef struct ASN_XNAP_PDUSession_List_withDataForwardingRequest_Item {
+    ASN_XNAP_PDUSession_ID_t	 pduSessionId;
+	struct ASN_XNAP_DataforwardingandOffloadingInfofromSource	*dataforwardingInfofromSource	/* OPTIONAL */;
+	struct ASN_XNAP_DRBToQoSFlowMapping_List	*dRBtoBeReleasedList	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -37,7 +37,7 @@ typedef struct PDUSession_List_withDataForwardingRequest_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} PDUSession_List_withDataForwardingRequest_Item_t;
+} ASN_XNAP_PDUSession_List_withDataForwardingRequest_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_PDUSession_List_withDataForwardingRequest_Item;

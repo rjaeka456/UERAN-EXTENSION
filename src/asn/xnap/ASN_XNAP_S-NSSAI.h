@@ -37,9 +37,9 @@ typedef struct ASN_XNAP_S_NSSAI {
 } ASN_XNAP_S_NSSAI_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_S_NSSAI;
-extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_S_NSSAI_specs_1;
-extern asn_TYPE_member_t asn_MBR_ASN_XNAP_S_NSSAI_1[3];
+extern asn_TYPE_descriptor_t asn_DEF_S_NSSAI;
+extern asn_SEQUENCE_specifics_t asn_SPC_S_NSSAI_specs_1;
+extern asn_TYPE_member_t asn_MBR_S_NSSAI_1[3];
 
 #ifdef __cplusplus
 }

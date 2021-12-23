@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "NRPCI.h"
-#include "E-UTRAPCI.h"
+#include "ASN_XNAP_NRPCI.h"
+#include "ASN_XNAP_E-UTRAPCI.h"
 #include <constr_CHOICE.h>
 
 #ifdef __cplusplus
@@ -21,28 +21,28 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum NG_RAN_CellPCI_PR {
-	NG_RAN_CellPCI_PR_NOTHING,	/* No components present */
-	NG_RAN_CellPCI_PR_nr,
-	NG_RAN_CellPCI_PR_e_utra,
-	NG_RAN_CellPCI_PR_choice_extension
-} NG_RAN_CellPCI_PR;
+typedef enum ASN_XNAP_NG_RAN_CellPCI_PR {
+    ASN_XNAP_NG_RAN_CellPCI_PR_NOTHING,	/* No components present */
+    ASN_XNAP_NG_RAN_CellPCI_PR_nr,
+    ASN_XNAP_NG_RAN_CellPCI_PR_e_utra,
+    ASN_XNAP_NG_RAN_CellPCI_PR_choice_extension
+} ASN_XNAP_NG_RAN_CellPCI_PR;
 
 /* Forward declarations */
-struct ProtocolIE_Single_Container;
+struct ASN_XNAP_ProtocolIE_Single_Container;
 
 /* NG-RAN-CellPCI */
-typedef struct NG_RAN_CellPCI {
-	NG_RAN_CellPCI_PR present;
-	union NG_RAN_CellPCI_u {
-		NRPCI_t	 nr;
-		E_UTRAPCI_t	 e_utra;
-		struct ProtocolIE_Single_Container	*choice_extension;
+typedef struct ASN_XNAP_NG_RAN_CellPCI {
+    ASN_XNAP_NG_RAN_CellPCI_PR present;
+	union ASN_XNAP_NG_RAN_CellPCI_u {
+        ASN_XNAP_NRPCI_t	 nr;
+        ASN_XNAP_E_UTRAPCI_t	 e_utra;
+		struct ASN_XNAP_ProtocolIE_Single_Container	*choice_extension;
 	} choice;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} NG_RAN_CellPCI_t;
+} ASN_XNAP_NG_RAN_CellPCI_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_NG_RAN_CellPCI;

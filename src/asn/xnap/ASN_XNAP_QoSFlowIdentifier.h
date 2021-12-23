@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* QoSFlowIdentifier */
-typedef long	 QoSFlowIdentifier_t;
+typedef long	 ASN_XNAP_QoSFlowIdentifier_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_QoSFlowIdentifier_constr_1;

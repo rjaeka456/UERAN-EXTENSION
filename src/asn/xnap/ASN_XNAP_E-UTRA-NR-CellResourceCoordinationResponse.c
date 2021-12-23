@@ -5,10 +5,10 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "E-UTRA-NR-CellResourceCoordinationResponse.h"
+#include "ASN_XNAP_E-UTRA-NR-CellResourceCoordinationResponse.h"
 
 asn_TYPE_member_t asn_MBR_E_UTRA_NR_CellResourceCoordinationResponse_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct E_UTRA_NR_CellResourceCoordinationResponse, protocolIEs),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_E_UTRA_NR_CellResourceCoordinationResponse, protocolIEs),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolIE_Container_5952P0,
@@ -25,8 +25,8 @@ static const asn_TYPE_tag2member_t asn_MAP_E_UTRA_NR_CellResourceCoordinationRes
     { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* protocolIEs */
 };
 asn_SEQUENCE_specifics_t asn_SPC_E_UTRA_NR_CellResourceCoordinationResponse_specs_1 = {
-	sizeof(struct E_UTRA_NR_CellResourceCoordinationResponse),
-	offsetof(struct E_UTRA_NR_CellResourceCoordinationResponse, _asn_ctx),
+	sizeof(struct ASN_XNAP_E_UTRA_NR_CellResourceCoordinationResponse),
+	offsetof(struct ASN_XNAP_E_UTRA_NR_CellResourceCoordinationResponse, _asn_ctx),
 	asn_MAP_E_UTRA_NR_CellResourceCoordinationResponse_tag2el_1,
 	1,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */

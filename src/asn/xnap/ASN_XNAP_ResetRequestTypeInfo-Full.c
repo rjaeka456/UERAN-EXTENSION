@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "ResetRequestTypeInfo-Full.h"
+#include "ASN_XNAP_ResetRequestTypeInfo-Full.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_ResetRequestTypeInfo_Full_1[] = {
 	{ ATF_POINTER, 1, offsetof(struct ResetRequestTypeInfo_Full, iE_Extension),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),

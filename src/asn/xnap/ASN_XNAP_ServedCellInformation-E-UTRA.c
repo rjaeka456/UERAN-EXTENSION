@@ -184,7 +184,7 @@ asn_TYPE_member_t asn_MBR_ServedCellInformation_E_UTRA_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA, e_utra_pci),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ASN_XNAP_E_UTRAPCI,
+		&asn_DEF_E_UTRAPCI,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
@@ -193,7 +193,7 @@ asn_TYPE_member_t asn_MBR_ServedCellInformation_E_UTRA_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA, e_utra_cgi),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ASN_XNAP_E_UTRA_CGI,
+		&asn_DEF_E_UTRA_CGI,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
@@ -202,7 +202,7 @@ asn_TYPE_member_t asn_MBR_ServedCellInformation_E_UTRA_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA, tac),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ASN_XNAP_TAC,
+		&asn_DEF_TAC,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
@@ -211,7 +211,7 @@ asn_TYPE_member_t asn_MBR_ServedCellInformation_E_UTRA_1[] = {
 	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA, ranac),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ASN_XNAP_RANAC,
+		&asn_DEF_RANAC,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
@@ -301,7 +301,7 @@ asn_TYPE_member_t asn_MBR_ServedCellInformation_E_UTRA_1[] = {
 	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (13 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ASN_XNAP_ProtocolExtensionContainer_6001P0,
+		&asn_DEF_ProtocolExtensionContainer_6001P0,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */

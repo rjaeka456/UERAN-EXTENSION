@@ -5,18 +5,18 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "ResetResponseTypeInfo.h"
+#include "ASN_XNAP_ResetResponseTypeInfo.h"
 
-#include "ResetResponseTypeInfo-Full.h"
-#include "ResetResponseTypeInfo-Partial.h"
-#include "ProtocolIE-Single-Container.h"
+#include "ASN_XNAP_ResetResponseTypeInfo-Full.h"
+#include "ASN_XNAP_ResetResponseTypeInfo-Partial.h"
+#include "ASN_XNAP_ProtocolIE-Single-Container.h"
 static asn_per_constraints_t asn_PER_type_ResetResponseTypeInfo_constr_1 CC_NOTUSED = {
 	{ APC_CONSTRAINED,	 2,  2,  0,  2 }	/* (0..2) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
 static asn_TYPE_member_t asn_MBR_ResetResponseTypeInfo_1[] = {
-	{ ATF_POINTER, 0, offsetof(struct ResetResponseTypeInfo, choice.fullReset),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_ResetResponseTypeInfo, choice.fullReset),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ResetResponseTypeInfo_Full,
@@ -25,7 +25,7 @@ static asn_TYPE_member_t asn_MBR_ResetResponseTypeInfo_1[] = {
 		0, 0, /* No default value */
 		"fullReset"
 		},
-	{ ATF_POINTER, 0, offsetof(struct ResetResponseTypeInfo, choice.partialReset),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_ResetResponseTypeInfo, choice.partialReset),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ResetResponseTypeInfo_Partial,
@@ -34,7 +34,7 @@ static asn_TYPE_member_t asn_MBR_ResetResponseTypeInfo_1[] = {
 		0, 0, /* No default value */
 		"partialReset"
 		},
-	{ ATF_POINTER, 0, offsetof(struct ResetResponseTypeInfo, choice.choice_extension),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_ResetResponseTypeInfo, choice.choice_extension),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolIE_Single_Container_5954P0,
@@ -50,10 +50,10 @@ static const asn_TYPE_tag2member_t asn_MAP_ResetResponseTypeInfo_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* choice-extension */
 };
 static asn_CHOICE_specifics_t asn_SPC_ResetResponseTypeInfo_specs_1 = {
-	sizeof(struct ResetResponseTypeInfo),
-	offsetof(struct ResetResponseTypeInfo, _asn_ctx),
-	offsetof(struct ResetResponseTypeInfo, present),
-	sizeof(((struct ResetResponseTypeInfo *)0)->present),
+	sizeof(struct ASN_XNAP_ResetResponseTypeInfo),
+	offsetof(struct ASN_XNAP_ResetResponseTypeInfo, _asn_ctx),
+	offsetof(struct ASN_XNAP_ResetResponseTypeInfo, present),
+	sizeof(((struct ASN_XNAP_ResetResponseTypeInfo *)0)->present),
 	asn_MAP_ResetResponseTypeInfo_tag2el_1,
 	3,	/* Count of tags in the map */
 	0, 0,

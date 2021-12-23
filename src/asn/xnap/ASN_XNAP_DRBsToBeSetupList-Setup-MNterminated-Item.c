@@ -12,7 +12,7 @@
 #include "ASN_XNAP_UPTransportParameters.h"
 #include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_DRBsToBeSetupList_Setup_MNterminated_Item_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct DRBsToBeSetupList_Setup_MNterminated_Item, drb_ID),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_DRBsToBeSetupList_Setup_MNterminated_Item, drb_ID),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_DRB_ID,
@@ -21,7 +21,7 @@ asn_TYPE_member_t asn_MBR_DRBsToBeSetupList_Setup_MNterminated_Item_1[] = {
 		0, 0, /* No default value */
 		"drb-ID"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct DRBsToBeSetupList_Setup_MNterminated_Item, mN_UL_PDCP_UP_TNLInfo),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_DRBsToBeSetupList_Setup_MNterminated_Item, mN_UL_PDCP_UP_TNLInfo),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_UPTransportParameters,
@@ -30,7 +30,7 @@ asn_TYPE_member_t asn_MBR_DRBsToBeSetupList_Setup_MNterminated_Item_1[] = {
 		0, 0, /* No default value */
 		"mN-UL-PDCP-UP-TNLInfo"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct DRBsToBeSetupList_Setup_MNterminated_Item, rLC_Mode),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_DRBsToBeSetupList_Setup_MNterminated_Item, rLC_Mode),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_RLCMode,
@@ -39,7 +39,7 @@ asn_TYPE_member_t asn_MBR_DRBsToBeSetupList_Setup_MNterminated_Item_1[] = {
 		0, 0, /* No default value */
 		"rLC-Mode"
 		},
-	{ ATF_POINTER, 1, offsetof(struct DRBsToBeSetupList_Setup_MNterminated_Item, uL_Configuration),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_DRBsToBeSetupList_Setup_MNterminated_Item, uL_Configuration),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ULConfiguration,
@@ -48,7 +48,7 @@ asn_TYPE_member_t asn_MBR_DRBsToBeSetupList_Setup_MNterminated_Item_1[] = {
 		0, 0, /* No default value */
 		"uL-Configuration"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct DRBsToBeSetupList_Setup_MNterminated_Item, dRB_QoS),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_DRBsToBeSetupList_Setup_MNterminated_Item, dRB_QoS),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_QoSFlowLevelQoSParameters,
@@ -57,7 +57,7 @@ asn_TYPE_member_t asn_MBR_DRBsToBeSetupList_Setup_MNterminated_Item_1[] = {
 		0, 0, /* No default value */
 		"dRB-QoS"
 		},
-	{ ATF_POINTER, 3, offsetof(struct DRBsToBeSetupList_Setup_MNterminated_Item, pDCP_SNLength),
+	{ ATF_POINTER, 3, offsetof(struct ASN_XNAP_DRBsToBeSetupList_Setup_MNterminated_Item, pDCP_SNLength),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PDCPSNLength,
@@ -66,7 +66,7 @@ asn_TYPE_member_t asn_MBR_DRBsToBeSetupList_Setup_MNterminated_Item_1[] = {
 		0, 0, /* No default value */
 		"pDCP-SNLength"
 		},
-	{ ATF_POINTER, 2, offsetof(struct DRBsToBeSetupList_Setup_MNterminated_Item, secondary_MN_UL_PDCP_UP_TNLInfo),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_DRBsToBeSetupList_Setup_MNterminated_Item, secondary_MN_UL_PDCP_UP_TNLInfo),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_UPTransportParameters,
@@ -75,7 +75,7 @@ asn_TYPE_member_t asn_MBR_DRBsToBeSetupList_Setup_MNterminated_Item_1[] = {
 		0, 0, /* No default value */
 		"secondary-MN-UL-PDCP-UP-TNLInfo"
 		},
-	{ ATF_POINTER, 1, offsetof(struct DRBsToBeSetupList_Setup_MNterminated_Item, duplicationActivation),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_DRBsToBeSetupList_Setup_MNterminated_Item, duplicationActivation),
 		(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_DuplicationActivation,
@@ -84,7 +84,7 @@ asn_TYPE_member_t asn_MBR_DRBsToBeSetupList_Setup_MNterminated_Item_1[] = {
 		0, 0, /* No default value */
 		"duplicationActivation"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct DRBsToBeSetupList_Setup_MNterminated_Item, qoSFlowsMappedtoDRB_Setup_MNterminated),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_DRBsToBeSetupList_Setup_MNterminated_Item, qoSFlowsMappedtoDRB_Setup_MNterminated),
 		(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_QoSFlowsMappedtoDRB_Setup_MNterminated,
@@ -93,7 +93,7 @@ asn_TYPE_member_t asn_MBR_DRBsToBeSetupList_Setup_MNterminated_Item_1[] = {
 		0, 0, /* No default value */
 		"qoSFlowsMappedtoDRB-Setup-MNterminated"
 		},
-	{ ATF_POINTER, 1, offsetof(struct DRBsToBeSetupList_Setup_MNterminated_Item, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_DRBsToBeSetupList_Setup_MNterminated_Item, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (9 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -120,8 +120,8 @@ static const asn_TYPE_tag2member_t asn_MAP_DRBsToBeSetupList_Setup_MNterminated_
     { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_DRBsToBeSetupList_Setup_MNterminated_Item_specs_1 = {
-	sizeof(struct DRBsToBeSetupList_Setup_MNterminated_Item),
-	offsetof(struct DRBsToBeSetupList_Setup_MNterminated_Item, _asn_ctx),
+	sizeof(struct ASN_XNAP_DRBsToBeSetupList_Setup_MNterminated_Item),
+	offsetof(struct ASN_XNAP_DRBsToBeSetupList_Setup_MNterminated_Item, _asn_ctx),
 	asn_MAP_DRBsToBeSetupList_Setup_MNterminated_Item_tag2el_1,
 	10,	/* Count of tags in the map */
 	asn_MAP_DRBsToBeSetupList_Setup_MNterminated_Item_oms_1,	/* Optional members */

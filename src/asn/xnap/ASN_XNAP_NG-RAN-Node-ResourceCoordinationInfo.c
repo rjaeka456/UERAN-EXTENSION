@@ -5,17 +5,17 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "NG-RAN-Node-ResourceCoordinationInfo.h"
+#include "ASN_XNAP_NG-RAN-Node-ResourceCoordinationInfo.h"
 
-#include "E-UTRA-ResourceCoordinationInfo.h"
-#include "NR-ResourceCoordinationInfo.h"
+#include "ASN_XNAP_E-UTRA-ResourceCoordinationInfo.h"
+#include "ASN_XNAP_NR-ResourceCoordinationInfo.h"
 asn_per_constraints_t asn_PER_type_NG_RAN_Node_ResourceCoordinationInfo_constr_1 CC_NOTUSED = {
 	{ APC_CONSTRAINED,	 1,  1,  0,  1 }	/* (0..1) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
 asn_TYPE_member_t asn_MBR_NG_RAN_Node_ResourceCoordinationInfo_1[] = {
-	{ ATF_POINTER, 0, offsetof(struct NG_RAN_Node_ResourceCoordinationInfo, choice.eutra_resource_coordination_info),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_NG_RAN_Node_ResourceCoordinationInfo, choice.eutra_resource_coordination_info),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_E_UTRA_ResourceCoordinationInfo,
@@ -24,7 +24,7 @@ asn_TYPE_member_t asn_MBR_NG_RAN_Node_ResourceCoordinationInfo_1[] = {
 		0, 0, /* No default value */
 		"eutra-resource-coordination-info"
 		},
-	{ ATF_POINTER, 0, offsetof(struct NG_RAN_Node_ResourceCoordinationInfo, choice.nr_resource_coordination_info),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_NG_RAN_Node_ResourceCoordinationInfo, choice.nr_resource_coordination_info),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NR_ResourceCoordinationInfo,
@@ -39,10 +39,10 @@ static const asn_TYPE_tag2member_t asn_MAP_NG_RAN_Node_ResourceCoordinationInfo_
     { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* nr-resource-coordination-info */
 };
 asn_CHOICE_specifics_t asn_SPC_NG_RAN_Node_ResourceCoordinationInfo_specs_1 = {
-	sizeof(struct NG_RAN_Node_ResourceCoordinationInfo),
-	offsetof(struct NG_RAN_Node_ResourceCoordinationInfo, _asn_ctx),
-	offsetof(struct NG_RAN_Node_ResourceCoordinationInfo, present),
-	sizeof(((struct NG_RAN_Node_ResourceCoordinationInfo *)0)->present),
+	sizeof(struct ASN_XNAP_NG_RAN_Node_ResourceCoordinationInfo),
+	offsetof(struct ASN_XNAP_NG_RAN_Node_ResourceCoordinationInfo, _asn_ctx),
+	offsetof(struct ASN_XNAP_NG_RAN_Node_ResourceCoordinationInfo, present),
+	sizeof(((struct ASN_XNAP_NG_RAN_Node_ResourceCoordinationInfo *)0)->present),
 	asn_MAP_NG_RAN_Node_ResourceCoordinationInfo_tag2el_1,
 	2,	/* Count of tags in the map */
 	0, 0,

@@ -12,11 +12,11 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "E-UTRAPCI.h"
-#include "E-UTRA-CGI.h"
-#include "E-UTRAARFCN.h"
-#include "TAC.h"
-#include "RANAC.h"
+#include "ASN_XNAP_E-UTRAPCI.h"
+#include "ASN_XNAP_E-UTRA-CGI.h"
+#include "ASN_XNAP_E-UTRAARFCN.h"
+#include "ASN_XNAP_TAC.h"
+#include "ASN_XNAP_RANAC.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -24,16 +24,16 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* NeighbourInformation-E-UTRA-Item */
-typedef struct NeighbourInformation_E_UTRA_Item {
-	E_UTRAPCI_t	 e_utra_PCI;
-	E_UTRA_CGI_t	 e_utra_cgi;
-	E_UTRAARFCN_t	 earfcn;
-	TAC_t	 tac;
-	RANAC_t	*ranac	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_NeighbourInformation_E_UTRA_Item {
+    ASN_XNAP_E_UTRAPCI_t	 e_utra_PCI;
+    ASN_XNAP_E_UTRA_CGI_t	 e_utra_cgi;
+    ASN_XNAP_E_UTRAARFCN_t	 earfcn;
+    ASN_XNAP_TAC_t	 tac;
+    ASN_XNAP_RANAC_t	*ranac	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -41,7 +41,7 @@ typedef struct NeighbourInformation_E_UTRA_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} NeighbourInformation_E_UTRA_Item_t;
+} ASN_XNAP_NeighbourInformation_E_UTRA_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_NeighbourInformation_E_UTRA_Item;

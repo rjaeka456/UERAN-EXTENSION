@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* LCID */
-typedef long	 LCID_t;
+typedef long	 ASN_XNAP_LCID_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_LCID_constr_1;

@@ -5,7 +5,7 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "UL-UE-Configuration.h"
+#include "ASN_XNAP_UL-UE-Configuration.h"
 
 /*
  * This type is implemented using NativeEnumerated,

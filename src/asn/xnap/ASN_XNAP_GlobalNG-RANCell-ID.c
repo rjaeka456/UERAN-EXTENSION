@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "GlobalNG-RANCell-ID.h"
+#include "ASN_XNAP_GlobalNG-RANCell-ID.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_GlobalNG_RANCell_ID_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct GlobalNG_RANCell_ID, plmn_id),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_GlobalNG_RANCell_ID, plmn_id),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PLMN_Identity,
@@ -18,7 +18,7 @@ asn_TYPE_member_t asn_MBR_GlobalNG_RANCell_ID_1[] = {
 		0, 0, /* No default value */
 		"plmn-id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct GlobalNG_RANCell_ID, ng_RAN_Cell_id),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_GlobalNG_RANCell_ID, ng_RAN_Cell_id),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_NG_RAN_Cell_Identity,
@@ -27,7 +27,7 @@ asn_TYPE_member_t asn_MBR_GlobalNG_RANCell_ID_1[] = {
 		0, 0, /* No default value */
 		"ng-RAN-Cell-id"
 		},
-	{ ATF_POINTER, 1, offsetof(struct GlobalNG_RANCell_ID, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_GlobalNG_RANCell_ID, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -47,8 +47,8 @@ static const asn_TYPE_tag2member_t asn_MAP_GlobalNG_RANCell_ID_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_GlobalNG_RANCell_ID_specs_1 = {
-	sizeof(struct GlobalNG_RANCell_ID),
-	offsetof(struct GlobalNG_RANCell_ID, _asn_ctx),
+	sizeof(struct ASN_XNAP_GlobalNG_RANCell_ID),
+	offsetof(struct ASN_XNAP_GlobalNG_RANCell_ID, _asn_ctx),
 	asn_MAP_GlobalNG_RANCell_ID_tag2el_1,
 	3,	/* Count of tags in the map */
 	asn_MAP_GlobalNG_RANCell_ID_oms_1,	/* Optional members */

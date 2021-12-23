@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "NeighbourInformation-E-UTRA-Item.h"
+#include "ASN_XNAP_NeighbourInformation-E-UTRA-Item.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_NeighbourInformation_E_UTRA_Item_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct NeighbourInformation_E_UTRA_Item, e_utra_PCI),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_NeighbourInformation_E_UTRA_Item, e_utra_PCI),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_E_UTRAPCI,
@@ -18,7 +18,7 @@ asn_TYPE_member_t asn_MBR_NeighbourInformation_E_UTRA_Item_1[] = {
 		0, 0, /* No default value */
 		"e-utra-PCI"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct NeighbourInformation_E_UTRA_Item, e_utra_cgi),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_NeighbourInformation_E_UTRA_Item, e_utra_cgi),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_E_UTRA_CGI,
@@ -27,7 +27,7 @@ asn_TYPE_member_t asn_MBR_NeighbourInformation_E_UTRA_Item_1[] = {
 		0, 0, /* No default value */
 		"e-utra-cgi"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct NeighbourInformation_E_UTRA_Item, earfcn),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_NeighbourInformation_E_UTRA_Item, earfcn),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_E_UTRAARFCN,
@@ -36,7 +36,7 @@ asn_TYPE_member_t asn_MBR_NeighbourInformation_E_UTRA_Item_1[] = {
 		0, 0, /* No default value */
 		"earfcn"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct NeighbourInformation_E_UTRA_Item, tac),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_NeighbourInformation_E_UTRA_Item, tac),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_TAC,
@@ -45,7 +45,7 @@ asn_TYPE_member_t asn_MBR_NeighbourInformation_E_UTRA_Item_1[] = {
 		0, 0, /* No default value */
 		"tac"
 		},
-	{ ATF_POINTER, 2, offsetof(struct NeighbourInformation_E_UTRA_Item, ranac),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_NeighbourInformation_E_UTRA_Item, ranac),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_RANAC,
@@ -54,7 +54,7 @@ asn_TYPE_member_t asn_MBR_NeighbourInformation_E_UTRA_Item_1[] = {
 		0, 0, /* No default value */
 		"ranac"
 		},
-	{ ATF_POINTER, 1, offsetof(struct NeighbourInformation_E_UTRA_Item, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_NeighbourInformation_E_UTRA_Item, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -77,8 +77,8 @@ static const asn_TYPE_tag2member_t asn_MAP_NeighbourInformation_E_UTRA_Item_tag2
     { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_NeighbourInformation_E_UTRA_Item_specs_1 = {
-	sizeof(struct NeighbourInformation_E_UTRA_Item),
-	offsetof(struct NeighbourInformation_E_UTRA_Item, _asn_ctx),
+	sizeof(struct ASN_XNAP_NeighbourInformation_E_UTRA_Item),
+	offsetof(struct ASN_XNAP_NeighbourInformation_E_UTRA_Item, _asn_ctx),
 	asn_MAP_NeighbourInformation_E_UTRA_Item_tag2el_1,
 	6,	/* Count of tags in the map */
 	asn_MAP_NeighbourInformation_E_UTRA_Item_oms_1,	/* Optional members */

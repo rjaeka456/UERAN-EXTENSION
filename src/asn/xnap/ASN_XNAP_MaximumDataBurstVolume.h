@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* MaximumDataBurstVolume */
-typedef long	 MaximumDataBurstVolume_t;
+typedef long	 ASN_XNAP_MaximumDataBurstVolume_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_MaximumDataBurstVolume_constr_1;

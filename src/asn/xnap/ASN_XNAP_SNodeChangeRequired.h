@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "ProtocolIE-Container.h"
+#include "ASN_XNAP_ProtocolIE-Container.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,8 +20,8 @@ extern "C" {
 #endif
 
 /* SNodeChangeRequired */
-typedef struct SNodeChangeRequired {
-	ProtocolIE_Container_5952P0_t	 protocolIEs;
+typedef struct ASN_XNAP_SNodeChangeRequired {
+    ASN_XNAP_ProtocolIE_Container_5952P0_t	 protocolIEs;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -29,7 +29,7 @@ typedef struct SNodeChangeRequired {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} SNodeChangeRequired_t;
+} ASN_XNAP_SNodeChangeRequired_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_SNodeChangeRequired;

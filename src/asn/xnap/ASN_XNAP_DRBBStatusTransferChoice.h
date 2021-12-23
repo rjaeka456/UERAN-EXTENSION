@@ -19,30 +19,30 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum DRBBStatusTransferChoice_PR {
-	DRBBStatusTransferChoice_PR_NOTHING,	/* No components present */
-	DRBBStatusTransferChoice_PR_pdcp_sn_12bits,
-	DRBBStatusTransferChoice_PR_pdcp_sn_18bits,
-	DRBBStatusTransferChoice_PR_choice_extension
-} DRBBStatusTransferChoice_PR;
+typedef enum ASN_XNAP_DRBBStatusTransferChoice_PR {
+    ASN_XNAP_DRBBStatusTransferChoice_PR_NOTHING,	/* No components present */
+    ASN_XNAP_DRBBStatusTransferChoice_PR_pdcp_sn_12bits,
+    ASN_XNAP_DRBBStatusTransferChoice_PR_pdcp_sn_18bits,
+    ASN_XNAP_DRBBStatusTransferChoice_PR_choice_extension
+} ASN_XNAP_DRBBStatusTransferChoice_PR;
 
 /* Forward declarations */
-struct DRBBStatusTransfer12bitsSN;
-struct DRBBStatusTransfer18bitsSN;
-struct ProtocolIE_Single_Container;
+struct ASN_XNAP_DRBBStatusTransfer12bitsSN;
+struct ASN_XNAP_DRBBStatusTransfer18bitsSN;
+struct ASN_XNAP_ProtocolIE_Single_Container;
 
 /* DRBBStatusTransferChoice */
-typedef struct DRBBStatusTransferChoice {
-	DRBBStatusTransferChoice_PR present;
-	union DRBBStatusTransferChoice_u {
-		struct DRBBStatusTransfer12bitsSN	*pdcp_sn_12bits;
-		struct DRBBStatusTransfer18bitsSN	*pdcp_sn_18bits;
-		struct ProtocolIE_Single_Container	*choice_extension;
+typedef struct ASN_XNAP_DRBBStatusTransferChoice {
+    ASN_XNAP_DRBBStatusTransferChoice_PR present;
+	union ASN_XNAP_DRBBStatusTransferChoice_u {
+		struct ASN_XNAP_DRBBStatusTransfer12bitsSN	*pdcp_sn_12bits;
+		struct ASN_XNAP_DRBBStatusTransfer18bitsSN	*pdcp_sn_18bits;
+		struct ASN_XNAP_ProtocolIE_Single_Container	*choice_extension;
 	} choice;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} DRBBStatusTransferChoice_t;
+} ASN_XNAP_DRBBStatusTransferChoice_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_DRBBStatusTransferChoice;

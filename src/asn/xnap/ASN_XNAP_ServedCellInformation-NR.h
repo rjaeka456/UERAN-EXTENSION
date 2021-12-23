@@ -50,9 +50,9 @@ typedef struct ASN_XNAP_ServedCellInformation_NR {
 } ASN_XNAP_ServedCellInformation_NR_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_ServedCellInformation_NR;
-extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_ServedCellInformation_NR_specs_1;
-extern asn_TYPE_member_t asn_MBR_ASN_XNAP_ServedCellInformation_NR_1[9];
+extern asn_TYPE_descriptor_t asn_DEF_ServedCellInformation_NR;
+extern asn_SEQUENCE_specifics_t asn_SPC_ServedCellInformation_NR_specs_1;
+extern asn_TYPE_member_t asn_MBR_ServedCellInformation_NR_1[9];
 
 #ifdef __cplusplus
 }

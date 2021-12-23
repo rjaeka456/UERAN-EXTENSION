@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "DRBsAdmittedList-SetupResponse-MNterminated.h"
+#include "ASN_XNAP_DRBsAdmittedList-SetupResponse-MNterminated.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,12 +20,12 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* PDUSessionResourceSetupResponseInfo-MNterminated */
-typedef struct PDUSessionResourceSetupResponseInfo_MNterminated {
-	DRBsAdmittedList_SetupResponse_MNterminated_t	 dRBsAdmittedList;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_PDUSessionResourceSetupResponseInfo_MNterminated {
+    ASN_XNAP_DRBsAdmittedList_SetupResponse_MNterminated_t	 dRBsAdmittedList;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -33,7 +33,7 @@ typedef struct PDUSessionResourceSetupResponseInfo_MNterminated {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} PDUSessionResourceSetupResponseInfo_MNterminated_t;
+} ASN_XNAP_PDUSessionResourceSetupResponseInfo_MNterminated_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_PDUSessionResourceSetupResponseInfo_MNterminated;

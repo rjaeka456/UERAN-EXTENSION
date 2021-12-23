@@ -80,12 +80,12 @@ static asn_per_constraints_t asn_PER_memb_fourframes_constr_3 CC_NOTUSED = {
 	{ APC_CONSTRAINED,	 0,  0,  24,  24 }	/* (SIZE(24..24)) */,
 	0, 0	/* No PER value map */
 };
-asn_per_constraints_t asn_PER_type_ASN_XNAP_MBSFNSubframeAllocation_E_UTRA_constr_1 CC_NOTUSED = {
+asn_per_constraints_t asn_PER_type_MBSFNSubframeAllocation_E_UTRA_constr_1 CC_NOTUSED = {
 	{ APC_CONSTRAINED,	 2,  2,  0,  2 }	/* (0..2) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-asn_TYPE_member_t asn_MBR_ASN_XNAP_MBSFNSubframeAllocation_E_UTRA_1[] = {
+asn_TYPE_member_t asn_MBR_MBSFNSubframeAllocation_E_UTRA_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_MBSFNSubframeAllocation_E_UTRA, choice.oneframe),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
@@ -107,29 +107,29 @@ asn_TYPE_member_t asn_MBR_ASN_XNAP_MBSFNSubframeAllocation_E_UTRA_1[] = {
 	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_MBSFNSubframeAllocation_E_UTRA, choice.choice_extension),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ASN_XNAP_ProtocolIE_Single_Container_5954P0,
+		&asn_DEF_ProtocolIE_Single_Container_5954P0,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
 		"choice-extension"
 		},
 };
-static const asn_TYPE_tag2member_t asn_MAP_ASN_XNAP_MBSFNSubframeAllocation_E_UTRA_tag2el_1[] = {
+static const asn_TYPE_tag2member_t asn_MAP_MBSFNSubframeAllocation_E_UTRA_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* oneframe */
     { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* fourframes */
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* choice-extension */
 };
-asn_CHOICE_specifics_t asn_SPC_ASN_XNAP_MBSFNSubframeAllocation_E_UTRA_specs_1 = {
+asn_CHOICE_specifics_t asn_SPC_MBSFNSubframeAllocation_E_UTRA_specs_1 = {
 	sizeof(struct ASN_XNAP_MBSFNSubframeAllocation_E_UTRA),
 	offsetof(struct ASN_XNAP_MBSFNSubframeAllocation_E_UTRA, _asn_ctx),
 	offsetof(struct ASN_XNAP_MBSFNSubframeAllocation_E_UTRA, present),
 	sizeof(((struct ASN_XNAP_MBSFNSubframeAllocation_E_UTRA *)0)->present),
-	asn_MAP_ASN_XNAP_MBSFNSubframeAllocation_E_UTRA_tag2el_1,
+	asn_MAP_MBSFNSubframeAllocation_E_UTRA_tag2el_1,
 	3,	/* Count of tags in the map */
 	0, 0,
 	-1	/* Extensions start */
 };
-asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_MBSFNSubframeAllocation_E_UTRA = {
+asn_TYPE_descriptor_t asn_DEF_MBSFNSubframeAllocation_E_UTRA = {
 	"MBSFNSubframeAllocation-E-UTRA",
 	"MBSFNSubframeAllocation-E-UTRA",
 	&asn_OP_CHOICE,
@@ -137,9 +137,9 @@ asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_MBSFNSubframeAllocation_E_UTRA = {
 	0,	/* No effective tags (count) */
 	0,	/* No tags (pointer) */
 	0,	/* No tags (count) */
-	{ 0, &asn_PER_type_ASN_XNAP_MBSFNSubframeAllocation_E_UTRA_constr_1, CHOICE_constraint },
-	asn_MBR_ASN_XNAP_MBSFNSubframeAllocation_E_UTRA_1,
+	{ 0, &asn_PER_type_MBSFNSubframeAllocation_E_UTRA_constr_1, CHOICE_constraint },
+	asn_MBR_MBSFNSubframeAllocation_E_UTRA_1,
 	3,	/* Elements count */
-	&asn_SPC_ASN_XNAP_MBSFNSubframeAllocation_E_UTRA_specs_1	/* Additional specs */
+	&asn_SPC_MBSFNSubframeAllocation_E_UTRA_specs_1	/* Additional specs */
 };
 

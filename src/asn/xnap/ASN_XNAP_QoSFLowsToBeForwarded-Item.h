@@ -12,9 +12,9 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "QoSFlowIdentifier.h"
-#include "DLForwarding.h"
-#include "ULForwarding.h"
+#include "ASN_XNAP_QoSFlowIdentifier.h"
+#include "ASN_XNAP_DLForwarding.h"
+#include "ASN_XNAP_ULForwarding.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -22,14 +22,14 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* QoSFLowsToBeForwarded-Item */
-typedef struct QoSFLowsToBeForwarded_Item {
-	QoSFlowIdentifier_t	 qosFlowIdentifier;
-	DLForwarding_t	 dl_dataforwarding;
-	ULForwarding_t	 ul_dataforwarding;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+typedef struct ASN_XNAP_QoSFLowsToBeForwarded_Item {
+    ASN_XNAP_QoSFlowIdentifier_t	 qosFlowIdentifier;
+    ASN_XNAP_DLForwarding_t	 dl_dataforwarding;
+    ASN_XNAP_ULForwarding_t	 ul_dataforwarding;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -37,7 +37,7 @@ typedef struct QoSFLowsToBeForwarded_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} QoSFLowsToBeForwarded_Item_t;
+} ASN_XNAP_QoSFLowsToBeForwarded_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_QoSFLowsToBeForwarded_Item;

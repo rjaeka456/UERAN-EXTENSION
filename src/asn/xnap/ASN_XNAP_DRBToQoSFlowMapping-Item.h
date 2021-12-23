@@ -22,14 +22,14 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* DRBToQoSFlowMapping-Item */
-typedef struct DRBToQoSFlowMapping_Item {
-	DRB_ID_t	 drb_ID;
-	QoSFlows_List_t	 qosFlows_List;
-	RLCMode_t	*rLC_Mode	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+typedef struct ASN_XNAP_DRBToQoSFlowMapping_Item {
+    ASN_XNAP_DRB_ID_t	 drb_ID;
+    ASN_XNAP_QoSFlows_List_t	 qosFlows_List;
+    ASN_XNAP_RLCMode_t	*rLC_Mode	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -37,7 +37,7 @@ typedef struct DRBToQoSFlowMapping_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} DRBToQoSFlowMapping_Item_t;
+} ASN_XNAP_DRBToQoSFlowMapping_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_DRBToQoSFlowMapping_Item;

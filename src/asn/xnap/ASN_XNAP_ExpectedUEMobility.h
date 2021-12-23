@@ -19,16 +19,16 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum ExpectedUEMobility {
-	ExpectedUEMobility_stationary	= 0,
-	ExpectedUEMobility_mobile	= 1
+typedef enum ASN_XNAP_ExpectedUEMobility {
+    ASN_XNAP_ExpectedUEMobility_stationary	= 0,
+    ASN_XNAP_ExpectedUEMobility_mobile	= 1
 	/*
 	 * Enumeration is extensible
 	 */
-} e_ExpectedUEMobility;
+} e_ASN_XNAP_ExpectedUEMobility;
 
 /* ExpectedUEMobility */
-typedef long	 ExpectedUEMobility_t;
+typedef long	 ASN_XNAP_ExpectedUEMobility_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_ExpectedUEMobility_constr_1;

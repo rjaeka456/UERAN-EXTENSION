@@ -20,15 +20,15 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ExpectedUEMovingTrajectoryItem;
+struct ASN_XNAP_ExpectedUEMovingTrajectoryItem;
 
 /* ExpectedUEMovingTrajectory */
-typedef struct ExpectedUEMovingTrajectory {
-	A_SEQUENCE_OF(struct ExpectedUEMovingTrajectoryItem) list;
+typedef struct ASN_XNAP_ExpectedUEMovingTrajectory {
+	A_SEQUENCE_OF(struct ASN_XNAP_ExpectedUEMovingTrajectoryItem) list;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} ExpectedUEMovingTrajectory_t;
+} ASN_XNAP_ExpectedUEMovingTrajectory_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_ExpectedUEMovingTrajectory;

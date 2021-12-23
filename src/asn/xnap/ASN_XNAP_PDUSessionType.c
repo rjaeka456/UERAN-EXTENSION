@@ -5,7 +5,7 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "PDUSessionType.h"
+#include "ASN_XNAP_PDUSessionType.h"
 
 /*
  * This type is implemented using NativeEnumerated,

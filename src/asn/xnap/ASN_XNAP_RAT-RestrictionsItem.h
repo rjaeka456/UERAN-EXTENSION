@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PLMN-Identity.h"
-#include "RAT-RestrictionInformation.h"
+#include "ASN_XNAP_PLMN-Identity.h"
+#include "ASN_XNAP_RAT-RestrictionInformation.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -21,13 +21,13 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* RAT-RestrictionsItem */
-typedef struct RAT_RestrictionsItem {
-	PLMN_Identity_t	 plmn_Identity;
-	RAT_RestrictionInformation_t	 rat_RestrictionInformation;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_RAT_RestrictionsItem {
+    ASN_XNAP_PLMN_Identity_t	 plmn_Identity;
+    ASN_XNAP_RAT_RestrictionInformation_t	 rat_RestrictionInformation;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -35,7 +35,7 @@ typedef struct RAT_RestrictionsItem {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} RAT_RestrictionsItem_t;
+} ASN_XNAP_RAT_RestrictionsItem_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_RAT_RestrictionsItem;

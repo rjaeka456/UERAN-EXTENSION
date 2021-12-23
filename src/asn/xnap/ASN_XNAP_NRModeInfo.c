@@ -16,7 +16,7 @@ asn_per_constraints_t asn_PER_type_NRModeInfo_constr_1 CC_NOTUSED = {
 	0, 0	/* No PER value map */
 };
 asn_TYPE_member_t asn_MBR_NRModeInfo_1[] = {
-	{ ATF_POINTER, 0, offsetof(struct NRModeInfo, choice.fdd),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_NRModeInfo, choice.fdd),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NRModeInfoFDD,
@@ -25,7 +25,7 @@ asn_TYPE_member_t asn_MBR_NRModeInfo_1[] = {
 		0, 0, /* No default value */
 		"fdd"
 		},
-	{ ATF_POINTER, 0, offsetof(struct NRModeInfo, choice.tdd),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_NRModeInfo, choice.tdd),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NRModeInfoTDD,
@@ -34,7 +34,7 @@ asn_TYPE_member_t asn_MBR_NRModeInfo_1[] = {
 		0, 0, /* No default value */
 		"tdd"
 		},
-	{ ATF_POINTER, 0, offsetof(struct NRModeInfo, choice.choice_extension),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_NRModeInfo, choice.choice_extension),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolIE_Single_Container_5954P0,
@@ -50,10 +50,10 @@ static const asn_TYPE_tag2member_t asn_MAP_NRModeInfo_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* choice-extension */
 };
 asn_CHOICE_specifics_t asn_SPC_NRModeInfo_specs_1 = {
-	sizeof(struct NRModeInfo),
-	offsetof(struct NRModeInfo, _asn_ctx),
-	offsetof(struct NRModeInfo, present),
-	sizeof(((struct NRModeInfo *)0)->present),
+	sizeof(struct ASN_XNAP_NRModeInfo),
+	offsetof(struct ASN_XNAP_NRModeInfo, _asn_ctx),
+	offsetof(struct ASN_XNAP_NRModeInfo, present),
+	sizeof(((struct ASN_XNAP_NRModeInfo *)0)->present),
 	asn_MAP_NRModeInfo_tag2el_1,
 	3,	/* Count of tags in the map */
 	0, 0,

@@ -12,10 +12,10 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "UPTransportLayerInformation.h"
-#include "PDUSessionType.h"
-#include "PDUSessionNetworkInstance.h"
-#include "QoSFlowsToBeSetup-List-Setup-SNterminated.h"
+#include "ASN_XNAP_UPTransportLayerInformation.h"
+#include "ASN_XNAP_PDUSessionType.h"
+#include "ASN_XNAP_PDUSessionNetworkInstance.h"
+#include "ASN_XNAP_QoSFlowsToBeSetup-List-Setup-SNterminated.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -23,19 +23,19 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct DataforwardingandOffloadingInfofromSource;
-struct SecurityIndication;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_DataforwardingandOffloadingInfofromSource;
+struct ASN_XNAP_SecurityIndication;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* PDUSessionResourceSetupInfo-SNterminated */
-typedef struct PDUSessionResourceSetupInfo_SNterminated {
-	UPTransportLayerInformation_t	 uL_NG_U_TNLatUPF;
-	PDUSessionType_t	 pduSessionType;
-	PDUSessionNetworkInstance_t	*pduSessionNetworkInstance	/* OPTIONAL */;
-	QoSFlowsToBeSetup_List_Setup_SNterminated_t	 qosFlowsToBeSetup_List;
-	struct DataforwardingandOffloadingInfofromSource	*dataforwardinginfofromSource	/* OPTIONAL */;
-	struct SecurityIndication	*securityIndication	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_PDUSessionResourceSetupInfo_SNterminated {
+    ASN_XNAP_UPTransportLayerInformation_t	 uL_NG_U_TNLatUPF;
+    ASN_XNAP_PDUSessionType_t	 pduSessionType;
+    ASN_XNAP_PDUSessionNetworkInstance_t	*pduSessionNetworkInstance	/* OPTIONAL */;
+    ASN_XNAP_QoSFlowsToBeSetup_List_Setup_SNterminated_t	 qosFlowsToBeSetup_List;
+	struct ASN_XNAP_DataforwardingandOffloadingInfofromSource	*dataforwardinginfofromSource	/* OPTIONAL */;
+	struct ASN_XNAP_SecurityIndication	*securityIndication	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -43,7 +43,7 @@ typedef struct PDUSessionResourceSetupInfo_SNterminated {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} PDUSessionResourceSetupInfo_SNterminated_t;
+} ASN_XNAP_PDUSessionResourceSetupInfo_SNterminated_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_PDUSessionResourceSetupInfo_SNterminated;

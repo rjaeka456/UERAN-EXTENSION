@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "NRModeInfoFDD.h"
+#include "ASN_XNAP_NRModeInfoFDD.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_NRModeInfoFDD_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct NRModeInfoFDD, ulNRFrequencyInfo),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_NRModeInfoFDD, ulNRFrequencyInfo),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NRFrequencyInfo,
@@ -18,7 +18,7 @@ asn_TYPE_member_t asn_MBR_NRModeInfoFDD_1[] = {
 		0, 0, /* No default value */
 		"ulNRFrequencyInfo"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct NRModeInfoFDD, dlNRFrequencyInfo),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_NRModeInfoFDD, dlNRFrequencyInfo),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NRFrequencyInfo,
@@ -27,7 +27,7 @@ asn_TYPE_member_t asn_MBR_NRModeInfoFDD_1[] = {
 		0, 0, /* No default value */
 		"dlNRFrequencyInfo"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct NRModeInfoFDD, ulNRTransmissonBandwidth),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_NRModeInfoFDD, ulNRTransmissonBandwidth),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NRTransmissionBandwidth,
@@ -36,7 +36,7 @@ asn_TYPE_member_t asn_MBR_NRModeInfoFDD_1[] = {
 		0, 0, /* No default value */
 		"ulNRTransmissonBandwidth"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct NRModeInfoFDD, dlNRTransmissonBandwidth),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_NRModeInfoFDD, dlNRTransmissonBandwidth),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NRTransmissionBandwidth,
@@ -45,7 +45,7 @@ asn_TYPE_member_t asn_MBR_NRModeInfoFDD_1[] = {
 		0, 0, /* No default value */
 		"dlNRTransmissonBandwidth"
 		},
-	{ ATF_POINTER, 1, offsetof(struct NRModeInfoFDD, iE_Extension),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_NRModeInfoFDD, iE_Extension),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -67,8 +67,8 @@ static const asn_TYPE_tag2member_t asn_MAP_NRModeInfoFDD_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* iE-Extension */
 };
 asn_SEQUENCE_specifics_t asn_SPC_NRModeInfoFDD_specs_1 = {
-	sizeof(struct NRModeInfoFDD),
-	offsetof(struct NRModeInfoFDD, _asn_ctx),
+	sizeof(struct ASN_XNAP_NRModeInfoFDD),
+	offsetof(struct ASN_XNAP_NRModeInfoFDD, _asn_ctx),
 	asn_MAP_NRModeInfoFDD_tag2el_1,
 	5,	/* Count of tags in the map */
 	asn_MAP_NRModeInfoFDD_oms_1,	/* Optional members */

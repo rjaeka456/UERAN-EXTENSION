@@ -12,10 +12,10 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "LastVisitedNGRANCellInformation.h"
-#include "LastVisitedEUTRANCellInformation.h"
-#include "LastVisitedUTRANCellInformation.h"
-#include "LastVisitedGERANCellInformation.h"
+#include "ASN_XNAP_LastVisitedNGRANCellInformation.h"
+#include "ASN_XNAP_LastVisitedEUTRANCellInformation.h"
+#include "ASN_XNAP_LastVisitedUTRANCellInformation.h"
+#include "ASN_XNAP_LastVisitedGERANCellInformation.h"
 #include <constr_CHOICE.h>
 
 #ifdef __cplusplus

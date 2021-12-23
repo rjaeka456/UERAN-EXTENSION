@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "ResponseType-ReconfComplete.h"
+#include "ASN_XNAP_ResponseType-ReconfComplete.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,12 +20,12 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* ResponseInfo-ReconfCompl */
-typedef struct ResponseInfo_ReconfCompl {
-	ResponseType_ReconfComplete_t	 responseType_ReconfComplete;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_ResponseInfo_ReconfCompl {
+    ASN_XNAP_ResponseType_ReconfComplete_t	 responseType_ReconfComplete;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -33,7 +33,7 @@ typedef struct ResponseInfo_ReconfCompl {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} ResponseInfo_ReconfCompl_t;
+} ASN_XNAP_ResponseInfo_ReconfCompl_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_ResponseInfo_ReconfCompl;

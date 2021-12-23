@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "EventType.h"
-#include "ReportArea.h"
+#include "ASN_XNAP_EventType.h"
+#include "ASN_XNAP_ReportArea.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -21,15 +21,15 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct AreaOfInterestInformation;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_AreaOfInterestInformation;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* LocationReportingInformation */
-typedef struct LocationReportingInformation {
-	EventType_t	 eventType;
-	ReportArea_t	 reportArea;
-	struct AreaOfInterestInformation	*areaOfInterest	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_LocationReportingInformation {
+    ASN_XNAP_EventType_t	 eventType;
+    ASN_XNAP_ReportArea_t	 reportArea;
+	struct ASN_XNAP_AreaOfInterestInformation	*areaOfInterest	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -37,7 +37,7 @@ typedef struct LocationReportingInformation {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} LocationReportingInformation_t;
+} ASN_XNAP_LocationReportingInformation_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_LocationReportingInformation;

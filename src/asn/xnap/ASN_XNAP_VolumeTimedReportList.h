@@ -20,15 +20,15 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct VolumeTimedReport_Item;
+struct ASN_XNAP_VolumeTimedReport_Item;
 
 /* VolumeTimedReportList */
-typedef struct VolumeTimedReportList {
-	A_SEQUENCE_OF(struct VolumeTimedReport_Item) list;
+typedef struct ASN_XNAP_VolumeTimedReportList {
+	A_SEQUENCE_OF(struct ASN_XNAP_VolumeTimedReport_Item) list;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} VolumeTimedReportList_t;
+} ASN_XNAP_VolumeTimedReportList_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_VolumeTimedReportList;

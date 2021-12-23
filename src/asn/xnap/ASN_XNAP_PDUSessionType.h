@@ -19,19 +19,19 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum PDUSessionType {
-	PDUSessionType_ipv4	= 0,
-	PDUSessionType_ipv6	= 1,
-	PDUSessionType_ipv4v6	= 2,
-	PDUSessionType_ethernet	= 3,
-	PDUSessionType_unstructured	= 4
+typedef enum ASN_XNAP_PDUSessionType {
+    ASN_XNAP_PDUSessionType_ipv4	= 0,
+    ASN_XNAP_PDUSessionType_ipv6	= 1,
+    ASN_XNAP_PDUSessionType_ipv4v6	= 2,
+    ASN_XNAP_PDUSessionType_ethernet	= 3,
+    ASN_XNAP_PDUSessionType_unstructured	= 4
 	/*
 	 * Enumeration is extensible
 	 */
-} e_PDUSessionType;
+} e_ASN_XNAP_PDUSessionType;
 
 /* PDUSessionType */
-typedef long	 PDUSessionType_t;
+typedef long	 ASN_XNAP_PDUSessionType_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_PDUSessionType_constr_1;

@@ -5,13 +5,13 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "PDUSessionResourceModificationResponseInfo-MNterminated.h"
+#include "ASN_XNAP_PDUSessionResourceModificationResponseInfo-MNterminated.h"
 
-#include "DRB-List.h"
-#include "DRB-List-withCause.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_DRB-List.h"
+#include "ASN_XNAP_DRB-List-withCause.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_PDUSessionResourceModificationResponseInfo_MNterminated_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct PDUSessionResourceModificationResponseInfo_MNterminated, dRBsAdmittedList),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_PDUSessionResourceModificationResponseInfo_MNterminated, dRBsAdmittedList),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_DRBsAdmittedList_ModificationResponse_MNterminated,
@@ -20,7 +20,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceModificationResponseInfo_MNterminate
 		0, 0, /* No default value */
 		"dRBsAdmittedList"
 		},
-	{ ATF_POINTER, 3, offsetof(struct PDUSessionResourceModificationResponseInfo_MNterminated, dRBsReleasedList),
+	{ ATF_POINTER, 3, offsetof(struct ASN_XNAP_PDUSessionResourceModificationResponseInfo_MNterminated, dRBsReleasedList),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_DRB_List,
@@ -29,7 +29,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceModificationResponseInfo_MNterminate
 		0, 0, /* No default value */
 		"dRBsReleasedList"
 		},
-	{ ATF_POINTER, 2, offsetof(struct PDUSessionResourceModificationResponseInfo_MNterminated, dRBsNotAdmittedSetupModifyList),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_PDUSessionResourceModificationResponseInfo_MNterminated, dRBsNotAdmittedSetupModifyList),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_DRB_List_withCause,
@@ -38,7 +38,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceModificationResponseInfo_MNterminate
 		0, 0, /* No default value */
 		"dRBsNotAdmittedSetupModifyList"
 		},
-	{ ATF_POINTER, 1, offsetof(struct PDUSessionResourceModificationResponseInfo_MNterminated, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_PDUSessionResourceModificationResponseInfo_MNterminated, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -59,8 +59,8 @@ static const asn_TYPE_tag2member_t asn_MAP_PDUSessionResourceModificationRespons
     { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_PDUSessionResourceModificationResponseInfo_MNterminated_specs_1 = {
-	sizeof(struct PDUSessionResourceModificationResponseInfo_MNterminated),
-	offsetof(struct PDUSessionResourceModificationResponseInfo_MNterminated, _asn_ctx),
+	sizeof(struct ASN_XNAP_PDUSessionResourceModificationResponseInfo_MNterminated),
+	offsetof(struct ASN_XNAP_PDUSessionResourceModificationResponseInfo_MNterminated, _asn_ctx),
 	asn_MAP_PDUSessionResourceModificationResponseInfo_MNterminated_tag2el_1,
 	4,	/* Count of tags in the map */
 	asn_MAP_PDUSessionResourceModificationResponseInfo_MNterminated_oms_1,	/* Optional members */

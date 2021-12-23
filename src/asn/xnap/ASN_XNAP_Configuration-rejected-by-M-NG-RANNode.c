@@ -9,7 +9,7 @@
 
 #include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_Configuration_rejected_by_M_NG_RANNode_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Configuration_rejected_by_M_NG_RANNode, cause),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_Configuration_rejected_by_M_NG_RANNode, cause),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_Cause,
@@ -18,7 +18,7 @@ asn_TYPE_member_t asn_MBR_Configuration_rejected_by_M_NG_RANNode_1[] = {
 		0, 0, /* No default value */
 		"cause"
 		},
-	{ ATF_POINTER, 2, offsetof(struct Configuration_rejected_by_M_NG_RANNode, m_NG_RANNode_to_S_NG_RANNode_Container),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_Configuration_rejected_by_M_NG_RANNode, m_NG_RANNode_to_S_NG_RANNode_Container),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_OCTET_STRING,
@@ -27,7 +27,7 @@ asn_TYPE_member_t asn_MBR_Configuration_rejected_by_M_NG_RANNode_1[] = {
 		0, 0, /* No default value */
 		"m-NG-RANNode-to-S-NG-RANNode-Container"
 		},
-	{ ATF_POINTER, 1, offsetof(struct Configuration_rejected_by_M_NG_RANNode, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_Configuration_rejected_by_M_NG_RANNode, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -47,8 +47,8 @@ static const asn_TYPE_tag2member_t asn_MAP_Configuration_rejected_by_M_NG_RANNod
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_Configuration_rejected_by_M_NG_RANNode_specs_1 = {
-	sizeof(struct Configuration_rejected_by_M_NG_RANNode),
-	offsetof(struct Configuration_rejected_by_M_NG_RANNode, _asn_ctx),
+	sizeof(struct ASN_XNAP_Configuration_rejected_by_M_NG_RANNode),
+	offsetof(struct ASN_XNAP_Configuration_rejected_by_M_NG_RANNode, _asn_ctx),
 	asn_MAP_Configuration_rejected_by_M_NG_RANNode_tag2el_1,
 	3,	/* Count of tags in the map */
 	asn_MAP_Configuration_rejected_by_M_NG_RANNode_oms_1,	/* Optional members */

@@ -12,12 +12,12 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PDUSession-ID.h"
-#include "S-NSSAI.h"
-#include "UPTransportLayerInformation.h"
-#include "PDUSessionType.h"
-#include "PDUSessionNetworkInstance.h"
-#include "QoSFlowsToBeSetup-List.h"
+#include "ASN_XNAP_PDUSession-ID.h"
+#include "ASN_XNAP_S-NSSAI.h"
+#include "ASN_XNAP_UPTransportLayerInformation.h"
+#include "ASN_XNAP_PDUSessionType.h"
+#include "ASN_XNAP_PDUSessionNetworkInstance.h"
+#include "ASN_XNAP_QoSFlowsToBeSetup-List.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -25,25 +25,25 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct PDUSessionAggregateMaximumBitRate;
-struct UPTransportLayerInformation;
-struct SecurityIndication;
-struct DataforwardingandOffloadingInfofromSource;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_PDUSessionAggregateMaximumBitRate;
+struct ASN_XNAP_UPTransportLayerInformation;
+struct ASN_XNAP_SecurityIndication;
+struct ASN_XNAP_DataforwardingandOffloadingInfofromSource;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* PDUSessionResourcesToBeSetup-Item */
-typedef struct PDUSessionResourcesToBeSetup_Item {
-	PDUSession_ID_t	 pduSessionId;
-	S_NSSAI_t	 s_NSSAI;
-	struct PDUSessionAggregateMaximumBitRate	*pduSessionAMBR	/* OPTIONAL */;
-	UPTransportLayerInformation_t	 uL_NG_U_TNLatUPF;
-	struct UPTransportLayerInformation	*source_DL_NG_U_TNL_Information	/* OPTIONAL */;
-	struct SecurityIndication	*securityIndication	/* OPTIONAL */;
-	PDUSessionType_t	 pduSessionType;
-	PDUSessionNetworkInstance_t	*pduSessionNetworkInstance	/* OPTIONAL */;
-	QoSFlowsToBeSetup_List_t	 qosFlowsToBeSetup_List;
-	struct DataforwardingandOffloadingInfofromSource	*dataforwardinginfofromSource	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_PDUSessionResourcesToBeSetup_Item {
+    ASN_XNAP_PDUSession_ID_t	 pduSessionId;
+    ASN_XNAP_S_NSSAI_t	 s_NSSAI;
+	struct ASN_XNAP_PDUSessionAggregateMaximumBitRate	*pduSessionAMBR	/* OPTIONAL */;
+    ASN_XNAP_UPTransportLayerInformation_t	 uL_NG_U_TNLatUPF;
+	struct ASN_XNAP_UPTransportLayerInformation	*source_DL_NG_U_TNL_Information	/* OPTIONAL */;
+	struct ASN_XNAP_SecurityIndication	*securityIndication	/* OPTIONAL */;
+    ASN_XNAP_PDUSessionType_t	 pduSessionType;
+    ASN_XNAP_PDUSessionNetworkInstance_t	*pduSessionNetworkInstance	/* OPTIONAL */;
+    ASN_XNAP_QoSFlowsToBeSetup_List_t	 qosFlowsToBeSetup_List;
+	struct ASN_XNAP_DataforwardingandOffloadingInfofromSource	*dataforwardinginfofromSource	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -51,7 +51,7 @@ typedef struct PDUSessionResourcesToBeSetup_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} PDUSessionResourcesToBeSetup_Item_t;
+} ASN_XNAP_PDUSessionResourcesToBeSetup_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_PDUSessionResourcesToBeSetup_Item;

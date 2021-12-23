@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PrivateIE-Container.h"
+#include "ASN_XNAP_PrivateIE-Container.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,8 +20,8 @@ extern "C" {
 #endif
 
 /* PrivateMessage */
-typedef struct PrivateMessage {
-	PrivateIE_Container_6017P0_t	 privateIEs;
+typedef struct ASN_XNAP_PrivateMessage {
+    ASN_XNAP_PrivateIE_Container_6017P0_t	 privateIEs;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -29,7 +29,7 @@ typedef struct PrivateMessage {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} PrivateMessage_t;
+} ASN_XNAP_PrivateMessage_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_PrivateMessage;

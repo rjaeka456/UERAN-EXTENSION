@@ -5,18 +5,18 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "RespondingNodeTypeConfigUpdateAck.h"
+#include "ASN_XNAP_RespondingNodeTypeConfigUpdateAck.h"
 
-#include "RespondingNodeTypeConfigUpdateAck-ng-eNB.h"
-#include "RespondingNodeTypeConfigUpdateAck-gNB.h"
-#include "ProtocolIE-Single-Container.h"
+#include "ASN_XNAP_RespondingNodeTypeConfigUpdateAck-ng-eNB.h"
+#include "ASN_XNAP_RespondingNodeTypeConfigUpdateAck-gNB.h"
+#include "ASN_XNAP_ProtocolIE-Single-Container.h"
 static asn_per_constraints_t asn_PER_type_RespondingNodeTypeConfigUpdateAck_constr_1 CC_NOTUSED = {
 	{ APC_CONSTRAINED,	 2,  2,  0,  2 }	/* (0..2) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
 static asn_TYPE_member_t asn_MBR_RespondingNodeTypeConfigUpdateAck_1[] = {
-	{ ATF_POINTER, 0, offsetof(struct RespondingNodeTypeConfigUpdateAck, choice.ng_eNB),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_RespondingNodeTypeConfigUpdateAck, choice.ng_eNB),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_RespondingNodeTypeConfigUpdateAck_ng_eNB,
@@ -25,7 +25,7 @@ static asn_TYPE_member_t asn_MBR_RespondingNodeTypeConfigUpdateAck_1[] = {
 		0, 0, /* No default value */
 		"ng-eNB"
 		},
-	{ ATF_POINTER, 0, offsetof(struct RespondingNodeTypeConfigUpdateAck, choice.gNB),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_RespondingNodeTypeConfigUpdateAck, choice.gNB),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_RespondingNodeTypeConfigUpdateAck_gNB,
@@ -34,7 +34,7 @@ static asn_TYPE_member_t asn_MBR_RespondingNodeTypeConfigUpdateAck_1[] = {
 		0, 0, /* No default value */
 		"gNB"
 		},
-	{ ATF_POINTER, 0, offsetof(struct RespondingNodeTypeConfigUpdateAck, choice.choice_extension),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_RespondingNodeTypeConfigUpdateAck, choice.choice_extension),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolIE_Single_Container_5954P0,
@@ -50,10 +50,10 @@ static const asn_TYPE_tag2member_t asn_MAP_RespondingNodeTypeConfigUpdateAck_tag
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* choice-extension */
 };
 static asn_CHOICE_specifics_t asn_SPC_RespondingNodeTypeConfigUpdateAck_specs_1 = {
-	sizeof(struct RespondingNodeTypeConfigUpdateAck),
-	offsetof(struct RespondingNodeTypeConfigUpdateAck, _asn_ctx),
-	offsetof(struct RespondingNodeTypeConfigUpdateAck, present),
-	sizeof(((struct RespondingNodeTypeConfigUpdateAck *)0)->present),
+	sizeof(struct ASN_XNAP_RespondingNodeTypeConfigUpdateAck),
+	offsetof(struct ASN_XNAP_RespondingNodeTypeConfigUpdateAck, _asn_ctx),
+	offsetof(struct ASN_XNAP_RespondingNodeTypeConfigUpdateAck, present),
+	sizeof(((struct ASN_XNAP_RespondingNodeTypeConfigUpdateAck *)0)->present),
 	asn_MAP_RespondingNodeTypeConfigUpdateAck_tag2el_1,
 	3,	/* Count of tags in the map */
 	0, 0,

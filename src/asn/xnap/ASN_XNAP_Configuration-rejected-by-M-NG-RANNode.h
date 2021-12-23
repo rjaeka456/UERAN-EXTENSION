@@ -21,13 +21,13 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* Configuration-rejected-by-M-NG-RANNode */
-typedef struct Configuration_rejected_by_M_NG_RANNode {
-	Cause_t	 cause;
+typedef struct ASN_XNAP_Configuration_rejected_by_M_NG_RANNode {
+    ASN_XNAP_Cause_t	 cause;
 	OCTET_STRING_t	*m_NG_RANNode_to_S_NG_RANNode_Container	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -35,7 +35,7 @@ typedef struct Configuration_rejected_by_M_NG_RANNode {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} Configuration_rejected_by_M_NG_RANNode_t;
+} ASN_XNAP_Configuration_rejected_by_M_NG_RANNode_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_Configuration_rejected_by_M_NG_RANNode;

@@ -19,16 +19,16 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum CauseTransportLayer {
-	CauseTransportLayer_transport_resource_unavailable	= 0,
-	CauseTransportLayer_unspecified	= 1
+typedef enum ASN_XNAP_CauseTransportLayer {
+    ASN_XNAP_CauseTransportLayer_transport_resource_unavailable	= 0,
+    ASN_XNAP_CauseTransportLayer_unspecified	= 1
 	/*
 	 * Enumeration is extensible
 	 */
-} e_CauseTransportLayer;
+} e_ASN_XNAP_CauseTransportLayer;
 
 /* CauseTransportLayer */
-typedef long	 CauseTransportLayer_t;
+typedef long	 ASN_XNAP_CauseTransportLayer_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_CauseTransportLayer_constr_1;

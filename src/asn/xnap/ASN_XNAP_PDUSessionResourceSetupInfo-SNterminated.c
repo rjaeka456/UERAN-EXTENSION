@@ -5,13 +5,13 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "PDUSessionResourceSetupInfo-SNterminated.h"
+#include "ASN_XNAP_PDUSessionResourceSetupInfo-SNterminated.h"
 
-#include "DataforwardingandOffloadingInfofromSource.h"
-#include "SecurityIndication.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_DataforwardingandOffloadingInfofromSource.h"
+#include "ASN_XNAP_SecurityIndication.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_PDUSessionResourceSetupInfo_SNterminated_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct PDUSessionResourceSetupInfo_SNterminated, uL_NG_U_TNLatUPF),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_PDUSessionResourceSetupInfo_SNterminated, uL_NG_U_TNLatUPF),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_UPTransportLayerInformation,
@@ -20,7 +20,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceSetupInfo_SNterminated_1[] = {
 		0, 0, /* No default value */
 		"uL-NG-U-TNLatUPF"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct PDUSessionResourceSetupInfo_SNterminated, pduSessionType),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_PDUSessionResourceSetupInfo_SNterminated, pduSessionType),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PDUSessionType,
@@ -29,7 +29,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceSetupInfo_SNterminated_1[] = {
 		0, 0, /* No default value */
 		"pduSessionType"
 		},
-	{ ATF_POINTER, 1, offsetof(struct PDUSessionResourceSetupInfo_SNterminated, pduSessionNetworkInstance),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_PDUSessionResourceSetupInfo_SNterminated, pduSessionNetworkInstance),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PDUSessionNetworkInstance,
@@ -38,7 +38,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceSetupInfo_SNterminated_1[] = {
 		0, 0, /* No default value */
 		"pduSessionNetworkInstance"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct PDUSessionResourceSetupInfo_SNterminated, qosFlowsToBeSetup_List),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_PDUSessionResourceSetupInfo_SNterminated, qosFlowsToBeSetup_List),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_QoSFlowsToBeSetup_List_Setup_SNterminated,
@@ -47,7 +47,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceSetupInfo_SNterminated_1[] = {
 		0, 0, /* No default value */
 		"qosFlowsToBeSetup-List"
 		},
-	{ ATF_POINTER, 3, offsetof(struct PDUSessionResourceSetupInfo_SNterminated, dataforwardinginfofromSource),
+	{ ATF_POINTER, 3, offsetof(struct ASN_XNAP_PDUSessionResourceSetupInfo_SNterminated, dataforwardinginfofromSource),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_DataforwardingandOffloadingInfofromSource,
@@ -56,7 +56,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceSetupInfo_SNterminated_1[] = {
 		0, 0, /* No default value */
 		"dataforwardinginfofromSource"
 		},
-	{ ATF_POINTER, 2, offsetof(struct PDUSessionResourceSetupInfo_SNterminated, securityIndication),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_PDUSessionResourceSetupInfo_SNterminated, securityIndication),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_SecurityIndication,
@@ -65,7 +65,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceSetupInfo_SNterminated_1[] = {
 		0, 0, /* No default value */
 		"securityIndication"
 		},
-	{ ATF_POINTER, 1, offsetof(struct PDUSessionResourceSetupInfo_SNterminated, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_PDUSessionResourceSetupInfo_SNterminated, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -89,8 +89,8 @@ static const asn_TYPE_tag2member_t asn_MAP_PDUSessionResourceSetupInfo_SNtermina
     { (ASN_TAG_CLASS_CONTEXT | (6 << 2)), 6, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_PDUSessionResourceSetupInfo_SNterminated_specs_1 = {
-	sizeof(struct PDUSessionResourceSetupInfo_SNterminated),
-	offsetof(struct PDUSessionResourceSetupInfo_SNterminated, _asn_ctx),
+	sizeof(struct ASN_XNAP_PDUSessionResourceSetupInfo_SNterminated),
+	offsetof(struct ASN_XNAP_PDUSessionResourceSetupInfo_SNterminated, _asn_ctx),
 	asn_MAP_PDUSessionResourceSetupInfo_SNterminated_tag2el_1,
 	7,	/* Count of tags in the map */
 	asn_MAP_PDUSessionResourceSetupInfo_SNterminated_oms_1,	/* Optional members */

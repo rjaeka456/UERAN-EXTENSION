@@ -5,14 +5,14 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "PDUSessionResourceModConfirmInfo-SNterminated.h"
+#include "ASN_XNAP_PDUSessionResourceModConfirmInfo-SNterminated.h"
 
-#include "UPTransportLayerInformation.h"
-#include "DRB-List-withCause.h"
-#include "DataForwardingInfoFromTargetNGRANnode.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_UPTransportLayerInformation.h"
+#include "ASN_XNAP_DRB-List-withCause.h"
+#include "ASN_XNAP_DataForwardingInfoFromTargetNGRANnode.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_PDUSessionResourceModConfirmInfo_SNterminated_1[] = {
-	{ ATF_POINTER, 1, offsetof(struct PDUSessionResourceModConfirmInfo_SNterminated, uL_NG_U_TNLatUPF),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_PDUSessionResourceModConfirmInfo_SNterminated, uL_NG_U_TNLatUPF),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_UPTransportLayerInformation,
@@ -21,7 +21,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceModConfirmInfo_SNterminated_1[] = {
 		0, 0, /* No default value */
 		"uL-NG-U-TNLatUPF"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct PDUSessionResourceModConfirmInfo_SNterminated, dRBsAdmittedList),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_PDUSessionResourceModConfirmInfo_SNterminated, dRBsAdmittedList),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_DRBsAdmittedList_ModConfirm_SNterminated,
@@ -30,7 +30,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceModConfirmInfo_SNterminated_1[] = {
 		0, 0, /* No default value */
 		"dRBsAdmittedList"
 		},
-	{ ATF_POINTER, 3, offsetof(struct PDUSessionResourceModConfirmInfo_SNterminated, dRBsNotAdmittedSetupModifyList),
+	{ ATF_POINTER, 3, offsetof(struct ASN_XNAP_PDUSessionResourceModConfirmInfo_SNterminated, dRBsNotAdmittedSetupModifyList),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_DRB_List_withCause,
@@ -39,7 +39,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceModConfirmInfo_SNterminated_1[] = {
 		0, 0, /* No default value */
 		"dRBsNotAdmittedSetupModifyList"
 		},
-	{ ATF_POINTER, 2, offsetof(struct PDUSessionResourceModConfirmInfo_SNterminated, dataforwardinginfoTarget),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_PDUSessionResourceModConfirmInfo_SNterminated, dataforwardinginfoTarget),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_DataForwardingInfoFromTargetNGRANnode,
@@ -48,7 +48,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceModConfirmInfo_SNterminated_1[] = {
 		0, 0, /* No default value */
 		"dataforwardinginfoTarget"
 		},
-	{ ATF_POINTER, 1, offsetof(struct PDUSessionResourceModConfirmInfo_SNterminated, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_PDUSessionResourceModConfirmInfo_SNterminated, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -70,8 +70,8 @@ static const asn_TYPE_tag2member_t asn_MAP_PDUSessionResourceModConfirmInfo_SNte
     { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_PDUSessionResourceModConfirmInfo_SNterminated_specs_1 = {
-	sizeof(struct PDUSessionResourceModConfirmInfo_SNterminated),
-	offsetof(struct PDUSessionResourceModConfirmInfo_SNterminated, _asn_ctx),
+	sizeof(struct ASN_XNAP_PDUSessionResourceModConfirmInfo_SNterminated),
+	offsetof(struct ASN_XNAP_PDUSessionResourceModConfirmInfo_SNterminated, _asn_ctx),
 	asn_MAP_PDUSessionResourceModConfirmInfo_SNterminated_tag2el_1,
 	5,	/* Count of tags in the map */
 	asn_MAP_PDUSessionResourceModConfirmInfo_SNterminated_oms_1,	/* Optional members */

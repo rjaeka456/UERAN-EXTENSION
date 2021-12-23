@@ -19,30 +19,30 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum ResponseType_ReconfComplete_PR {
-	ResponseType_ReconfComplete_PR_NOTHING,	/* No components present */
-	ResponseType_ReconfComplete_PR_configuration_successfully_applied,
-	ResponseType_ReconfComplete_PR_configuration_rejected_by_M_NG_RANNode,
-	ResponseType_ReconfComplete_PR_choice_extension
-} ResponseType_ReconfComplete_PR;
+typedef enum ASN_XNAP_ResponseType_ReconfComplete_PR {
+    ASN_XNAP_ResponseType_ReconfComplete_PR_NOTHING,	/* No components present */
+    ASN_XNAP_ResponseType_ReconfComplete_PR_configuration_successfully_applied,
+    ASN_XNAP_ResponseType_ReconfComplete_PR_configuration_rejected_by_M_NG_RANNode,
+    ASN_XNAP_ResponseType_ReconfComplete_PR_choice_extension
+} ASN_XNAP_ResponseType_ReconfComplete_PR;
 
 /* Forward declarations */
-struct Configuration_successfully_applied;
-struct Configuration_rejected_by_M_NG_RANNode;
-struct ProtocolIE_Single_Container;
+struct ASN_XNAP_Configuration_successfully_applied;
+struct ASN_XNAP_Configuration_rejected_by_M_NG_RANNode;
+struct ASN_XNAP_ProtocolIE_Single_Container;
 
 /* ResponseType-ReconfComplete */
-typedef struct ResponseType_ReconfComplete {
-	ResponseType_ReconfComplete_PR present;
-	union ResponseType_ReconfComplete_u {
-		struct Configuration_successfully_applied	*configuration_successfully_applied;
-		struct Configuration_rejected_by_M_NG_RANNode	*configuration_rejected_by_M_NG_RANNode;
-		struct ProtocolIE_Single_Container	*choice_extension;
+typedef struct ASN_XNAP_ResponseType_ReconfComplete {
+    ASN_XNAP_ResponseType_ReconfComplete_PR present;
+	union ASN_XNAP_ResponseType_ReconfComplete_u {
+		struct ASN_XNAP_Configuration_successfully_applied	*configuration_successfully_applied;
+		struct ASN_XNAP_Configuration_rejected_by_M_NG_RANNode	*configuration_rejected_by_M_NG_RANNode;
+		struct ASN_XNAP_ProtocolIE_Single_Container	*choice_extension;
 	} choice;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} ResponseType_ReconfComplete_t;
+} ASN_XNAP_ResponseType_ReconfComplete_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_ResponseType_ReconfComplete;

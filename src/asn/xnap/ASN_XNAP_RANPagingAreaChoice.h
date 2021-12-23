@@ -19,30 +19,30 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum RANPagingAreaChoice_PR {
-	RANPagingAreaChoice_PR_NOTHING,	/* No components present */
-	RANPagingAreaChoice_PR_cell_List,
-	RANPagingAreaChoice_PR_rANAreaID_List,
-	RANPagingAreaChoice_PR_choice_extension
-} RANPagingAreaChoice_PR;
+typedef enum ASN_XNAP_RANPagingAreaChoice_PR {
+    ASN_XNAP_RANPagingAreaChoice_PR_NOTHING,	/* No components present */
+    ASN_XNAP_RANPagingAreaChoice_PR_cell_List,
+    ASN_XNAP_RANPagingAreaChoice_PR_rANAreaID_List,
+    ASN_XNAP_RANPagingAreaChoice_PR_choice_extension
+} ASN_XNAP_RANPagingAreaChoice_PR;
 
 /* Forward declarations */
-struct NG_RAN_Cell_Identity_ListinRANPagingArea;
-struct RANAreaID_List;
-struct ProtocolIE_Single_Container;
+struct ASN_XNAP_NG_RAN_Cell_Identity_ListinRANPagingArea;
+struct ASN_XNAP_RANAreaID_List;
+struct ASN_XNAP_ProtocolIE_Single_Container;
 
 /* RANPagingAreaChoice */
-typedef struct RANPagingAreaChoice {
-	RANPagingAreaChoice_PR present;
-	union RANPagingAreaChoice_u {
-		struct NG_RAN_Cell_Identity_ListinRANPagingArea	*cell_List;
-		struct RANAreaID_List	*rANAreaID_List;
-		struct ProtocolIE_Single_Container	*choice_extension;
+typedef struct ASN_XNAP_RANPagingAreaChoice {
+    ASN_XNAP_RANPagingAreaChoice_PR present;
+	union ASN_XNAP_RANPagingAreaChoice_u {
+		struct ASN_XNAP_NG_RAN_Cell_Identity_ListinRANPagingArea	*cell_List;
+		struct ASN_XNAP_RANAreaID_List	*rANAreaID_List;
+		struct ASN_XNAP_ProtocolIE_Single_Container	*choice_extension;
 	} choice;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} RANPagingAreaChoice_t;
+} ASN_XNAP_RANPagingAreaChoice_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_RANPagingAreaChoice;

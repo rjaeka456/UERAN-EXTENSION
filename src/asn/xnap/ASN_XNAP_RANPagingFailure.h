@@ -19,15 +19,15 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum RANPagingFailure {
-	RANPagingFailure_true	= 0
+typedef enum ASN_XNAP_RANPagingFailure {
+    ASN_XNAP_RANPagingFailure_true	= 0
 	/*
 	 * Enumeration is extensible
 	 */
-} e_RANPagingFailure;
+} e_ASN_XNAP_RANPagingFailure;
 
 /* RANPagingFailure */
-typedef long	 RANPagingFailure_t;
+typedef long	 ASN_XNAP_RANPagingFailure_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_RANPagingFailure;

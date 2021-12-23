@@ -13,7 +13,7 @@
 
 /* Including external dependencies */
 #include <NativeEnumerated.h>
-#include "QoSFlowsAdmitted-List.h"
+#include "ASN_XNAP_QoSFlowsAdmitted-List.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -21,25 +21,25 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum PDUSessionResourceAdmittedInfo__dL_NG_U_TNL_Information_Unchanged {
-	PDUSessionResourceAdmittedInfo__dL_NG_U_TNL_Information_Unchanged_true	= 0
+typedef enum ASN_XNAP_PDUSessionResourceAdmittedInfo__dL_NG_U_TNL_Information_Unchanged {
+    ASN_XNAP_PDUSessionResourceAdmittedInfo__dL_NG_U_TNL_Information_Unchanged_true	= 0
 	/*
 	 * Enumeration is extensible
 	 */
-} e_PDUSessionResourceAdmittedInfo__dL_NG_U_TNL_Information_Unchanged;
+} e_ASN_XNAP_PDUSessionResourceAdmittedInfo__dL_NG_U_TNL_Information_Unchanged;
 
 /* Forward declarations */
-struct QoSFlows_List_withCause;
-struct DataForwardingInfoFromTargetNGRANnode;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_QoSFlows_List_withCause;
+struct ASN_XNAP_DataForwardingInfoFromTargetNGRANnode;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* PDUSessionResourceAdmittedInfo */
-typedef struct PDUSessionResourceAdmittedInfo {
+typedef struct ASN_XNAP_PDUSessionResourceAdmittedInfo {
 	long	*dL_NG_U_TNL_Information_Unchanged	/* OPTIONAL */;
-	QoSFlowsAdmitted_List_t	 qosFlowsAdmitted_List;
-	struct QoSFlows_List_withCause	*qosFlowsNotAdmitted_List	/* OPTIONAL */;
-	struct DataForwardingInfoFromTargetNGRANnode	*dataForwardingInfoFromTarget	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+    ASN_XNAP_QoSFlowsAdmitted_List_t	 qosFlowsAdmitted_List;
+	struct ASN_XNAP_QoSFlows_List_withCause	*qosFlowsNotAdmitted_List	/* OPTIONAL */;
+	struct ASN_XNAP_DataForwardingInfoFromTargetNGRANnode	*dataForwardingInfoFromTarget	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -47,7 +47,7 @@ typedef struct PDUSessionResourceAdmittedInfo {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} PDUSessionResourceAdmittedInfo_t;
+} ASN_XNAP_PDUSessionResourceAdmittedInfo_t;
 
 /* Implementation */
 /* extern asn_TYPE_descriptor_t asn_DEF_dL_NG_U_TNL_Information_Unchanged_2;	// (Use -fall-defs-global to expose) */

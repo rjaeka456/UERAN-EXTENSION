@@ -12,9 +12,9 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "ExpectedActivityPeriod.h"
-#include "ExpectedIdlePeriod.h"
-#include "SourceOfUEActivityBehaviourInformation.h"
+#include "ASN_XNAP_ExpectedActivityPeriod.h"
+#include "ASN_XNAP_ExpectedIdlePeriod.h"
+#include "ASN_XNAP_SourceOfUEActivityBehaviourInformation.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -22,14 +22,14 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* ExpectedUEActivityBehaviour */
-typedef struct ExpectedUEActivityBehaviour {
-	ExpectedActivityPeriod_t	*expectedActivityPeriod	/* OPTIONAL */;
-	ExpectedIdlePeriod_t	*expectedIdlePeriod	/* OPTIONAL */;
-	SourceOfUEActivityBehaviourInformation_t	*sourceOfUEActivityBehaviourInformation	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_ExpectedUEActivityBehaviour {
+    ASN_XNAP_ExpectedActivityPeriod_t	*expectedActivityPeriod	/* OPTIONAL */;
+    ASN_XNAP_ExpectedIdlePeriod_t	*expectedIdlePeriod	/* OPTIONAL */;
+    ASN_XNAP_SourceOfUEActivityBehaviourInformation_t	*sourceOfUEActivityBehaviourInformation	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -37,7 +37,7 @@ typedef struct ExpectedUEActivityBehaviour {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} ExpectedUEActivityBehaviour_t;
+} ASN_XNAP_ExpectedUEActivityBehaviour_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_ExpectedUEActivityBehaviour;

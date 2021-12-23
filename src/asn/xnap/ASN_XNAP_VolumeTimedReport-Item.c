@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "VolumeTimedReport-Item.h"
+#include "ASN_XNAP_VolumeTimedReport-Item.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 static int
 memb_startTimeStamp_constraint_1(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
@@ -143,7 +143,7 @@ static asn_per_constraints_t asn_PER_memb_usageCountDL_constr_5 CC_NOTUSED = {
 	0, 0	/* No PER value map */
 };
 asn_TYPE_member_t asn_MBR_VolumeTimedReport_Item_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct VolumeTimedReport_Item, startTimeStamp),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_VolumeTimedReport_Item, startTimeStamp),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_OCTET_STRING,
@@ -152,7 +152,7 @@ asn_TYPE_member_t asn_MBR_VolumeTimedReport_Item_1[] = {
 		0, 0, /* No default value */
 		"startTimeStamp"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct VolumeTimedReport_Item, endTimeStamp),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_VolumeTimedReport_Item, endTimeStamp),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_OCTET_STRING,
@@ -161,7 +161,7 @@ asn_TYPE_member_t asn_MBR_VolumeTimedReport_Item_1[] = {
 		0, 0, /* No default value */
 		"endTimeStamp"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct VolumeTimedReport_Item, usageCountUL),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_VolumeTimedReport_Item, usageCountUL),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_INTEGER,
@@ -170,7 +170,7 @@ asn_TYPE_member_t asn_MBR_VolumeTimedReport_Item_1[] = {
 		0, 0, /* No default value */
 		"usageCountUL"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct VolumeTimedReport_Item, usageCountDL),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_VolumeTimedReport_Item, usageCountDL),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_INTEGER,
@@ -179,7 +179,7 @@ asn_TYPE_member_t asn_MBR_VolumeTimedReport_Item_1[] = {
 		0, 0, /* No default value */
 		"usageCountDL"
 		},
-	{ ATF_POINTER, 1, offsetof(struct VolumeTimedReport_Item, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_VolumeTimedReport_Item, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -201,8 +201,8 @@ static const asn_TYPE_tag2member_t asn_MAP_VolumeTimedReport_Item_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_VolumeTimedReport_Item_specs_1 = {
-	sizeof(struct VolumeTimedReport_Item),
-	offsetof(struct VolumeTimedReport_Item, _asn_ctx),
+	sizeof(struct ASN_XNAP_VolumeTimedReport_Item),
+	offsetof(struct ASN_XNAP_VolumeTimedReport_Item, _asn_ctx),
 	asn_MAP_VolumeTimedReport_Item_tag2el_1,
 	5,	/* Count of tags in the map */
 	asn_MAP_VolumeTimedReport_Item_oms_1,	/* Optional members */

@@ -13,7 +13,7 @@ asn_TYPE_member_t asn_MBR_ASN_XNAP_NRFrequencyBandItem_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_NRFrequencyBandItem, nr_frequency_band),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ASN_XNAP_NRFrequencyBand,
+		&asn_DEF_NRFrequencyBand,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
@@ -31,7 +31,7 @@ asn_TYPE_member_t asn_MBR_ASN_XNAP_NRFrequencyBandItem_1[] = {
 	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_NRFrequencyBandItem, iE_Extension),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ASN_XNAP_ProtocolExtensionContainer_6001P0,
+		&asn_DEF_ProtocolExtensionContainer_6001P0,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */

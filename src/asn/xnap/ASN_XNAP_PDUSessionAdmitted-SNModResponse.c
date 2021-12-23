@@ -5,12 +5,12 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "PDUSessionAdmitted-SNModResponse.h"
+#include "ASN_XNAP_PDUSessionAdmitted-SNModResponse.h"
 
-#include "PDUSessionAdmittedToBeAddedSNModResponse.h"
-#include "PDUSessionAdmittedToBeModifiedSNModResponse.h"
-#include "PDUSessionAdmittedToBeReleasedSNModResponse.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_PDUSessionAdmittedToBeAddedSNModResponse.h"
+#include "ASN_XNAP_PDUSessionAdmittedToBeModifiedSNModResponse.h"
+#include "ASN_XNAP_PDUSessionAdmittedToBeReleasedSNModResponse.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 static asn_TYPE_member_t asn_MBR_PDUSessionAdmitted_SNModResponse_1[] = {
 	{ ATF_POINTER, 4, offsetof(struct PDUSessionAdmitted_SNModResponse, pduSessionResourcesAdmittedToBeAdded),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),

@@ -9,7 +9,7 @@
 
 #include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_Additional_UL_NG_U_TNLatUPF_Item_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Additional_UL_NG_U_TNLatUPF_Item, additional_UL_NG_U_TNLatUPF),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_Additional_UL_NG_U_TNLatUPF_Item, additional_UL_NG_U_TNLatUPF),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_UPTransportLayerInformation,
@@ -18,7 +18,7 @@ asn_TYPE_member_t asn_MBR_Additional_UL_NG_U_TNLatUPF_Item_1[] = {
 		0, 0, /* No default value */
 		"additional-UL-NG-U-TNLatUPF"
 		},
-	{ ATF_POINTER, 1, offsetof(struct Additional_UL_NG_U_TNLatUPF_Item, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_Additional_UL_NG_U_TNLatUPF_Item, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -37,8 +37,8 @@ static const asn_TYPE_tag2member_t asn_MAP_Additional_UL_NG_U_TNLatUPF_Item_tag2
     { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_Additional_UL_NG_U_TNLatUPF_Item_specs_1 = {
-	sizeof(struct Additional_UL_NG_U_TNLatUPF_Item),
-	offsetof(struct Additional_UL_NG_U_TNLatUPF_Item, _asn_ctx),
+	sizeof(struct ASN_XNAP_Additional_UL_NG_U_TNLatUPF_Item),
+	offsetof(struct ASN_XNAP_Additional_UL_NG_U_TNLatUPF_Item, _asn_ctx),
 	asn_MAP_Additional_UL_NG_U_TNLatUPF_Item_tag2el_1,
 	2,	/* Count of tags in the map */
 	asn_MAP_Additional_UL_NG_U_TNLatUPF_Item_oms_1,	/* Optional members */

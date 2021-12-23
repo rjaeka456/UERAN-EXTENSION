@@ -12,7 +12,7 @@ asn_TYPE_member_t asn_MBR_ServedCellInformation_NR_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ServedCellInformation_NR, nrPCI),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ASN_XNAP_NRPCI,
+		&asn_DEF_NRPCI,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
@@ -21,7 +21,7 @@ asn_TYPE_member_t asn_MBR_ServedCellInformation_NR_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ServedCellInformation_NR, cellID),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ASN_XNAP_NR_CGI,
+		&asn_DEF_NR_CGI,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
@@ -36,7 +36,7 @@ asn_TYPE_member_t asn_MBR_ServedCellInformation_NR_1[] = {
 		0, 0, /* No default value */
 		"tac"
 		},
-	{ ATF_POINTER, 1, offsetof(struct ServedCellInformation_NR, ranac),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_ServedCellInformation_NR, ranac),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_RANAC,
@@ -45,7 +45,7 @@ asn_TYPE_member_t asn_MBR_ServedCellInformation_NR_1[] = {
 		0, 0, /* No default value */
 		"ranac"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct ServedCellInformation_NR, broadcastPLMN),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ServedCellInformation_NR, broadcastPLMN),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_BroadcastPLMNs,
@@ -54,7 +54,7 @@ asn_TYPE_member_t asn_MBR_ServedCellInformation_NR_1[] = {
 		0, 0, /* No default value */
 		"broadcastPLMN"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct ServedCellInformation_NR, nrModeInfo),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ServedCellInformation_NR, nrModeInfo),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_NRModeInfo,
@@ -63,7 +63,7 @@ asn_TYPE_member_t asn_MBR_ServedCellInformation_NR_1[] = {
 		0, 0, /* No default value */
 		"nrModeInfo"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct ServedCellInformation_NR, measurementTimingConfiguration),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ServedCellInformation_NR, measurementTimingConfiguration),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_OCTET_STRING,
@@ -72,7 +72,7 @@ asn_TYPE_member_t asn_MBR_ServedCellInformation_NR_1[] = {
 		0, 0, /* No default value */
 		"measurementTimingConfiguration"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct ServedCellInformation_NR, connectivitySupport),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ServedCellInformation_NR, connectivitySupport),
 		(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_Connectivity_Support,
@@ -81,7 +81,7 @@ asn_TYPE_member_t asn_MBR_ServedCellInformation_NR_1[] = {
 		0, 0, /* No default value */
 		"connectivitySupport"
 		},
-	{ ATF_POINTER, 1, offsetof(struct ServedCellInformation_NR, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_ServedCellInformation_NR, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -107,8 +107,8 @@ static const asn_TYPE_tag2member_t asn_MAP_ServedCellInformation_NR_tag2el_1[] =
     { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_ServedCellInformation_NR_specs_1 = {
-	sizeof(struct ServedCellInformation_NR),
-	offsetof(struct ServedCellInformation_NR, _asn_ctx),
+	sizeof(struct ASN_XNAP_ServedCellInformation_NR),
+	offsetof(struct ASN_XNAP_ServedCellInformation_NR, _asn_ctx),
 	asn_MAP_ServedCellInformation_NR_tag2el_1,
 	9,	/* Count of tags in the map */
 	asn_MAP_ServedCellInformation_NR_oms_1,	/* Optional members */

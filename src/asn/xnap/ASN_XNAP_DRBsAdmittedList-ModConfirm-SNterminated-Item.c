@@ -10,7 +10,7 @@
 #include "ASN_XNAP_UPTransportParameters.h"
 #include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_DRBsAdmittedList_ModConfirm_SNterminated_Item_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct DRBsAdmittedList_ModConfirm_SNterminated_Item, drb_ID),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_DRBsAdmittedList_ModConfirm_SNterminated_Item, drb_ID),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_DRB_ID,
@@ -19,7 +19,7 @@ asn_TYPE_member_t asn_MBR_DRBsAdmittedList_ModConfirm_SNterminated_Item_1[] = {
 		0, 0, /* No default value */
 		"drb-ID"
 		},
-	{ ATF_POINTER, 4, offsetof(struct DRBsAdmittedList_ModConfirm_SNterminated_Item, mN_DL_CG_UP_TNLInfo),
+	{ ATF_POINTER, 4, offsetof(struct ASN_XNAP_DRBsAdmittedList_ModConfirm_SNterminated_Item, mN_DL_CG_UP_TNLInfo),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_UPTransportParameters,
@@ -28,7 +28,7 @@ asn_TYPE_member_t asn_MBR_DRBsAdmittedList_ModConfirm_SNterminated_Item_1[] = {
 		0, 0, /* No default value */
 		"mN-DL-CG-UP-TNLInfo"
 		},
-	{ ATF_POINTER, 3, offsetof(struct DRBsAdmittedList_ModConfirm_SNterminated_Item, secondary_MN_DL_CG_UP_TNLInfo),
+	{ ATF_POINTER, 3, offsetof(struct ASN_XNAP_DRBsAdmittedList_ModConfirm_SNterminated_Item, secondary_MN_DL_CG_UP_TNLInfo),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_UPTransportParameters,
@@ -37,7 +37,7 @@ asn_TYPE_member_t asn_MBR_DRBsAdmittedList_ModConfirm_SNterminated_Item_1[] = {
 		0, 0, /* No default value */
 		"secondary-MN-DL-CG-UP-TNLInfo"
 		},
-	{ ATF_POINTER, 2, offsetof(struct DRBsAdmittedList_ModConfirm_SNterminated_Item, lCID),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_DRBsAdmittedList_ModConfirm_SNterminated_Item, lCID),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_LCID,
@@ -46,7 +46,7 @@ asn_TYPE_member_t asn_MBR_DRBsAdmittedList_ModConfirm_SNterminated_Item_1[] = {
 		0, 0, /* No default value */
 		"lCID"
 		},
-	{ ATF_POINTER, 1, offsetof(struct DRBsAdmittedList_ModConfirm_SNterminated_Item, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_DRBsAdmittedList_ModConfirm_SNterminated_Item, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -68,8 +68,8 @@ static const asn_TYPE_tag2member_t asn_MAP_DRBsAdmittedList_ModConfirm_SNtermina
     { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_DRBsAdmittedList_ModConfirm_SNterminated_Item_specs_1 = {
-	sizeof(struct DRBsAdmittedList_ModConfirm_SNterminated_Item),
-	offsetof(struct DRBsAdmittedList_ModConfirm_SNterminated_Item, _asn_ctx),
+	sizeof(struct ASN_XNAP_DRBsAdmittedList_ModConfirm_SNterminated_Item),
+	offsetof(struct ASN_XNAP_DRBsAdmittedList_ModConfirm_SNterminated_Item, _asn_ctx),
 	asn_MAP_DRBsAdmittedList_ModConfirm_SNterminated_Item_tag2el_1,
 	5,	/* Count of tags in the map */
 	asn_MAP_DRBsAdmittedList_ModConfirm_SNterminated_Item_oms_1,	/* Optional members */

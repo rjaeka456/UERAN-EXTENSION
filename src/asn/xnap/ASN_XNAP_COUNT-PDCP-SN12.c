@@ -69,7 +69,7 @@ static asn_per_constraints_t asn_PER_memb_hfn_PDCP_SN12_constr_3 CC_NOTUSED = {
 	0, 0	/* No PER value map */
 };
 asn_TYPE_member_t asn_MBR_COUNT_PDCP_SN12_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct COUNT_PDCP_SN12, pdcp_SN12),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_COUNT_PDCP_SN12, pdcp_SN12),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NativeInteger,
@@ -78,7 +78,7 @@ asn_TYPE_member_t asn_MBR_COUNT_PDCP_SN12_1[] = {
 		0, 0, /* No default value */
 		"pdcp-SN12"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct COUNT_PDCP_SN12, hfn_PDCP_SN12),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_COUNT_PDCP_SN12, hfn_PDCP_SN12),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NativeInteger,
@@ -87,7 +87,7 @@ asn_TYPE_member_t asn_MBR_COUNT_PDCP_SN12_1[] = {
 		0, 0, /* No default value */
 		"hfn-PDCP-SN12"
 		},
-	{ ATF_POINTER, 1, offsetof(struct COUNT_PDCP_SN12, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_COUNT_PDCP_SN12, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -107,8 +107,8 @@ static const asn_TYPE_tag2member_t asn_MAP_COUNT_PDCP_SN12_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_COUNT_PDCP_SN12_specs_1 = {
-	sizeof(struct COUNT_PDCP_SN12),
-	offsetof(struct COUNT_PDCP_SN12, _asn_ctx),
+	sizeof(struct ASN_XNAP_COUNT_PDCP_SN12),
+	offsetof(struct ASN_XNAP_COUNT_PDCP_SN12, _asn_ctx),
 	asn_MAP_COUNT_PDCP_SN12_tag2el_1,
 	3,	/* Count of tags in the map */
 	asn_MAP_COUNT_PDCP_SN12_oms_1,	/* Optional members */

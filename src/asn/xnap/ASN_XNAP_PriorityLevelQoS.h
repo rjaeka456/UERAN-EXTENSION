@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* PriorityLevelQoS */
-typedef long	 PriorityLevelQoS_t;
+typedef long	 ASN_XNAP_PriorityLevelQoS_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_PriorityLevelQoS_constr_1;

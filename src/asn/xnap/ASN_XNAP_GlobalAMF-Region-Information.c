@@ -48,7 +48,7 @@ asn_TYPE_member_t asn_MBR_ASN_XNAP_GlobalAMF_Region_Information_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_GlobalAMF_Region_Information, plmn_ID),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ASN_XNAP_PLMN_Identity,
+		&asn_DEF_PLMN_Identity,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
@@ -66,7 +66,7 @@ asn_TYPE_member_t asn_MBR_ASN_XNAP_GlobalAMF_Region_Information_1[] = {
 	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_GlobalAMF_Region_Information, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ASN_XNAP_ProtocolExtensionContainer_6001P0,
+		&asn_DEF_ProtocolExtensionContainer_6001P0,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */

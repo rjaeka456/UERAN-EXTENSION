@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "QoSFLowsToBeForwarded-List.h"
+#include "ASN_XNAP_QoSFLowsToBeForwarded-List.h"
 
-#include "QoSFLowsToBeForwarded-Item.h"
+#include "ASN_XNAP_QoSFLowsToBeForwarded-Item.h"
 asn_per_constraints_t asn_PER_type_QoSFLowsToBeForwarded_List_constr_1 CC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	{ APC_CONSTRAINED,	 6,  6,  1,  64 }	/* (SIZE(1..64)) */,

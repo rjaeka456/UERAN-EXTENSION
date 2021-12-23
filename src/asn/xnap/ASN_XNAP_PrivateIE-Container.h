@@ -20,15 +20,15 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct PrivateIE_Field;
+struct ASN_XNAP_PrivateIE_Field;
 
 /* PrivateIE-Container */
-typedef struct PrivateIE_Container_6017P0 {
-	A_SEQUENCE_OF(struct PrivateIE_Field) list;
+typedef struct ASN_XNAP_PrivateIE_Container_6017P0 {
+	A_SEQUENCE_OF(struct ASN_XNAP_PrivateIE_Field) list;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} PrivateIE_Container_6017P0_t;
+} ASN_XNAP_PrivateIE_Container_6017P0_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_PrivateIE_Container_6017P0;

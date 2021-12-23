@@ -45,7 +45,7 @@ static asn_per_constraints_t asn_PER_memb_receiveStatusofPDCPSDU_constr_2 CC_NOT
 	0, 0	/* No PER value map */
 };
 asn_TYPE_member_t asn_MBR_DRBBStatusTransfer18bitsSN_1[] = {
-	{ ATF_POINTER, 1, offsetof(struct DRBBStatusTransfer18bitsSN, receiveStatusofPDCPSDU),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_DRBBStatusTransfer18bitsSN, receiveStatusofPDCPSDU),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_BIT_STRING,
@@ -54,7 +54,7 @@ asn_TYPE_member_t asn_MBR_DRBBStatusTransfer18bitsSN_1[] = {
 		0, 0, /* No default value */
 		"receiveStatusofPDCPSDU"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct DRBBStatusTransfer18bitsSN, cOUNTValue),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_DRBBStatusTransfer18bitsSN, cOUNTValue),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_COUNT_PDCP_SN18,
@@ -63,7 +63,7 @@ asn_TYPE_member_t asn_MBR_DRBBStatusTransfer18bitsSN_1[] = {
 		0, 0, /* No default value */
 		"cOUNTValue"
 		},
-	{ ATF_POINTER, 1, offsetof(struct DRBBStatusTransfer18bitsSN, iE_Extension),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_DRBBStatusTransfer18bitsSN, iE_Extension),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -83,8 +83,8 @@ static const asn_TYPE_tag2member_t asn_MAP_DRBBStatusTransfer18bitsSN_tag2el_1[]
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* iE-Extension */
 };
 asn_SEQUENCE_specifics_t asn_SPC_DRBBStatusTransfer18bitsSN_specs_1 = {
-	sizeof(struct DRBBStatusTransfer18bitsSN),
-	offsetof(struct DRBBStatusTransfer18bitsSN, _asn_ctx),
+	sizeof(struct ASN_XNAP_DRBBStatusTransfer18bitsSN),
+	offsetof(struct ASN_XNAP_DRBBStatusTransfer18bitsSN, _asn_ctx),
 	asn_MAP_DRBBStatusTransfer18bitsSN_tag2el_1,
 	3,	/* Count of tags in the map */
 	asn_MAP_DRBBStatusTransfer18bitsSN_oms_1,	/* Optional members */

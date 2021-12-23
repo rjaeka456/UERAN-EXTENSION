@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PDUSession-ID.h"
+#include "ASN_XNAP_PDUSession-ID.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,18 +20,18 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct PDUSessionAggregateMaximumBitRate;
-struct PDUSessionResourceModificationInfo_SNterminated;
-struct PDUSessionResourceModificationInfo_MNterminated;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_PDUSessionAggregateMaximumBitRate;
+struct ASN_XNAP_PDUSessionResourceModificationInfo_SNterminated;
+struct ASN_XNAP_PDUSessionResourceModificationInfo_MNterminated;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* PDUSessionsToBeModified-SNModRequest-Item */
-typedef struct PDUSessionsToBeModified_SNModRequest_Item {
-	PDUSession_ID_t	 pduSessionId;
-	struct PDUSessionAggregateMaximumBitRate	*sN_PDUSessionAMBR	/* OPTIONAL */;
-	struct PDUSessionResourceModificationInfo_SNterminated	*sn_terminated	/* OPTIONAL */;
-	struct PDUSessionResourceModificationInfo_MNterminated	*mn_terminated	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+typedef struct ASN_XNAP_PDUSessionsToBeModified_SNModRequest_Item {
+    ASN_XNAP_PDUSession_ID_t	 pduSessionId;
+	struct ASN_XNAP_PDUSessionAggregateMaximumBitRate	*sN_PDUSessionAMBR	/* OPTIONAL */;
+	struct ASN_XNAP_PDUSessionResourceModificationInfo_SNterminated	*sn_terminated	/* OPTIONAL */;
+	struct ASN_XNAP_PDUSessionResourceModificationInfo_MNterminated	*mn_terminated	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -39,7 +39,7 @@ typedef struct PDUSessionsToBeModified_SNModRequest_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} PDUSessionsToBeModified_SNModRequest_Item_t;
+} ASN_XNAP_PDUSessionsToBeModified_SNModRequest_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_PDUSessionsToBeModified_SNModRequest_Item;

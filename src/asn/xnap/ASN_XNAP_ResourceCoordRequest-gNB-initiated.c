@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "ResourceCoordRequest-gNB-initiated.h"
+#include "ASN_XNAP_ResourceCoordRequest-gNB-initiated.h"
 
-#include "ProtocolExtensionContainer.h"
-#include "E-UTRA-CGI.h"
-#include "NR-CGI.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
+#include "ASN_XNAP_E-UTRA-CGI.h"
+#include "ASN_XNAP_NR-CGI.h"
 static int
 memb_listofE_UTRACells_constraint_1(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
@@ -98,8 +98,8 @@ static const ber_tlv_tag_t asn_DEF_listofE_UTRACells_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_SET_OF_specifics_t asn_SPC_listofE_UTRACells_specs_3 = {
-	sizeof(struct ResourceCoordRequest_gNB_initiated__listofE_UTRACells),
-	offsetof(struct ResourceCoordRequest_gNB_initiated__listofE_UTRACells, _asn_ctx),
+	sizeof(struct ASN_XNAP_ResourceCoordRequest_gNB_initiated__listofE_UTRACells),
+	offsetof(struct ASN_XNAP_ResourceCoordRequest_gNB_initiated__listofE_UTRACells, _asn_ctx),
 	0,	/* XER encoding is XMLDelimitedItemList */
 };
 static /* Use -fall-defs-global to expose */
@@ -135,8 +135,8 @@ static const ber_tlv_tag_t asn_DEF_listofNRCells_tags_6[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_SET_OF_specifics_t asn_SPC_listofNRCells_specs_6 = {
-	sizeof(struct ResourceCoordRequest_gNB_initiated__listofNRCells),
-	offsetof(struct ResourceCoordRequest_gNB_initiated__listofNRCells, _asn_ctx),
+	sizeof(struct ASN_XNAP_ResourceCoordRequest_gNB_initiated__listofNRCells),
+	offsetof(struct ASN_XNAP_ResourceCoordRequest_gNB_initiated__listofNRCells, _asn_ctx),
 	0,	/* XER encoding is XMLDelimitedItemList */
 };
 static /* Use -fall-defs-global to expose */
@@ -157,7 +157,7 @@ asn_TYPE_descriptor_t asn_DEF_listofNRCells_6 = {
 };
 
 asn_TYPE_member_t asn_MBR_ResourceCoordRequest_gNB_initiated_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct ResourceCoordRequest_gNB_initiated, dataTrafficResourceIndication),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ResourceCoordRequest_gNB_initiated, dataTrafficResourceIndication),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_DataTrafficResourceIndication,
@@ -166,7 +166,7 @@ asn_TYPE_member_t asn_MBR_ResourceCoordRequest_gNB_initiated_1[] = {
 		0, 0, /* No default value */
 		"dataTrafficResourceIndication"
 		},
-	{ ATF_POINTER, 1, offsetof(struct ResourceCoordRequest_gNB_initiated, listofE_UTRACells),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_ResourceCoordRequest_gNB_initiated, listofE_UTRACells),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		0,
 		&asn_DEF_listofE_UTRACells_3,
@@ -175,7 +175,7 @@ asn_TYPE_member_t asn_MBR_ResourceCoordRequest_gNB_initiated_1[] = {
 		0, 0, /* No default value */
 		"listofE-UTRACells"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct ResourceCoordRequest_gNB_initiated, spectrumSharingGroupID),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ResourceCoordRequest_gNB_initiated, spectrumSharingGroupID),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_SpectrumSharingGroupID,
@@ -184,7 +184,7 @@ asn_TYPE_member_t asn_MBR_ResourceCoordRequest_gNB_initiated_1[] = {
 		0, 0, /* No default value */
 		"spectrumSharingGroupID"
 		},
-	{ ATF_POINTER, 2, offsetof(struct ResourceCoordRequest_gNB_initiated, listofNRCells),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_ResourceCoordRequest_gNB_initiated, listofNRCells),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		0,
 		&asn_DEF_listofNRCells_6,
@@ -193,7 +193,7 @@ asn_TYPE_member_t asn_MBR_ResourceCoordRequest_gNB_initiated_1[] = {
 		0, 0, /* No default value */
 		"listofNRCells"
 		},
-	{ ATF_POINTER, 1, offsetof(struct ResourceCoordRequest_gNB_initiated, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_ResourceCoordRequest_gNB_initiated, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -215,8 +215,8 @@ static const asn_TYPE_tag2member_t asn_MAP_ResourceCoordRequest_gNB_initiated_ta
     { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_ResourceCoordRequest_gNB_initiated_specs_1 = {
-	sizeof(struct ResourceCoordRequest_gNB_initiated),
-	offsetof(struct ResourceCoordRequest_gNB_initiated, _asn_ctx),
+	sizeof(struct ASN_XNAP_ResourceCoordRequest_gNB_initiated),
+	offsetof(struct ASN_XNAP_ResourceCoordRequest_gNB_initiated, _asn_ctx),
 	asn_MAP_ResourceCoordRequest_gNB_initiated_tag2el_1,
 	5,	/* Count of tags in the map */
 	asn_MAP_ResourceCoordRequest_gNB_initiated_oms_1,	/* Optional members */

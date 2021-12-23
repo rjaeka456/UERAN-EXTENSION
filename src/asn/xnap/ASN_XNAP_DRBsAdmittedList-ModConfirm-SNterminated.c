@@ -28,8 +28,8 @@ static const ber_tlv_tag_t asn_DEF_DRBsAdmittedList_ModConfirm_SNterminated_tags
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 asn_SET_OF_specifics_t asn_SPC_DRBsAdmittedList_ModConfirm_SNterminated_specs_1 = {
-	sizeof(struct DRBsAdmittedList_ModConfirm_SNterminated),
-	offsetof(struct DRBsAdmittedList_ModConfirm_SNterminated, _asn_ctx),
+	sizeof(struct ASN_XNAP_DRBsAdmittedList_ModConfirm_SNterminated),
+	offsetof(struct ASN_XNAP_DRBsAdmittedList_ModConfirm_SNterminated, _asn_ctx),
 	0,	/* XER encoding is XMLDelimitedItemList */
 };
 asn_TYPE_descriptor_t asn_DEF_DRBsAdmittedList_ModConfirm_SNterminated = {

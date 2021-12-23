@@ -19,15 +19,15 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct PDUSessionUsageReport;
-struct QoSFlowsUsageReportList;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_PDUSessionUsageReport;
+struct ASN_XNAP_QoSFlowsUsageReportList;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* SecondaryRATUsageInformation */
-typedef struct SecondaryRATUsageInformation {
-	struct PDUSessionUsageReport	*pDUSessionUsageReport	/* OPTIONAL */;
-	struct QoSFlowsUsageReportList	*qosFlowsUsageReportList	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+typedef struct ASN_XNAP_SecondaryRATUsageInformation {
+	struct ASN_XNAP_PDUSessionUsageReport	*pDUSessionUsageReport	/* OPTIONAL */;
+	struct ASN_XNAP_QoSFlowsUsageReportList	*qosFlowsUsageReportList	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -35,7 +35,7 @@ typedef struct SecondaryRATUsageInformation {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} SecondaryRATUsageInformation_t;
+} ASN_XNAP_SecondaryRATUsageInformation_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_SecondaryRATUsageInformation;

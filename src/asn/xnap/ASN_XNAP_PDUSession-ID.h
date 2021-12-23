@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* PDUSession-ID */
-typedef long	 PDUSession_ID_t;
+typedef long	 ASN_XNAP_PDUSession_ID_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_PDUSession_ID_constr_1;

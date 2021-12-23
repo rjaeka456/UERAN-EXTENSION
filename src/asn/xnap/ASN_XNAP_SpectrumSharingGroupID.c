@@ -5,7 +5,7 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "SpectrumSharingGroupID.h"
+#include "ASN_XNAP_SpectrumSharingGroupID.h"
 
 int
 SpectrumSharingGroupID_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,

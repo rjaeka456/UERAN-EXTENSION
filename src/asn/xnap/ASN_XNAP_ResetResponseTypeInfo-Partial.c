@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "ResetResponseTypeInfo-Partial.h"
+#include "ASN_XNAP_ResetResponseTypeInfo-Partial.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_ResetResponseTypeInfo_Partial_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct ResetResponseTypeInfo_Partial, ue_contexts_AdmittedToBeReleasedList),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ResetResponseTypeInfo_Partial, ue_contexts_AdmittedToBeReleasedList),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ResetResponsePartialReleaseList,
@@ -18,7 +18,7 @@ asn_TYPE_member_t asn_MBR_ResetResponseTypeInfo_Partial_1[] = {
 		0, 0, /* No default value */
 		"ue-contexts-AdmittedToBeReleasedList"
 		},
-	{ ATF_POINTER, 1, offsetof(struct ResetResponseTypeInfo_Partial, iE_Extension),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_ResetResponseTypeInfo_Partial, iE_Extension),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -37,8 +37,8 @@ static const asn_TYPE_tag2member_t asn_MAP_ResetResponseTypeInfo_Partial_tag2el_
     { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* iE-Extension */
 };
 asn_SEQUENCE_specifics_t asn_SPC_ResetResponseTypeInfo_Partial_specs_1 = {
-	sizeof(struct ResetResponseTypeInfo_Partial),
-	offsetof(struct ResetResponseTypeInfo_Partial, _asn_ctx),
+	sizeof(struct ASN_XNAP_ResetResponseTypeInfo_Partial),
+	offsetof(struct ASN_XNAP_ResetResponseTypeInfo_Partial, _asn_ctx),
 	asn_MAP_ResetResponseTypeInfo_Partial_tag2el_1,
 	2,	/* Count of tags in the map */
 	asn_MAP_ResetResponseTypeInfo_Partial_oms_1,	/* Optional members */

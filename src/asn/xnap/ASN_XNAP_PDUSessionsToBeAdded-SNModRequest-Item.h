@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PDUSession-ID.h"
-#include "S-NSSAI.h"
+#include "ASN_XNAP_PDUSession-ID.h"
+#include "ASN_XNAP_S-NSSAI.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -21,19 +21,19 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct PDUSessionAggregateMaximumBitRate;
-struct PDUSessionResourceSetupInfo_SNterminated;
-struct PDUSessionResourceSetupInfo_MNterminated;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_PDUSessionAggregateMaximumBitRate;
+struct ASN_XNAP_PDUSessionResourceSetupInfo_SNterminated;
+struct ASN_XNAP_PDUSessionResourceSetupInfo_MNterminated;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* PDUSessionsToBeAdded-SNModRequest-Item */
-typedef struct PDUSessionsToBeAdded_SNModRequest_Item {
-	PDUSession_ID_t	 pduSessionId;
-	S_NSSAI_t	 s_NSSAI;
-	struct PDUSessionAggregateMaximumBitRate	*sN_PDUSessionAMBR	/* OPTIONAL */;
-	struct PDUSessionResourceSetupInfo_SNterminated	*sn_terminated	/* OPTIONAL */;
-	struct PDUSessionResourceSetupInfo_MNterminated	*mn_terminated	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+typedef struct ASN_XNAP_PDUSessionsToBeAdded_SNModRequest_Item {
+    ASN_XNAP_PDUSession_ID_t	 pduSessionId;
+    ASN_XNAP_S_NSSAI_t	 s_NSSAI;
+	struct ASN_XNAP_PDUSessionAggregateMaximumBitRate	*sN_PDUSessionAMBR	/* OPTIONAL */;
+	struct ASN_XNAP_PDUSessionResourceSetupInfo_SNterminated	*sn_terminated	/* OPTIONAL */;
+	struct ASN_XNAP_PDUSessionResourceSetupInfo_MNterminated	*mn_terminated	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -41,7 +41,7 @@ typedef struct PDUSessionsToBeAdded_SNModRequest_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} PDUSessionsToBeAdded_SNModRequest_Item_t;
+} ASN_XNAP_PDUSessionsToBeAdded_SNModRequest_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_PDUSessionsToBeAdded_SNModRequest_Item;

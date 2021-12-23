@@ -19,30 +19,30 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum SharedResourceType_PR {
-	SharedResourceType_PR_NOTHING,	/* No components present */
-	SharedResourceType_PR_ul_onlySharing,
-	SharedResourceType_PR_ul_and_dl_Sharing,
-	SharedResourceType_PR_choice_extension
-} SharedResourceType_PR;
+typedef enum ASN_XNAP_SharedResourceType_PR {
+    ASN_XNAP_SharedResourceType_PR_NOTHING,	/* No components present */
+    ASN_XNAP_SharedResourceType_PR_ul_onlySharing,
+    ASN_XNAP_SharedResourceType_PR_ul_and_dl_Sharing,
+    ASN_XNAP_SharedResourceType_PR_choice_extension
+} ASN_XNAP_SharedResourceType_PR;
 
 /* Forward declarations */
-struct SharedResourceType_UL_OnlySharing;
-struct SharedResourceType_ULDL_Sharing;
-struct ProtocolIE_Single_Container;
+struct ASN_XNAP_SharedResourceType_UL_OnlySharing;
+struct ASN_XNAP_SharedResourceType_ULDL_Sharing;
+struct ASN_XNAP_ProtocolIE_Single_Container;
 
 /* SharedResourceType */
-typedef struct SharedResourceType {
-	SharedResourceType_PR present;
-	union SharedResourceType_u {
-		struct SharedResourceType_UL_OnlySharing	*ul_onlySharing;
-		struct SharedResourceType_ULDL_Sharing	*ul_and_dl_Sharing;
-		struct ProtocolIE_Single_Container	*choice_extension;
+typedef struct ASN_XNAP_SharedResourceType {
+    ASN_XNAP_SharedResourceType_PR present;
+	union ASN_XNAP_SharedResourceType_u {
+		struct ASN_XNAP_SharedResourceType_UL_OnlySharing	*ul_onlySharing;
+		struct ASN_XNAP_SharedResourceType_ULDL_Sharing	*ul_and_dl_Sharing;
+		struct ASN_XNAP_ProtocolIE_Single_Container	*choice_extension;
 	} choice;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} SharedResourceType_t;
+} ASN_XNAP_SharedResourceType_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_SharedResourceType;

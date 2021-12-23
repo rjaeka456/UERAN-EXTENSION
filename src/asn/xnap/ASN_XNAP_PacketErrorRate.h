@@ -21,13 +21,13 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* PacketErrorRate */
-typedef struct PacketErrorRate {
-	PER_Scalar_t	 pER_Scalar;
-	PER_Exponent_t	 pER_Exponent;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_PacketErrorRate {
+    ASN_XNAP_PER_Scalar_t	 pER_Scalar;
+    ASN_XNAP_PER_Exponent_t	 pER_Exponent;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -35,7 +35,7 @@ typedef struct PacketErrorRate {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} PacketErrorRate_t;
+} ASN_XNAP_PacketErrorRate_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_PacketErrorRate;

@@ -19,27 +19,27 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum UPTransportLayerInformation_PR {
-	UPTransportLayerInformation_PR_NOTHING,	/* No components present */
-	UPTransportLayerInformation_PR_gtpTunnel,
-	UPTransportLayerInformation_PR_choice_extension
-} UPTransportLayerInformation_PR;
+typedef enum ASN_XNAP_UPTransportLayerInformation_PR {
+    ASN_XNAP_UPTransportLayerInformation_PR_NOTHING,	/* No components present */
+    ASN_XNAP_UPTransportLayerInformation_PR_gtpTunnel,
+    ASN_XNAP_UPTransportLayerInformation_PR_choice_extension
+} ASN_XNAP_UPTransportLayerInformation_PR;
 
 /* Forward declarations */
-struct GTPtunnelTransportLayerInformation;
-struct ProtocolIE_Single_Container;
+struct ASN_XNAP_GTPtunnelTransportLayerInformation;
+struct ASN_XNAP_ProtocolIE_Single_Container;
 
 /* UPTransportLayerInformation */
-typedef struct UPTransportLayerInformation {
-	UPTransportLayerInformation_PR present;
-	union UPTransportLayerInformation_u {
-		struct GTPtunnelTransportLayerInformation	*gtpTunnel;
-		struct ProtocolIE_Single_Container	*choice_extension;
+typedef struct ASN_XNAP_UPTransportLayerInformation {
+    ASN_XNAP_UPTransportLayerInformation_PR present;
+	union ASN_XNAP_UPTransportLayerInformation_u {
+		struct ASN_XNAP_GTPtunnelTransportLayerInformation	*gtpTunnel;
+		struct ASN_XNAP_ProtocolIE_Single_Container	*choice_extension;
 	} choice;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} UPTransportLayerInformation_t;
+} ASN_XNAP_UPTransportLayerInformation_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_UPTransportLayerInformation;

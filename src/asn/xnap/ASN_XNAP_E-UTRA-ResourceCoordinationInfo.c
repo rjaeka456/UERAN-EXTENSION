@@ -82,7 +82,7 @@ static asn_per_constraints_t asn_PER_memb_dl_coordination_info_constr_4 CC_NOTUS
 	0, 0	/* No PER value map */
 };
 asn_TYPE_member_t asn_MBR_E_UTRA_ResourceCoordinationInfo_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct E_UTRA_ResourceCoordinationInfo, e_utra_cell),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_E_UTRA_ResourceCoordinationInfo, e_utra_cell),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_E_UTRA_CGI,
@@ -91,7 +91,7 @@ asn_TYPE_member_t asn_MBR_E_UTRA_ResourceCoordinationInfo_1[] = {
 		0, 0, /* No default value */
 		"e-utra-cell"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct E_UTRA_ResourceCoordinationInfo, ul_coordination_info),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_E_UTRA_ResourceCoordinationInfo, ul_coordination_info),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_BIT_STRING,
@@ -100,7 +100,7 @@ asn_TYPE_member_t asn_MBR_E_UTRA_ResourceCoordinationInfo_1[] = {
 		0, 0, /* No default value */
 		"ul-coordination-info"
 		},
-	{ ATF_POINTER, 4, offsetof(struct E_UTRA_ResourceCoordinationInfo, dl_coordination_info),
+	{ ATF_POINTER, 4, offsetof(struct ASN_XNAP_E_UTRA_ResourceCoordinationInfo, dl_coordination_info),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_BIT_STRING,
@@ -109,7 +109,7 @@ asn_TYPE_member_t asn_MBR_E_UTRA_ResourceCoordinationInfo_1[] = {
 		0, 0, /* No default value */
 		"dl-coordination-info"
 		},
-	{ ATF_POINTER, 3, offsetof(struct E_UTRA_ResourceCoordinationInfo, nr_cell),
+	{ ATF_POINTER, 3, offsetof(struct ASN_XNAP_E_UTRA_ResourceCoordinationInfo, nr_cell),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NR_CGI,
@@ -118,7 +118,7 @@ asn_TYPE_member_t asn_MBR_E_UTRA_ResourceCoordinationInfo_1[] = {
 		0, 0, /* No default value */
 		"nr-cell"
 		},
-	{ ATF_POINTER, 2, offsetof(struct E_UTRA_ResourceCoordinationInfo, e_utra_coordination_assistance_info),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_E_UTRA_ResourceCoordinationInfo, e_utra_coordination_assistance_info),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_E_UTRA_CoordinationAssistanceInfo,
@@ -127,7 +127,7 @@ asn_TYPE_member_t asn_MBR_E_UTRA_ResourceCoordinationInfo_1[] = {
 		0, 0, /* No default value */
 		"e-utra-coordination-assistance-info"
 		},
-	{ ATF_POINTER, 1, offsetof(struct E_UTRA_ResourceCoordinationInfo, iE_Extension),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_E_UTRA_ResourceCoordinationInfo, iE_Extension),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -150,8 +150,8 @@ static const asn_TYPE_tag2member_t asn_MAP_E_UTRA_ResourceCoordinationInfo_tag2e
     { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* iE-Extension */
 };
 asn_SEQUENCE_specifics_t asn_SPC_E_UTRA_ResourceCoordinationInfo_specs_1 = {
-	sizeof(struct E_UTRA_ResourceCoordinationInfo),
-	offsetof(struct E_UTRA_ResourceCoordinationInfo, _asn_ctx),
+	sizeof(struct ASN_XNAP_E_UTRA_ResourceCoordinationInfo),
+	offsetof(struct ASN_XNAP_E_UTRA_ResourceCoordinationInfo, _asn_ctx),
 	asn_MAP_E_UTRA_ResourceCoordinationInfo_tag2el_1,
 	6,	/* Count of tags in the map */
 	asn_MAP_E_UTRA_ResourceCoordinationInfo_oms_1,	/* Optional members */

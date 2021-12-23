@@ -20,15 +20,15 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ResetRequestPartialReleaseItem;
+struct ASN_XNAP_ResetRequestPartialReleaseItem;
 
 /* ResetRequestPartialReleaseList */
-typedef struct ResetRequestPartialReleaseList {
-	A_SEQUENCE_OF(struct ResetRequestPartialReleaseItem) list;
+typedef struct ASN_XNAP_ResetRequestPartialReleaseList {
+	A_SEQUENCE_OF(struct ASN_XNAP_ResetRequestPartialReleaseItem) list;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} ResetRequestPartialReleaseList_t;
+} ASN_XNAP_ResetRequestPartialReleaseList_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_ResetRequestPartialReleaseList;

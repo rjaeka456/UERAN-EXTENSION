@@ -10,7 +10,7 @@
 #include "ASN_XNAP_ReservedSubframePattern.h"
 #include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_DataTrafficResourceIndication_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct DataTrafficResourceIndication, activationSFN),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_DataTrafficResourceIndication, activationSFN),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ActivationSFN,
@@ -19,7 +19,7 @@ asn_TYPE_member_t asn_MBR_DataTrafficResourceIndication_1[] = {
 		0, 0, /* No default value */
 		"activationSFN"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct DataTrafficResourceIndication, sharedResourceType),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_DataTrafficResourceIndication, sharedResourceType),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_SharedResourceType,
@@ -28,7 +28,7 @@ asn_TYPE_member_t asn_MBR_DataTrafficResourceIndication_1[] = {
 		0, 0, /* No default value */
 		"sharedResourceType"
 		},
-	{ ATF_POINTER, 2, offsetof(struct DataTrafficResourceIndication, reservedSubframePattern),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_DataTrafficResourceIndication, reservedSubframePattern),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ReservedSubframePattern,
@@ -37,7 +37,7 @@ asn_TYPE_member_t asn_MBR_DataTrafficResourceIndication_1[] = {
 		0, 0, /* No default value */
 		"reservedSubframePattern"
 		},
-	{ ATF_POINTER, 1, offsetof(struct DataTrafficResourceIndication, iE_Extension),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_DataTrafficResourceIndication, iE_Extension),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -58,8 +58,8 @@ static const asn_TYPE_tag2member_t asn_MAP_DataTrafficResourceIndication_tag2el_
     { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* iE-Extension */
 };
 asn_SEQUENCE_specifics_t asn_SPC_DataTrafficResourceIndication_specs_1 = {
-	sizeof(struct DataTrafficResourceIndication),
-	offsetof(struct DataTrafficResourceIndication, _asn_ctx),
+	sizeof(struct ASN_XNAP_DataTrafficResourceIndication),
+	offsetof(struct ASN_XNAP_DataTrafficResourceIndication, _asn_ctx),
 	asn_MAP_DataTrafficResourceIndication_tag2el_1,
 	4,	/* Count of tags in the map */
 	asn_MAP_DataTrafficResourceIndication_oms_1,	/* Optional members */

@@ -20,15 +20,15 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct DRBsAdmittedList_SetupResponse_MNterminated_Item;
+struct ASN_XNAP_DRBsAdmittedList_SetupResponse_MNterminated_Item;
 
 /* DRBsAdmittedList-SetupResponse-MNterminated */
-typedef struct DRBsAdmittedList_SetupResponse_MNterminated {
-	A_SEQUENCE_OF(struct DRBsAdmittedList_SetupResponse_MNterminated_Item) list;
+typedef struct ASN_XNAP_DRBsAdmittedList_SetupResponse_MNterminated {
+	A_SEQUENCE_OF(struct ASN_XNAP_DRBsAdmittedList_SetupResponse_MNterminated_Item) list;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} DRBsAdmittedList_SetupResponse_MNterminated_t;
+} ASN_XNAP_DRBsAdmittedList_SetupResponse_MNterminated_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_DRBsAdmittedList_SetupResponse_MNterminated;

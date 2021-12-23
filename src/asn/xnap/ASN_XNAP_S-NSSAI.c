@@ -70,7 +70,7 @@ static asn_per_constraints_t asn_PER_memb_sd_constr_3 CC_NOTUSED = {
 	{ APC_CONSTRAINED,	 0,  0,  3,  3 }	/* (SIZE(3..3)) */,
 	0, 0	/* No PER value map */
 };
-asn_TYPE_member_t asn_MBR_ASN_XNAP_S_NSSAI_1[] = {
+asn_TYPE_member_t asn_MBR_S_NSSAI_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_S_NSSAI, sst),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
@@ -92,28 +92,28 @@ asn_TYPE_member_t asn_MBR_ASN_XNAP_S_NSSAI_1[] = {
 	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_S_NSSAI, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ASN_XNAP_ProtocolExtensionContainer_6001P0,
+		&asn_DEF_ProtocolExtensionContainer_6001P0,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
 		"iE-Extensions"
 		},
 };
-static const int asn_MAP_ASN_XNAP_S_NSSAI_oms_1[] = { 1, 2 };
-static const ber_tlv_tag_t asn_DEF_ASN_XNAP_S_NSSAI_tags_1[] = {
+static const int asn_MAP_S_NSSAI_oms_1[] = { 1, 2 };
+static const ber_tlv_tag_t asn_DEF_S_NSSAI_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_ASN_XNAP_S_NSSAI_tag2el_1[] = {
+static const asn_TYPE_tag2member_t asn_MAP_S_NSSAI_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* sst */
     { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* sd */
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* iE-Extensions */
 };
-asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_S_NSSAI_specs_1 = {
+asn_SEQUENCE_specifics_t asn_SPC_S_NSSAI_specs_1 = {
 	sizeof(struct ASN_XNAP_S_NSSAI),
 	offsetof(struct ASN_XNAP_S_NSSAI, _asn_ctx),
-	asn_MAP_ASN_XNAP_S_NSSAI_tag2el_1,
+	asn_MAP_S_NSSAI_tag2el_1,
 	3,	/* Count of tags in the map */
-	asn_MAP_ASN_XNAP_S_NSSAI_oms_1,	/* Optional members */
+	asn_MAP_S_NSSAI_oms_1,	/* Optional members */
 	2, 0,	/* Root/Additions */
 	3,	/* First extension addition */
 };
@@ -121,15 +121,15 @@ asn_TYPE_descriptor_t asn_DEF_S_NSSAI = {
 	"S-NSSAI",
 	"S-NSSAI",
 	&asn_OP_SEQUENCE,
-	asn_DEF_ASN_XNAP_S_NSSAI_tags_1,
-	sizeof(asn_DEF_ASN_XNAP_S_NSSAI_tags_1)
-		/sizeof(asn_DEF_ASN_XNAP_S_NSSAI_tags_1[0]), /* 1 */
-	asn_DEF_ASN_XNAP_S_NSSAI_tags_1,	/* Same as above */
-	sizeof(asn_DEF_ASN_XNAP_S_NSSAI_tags_1)
-		/sizeof(asn_DEF_ASN_XNAP_S_NSSAI_tags_1[0]), /* 1 */
+	asn_DEF_S_NSSAI_tags_1,
+	sizeof(asn_DEF_S_NSSAI_tags_1)
+		/sizeof(asn_DEF_S_NSSAI_tags_1[0]), /* 1 */
+	asn_DEF_S_NSSAI_tags_1,	/* Same as above */
+	sizeof(asn_DEF_S_NSSAI_tags_1)
+		/sizeof(asn_DEF_S_NSSAI_tags_1[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_ASN_XNAP_S_NSSAI_1,
+	asn_MBR_S_NSSAI_1,
 	3,	/* Elements count */
-	&asn_SPC_ASN_XNAP_S_NSSAI_specs_1	/* Additional specs */
+	&asn_SPC_S_NSSAI_specs_1	/* Additional specs */
 };
 

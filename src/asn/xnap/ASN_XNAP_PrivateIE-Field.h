@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PrivateIE-ID.h"
-#include "Criticality.h"
+#include "ASN_XNAP_PrivateIE-ID.h"
+#include "ASN_XNAP_Criticality.h"
 #include <ANY.h>
 #include <asn_ioc.h>
 #include <OPEN_TYPE.h>
@@ -25,18 +25,18 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum PrivateIE_Field_6020P0__value_PR {
-	PrivateIE_Field_6020P0__value_PR_NOTHING,	/* No components present */
+typedef enum ASN_XNAP_PrivateIE_Field_6020P0__value_PR {
+    ASN_XNAP_PrivateIE_Field_6020P0__value_PR_NOTHING,	/* No components present */
 	
-} PrivateIE_Field_6020P0__value_PR;
+} ASN_XNAP_PrivateIE_Field_6020P0__value_PR;
 
 /* PrivateIE-Field */
-typedef struct PrivateIE_Field_6020P0 {
-	PrivateIE_ID_t	 id;
-	Criticality_t	 criticality;
-	struct PrivateIE_Field_6020P0__value {
-		PrivateIE_Field_6020P0__value_PR present;
-		union PrivateIE_Field_6020P0__value_u {
+typedef struct ASN_XNAP_PrivateIE_Field_6020P0 {
+    ASN_XNAP_PrivateIE_ID_t	 id;
+    ASN_XNAP_Criticality_t	 criticality;
+	struct ASN_XNAP_PrivateIE_Field_6020P0__value {
+        ASN_XNAP_PrivateIE_Field_6020P0__value_PR present;
+		union ASN_XNAP_PrivateIE_Field_6020P0__value_u {
 		} choice;
 		
 		/* Context for parsing across buffer boundaries */
@@ -45,7 +45,7 @@ typedef struct PrivateIE_Field_6020P0 {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} PrivateIE_Field_6020P0_t;
+} ASN_XNAP_PrivateIE_Field_6020P0_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_PrivateIE_Field_6020P0;

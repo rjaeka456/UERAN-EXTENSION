@@ -5,12 +5,12 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "PDUSessionsToBeReleased-SNModRequest-List.h"
+#include "ASN_XNAP_PDUSessionsToBeReleased-SNModRequest-List.h"
 
-#include "PDUSession-List-withCause.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_PDUSession-List-withCause.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_PDUSessionsToBeReleased_SNModRequest_List_1[] = {
-	{ ATF_POINTER, 2, offsetof(struct PDUSessionsToBeReleased_SNModRequest_List, pdu_session_list),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_PDUSessionsToBeReleased_SNModRequest_List, pdu_session_list),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PDUSession_List_withCause,
@@ -19,7 +19,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionsToBeReleased_SNModRequest_List_1[] = {
 		0, 0, /* No default value */
 		"pdu-session-list"
 		},
-	{ ATF_POINTER, 1, offsetof(struct PDUSessionsToBeReleased_SNModRequest_List, iE_Extension),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_PDUSessionsToBeReleased_SNModRequest_List, iE_Extension),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -38,8 +38,8 @@ static const asn_TYPE_tag2member_t asn_MAP_PDUSessionsToBeReleased_SNModRequest_
     { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* iE-Extension */
 };
 asn_SEQUENCE_specifics_t asn_SPC_PDUSessionsToBeReleased_SNModRequest_List_specs_1 = {
-	sizeof(struct PDUSessionsToBeReleased_SNModRequest_List),
-	offsetof(struct PDUSessionsToBeReleased_SNModRequest_List, _asn_ctx),
+	sizeof(struct ASN_XNAP_PDUSessionsToBeReleased_SNModRequest_List),
+	offsetof(struct ASN_XNAP_PDUSessionsToBeReleased_SNModRequest_List, _asn_ctx),
 	asn_MAP_PDUSessionsToBeReleased_SNModRequest_List_tag2el_1,
 	2,	/* Count of tags in the map */
 	asn_MAP_PDUSessionsToBeReleased_SNModRequest_List_oms_1,	/* Optional members */

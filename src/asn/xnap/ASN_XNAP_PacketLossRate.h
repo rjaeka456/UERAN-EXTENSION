@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* PacketLossRate */
-typedef long	 PacketLossRate_t;
+typedef long	 ASN_XNAP_PacketLossRate_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_PacketLossRate_constr_1;

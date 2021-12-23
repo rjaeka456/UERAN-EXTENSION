@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "GlobalNG-RANNode-ID.h"
+#include "ASN_XNAP_GlobalNG-RANNode-ID.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,12 +20,12 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* GlobalNG-RANNodesinAoI-Item */
-typedef struct GlobalNG_RANNodesinAoI_Item {
-	GlobalNG_RANNode_ID_t	 global_NG_RAN_Node_ID;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_GlobalNG_RANNodesinAoI_Item {
+    ASN_XNAP_GlobalNG_RANNode_ID_t	 global_NG_RAN_Node_ID;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -33,7 +33,7 @@ typedef struct GlobalNG_RANNodesinAoI_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} GlobalNG_RANNodesinAoI_Item_t;
+} ASN_XNAP_GlobalNG_RANNodesinAoI_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_GlobalNG_RANNodesinAoI_Item;

@@ -20,15 +20,15 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct QoSFlow_Item;
+struct ASN_XNAP_QoSFlow_Item;
 
 /* QoSFlows-List */
-typedef struct QoSFlows_List {
-	A_SEQUENCE_OF(struct QoSFlow_Item) list;
+typedef struct ASN_XNAP_QoSFlows_List {
+	A_SEQUENCE_OF(struct ASN_XNAP_QoSFlow_Item) list;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} QoSFlows_List_t;
+} ASN_XNAP_QoSFlows_List_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_QoSFlows_List;

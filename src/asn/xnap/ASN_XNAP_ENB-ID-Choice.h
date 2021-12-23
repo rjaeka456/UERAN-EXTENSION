@@ -46,10 +46,10 @@ typedef struct ASN_XNAP_ENB_ID_Choice {
 } ASN_XNAP_ENB_ID_Choice_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_ENB_ID_Choice;
-extern asn_CHOICE_specifics_t asn_SPC_ASN_XNAP_ENB_ID_Choice_specs_1;
-extern asn_TYPE_member_t asn_MBR_ASN_XNAP_ENB_ID_Choice_1[4];
-extern asn_per_constraints_t asn_PER_type_ASN_XNAP_ENB_ID_Choice_constr_1;
+extern asn_TYPE_descriptor_t asn_DEF_ENB_ID_Choice;
+extern asn_CHOICE_specifics_t asn_SPC_ENB_ID_Choice_specs_1;
+extern asn_TYPE_member_t asn_MBR_ENB_ID_Choice_1[4];
+extern asn_per_constraints_t asn_PER_type_ENB_ID_Choice_constr_1;
 
 #ifdef __cplusplus
 }

@@ -19,17 +19,17 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum UL_UE_Configuration {
-	UL_UE_Configuration_no_data	= 0,
-	UL_UE_Configuration_shared	= 1,
-	UL_UE_Configuration_only	= 2
+typedef enum ASN_XNAP_UL_UE_Configuration {
+    ASN_XNAP_UL_UE_Configuration_no_data	= 0,
+    ASN_XNAP_UL_UE_Configuration_shared	= 1,
+    ASN_XNAP_UL_UE_Configuration_only	= 2
 	/*
 	 * Enumeration is extensible
 	 */
-} e_UL_UE_Configuration;
+} e_ASN_XNAP_UL_UE_Configuration;
 
 /* UL-UE-Configuration */
-typedef long	 UL_UE_Configuration_t;
+typedef long	 ASN_XNAP_UL_UE_Configuration_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_UL_UE_Configuration_constr_1;

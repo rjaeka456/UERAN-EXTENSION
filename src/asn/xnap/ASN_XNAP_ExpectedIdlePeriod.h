@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* ExpectedIdlePeriod */
-typedef long	 ExpectedIdlePeriod_t;
+typedef long	 ASN_XNAP_ExpectedIdlePeriod_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_ExpectedIdlePeriod_constr_1;

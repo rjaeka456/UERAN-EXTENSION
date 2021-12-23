@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PDUSessionNetworkInstance.h"
+#include "ASN_XNAP_PDUSessionNetworkInstance.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,26 +20,26 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct UPTransportLayerInformation;
-struct QoSFlowsToBeSetup_List_Setup_SNterminated;
-struct DataforwardingandOffloadingInfofromSource;
-struct QoSFlowsToBeSetup_List_Modified_SNterminated;
-struct QoSFlows_List_withCause;
-struct DRBsToBeModified_List_Modified_SNterminated;
-struct DRB_List_withCause;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_UPTransportLayerInformation;
+struct ASN_XNAP_QoSFlowsToBeSetup_List_Setup_SNterminated;
+struct ASN_XNAP_DataforwardingandOffloadingInfofromSource;
+struct ASN_XNAP_QoSFlowsToBeSetup_List_Modified_SNterminated;
+struct ASN_XNAP_QoSFlows_List_withCause;
+struct ASN_XNAP_DRBsToBeModified_List_Modified_SNterminated;
+struct ASN_XNAP_DRB_List_withCause;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* PDUSessionResourceModificationInfo-SNterminated */
-typedef struct PDUSessionResourceModificationInfo_SNterminated {
-	struct UPTransportLayerInformation	*uL_NG_U_TNLatUPF	/* OPTIONAL */;
-	PDUSessionNetworkInstance_t	*pduSessionNetworkInstance	/* OPTIONAL */;
-	struct QoSFlowsToBeSetup_List_Setup_SNterminated	*qosFlowsToBeSetup_List	/* OPTIONAL */;
-	struct DataforwardingandOffloadingInfofromSource	*dataforwardinginfofromSource	/* OPTIONAL */;
-	struct QoSFlowsToBeSetup_List_Modified_SNterminated	*qosFlowsToBeModified_List	/* OPTIONAL */;
-	struct QoSFlows_List_withCause	*qoSFlowsToBeReleased_List	/* OPTIONAL */;
-	struct DRBsToBeModified_List_Modified_SNterminated	*drbsToBeModifiedList	/* OPTIONAL */;
-	struct DRB_List_withCause	*dRBsToBeReleased	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_PDUSessionResourceModificationInfo_SNterminated {
+	struct ASN_XNAP_UPTransportLayerInformation	*uL_NG_U_TNLatUPF	/* OPTIONAL */;
+    ASN_XNAP_PDUSessionNetworkInstance_t	*pduSessionNetworkInstance	/* OPTIONAL */;
+	struct ASN_XNAP_QoSFlowsToBeSetup_List_Setup_SNterminated	*qosFlowsToBeSetup_List	/* OPTIONAL */;
+	struct ASN_XNAP_DataforwardingandOffloadingInfofromSource	*dataforwardinginfofromSource	/* OPTIONAL */;
+	struct ASN_XNAP_QoSFlowsToBeSetup_List_Modified_SNterminated	*qosFlowsToBeModified_List	/* OPTIONAL */;
+	struct ASN_XNAP_QoSFlows_List_withCause	*qoSFlowsToBeReleased_List	/* OPTIONAL */;
+	struct ASN_XNAP_DRBsToBeModified_List_Modified_SNterminated	*drbsToBeModifiedList	/* OPTIONAL */;
+	struct ASN_XNAP_DRB_List_withCause	*dRBsToBeReleased	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -47,7 +47,7 @@ typedef struct PDUSessionResourceModificationInfo_SNterminated {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} PDUSessionResourceModificationInfo_SNterminated_t;
+} ASN_XNAP_PDUSessionResourceModificationInfo_SNterminated_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_PDUSessionResourceModificationInfo_SNterminated;

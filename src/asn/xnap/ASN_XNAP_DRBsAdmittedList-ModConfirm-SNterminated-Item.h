@@ -21,16 +21,16 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct UPTransportParameters;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_UPTransportParameters;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* DRBsAdmittedList-ModConfirm-SNterminated-Item */
-typedef struct DRBsAdmittedList_ModConfirm_SNterminated_Item {
-	DRB_ID_t	 drb_ID;
-	struct UPTransportParameters	*mN_DL_CG_UP_TNLInfo	/* OPTIONAL */;
-	struct UPTransportParameters	*secondary_MN_DL_CG_UP_TNLInfo	/* OPTIONAL */;
-	LCID_t	*lCID	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_DRBsAdmittedList_ModConfirm_SNterminated_Item {
+    ASN_XNAP_DRB_ID_t	 drb_ID;
+	struct ASN_XNAP_UPTransportParameters	*mN_DL_CG_UP_TNLInfo	/* OPTIONAL */;
+	struct ASN_XNAP_UPTransportParameters	*secondary_MN_DL_CG_UP_TNLInfo	/* OPTIONAL */;
+    ASN_XNAP_LCID_t	*lCID	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -38,7 +38,7 @@ typedef struct DRBsAdmittedList_ModConfirm_SNterminated_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} DRBsAdmittedList_ModConfirm_SNterminated_Item_t;
+} ASN_XNAP_DRBsAdmittedList_ModConfirm_SNterminated_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_DRBsAdmittedList_ModConfirm_SNterminated_Item;

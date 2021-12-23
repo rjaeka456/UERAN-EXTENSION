@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* GTP-TEID */
-typedef OCTET_STRING_t	 GTP_TEID_t;
+typedef OCTET_STRING_t	 ASN_XNAP_GTP_TEID_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_GTP_TEID_constr_1;

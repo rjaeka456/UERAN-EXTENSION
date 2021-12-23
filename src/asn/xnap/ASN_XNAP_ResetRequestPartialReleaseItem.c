@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "ResetRequestPartialReleaseItem.h"
+#include "ASN_XNAP_ResetRequestPartialReleaseItem.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_ResetRequestPartialReleaseItem_1[] = {
-	{ ATF_POINTER, 3, offsetof(struct ResetRequestPartialReleaseItem, ng_ran_node1UEXnAPID),
+	{ ATF_POINTER, 3, offsetof(struct ASN_XNAP_ResetRequestPartialReleaseItem, ng_ran_node1UEXnAPID),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NG_RANnodeUEXnAPID,
@@ -18,7 +18,7 @@ asn_TYPE_member_t asn_MBR_ResetRequestPartialReleaseItem_1[] = {
 		0, 0, /* No default value */
 		"ng-ran-node1UEXnAPID"
 		},
-	{ ATF_POINTER, 2, offsetof(struct ResetRequestPartialReleaseItem, ng_ran_node2UEXnAPID),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_ResetRequestPartialReleaseItem, ng_ran_node2UEXnAPID),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NG_RANnodeUEXnAPID,
@@ -27,7 +27,7 @@ asn_TYPE_member_t asn_MBR_ResetRequestPartialReleaseItem_1[] = {
 		0, 0, /* No default value */
 		"ng-ran-node2UEXnAPID"
 		},
-	{ ATF_POINTER, 1, offsetof(struct ResetRequestPartialReleaseItem, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_ResetRequestPartialReleaseItem, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -47,8 +47,8 @@ static const asn_TYPE_tag2member_t asn_MAP_ResetRequestPartialReleaseItem_tag2el
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_ResetRequestPartialReleaseItem_specs_1 = {
-	sizeof(struct ResetRequestPartialReleaseItem),
-	offsetof(struct ResetRequestPartialReleaseItem, _asn_ctx),
+	sizeof(struct ASN_XNAP_ResetRequestPartialReleaseItem),
+	offsetof(struct ASN_XNAP_ResetRequestPartialReleaseItem, _asn_ctx),
 	asn_MAP_ResetRequestPartialReleaseItem_tag2el_1,
 	3,	/* Count of tags in the map */
 	asn_MAP_ResetRequestPartialReleaseItem_oms_1,	/* Optional members */

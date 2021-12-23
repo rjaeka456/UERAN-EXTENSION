@@ -12,9 +12,9 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "QoSFlowIdentifier.h"
-#include "QoSFlowLevelQoSParameters.h"
-#include "E-RAB-ID.h"
+#include "ASN_XNAP_QoSFlowIdentifier.h"
+#include "ASN_XNAP_QoSFlowLevelQoSParameters.h"
+#include "ASN_XNAP_E-RAB-ID.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -22,14 +22,14 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* QoSFlowsToBeSetup-Item */
-typedef struct QoSFlowsToBeSetup_Item {
-	QoSFlowIdentifier_t	 qfi;
-	QoSFlowLevelQoSParameters_t	 qosFlowLevelQoSParameters;
-	E_RAB_ID_t	*e_RAB_ID	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+typedef struct ASN_XNAP_QoSFlowsToBeSetup_Item {
+    ASN_XNAP_QoSFlowIdentifier_t	 qfi;
+    ASN_XNAP_QoSFlowLevelQoSParameters_t	 qosFlowLevelQoSParameters;
+    ASN_XNAP_E_RAB_ID_t	*e_RAB_ID	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -37,7 +37,7 @@ typedef struct QoSFlowsToBeSetup_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} QoSFlowsToBeSetup_Item_t;
+} ASN_XNAP_QoSFlowsToBeSetup_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_QoSFlowsToBeSetup_Item;

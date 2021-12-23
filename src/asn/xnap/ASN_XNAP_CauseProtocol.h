@@ -19,21 +19,21 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum CauseProtocol {
-	CauseProtocol_transfer_syntax_error	= 0,
-	CauseProtocol_abstract_syntax_error_reject	= 1,
-	CauseProtocol_abstract_syntax_error_ignore_and_notify	= 2,
-	CauseProtocol_message_not_compatible_with_receiver_state	= 3,
-	CauseProtocol_semantic_error	= 4,
-	CauseProtocol_abstract_syntax_error_falsely_constructed_message	= 5,
-	CauseProtocol_unspecified	= 6
+typedef enum ASN_XNAP_CauseProtocol {
+    ASN_XNAP_CauseProtocol_transfer_syntax_error	= 0,
+    ASN_XNAP_CauseProtocol_abstract_syntax_error_reject	= 1,
+    ASN_XNAP_CauseProtocol_abstract_syntax_error_ignore_and_notify	= 2,
+    ASN_XNAP_CauseProtocol_message_not_compatible_with_receiver_state	= 3,
+    ASN_XNAP_CauseProtocol_semantic_error	= 4,
+    ASN_XNAP_CauseProtocol_abstract_syntax_error_falsely_constructed_message	= 5,
+    ASN_XNAP_CauseProtocol_unspecified	= 6
 	/*
 	 * Enumeration is extensible
 	 */
-} e_CauseProtocol;
+} e_ASN_XNAP_CauseProtocol;
 
 /* CauseProtocol */
-typedef long	 CauseProtocol_t;
+typedef long	 ASN_XNAP_CauseProtocol_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_CauseProtocol_constr_1;

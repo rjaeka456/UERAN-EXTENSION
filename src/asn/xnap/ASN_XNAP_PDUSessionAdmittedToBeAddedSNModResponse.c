@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "PDUSessionAdmittedToBeAddedSNModResponse.h"
+#include "ASN_XNAP_PDUSessionAdmittedToBeAddedSNModResponse.h"
 
-#include "PDUSessionAdmittedToBeAddedSNModResponse-Item.h"
+#include "ASN_XNAP_PDUSessionAdmittedToBeAddedSNModResponse-Item.h"
 asn_per_constraints_t asn_PER_type_PDUSessionAdmittedToBeAddedSNModResponse_constr_1 CC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	{ APC_CONSTRAINED,	 8,  8,  1,  256 }	/* (SIZE(1..256)) */,

@@ -20,12 +20,12 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* Additional-UL-NG-U-TNLatUPF-Item */
-typedef struct Additional_UL_NG_U_TNLatUPF_Item {
-	UPTransportLayerInformation_t	 additional_UL_NG_U_TNLatUPF;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_Additional_UL_NG_U_TNLatUPF_Item {
+    ASN_XNAP_UPTransportLayerInformation_t	 additional_UL_NG_U_TNLatUPF;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -33,7 +33,7 @@ typedef struct Additional_UL_NG_U_TNLatUPF_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} Additional_UL_NG_U_TNLatUPF_Item_t;
+} ASN_XNAP_Additional_UL_NG_U_TNLatUPF_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_Additional_UL_NG_U_TNLatUPF_Item;

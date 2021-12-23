@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "PDUSessionResourceModRqdInfo-MNterminated.h"
+#include "ASN_XNAP_PDUSessionResourceModRqdInfo-MNterminated.h"
 
-#include "DRBsToBeModified-List-ModRqd-MNterminated.h"
-#include "DRB-List-withCause.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_DRBsToBeModified-List-ModRqd-MNterminated.h"
+#include "ASN_XNAP_DRB-List-withCause.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_PDUSessionResourceModRqdInfo_MNterminated_1[] = {
 	{ ATF_POINTER, 3, offsetof(struct PDUSessionResourceModRqdInfo_MNterminated, dRBsToBeModified),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),

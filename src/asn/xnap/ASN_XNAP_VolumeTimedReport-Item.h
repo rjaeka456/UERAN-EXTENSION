@@ -21,15 +21,15 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* VolumeTimedReport-Item */
-typedef struct VolumeTimedReport_Item {
+typedef struct ASN_XNAP_VolumeTimedReport_Item {
 	OCTET_STRING_t	 startTimeStamp;
 	OCTET_STRING_t	 endTimeStamp;
 	INTEGER_t	 usageCountUL;
 	INTEGER_t	 usageCountDL;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -37,7 +37,7 @@ typedef struct VolumeTimedReport_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} VolumeTimedReport_Item_t;
+} ASN_XNAP_VolumeTimedReport_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_VolumeTimedReport_Item;

@@ -19,30 +19,30 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum NeighbourInformation_NR_ModeInfo_PR {
-	NeighbourInformation_NR_ModeInfo_PR_NOTHING,	/* No components present */
-	NeighbourInformation_NR_ModeInfo_PR_fdd_info,
-	NeighbourInformation_NR_ModeInfo_PR_tdd_info,
-	NeighbourInformation_NR_ModeInfo_PR_choice_extension
-} NeighbourInformation_NR_ModeInfo_PR;
+typedef enum ASN_XNAP_NeighbourInformation_NR_ModeInfo_PR {
+    ASN_XNAP_NeighbourInformation_NR_ModeInfo_PR_NOTHING,	/* No components present */
+    ASN_XNAP_NeighbourInformation_NR_ModeInfo_PR_fdd_info,
+    ASN_XNAP_NeighbourInformation_NR_ModeInfo_PR_tdd_info,
+    ASN_XNAP_NeighbourInformation_NR_ModeInfo_PR_choice_extension
+} ASN_XNAP_NeighbourInformation_NR_ModeInfo_PR;
 
 /* Forward declarations */
-struct NeighbourInformation_NR_ModeFDDInfo;
-struct NeighbourInformation_NR_ModeTDDInfo;
-struct ProtocolIE_Single_Container;
+struct ASN_XNAP_NeighbourInformation_NR_ModeFDDInfo;
+struct ASN_XNAP_NeighbourInformation_NR_ModeTDDInfo;
+struct ASN_XNAP_ProtocolIE_Single_Container;
 
 /* NeighbourInformation-NR-ModeInfo */
-typedef struct NeighbourInformation_NR_ModeInfo {
-	NeighbourInformation_NR_ModeInfo_PR present;
-	union NeighbourInformation_NR_ModeInfo_u {
-		struct NeighbourInformation_NR_ModeFDDInfo	*fdd_info;
-		struct NeighbourInformation_NR_ModeTDDInfo	*tdd_info;
-		struct ProtocolIE_Single_Container	*choice_extension;
+typedef struct ASN_XNAP_NeighbourInformation_NR_ModeInfo {
+    ASN_XNAP_NeighbourInformation_NR_ModeInfo_PR present;
+	union ASN_XNAP_NeighbourInformation_NR_ModeInfo_u {
+		struct ASN_XNAP_NeighbourInformation_NR_ModeFDDInfo	*fdd_info;
+		struct ASN_XNAP_NeighbourInformation_NR_ModeTDDInfo	*tdd_info;
+		struct ASN_XNAP_ProtocolIE_Single_Container	*choice_extension;
 	} choice;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} NeighbourInformation_NR_ModeInfo_t;
+} ASN_XNAP_NeighbourInformation_NR_ModeInfo_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_NeighbourInformation_NR_ModeInfo;

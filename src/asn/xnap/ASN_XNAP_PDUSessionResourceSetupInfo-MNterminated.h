@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PDUSessionType.h"
-#include "DRBsToBeSetupList-Setup-MNterminated.h"
+#include "ASN_XNAP_PDUSessionType.h"
+#include "ASN_XNAP_DRBsToBeSetupList-Setup-MNterminated.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -21,13 +21,13 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* PDUSessionResourceSetupInfo-MNterminated */
-typedef struct PDUSessionResourceSetupInfo_MNterminated {
-	PDUSessionType_t	 pduSessionType;
-	DRBsToBeSetupList_Setup_MNterminated_t	 dRBsToBeSetup;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_PDUSessionResourceSetupInfo_MNterminated {
+    ASN_XNAP_PDUSessionType_t	 pduSessionType;
+    ASN_XNAP_DRBsToBeSetupList_Setup_MNterminated_t	 dRBsToBeSetup;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -35,7 +35,7 @@ typedef struct PDUSessionResourceSetupInfo_MNterminated {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} PDUSessionResourceSetupInfo_MNterminated_t;
+} ASN_XNAP_PDUSessionResourceSetupInfo_MNterminated_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_PDUSessionResourceSetupInfo_MNterminated;

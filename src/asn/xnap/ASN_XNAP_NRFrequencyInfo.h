@@ -40,9 +40,9 @@ typedef struct ASN_XNAP_NRFrequencyInfo {
 } ASN_XNAP_NRFrequencyInfo_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_NRFrequencyInfo;
-extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_NRFrequencyInfo_specs_1;
-extern asn_TYPE_member_t asn_MBR_ASN_XNAP_NRFrequencyInfo_1[4];
+extern asn_TYPE_descriptor_t asn_DEF_NRFrequencyInfo;
+extern asn_SEQUENCE_specifics_t asn_SPC_NRFrequencyInfo_specs_1;
+extern asn_TYPE_member_t asn_MBR_NRFrequencyInfo_1[4];
 
 #ifdef __cplusplus
 }

@@ -26,9 +26,9 @@ struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* DRB-List-withCause-Item */
 typedef struct ASN_XNAP_DRB_List_withCause_Item {
-	DRB_ID_t	 drb_id;
-	Cause_t	 cause;
-	RLCMode_t	*rLC_Mode	/* OPTIONAL */;
+    ASN_XNAP_DRB_ID_t	 drb_id;
+    ASN_XNAP_Cause_t	 cause;
+    ASN_XNAP_RLCMode_t	*rLC_Mode	/* OPTIONAL */;
 	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,

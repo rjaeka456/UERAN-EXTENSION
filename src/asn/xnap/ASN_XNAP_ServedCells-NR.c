@@ -8,12 +8,12 @@
 #include "ASN_XNAP_ServedCells-NR.h"
 
 #include "ASN_XNAP_ServedCells-NR-Item.h"
-asn_per_constraints_t asn_PER_type_ASN_XNAP_ServedCells_NR_constr_1 CC_NOTUSED = {
+asn_per_constraints_t asn_PER_type_ServedCells_NR_constr_1 CC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	{ APC_CONSTRAINED,	 14,  14,  1,  16384 }	/* (SIZE(1..16384)) */,
 	0, 0	/* No PER value map */
 };
-asn_TYPE_member_t asn_MBR_ASN_XNAP_ServedCells_NR_1[] = {
+asn_TYPE_member_t asn_MBR_ServedCells_NR_1[] = {
 	{ ATF_POINTER, 0, 0,
 		(ASN_TAG_CLASS_UNIVERSAL | (16 << 2)),
 		0,
@@ -24,10 +24,10 @@ asn_TYPE_member_t asn_MBR_ASN_XNAP_ServedCells_NR_1[] = {
 		""
 		},
 };
-static const ber_tlv_tag_t asn_DEF_ASN_XNAP_ServedCells_NR_tags_1[] = {
+static const ber_tlv_tag_t asn_DEF_ServedCells_NR_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-asn_SET_OF_specifics_t asn_SPC_ASN_XNAP_ServedCells_NR_specs_1 = {
+asn_SET_OF_specifics_t asn_SPC_ServedCells_NR_specs_1 = {
 	sizeof(struct ASN_XNAP_ServedCells_NR),
 	offsetof(struct ASN_XNAP_ServedCells_NR, _asn_ctx),
 	0,	/* XER encoding is XMLDelimitedItemList */
@@ -36,15 +36,15 @@ asn_TYPE_descriptor_t asn_DEF_ServedCells_NR = {
 	"ServedCells-NR",
 	"ServedCells-NR",
 	&asn_OP_SEQUENCE_OF,
-	asn_DEF_ASN_XNAP_ServedCells_NR_tags_1,
-	sizeof(asn_DEF_ASN_XNAP_ServedCells_NR_tags_1)
-		/sizeof(asn_DEF_ASN_XNAP_ServedCells_NR_tags_1[0]), /* 1 */
-	asn_DEF_ASN_XNAP_ServedCells_NR_tags_1,	/* Same as above */
-	sizeof(asn_DEF_ASN_XNAP_ServedCells_NR_tags_1)
-		/sizeof(asn_DEF_ASN_XNAP_ServedCells_NR_tags_1[0]), /* 1 */
-	{ 0, &asn_PER_type_ASN_XNAP_ServedCells_NR_constr_1, SEQUENCE_OF_constraint },
-	asn_MBR_ASN_XNAP_ServedCells_NR_1,
+	asn_DEF_ServedCells_NR_tags_1,
+	sizeof(asn_DEF_ServedCells_NR_tags_1)
+		/sizeof(asn_DEF_ServedCells_NR_tags_1[0]), /* 1 */
+	asn_DEF_ServedCells_NR_tags_1,	/* Same as above */
+	sizeof(asn_DEF_ServedCells_NR_tags_1)
+		/sizeof(asn_DEF_ServedCells_NR_tags_1[0]), /* 1 */
+	{ 0, &asn_PER_type_ServedCells_NR_constr_1, SEQUENCE_OF_constraint },
+	asn_MBR_ServedCells_NR_1,
 	1,	/* Single element */
-	&asn_SPC_ASN_XNAP_ServedCells_NR_specs_1	/* Additional specs */
+	&asn_SPC_ServedCells_NR_specs_1	/* Additional specs */
 };
 

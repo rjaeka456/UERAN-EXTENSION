@@ -20,13 +20,13 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* COUNT-PDCP-SN12 */
-typedef struct COUNT_PDCP_SN12 {
+typedef struct ASN_XNAP_COUNT_PDCP_SN12 {
 	long	 pdcp_SN12;
 	long	 hfn_PDCP_SN12;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -34,7 +34,7 @@ typedef struct COUNT_PDCP_SN12 {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} COUNT_PDCP_SN12_t;
+} ASN_XNAP_COUNT_PDCP_SN12_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_COUNT_PDCP_SN12;

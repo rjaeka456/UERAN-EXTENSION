@@ -22,8 +22,8 @@ extern "C" {
 typedef long	 ASN_XNAP_NRFrequencyBand_t;
 
 /* Implementation */
-extern asn_per_constraints_t asn_PER_type_ASN_XNAP_NRFrequencyBand_constr_1;
-extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_NRFrequencyBand;
+extern asn_per_constraints_t asn_PER_type_NRFrequencyBand_constr_1;
+extern asn_TYPE_descriptor_t asn_DEF_NRFrequencyBand;
 asn_struct_free_f NRFrequencyBand_free;
 asn_struct_print_f NRFrequencyBand_print;
 asn_constr_check_f NRFrequencyBand_constraint;

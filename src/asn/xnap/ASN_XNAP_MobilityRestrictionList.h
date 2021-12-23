@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PLMN-Identity.h"
+#include "ASN_XNAP_PLMN-Identity.h"
 #include <asn_SEQUENCE_OF.h>
 #include <constr_SEQUENCE_OF.h>
 #include <constr_SEQUENCE.h>
@@ -22,24 +22,24 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct RAT_RestrictionsList;
-struct ForbiddenAreaList;
-struct ServiceAreaList;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_RAT_RestrictionsList;
+struct ASN_XNAP_ForbiddenAreaList;
+struct ASN_XNAP_ServiceAreaList;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* MobilityRestrictionList */
-typedef struct MobilityRestrictionList {
-	PLMN_Identity_t	 serving_PLMN;
-	struct MobilityRestrictionList__equivalent_PLMNs {
-		A_SEQUENCE_OF(PLMN_Identity_t) list;
+typedef struct ASN_XNAP_MobilityRestrictionList {
+    ASN_XNAP_PLMN_Identity_t	 serving_PLMN;
+	struct ASN_XNAP_MobilityRestrictionList__equivalent_PLMNs {
+		A_SEQUENCE_OF(ASN_XNAP_PLMN_Identity_t) list;
 		
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
 	} *equivalent_PLMNs;
-	struct RAT_RestrictionsList	*rat_Restrictions	/* OPTIONAL */;
-	struct ForbiddenAreaList	*forbiddenAreaInformation	/* OPTIONAL */;
-	struct ServiceAreaList	*serviceAreaInformation	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+	struct ASN_XNAP_RAT_RestrictionsList	*rat_Restrictions	/* OPTIONAL */;
+	struct ASN_XNAP_ForbiddenAreaList	*forbiddenAreaInformation	/* OPTIONAL */;
+	struct ASN_XNAP_ServiceAreaList	*serviceAreaInformation	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -47,7 +47,7 @@ typedef struct MobilityRestrictionList {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} MobilityRestrictionList_t;
+} ASN_XNAP_MobilityRestrictionList_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_MobilityRestrictionList;

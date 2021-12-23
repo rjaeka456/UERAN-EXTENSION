@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "PDUSessionResourceAdmittedInfo.h"
+#include "ASN_XNAP_PDUSessionResourceAdmittedInfo.h"
 
-#include "QoSFlows-List-withCause.h"
-#include "DataForwardingInfoFromTargetNGRANnode.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_QoSFlows-List-withCause.h"
+#include "ASN_XNAP_DataForwardingInfoFromTargetNGRANnode.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 /*
  * This type is implemented using NativeEnumerated,
  * so here we adjust the DEF accordingly.
@@ -57,7 +57,7 @@ asn_TYPE_descriptor_t asn_DEF_dL_NG_U_TNL_Information_Unchanged_2 = {
 };
 
 asn_TYPE_member_t asn_MBR_PDUSessionResourceAdmittedInfo_1[] = {
-	{ ATF_POINTER, 1, offsetof(struct PDUSessionResourceAdmittedInfo, dL_NG_U_TNL_Information_Unchanged),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_PDUSessionResourceAdmittedInfo, dL_NG_U_TNL_Information_Unchanged),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_dL_NG_U_TNL_Information_Unchanged_2,
@@ -66,7 +66,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceAdmittedInfo_1[] = {
 		0, 0, /* No default value */
 		"dL-NG-U-TNL-Information-Unchanged"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct PDUSessionResourceAdmittedInfo, qosFlowsAdmitted_List),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_PDUSessionResourceAdmittedInfo, qosFlowsAdmitted_List),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_QoSFlowsAdmitted_List,
@@ -75,7 +75,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceAdmittedInfo_1[] = {
 		0, 0, /* No default value */
 		"qosFlowsAdmitted-List"
 		},
-	{ ATF_POINTER, 3, offsetof(struct PDUSessionResourceAdmittedInfo, qosFlowsNotAdmitted_List),
+	{ ATF_POINTER, 3, offsetof(struct ASN_XNAP_PDUSessionResourceAdmittedInfo, qosFlowsNotAdmitted_List),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_QoSFlows_List_withCause,
@@ -84,7 +84,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceAdmittedInfo_1[] = {
 		0, 0, /* No default value */
 		"qosFlowsNotAdmitted-List"
 		},
-	{ ATF_POINTER, 2, offsetof(struct PDUSessionResourceAdmittedInfo, dataForwardingInfoFromTarget),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_PDUSessionResourceAdmittedInfo, dataForwardingInfoFromTarget),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_DataForwardingInfoFromTargetNGRANnode,
@@ -93,7 +93,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceAdmittedInfo_1[] = {
 		0, 0, /* No default value */
 		"dataForwardingInfoFromTarget"
 		},
-	{ ATF_POINTER, 1, offsetof(struct PDUSessionResourceAdmittedInfo, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_PDUSessionResourceAdmittedInfo, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -115,8 +115,8 @@ static const asn_TYPE_tag2member_t asn_MAP_PDUSessionResourceAdmittedInfo_tag2el
     { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_PDUSessionResourceAdmittedInfo_specs_1 = {
-	sizeof(struct PDUSessionResourceAdmittedInfo),
-	offsetof(struct PDUSessionResourceAdmittedInfo, _asn_ctx),
+	sizeof(struct ASN_XNAP_PDUSessionResourceAdmittedInfo),
+	offsetof(struct ASN_XNAP_PDUSessionResourceAdmittedInfo, _asn_ctx),
 	asn_MAP_PDUSessionResourceAdmittedInfo_tag2el_1,
 	5,	/* Count of tags in the map */
 	asn_MAP_PDUSessionResourceAdmittedInfo_oms_1,	/* Optional members */

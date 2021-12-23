@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "PDUSession-List-withDataForwardingFromTarget.h"
+#include "ASN_XNAP_PDUSession-List-withDataForwardingFromTarget.h"
 
-#include "PDUSession-List-withDataForwardingFromTarget-Item.h"
+#include "ASN_XNAP_PDUSession-List-withDataForwardingFromTarget-Item.h"
 asn_per_constraints_t asn_PER_type_PDUSession_List_withDataForwardingFromTarget_constr_1 CC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	{ APC_CONSTRAINED,	 8,  8,  1,  256 }	/* (SIZE(1..256)) */,
@@ -28,8 +28,8 @@ static const ber_tlv_tag_t asn_DEF_PDUSession_List_withDataForwardingFromTarget_
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 asn_SET_OF_specifics_t asn_SPC_PDUSession_List_withDataForwardingFromTarget_specs_1 = {
-	sizeof(struct PDUSession_List_withDataForwardingFromTarget),
-	offsetof(struct PDUSession_List_withDataForwardingFromTarget, _asn_ctx),
+	sizeof(struct ASN_XNAP_PDUSession_List_withDataForwardingFromTarget),
+	offsetof(struct ASN_XNAP_PDUSession_List_withDataForwardingFromTarget, _asn_ctx),
 	0,	/* XER encoding is XMLDelimitedItemList */
 };
 asn_TYPE_descriptor_t asn_DEF_PDUSession_List_withDataForwardingFromTarget = {

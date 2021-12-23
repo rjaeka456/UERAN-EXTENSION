@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "MR-DC-ResourceCoordinationInfo.h"
+#include "ASN_XNAP_MR-DC-ResourceCoordinationInfo.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 static asn_TYPE_member_t asn_MBR_MR_DC_ResourceCoordinationInfo_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct MR_DC_ResourceCoordinationInfo, ng_RAN_Node_ResourceCoordinationInfo),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_MR_DC_ResourceCoordinationInfo, ng_RAN_Node_ResourceCoordinationInfo),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_NG_RAN_Node_ResourceCoordinationInfo,
@@ -18,7 +18,7 @@ static asn_TYPE_member_t asn_MBR_MR_DC_ResourceCoordinationInfo_1[] = {
 		0, 0, /* No default value */
 		"ng-RAN-Node-ResourceCoordinationInfo"
 		},
-	{ ATF_POINTER, 1, offsetof(struct MR_DC_ResourceCoordinationInfo, iE_Extension),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_MR_DC_ResourceCoordinationInfo, iE_Extension),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -37,8 +37,8 @@ static const asn_TYPE_tag2member_t asn_MAP_MR_DC_ResourceCoordinationInfo_tag2el
     { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* iE-Extension */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_MR_DC_ResourceCoordinationInfo_specs_1 = {
-	sizeof(struct MR_DC_ResourceCoordinationInfo),
-	offsetof(struct MR_DC_ResourceCoordinationInfo, _asn_ctx),
+	sizeof(struct ASN_XNAP_MR_DC_ResourceCoordinationInfo),
+	offsetof(struct ASN_XNAP_MR_DC_ResourceCoordinationInfo, _asn_ctx),
 	asn_MAP_MR_DC_ResourceCoordinationInfo_tag2el_1,
 	2,	/* Count of tags in the map */
 	asn_MAP_MR_DC_ResourceCoordinationInfo_oms_1,	/* Optional members */

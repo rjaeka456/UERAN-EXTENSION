@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "SUL-Information.h"
+#include "ASN_XNAP_SUL-Information.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_SUL_Information_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct SUL_Information, sulFrequencyInfo),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_SUL_Information, sulFrequencyInfo),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NRARFCN,
@@ -18,7 +18,7 @@ asn_TYPE_member_t asn_MBR_SUL_Information_1[] = {
 		0, 0, /* No default value */
 		"sulFrequencyInfo"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct SUL_Information, sulTransmissionBandwidth),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_SUL_Information, sulTransmissionBandwidth),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NRTransmissionBandwidth,
@@ -27,7 +27,7 @@ asn_TYPE_member_t asn_MBR_SUL_Information_1[] = {
 		0, 0, /* No default value */
 		"sulTransmissionBandwidth"
 		},
-	{ ATF_POINTER, 1, offsetof(struct SUL_Information, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_SUL_Information, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -47,8 +47,8 @@ static const asn_TYPE_tag2member_t asn_MAP_SUL_Information_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_SUL_Information_specs_1 = {
-	sizeof(struct SUL_Information),
-	offsetof(struct SUL_Information, _asn_ctx),
+	sizeof(struct ASN_XNAP_SUL_Information),
+	offsetof(struct ASN_XNAP_SUL_Information, _asn_ctx),
 	asn_MAP_SUL_Information_tag2el_1,
 	3,	/* Count of tags in the map */
 	asn_MAP_SUL_Information_oms_1,	/* Optional members */

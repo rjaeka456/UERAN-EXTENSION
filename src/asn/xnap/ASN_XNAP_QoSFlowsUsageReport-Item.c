@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "QoSFlowsUsageReport-Item.h"
+#include "ASN_XNAP_QoSFlowsUsageReport-Item.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 /*
  * This type is implemented using NativeEnumerated,
  * so here we adjust the DEF accordingly.
@@ -57,7 +57,7 @@ asn_TYPE_descriptor_t asn_DEF_rATType_3 = {
 };
 
 asn_TYPE_member_t asn_MBR_QoSFlowsUsageReport_Item_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct QoSFlowsUsageReport_Item, qosFlowIdentifier),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_QoSFlowsUsageReport_Item, qosFlowIdentifier),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_QoSFlowIdentifier,
@@ -66,7 +66,7 @@ asn_TYPE_member_t asn_MBR_QoSFlowsUsageReport_Item_1[] = {
 		0, 0, /* No default value */
 		"qosFlowIdentifier"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct QoSFlowsUsageReport_Item, rATType),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_QoSFlowsUsageReport_Item, rATType),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_rATType_3,
@@ -75,7 +75,7 @@ asn_TYPE_member_t asn_MBR_QoSFlowsUsageReport_Item_1[] = {
 		0, 0, /* No default value */
 		"rATType"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct QoSFlowsUsageReport_Item, qoSFlowsTimedReportList),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_QoSFlowsUsageReport_Item, qoSFlowsTimedReportList),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_VolumeTimedReportList,
@@ -84,7 +84,7 @@ asn_TYPE_member_t asn_MBR_QoSFlowsUsageReport_Item_1[] = {
 		0, 0, /* No default value */
 		"qoSFlowsTimedReportList"
 		},
-	{ ATF_POINTER, 1, offsetof(struct QoSFlowsUsageReport_Item, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_QoSFlowsUsageReport_Item, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -105,8 +105,8 @@ static const asn_TYPE_tag2member_t asn_MAP_QoSFlowsUsageReport_Item_tag2el_1[] =
     { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_QoSFlowsUsageReport_Item_specs_1 = {
-	sizeof(struct QoSFlowsUsageReport_Item),
-	offsetof(struct QoSFlowsUsageReport_Item, _asn_ctx),
+	sizeof(struct ASN_XNAP_QoSFlowsUsageReport_Item),
+	offsetof(struct ASN_XNAP_QoSFlowsUsageReport_Item, _asn_ctx),
 	asn_MAP_QoSFlowsUsageReport_Item_tag2el_1,
 	4,	/* Count of tags in the map */
 	asn_MAP_QoSFlowsUsageReport_Item_oms_1,	/* Optional members */

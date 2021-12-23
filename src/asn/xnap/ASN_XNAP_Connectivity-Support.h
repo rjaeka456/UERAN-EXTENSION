@@ -20,21 +20,21 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum Connectivity_Support__eNDC_Support {
-	Connectivity_Support__eNDC_Support_supported	= 0,
-	Connectivity_Support__eNDC_Support_not_supported	= 1
+typedef enum ASN_XNAP_Connectivity_Support__eNDC_Support {
+    ASN_XNAP_Connectivity_Support__eNDC_Support_supported	= 0,
+    ASN_XNAP_Connectivity_Support__eNDC_Support_not_supported	= 1
 	/*
 	 * Enumeration is extensible
 	 */
-} e_Connectivity_Support__eNDC_Support;
+} e_ASN_XNAP_Connectivity_Support__eNDC_Support;
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* Connectivity-Support */
-typedef struct Connectivity_Support {
+typedef struct ASN_XNAP_Connectivity_Support {
 	long	 eNDC_Support;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -42,7 +42,7 @@ typedef struct Connectivity_Support {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} Connectivity_Support_t;
+} ASN_XNAP_Connectivity_Support_t;
 
 /* Implementation */
 /* extern asn_TYPE_descriptor_t asn_DEF_eNDC_Support_2;	// (Use -fall-defs-global to expose) */

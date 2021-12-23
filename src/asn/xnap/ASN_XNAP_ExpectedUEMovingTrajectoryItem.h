@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "GlobalNG-RANCell-ID.h"
+#include "ASN_XNAP_GlobalNG-RANCell-ID.h"
 #include <NativeInteger.h>
 #include <constr_SEQUENCE.h>
 
@@ -21,13 +21,13 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* ExpectedUEMovingTrajectoryItem */
-typedef struct ExpectedUEMovingTrajectoryItem {
-	GlobalNG_RANCell_ID_t	 nGRAN_CGI;
+typedef struct ASN_XNAP_ExpectedUEMovingTrajectoryItem {
+    ASN_XNAP_GlobalNG_RANCell_ID_t	 nGRAN_CGI;
 	long	*timeStayedInCell	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -35,7 +35,7 @@ typedef struct ExpectedUEMovingTrajectoryItem {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} ExpectedUEMovingTrajectoryItem_t;
+} ASN_XNAP_ExpectedUEMovingTrajectoryItem_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_ExpectedUEMovingTrajectoryItem;

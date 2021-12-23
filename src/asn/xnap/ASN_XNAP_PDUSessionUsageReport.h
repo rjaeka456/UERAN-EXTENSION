@@ -13,7 +13,7 @@
 
 /* Including external dependencies */
 #include <NativeEnumerated.h>
-#include "VolumeTimedReportList.h"
+#include "ASN_XNAP_VolumeTimedReportList.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -21,22 +21,22 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum PDUSessionUsageReport__rATType {
-	PDUSessionUsageReport__rATType_nr	= 0,
-	PDUSessionUsageReport__rATType_eutra	= 1
+typedef enum ASN_XNAP_PDUSessionUsageReport__rATType {
+    ASN_XNAP_PDUSessionUsageReport__rATType_nr	= 0,
+    ASN_XNAP_PDUSessionUsageReport__rATType_eutra	= 1
 	/*
 	 * Enumeration is extensible
 	 */
-} e_PDUSessionUsageReport__rATType;
+} e_ASN_XNAP_PDUSessionUsageReport__rATType;
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* PDUSessionUsageReport */
-typedef struct PDUSessionUsageReport {
+typedef struct ASN_XNAP_PDUSessionUsageReport {
 	long	 rATType;
-	VolumeTimedReportList_t	 pDUSessionTimedReportList;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+    ASN_XNAP_VolumeTimedReportList_t	 pDUSessionTimedReportList;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -44,7 +44,7 @@ typedef struct PDUSessionUsageReport {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} PDUSessionUsageReport_t;
+} ASN_XNAP_PDUSessionUsageReport_t;
 
 /* Implementation */
 /* extern asn_TYPE_descriptor_t asn_DEF_rATType_2;	// (Use -fall-defs-global to expose) */

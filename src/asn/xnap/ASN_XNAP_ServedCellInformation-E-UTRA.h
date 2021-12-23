@@ -83,9 +83,9 @@ typedef struct ASN_XNAP_ServedCellInformation_E_UTRA {
 /* Implementation */
 /* extern asn_TYPE_descriptor_t asn_DEF_freqBandIndicatorPriority_13;	// (Use -fall-defs-global to expose) */
 /* extern asn_TYPE_descriptor_t asn_DEF_bandwidthReducedSI_17;	// (Use -fall-defs-global to expose) */
-extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_ServedCellInformation_E_UTRA;
-extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_ServedCellInformation_E_UTRA_specs_1;
-extern asn_TYPE_member_t asn_MBR_ASN_XNAP_ServedCellInformation_E_UTRA_1[14];
+extern asn_TYPE_descriptor_t asn_DEF_ServedCellInformation_E_UTRA;
+extern asn_SEQUENCE_specifics_t asn_SPC_ServedCellInformation_E_UTRA_specs_1;
+extern asn_TYPE_member_t asn_MBR_ServedCellInformation_E_UTRA_1[14];
 
 #ifdef __cplusplus
 }

@@ -23,32 +23,32 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum Cause_PR {
-	Cause_PR_NOTHING,	/* No components present */
-	Cause_PR_radioNetwork,
-	Cause_PR_transport,
-	Cause_PR_protocol,
-	Cause_PR_misc,
-	Cause_PR_choice_extension
-} Cause_PR;
+typedef enum ASN_XNAP_Cause_PR {
+    ASN_XNAP_Cause_PR_NOTHING,	/* No components present */
+    ASN_XNAP_Cause_PR_radioNetwork,
+    ASN_XNAP_Cause_PR_transport,
+    ASN_XNAP_Cause_PR_protocol,
+    ASN_XNAP_Cause_PR_misc,
+    ASN_XNAP_Cause_PR_choice_extension
+} ASN_XNAP_Cause_PR;
 
 /* Forward declarations */
-struct ProtocolIE_Single_Container;
+struct ASN_XNAP_ProtocolIE_Single_Container;
 
 /* Cause */
-typedef struct Cause {
-	Cause_PR present;
-	union Cause_u {
-		CauseRadioNetworkLayer_t	 radioNetwork;
-		CauseTransportLayer_t	 transport;
-		CauseProtocol_t	 protocol;
-		CauseMisc_t	 misc;
-		struct ProtocolIE_Single_Container	*choice_extension;
+typedef struct ASN_XNAP_Cause {
+    ASN_XNAP_Cause_PR present;
+	union ASN_XNAP_Cause_u {
+        ASN_XNAP_CauseRadioNetworkLayer_t	 radioNetwork;
+        ASN_XNAP_CauseTransportLayer_t	 transport;
+        ASN_XNAP_CauseProtocol_t	 protocol;
+        ASN_XNAP_CauseMisc_t	 misc;
+		struct ASN_XNAP_ProtocolIE_Single_Container	*choice_extension;
 	} choice;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} Cause_t;
+} ASN_XNAP_Cause_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_Cause;

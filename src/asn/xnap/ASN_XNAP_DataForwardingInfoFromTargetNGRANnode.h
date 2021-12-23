@@ -20,17 +20,17 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct UPTransportLayerInformation;
-struct DataForwardingResponseDRBItemList;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_UPTransportLayerInformation;
+struct ASN_XNAP_DataForwardingResponseDRBItemList;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* DataForwardingInfoFromTargetNGRANnode */
-typedef struct DataForwardingInfoFromTargetNGRANnode {
-	QoSFLowsAcceptedToBeForwarded_List_t	 qosFlowsAcceptedForDataForwarding_List;
-	struct UPTransportLayerInformation	*pduSessionLevelDLDataForwardingInfo	/* OPTIONAL */;
-	struct UPTransportLayerInformation	*pduSessionLevelULDataForwardingInfo	/* OPTIONAL */;
-	struct DataForwardingResponseDRBItemList	*dataForwardingResponseDRBItemList	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+typedef struct ASN_XNAP_DataForwardingInfoFromTargetNGRANnode {
+    ASN_XNAP_QoSFLowsAcceptedToBeForwarded_List_t	 qosFlowsAcceptedForDataForwarding_List;
+	struct ASN_XNAP_UPTransportLayerInformation	*pduSessionLevelDLDataForwardingInfo	/* OPTIONAL */;
+	struct ASN_XNAP_UPTransportLayerInformation	*pduSessionLevelULDataForwardingInfo	/* OPTIONAL */;
+	struct ASN_XNAP_DataForwardingResponseDRBItemList	*dataForwardingResponseDRBItemList	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -38,7 +38,7 @@ typedef struct DataForwardingInfoFromTargetNGRANnode {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} DataForwardingInfoFromTargetNGRANnode_t;
+} ASN_XNAP_DataForwardingInfoFromTargetNGRANnode_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_DataForwardingInfoFromTargetNGRANnode;

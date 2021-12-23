@@ -8,7 +8,7 @@
 #include "ASN_XNAP_E-UTRA-NR-CellResourceCoordinationRequest.h"
 
 asn_TYPE_member_t asn_MBR_E_UTRA_NR_CellResourceCoordinationRequest_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct E_UTRA_NR_CellResourceCoordinationRequest, protocolIEs),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_E_UTRA_NR_CellResourceCoordinationRequest, protocolIEs),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolIE_Container_5952P0,
@@ -25,8 +25,8 @@ static const asn_TYPE_tag2member_t asn_MAP_E_UTRA_NR_CellResourceCoordinationReq
     { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* protocolIEs */
 };
 asn_SEQUENCE_specifics_t asn_SPC_E_UTRA_NR_CellResourceCoordinationRequest_specs_1 = {
-	sizeof(struct E_UTRA_NR_CellResourceCoordinationRequest),
-	offsetof(struct E_UTRA_NR_CellResourceCoordinationRequest, _asn_ctx),
+	sizeof(struct ASN_XNAP_E_UTRA_NR_CellResourceCoordinationRequest),
+	offsetof(struct ASN_XNAP_E_UTRA_NR_CellResourceCoordinationRequest, _asn_ctx),
 	asn_MAP_E_UTRA_NR_CellResourceCoordinationRequest_tag2el_1,
 	1,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */

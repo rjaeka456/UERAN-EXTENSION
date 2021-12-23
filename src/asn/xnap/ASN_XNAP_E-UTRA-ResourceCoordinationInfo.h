@@ -12,9 +12,9 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "E-UTRA-CGI.h"
+#include "ASN_XNAP_E-UTRA-CGI.h"
 #include <BIT_STRING.h>
-#include "E-UTRA-CoordinationAssistanceInfo.h"
+#include "ASN_XNAP_E-UTRA-CoordinationAssistanceInfo.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -22,17 +22,17 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct NR_CGI;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_NR_CGI;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* E-UTRA-ResourceCoordinationInfo */
-typedef struct E_UTRA_ResourceCoordinationInfo {
-	E_UTRA_CGI_t	 e_utra_cell;
+typedef struct ASN_XNAP_E_UTRA_ResourceCoordinationInfo {
+    ASN_XNAP_E_UTRA_CGI_t	 e_utra_cell;
 	BIT_STRING_t	 ul_coordination_info;
 	BIT_STRING_t	*dl_coordination_info	/* OPTIONAL */;
-	struct NR_CGI	*nr_cell	/* OPTIONAL */;
-	E_UTRA_CoordinationAssistanceInfo_t	*e_utra_coordination_assistance_info	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+	struct ASN_XNAP_NR_CGI	*nr_cell	/* OPTIONAL */;
+    ASN_XNAP_E_UTRA_CoordinationAssistanceInfo_t	*e_utra_coordination_assistance_info	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -40,7 +40,7 @@ typedef struct E_UTRA_ResourceCoordinationInfo {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} E_UTRA_ResourceCoordinationInfo_t;
+} ASN_XNAP_E_UTRA_ResourceCoordinationInfo_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_E_UTRA_ResourceCoordinationInfo;

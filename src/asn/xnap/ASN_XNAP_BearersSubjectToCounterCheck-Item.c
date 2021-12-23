@@ -151,7 +151,7 @@ asn_TYPE_descriptor_t asn_DEF_dl_count_4 = {
 };
 
 asn_TYPE_member_t asn_MBR_BearersSubjectToCounterCheck_Item_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct BearersSubjectToCounterCheck_Item, drb_ID),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_BearersSubjectToCounterCheck_Item, drb_ID),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_DRB_ID,
@@ -160,7 +160,7 @@ asn_TYPE_member_t asn_MBR_BearersSubjectToCounterCheck_Item_1[] = {
 		0, 0, /* No default value */
 		"drb-ID"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct BearersSubjectToCounterCheck_Item, ul_count),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_BearersSubjectToCounterCheck_Item, ul_count),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ul_count_3,
@@ -169,7 +169,7 @@ asn_TYPE_member_t asn_MBR_BearersSubjectToCounterCheck_Item_1[] = {
 		0, 0, /* No default value */
 		"ul-count"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct BearersSubjectToCounterCheck_Item, dl_count),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_BearersSubjectToCounterCheck_Item, dl_count),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_dl_count_4,
@@ -178,7 +178,7 @@ asn_TYPE_member_t asn_MBR_BearersSubjectToCounterCheck_Item_1[] = {
 		0, 0, /* No default value */
 		"dl-count"
 		},
-	{ ATF_POINTER, 1, offsetof(struct BearersSubjectToCounterCheck_Item, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_BearersSubjectToCounterCheck_Item, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -199,8 +199,8 @@ static const asn_TYPE_tag2member_t asn_MAP_BearersSubjectToCounterCheck_Item_tag
     { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_BearersSubjectToCounterCheck_Item_specs_1 = {
-	sizeof(struct BearersSubjectToCounterCheck_Item),
-	offsetof(struct BearersSubjectToCounterCheck_Item, _asn_ctx),
+	sizeof(struct ASN_XNAP_BearersSubjectToCounterCheck_Item),
+	offsetof(struct ASN_XNAP_BearersSubjectToCounterCheck_Item, _asn_ctx),
 	asn_MAP_BearersSubjectToCounterCheck_Item_tag2el_1,
 	4,	/* Count of tags in the map */
 	asn_MAP_BearersSubjectToCounterCheck_Item_oms_1,	/* Optional members */

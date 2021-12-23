@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "ResetResponseTypeInfo-Full.h"
+#include "ASN_XNAP_ResetResponseTypeInfo-Full.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_ResetResponseTypeInfo_Full_1[] = {
-	{ ATF_POINTER, 1, offsetof(struct ResetResponseTypeInfo_Full, iE_Extension),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_ResetResponseTypeInfo_Full, iE_Extension),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -27,8 +27,8 @@ static const asn_TYPE_tag2member_t asn_MAP_ResetResponseTypeInfo_Full_tag2el_1[]
     { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* iE-Extension */
 };
 asn_SEQUENCE_specifics_t asn_SPC_ResetResponseTypeInfo_Full_specs_1 = {
-	sizeof(struct ResetResponseTypeInfo_Full),
-	offsetof(struct ResetResponseTypeInfo_Full, _asn_ctx),
+	sizeof(struct ASN_XNAP_ResetResponseTypeInfo_Full),
+	offsetof(struct ASN_XNAP_ResetResponseTypeInfo_Full, _asn_ctx),
 	asn_MAP_ResetResponseTypeInfo_Full_tag2el_1,
 	1,	/* Count of tags in the map */
 	asn_MAP_ResetResponseTypeInfo_Full_oms_1,	/* Optional members */

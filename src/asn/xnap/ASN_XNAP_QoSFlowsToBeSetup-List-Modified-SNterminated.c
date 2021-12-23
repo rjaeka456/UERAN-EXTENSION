@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "QoSFlowsToBeSetup-List-Modified-SNterminated.h"
+#include "ASN_XNAP_QoSFlowsToBeSetup-List-Modified-SNterminated.h"
 
-#include "QoSFlowsToBeSetup-List-Modified-SNterminated-Item.h"
+#include "ASN_XNAP_QoSFlowsToBeSetup-List-Modified-SNterminated-Item.h"
 asn_per_constraints_t asn_PER_type_QoSFlowsToBeSetup_List_Modified_SNterminated_constr_1 CC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	{ APC_CONSTRAINED,	 6,  6,  1,  64 }	/* (SIZE(1..64)) */,

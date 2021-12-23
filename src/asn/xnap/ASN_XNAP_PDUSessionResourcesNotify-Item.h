@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PDUSession-ID.h"
-#include "QoSFlowNotificationControlIndicationInfo.h"
+#include "ASN_XNAP_PDUSession-ID.h"
+#include "ASN_XNAP_QoSFlowNotificationControlIndicationInfo.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -21,13 +21,13 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* PDUSessionResourcesNotify-Item */
-typedef struct PDUSessionResourcesNotify_Item {
-	PDUSession_ID_t	 pduSessionId;
-	QoSFlowNotificationControlIndicationInfo_t	 qosFlowsNotificationContrIndInfo;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_PDUSessionResourcesNotify_Item {
+    ASN_XNAP_PDUSession_ID_t	 pduSessionId;
+    ASN_XNAP_QoSFlowNotificationControlIndicationInfo_t	 qosFlowsNotificationContrIndInfo;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -35,7 +35,7 @@ typedef struct PDUSessionResourcesNotify_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} PDUSessionResourcesNotify_Item_t;
+} ASN_XNAP_PDUSessionResourcesNotify_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_PDUSessionResourcesNotify_Item;

@@ -5,12 +5,12 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "RespondingNodeTypeConfigUpdateAck-gNB.h"
+#include "ASN_XNAP_RespondingNodeTypeConfigUpdateAck-gNB.h"
 
-#include "ServedCells-NR.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ServedCells-NR.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_RespondingNodeTypeConfigUpdateAck_gNB_1[] = {
-	{ ATF_POINTER, 2, offsetof(struct RespondingNodeTypeConfigUpdateAck_gNB, served_NR_Cells),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_RespondingNodeTypeConfigUpdateAck_gNB, served_NR_Cells),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ServedCells_NR,
@@ -19,7 +19,7 @@ asn_TYPE_member_t asn_MBR_RespondingNodeTypeConfigUpdateAck_gNB_1[] = {
 		0, 0, /* No default value */
 		"served-NR-Cells"
 		},
-	{ ATF_POINTER, 1, offsetof(struct RespondingNodeTypeConfigUpdateAck_gNB, iE_Extension),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_RespondingNodeTypeConfigUpdateAck_gNB, iE_Extension),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -38,8 +38,8 @@ static const asn_TYPE_tag2member_t asn_MAP_RespondingNodeTypeConfigUpdateAck_gNB
     { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* iE-Extension */
 };
 asn_SEQUENCE_specifics_t asn_SPC_RespondingNodeTypeConfigUpdateAck_gNB_specs_1 = {
-	sizeof(struct RespondingNodeTypeConfigUpdateAck_gNB),
-	offsetof(struct RespondingNodeTypeConfigUpdateAck_gNB, _asn_ctx),
+	sizeof(struct ASN_XNAP_RespondingNodeTypeConfigUpdateAck_gNB),
+	offsetof(struct ASN_XNAP_RespondingNodeTypeConfigUpdateAck_gNB, _asn_ctx),
 	asn_MAP_RespondingNodeTypeConfigUpdateAck_gNB_tag2el_1,
 	2,	/* Count of tags in the map */
 	asn_MAP_RespondingNodeTypeConfigUpdateAck_gNB_oms_1,	/* Optional members */

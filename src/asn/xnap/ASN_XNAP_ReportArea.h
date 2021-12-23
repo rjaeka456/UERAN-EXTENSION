@@ -19,15 +19,15 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum ReportArea {
-	ReportArea_cell	= 0
+typedef enum ASN_XNAP_ReportArea {
+    ASN_XNAP_ReportArea_cell	= 0
 	/*
 	 * Enumeration is extensible
 	 */
-} e_ReportArea;
+} e_ASN_XNAP_ReportArea;
 
 /* ReportArea */
-typedef long	 ReportArea_t;
+typedef long	 ASN_XNAP_ReportArea_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_ReportArea_constr_1;

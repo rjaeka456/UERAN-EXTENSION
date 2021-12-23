@@ -5,7 +5,7 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "S-NG-RANnode-SecurityKey.h"
+#include "ASN_XNAP_S-NG-RANnode-SecurityKey.h"
 
 int
 S_NG_RANnode_SecurityKey_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,

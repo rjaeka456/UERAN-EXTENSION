@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "PDUSessionAggregateMaximumBitRate.h"
+#include "ASN_XNAP_PDUSessionAggregateMaximumBitRate.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_PDUSessionAggregateMaximumBitRate_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct PDUSessionAggregateMaximumBitRate, downlink_session_AMBR),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_PDUSessionAggregateMaximumBitRate, downlink_session_AMBR),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_BitRate,
@@ -18,7 +18,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionAggregateMaximumBitRate_1[] = {
 		0, 0, /* No default value */
 		"downlink-session-AMBR"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct PDUSessionAggregateMaximumBitRate, uplink_session_AMBR),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_PDUSessionAggregateMaximumBitRate, uplink_session_AMBR),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_BitRate,
@@ -27,7 +27,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionAggregateMaximumBitRate_1[] = {
 		0, 0, /* No default value */
 		"uplink-session-AMBR"
 		},
-	{ ATF_POINTER, 1, offsetof(struct PDUSessionAggregateMaximumBitRate, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_PDUSessionAggregateMaximumBitRate, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -47,8 +47,8 @@ static const asn_TYPE_tag2member_t asn_MAP_PDUSessionAggregateMaximumBitRate_tag
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_PDUSessionAggregateMaximumBitRate_specs_1 = {
-	sizeof(struct PDUSessionAggregateMaximumBitRate),
-	offsetof(struct PDUSessionAggregateMaximumBitRate, _asn_ctx),
+	sizeof(struct ASN_XNAP_PDUSessionAggregateMaximumBitRate),
+	offsetof(struct ASN_XNAP_PDUSessionAggregateMaximumBitRate, _asn_ctx),
 	asn_MAP_PDUSessionAggregateMaximumBitRate_tag2el_1,
 	3,	/* Count of tags in the map */
 	asn_MAP_PDUSessionAggregateMaximumBitRate_oms_1,	/* Optional members */

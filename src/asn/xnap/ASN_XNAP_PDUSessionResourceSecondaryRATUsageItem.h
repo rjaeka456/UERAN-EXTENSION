@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PDUSession-ID.h"
-#include "SecondaryRATUsageInformation.h"
+#include "ASN_XNAP_PDUSession-ID.h"
+#include "ASN_XNAP_SecondaryRATUsageInformation.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -21,13 +21,13 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* PDUSessionResourceSecondaryRATUsageItem */
-typedef struct PDUSessionResourceSecondaryRATUsageItem {
-	PDUSession_ID_t	 pDUSessionID;
-	SecondaryRATUsageInformation_t	 secondaryRATUsageInformation;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_PDUSessionResourceSecondaryRATUsageItem {
+    ASN_XNAP_PDUSession_ID_t	 pDUSessionID;
+    ASN_XNAP_SecondaryRATUsageInformation_t	 secondaryRATUsageInformation;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -35,7 +35,7 @@ typedef struct PDUSessionResourceSecondaryRATUsageItem {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} PDUSessionResourceSecondaryRATUsageItem_t;
+} ASN_XNAP_PDUSessionResourceSecondaryRATUsageItem_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_PDUSessionResourceSecondaryRATUsageItem;

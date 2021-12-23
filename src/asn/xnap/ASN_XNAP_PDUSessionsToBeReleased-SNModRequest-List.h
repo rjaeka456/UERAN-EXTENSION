@@ -19,13 +19,13 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct PDUSession_List_withCause;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_PDUSession_List_withCause;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* PDUSessionsToBeReleased-SNModRequest-List */
-typedef struct PDUSessionsToBeReleased_SNModRequest_List {
-	struct PDUSession_List_withCause	*pdu_session_list	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+typedef struct ASN_XNAP_PDUSessionsToBeReleased_SNModRequest_List {
+	struct ASN_XNAP_PDUSession_List_withCause	*pdu_session_list	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -33,7 +33,7 @@ typedef struct PDUSessionsToBeReleased_SNModRequest_List {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} PDUSessionsToBeReleased_SNModRequest_List_t;
+} ASN_XNAP_PDUSessionsToBeReleased_SNModRequest_List_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_PDUSessionsToBeReleased_SNModRequest_List;

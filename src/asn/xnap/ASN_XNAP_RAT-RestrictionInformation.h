@@ -19,13 +19,13 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum RAT_RestrictionInformation {
-	RAT_RestrictionInformation_e_UTRA	= 0,
-	RAT_RestrictionInformation_nR	= 1
-} e_RAT_RestrictionInformation;
+typedef enum ASN_XNAP_RAT_RestrictionInformation {
+    ASN_XNAP_RAT_RestrictionInformation_e_UTRA	= 0,
+    ASN_XNAP_RAT_RestrictionInformation_nR	= 1
+} e_ASN_XNAP_RAT_RestrictionInformation;
 
 /* RAT-RestrictionInformation */
-typedef BIT_STRING_t	 RAT_RestrictionInformation_t;
+typedef BIT_STRING_t	 ASN_XNAP_RAT_RestrictionInformation_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_RAT_RestrictionInformation_constr_1;

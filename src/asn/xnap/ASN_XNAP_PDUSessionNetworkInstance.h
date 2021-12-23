@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* PDUSessionNetworkInstance */
-typedef long	 PDUSessionNetworkInstance_t;
+typedef long	 ASN_XNAP_PDUSessionNetworkInstance_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_PDUSessionNetworkInstance_constr_1;

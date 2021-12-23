@@ -12,13 +12,13 @@ asn_TYPE_member_t asn_MBR_ASN_XNAP_GlobalngeNB_ID_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_GlobalngeNB_ID, plmn_id),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ASN_XNAP_PLMN_Identity,
+		&asn_DEF_PLMN_Identity,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
 		"plmn-id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct GlobalngeNB_ID, enb_id),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_GlobalngeNB_ID, enb_id),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_ENB_ID_Choice,
@@ -27,7 +27,7 @@ asn_TYPE_member_t asn_MBR_ASN_XNAP_GlobalngeNB_ID_1[] = {
 		0, 0, /* No default value */
 		"enb-id"
 		},
-	{ ATF_POINTER, 1, offsetof(struct GlobalngeNB_ID, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_GlobalngeNB_ID, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -47,8 +47,8 @@ static const asn_TYPE_tag2member_t asn_MAP_GlobalngeNB_ID_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_GlobalngeNB_ID_specs_1 = {
-	sizeof(struct GlobalngeNB_ID),
-	offsetof(struct GlobalngeNB_ID, _asn_ctx),
+	sizeof(struct ASN_XNAP_GlobalngeNB_ID),
+	offsetof(struct ASN_XNAP_GlobalngeNB_ID, _asn_ctx),
 	asn_MAP_GlobalngeNB_ID_tag2el_1,
 	3,	/* Count of tags in the map */
 	asn_MAP_GlobalngeNB_ID_oms_1,	/* Optional members */

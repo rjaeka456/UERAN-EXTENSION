@@ -70,7 +70,7 @@ asn_TYPE_member_t asn_MBR_ServedCellInformation_E_UTRA_TDDInfo_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo, earfcn),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ASN_XNAP_E_UTRAARFCN,
+		&asn_DEF_E_UTRAARFCN,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
@@ -106,7 +106,7 @@ asn_TYPE_member_t asn_MBR_ServedCellInformation_E_UTRA_TDDInfo_1[] = {
 	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_ServedCellInformation_E_UTRA_TDDInfo, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ASN_XNAP_ProtocolExtensionContainer_6001P0,
+		&asn_DEF_ProtocolExtensionContainer_6001P0,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */

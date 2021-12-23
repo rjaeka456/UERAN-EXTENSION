@@ -26,27 +26,27 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum Dynamic5QIDescriptor__delayCritical {
-	Dynamic5QIDescriptor__delayCritical_delay_critical	= 0,
-	Dynamic5QIDescriptor__delayCritical_non_delay_critical	= 1
+typedef enum ASN_XNAP_Dynamic5QIDescriptor__delayCritical {
+    ASN_XNAP_Dynamic5QIDescriptor__delayCritical_delay_critical	= 0,
+    ASN_XNAP_Dynamic5QIDescriptor__delayCritical_non_delay_critical	= 1
 	/*
 	 * Enumeration is extensible
 	 */
-} e_Dynamic5QIDescriptor__delayCritical;
+} e_ASN_XNAP_Dynamic5QIDescriptor__delayCritical;
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* Dynamic5QIDescriptor */
-typedef struct Dynamic5QIDescriptor {
-	PriorityLevelQoS_t	 priorityLevelQoS;
-	PacketDelayBudget_t	 packetDelayBudget;
-	PacketErrorRate_t	 packetErrorRate;
-	FiveQI_t	*fiveQI	/* OPTIONAL */;
+typedef struct ASN_XNAP_Dynamic5QIDescriptor {
+    ASN_XNAP_PriorityLevelQoS_t	 priorityLevelQoS;
+    ASN_XNAP_PacketDelayBudget_t	 packetDelayBudget;
+    ASN_XNAP_PacketErrorRate_t	 packetErrorRate;
+    ASN_XNAP_FiveQI_t	*fiveQI	/* OPTIONAL */;
 	long	*delayCritical	/* OPTIONAL */;
-	AveragingWindow_t	*averagingWindow	/* OPTIONAL */;
-	MaximumDataBurstVolume_t	*maximumDataBurstVolume	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+    ASN_XNAP_AveragingWindow_t	*averagingWindow	/* OPTIONAL */;
+    ASN_XNAP_MaximumDataBurstVolume_t	*maximumDataBurstVolume	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -54,7 +54,7 @@ typedef struct Dynamic5QIDescriptor {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} Dynamic5QIDescriptor_t;
+} ASN_XNAP_Dynamic5QIDescriptor_t;
 
 /* Implementation */
 /* extern asn_TYPE_descriptor_t asn_DEF_delayCritical_6;	// (Use -fall-defs-global to expose) */

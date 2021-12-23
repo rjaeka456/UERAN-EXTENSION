@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PLMN-Identity.h"
-#include "TAC.h"
+#include "ASN_XNAP_PLMN-Identity.h"
+#include "ASN_XNAP_TAC.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -21,13 +21,13 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* TAIsinAoI-Item */
-typedef struct TAIsinAoI_Item {
-	PLMN_Identity_t	 pLMN_Identity;
-	TAC_t	 tAC;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_TAIsinAoI_Item {
+    ASN_XNAP_PLMN_Identity_t	 pLMN_Identity;
+    ASN_XNAP_TAC_t	 tAC;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -35,7 +35,7 @@ typedef struct TAIsinAoI_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} TAIsinAoI_Item_t;
+} ASN_XNAP_TAIsinAoI_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_TAIsinAoI_Item;

@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PDUSession-ID.h"
+#include "ASN_XNAP_PDUSession-ID.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,16 +20,16 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct PDUSessionResourceSetupResponseInfo_SNterminated;
-struct PDUSessionResourceSetupResponseInfo_MNterminated;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_PDUSessionResourceSetupResponseInfo_SNterminated;
+struct ASN_XNAP_PDUSessionResourceSetupResponseInfo_MNterminated;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* PDUSessionAdmittedAddedAddReqAck-Item */
-typedef struct PDUSessionAdmittedAddedAddReqAck_Item {
-	PDUSession_ID_t	 pduSessionId;
-	struct PDUSessionResourceSetupResponseInfo_SNterminated	*sn_terminated	/* OPTIONAL */;
-	struct PDUSessionResourceSetupResponseInfo_MNterminated	*mn_terminated	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+typedef struct ASN_XNAP_PDUSessionAdmittedAddedAddReqAck_Item {
+    ASN_XNAP_PDUSession_ID_t	 pduSessionId;
+	struct ASN_XNAP_PDUSessionResourceSetupResponseInfo_SNterminated	*sn_terminated	/* OPTIONAL */;
+	struct ASN_XNAP_PDUSessionResourceSetupResponseInfo_MNterminated	*mn_terminated	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -37,7 +37,7 @@ typedef struct PDUSessionAdmittedAddedAddReqAck_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} PDUSessionAdmittedAddedAddReqAck_Item_t;
+} ASN_XNAP_PDUSessionAdmittedAddedAddReqAck_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_PDUSessionAdmittedAddedAddReqAck_Item;

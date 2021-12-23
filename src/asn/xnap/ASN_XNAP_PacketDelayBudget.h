@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* PacketDelayBudget */
-typedef long	 PacketDelayBudget_t;
+typedef long	 ASN_XNAP_PacketDelayBudget_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_PacketDelayBudget_constr_1;

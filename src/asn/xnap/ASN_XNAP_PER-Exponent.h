@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* PER-Exponent */
-typedef long	 PER_Exponent_t;
+typedef long	 ASN_XNAP_PER_Exponent_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_PER_Exponent_constr_1;

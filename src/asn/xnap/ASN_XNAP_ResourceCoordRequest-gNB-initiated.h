@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "DataTrafficResourceIndication.h"
-#include "SpectrumSharingGroupID.h"
+#include "ASN_XNAP_DataTrafficResourceIndication.h"
+#include "ASN_XNAP_SpectrumSharingGroupID.h"
 #include <asn_SEQUENCE_OF.h>
 #include <constr_SEQUENCE_OF.h>
 #include <constr_SEQUENCE.h>
@@ -23,27 +23,27 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
-struct E_UTRA_CGI;
-struct NR_CGI;
+struct ASN_XNAP_ProtocolExtensionContainer;
+struct ASN_XNAP_E_UTRA_CGI;
+struct ASN_XNAP_NR_CGI;
 
 /* ResourceCoordRequest-gNB-initiated */
-typedef struct ResourceCoordRequest_gNB_initiated {
-	DataTrafficResourceIndication_t	 dataTrafficResourceIndication;
-	struct ResourceCoordRequest_gNB_initiated__listofE_UTRACells {
-		A_SEQUENCE_OF(struct E_UTRA_CGI) list;
+typedef struct ASN_XNAP_ResourceCoordRequest_gNB_initiated {
+    ASN_XNAP_DataTrafficResourceIndication_t	 dataTrafficResourceIndication;
+	struct ASN_XNAP_ResourceCoordRequest_gNB_initiated__listofE_UTRACells {
+		A_SEQUENCE_OF(struct ASN_XNAP_E_UTRA_CGI) list;
 		
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
 	} *listofE_UTRACells;
-	SpectrumSharingGroupID_t	 spectrumSharingGroupID;
-	struct ResourceCoordRequest_gNB_initiated__listofNRCells {
-		A_SEQUENCE_OF(struct NR_CGI) list;
+    ASN_XNAP_SpectrumSharingGroupID_t	 spectrumSharingGroupID;
+	struct ASN_XNAP_ResourceCoordRequest_gNB_initiated__listofNRCells {
+		A_SEQUENCE_OF(struct ASN_XNAP_NR_CGI) list;
 		
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
 	} *listofNRCells;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -51,7 +51,7 @@ typedef struct ResourceCoordRequest_gNB_initiated {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} ResourceCoordRequest_gNB_initiated_t;
+} ASN_XNAP_ResourceCoordRequest_gNB_initiated_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_ResourceCoordRequest_gNB_initiated;

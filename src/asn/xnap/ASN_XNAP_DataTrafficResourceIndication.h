@@ -21,15 +21,15 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ReservedSubframePattern;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ReservedSubframePattern;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* DataTrafficResourceIndication */
-typedef struct DataTrafficResourceIndication {
+typedef struct ASN_XNAP_DataTrafficResourceIndication {
     ASN_XNAP_ActivationSFN_t	 activationSFN;
-	SharedResourceType_t	 sharedResourceType;
-	struct ReservedSubframePattern	*reservedSubframePattern	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+    ASN_XNAP_SharedResourceType_t	 sharedResourceType;
+	struct ASN_XNAP_ReservedSubframePattern	*reservedSubframePattern	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -37,7 +37,7 @@ typedef struct DataTrafficResourceIndication {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} DataTrafficResourceIndication_t;
+} ASN_XNAP_DataTrafficResourceIndication_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_DataTrafficResourceIndication;

@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* AveragingWindow */
-typedef long	 AveragingWindow_t;
+typedef long	 ASN_XNAP_AveragingWindow_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_AveragingWindow_constr_1;

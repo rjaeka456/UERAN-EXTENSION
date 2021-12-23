@@ -19,16 +19,16 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum EventType {
-	EventType_report_upon_change_of_serving_cell	= 0,
-	EventType_report_UE_moving_presence_into_or_out_of_the_Area_of_Interest	= 1
+typedef enum ASN_XNAP_EventType {
+    ASN_XNAP_EventType_report_upon_change_of_serving_cell	= 0,
+    ASN_XNAP_EventType_report_UE_moving_presence_into_or_out_of_the_Area_of_Interest	= 1
 	/*
 	 * Enumeration is extensible
 	 */
-} e_EventType;
+} e_ASN_XNAP_EventType;
 
 /* EventType */
-typedef long	 EventType_t;
+typedef long	 ASN_XNAP_EventType_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_EventType_constr_1;

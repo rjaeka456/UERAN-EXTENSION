@@ -22,8 +22,8 @@ extern "C" {
 typedef long	 ASN_XNAP_E_UTRAARFCN_t;
 
 /* Implementation */
-extern asn_per_constraints_t asn_PER_type_ASN_XNAP_E_UTRAARFCN_constr_1;
-extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_E_UTRAARFCN;
+extern asn_per_constraints_t asn_PER_type_E_UTRAARFCN_constr_1;
+extern asn_TYPE_descriptor_t asn_DEF_E_UTRAARFCN;
 asn_struct_free_f E_UTRAARFCN_free;
 asn_struct_print_f E_UTRAARFCN_print;
 asn_constr_check_f E_UTRAARFCN_constraint;

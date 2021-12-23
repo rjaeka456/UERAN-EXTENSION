@@ -5,15 +5,15 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "PDUSessionResourceSetupResponseInfo-SNterminated.h"
+#include "ASN_XNAP_PDUSessionResourceSetupResponseInfo-SNterminated.h"
 
-#include "DRBsToBeSetupList-SetupResponse-SNterminated.h"
-#include "DataForwardingInfoFromTargetNGRANnode.h"
-#include "QoSFlows-List-withCause.h"
-#include "SecurityResult.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_DRBsToBeSetupList-SetupResponse-SNterminated.h"
+#include "ASN_XNAP_DataForwardingInfoFromTargetNGRANnode.h"
+#include "ASN_XNAP_QoSFlows-List-withCause.h"
+#include "ASN_XNAP_SecurityResult.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_PDUSessionResourceSetupResponseInfo_SNterminated_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct PDUSessionResourceSetupResponseInfo_SNterminated, dL_NG_U_TNLatNG_RAN),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_PDUSessionResourceSetupResponseInfo_SNterminated, dL_NG_U_TNLatNG_RAN),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_UPTransportLayerInformation,
@@ -22,7 +22,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceSetupResponseInfo_SNterminated_1[] =
 		0, 0, /* No default value */
 		"dL-NG-U-TNLatNG-RAN"
 		},
-	{ ATF_POINTER, 5, offsetof(struct PDUSessionResourceSetupResponseInfo_SNterminated, dRBsToBeSetup),
+	{ ATF_POINTER, 5, offsetof(struct ASN_XNAP_PDUSessionResourceSetupResponseInfo_SNterminated, dRBsToBeSetup),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_DRBsToBeSetupList_SetupResponse_SNterminated,
@@ -31,7 +31,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceSetupResponseInfo_SNterminated_1[] =
 		0, 0, /* No default value */
 		"dRBsToBeSetup"
 		},
-	{ ATF_POINTER, 4, offsetof(struct PDUSessionResourceSetupResponseInfo_SNterminated, dataforwardinginfoTarget),
+	{ ATF_POINTER, 4, offsetof(struct ASN_XNAP_PDUSessionResourceSetupResponseInfo_SNterminated, dataforwardinginfoTarget),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_DataForwardingInfoFromTargetNGRANnode,
@@ -40,7 +40,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceSetupResponseInfo_SNterminated_1[] =
 		0, 0, /* No default value */
 		"dataforwardinginfoTarget"
 		},
-	{ ATF_POINTER, 3, offsetof(struct PDUSessionResourceSetupResponseInfo_SNterminated, qosFlowsNotAdmittedList),
+	{ ATF_POINTER, 3, offsetof(struct ASN_XNAP_PDUSessionResourceSetupResponseInfo_SNterminated, qosFlowsNotAdmittedList),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_QoSFlows_List_withCause,
@@ -49,7 +49,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceSetupResponseInfo_SNterminated_1[] =
 		0, 0, /* No default value */
 		"qosFlowsNotAdmittedList"
 		},
-	{ ATF_POINTER, 2, offsetof(struct PDUSessionResourceSetupResponseInfo_SNterminated, securityResult),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_PDUSessionResourceSetupResponseInfo_SNterminated, securityResult),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_SecurityResult,
@@ -58,7 +58,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceSetupResponseInfo_SNterminated_1[] =
 		0, 0, /* No default value */
 		"securityResult"
 		},
-	{ ATF_POINTER, 1, offsetof(struct PDUSessionResourceSetupResponseInfo_SNterminated, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_PDUSessionResourceSetupResponseInfo_SNterminated, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -81,8 +81,8 @@ static const asn_TYPE_tag2member_t asn_MAP_PDUSessionResourceSetupResponseInfo_S
     { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_PDUSessionResourceSetupResponseInfo_SNterminated_specs_1 = {
-	sizeof(struct PDUSessionResourceSetupResponseInfo_SNterminated),
-	offsetof(struct PDUSessionResourceSetupResponseInfo_SNterminated, _asn_ctx),
+	sizeof(struct ASN_XNAP_PDUSessionResourceSetupResponseInfo_SNterminated),
+	offsetof(struct ASN_XNAP_PDUSessionResourceSetupResponseInfo_SNterminated, _asn_ctx),
 	asn_MAP_PDUSessionResourceSetupResponseInfo_SNterminated_tag2el_1,
 	6,	/* Count of tags in the map */
 	asn_MAP_PDUSessionResourceSetupResponseInfo_SNterminated_oms_1,	/* Optional members */

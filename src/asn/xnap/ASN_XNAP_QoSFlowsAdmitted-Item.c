@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "QoSFlowsAdmitted-Item.h"
+#include "ASN_XNAP_QoSFlowsAdmitted-Item.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_QoSFlowsAdmitted_Item_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct QoSFlowsAdmitted_Item, qfi),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_QoSFlowsAdmitted_Item, qfi),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_QoSFlowIdentifier,
@@ -18,7 +18,7 @@ asn_TYPE_member_t asn_MBR_QoSFlowsAdmitted_Item_1[] = {
 		0, 0, /* No default value */
 		"qfi"
 		},
-	{ ATF_POINTER, 1, offsetof(struct QoSFlowsAdmitted_Item, iE_Extension),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_QoSFlowsAdmitted_Item, iE_Extension),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -37,8 +37,8 @@ static const asn_TYPE_tag2member_t asn_MAP_QoSFlowsAdmitted_Item_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* iE-Extension */
 };
 asn_SEQUENCE_specifics_t asn_SPC_QoSFlowsAdmitted_Item_specs_1 = {
-	sizeof(struct QoSFlowsAdmitted_Item),
-	offsetof(struct QoSFlowsAdmitted_Item, _asn_ctx),
+	sizeof(struct ASN_XNAP_QoSFlowsAdmitted_Item),
+	offsetof(struct ASN_XNAP_QoSFlowsAdmitted_Item, _asn_ctx),
 	asn_MAP_QoSFlowsAdmitted_Item_tag2el_1,
 	2,	/* Count of tags in the map */
 	asn_MAP_QoSFlowsAdmitted_Item_oms_1,	/* Optional members */

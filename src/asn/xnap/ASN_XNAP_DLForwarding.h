@@ -19,15 +19,15 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum DLForwarding {
-	DLForwarding_dl_forwarding_proposed	= 0
+typedef enum ASN_XNAP_DLForwarding {
+    ASN_XNAP_DLForwarding_dl_forwarding_proposed	= 0
 	/*
 	 * Enumeration is extensible
 	 */
-} e_DLForwarding;
+} e_ASN_XNAP_DLForwarding;
 
 /* DLForwarding */
-typedef long	 DLForwarding_t;
+typedef long	 ASN_XNAP_DLForwarding_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_DLForwarding_constr_1;

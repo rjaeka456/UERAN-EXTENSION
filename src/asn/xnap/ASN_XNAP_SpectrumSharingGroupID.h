@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* SpectrumSharingGroupID */
-typedef long	 SpectrumSharingGroupID_t;
+typedef long	 ASN_XNAP_SpectrumSharingGroupID_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_SpectrumSharingGroupID_constr_1;

@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PLMN-Identity.h"
-#include "NG-RAN-Cell-Identity.h"
+#include "ASN_XNAP_PLMN-Identity.h"
+#include "ASN_XNAP_NG-RAN-Cell-Identity.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -21,13 +21,13 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* GlobalNG-RANCell-ID */
-typedef struct GlobalNG_RANCell_ID {
-	PLMN_Identity_t	 plmn_id;
-	NG_RAN_Cell_Identity_t	 ng_RAN_Cell_id;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_GlobalNG_RANCell_ID {
+    ASN_XNAP_PLMN_Identity_t	 plmn_id;
+    ASN_XNAP_NG_RAN_Cell_Identity_t	 ng_RAN_Cell_id;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -35,7 +35,7 @@ typedef struct GlobalNG_RANCell_ID {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} GlobalNG_RANCell_ID_t;
+} ASN_XNAP_GlobalNG_RANCell_ID_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_GlobalNG_RANCell_ID;

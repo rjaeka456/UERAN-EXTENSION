@@ -20,15 +20,15 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct QoSFLowsAcceptedToBeForwarded_Item;
+struct ASN_XNAP_QoSFLowsAcceptedToBeForwarded_Item;
 
 /* QoSFLowsAcceptedToBeForwarded-List */
-typedef struct QoSFLowsAcceptedToBeForwarded_List {
-	A_SEQUENCE_OF(struct QoSFLowsAcceptedToBeForwarded_Item) list;
+typedef struct ASN_XNAP_QoSFLowsAcceptedToBeForwarded_List {
+	A_SEQUENCE_OF(struct ASN_XNAP_QoSFLowsAcceptedToBeForwarded_Item) list;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} QoSFLowsAcceptedToBeForwarded_List_t;
+} ASN_XNAP_QoSFLowsAcceptedToBeForwarded_List_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_QoSFLowsAcceptedToBeForwarded_List;

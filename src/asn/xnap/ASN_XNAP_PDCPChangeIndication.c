@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "PDCPChangeIndication.h"
+#include "ASN_XNAP_PDCPChangeIndication.h"
 
-#include "ProtocolIE-Single-Container.h"
+#include "ASN_XNAP_ProtocolIE-Single-Container.h"
 /*
  * This type is implemented using NativeEnumerated,
  * so here we adjust the DEF accordingly.

@@ -5,14 +5,14 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "PDUSessionsToBeModified-SNModRequest-Item.h"
+#include "ASN_XNAP_PDUSessionsToBeModified-SNModRequest-Item.h"
 
-#include "PDUSessionAggregateMaximumBitRate.h"
-#include "PDUSessionResourceModificationInfo-SNterminated.h"
-#include "PDUSessionResourceModificationInfo-MNterminated.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_PDUSessionAggregateMaximumBitRate.h"
+#include "ASN_XNAP_PDUSessionResourceModificationInfo-SNterminated.h"
+#include "ASN_XNAP_PDUSessionResourceModificationInfo-MNterminated.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_PDUSessionsToBeModified_SNModRequest_Item_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct PDUSessionsToBeModified_SNModRequest_Item, pduSessionId),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_PDUSessionsToBeModified_SNModRequest_Item, pduSessionId),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PDUSession_ID,
@@ -21,7 +21,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionsToBeModified_SNModRequest_Item_1[] = {
 		0, 0, /* No default value */
 		"pduSessionId"
 		},
-	{ ATF_POINTER, 4, offsetof(struct PDUSessionsToBeModified_SNModRequest_Item, sN_PDUSessionAMBR),
+	{ ATF_POINTER, 4, offsetof(struct ASN_XNAP_PDUSessionsToBeModified_SNModRequest_Item, sN_PDUSessionAMBR),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PDUSessionAggregateMaximumBitRate,
@@ -30,7 +30,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionsToBeModified_SNModRequest_Item_1[] = {
 		0, 0, /* No default value */
 		"sN-PDUSessionAMBR"
 		},
-	{ ATF_POINTER, 3, offsetof(struct PDUSessionsToBeModified_SNModRequest_Item, sn_terminated),
+	{ ATF_POINTER, 3, offsetof(struct ASN_XNAP_PDUSessionsToBeModified_SNModRequest_Item, sn_terminated),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PDUSessionResourceModificationInfo_SNterminated,
@@ -39,7 +39,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionsToBeModified_SNModRequest_Item_1[] = {
 		0, 0, /* No default value */
 		"sn-terminated"
 		},
-	{ ATF_POINTER, 2, offsetof(struct PDUSessionsToBeModified_SNModRequest_Item, mn_terminated),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_PDUSessionsToBeModified_SNModRequest_Item, mn_terminated),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PDUSessionResourceModificationInfo_MNterminated,
@@ -48,7 +48,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionsToBeModified_SNModRequest_Item_1[] = {
 		0, 0, /* No default value */
 		"mn-terminated"
 		},
-	{ ATF_POINTER, 1, offsetof(struct PDUSessionsToBeModified_SNModRequest_Item, iE_Extension),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_PDUSessionsToBeModified_SNModRequest_Item, iE_Extension),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -70,8 +70,8 @@ static const asn_TYPE_tag2member_t asn_MAP_PDUSessionsToBeModified_SNModRequest_
     { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* iE-Extension */
 };
 asn_SEQUENCE_specifics_t asn_SPC_PDUSessionsToBeModified_SNModRequest_Item_specs_1 = {
-	sizeof(struct PDUSessionsToBeModified_SNModRequest_Item),
-	offsetof(struct PDUSessionsToBeModified_SNModRequest_Item, _asn_ctx),
+	sizeof(struct ASN_XNAP_PDUSessionsToBeModified_SNModRequest_Item),
+	offsetof(struct ASN_XNAP_PDUSessionsToBeModified_SNModRequest_Item, _asn_ctx),
 	asn_MAP_PDUSessionsToBeModified_SNModRequest_Item_tag2el_1,
 	5,	/* Count of tags in the map */
 	asn_MAP_PDUSessionsToBeModified_SNModRequest_Item_oms_1,	/* Optional members */

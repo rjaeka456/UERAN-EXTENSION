@@ -5,7 +5,7 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "MaximumDataBurstVolume.h"
+#include "ASN_XNAP_MaximumDataBurstVolume.h"
 
 int
 MaximumDataBurstVolume_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,

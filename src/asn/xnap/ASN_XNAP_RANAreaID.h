@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "TAC.h"
-#include "RANAC.h"
+#include "ASN_XNAP_TAC.h"
+#include "ASN_XNAP_RANAC.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -21,13 +21,13 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* RANAreaID */
-typedef struct RANAreaID {
-	TAC_t	 tAC;
-	RANAC_t	*rANAC	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_RANAreaID {
+    ASN_XNAP_TAC_t	 tAC;
+    ASN_XNAP_RANAC_t	*rANAC	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -35,7 +35,7 @@ typedef struct RANAreaID {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} RANAreaID_t;
+} ASN_XNAP_RANAreaID_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_RANAreaID;

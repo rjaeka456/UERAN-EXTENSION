@@ -5,7 +5,7 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "LastVisitedGERANCellInformation.h"
+#include "ASN_XNAP_LastVisitedGERANCellInformation.h"
 
 /*
  * This type is implemented using OCTET_STRING,

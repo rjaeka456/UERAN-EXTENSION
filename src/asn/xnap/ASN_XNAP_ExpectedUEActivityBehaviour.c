@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "ExpectedUEActivityBehaviour.h"
+#include "ASN_XNAP_ExpectedUEActivityBehaviour.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_ExpectedUEActivityBehaviour_1[] = {
-	{ ATF_POINTER, 4, offsetof(struct ExpectedUEActivityBehaviour, expectedActivityPeriod),
+	{ ATF_POINTER, 4, offsetof(struct ASN_XNAP_ExpectedUEActivityBehaviour, expectedActivityPeriod),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ExpectedActivityPeriod,
@@ -18,7 +18,7 @@ asn_TYPE_member_t asn_MBR_ExpectedUEActivityBehaviour_1[] = {
 		0, 0, /* No default value */
 		"expectedActivityPeriod"
 		},
-	{ ATF_POINTER, 3, offsetof(struct ExpectedUEActivityBehaviour, expectedIdlePeriod),
+	{ ATF_POINTER, 3, offsetof(struct ASN_XNAP_ExpectedUEActivityBehaviour, expectedIdlePeriod),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ExpectedIdlePeriod,
@@ -27,7 +27,7 @@ asn_TYPE_member_t asn_MBR_ExpectedUEActivityBehaviour_1[] = {
 		0, 0, /* No default value */
 		"expectedIdlePeriod"
 		},
-	{ ATF_POINTER, 2, offsetof(struct ExpectedUEActivityBehaviour, sourceOfUEActivityBehaviourInformation),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_ExpectedUEActivityBehaviour, sourceOfUEActivityBehaviourInformation),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_SourceOfUEActivityBehaviourInformation,
@@ -36,7 +36,7 @@ asn_TYPE_member_t asn_MBR_ExpectedUEActivityBehaviour_1[] = {
 		0, 0, /* No default value */
 		"sourceOfUEActivityBehaviourInformation"
 		},
-	{ ATF_POINTER, 1, offsetof(struct ExpectedUEActivityBehaviour, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_ExpectedUEActivityBehaviour, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -57,8 +57,8 @@ static const asn_TYPE_tag2member_t asn_MAP_ExpectedUEActivityBehaviour_tag2el_1[
     { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_ExpectedUEActivityBehaviour_specs_1 = {
-	sizeof(struct ExpectedUEActivityBehaviour),
-	offsetof(struct ExpectedUEActivityBehaviour, _asn_ctx),
+	sizeof(struct ASN_XNAP_ExpectedUEActivityBehaviour),
+	offsetof(struct ASN_XNAP_ExpectedUEActivityBehaviour, _asn_ctx),
 	asn_MAP_ExpectedUEActivityBehaviour_tag2el_1,
 	4,	/* Count of tags in the map */
 	asn_MAP_ExpectedUEActivityBehaviour_oms_1,	/* Optional members */

@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "DRB-ID.h"
-#include "UPTransportLayerInformation.h"
+#include "ASN_XNAP_DRB-ID.h"
+#include "ASN_XNAP_UPTransportLayerInformation.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -21,13 +21,13 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* DRBsToBeSetupList-BearerSetupComplete-SNterminated-Item */
-typedef struct DRBsToBeSetupList_BearerSetupComplete_SNterminated_Item {
-	DRB_ID_t	 dRB_ID;
-	UPTransportLayerInformation_t	 mN_Xn_U_TNLInfoatM;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_DRBsToBeSetupList_BearerSetupComplete_SNterminated_Item {
+    ASN_XNAP_DRB_ID_t	 dRB_ID;
+    ASN_XNAP_UPTransportLayerInformation_t	 mN_Xn_U_TNLInfoatM;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -35,7 +35,7 @@ typedef struct DRBsToBeSetupList_BearerSetupComplete_SNterminated_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} DRBsToBeSetupList_BearerSetupComplete_SNterminated_Item_t;
+} ASN_XNAP_DRBsToBeSetupList_BearerSetupComplete_SNterminated_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_DRBsToBeSetupList_BearerSetupComplete_SNterminated_Item;

@@ -5,10 +5,10 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "PDUSessionResourceBearerSetupCompleteInfo-SNterminated.h"
+#include "ASN_XNAP_PDUSessionResourceBearerSetupCompleteInfo-SNterminated.h"
 
-#include "ProtocolExtensionContainer.h"
-#include "DRBsToBeSetupList-BearerSetupComplete-SNterminated-Item.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
+#include "ASN_XNAP_DRBsToBeSetupList-BearerSetupComplete-SNterminated-Item.h"
 static int
 memb_dRBsToBeSetupList_constraint_1(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {

@@ -5,18 +5,18 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "PDUSessionResourceModificationInfo-SNterminated.h"
+#include "ASN_XNAP_PDUSessionResourceModificationInfo-SNterminated.h"
 
-#include "UPTransportLayerInformation.h"
-#include "QoSFlowsToBeSetup-List-Setup-SNterminated.h"
-#include "DataforwardingandOffloadingInfofromSource.h"
-#include "QoSFlowsToBeSetup-List-Modified-SNterminated.h"
-#include "QoSFlows-List-withCause.h"
-#include "DRBsToBeModified-List-Modified-SNterminated.h"
-#include "DRB-List-withCause.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_UPTransportLayerInformation.h"
+#include "ASN_XNAP_QoSFlowsToBeSetup-List-Setup-SNterminated.h"
+#include "ASN_XNAP_DataforwardingandOffloadingInfofromSource.h"
+#include "ASN_XNAP_QoSFlowsToBeSetup-List-Modified-SNterminated.h"
+#include "ASN_XNAP_QoSFlows-List-withCause.h"
+#include "ASN_XNAP_DRBsToBeModified-List-Modified-SNterminated.h"
+#include "ASN_XNAP_DRB-List-withCause.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_PDUSessionResourceModificationInfo_SNterminated_1[] = {
-	{ ATF_POINTER, 9, offsetof(struct PDUSessionResourceModificationInfo_SNterminated, uL_NG_U_TNLatUPF),
+	{ ATF_POINTER, 9, offsetof(struct ASN_XNAP_PDUSessionResourceModificationInfo_SNterminated, uL_NG_U_TNLatUPF),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_UPTransportLayerInformation,
@@ -25,7 +25,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceModificationInfo_SNterminated_1[] = 
 		0, 0, /* No default value */
 		"uL-NG-U-TNLatUPF"
 		},
-	{ ATF_POINTER, 8, offsetof(struct PDUSessionResourceModificationInfo_SNterminated, pduSessionNetworkInstance),
+	{ ATF_POINTER, 8, offsetof(struct ASN_XNAP_PDUSessionResourceModificationInfo_SNterminated, pduSessionNetworkInstance),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PDUSessionNetworkInstance,
@@ -34,7 +34,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceModificationInfo_SNterminated_1[] = 
 		0, 0, /* No default value */
 		"pduSessionNetworkInstance"
 		},
-	{ ATF_POINTER, 7, offsetof(struct PDUSessionResourceModificationInfo_SNterminated, qosFlowsToBeSetup_List),
+	{ ATF_POINTER, 7, offsetof(struct ASN_XNAP_PDUSessionResourceModificationInfo_SNterminated, qosFlowsToBeSetup_List),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_QoSFlowsToBeSetup_List_Setup_SNterminated,
@@ -43,7 +43,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceModificationInfo_SNterminated_1[] = 
 		0, 0, /* No default value */
 		"qosFlowsToBeSetup-List"
 		},
-	{ ATF_POINTER, 6, offsetof(struct PDUSessionResourceModificationInfo_SNterminated, dataforwardinginfofromSource),
+	{ ATF_POINTER, 6, offsetof(struct ASN_XNAP_PDUSessionResourceModificationInfo_SNterminated, dataforwardinginfofromSource),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_DataforwardingandOffloadingInfofromSource,
@@ -52,7 +52,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceModificationInfo_SNterminated_1[] = 
 		0, 0, /* No default value */
 		"dataforwardinginfofromSource"
 		},
-	{ ATF_POINTER, 5, offsetof(struct PDUSessionResourceModificationInfo_SNterminated, qosFlowsToBeModified_List),
+	{ ATF_POINTER, 5, offsetof(struct ASN_XNAP_PDUSessionResourceModificationInfo_SNterminated, qosFlowsToBeModified_List),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_QoSFlowsToBeSetup_List_Modified_SNterminated,
@@ -61,7 +61,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceModificationInfo_SNterminated_1[] = 
 		0, 0, /* No default value */
 		"qosFlowsToBeModified-List"
 		},
-	{ ATF_POINTER, 4, offsetof(struct PDUSessionResourceModificationInfo_SNterminated, qoSFlowsToBeReleased_List),
+	{ ATF_POINTER, 4, offsetof(struct ASN_XNAP_PDUSessionResourceModificationInfo_SNterminated, qoSFlowsToBeReleased_List),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_QoSFlows_List_withCause,
@@ -70,7 +70,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceModificationInfo_SNterminated_1[] = 
 		0, 0, /* No default value */
 		"qoSFlowsToBeReleased-List"
 		},
-	{ ATF_POINTER, 3, offsetof(struct PDUSessionResourceModificationInfo_SNterminated, drbsToBeModifiedList),
+	{ ATF_POINTER, 3, offsetof(struct ASN_XNAP_PDUSessionResourceModificationInfo_SNterminated, drbsToBeModifiedList),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_DRBsToBeModified_List_Modified_SNterminated,
@@ -79,7 +79,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceModificationInfo_SNterminated_1[] = 
 		0, 0, /* No default value */
 		"drbsToBeModifiedList"
 		},
-	{ ATF_POINTER, 2, offsetof(struct PDUSessionResourceModificationInfo_SNterminated, dRBsToBeReleased),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_PDUSessionResourceModificationInfo_SNterminated, dRBsToBeReleased),
 		(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_DRB_List_withCause,
@@ -88,7 +88,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourceModificationInfo_SNterminated_1[] = 
 		0, 0, /* No default value */
 		"dRBsToBeReleased"
 		},
-	{ ATF_POINTER, 1, offsetof(struct PDUSessionResourceModificationInfo_SNterminated, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_PDUSessionResourceModificationInfo_SNterminated, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -114,8 +114,8 @@ static const asn_TYPE_tag2member_t asn_MAP_PDUSessionResourceModificationInfo_SN
     { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_PDUSessionResourceModificationInfo_SNterminated_specs_1 = {
-	sizeof(struct PDUSessionResourceModificationInfo_SNterminated),
-	offsetof(struct PDUSessionResourceModificationInfo_SNterminated, _asn_ctx),
+	sizeof(struct ASN_XNAP_PDUSessionResourceModificationInfo_SNterminated),
+	offsetof(struct ASN_XNAP_PDUSessionResourceModificationInfo_SNterminated, _asn_ctx),
 	asn_MAP_PDUSessionResourceModificationInfo_SNterminated_tag2el_1,
 	9,	/* Count of tags in the map */
 	asn_MAP_PDUSessionResourceModificationInfo_SNterminated_oms_1,	/* Optional members */

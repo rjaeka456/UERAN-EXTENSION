@@ -40,9 +40,9 @@ typedef struct ASN_XNAP_ServedCells_NR_Item {
 } ASN_XNAP_ServedCells_NR_Item_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_ServedCells_NR_Item;
-extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_ServedCells_NR_Item_specs_1;
-extern asn_TYPE_member_t asn_MBR_ASN_XNAP_ServedCells_NR_Item_1[4];
+extern asn_TYPE_descriptor_t asn_DEF_ServedCells_NR_Item;
+extern asn_SEQUENCE_specifics_t asn_SPC_ServedCells_NR_Item_specs_1;
+extern asn_TYPE_member_t asn_MBR_ServedCells_NR_Item_1[4];
 
 #ifdef __cplusplus
 }

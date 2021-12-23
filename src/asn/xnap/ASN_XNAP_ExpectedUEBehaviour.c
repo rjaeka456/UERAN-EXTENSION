@@ -5,13 +5,13 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "ExpectedUEBehaviour.h"
+#include "ASN_XNAP_ExpectedUEBehaviour.h"
 
-#include "ExpectedUEActivityBehaviour.h"
-#include "ExpectedUEMovingTrajectory.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ExpectedUEActivityBehaviour.h"
+#include "ASN_XNAP_ExpectedUEMovingTrajectory.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 static asn_TYPE_member_t asn_MBR_ExpectedUEBehaviour_1[] = {
-	{ ATF_POINTER, 5, offsetof(struct ExpectedUEBehaviour, expectedUEActivityBehaviour),
+	{ ATF_POINTER, 5, offsetof(struct ASN_XNAP_ExpectedUEBehaviour, expectedUEActivityBehaviour),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ExpectedUEActivityBehaviour,
@@ -20,7 +20,7 @@ static asn_TYPE_member_t asn_MBR_ExpectedUEBehaviour_1[] = {
 		0, 0, /* No default value */
 		"expectedUEActivityBehaviour"
 		},
-	{ ATF_POINTER, 4, offsetof(struct ExpectedUEBehaviour, expectedHOInterval),
+	{ ATF_POINTER, 4, offsetof(struct ASN_XNAP_ExpectedUEBehaviour, expectedHOInterval),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ExpectedHOInterval,
@@ -29,7 +29,7 @@ static asn_TYPE_member_t asn_MBR_ExpectedUEBehaviour_1[] = {
 		0, 0, /* No default value */
 		"expectedHOInterval"
 		},
-	{ ATF_POINTER, 3, offsetof(struct ExpectedUEBehaviour, expectedUEMobility),
+	{ ATF_POINTER, 3, offsetof(struct ASN_XNAP_ExpectedUEBehaviour, expectedUEMobility),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ExpectedUEMobility,
@@ -38,7 +38,7 @@ static asn_TYPE_member_t asn_MBR_ExpectedUEBehaviour_1[] = {
 		0, 0, /* No default value */
 		"expectedUEMobility"
 		},
-	{ ATF_POINTER, 2, offsetof(struct ExpectedUEBehaviour, expectedUEMovingTrajectory),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_ExpectedUEBehaviour, expectedUEMovingTrajectory),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ExpectedUEMovingTrajectory,
@@ -47,7 +47,7 @@ static asn_TYPE_member_t asn_MBR_ExpectedUEBehaviour_1[] = {
 		0, 0, /* No default value */
 		"expectedUEMovingTrajectory"
 		},
-	{ ATF_POINTER, 1, offsetof(struct ExpectedUEBehaviour, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_ExpectedUEBehaviour, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -69,8 +69,8 @@ static const asn_TYPE_tag2member_t asn_MAP_ExpectedUEBehaviour_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* iE-Extensions */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ExpectedUEBehaviour_specs_1 = {
-	sizeof(struct ExpectedUEBehaviour),
-	offsetof(struct ExpectedUEBehaviour, _asn_ctx),
+	sizeof(struct ASN_XNAP_ExpectedUEBehaviour),
+	offsetof(struct ASN_XNAP_ExpectedUEBehaviour, _asn_ctx),
 	asn_MAP_ExpectedUEBehaviour_tag2el_1,
 	5,	/* Count of tags in the map */
 	asn_MAP_ExpectedUEBehaviour_oms_1,	/* Optional members */

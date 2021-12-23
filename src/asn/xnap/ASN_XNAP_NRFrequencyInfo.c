@@ -9,17 +9,17 @@
 
 #include "ASN_XNAP_SUL-Information.h"
 #include "ASN_XNAP_ProtocolExtensionContainer.h"
-asn_TYPE_member_t asn_MBR_ASN_XNAP_NRFrequencyInfo_1[] = {
+asn_TYPE_member_t asn_MBR_NRFrequencyInfo_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_NRFrequencyInfo, nrARFCN),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ASN_XNAP_NRARFCN,
+		&asn_DEF_NRARFCN,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
 		"nrARFCN"
 		},
-	{ ATF_POINTER, 1, offsetof(struct NRFrequencyInfo, sul_information),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_NRFrequencyInfo, sul_information),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_SUL_Information,
@@ -28,7 +28,7 @@ asn_TYPE_member_t asn_MBR_ASN_XNAP_NRFrequencyInfo_1[] = {
 		0, 0, /* No default value */
 		"sul-information"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct NRFrequencyInfo, frequencyBand_List),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_NRFrequencyInfo, frequencyBand_List),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NRFrequencyBand_List,
@@ -37,7 +37,7 @@ asn_TYPE_member_t asn_MBR_ASN_XNAP_NRFrequencyInfo_1[] = {
 		0, 0, /* No default value */
 		"frequencyBand-List"
 		},
-	{ ATF_POINTER, 1, offsetof(struct NRFrequencyInfo, iE_Extension),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_NRFrequencyInfo, iE_Extension),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -58,8 +58,8 @@ static const asn_TYPE_tag2member_t asn_MAP_NRFrequencyInfo_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* iE-Extension */
 };
 asn_SEQUENCE_specifics_t asn_SPC_NRFrequencyInfo_specs_1 = {
-	sizeof(struct NRFrequencyInfo),
-	offsetof(struct NRFrequencyInfo, _asn_ctx),
+	sizeof(struct ASN_XNAP_NRFrequencyInfo),
+	offsetof(struct ASN_XNAP_NRFrequencyInfo, _asn_ctx),
 	asn_MAP_NRFrequencyInfo_tag2el_1,
 	4,	/* Count of tags in the map */
 	asn_MAP_NRFrequencyInfo_oms_1,	/* Optional members */

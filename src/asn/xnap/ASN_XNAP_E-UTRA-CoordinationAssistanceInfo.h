@@ -19,15 +19,15 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum E_UTRA_CoordinationAssistanceInfo {
-	E_UTRA_CoordinationAssistanceInfo_coordination_not_required	= 0
+typedef enum ASN_XNAP_E_UTRA_CoordinationAssistanceInfo {
+    ASN_XNAP_E_UTRA_CoordinationAssistanceInfo_coordination_not_required	= 0
 	/*
 	 * Enumeration is extensible
 	 */
-} e_E_UTRA_CoordinationAssistanceInfo;
+} e_ASN_XNAP_E_UTRA_CoordinationAssistanceInfo;
 
 /* E-UTRA-CoordinationAssistanceInfo */
-typedef long	 E_UTRA_CoordinationAssistanceInfo_t;
+typedef long	 ASN_XNAP_E_UTRA_CoordinationAssistanceInfo_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_E_UTRA_CoordinationAssistanceInfo_constr_1;

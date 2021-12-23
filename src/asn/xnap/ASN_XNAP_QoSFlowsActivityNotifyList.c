@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "QoSFlowsActivityNotifyList.h"
+#include "ASN_XNAP_QoSFlowsActivityNotifyList.h"
 
-#include "QoSFlowsActivityNotifyItem.h"
+#include "ASN_XNAP_QoSFlowsActivityNotifyItem.h"
 asn_per_constraints_t asn_PER_type_QoSFlowsActivityNotifyList_constr_1 CC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	{ APC_CONSTRAINED,	 6,  6,  1,  64 }	/* (SIZE(1..64)) */,

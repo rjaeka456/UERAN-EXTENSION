@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "PDUSessionToBeReleasedSNModRequired.h"
+#include "ASN_XNAP_PDUSessionToBeReleasedSNModRequired.h"
 
-#include "PDUSession-List-withDataForwardingRequest.h"
-#include "PDUSession-List-withCause.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_PDUSession-List-withDataForwardingRequest.h"
+#include "ASN_XNAP_PDUSession-List-withCause.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 static asn_TYPE_member_t asn_MBR_PDUSessionToBeReleasedSNModRequired_1[] = {
 	{ ATF_POINTER, 3, offsetof(struct PDUSessionToBeReleasedSNModRequired, sn_terminated),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),

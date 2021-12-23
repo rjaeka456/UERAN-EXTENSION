@@ -12,9 +12,9 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "BitRate.h"
+#include "ASN_XNAP_BitRate.h"
 #include <NativeEnumerated.h>
-#include "PacketLossRate.h"
+#include "ASN_XNAP_PacketLossRate.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -22,26 +22,26 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum GBRQoSFlowInfo__notificationControl {
-	GBRQoSFlowInfo__notificationControl_notification_requested	= 0
+typedef enum ASN_XNAP_GBRQoSFlowInfo__notificationControl {
+    ASN_XNAP_GBRQoSFlowInfo__notificationControl_notification_requested	= 0
 	/*
 	 * Enumeration is extensible
 	 */
-} e_GBRQoSFlowInfo__notificationControl;
+} e_ASN_XNAP_GBRQoSFlowInfo__notificationControl;
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* GBRQoSFlowInfo */
-typedef struct GBRQoSFlowInfo {
+typedef struct ASN_XNAP_GBRQoSFlowInfo {
 	BitRate_t	 maxFlowBitRateDL;
 	BitRate_t	 maxFlowBitRateUL;
 	BitRate_t	 guaranteedFlowBitRateDL;
 	BitRate_t	 guaranteedFlowBitRateUL;
 	long	*notificationControl	/* OPTIONAL */;
-	PacketLossRate_t	*maxPacketLossRateDL	/* OPTIONAL */;
-	PacketLossRate_t	*maxPacketLossRateUL	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+    ASN_XNAP_PacketLossRate_t	*maxPacketLossRateDL	/* OPTIONAL */;
+    ASN_XNAP_PacketLossRate_t	*maxPacketLossRateUL	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -49,7 +49,7 @@ typedef struct GBRQoSFlowInfo {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} GBRQoSFlowInfo_t;
+} ASN_XNAP_GBRQoSFlowInfo_t;
 
 /* Implementation */
 /* extern asn_TYPE_descriptor_t asn_DEF_notificationControl_6;	// (Use -fall-defs-global to expose) */

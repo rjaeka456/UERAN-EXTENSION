@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PDUSession-ID.h"
-#include "UserPlaneTrafficActivityReport.h"
+#include "ASN_XNAP_PDUSession-ID.h"
+#include "ASN_XNAP_UserPlaneTrafficActivityReport.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -21,15 +21,15 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct QoSFlowsActivityNotifyList;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_QoSFlowsActivityNotifyList;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* PDUSessionResourcesActivityNotify-Item */
-typedef struct PDUSessionResourcesActivityNotify_Item {
-	PDUSession_ID_t	 pduSessionId;
-	UserPlaneTrafficActivityReport_t	*pduSessionLevelUPactivityreport	/* OPTIONAL */;
-	struct QoSFlowsActivityNotifyList	*qosFlowsActivityNotifyList	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_PDUSessionResourcesActivityNotify_Item {
+    ASN_XNAP_PDUSession_ID_t	 pduSessionId;
+    ASN_XNAP_UserPlaneTrafficActivityReport_t	*pduSessionLevelUPactivityreport	/* OPTIONAL */;
+	struct ASN_XNAP_QoSFlowsActivityNotifyList	*qosFlowsActivityNotifyList	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -37,7 +37,7 @@ typedef struct PDUSessionResourcesActivityNotify_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} PDUSessionResourcesActivityNotify_Item_t;
+} ASN_XNAP_PDUSessionResourcesActivityNotify_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_PDUSessionResourcesActivityNotify_Item;

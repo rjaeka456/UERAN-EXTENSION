@@ -19,11 +19,11 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* ResetResponseTypeInfo-Full */
-typedef struct ResetResponseTypeInfo_Full {
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+typedef struct ASN_XNAP_ResetResponseTypeInfo_Full {
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -31,7 +31,7 @@ typedef struct ResetResponseTypeInfo_Full {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} ResetResponseTypeInfo_Full_t;
+} ASN_XNAP_ResetResponseTypeInfo_Full_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_ResetResponseTypeInfo_Full;

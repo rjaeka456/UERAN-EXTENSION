@@ -20,15 +20,15 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct QoSFlowsSetupMappedtoDRB_ModRqd_SNterminated_Item;
+struct ASN_XNAP_QoSFlowsSetupMappedtoDRB_ModRqd_SNterminated_Item;
 
 /* QoSFlowsSetupMappedtoDRB-ModRqd-SNterminated */
-typedef struct QoSFlowsSetupMappedtoDRB_ModRqd_SNterminated {
-	A_SEQUENCE_OF(struct QoSFlowsSetupMappedtoDRB_ModRqd_SNterminated_Item) list;
+typedef struct ASN_XNAP_QoSFlowsSetupMappedtoDRB_ModRqd_SNterminated {
+	A_SEQUENCE_OF(struct ASN_XNAP_QoSFlowsSetupMappedtoDRB_ModRqd_SNterminated_Item) list;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} QoSFlowsSetupMappedtoDRB_ModRqd_SNterminated_t;
+} ASN_XNAP_QoSFlowsSetupMappedtoDRB_ModRqd_SNterminated_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_QoSFlowsSetupMappedtoDRB_ModRqd_SNterminated;

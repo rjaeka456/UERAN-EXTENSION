@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "DRBsAdmittedList-ModificationResponse-MNterminated.h"
+#include "ASN_XNAP_DRBsAdmittedList-ModificationResponse-MNterminated.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,16 +20,16 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct DRB_List;
-struct DRB_List_withCause;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_DRB_List;
+struct ASN_XNAP_DRB_List_withCause;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* PDUSessionResourceModificationResponseInfo-MNterminated */
-typedef struct PDUSessionResourceModificationResponseInfo_MNterminated {
-	DRBsAdmittedList_ModificationResponse_MNterminated_t	 dRBsAdmittedList;
-	struct DRB_List	*dRBsReleasedList	/* OPTIONAL */;
-	struct DRB_List_withCause	*dRBsNotAdmittedSetupModifyList	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_PDUSessionResourceModificationResponseInfo_MNterminated {
+    ASN_XNAP_DRBsAdmittedList_ModificationResponse_MNterminated_t	 dRBsAdmittedList;
+	struct ASN_XNAP_DRB_List	*dRBsReleasedList	/* OPTIONAL */;
+	struct ASN_XNAP_DRB_List_withCause	*dRBsNotAdmittedSetupModifyList	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -37,7 +37,7 @@ typedef struct PDUSessionResourceModificationResponseInfo_MNterminated {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} PDUSessionResourceModificationResponseInfo_MNterminated_t;
+} ASN_XNAP_PDUSessionResourceModificationResponseInfo_MNterminated_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_PDUSessionResourceModificationResponseInfo_MNterminated;

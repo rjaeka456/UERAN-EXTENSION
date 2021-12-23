@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "QoSFlowIdentifier.h"
-#include "QoSFlowLevelQoSParameters.h"
+#include "ASN_XNAP_QoSFlowIdentifier.h"
+#include "ASN_XNAP_QoSFlowLevelQoSParameters.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -21,15 +21,15 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct GBRQoSFlowInfo;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_GBRQoSFlowInfo;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* QoSFlowsToBeSetup-List-Setup-SNterminated-Item */
-typedef struct QoSFlowsToBeSetup_List_Setup_SNterminated_Item {
-	QoSFlowIdentifier_t	 qfi;
-	QoSFlowLevelQoSParameters_t	 qosFlowLevelQoSParameters;
-	struct GBRQoSFlowInfo	*offeredGBRQoSFlowInfo	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_QoSFlowsToBeSetup_List_Setup_SNterminated_Item {
+    ASN_XNAP_QoSFlowIdentifier_t	 qfi;
+    ASN_XNAP_QoSFlowLevelQoSParameters_t	 qosFlowLevelQoSParameters;
+	struct ASN_XNAP_GBRQoSFlowInfo	*offeredGBRQoSFlowInfo	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -37,7 +37,7 @@ typedef struct QoSFlowsToBeSetup_List_Setup_SNterminated_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} QoSFlowsToBeSetup_List_Setup_SNterminated_Item_t;
+} ASN_XNAP_QoSFlowsToBeSetup_List_Setup_SNterminated_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_QoSFlowsToBeSetup_List_Setup_SNterminated_Item;

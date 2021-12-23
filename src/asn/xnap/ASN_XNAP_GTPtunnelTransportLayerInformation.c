@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "GTPtunnelTransportLayerInformation.h"
+#include "ASN_XNAP_GTPtunnelTransportLayerInformation.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_GTPtunnelTransportLayerInformation_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct GTPtunnelTransportLayerInformation, tnl_address),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_GTPtunnelTransportLayerInformation, tnl_address),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_TransportLayerAddress,
@@ -18,7 +18,7 @@ asn_TYPE_member_t asn_MBR_GTPtunnelTransportLayerInformation_1[] = {
 		0, 0, /* No default value */
 		"tnl-address"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct GTPtunnelTransportLayerInformation, gtp_teid),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_GTPtunnelTransportLayerInformation, gtp_teid),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_GTP_TEID,
@@ -27,7 +27,7 @@ asn_TYPE_member_t asn_MBR_GTPtunnelTransportLayerInformation_1[] = {
 		0, 0, /* No default value */
 		"gtp-teid"
 		},
-	{ ATF_POINTER, 1, offsetof(struct GTPtunnelTransportLayerInformation, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_GTPtunnelTransportLayerInformation, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -47,8 +47,8 @@ static const asn_TYPE_tag2member_t asn_MAP_GTPtunnelTransportLayerInformation_ta
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_GTPtunnelTransportLayerInformation_specs_1 = {
-	sizeof(struct GTPtunnelTransportLayerInformation),
-	offsetof(struct GTPtunnelTransportLayerInformation, _asn_ctx),
+	sizeof(struct ASN_XNAP_GTPtunnelTransportLayerInformation),
+	offsetof(struct ASN_XNAP_GTPtunnelTransportLayerInformation, _asn_ctx),
 	asn_MAP_GTPtunnelTransportLayerInformation_tag2el_1,
 	3,	/* Count of tags in the map */
 	asn_MAP_GTPtunnelTransportLayerInformation_oms_1,	/* Optional members */

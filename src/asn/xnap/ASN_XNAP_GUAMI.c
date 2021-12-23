@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "GUAMI.h"
+#include "ASN_XNAP_GUAMI.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 static int
 memb_amf_region_id_constraint_1(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
@@ -117,7 +117,7 @@ static asn_per_constraints_t asn_PER_memb_amf_pointer_constr_5 CC_NOTUSED = {
 	0, 0	/* No PER value map */
 };
 static asn_TYPE_member_t asn_MBR_GUAMI_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct GUAMI, plmn_ID),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_GUAMI, plmn_ID),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PLMN_Identity,
@@ -126,7 +126,7 @@ static asn_TYPE_member_t asn_MBR_GUAMI_1[] = {
 		0, 0, /* No default value */
 		"plmn-ID"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct GUAMI, amf_region_id),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_GUAMI, amf_region_id),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_BIT_STRING,
@@ -135,7 +135,7 @@ static asn_TYPE_member_t asn_MBR_GUAMI_1[] = {
 		0, 0, /* No default value */
 		"amf-region-id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct GUAMI, amf_set_id),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_GUAMI, amf_set_id),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_BIT_STRING,
@@ -144,7 +144,7 @@ static asn_TYPE_member_t asn_MBR_GUAMI_1[] = {
 		0, 0, /* No default value */
 		"amf-set-id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct GUAMI, amf_pointer),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_GUAMI, amf_pointer),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_BIT_STRING,
@@ -153,7 +153,7 @@ static asn_TYPE_member_t asn_MBR_GUAMI_1[] = {
 		0, 0, /* No default value */
 		"amf-pointer"
 		},
-	{ ATF_POINTER, 1, offsetof(struct GUAMI, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_GUAMI, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -175,8 +175,8 @@ static const asn_TYPE_tag2member_t asn_MAP_GUAMI_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* iE-Extensions */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_GUAMI_specs_1 = {
-	sizeof(struct GUAMI),
-	offsetof(struct GUAMI, _asn_ctx),
+	sizeof(struct ASN_XNAP_GUAMI),
+	offsetof(struct ASN_XNAP_GUAMI, _asn_ctx),
 	asn_MAP_GUAMI_tag2el_1,
 	5,	/* Count of tags in the map */
 	asn_MAP_GUAMI_oms_1,	/* Optional members */

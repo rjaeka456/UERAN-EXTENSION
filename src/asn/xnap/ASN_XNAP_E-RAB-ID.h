@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* E-RAB-ID */
-typedef long	 E_RAB_ID_t;
+typedef long	 ASN_XNAP_E_RAB_ID_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_E_RAB_ID_constr_1;

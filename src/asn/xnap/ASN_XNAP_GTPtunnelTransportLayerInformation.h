@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "TransportLayerAddress.h"
-#include "GTP-TEID.h"
+#include "ASN_XNAP_TransportLayerAddress.h"
+#include "ASN_XNAP_GTP-TEID.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -21,13 +21,13 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* GTPtunnelTransportLayerInformation */
-typedef struct GTPtunnelTransportLayerInformation {
-	TransportLayerAddress_t	 tnl_address;
-	GTP_TEID_t	 gtp_teid;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_GTPtunnelTransportLayerInformation {
+    ASN_XNAP_TransportLayerAddress_t	 tnl_address;
+    ASN_XNAP_GTP_TEID_t	 gtp_teid;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -35,7 +35,7 @@ typedef struct GTPtunnelTransportLayerInformation {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} GTPtunnelTransportLayerInformation_t;
+} ASN_XNAP_GTPtunnelTransportLayerInformation_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_GTPtunnelTransportLayerInformation;

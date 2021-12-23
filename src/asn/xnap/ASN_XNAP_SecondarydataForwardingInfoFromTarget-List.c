@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "SecondarydataForwardingInfoFromTarget-List.h"
+#include "ASN_XNAP_SecondarydataForwardingInfoFromTarget-List.h"
 
-#include "SecondarydataForwardingInfoFromTarget-Item.h"
+#include "ASN_XNAP_SecondarydataForwardingInfoFromTarget-Item.h"
 static asn_per_constraints_t asn_PER_type_SecondarydataForwardingInfoFromTarget_List_constr_1 CC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	{ APC_CONSTRAINED,	 2,  2,  1,  3 }	/* (SIZE(1..3)) */,

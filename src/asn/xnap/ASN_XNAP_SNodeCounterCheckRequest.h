@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "ProtocolIE-Container.h"
+#include "ASN_XNAP_ProtocolIE-Container.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,8 +20,8 @@ extern "C" {
 #endif
 
 /* SNodeCounterCheckRequest */
-typedef struct SNodeCounterCheckRequest {
-	ProtocolIE_Container_5952P0_t	 protocolIEs;
+typedef struct ASN_XNAP_SNodeCounterCheckRequest {
+    ASN_XNAP_ProtocolIE_Container_5952P0_t	 protocolIEs;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -29,7 +29,7 @@ typedef struct SNodeCounterCheckRequest {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} SNodeCounterCheckRequest_t;
+} ASN_XNAP_SNodeCounterCheckRequest_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_SNodeCounterCheckRequest;

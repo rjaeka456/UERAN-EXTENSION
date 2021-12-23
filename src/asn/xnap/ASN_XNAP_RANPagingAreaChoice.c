@@ -5,18 +5,18 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "RANPagingAreaChoice.h"
+#include "ASN_XNAP_RANPagingAreaChoice.h"
 
-#include "NG-RAN-Cell-Identity-ListinRANPagingArea.h"
-#include "RANAreaID-List.h"
-#include "ProtocolIE-Single-Container.h"
+#include "ASN_XNAP_NG-RAN-Cell-Identity-ListinRANPagingArea.h"
+#include "ASN_XNAP_RANAreaID-List.h"
+#include "ASN_XNAP_ProtocolIE-Single-Container.h"
 asn_per_constraints_t asn_PER_type_RANPagingAreaChoice_constr_1 CC_NOTUSED = {
 	{ APC_CONSTRAINED,	 2,  2,  0,  2 }	/* (0..2) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
 asn_TYPE_member_t asn_MBR_RANPagingAreaChoice_1[] = {
-	{ ATF_POINTER, 0, offsetof(struct RANPagingAreaChoice, choice.cell_List),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_RANPagingAreaChoice, choice.cell_List),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NG_RAN_Cell_Identity_ListinRANPagingArea,
@@ -25,7 +25,7 @@ asn_TYPE_member_t asn_MBR_RANPagingAreaChoice_1[] = {
 		0, 0, /* No default value */
 		"cell-List"
 		},
-	{ ATF_POINTER, 0, offsetof(struct RANPagingAreaChoice, choice.rANAreaID_List),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_RANPagingAreaChoice, choice.rANAreaID_List),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_RANAreaID_List,
@@ -34,7 +34,7 @@ asn_TYPE_member_t asn_MBR_RANPagingAreaChoice_1[] = {
 		0, 0, /* No default value */
 		"rANAreaID-List"
 		},
-	{ ATF_POINTER, 0, offsetof(struct RANPagingAreaChoice, choice.choice_extension),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_RANPagingAreaChoice, choice.choice_extension),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolIE_Single_Container_5954P0,
@@ -50,10 +50,10 @@ static const asn_TYPE_tag2member_t asn_MAP_RANPagingAreaChoice_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* choice-extension */
 };
 asn_CHOICE_specifics_t asn_SPC_RANPagingAreaChoice_specs_1 = {
-	sizeof(struct RANPagingAreaChoice),
-	offsetof(struct RANPagingAreaChoice, _asn_ctx),
-	offsetof(struct RANPagingAreaChoice, present),
-	sizeof(((struct RANPagingAreaChoice *)0)->present),
+	sizeof(struct ASN_XNAP_RANPagingAreaChoice),
+	offsetof(struct ASN_XNAP_RANPagingAreaChoice, _asn_ctx),
+	offsetof(struct ASN_XNAP_RANPagingAreaChoice, present),
+	sizeof(((struct ASN_XNAP_RANPagingAreaChoice *)0)->present),
 	asn_MAP_RANPagingAreaChoice_tag2el_1,
 	3,	/* Count of tags in the map */
 	0, 0,

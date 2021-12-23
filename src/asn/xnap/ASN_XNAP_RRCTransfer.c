@@ -5,10 +5,10 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "RRCTransfer.h"
+#include "ASN_XNAP_RRCTransfer.h"
 
 asn_TYPE_member_t asn_MBR_RRCTransfer_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct RRCTransfer, protocolIEs),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_RRCTransfer, protocolIEs),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolIE_Container_5952P0,
@@ -25,8 +25,8 @@ static const asn_TYPE_tag2member_t asn_MAP_RRCTransfer_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* protocolIEs */
 };
 asn_SEQUENCE_specifics_t asn_SPC_RRCTransfer_specs_1 = {
-	sizeof(struct RRCTransfer),
-	offsetof(struct RRCTransfer, _asn_ctx),
+	sizeof(struct ASN_XNAP_RRCTransfer),
+	offsetof(struct ASN_XNAP_RRCTransfer, _asn_ctx),
 	asn_MAP_RRCTransfer_tag2el_1,
 	1,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */

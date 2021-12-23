@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PDUSession-List-withDataForwardingRequest.h"
+#include "ASN_XNAP_PDUSession-List-withDataForwardingRequest.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,12 +20,12 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* PDUSessionDataForwarding-SNModResponse */
-typedef struct PDUSessionDataForwarding_SNModResponse {
-	PDUSession_List_withDataForwardingRequest_t	 sn_terminated;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_PDUSessionDataForwarding_SNModResponse {
+    ASN_XNAP_PDUSession_List_withDataForwardingRequest_t	 sn_terminated;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -33,7 +33,7 @@ typedef struct PDUSessionDataForwarding_SNModResponse {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} PDUSessionDataForwarding_SNModResponse_t;
+} ASN_XNAP_PDUSessionDataForwarding_SNModResponse_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_PDUSessionDataForwarding_SNModResponse;

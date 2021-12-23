@@ -10,12 +10,12 @@
 #include "ASN_XNAP_GlobalgNB-ID.h"
 #include "ASN_XNAP_GlobalngeNB-ID.h"
 #include "ASN_XNAP_ProtocolIE-Single-Container.h"
-asn_per_constraints_t asn_PER_type_ASN_XNAP_GlobalNG_RANNode_ID_constr_1 CC_NOTUSED = {
+asn_per_constraints_t asn_PER_type_GlobalNG_RANNode_ID_constr_1 CC_NOTUSED = {
 	{ APC_CONSTRAINED,	 2,  2,  0,  2 }	/* (0..2) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-asn_TYPE_member_t asn_MBR_ASN_XNAP_GlobalNG_RANNode_ID_1[] = {
+asn_TYPE_member_t asn_MBR_GlobalNG_RANNode_ID_1[] = {
 	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_GlobalNG_RANNode_ID, choice.gNB),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
@@ -37,7 +37,7 @@ asn_TYPE_member_t asn_MBR_ASN_XNAP_GlobalNG_RANNode_ID_1[] = {
 	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_GlobalNG_RANNode_ID, choice.choice_extension),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ASN_XNAP_ProtocolIE_Single_Container_5954P0,
+		&asn_DEF_ProtocolIE_Single_Container_5954P0,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
@@ -67,8 +67,8 @@ asn_TYPE_descriptor_t asn_DEF_GlobalNG_RANNode_ID = {
 	0,	/* No effective tags (count) */
 	0,	/* No tags (pointer) */
 	0,	/* No tags (count) */
-	{ 0, &asn_PER_type_ASN_XNAP_GlobalNG_RANNode_ID_constr_1, CHOICE_constraint },
-	asn_MBR_ASN_XNAP_GlobalNG_RANNode_ID_1,
+	{ 0, &asn_PER_type_GlobalNG_RANNode_ID_constr_1, CHOICE_constraint },
+	asn_MBR_GlobalNG_RANNode_ID_1,
 	3,	/* Elements count */
 	&asn_SPC_GlobalNG_RANNode_ID_specs_1	/* Additional specs */
 };

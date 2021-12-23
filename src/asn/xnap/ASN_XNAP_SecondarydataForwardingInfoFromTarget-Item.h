@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "DataForwardingInfoFromTargetNGRANnode.h"
+#include "ASN_XNAP_DataForwardingInfoFromTargetNGRANnode.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,12 +20,12 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* SecondarydataForwardingInfoFromTarget-Item */
-typedef struct SecondarydataForwardingInfoFromTarget_Item {
-	DataForwardingInfoFromTargetNGRANnode_t	 secondarydataForwardingInfoFromTarget;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_SecondarydataForwardingInfoFromTarget_Item {
+    ASN_XNAP_DataForwardingInfoFromTargetNGRANnode_t	 secondarydataForwardingInfoFromTarget;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -33,7 +33,7 @@ typedef struct SecondarydataForwardingInfoFromTarget_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} SecondarydataForwardingInfoFromTarget_Item_t;
+} ASN_XNAP_SecondarydataForwardingInfoFromTarget_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_SecondarydataForwardingInfoFromTarget_Item;

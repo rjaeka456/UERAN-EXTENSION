@@ -19,18 +19,18 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum PagingDRX {
-	PagingDRX_v32	= 0,
-	PagingDRX_v64	= 1,
-	PagingDRX_v128	= 2,
-	PagingDRX_v256	= 3
+typedef enum ASN_XNAP_PagingDRX {
+    ASN_XNAP_PagingDRX_v32	= 0,
+    ASN_XNAP_PagingDRX_v64	= 1,
+    ASN_XNAP_PagingDRX_v128	= 2,
+    ASN_XNAP_PagingDRX_v256	= 3
 	/*
 	 * Enumeration is extensible
 	 */
-} e_PagingDRX;
+} e_ASN_XNAP_PagingDRX;
 
 /* PagingDRX */
-typedef long	 PagingDRX_t;
+typedef long	 ASN_XNAP_PagingDRX_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_PagingDRX;

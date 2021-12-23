@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PDUSessionType.h"
+#include "ASN_XNAP_PDUSessionType.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,18 +20,18 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct DRBsToBeSetupList_Setup_MNterminated;
-struct DRBsToBeModifiedList_Modification_MNterminated;
-struct DRB_List_withCause;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_DRBsToBeSetupList_Setup_MNterminated;
+struct ASN_XNAP_DRBsToBeModifiedList_Modification_MNterminated;
+struct ASN_XNAP_DRB_List_withCause;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* PDUSessionResourceModificationInfo-MNterminated */
-typedef struct PDUSessionResourceModificationInfo_MNterminated {
-	PDUSessionType_t	 pduSessionType;
-	struct DRBsToBeSetupList_Setup_MNterminated	*dRBsToBeSetup	/* OPTIONAL */;
-	struct DRBsToBeModifiedList_Modification_MNterminated	*dRBsToBeModified	/* OPTIONAL */;
-	struct DRB_List_withCause	*dRBsToBeReleased	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_PDUSessionResourceModificationInfo_MNterminated {
+    ASN_XNAP_PDUSessionType_t	 pduSessionType;
+	struct ASN_XNAP_DRBsToBeSetupList_Setup_MNterminated	*dRBsToBeSetup	/* OPTIONAL */;
+	struct ASN_XNAP_DRBsToBeModifiedList_Modification_MNterminated	*dRBsToBeModified	/* OPTIONAL */;
+	struct ASN_XNAP_DRB_List_withCause	*dRBsToBeReleased	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -39,7 +39,7 @@ typedef struct PDUSessionResourceModificationInfo_MNterminated {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} PDUSessionResourceModificationInfo_MNterminated_t;
+} ASN_XNAP_PDUSessionResourceModificationInfo_MNterminated_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_PDUSessionResourceModificationInfo_MNterminated;

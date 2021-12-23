@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* PER-Scalar */
-typedef long	 PER_Scalar_t;
+typedef long	 ASN_XNAP_PER_Scalar_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_PER_Scalar_constr_1;

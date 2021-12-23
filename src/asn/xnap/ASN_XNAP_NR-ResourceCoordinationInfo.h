@@ -12,9 +12,9 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "NR-CGI.h"
+#include "ASN_XNAP_NR-CGI.h"
 #include <BIT_STRING.h>
-#include "NR-CoordinationAssistanceInfo.h"
+#include "ASN_XNAP_NR-CoordinationAssistanceInfo.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -22,17 +22,17 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct E_UTRA_CGI;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_E_UTRA_CGI;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* NR-ResourceCoordinationInfo */
-typedef struct NR_ResourceCoordinationInfo {
-	NR_CGI_t	 nr_cell;
+typedef struct ASN_XNAP_NR_ResourceCoordinationInfo {
+    ASN_XNAP_NR_CGI_t	 nr_cell;
 	BIT_STRING_t	 ul_coordination_info;
 	BIT_STRING_t	*dl_coordination_info	/* OPTIONAL */;
-	struct E_UTRA_CGI	*e_utra_cell	/* OPTIONAL */;
-	NR_CoordinationAssistanceInfo_t	*nr_coordination_assistance_info	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+	struct ASN_XNAP_E_UTRA_CGI	*e_utra_cell	/* OPTIONAL */;
+    ASN_XNAP_NR_CoordinationAssistanceInfo_t	*nr_coordination_assistance_info	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -40,7 +40,7 @@ typedef struct NR_ResourceCoordinationInfo {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} NR_ResourceCoordinationInfo_t;
+} ASN_XNAP_NR_ResourceCoordinationInfo_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_NR_ResourceCoordinationInfo;

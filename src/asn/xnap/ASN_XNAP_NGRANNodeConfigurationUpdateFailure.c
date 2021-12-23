@@ -5,10 +5,10 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "NGRANNodeConfigurationUpdateFailure.h"
+#include "ASN_XNAP_NGRANNodeConfigurationUpdateFailure.h"
 
 asn_TYPE_member_t asn_MBR_NGRANNodeConfigurationUpdateFailure_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct NGRANNodeConfigurationUpdateFailure, protocolIEs),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_NGRANNodeConfigurationUpdateFailure, protocolIEs),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolIE_Container_5952P0,
@@ -25,8 +25,8 @@ static const asn_TYPE_tag2member_t asn_MAP_NGRANNodeConfigurationUpdateFailure_t
     { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* protocolIEs */
 };
 asn_SEQUENCE_specifics_t asn_SPC_NGRANNodeConfigurationUpdateFailure_specs_1 = {
-	sizeof(struct NGRANNodeConfigurationUpdateFailure),
-	offsetof(struct NGRANNodeConfigurationUpdateFailure, _asn_ctx),
+	sizeof(struct ASN_XNAP_NGRANNodeConfigurationUpdateFailure),
+	offsetof(struct ASN_XNAP_NGRANNodeConfigurationUpdateFailure, _asn_ctx),
 	asn_MAP_NGRANNodeConfigurationUpdateFailure_tag2el_1,
 	1,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */

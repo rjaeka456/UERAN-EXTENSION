@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PDUSession-ID.h"
+#include "ASN_XNAP_PDUSession-ID.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,16 +20,16 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct PDUSessionResourceModConfirmInfo_SNterminated;
-struct PDUSessionResourceModConfirmInfo_MNterminated;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_PDUSessionResourceModConfirmInfo_SNterminated;
+struct ASN_XNAP_PDUSessionResourceModConfirmInfo_MNterminated;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* PDUSessionAdmittedModSNModConfirm-Item */
-typedef struct PDUSessionAdmittedModSNModConfirm_Item {
-	PDUSession_ID_t	 pduSessionId;
-	struct PDUSessionResourceModConfirmInfo_SNterminated	*sn_terminated	/* OPTIONAL */;
-	struct PDUSessionResourceModConfirmInfo_MNterminated	*mn_terminated	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+typedef struct ASN_XNAP_PDUSessionAdmittedModSNModConfirm_Item {
+    ASN_XNAP_PDUSession_ID_t	 pduSessionId;
+	struct ASN_XNAP_PDUSessionResourceModConfirmInfo_SNterminated	*sn_terminated	/* OPTIONAL */;
+	struct ASN_XNAP_PDUSessionResourceModConfirmInfo_MNterminated	*mn_terminated	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -37,7 +37,7 @@ typedef struct PDUSessionAdmittedModSNModConfirm_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} PDUSessionAdmittedModSNModConfirm_Item_t;
+} ASN_XNAP_PDUSessionAdmittedModSNModConfirm_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_PDUSessionAdmittedModSNModConfirm_Item;

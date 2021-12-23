@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "DRBsAdmittedList-ModConfirm-SNterminated.h"
+#include "ASN_XNAP_DRBsAdmittedList-ModConfirm-SNterminated.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,18 +20,18 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct UPTransportLayerInformation;
-struct DRB_List_withCause;
-struct DataForwardingInfoFromTargetNGRANnode;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_UPTransportLayerInformation;
+struct ASN_XNAP_DRB_List_withCause;
+struct ASN_XNAP_DataForwardingInfoFromTargetNGRANnode;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* PDUSessionResourceModConfirmInfo-SNterminated */
-typedef struct PDUSessionResourceModConfirmInfo_SNterminated {
-	struct UPTransportLayerInformation	*uL_NG_U_TNLatUPF	/* OPTIONAL */;
-	DRBsAdmittedList_ModConfirm_SNterminated_t	 dRBsAdmittedList;
-	struct DRB_List_withCause	*dRBsNotAdmittedSetupModifyList	/* OPTIONAL */;
-	struct DataForwardingInfoFromTargetNGRANnode	*dataforwardinginfoTarget	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_PDUSessionResourceModConfirmInfo_SNterminated {
+	struct ASN_XNAP_UPTransportLayerInformation	*uL_NG_U_TNLatUPF	/* OPTIONAL */;
+    ASN_XNAP_DRBsAdmittedList_ModConfirm_SNterminated_t	 dRBsAdmittedList;
+	struct ASN_XNAP_DRB_List_withCause	*dRBsNotAdmittedSetupModifyList	/* OPTIONAL */;
+	struct ASN_XNAP_DataForwardingInfoFromTargetNGRANnode	*dataforwardinginfoTarget	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -39,7 +39,7 @@ typedef struct PDUSessionResourceModConfirmInfo_SNterminated {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} PDUSessionResourceModConfirmInfo_SNterminated_t;
+} ASN_XNAP_PDUSessionResourceModConfirmInfo_SNterminated_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_PDUSessionResourceModConfirmInfo_SNterminated;

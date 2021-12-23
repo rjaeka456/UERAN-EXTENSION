@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "NG-RAN-Node-ResourceCoordinationInfo.h"
+#include "ASN_XNAP_NG-RAN-Node-ResourceCoordinationInfo.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,12 +20,12 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* MR-DC-ResourceCoordinationInfo */
-typedef struct MR_DC_ResourceCoordinationInfo {
-	NG_RAN_Node_ResourceCoordinationInfo_t	 ng_RAN_Node_ResourceCoordinationInfo;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+typedef struct ASN_XNAP_MR_DC_ResourceCoordinationInfo {
+    ASN_XNAP_NG_RAN_Node_ResourceCoordinationInfo_t	 ng_RAN_Node_ResourceCoordinationInfo;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -33,7 +33,7 @@ typedef struct MR_DC_ResourceCoordinationInfo {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} MR_DC_ResourceCoordinationInfo_t;
+} ASN_XNAP_MR_DC_ResourceCoordinationInfo_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_MR_DC_ResourceCoordinationInfo;

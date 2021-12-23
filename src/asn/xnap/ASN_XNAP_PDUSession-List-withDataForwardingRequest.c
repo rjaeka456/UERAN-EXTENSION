@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "PDUSession-List-withDataForwardingRequest.h"
+#include "ASN_XNAP_PDUSession-List-withDataForwardingRequest.h"
 
-#include "PDUSession-List-withDataForwardingRequest-Item.h"
+#include "ASN_XNAP_PDUSession-List-withDataForwardingRequest-Item.h"
 asn_per_constraints_t asn_PER_type_PDUSession_List_withDataForwardingRequest_constr_1 CC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	{ APC_CONSTRAINED,	 8,  8,  1,  256 }	/* (SIZE(1..256)) */,
@@ -28,8 +28,8 @@ static const ber_tlv_tag_t asn_DEF_PDUSession_List_withDataForwardingRequest_tag
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 asn_SET_OF_specifics_t asn_SPC_PDUSession_List_withDataForwardingRequest_specs_1 = {
-	sizeof(struct PDUSession_List_withDataForwardingRequest),
-	offsetof(struct PDUSession_List_withDataForwardingRequest, _asn_ctx),
+	sizeof(struct ASN_XNAP_PDUSession_List_withDataForwardingRequest),
+	offsetof(struct ASN_XNAP_PDUSession_List_withDataForwardingRequest, _asn_ctx),
 	0,	/* XER encoding is XMLDelimitedItemList */
 };
 asn_TYPE_descriptor_t asn_DEF_PDUSession_List_withDataForwardingRequest = {

@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* ExpectedActivityPeriod */
-typedef long	 ExpectedActivityPeriod_t;
+typedef long	 ASN_XNAP_ExpectedActivityPeriod_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_ExpectedActivityPeriod_constr_1;

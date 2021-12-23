@@ -21,13 +21,13 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* DRBBStatusTransfer12bitsSN */
-typedef struct DRBBStatusTransfer12bitsSN {
+typedef struct ASN_XNAP_DRBBStatusTransfer12bitsSN {
 	BIT_STRING_t	*receiveStatusofPDCPSDU	/* OPTIONAL */;
-	COUNT_PDCP_SN12_t	 cOUNTValue;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+    ASN_XNAP_COUNT_PDCP_SN12_t	 cOUNTValue;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -35,7 +35,7 @@ typedef struct DRBBStatusTransfer12bitsSN {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} DRBBStatusTransfer12bitsSN_t;
+} ASN_XNAP_DRBBStatusTransfer12bitsSN_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_DRBBStatusTransfer12bitsSN;

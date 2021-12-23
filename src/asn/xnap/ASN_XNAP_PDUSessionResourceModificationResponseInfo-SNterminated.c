@@ -5,16 +5,16 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "PDUSessionResourceModificationResponseInfo-SNterminated.h"
+#include "ASN_XNAP_PDUSessionResourceModificationResponseInfo-SNterminated.h"
 
-#include "UPTransportLayerInformation.h"
-#include "DRBsToBeSetupList-SetupResponse-SNterminated.h"
-#include "DataForwardingInfoFromTargetNGRANnode.h"
-#include "DRBsToBeModifiedList-ModificationResponse-SNterminated.h"
-#include "DRB-List-withCause.h"
-#include "DataforwardingandOffloadingInfofromSource.h"
-#include "QoSFlows-List-withCause.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_UPTransportLayerInformation.h"
+#include "ASN_XNAP_DRBsToBeSetupList-SetupResponse-SNterminated.h"
+#include "ASN_XNAP_DataForwardingInfoFromTargetNGRANnode.h"
+#include "ASN_XNAP_DRBsToBeModifiedList-ModificationResponse-SNterminated.h"
+#include "ASN_XNAP_DRB-List-withCause.h"
+#include "ASN_XNAP_DataforwardingandOffloadingInfofromSource.h"
+#include "ASN_XNAP_QoSFlows-List-withCause.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_PDUSessionResourceModificationResponseInfo_SNterminated_1[] = {
 	{ ATF_POINTER, 9, offsetof(struct PDUSessionResourceModificationResponseInfo_SNterminated, dL_NG_U_TNLatNG_RAN),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),

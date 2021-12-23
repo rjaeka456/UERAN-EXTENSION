@@ -5,17 +5,17 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "SharedResourceType-ULDL-Sharing-DL-Resources.h"
+#include "ASN_XNAP_SharedResourceType-ULDL-Sharing-DL-Resources.h"
 
-#include "SharedResourceType-ULDL-Sharing-DL-ResourcesChanged.h"
-#include "ProtocolIE-Single-Container.h"
+#include "ASN_XNAP_SharedResourceType-ULDL-Sharing-DL-ResourcesChanged.h"
+#include "ASN_XNAP_ProtocolIE-Single-Container.h"
 asn_per_constraints_t asn_PER_type_SharedResourceType_ULDL_Sharing_DL_Resources_constr_1 CC_NOTUSED = {
 	{ APC_CONSTRAINED,	 2,  2,  0,  2 }	/* (0..2) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
 asn_TYPE_member_t asn_MBR_SharedResourceType_ULDL_Sharing_DL_Resources_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct SharedResourceType_ULDL_Sharing_DL_Resources, choice.unchanged),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_SharedResourceType_ULDL_Sharing_DL_Resources, choice.unchanged),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NULL,

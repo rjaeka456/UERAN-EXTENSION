@@ -19,21 +19,21 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum ExpectedHOInterval {
-	ExpectedHOInterval_sec15	= 0,
-	ExpectedHOInterval_sec30	= 1,
-	ExpectedHOInterval_sec60	= 2,
-	ExpectedHOInterval_sec90	= 3,
-	ExpectedHOInterval_sec120	= 4,
-	ExpectedHOInterval_sec180	= 5,
-	ExpectedHOInterval_long_time	= 6
+typedef enum ASN_XNAP_ExpectedHOInterval {
+    ASN_XNAP_ExpectedHOInterval_sec15	= 0,
+    ASN_XNAP_ExpectedHOInterval_sec30	= 1,
+    ASN_XNAP_ExpectedHOInterval_sec60	= 2,
+    ASN_XNAP_ExpectedHOInterval_sec90	= 3,
+    ASN_XNAP_ExpectedHOInterval_sec120	= 4,
+    ASN_XNAP_ExpectedHOInterval_sec180	= 5,
+    ASN_XNAP_ExpectedHOInterval_long_time	= 6
 	/*
 	 * Enumeration is extensible
 	 */
-} e_ExpectedHOInterval;
+} e_ASN_XNAP_ExpectedHOInterval;
 
 /* ExpectedHOInterval */
-typedef long	 ExpectedHOInterval_t;
+typedef long	 ASN_XNAP_ExpectedHOInterval_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_ExpectedHOInterval_constr_1;

@@ -22,8 +22,8 @@ extern "C" {
 typedef long	 ASN_XNAP_NRPCI_t;
 
 /* Implementation */
-extern asn_per_constraints_t asn_PER_type_ASN_XNAP_NRPCI_constr_1;
-extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_NRPCI;
+extern asn_per_constraints_t asn_PER_type_NRPCI_constr_1;
+extern asn_TYPE_descriptor_t asn_DEF_NRPCI;
 asn_struct_free_f NRPCI_free;
 asn_struct_print_f NRPCI_print;
 asn_constr_check_f NRPCI_constraint;

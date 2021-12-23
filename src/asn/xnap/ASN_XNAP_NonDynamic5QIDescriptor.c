@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "NonDynamic5QIDescriptor.h"
+#include "ASN_XNAP_NonDynamic5QIDescriptor.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_NonDynamic5QIDescriptor_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct NonDynamic5QIDescriptor, fiveQI),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_NonDynamic5QIDescriptor, fiveQI),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_FiveQI,
@@ -18,7 +18,7 @@ asn_TYPE_member_t asn_MBR_NonDynamic5QIDescriptor_1[] = {
 		0, 0, /* No default value */
 		"fiveQI"
 		},
-	{ ATF_POINTER, 4, offsetof(struct NonDynamic5QIDescriptor, priorityLevelQoS),
+	{ ATF_POINTER, 4, offsetof(struct ASN_XNAP_NonDynamic5QIDescriptor, priorityLevelQoS),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PriorityLevelQoS,
@@ -27,7 +27,7 @@ asn_TYPE_member_t asn_MBR_NonDynamic5QIDescriptor_1[] = {
 		0, 0, /* No default value */
 		"priorityLevelQoS"
 		},
-	{ ATF_POINTER, 3, offsetof(struct NonDynamic5QIDescriptor, averagingWindow),
+	{ ATF_POINTER, 3, offsetof(struct ASN_XNAP_NonDynamic5QIDescriptor, averagingWindow),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_AveragingWindow,
@@ -36,7 +36,7 @@ asn_TYPE_member_t asn_MBR_NonDynamic5QIDescriptor_1[] = {
 		0, 0, /* No default value */
 		"averagingWindow"
 		},
-	{ ATF_POINTER, 2, offsetof(struct NonDynamic5QIDescriptor, maximumDataBurstVolume),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_NonDynamic5QIDescriptor, maximumDataBurstVolume),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_MaximumDataBurstVolume,
@@ -45,7 +45,7 @@ asn_TYPE_member_t asn_MBR_NonDynamic5QIDescriptor_1[] = {
 		0, 0, /* No default value */
 		"maximumDataBurstVolume"
 		},
-	{ ATF_POINTER, 1, offsetof(struct NonDynamic5QIDescriptor, iE_Extension),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_NonDynamic5QIDescriptor, iE_Extension),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -67,8 +67,8 @@ static const asn_TYPE_tag2member_t asn_MAP_NonDynamic5QIDescriptor_tag2el_1[] = 
     { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* iE-Extension */
 };
 asn_SEQUENCE_specifics_t asn_SPC_NonDynamic5QIDescriptor_specs_1 = {
-	sizeof(struct NonDynamic5QIDescriptor),
-	offsetof(struct NonDynamic5QIDescriptor, _asn_ctx),
+	sizeof(struct ASN_XNAP_NonDynamic5QIDescriptor),
+	offsetof(struct ASN_XNAP_NonDynamic5QIDescriptor, _asn_ctx),
 	asn_MAP_NonDynamic5QIDescriptor_tag2el_1,
 	5,	/* Count of tags in the map */
 	asn_MAP_NonDynamic5QIDescriptor_oms_1,	/* Optional members */

@@ -57,7 +57,7 @@ asn_TYPE_descriptor_t asn_DEF_delayCritical_6 = {
 };
 
 asn_TYPE_member_t asn_MBR_Dynamic5QIDescriptor_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Dynamic5QIDescriptor, priorityLevelQoS),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_Dynamic5QIDescriptor, priorityLevelQoS),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PriorityLevelQoS,
@@ -66,7 +66,7 @@ asn_TYPE_member_t asn_MBR_Dynamic5QIDescriptor_1[] = {
 		0, 0, /* No default value */
 		"priorityLevelQoS"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Dynamic5QIDescriptor, packetDelayBudget),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_Dynamic5QIDescriptor, packetDelayBudget),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PacketDelayBudget,
@@ -75,7 +75,7 @@ asn_TYPE_member_t asn_MBR_Dynamic5QIDescriptor_1[] = {
 		0, 0, /* No default value */
 		"packetDelayBudget"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Dynamic5QIDescriptor, packetErrorRate),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_Dynamic5QIDescriptor, packetErrorRate),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PacketErrorRate,
@@ -84,7 +84,7 @@ asn_TYPE_member_t asn_MBR_Dynamic5QIDescriptor_1[] = {
 		0, 0, /* No default value */
 		"packetErrorRate"
 		},
-	{ ATF_POINTER, 5, offsetof(struct Dynamic5QIDescriptor, fiveQI),
+	{ ATF_POINTER, 5, offsetof(struct ASN_XNAP_Dynamic5QIDescriptor, fiveQI),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_FiveQI,
@@ -93,7 +93,7 @@ asn_TYPE_member_t asn_MBR_Dynamic5QIDescriptor_1[] = {
 		0, 0, /* No default value */
 		"fiveQI"
 		},
-	{ ATF_POINTER, 4, offsetof(struct Dynamic5QIDescriptor, delayCritical),
+	{ ATF_POINTER, 4, offsetof(struct ASN_XNAP_Dynamic5QIDescriptor, delayCritical),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_delayCritical_6,
@@ -102,7 +102,7 @@ asn_TYPE_member_t asn_MBR_Dynamic5QIDescriptor_1[] = {
 		0, 0, /* No default value */
 		"delayCritical"
 		},
-	{ ATF_POINTER, 3, offsetof(struct Dynamic5QIDescriptor, averagingWindow),
+	{ ATF_POINTER, 3, offsetof(struct ASN_XNAP_Dynamic5QIDescriptor, averagingWindow),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_AveragingWindow,
@@ -111,7 +111,7 @@ asn_TYPE_member_t asn_MBR_Dynamic5QIDescriptor_1[] = {
 		0, 0, /* No default value */
 		"averagingWindow"
 		},
-	{ ATF_POINTER, 2, offsetof(struct Dynamic5QIDescriptor, maximumDataBurstVolume),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_Dynamic5QIDescriptor, maximumDataBurstVolume),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_MaximumDataBurstVolume,
@@ -120,7 +120,7 @@ asn_TYPE_member_t asn_MBR_Dynamic5QIDescriptor_1[] = {
 		0, 0, /* No default value */
 		"maximumDataBurstVolume"
 		},
-	{ ATF_POINTER, 1, offsetof(struct Dynamic5QIDescriptor, iE_Extension),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_Dynamic5QIDescriptor, iE_Extension),
 		(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -145,8 +145,8 @@ static const asn_TYPE_tag2member_t asn_MAP_Dynamic5QIDescriptor_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (7 << 2)), 7, 0, 0 } /* iE-Extension */
 };
 asn_SEQUENCE_specifics_t asn_SPC_Dynamic5QIDescriptor_specs_1 = {
-	sizeof(struct Dynamic5QIDescriptor),
-	offsetof(struct Dynamic5QIDescriptor, _asn_ctx),
+	sizeof(struct ASN_XNAP_Dynamic5QIDescriptor),
+	offsetof(struct ASN_XNAP_Dynamic5QIDescriptor, _asn_ctx),
 	asn_MAP_Dynamic5QIDescriptor_tag2el_1,
 	8,	/* Count of tags in the map */
 	asn_MAP_Dynamic5QIDescriptor_oms_1,	/* Optional members */

@@ -19,22 +19,22 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum RespondingNodeTypeConfigUpdateAck_PR {
-	RespondingNodeTypeConfigUpdateAck_PR_NOTHING,	/* No components present */
-	RespondingNodeTypeConfigUpdateAck_PR_ng_eNB,
-	RespondingNodeTypeConfigUpdateAck_PR_gNB,
-	RespondingNodeTypeConfigUpdateAck_PR_choice_extension
-} RespondingNodeTypeConfigUpdateAck_PR;
+typedef enum ASN_XNAP_RespondingNodeTypeConfigUpdateAck_PR {
+    ASN_XNAP_RespondingNodeTypeConfigUpdateAck_PR_NOTHING,	/* No components present */
+    ASN_XNAP_RespondingNodeTypeConfigUpdateAck_PR_ng_eNB,
+    ASN_XNAP_RespondingNodeTypeConfigUpdateAck_PR_gNB,
+    ASN_XNAP_RespondingNodeTypeConfigUpdateAck_PR_choice_extension
+} ASN_XNAP_RespondingNodeTypeConfigUpdateAck_PR;
 
 /* Forward declarations */
-struct RespondingNodeTypeConfigUpdateAck_ng_eNB;
-struct RespondingNodeTypeConfigUpdateAck_gNB;
-struct ProtocolIE_Single_Container;
+struct ASN_XNAP_RespondingNodeTypeConfigUpdateAck_ng_eNB;
+struct ASN_XNAP_RespondingNodeTypeConfigUpdateAck_gNB;
+struct ASN_XNAP_ProtocolIE_Single_Container;
 
 /* RespondingNodeTypeConfigUpdateAck */
-typedef struct RespondingNodeTypeConfigUpdateAck {
-	RespondingNodeTypeConfigUpdateAck_PR present;
-	union RespondingNodeTypeConfigUpdateAck_u {
+typedef struct ASN_XNAP_RespondingNodeTypeConfigUpdateAck {
+    ASN_XNAP_RespondingNodeTypeConfigUpdateAck_PR present;
+	union ASN_XNAP_RespondingNodeTypeConfigUpdateAck_u {
 		struct RespondingNodeTypeConfigUpdateAck_ng_eNB	*ng_eNB;
 		struct RespondingNodeTypeConfigUpdateAck_gNB	*gNB;
 		struct ProtocolIE_Single_Container	*choice_extension;
@@ -42,7 +42,7 @@ typedef struct RespondingNodeTypeConfigUpdateAck {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} RespondingNodeTypeConfigUpdateAck_t;
+} ASN_XNAP_RespondingNodeTypeConfigUpdateAck_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_RespondingNodeTypeConfigUpdateAck;

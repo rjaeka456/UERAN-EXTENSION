@@ -19,16 +19,16 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum PDCPDuplicationConfiguration {
-	PDCPDuplicationConfiguration_configured	= 0,
-	PDCPDuplicationConfiguration_de_configured	= 1
+typedef enum ASN_XNAP_PDCPDuplicationConfiguration {
+    ASN_XNAP_PDCPDuplicationConfiguration_configured	= 0,
+    ASN_XNAP_PDCPDuplicationConfiguration_de_configured	= 1
 	/*
 	 * Enumeration is extensible
 	 */
-} e_PDCPDuplicationConfiguration;
+} e_ASN_XNAP_PDCPDuplicationConfiguration;
 
 /* PDCPDuplicationConfiguration */
-typedef long	 PDCPDuplicationConfiguration_t;
+typedef long	 ASN_XNAP_PDCPDuplicationConfiguration_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_PDCPDuplicationConfiguration_constr_1;

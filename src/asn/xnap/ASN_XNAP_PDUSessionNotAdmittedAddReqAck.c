@@ -5,10 +5,10 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "PDUSessionNotAdmittedAddReqAck.h"
+#include "ASN_XNAP_PDUSessionNotAdmittedAddReqAck.h"
 
-#include "PDUSessionResourcesNotAdmitted-List.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_PDUSessionResourcesNotAdmitted-List.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 static asn_TYPE_member_t asn_MBR_PDUSessionNotAdmittedAddReqAck_1[] = {
 	{ ATF_POINTER, 3, offsetof(struct PDUSessionNotAdmittedAddReqAck, pduSessionResourcesNotAdmitted_SNterminated),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),

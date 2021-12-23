@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "UPTransportLayerInformation.h"
+#include "ASN_XNAP_UPTransportLayerInformation.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,20 +20,20 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct DRBsToBeSetupList_SetupResponse_SNterminated;
-struct DataForwardingInfoFromTargetNGRANnode;
-struct QoSFlows_List_withCause;
-struct SecurityResult;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_DRBsToBeSetupList_SetupResponse_SNterminated;
+struct ASN_XNAP_DataForwardingInfoFromTargetNGRANnode;
+struct ASN_XNAP_QoSFlows_List_withCause;
+struct ASN_XNAP_SecurityResult;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* PDUSessionResourceSetupResponseInfo-SNterminated */
-typedef struct PDUSessionResourceSetupResponseInfo_SNterminated {
-	UPTransportLayerInformation_t	 dL_NG_U_TNLatNG_RAN;
-	struct DRBsToBeSetupList_SetupResponse_SNterminated	*dRBsToBeSetup	/* OPTIONAL */;
-	struct DataForwardingInfoFromTargetNGRANnode	*dataforwardinginfoTarget	/* OPTIONAL */;
-	struct QoSFlows_List_withCause	*qosFlowsNotAdmittedList	/* OPTIONAL */;
-	struct SecurityResult	*securityResult	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_PDUSessionResourceSetupResponseInfo_SNterminated {
+    ASN_XNAP_UPTransportLayerInformation_t	 dL_NG_U_TNLatNG_RAN;
+	struct ASN_XNAP_DRBsToBeSetupList_SetupResponse_SNterminated	*dRBsToBeSetup	/* OPTIONAL */;
+	struct ASN_XNAP_DataForwardingInfoFromTargetNGRANnode	*dataforwardinginfoTarget	/* OPTIONAL */;
+	struct ASN_XNAP_QoSFlows_List_withCause	*qosFlowsNotAdmittedList	/* OPTIONAL */;
+	struct ASN_XNAP_SecurityResult	*securityResult	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -41,7 +41,7 @@ typedef struct PDUSessionResourceSetupResponseInfo_SNterminated {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} PDUSessionResourceSetupResponseInfo_SNterminated_t;
+} ASN_XNAP_PDUSessionResourceSetupResponseInfo_SNterminated_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_PDUSessionResourceSetupResponseInfo_SNterminated;

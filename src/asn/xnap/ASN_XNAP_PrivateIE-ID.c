@@ -5,7 +5,7 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "PrivateIE-ID.h"
+#include "ASN_XNAP_PrivateIE-ID.h"
 
 static int
 memb_local_constraint_1(const asn_TYPE_descriptor_t *td, const void *sptr,
@@ -43,7 +43,7 @@ asn_per_constraints_t asn_PER_type_PrivateIE_ID_constr_1 CC_NOTUSED = {
 	0, 0	/* No PER value map */
 };
 asn_TYPE_member_t asn_MBR_PrivateIE_ID_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct PrivateIE_ID, choice.local),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_PrivateIE_ID, choice.local),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NativeInteger,
@@ -52,7 +52,7 @@ asn_TYPE_member_t asn_MBR_PrivateIE_ID_1[] = {
 		0, 0, /* No default value */
 		"local"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct PrivateIE_ID, choice.global),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_PrivateIE_ID, choice.global),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_OBJECT_IDENTIFIER,
@@ -67,10 +67,10 @@ static const asn_TYPE_tag2member_t asn_MAP_PrivateIE_ID_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* global */
 };
 asn_CHOICE_specifics_t asn_SPC_PrivateIE_ID_specs_1 = {
-	sizeof(struct PrivateIE_ID),
-	offsetof(struct PrivateIE_ID, _asn_ctx),
-	offsetof(struct PrivateIE_ID, present),
-	sizeof(((struct PrivateIE_ID *)0)->present),
+	sizeof(struct ASN_XNAP_PrivateIE_ID),
+	offsetof(struct ASN_XNAP_PrivateIE_ID, _asn_ctx),
+	offsetof(struct ASN_XNAP_PrivateIE_ID, present),
+	sizeof(((struct ASN_XNAP_PrivateIE_ID *)0)->present),
 	asn_MAP_PrivateIE_ID_tag2el_1,
 	2,	/* Count of tags in the map */
 	0, 0,

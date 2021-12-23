@@ -5,12 +5,12 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "QoSFlowsModifiedMappedtoDRB-ModRqd-SNterminated-Item.h"
+#include "ASN_XNAP_QoSFlowsModifiedMappedtoDRB-ModRqd-SNterminated-Item.h"
 
-#include "GBRQoSFlowInfo.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_GBRQoSFlowInfo.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_QoSFlowsModifiedMappedtoDRB_ModRqd_SNterminated_Item_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct QoSFlowsModifiedMappedtoDRB_ModRqd_SNterminated_Item, qoSFlowIdentifier),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_QoSFlowsModifiedMappedtoDRB_ModRqd_SNterminated_Item, qoSFlowIdentifier),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_QoSFlowIdentifier,
@@ -19,7 +19,7 @@ asn_TYPE_member_t asn_MBR_QoSFlowsModifiedMappedtoDRB_ModRqd_SNterminated_Item_1
 		0, 0, /* No default value */
 		"qoSFlowIdentifier"
 		},
-	{ ATF_POINTER, 2, offsetof(struct QoSFlowsModifiedMappedtoDRB_ModRqd_SNterminated_Item, mCGRequestedGBRQoSFlowInfo),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_QoSFlowsModifiedMappedtoDRB_ModRqd_SNterminated_Item, mCGRequestedGBRQoSFlowInfo),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_GBRQoSFlowInfo,
@@ -28,7 +28,7 @@ asn_TYPE_member_t asn_MBR_QoSFlowsModifiedMappedtoDRB_ModRqd_SNterminated_Item_1
 		0, 0, /* No default value */
 		"mCGRequestedGBRQoSFlowInfo"
 		},
-	{ ATF_POINTER, 1, offsetof(struct QoSFlowsModifiedMappedtoDRB_ModRqd_SNterminated_Item, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_QoSFlowsModifiedMappedtoDRB_ModRqd_SNterminated_Item, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -48,8 +48,8 @@ static const asn_TYPE_tag2member_t asn_MAP_QoSFlowsModifiedMappedtoDRB_ModRqd_SN
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_QoSFlowsModifiedMappedtoDRB_ModRqd_SNterminated_Item_specs_1 = {
-	sizeof(struct QoSFlowsModifiedMappedtoDRB_ModRqd_SNterminated_Item),
-	offsetof(struct QoSFlowsModifiedMappedtoDRB_ModRqd_SNterminated_Item, _asn_ctx),
+	sizeof(struct ASN_XNAP_QoSFlowsModifiedMappedtoDRB_ModRqd_SNterminated_Item),
+	offsetof(struct ASN_XNAP_QoSFlowsModifiedMappedtoDRB_ModRqd_SNterminated_Item, _asn_ctx),
 	asn_MAP_QoSFlowsModifiedMappedtoDRB_ModRqd_SNterminated_Item_tag2el_1,
 	3,	/* Count of tags in the map */
 	asn_MAP_QoSFlowsModifiedMappedtoDRB_ModRqd_SNterminated_Item_oms_1,	/* Optional members */

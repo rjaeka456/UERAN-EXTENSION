@@ -24,10 +24,10 @@ extern "C" {
 struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* DRBsSubjectToStatusTransfer-Item */
-typedef struct DRBsSubjectToStatusTransfer_Item {
-	DRB_ID_t	 drbID;
-	DRBBStatusTransferChoice_t	 pdcpStatusTransfer_UL;
-	DRBBStatusTransferChoice_t	 pdcpStatusTransfer_DL;
+typedef struct ASN_XNAP_DRBsSubjectToStatusTransfer_Item {
+    ASN_XNAP_DRB_ID_t	 drbID;
+    ASN_XNAP_DRBBStatusTransferChoice_t	 pdcpStatusTransfer_UL;
+    ASN_XNAP_DRBBStatusTransferChoice_t	 pdcpStatusTransfer_DL;
 	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
@@ -36,7 +36,7 @@ typedef struct DRBsSubjectToStatusTransfer_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} DRBsSubjectToStatusTransfer_Item_t;
+} ASN_XNAP_DRBsSubjectToStatusTransfer_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_DRBsSubjectToStatusTransfer_Item;

@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "ResetRequestTypeInfo.h"
+#include "ASN_XNAP_ResetRequestTypeInfo.h"
 
-#include "ResetRequestTypeInfo-Full.h"
-#include "ResetRequestTypeInfo-Partial.h"
-#include "ProtocolIE-Single-Container.h"
+#include "ASN_XNAP_ResetRequestTypeInfo-Full.h"
+#include "ASN_XNAP_ResetRequestTypeInfo-Partial.h"
+#include "ASN_XNAP_ProtocolIE-Single-Container.h"
 static asn_per_constraints_t asn_PER_type_ResetRequestTypeInfo_constr_1 CC_NOTUSED = {
 	{ APC_CONSTRAINED,	 2,  2,  0,  2 }	/* (0..2) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },

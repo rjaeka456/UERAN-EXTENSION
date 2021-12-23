@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "ResponseInfo-ReconfCompl.h"
+#include "ASN_XNAP_ResponseInfo-ReconfCompl.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 static asn_TYPE_member_t asn_MBR_ResponseInfo_ReconfCompl_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct ResponseInfo_ReconfCompl, responseType_ReconfComplete),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ResponseInfo_ReconfCompl, responseType_ReconfComplete),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_ResponseType_ReconfComplete,
@@ -18,7 +18,7 @@ static asn_TYPE_member_t asn_MBR_ResponseInfo_ReconfCompl_1[] = {
 		0, 0, /* No default value */
 		"responseType-ReconfComplete"
 		},
-	{ ATF_POINTER, 1, offsetof(struct ResponseInfo_ReconfCompl, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_ResponseInfo_ReconfCompl, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -37,8 +37,8 @@ static const asn_TYPE_tag2member_t asn_MAP_ResponseInfo_ReconfCompl_tag2el_1[] =
     { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* iE-Extensions */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_ResponseInfo_ReconfCompl_specs_1 = {
-	sizeof(struct ResponseInfo_ReconfCompl),
-	offsetof(struct ResponseInfo_ReconfCompl, _asn_ctx),
+	sizeof(struct ASN_XNAP_ResponseInfo_ReconfCompl),
+	offsetof(struct ASN_XNAP_ResponseInfo_ReconfCompl, _asn_ctx),
 	asn_MAP_ResponseInfo_ReconfCompl_tag2el_1,
 	2,	/* Count of tags in the map */
 	asn_MAP_ResponseInfo_ReconfCompl_oms_1,	/* Optional members */

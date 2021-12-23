@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "QoSFlowsMappedtoDRB-Setup-MNterminated-Item.h"
+#include "ASN_XNAP_QoSFlowsMappedtoDRB-Setup-MNterminated-Item.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_QoSFlowsMappedtoDRB_Setup_MNterminated_Item_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct QoSFlowsMappedtoDRB_Setup_MNterminated_Item, qoSFlowIdentifier),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_QoSFlowsMappedtoDRB_Setup_MNterminated_Item, qoSFlowIdentifier),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_QoSFlowIdentifier,
@@ -18,7 +18,7 @@ asn_TYPE_member_t asn_MBR_QoSFlowsMappedtoDRB_Setup_MNterminated_Item_1[] = {
 		0, 0, /* No default value */
 		"qoSFlowIdentifier"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct QoSFlowsMappedtoDRB_Setup_MNterminated_Item, qoSFlowLevelQoSParameters),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_QoSFlowsMappedtoDRB_Setup_MNterminated_Item, qoSFlowLevelQoSParameters),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_QoSFlowLevelQoSParameters,
@@ -27,7 +27,7 @@ asn_TYPE_member_t asn_MBR_QoSFlowsMappedtoDRB_Setup_MNterminated_Item_1[] = {
 		0, 0, /* No default value */
 		"qoSFlowLevelQoSParameters"
 		},
-	{ ATF_POINTER, 2, offsetof(struct QoSFlowsMappedtoDRB_Setup_MNterminated_Item, qosFlowMappingIndication),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_QoSFlowsMappedtoDRB_Setup_MNterminated_Item, qosFlowMappingIndication),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_QoSFlowMappingIndication,
@@ -36,7 +36,7 @@ asn_TYPE_member_t asn_MBR_QoSFlowsMappedtoDRB_Setup_MNterminated_Item_1[] = {
 		0, 0, /* No default value */
 		"qosFlowMappingIndication"
 		},
-	{ ATF_POINTER, 1, offsetof(struct QoSFlowsMappedtoDRB_Setup_MNterminated_Item, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_QoSFlowsMappedtoDRB_Setup_MNterminated_Item, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -57,8 +57,8 @@ static const asn_TYPE_tag2member_t asn_MAP_QoSFlowsMappedtoDRB_Setup_MNterminate
     { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_QoSFlowsMappedtoDRB_Setup_MNterminated_Item_specs_1 = {
-	sizeof(struct QoSFlowsMappedtoDRB_Setup_MNterminated_Item),
-	offsetof(struct QoSFlowsMappedtoDRB_Setup_MNterminated_Item, _asn_ctx),
+	sizeof(struct ASN_XNAP_QoSFlowsMappedtoDRB_Setup_MNterminated_Item),
+	offsetof(struct ASN_XNAP_QoSFlowsMappedtoDRB_Setup_MNterminated_Item, _asn_ctx),
 	asn_MAP_QoSFlowsMappedtoDRB_Setup_MNterminated_Item_tag2el_1,
 	4,	/* Count of tags in the map */
 	asn_MAP_QoSFlowsMappedtoDRB_Setup_MNterminated_Item_oms_1,	/* Optional members */

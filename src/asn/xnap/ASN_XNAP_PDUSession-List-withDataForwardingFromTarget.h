@@ -20,15 +20,15 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct PDUSession_List_withDataForwardingFromTarget_Item;
+struct ASN_XNAP_PDUSession_List_withDataForwardingFromTarget_Item;
 
 /* PDUSession-List-withDataForwardingFromTarget */
-typedef struct PDUSession_List_withDataForwardingFromTarget {
-	A_SEQUENCE_OF(struct PDUSession_List_withDataForwardingFromTarget_Item) list;
+typedef struct ASN_XNAP_PDUSession_List_withDataForwardingFromTarget {
+	A_SEQUENCE_OF(struct ASN_XNAP_PDUSession_List_withDataForwardingFromTarget_Item) list;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} PDUSession_List_withDataForwardingFromTarget_t;
+} ASN_XNAP_PDUSession_List_withDataForwardingFromTarget_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_PDUSession_List_withDataForwardingFromTarget;

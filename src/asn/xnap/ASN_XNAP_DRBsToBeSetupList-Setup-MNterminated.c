@@ -28,8 +28,8 @@ static const ber_tlv_tag_t asn_DEF_DRBsToBeSetupList_Setup_MNterminated_tags_1[]
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 asn_SET_OF_specifics_t asn_SPC_DRBsToBeSetupList_Setup_MNterminated_specs_1 = {
-	sizeof(struct DRBsToBeSetupList_Setup_MNterminated),
-	offsetof(struct DRBsToBeSetupList_Setup_MNterminated, _asn_ctx),
+	sizeof(struct ASN_XNAP_DRBsToBeSetupList_Setup_MNterminated),
+	offsetof(struct ASN_XNAP_DRBsToBeSetupList_Setup_MNterminated, _asn_ctx),
 	0,	/* XER encoding is XMLDelimitedItemList */
 };
 asn_TYPE_descriptor_t asn_DEF_DRBsToBeSetupList_Setup_MNterminated = {

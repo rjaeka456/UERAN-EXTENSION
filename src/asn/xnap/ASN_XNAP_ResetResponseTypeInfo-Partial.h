@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "ResetResponsePartialReleaseList.h"
+#include "ASN_XNAP_ResetResponsePartialReleaseList.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,12 +20,12 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* ResetResponseTypeInfo-Partial */
-typedef struct ResetResponseTypeInfo_Partial {
-	ResetResponsePartialReleaseList_t	 ue_contexts_AdmittedToBeReleasedList;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+typedef struct ASN_XNAP_ResetResponseTypeInfo_Partial {
+    ASN_XNAP_ResetResponsePartialReleaseList_t	 ue_contexts_AdmittedToBeReleasedList;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -33,7 +33,7 @@ typedef struct ResetResponseTypeInfo_Partial {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} ResetResponseTypeInfo_Partial_t;
+} ASN_XNAP_ResetResponseTypeInfo_Partial_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_ResetResponseTypeInfo_Partial;

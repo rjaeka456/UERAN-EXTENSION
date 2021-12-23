@@ -21,12 +21,12 @@ extern "C" {
 #endif
 
 /* DRB-List */
-typedef struct DRB_List {
-	A_SEQUENCE_OF(DRB_ID_t) list;
+typedef struct ASN_XNAP_DRB_List {
+	A_SEQUENCE_OF(ASN_XNAP_DRB_ID_t) list;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} DRB_List_t;
+} ASN_XNAP_DRB_List_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_DRB_List;

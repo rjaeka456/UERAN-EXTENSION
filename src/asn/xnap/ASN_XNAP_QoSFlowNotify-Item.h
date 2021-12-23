@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "QoSFlowIdentifier.h"
+#include "ASN_XNAP_QoSFlowIdentifier.h"
 #include <NativeEnumerated.h>
 #include <constr_SEQUENCE.h>
 
@@ -21,22 +21,22 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum QoSFlowNotify_Item__notificationInformation {
-	QoSFlowNotify_Item__notificationInformation_fulfilled	= 0,
-	QoSFlowNotify_Item__notificationInformation_not_fulfilled	= 1
+typedef enum ASN_XNAP_QoSFlowNotify_Item__notificationInformation {
+    ASN_XNAP_QoSFlowNotify_Item__notificationInformation_fulfilled	= 0,
+    ASN_XNAP_QoSFlowNotify_Item__notificationInformation_not_fulfilled	= 1
 	/*
 	 * Enumeration is extensible
 	 */
-} e_QoSFlowNotify_Item__notificationInformation;
+} e_ASN_XNAP_QoSFlowNotify_Item__notificationInformation;
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* QoSFlowNotify-Item */
-typedef struct QoSFlowNotify_Item {
-	QoSFlowIdentifier_t	 qosFlowIdentifier;
+typedef struct ASN_XNAP_QoSFlowNotify_Item {
+    ASN_XNAP_QoSFlowIdentifier_t	 qosFlowIdentifier;
 	long	 notificationInformation;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -44,7 +44,7 @@ typedef struct QoSFlowNotify_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} QoSFlowNotify_Item_t;
+} ASN_XNAP_QoSFlowNotify_Item_t;
 
 /* Implementation */
 /* extern asn_TYPE_descriptor_t asn_DEF_notificationInformation_3;	// (Use -fall-defs-global to expose) */

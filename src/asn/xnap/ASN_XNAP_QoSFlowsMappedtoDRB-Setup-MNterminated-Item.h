@@ -12,9 +12,9 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "QoSFlowIdentifier.h"
-#include "QoSFlowLevelQoSParameters.h"
-#include "QoSFlowMappingIndication.h"
+#include "ASN_XNAP_QoSFlowIdentifier.h"
+#include "ASN_XNAP_QoSFlowLevelQoSParameters.h"
+#include "ASN_XNAP_QoSFlowMappingIndication.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -22,14 +22,14 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* QoSFlowsMappedtoDRB-Setup-MNterminated-Item */
-typedef struct QoSFlowsMappedtoDRB_Setup_MNterminated_Item {
-	QoSFlowIdentifier_t	 qoSFlowIdentifier;
-	QoSFlowLevelQoSParameters_t	 qoSFlowLevelQoSParameters;
-	QoSFlowMappingIndication_t	*qosFlowMappingIndication	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_QoSFlowsMappedtoDRB_Setup_MNterminated_Item {
+    ASN_XNAP_QoSFlowIdentifier_t	 qoSFlowIdentifier;
+    ASN_XNAP_QoSFlowLevelQoSParameters_t	 qoSFlowLevelQoSParameters;
+    ASN_XNAP_QoSFlowMappingIndication_t	*qosFlowMappingIndication	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -37,7 +37,7 @@ typedef struct QoSFlowsMappedtoDRB_Setup_MNterminated_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} QoSFlowsMappedtoDRB_Setup_MNterminated_Item_t;
+} ASN_XNAP_QoSFlowsMappedtoDRB_Setup_MNterminated_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_QoSFlowsMappedtoDRB_Setup_MNterminated_Item;

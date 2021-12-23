@@ -12,12 +12,12 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "NRPCI.h"
-#include "NR-CGI.h"
-#include "TAC.h"
-#include "RANAC.h"
-#include "NeighbourInformation-NR-ModeInfo.h"
-#include "Connectivity-Support.h"
+#include "ASN_XNAP_NRPCI.h"
+#include "ASN_XNAP_NR-CGI.h"
+#include "ASN_XNAP_TAC.h"
+#include "ASN_XNAP_RANAC.h"
+#include "ASN_XNAP_NeighbourInformation-NR-ModeInfo.h"
+#include "ASN_XNAP_Connectivity-Support.h"
 #include <OCTET_STRING.h>
 #include <constr_SEQUENCE.h>
 
@@ -26,18 +26,18 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* NeighbourInformation-NR-Item */
-typedef struct NeighbourInformation_NR_Item {
-	NRPCI_t	 nr_PCI;
-	NR_CGI_t	 nr_cgi;
-	TAC_t	 tac;
-	RANAC_t	*ranac	/* OPTIONAL */;
-	NeighbourInformation_NR_ModeInfo_t	 nr_mode_info;
-	Connectivity_Support_t	 connectivitySupport;
+typedef struct ASN_XNAP_NeighbourInformation_NR_Item {
+    ASN_XNAP_NRPCI_t	 nr_PCI;
+    ASN_XNAP_NR_CGI_t	 nr_cgi;
+    ASN_XNAP_TAC_t	 tac;
+    ASN_XNAP_RANAC_t	*ranac	/* OPTIONAL */;
+    ASN_XNAP_NeighbourInformation_NR_ModeInfo_t	 nr_mode_info;
+    ASN_XNAP_Connectivity_Support_t	 connectivitySupport;
 	OCTET_STRING_t	 measurementTimingConfiguration;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -45,7 +45,7 @@ typedef struct NeighbourInformation_NR_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} NeighbourInformation_NR_Item_t;
+} ASN_XNAP_NeighbourInformation_NR_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_NeighbourInformation_NR_Item;

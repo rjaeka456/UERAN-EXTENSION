@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "MaxIPrate.h"
+#include "ASN_XNAP_MaxIPrate.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,12 +20,12 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* MaximumIPdatarate */
-typedef struct MaximumIPdatarate {
-	MaxIPrate_t	 maxIPrate_UL;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_MaximumIPdatarate {
+    ASN_XNAP_MaxIPrate_t	 maxIPrate_UL;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -33,7 +33,7 @@ typedef struct MaximumIPdatarate {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} MaximumIPdatarate_t;
+} ASN_XNAP_MaximumIPdatarate_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_MaximumIPdatarate;

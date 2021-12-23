@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* FiveQI */
-typedef long	 FiveQI_t;
+typedef long	 ASN_XNAP_FiveQI_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_FiveQI_constr_1;

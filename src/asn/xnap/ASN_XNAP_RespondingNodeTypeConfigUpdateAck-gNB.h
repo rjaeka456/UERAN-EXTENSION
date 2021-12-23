@@ -19,13 +19,13 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ServedCells_NR;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ServedCells_NR;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* RespondingNodeTypeConfigUpdateAck-gNB */
-typedef struct RespondingNodeTypeConfigUpdateAck_gNB {
-	struct ServedCells_NR	*served_NR_Cells	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+typedef struct ASN_XNAP_RespondingNodeTypeConfigUpdateAck_gNB {
+	struct ASN_XNAP_ServedCells_NR	*served_NR_Cells	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -33,7 +33,7 @@ typedef struct RespondingNodeTypeConfigUpdateAck_gNB {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} RespondingNodeTypeConfigUpdateAck_gNB_t;
+} ASN_XNAP_RespondingNodeTypeConfigUpdateAck_gNB_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_RespondingNodeTypeConfigUpdateAck_gNB;

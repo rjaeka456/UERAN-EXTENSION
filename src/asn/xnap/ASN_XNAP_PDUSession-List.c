@@ -5,7 +5,7 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "PDUSession-List.h"
+#include "ASN_XNAP_PDUSession-List.h"
 
 asn_per_constraints_t asn_PER_type_PDUSession_List_constr_1 CC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
@@ -27,8 +27,8 @@ static const ber_tlv_tag_t asn_DEF_PDUSession_List_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 asn_SET_OF_specifics_t asn_SPC_PDUSession_List_specs_1 = {
-	sizeof(struct PDUSession_List),
-	offsetof(struct PDUSession_List, _asn_ctx),
+	sizeof(struct ASN_XNAP_PDUSession_List),
+	offsetof(struct ASN_XNAP_PDUSession_List, _asn_ctx),
 	0,	/* XER encoding is XMLDelimitedItemList */
 };
 asn_TYPE_descriptor_t asn_DEF_PDUSession_List = {

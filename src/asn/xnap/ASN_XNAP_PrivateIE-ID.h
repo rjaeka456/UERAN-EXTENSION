@@ -21,23 +21,23 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum PrivateIE_ID_PR {
-	PrivateIE_ID_PR_NOTHING,	/* No components present */
-	PrivateIE_ID_PR_local,
-	PrivateIE_ID_PR_global
-} PrivateIE_ID_PR;
+typedef enum ASN_XNAP_PrivateIE_ID_PR {
+    ASN_XNAP_PrivateIE_ID_PR_NOTHING,	/* No components present */
+    ASN_XNAP_PrivateIE_ID_PR_local,
+    ASN_XNAP_PrivateIE_ID_PR_global
+} ASN_XNAP_PrivateIE_ID_PR;
 
 /* PrivateIE-ID */
-typedef struct PrivateIE_ID {
-	PrivateIE_ID_PR present;
-	union PrivateIE_ID_u {
+typedef struct ASN_XNAP_PrivateIE_ID {
+    ASN_XNAP_PrivateIE_ID_PR present;
+	union ASN_XNAP_PrivateIE_ID_u {
 		long	 local;
 		OBJECT_IDENTIFIER_t	 global;
 	} choice;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} PrivateIE_ID_t;
+} ASN_XNAP_PrivateIE_ID_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_PrivateIE_ID;

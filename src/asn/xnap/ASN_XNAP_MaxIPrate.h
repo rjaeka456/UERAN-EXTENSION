@@ -19,16 +19,16 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum MaxIPrate {
-	MaxIPrate_bitrate64kbs	= 0,
-	MaxIPrate_max_UErate	= 1
+typedef enum ASN_XNAP_MaxIPrate {
+    ASN_XNAP_MaxIPrate_bitrate64kbs	= 0,
+    ASN_XNAP_MaxIPrate_max_UErate	= 1
 	/*
 	 * Enumeration is extensible
 	 */
-} e_MaxIPrate;
+} e_ASN_XNAP_MaxIPrate;
 
 /* MaxIPrate */
-typedef long	 MaxIPrate_t;
+typedef long	 ASN_XNAP_MaxIPrate_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_MaxIPrate_constr_1;

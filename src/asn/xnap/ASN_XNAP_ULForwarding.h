@@ -19,15 +19,15 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum ULForwarding {
-	ULForwarding_ul_forwarding_proposed	= 0
+typedef enum ASN_XNAP_ULForwarding {
+    ASN_XNAP_ULForwarding_ul_forwarding_proposed	= 0
 	/*
 	 * Enumeration is extensible
 	 */
-} e_ULForwarding;
+} e_ASN_XNAP_ULForwarding;
 
 /* ULForwarding */
-typedef long	 ULForwarding_t;
+typedef long	 ASN_XNAP_ULForwarding_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_ULForwarding_constr_1;

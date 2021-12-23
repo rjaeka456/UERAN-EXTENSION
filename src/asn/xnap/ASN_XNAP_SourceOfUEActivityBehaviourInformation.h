@@ -19,16 +19,16 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum SourceOfUEActivityBehaviourInformation {
-	SourceOfUEActivityBehaviourInformation_subscription_information	= 0,
-	SourceOfUEActivityBehaviourInformation_statistics	= 1
+typedef enum ASN_XNAP_SourceOfUEActivityBehaviourInformation {
+    ASN_XNAP_SourceOfUEActivityBehaviourInformation_subscription_information	= 0,
+    ASN_XNAP_SourceOfUEActivityBehaviourInformation_statistics	= 1
 	/*
 	 * Enumeration is extensible
 	 */
-} e_SourceOfUEActivityBehaviourInformation;
+} e_ASN_XNAP_SourceOfUEActivityBehaviourInformation;
 
 /* SourceOfUEActivityBehaviourInformation */
-typedef long	 SourceOfUEActivityBehaviourInformation_t;
+typedef long	 ASN_XNAP_SourceOfUEActivityBehaviourInformation_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_SourceOfUEActivityBehaviourInformation_constr_1;

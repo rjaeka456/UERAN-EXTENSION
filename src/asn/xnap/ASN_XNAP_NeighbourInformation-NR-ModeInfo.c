@@ -5,18 +5,18 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "NeighbourInformation-NR-ModeInfo.h"
+#include "ASN_XNAP_NeighbourInformation-NR-ModeInfo.h"
 
-#include "NeighbourInformation-NR-ModeFDDInfo.h"
-#include "NeighbourInformation-NR-ModeTDDInfo.h"
-#include "ProtocolIE-Single-Container.h"
+#include "ASN_XNAP_NeighbourInformation-NR-ModeFDDInfo.h"
+#include "ASN_XNAP_NeighbourInformation-NR-ModeTDDInfo.h"
+#include "ASN_XNAP_ProtocolIE-Single-Container.h"
 asn_per_constraints_t asn_PER_type_NeighbourInformation_NR_ModeInfo_constr_1 CC_NOTUSED = {
 	{ APC_CONSTRAINED,	 2,  2,  0,  2 }	/* (0..2) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
 asn_TYPE_member_t asn_MBR_NeighbourInformation_NR_ModeInfo_1[] = {
-	{ ATF_POINTER, 0, offsetof(struct NeighbourInformation_NR_ModeInfo, choice.fdd_info),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_NeighbourInformation_NR_ModeInfo, choice.fdd_info),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NeighbourInformation_NR_ModeFDDInfo,
@@ -25,7 +25,7 @@ asn_TYPE_member_t asn_MBR_NeighbourInformation_NR_ModeInfo_1[] = {
 		0, 0, /* No default value */
 		"fdd-info"
 		},
-	{ ATF_POINTER, 0, offsetof(struct NeighbourInformation_NR_ModeInfo, choice.tdd_info),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_NeighbourInformation_NR_ModeInfo, choice.tdd_info),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NeighbourInformation_NR_ModeTDDInfo,
@@ -34,7 +34,7 @@ asn_TYPE_member_t asn_MBR_NeighbourInformation_NR_ModeInfo_1[] = {
 		0, 0, /* No default value */
 		"tdd-info"
 		},
-	{ ATF_POINTER, 0, offsetof(struct NeighbourInformation_NR_ModeInfo, choice.choice_extension),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_NeighbourInformation_NR_ModeInfo, choice.choice_extension),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolIE_Single_Container_5954P0,
@@ -50,10 +50,10 @@ static const asn_TYPE_tag2member_t asn_MAP_NeighbourInformation_NR_ModeInfo_tag2
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* choice-extension */
 };
 asn_CHOICE_specifics_t asn_SPC_NeighbourInformation_NR_ModeInfo_specs_1 = {
-	sizeof(struct NeighbourInformation_NR_ModeInfo),
-	offsetof(struct NeighbourInformation_NR_ModeInfo, _asn_ctx),
-	offsetof(struct NeighbourInformation_NR_ModeInfo, present),
-	sizeof(((struct NeighbourInformation_NR_ModeInfo *)0)->present),
+	sizeof(struct ASN_XNAP_NeighbourInformation_NR_ModeInfo),
+	offsetof(struct ASN_XNAP_NeighbourInformation_NR_ModeInfo, _asn_ctx),
+	offsetof(struct ASN_XNAP_NeighbourInformation_NR_ModeInfo, present),
+	sizeof(((struct ASN_XNAP_NeighbourInformation_NR_ModeInfo *)0)->present),
 	asn_MAP_NeighbourInformation_NR_ModeInfo_tag2el_1,
 	3,	/* Count of tags in the map */
 	0, 0,

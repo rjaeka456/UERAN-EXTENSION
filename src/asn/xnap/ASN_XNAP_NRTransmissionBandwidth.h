@@ -38,9 +38,9 @@ typedef struct ASN_XNAP_NRTransmissionBandwidth {
 } ASN_XNAP_NRTransmissionBandwidth_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_NRTransmissionBandwidth;
-extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_NRTransmissionBandwidth_specs_1;
-extern asn_TYPE_member_t asn_MBR_ASN_XNAP_NRTransmissionBandwidth_1[3];
+extern asn_TYPE_descriptor_t asn_DEF_NRTransmissionBandwidth;
+extern asn_SEQUENCE_specifics_t asn_SPC_NRTransmissionBandwidth_specs_1;
+extern asn_TYPE_member_t asn_MBR_NRTransmissionBandwidth_1[3];
 
 #ifdef __cplusplus
 }

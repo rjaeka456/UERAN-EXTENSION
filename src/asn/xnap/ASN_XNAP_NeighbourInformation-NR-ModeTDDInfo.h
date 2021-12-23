@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "NRFrequencyInfo.h"
+#include "ASN_XNAP_NRFrequencyInfo.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,12 +20,12 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* NeighbourInformation-NR-ModeTDDInfo */
-typedef struct NeighbourInformation_NR_ModeTDDInfo {
-	NRFrequencyInfo_t	 nr_FreqInfo;
-	struct ProtocolExtensionContainer	*ie_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_NeighbourInformation_NR_ModeTDDInfo {
+    ASN_XNAP_NRFrequencyInfo_t	 nr_FreqInfo;
+	struct ASN_XNAP_ProtocolExtensionContainer	*ie_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -33,7 +33,7 @@ typedef struct NeighbourInformation_NR_ModeTDDInfo {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} NeighbourInformation_NR_ModeTDDInfo_t;
+} ASN_XNAP_NeighbourInformation_NR_ModeTDDInfo_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_NeighbourInformation_NR_ModeTDDInfo;

@@ -5,10 +5,10 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "PDUSessionToBeReleasedList-RelRqd.h"
+#include "ASN_XNAP_PDUSessionToBeReleasedList-RelRqd.h"
 
-#include "PDUSession-List-withDataForwardingRequest.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_PDUSession-List-withDataForwardingRequest.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 static asn_TYPE_member_t asn_MBR_PDUSessionToBeReleasedList_RelRqd_1[] = {
 	{ ATF_POINTER, 2, offsetof(struct PDUSessionToBeReleasedList_RelRqd, pduSessionsToBeReleasedList_SNterminated),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),

@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "QoSFlowsToBeSetup-Item.h"
+#include "ASN_XNAP_QoSFlowsToBeSetup-Item.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_QoSFlowsToBeSetup_Item_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct QoSFlowsToBeSetup_Item, qfi),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_QoSFlowsToBeSetup_Item, qfi),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_QoSFlowIdentifier,
@@ -18,7 +18,7 @@ asn_TYPE_member_t asn_MBR_QoSFlowsToBeSetup_Item_1[] = {
 		0, 0, /* No default value */
 		"qfi"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct QoSFlowsToBeSetup_Item, qosFlowLevelQoSParameters),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_QoSFlowsToBeSetup_Item, qosFlowLevelQoSParameters),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_QoSFlowLevelQoSParameters,
@@ -27,7 +27,7 @@ asn_TYPE_member_t asn_MBR_QoSFlowsToBeSetup_Item_1[] = {
 		0, 0, /* No default value */
 		"qosFlowLevelQoSParameters"
 		},
-	{ ATF_POINTER, 2, offsetof(struct QoSFlowsToBeSetup_Item, e_RAB_ID),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_QoSFlowsToBeSetup_Item, e_RAB_ID),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_E_RAB_ID,
@@ -36,7 +36,7 @@ asn_TYPE_member_t asn_MBR_QoSFlowsToBeSetup_Item_1[] = {
 		0, 0, /* No default value */
 		"e-RAB-ID"
 		},
-	{ ATF_POINTER, 1, offsetof(struct QoSFlowsToBeSetup_Item, iE_Extension),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_QoSFlowsToBeSetup_Item, iE_Extension),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -57,8 +57,8 @@ static const asn_TYPE_tag2member_t asn_MAP_QoSFlowsToBeSetup_Item_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* iE-Extension */
 };
 asn_SEQUENCE_specifics_t asn_SPC_QoSFlowsToBeSetup_Item_specs_1 = {
-	sizeof(struct QoSFlowsToBeSetup_Item),
-	offsetof(struct QoSFlowsToBeSetup_Item, _asn_ctx),
+	sizeof(struct ASN_XNAP_QoSFlowsToBeSetup_Item),
+	offsetof(struct ASN_XNAP_QoSFlowsToBeSetup_Item, _asn_ctx),
 	asn_MAP_QoSFlowsToBeSetup_Item_tag2el_1,
 	4,	/* Count of tags in the map */
 	asn_MAP_QoSFlowsToBeSetup_Item_oms_1,	/* Optional members */

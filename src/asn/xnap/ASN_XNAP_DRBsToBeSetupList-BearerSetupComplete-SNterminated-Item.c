@@ -9,7 +9,7 @@
 
 #include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_DRBsToBeSetupList_BearerSetupComplete_SNterminated_Item_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct DRBsToBeSetupList_BearerSetupComplete_SNterminated_Item, dRB_ID),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_DRBsToBeSetupList_BearerSetupComplete_SNterminated_Item, dRB_ID),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_DRB_ID,
@@ -18,7 +18,7 @@ asn_TYPE_member_t asn_MBR_DRBsToBeSetupList_BearerSetupComplete_SNterminated_Ite
 		0, 0, /* No default value */
 		"dRB-ID"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct DRBsToBeSetupList_BearerSetupComplete_SNterminated_Item, mN_Xn_U_TNLInfoatM),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_DRBsToBeSetupList_BearerSetupComplete_SNterminated_Item, mN_Xn_U_TNLInfoatM),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_UPTransportLayerInformation,
@@ -27,7 +27,7 @@ asn_TYPE_member_t asn_MBR_DRBsToBeSetupList_BearerSetupComplete_SNterminated_Ite
 		0, 0, /* No default value */
 		"mN-Xn-U-TNLInfoatM"
 		},
-	{ ATF_POINTER, 1, offsetof(struct DRBsToBeSetupList_BearerSetupComplete_SNterminated_Item, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_DRBsToBeSetupList_BearerSetupComplete_SNterminated_Item, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -47,8 +47,8 @@ static const asn_TYPE_tag2member_t asn_MAP_DRBsToBeSetupList_BearerSetupComplete
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_DRBsToBeSetupList_BearerSetupComplete_SNterminated_Item_specs_1 = {
-	sizeof(struct DRBsToBeSetupList_BearerSetupComplete_SNterminated_Item),
-	offsetof(struct DRBsToBeSetupList_BearerSetupComplete_SNterminated_Item, _asn_ctx),
+	sizeof(struct ASN_XNAP_DRBsToBeSetupList_BearerSetupComplete_SNterminated_Item),
+	offsetof(struct ASN_XNAP_DRBsToBeSetupList_BearerSetupComplete_SNterminated_Item, _asn_ctx),
 	asn_MAP_DRBsToBeSetupList_BearerSetupComplete_SNterminated_Item_tag2el_1,
 	3,	/* Count of tags in the map */
 	asn_MAP_DRBsToBeSetupList_BearerSetupComplete_SNterminated_Item_oms_1,	/* Optional members */

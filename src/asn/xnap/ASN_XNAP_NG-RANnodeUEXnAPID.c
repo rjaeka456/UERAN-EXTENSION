@@ -5,7 +5,7 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "NG-RANnodeUEXnAPID.h"
+#include "ASN_XNAP_NG-RANnodeUEXnAPID.h"
 
 int
 NG_RANnodeUEXnAPID_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,

@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PLMN-Identity.h"
+#include "ASN_XNAP_PLMN-Identity.h"
 #include <BIT_STRING.h>
 #include <constr_SEQUENCE.h>
 
@@ -21,15 +21,15 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* GUAMI */
-typedef struct GUAMI {
-	PLMN_Identity_t	 plmn_ID;
+typedef struct ASN_XNAP_GUAMI {
+    ASN_XNAP_PLMN_Identity_t	 plmn_ID;
 	BIT_STRING_t	 amf_region_id;
 	BIT_STRING_t	 amf_set_id;
 	BIT_STRING_t	 amf_pointer;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -37,7 +37,7 @@ typedef struct GUAMI {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} GUAMI_t;
+} ASN_XNAP_GUAMI_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_GUAMI;

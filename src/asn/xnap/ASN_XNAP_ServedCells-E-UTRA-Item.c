@@ -5,16 +5,16 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "ServedCells-E-UTRA-Item.h"
+#include "ASN_XNAP_ServedCells-E-UTRA-Item.h"
 
-#include "NeighbourInformation-NR.h"
-#include "NeighbourInformation-E-UTRA.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_NeighbourInformation-NR.h"
+#include "ASN_XNAP_NeighbourInformation-E-UTRA.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_ServedCells_E_UTRA_Item_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct ServedCells_E_UTRA_Item, served_cell_info_E_UTRA),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ServedCells_E_UTRA_Item, served_cell_info_E_UTRA),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ServedCellInformation_E_UTRA,
+		&asn_DEF_ASN_XNAP_ServedCellInformation_E_UTRA,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */

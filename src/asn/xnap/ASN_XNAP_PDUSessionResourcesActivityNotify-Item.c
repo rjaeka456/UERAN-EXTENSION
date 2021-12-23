@@ -5,12 +5,12 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "PDUSessionResourcesActivityNotify-Item.h"
+#include "ASN_XNAP_PDUSessionResourcesActivityNotify-Item.h"
 
-#include "QoSFlowsActivityNotifyList.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_QoSFlowsActivityNotifyList.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_PDUSessionResourcesActivityNotify_Item_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct PDUSessionResourcesActivityNotify_Item, pduSessionId),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_PDUSessionResourcesActivityNotify_Item, pduSessionId),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PDUSession_ID,
@@ -19,7 +19,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourcesActivityNotify_Item_1[] = {
 		0, 0, /* No default value */
 		"pduSessionId"
 		},
-	{ ATF_POINTER, 3, offsetof(struct PDUSessionResourcesActivityNotify_Item, pduSessionLevelUPactivityreport),
+	{ ATF_POINTER, 3, offsetof(struct ASN_XNAP_PDUSessionResourcesActivityNotify_Item, pduSessionLevelUPactivityreport),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_UserPlaneTrafficActivityReport,
@@ -28,7 +28,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourcesActivityNotify_Item_1[] = {
 		0, 0, /* No default value */
 		"pduSessionLevelUPactivityreport"
 		},
-	{ ATF_POINTER, 2, offsetof(struct PDUSessionResourcesActivityNotify_Item, qosFlowsActivityNotifyList),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_PDUSessionResourcesActivityNotify_Item, qosFlowsActivityNotifyList),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_QoSFlowsActivityNotifyList,
@@ -37,7 +37,7 @@ asn_TYPE_member_t asn_MBR_PDUSessionResourcesActivityNotify_Item_1[] = {
 		0, 0, /* No default value */
 		"qosFlowsActivityNotifyList"
 		},
-	{ ATF_POINTER, 1, offsetof(struct PDUSessionResourcesActivityNotify_Item, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_PDUSessionResourcesActivityNotify_Item, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -58,8 +58,8 @@ static const asn_TYPE_tag2member_t asn_MAP_PDUSessionResourcesActivityNotify_Ite
     { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_PDUSessionResourcesActivityNotify_Item_specs_1 = {
-	sizeof(struct PDUSessionResourcesActivityNotify_Item),
-	offsetof(struct PDUSessionResourcesActivityNotify_Item, _asn_ctx),
+	sizeof(struct ASN_XNAP_PDUSessionResourcesActivityNotify_Item),
+	offsetof(struct ASN_XNAP_PDUSessionResourcesActivityNotify_Item, _asn_ctx),
 	asn_MAP_PDUSessionResourcesActivityNotify_Item_tag2el_1,
 	4,	/* Count of tags in the map */
 	asn_MAP_PDUSessionResourcesActivityNotify_Item_oms_1,	/* Optional members */

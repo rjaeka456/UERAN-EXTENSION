@@ -11,7 +11,7 @@
 #include "ASN_XNAP_DataForwardingResponseDRBItemList.h"
 #include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_DataForwardingInfoFromTargetNGRANnode_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct DataForwardingInfoFromTargetNGRANnode, qosFlowsAcceptedForDataForwarding_List),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_DataForwardingInfoFromTargetNGRANnode, qosFlowsAcceptedForDataForwarding_List),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_QoSFLowsAcceptedToBeForwarded_List,
@@ -20,7 +20,7 @@ asn_TYPE_member_t asn_MBR_DataForwardingInfoFromTargetNGRANnode_1[] = {
 		0, 0, /* No default value */
 		"qosFlowsAcceptedForDataForwarding-List"
 		},
-	{ ATF_POINTER, 4, offsetof(struct DataForwardingInfoFromTargetNGRANnode, pduSessionLevelDLDataForwardingInfo),
+	{ ATF_POINTER, 4, offsetof(struct ASN_XNAP_DataForwardingInfoFromTargetNGRANnode, pduSessionLevelDLDataForwardingInfo),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_UPTransportLayerInformation,
@@ -29,7 +29,7 @@ asn_TYPE_member_t asn_MBR_DataForwardingInfoFromTargetNGRANnode_1[] = {
 		0, 0, /* No default value */
 		"pduSessionLevelDLDataForwardingInfo"
 		},
-	{ ATF_POINTER, 3, offsetof(struct DataForwardingInfoFromTargetNGRANnode, pduSessionLevelULDataForwardingInfo),
+	{ ATF_POINTER, 3, offsetof(struct ASN_XNAP_DataForwardingInfoFromTargetNGRANnode, pduSessionLevelULDataForwardingInfo),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_UPTransportLayerInformation,
@@ -38,7 +38,7 @@ asn_TYPE_member_t asn_MBR_DataForwardingInfoFromTargetNGRANnode_1[] = {
 		0, 0, /* No default value */
 		"pduSessionLevelULDataForwardingInfo"
 		},
-	{ ATF_POINTER, 2, offsetof(struct DataForwardingInfoFromTargetNGRANnode, dataForwardingResponseDRBItemList),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_DataForwardingInfoFromTargetNGRANnode, dataForwardingResponseDRBItemList),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_DataForwardingResponseDRBItemList,
@@ -47,7 +47,7 @@ asn_TYPE_member_t asn_MBR_DataForwardingInfoFromTargetNGRANnode_1[] = {
 		0, 0, /* No default value */
 		"dataForwardingResponseDRBItemList"
 		},
-	{ ATF_POINTER, 1, offsetof(struct DataForwardingInfoFromTargetNGRANnode, iE_Extension),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_DataForwardingInfoFromTargetNGRANnode, iE_Extension),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -69,8 +69,8 @@ static const asn_TYPE_tag2member_t asn_MAP_DataForwardingInfoFromTargetNGRANnode
     { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* iE-Extension */
 };
 asn_SEQUENCE_specifics_t asn_SPC_DataForwardingInfoFromTargetNGRANnode_specs_1 = {
-	sizeof(struct DataForwardingInfoFromTargetNGRANnode),
-	offsetof(struct DataForwardingInfoFromTargetNGRANnode, _asn_ctx),
+	sizeof(struct ASN_XNAP_DataForwardingInfoFromTargetNGRANnode),
+	offsetof(struct ASN_XNAP_DataForwardingInfoFromTargetNGRANnode, _asn_ctx),
 	asn_MAP_DataForwardingInfoFromTargetNGRANnode_tag2el_1,
 	5,	/* Count of tags in the map */
 	asn_MAP_DataForwardingInfoFromTargetNGRANnode_oms_1,	/* Optional members */
