@@ -15,7 +15,7 @@
 
 extern "C"
 {
-    struct ASN_XNAP_XNAP_PDU;
+    struct ASN_XNAP_XnAP_PDU;
 }
 
 namespace nr::gnb
@@ -30,14 +30,14 @@ class XnapTask : public NtsTask
 
   private:
     /* Message Generation functions */
-    ASN_XNAP_XNAP_PDU* msgXnSetupRequest();
-    ASN_XNAP_XNAP_PDU* msgXnSetupResponse();
-    ASN_XNAP_XNAP_PDU* msgXnSetupFailure();
-    ASN_XNAP_XNAP_PDU* msgHandoverRequest();
-    ASN_XNAP_XNAP_PDU* msgHandoverRequestAcknowledge();
-    ASN_XNAP_XNAP_PDU* msgHandoverPreparationFailure();
-    ASN_XNAP_XNAP_PDU* msgSNStatusTransfer();
-    ASN_XNAP_XNAP_PDU* msgUEContextRelease();
+    ASN_XNAP_XnAP_PDU* msgXnSetupRequest();
+    ASN_XNAP_XnAP_PDU* msgXnSetupResponse();
+    ASN_XNAP_XnAP_PDU* msgXnSetupFailure();
+    ASN_XNAP_XnAP_PDU* msgHandoverRequest();
+    ASN_XNAP_XnAP_PDU* msgHandoverRequestAcknowledge();
+    ASN_XNAP_XnAP_PDU* msgHandoverPreparationFailure();
+    ASN_XNAP_XnAP_PDU* msgSNStatusTransfer();
+    ASN_XNAP_XnAP_PDU* msgUEContextRelease();
 
 };
 
