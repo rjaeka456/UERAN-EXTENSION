@@ -12,6 +12,7 @@
 #include <lib/app/monitor.hpp>
 #include <utils/logger.hpp>
 #include <utils/nts.hpp>
+#include "../ngap/utils.hpp"
 
 extern "C"
 {
@@ -30,7 +31,7 @@ class XnapTask : public NtsTask
 
   private:
     /* Message Generation functions */
-    ASN_XNAP_XnAP_PDU* msgXnSetupRequest();
+    ASN_XNAP_XnAP_PDU* msgXnSetupRequest(int amfRegionID);
     ASN_XNAP_XnAP_PDU* msgXnSetupResponse();
     ASN_XNAP_XnAP_PDU* msgXnSetupFailure();
     ASN_XNAP_XnAP_PDU* msgHandoverRequest();

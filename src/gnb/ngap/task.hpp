@@ -50,7 +50,7 @@ class NgapTask : public NtsTask
     TaskBase *m_base;
     std::unique_ptr<Logger> m_logger;
 
-    std::unordered_map<int, NgapAmfContext *> m_amfCtx;
+
     std::unordered_map<int, NgapUeContext *> m_ueCtx;
     int64_t m_ueNgapIdCounter;
     uint32_t m_downlinkTeidCounter;
@@ -59,6 +59,7 @@ class NgapTask : public NtsTask
     friend class GnbCmdHandler;
 
   public:
+    std::unordered_map<int, NgapAmfContext *> m_amfCtx;
     explicit NgapTask(TaskBase *base);
     ~NgapTask() override = default;
 

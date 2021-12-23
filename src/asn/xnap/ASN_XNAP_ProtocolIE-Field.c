@@ -116,7 +116,7 @@ static /* Use -fall-defs-global to expose */
 };
 
 asn_TYPE_member_t asn_MBR_ProtocolIE_Field_5957P0_1[] = {
-   { ATF_NOFLAGS, 0, offsetof(struct ProtocolIE_Field_5957P0, id),
+   { ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ProtocolIE_Field_5957P0, id),
     (ASN_TAG_CLASS_CONTEXT | (0 << 2)),
     -1,	/* IMPLICIT tag at current level */
     &asn_DEF_ProtocolIE_ID,
@@ -125,7 +125,7 @@ asn_TYPE_member_t asn_MBR_ProtocolIE_Field_5957P0_1[] = {
     0, 0, /* No default value */
     "id"
    },
-   { ATF_NOFLAGS, 0, offsetof(struct ProtocolIE_Field_5957P0, criticality),
+   { ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ProtocolIE_Field_5957P0, criticality),
     (ASN_TAG_CLASS_CONTEXT | (1 << 2)),
     -1,	/* IMPLICIT tag at current level */
     &asn_DEF_Criticality,
@@ -134,7 +134,7 @@ asn_TYPE_member_t asn_MBR_ProtocolIE_Field_5957P0_1[] = {
     0, 0, /* No default value */
     "criticality"
    },
-   { ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct ProtocolIE_Field_5957P0, value),
+   { ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ProtocolIE_Field_5957P0, value),
     (ASN_TAG_CLASS_CONTEXT | (2 << 2)),
     +1,	/* EXPLICIT tag at current level */
     &asn_DEF_value_4,
@@ -153,8 +153,8 @@ static const asn_TYPE_tag2member_t asn_MAP_ProtocolIE_Field_5957P0_tag2el_1[] = 
    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* value */
 };
 asn_SEQUENCE_specifics_t asn_SPC_ProtocolIE_Field_5957P0_specs_1 = {
-   sizeof(struct ProtocolIE_Field_5957P0),
-   offsetof(struct ProtocolIE_Field_5957P0, _asn_ctx),
+   sizeof(struct ASN_XNAP_ProtocolIE_Field_5957P0),
+   offsetof(struct ASN_XNAP_ProtocolIE_Field_5957P0, _asn_ctx),
    asn_MAP_ProtocolIE_Field_5957P0_tag2el_1,
    3,	/* Count of tags in the map */
    0, 0, 0,	/* Optional elements (not needed) */

@@ -38,14 +38,15 @@ extern "C" {
    typedef enum ASN_XNAP_XnSetupRequestIEs__value_PR {
        ASN_XNAP_XnSetupRequestIEs__value_PR_NOTHING,	/* No components present */
        ASN_XNAP_XnSetupRequestIEs__value_PR_GlobalNGRANNodeID,
-       ASN_XNAP_XnSetupRequestIEs__value_PR_RANNodeName,
-       ASN_XNAP_XnSetupRequestIEs__value_PR_SupportedTAList,
-       ASN_XNAP_XnSetupRequestIEs__value_PR_PagingDRX,
-       ASN_NGAP_NGSetupRequestIEs__value_PR_UERetentionInformation
+       ASN_XNAP_XnSetupRequestIEs__value_PR_TAISupportList,
+       ASN_XNAP_XnSetupRequestIEs__value_PR_AMFRegionInformation,
+       ASN_XNAP_XnSetupRequestIEs__value_PR_ServedCellsNR,
+       ASN_XNAP_NGSetupRequestIEs__value_PR_ServedCellsEUTRA,
+       ASN_XNAP_NGSetupRequestIEs__value_PR_InterfaceInstanceIndication
    } ASN_XNAP_XnSetupRequestIEs__value_PR;
 
    /* ASN_XNAP_ProtocolIE-Field */
-   typedef struct ProtocolIE_Field_5957P0 {
+   typedef struct ASN_XNAP_ProtocolIE_Field_5957P0 {
        ASN_XNAP_ProtocolIE_ID_t	 id;
        ASN_XNAP_Criticality_t	 criticality;
        struct ProtocolIE_Field_5957P0__value {
@@ -68,7 +69,7 @@ extern "C" {
            union ASN_XNAP_XnSetupRequestIEs__ASN_XNAP_value_u {
                ASN_XNAP_GlobalNG_RANNode_ID_t	 GlobalNGRANNodeID;
                ASN_XNAP_TAISupport_List_t 	 TAISupportList;
-               ASN_XNAP_AMF_Region_Information_t 	 SupportedTAList;
+               ASN_XNAP_AMF_Region_Information_t 	 AMFRegionInformation;
                ASN_XNAP_ServedCells_NR_t	 ServedCellsNR;
                ASN_XNAP_ServedCells_E_UTRA_t	 ServedCellsEUTRA;
                ASN_XNAP_InterfaceInstanceIndication_t InterfaceInstanceIndication;

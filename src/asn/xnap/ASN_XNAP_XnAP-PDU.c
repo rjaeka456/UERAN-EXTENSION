@@ -38,7 +38,7 @@ static asn_TYPE_member_t asn_MBR_XnAP_PDU_1[] = {
 	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_XnAP_PDU, choice.unsuccessfulOutcome),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_ASN_XNAP_UnsuccessfulOutcome,
+		&asn_DEF_UnsuccessfulOutcome,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */

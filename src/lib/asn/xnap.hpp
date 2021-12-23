@@ -84,6 +84,11 @@ inline typename asn::xnap::XnapMessageToIeUnionType<T>::value *GetProtocolIe(T *
     return nullptr;
 }
 
+bool IsProtocolIeUsable(const ASN_XNAP_XnAP_PDU &pdu, const asn_TYPE_descriptor_t &ieType);
 
+void *FindProtocolIeInPdu(const ASN_XNAP_XnAP_PDU &pdu, const asn_TYPE_descriptor_t &ieType, int protocolIeId);
+
+bool AddProtocolIeIfUsable(const ASN_XNAP_XnAP_PDU &pdu, const asn_TYPE_descriptor_t &ieType, int protocolIeId,
+                           int criticality, const std::function<void(void *)> &ieCreator);
 
 } // namespace asn:xnap

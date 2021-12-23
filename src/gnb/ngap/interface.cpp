@@ -182,6 +182,7 @@ void NgapTask::receiveNgSetupResponse(int amfId, ASN_NGAP_NGSetupResponse *msg)
     if (amf == nullptr)
         return;
 
+
     AssignDefaultAmfConfigs(amf, msg);
 
     amf->state = EAmfState::CONNECTED;

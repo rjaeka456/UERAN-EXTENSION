@@ -121,9 +121,9 @@ typedef struct ASN_XNAP_UnsuccessfulOutcome {
 } ASN_XNAP_UnsuccessfulOutcome_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_UnsuccessfulOutcome;
-extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_UnsuccessfulOutcome_specs_1;
-extern asn_TYPE_member_t asn_MBR_ASN_XNAP_UnsuccessfulOutcome_1[3];
+extern asn_TYPE_descriptor_t asn_DEF_UnsuccessfulOutcome;
+extern asn_SEQUENCE_specifics_t asn_SPC_UnsuccessfulOutcome_specs_1;
+extern asn_TYPE_member_t asn_MBR_UnsuccessfulOutcome_1[3];
 
 #ifdef __cplusplus
 }
