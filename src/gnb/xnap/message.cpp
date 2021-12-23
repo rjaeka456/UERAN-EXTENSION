@@ -25,7 +25,7 @@ ASN_XNAP_XnAP_PDU* XnapTask::msgXnSetupRequest()
     ieGlobalNGRANNodeId->value.present = ASN_XNAP_XnSetupRequestIEs__value_PR_GlobalNGRANNodeID;
     ieGlobalNGRANNodeId->value.choice.GlobalNGRANNodeID.present = ASN_XNAP_GlobalNG_RANNode_ID_PR_gNB;
     ieGlobalNGRANNodeId->value.choice.GlobalNGRANNodeID.choice.gNB = globalgnbId;
-    
+
     auto *ieSupportedTAList = asn::New<ASN_XNAP_XnSetupRequestIEs>();
 
     auto *ieServedCellsNR = asn::New<ASN_XNAP_XnSetupRequestIEs>();
