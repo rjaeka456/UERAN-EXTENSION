@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* DeliveryStatus */
-typedef long	 DeliveryStatus_t;
+typedef long	 ASN_XNAP_DeliveryStatus_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_DeliveryStatus_constr_1;

@@ -5,12 +5,12 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "UEContextInfoRetrUECtxtResp.h"
+#include "ASN_XNAP_UEContextInfoRetrUECtxtResp.h"
 
-#include "MobilityRestrictionList.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_MobilityRestrictionList.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 static asn_TYPE_member_t asn_MBR_UEContextInfoRetrUECtxtResp_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct UEContextInfoRetrUECtxtResp, ng_c_UE_signalling_ref),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_UEContextInfoRetrUECtxtResp, ng_c_UE_signalling_ref),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_AMF_UE_NGAP_ID,
@@ -19,7 +19,7 @@ static asn_TYPE_member_t asn_MBR_UEContextInfoRetrUECtxtResp_1[] = {
 		0, 0, /* No default value */
 		"ng-c-UE-signalling-ref"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct UEContextInfoRetrUECtxtResp, signalling_TNL_at_source),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_UEContextInfoRetrUECtxtResp, signalling_TNL_at_source),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_CPTransportLayerInformation,
@@ -28,7 +28,7 @@ static asn_TYPE_member_t asn_MBR_UEContextInfoRetrUECtxtResp_1[] = {
 		0, 0, /* No default value */
 		"signalling-TNL-at-source"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct UEContextInfoRetrUECtxtResp, ueSecurityCapabilities),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_UEContextInfoRetrUECtxtResp, ueSecurityCapabilities),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_UESecurityCapabilities,
@@ -37,7 +37,7 @@ static asn_TYPE_member_t asn_MBR_UEContextInfoRetrUECtxtResp_1[] = {
 		0, 0, /* No default value */
 		"ueSecurityCapabilities"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct UEContextInfoRetrUECtxtResp, securityInformation),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_UEContextInfoRetrUECtxtResp, securityInformation),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_AS_SecurityInformation,
@@ -46,7 +46,7 @@ static asn_TYPE_member_t asn_MBR_UEContextInfoRetrUECtxtResp_1[] = {
 		0, 0, /* No default value */
 		"securityInformation"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct UEContextInfoRetrUECtxtResp, ue_AMBR),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_UEContextInfoRetrUECtxtResp, ue_AMBR),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_UEAggregateMaximumBitRate,
@@ -55,7 +55,7 @@ static asn_TYPE_member_t asn_MBR_UEContextInfoRetrUECtxtResp_1[] = {
 		0, 0, /* No default value */
 		"ue-AMBR"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct UEContextInfoRetrUECtxtResp, pduSessionResourcesToBeSetup_List),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_UEContextInfoRetrUECtxtResp, pduSessionResourcesToBeSetup_List),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PDUSessionResourcesToBeSetup_List,
@@ -64,7 +64,7 @@ static asn_TYPE_member_t asn_MBR_UEContextInfoRetrUECtxtResp_1[] = {
 		0, 0, /* No default value */
 		"pduSessionResourcesToBeSetup-List"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct UEContextInfoRetrUECtxtResp, rrc_Context),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_UEContextInfoRetrUECtxtResp, rrc_Context),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_OCTET_STRING,
@@ -73,7 +73,7 @@ static asn_TYPE_member_t asn_MBR_UEContextInfoRetrUECtxtResp_1[] = {
 		0, 0, /* No default value */
 		"rrc-Context"
 		},
-	{ ATF_POINTER, 3, offsetof(struct UEContextInfoRetrUECtxtResp, mobilityRestrictionList),
+	{ ATF_POINTER, 3, offsetof(struct ASN_XNAP_UEContextInfoRetrUECtxtResp, mobilityRestrictionList),
 		(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_MobilityRestrictionList,
@@ -82,7 +82,7 @@ static asn_TYPE_member_t asn_MBR_UEContextInfoRetrUECtxtResp_1[] = {
 		0, 0, /* No default value */
 		"mobilityRestrictionList"
 		},
-	{ ATF_POINTER, 2, offsetof(struct UEContextInfoRetrUECtxtResp, indexToRatFrequencySelectionPriority),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_UEContextInfoRetrUECtxtResp, indexToRatFrequencySelectionPriority),
 		(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_RFSP_Index,
@@ -91,7 +91,7 @@ static asn_TYPE_member_t asn_MBR_UEContextInfoRetrUECtxtResp_1[] = {
 		0, 0, /* No default value */
 		"indexToRatFrequencySelectionPriority"
 		},
-	{ ATF_POINTER, 1, offsetof(struct UEContextInfoRetrUECtxtResp, iE_Extension),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_UEContextInfoRetrUECtxtResp, iE_Extension),
 		(ASN_TAG_CLASS_CONTEXT | (9 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -118,8 +118,8 @@ static const asn_TYPE_tag2member_t asn_MAP_UEContextInfoRetrUECtxtResp_tag2el_1[
     { (ASN_TAG_CLASS_CONTEXT | (9 << 2)), 9, 0, 0 } /* iE-Extension */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_UEContextInfoRetrUECtxtResp_specs_1 = {
-	sizeof(struct UEContextInfoRetrUECtxtResp),
-	offsetof(struct UEContextInfoRetrUECtxtResp, _asn_ctx),
+	sizeof(struct ASN_XNAP_UEContextInfoRetrUECtxtResp),
+	offsetof(struct ASN_XNAP_UEContextInfoRetrUECtxtResp, _asn_ctx),
 	asn_MAP_UEContextInfoRetrUECtxtResp_tag2el_1,
 	10,	/* Count of tags in the map */
 	asn_MAP_UEContextInfoRetrUECtxtResp_oms_1,	/* Optional members */

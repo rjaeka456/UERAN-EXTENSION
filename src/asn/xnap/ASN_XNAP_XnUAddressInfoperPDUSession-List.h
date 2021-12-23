@@ -20,15 +20,15 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct XnUAddressInfoperPDUSession_Item;
+struct ASN_XNAP_XnUAddressInfoperPDUSession_Item;
 
 /* XnUAddressInfoperPDUSession-List */
-typedef struct XnUAddressInfoperPDUSession_List {
-	A_SEQUENCE_OF(struct XnUAddressInfoperPDUSession_Item) list;
+typedef struct ASN_XNAP_XnUAddressInfoperPDUSession_List {
+	A_SEQUENCE_OF(struct ASN_XNAP_XnUAddressInfoperPDUSession_Item) list;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} XnUAddressInfoperPDUSession_List_t;
+} ASN_XNAP_XnUAddressInfoperPDUSession_List_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_XnUAddressInfoperPDUSession_List;

@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "SplitSRB-RRCTransfer.h"
+#include "ASN_XNAP_SplitSRB-RRCTransfer.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 /*
  * This type is implemented using NativeEnumerated,
  * so here we adjust the DEF accordingly.
@@ -57,7 +57,7 @@ asn_TYPE_descriptor_t asn_DEF_srbType_3 = {
 };
 
 static asn_TYPE_member_t asn_MBR_SplitSRB_RRCTransfer_1[] = {
-	{ ATF_POINTER, 1, offsetof(struct SplitSRB_RRCTransfer, rrcContainer),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_SplitSRB_RRCTransfer, rrcContainer),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_OCTET_STRING,
@@ -66,7 +66,7 @@ static asn_TYPE_member_t asn_MBR_SplitSRB_RRCTransfer_1[] = {
 		0, 0, /* No default value */
 		"rrcContainer"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct SplitSRB_RRCTransfer, srbType),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_SplitSRB_RRCTransfer, srbType),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_srbType_3,
@@ -75,7 +75,7 @@ static asn_TYPE_member_t asn_MBR_SplitSRB_RRCTransfer_1[] = {
 		0, 0, /* No default value */
 		"srbType"
 		},
-	{ ATF_POINTER, 2, offsetof(struct SplitSRB_RRCTransfer, deliveryStatus),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_SplitSRB_RRCTransfer, deliveryStatus),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_DeliveryStatus,
@@ -84,7 +84,7 @@ static asn_TYPE_member_t asn_MBR_SplitSRB_RRCTransfer_1[] = {
 		0, 0, /* No default value */
 		"deliveryStatus"
 		},
-	{ ATF_POINTER, 1, offsetof(struct SplitSRB_RRCTransfer, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_SplitSRB_RRCTransfer, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -105,8 +105,8 @@ static const asn_TYPE_tag2member_t asn_MAP_SplitSRB_RRCTransfer_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* iE-Extensions */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_SplitSRB_RRCTransfer_specs_1 = {
-	sizeof(struct SplitSRB_RRCTransfer),
-	offsetof(struct SplitSRB_RRCTransfer, _asn_ctx),
+	sizeof(struct ASN_XNAP_SplitSRB_RRCTransfer),
+	offsetof(struct ASN_XNAP_SplitSRB_RRCTransfer, _asn_ctx),
 	asn_MAP_SplitSRB_RRCTransfer_tag2el_1,
 	4,	/* Count of tags in the map */
 	asn_MAP_SplitSRB_RRCTransfer_oms_1,	/* Optional members */

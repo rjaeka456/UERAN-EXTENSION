@@ -20,28 +20,28 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum I_RNTI_PR {
-	I_RNTI_PR_NOTHING,	/* No components present */
-	I_RNTI_PR_i_RNTI_full,
-	I_RNTI_PR_i_RNTI_short,
-	I_RNTI_PR_choice_extension
-} I_RNTI_PR;
+typedef enum ASN_XNAP_I_RNTI_PR {
+    ASN_XNAP_I_RNTI_PR_NOTHING,	/* No components present */
+    ASN_XNAP_I_RNTI_PR_i_RNTI_full,
+    ASN_XNAP_I_RNTI_PR_i_RNTI_short,
+    ASN_XNAP_I_RNTI_PR_choice_extension
+} ASN_XNAP_I_RNTI_PR;
 
 /* Forward declarations */
-struct ProtocolIE_Single_Container;
+struct ASN_XNAP_ProtocolIE_Single_Container;
 
 /* I-RNTI */
-typedef struct I_RNTI {
-	I_RNTI_PR present;
-	union I_RNTI_u {
+typedef struct ASN_XNAP_I_RNTI {
+    ASN_XNAP_I_RNTI_PR present;
+	union ASN_XNAP_I_RNTI_u {
 		BIT_STRING_t	 i_RNTI_full;
 		BIT_STRING_t	 i_RNTI_short;
-		struct ProtocolIE_Single_Container	*choice_extension;
+		struct ASN_XNAP_ProtocolIE_Single_Container	*choice_extension;
 	} choice;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} I_RNTI_t;
+} ASN_XNAP_I_RNTI_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_I_RNTI;

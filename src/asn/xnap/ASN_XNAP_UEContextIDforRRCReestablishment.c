@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "UEContextIDforRRCReestablishment.h"
+#include "ASN_XNAP_UEContextIDforRRCReestablishment.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_UEContextIDforRRCReestablishment_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct UEContextIDforRRCReestablishment, c_rnti),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_UEContextIDforRRCReestablishment, c_rnti),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_C_RNTI,
@@ -18,7 +18,7 @@ asn_TYPE_member_t asn_MBR_UEContextIDforRRCReestablishment_1[] = {
 		0, 0, /* No default value */
 		"c-rnti"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct UEContextIDforRRCReestablishment, failureCellPCI),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_UEContextIDforRRCReestablishment, failureCellPCI),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_NG_RAN_CellPCI,
@@ -27,7 +27,7 @@ asn_TYPE_member_t asn_MBR_UEContextIDforRRCReestablishment_1[] = {
 		0, 0, /* No default value */
 		"failureCellPCI"
 		},
-	{ ATF_POINTER, 1, offsetof(struct UEContextIDforRRCReestablishment, iE_Extension),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_UEContextIDforRRCReestablishment, iE_Extension),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -47,8 +47,8 @@ static const asn_TYPE_tag2member_t asn_MAP_UEContextIDforRRCReestablishment_tag2
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* iE-Extension */
 };
 asn_SEQUENCE_specifics_t asn_SPC_UEContextIDforRRCReestablishment_specs_1 = {
-	sizeof(struct UEContextIDforRRCReestablishment),
-	offsetof(struct UEContextIDforRRCReestablishment, _asn_ctx),
+	sizeof(struct ASN_XNAP_UEContextIDforRRCReestablishment),
+	offsetof(struct ASN_XNAP_UEContextIDforRRCReestablishment, _asn_ctx),
 	asn_MAP_UEContextIDforRRCReestablishment_tag2el_1,
 	3,	/* Count of tags in the map */
 	asn_MAP_UEContextIDforRRCReestablishment_oms_1,	/* Optional members */

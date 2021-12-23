@@ -5,12 +5,12 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "ServedCellsToUpdate-E-UTRA.h"
+#include "ASN_XNAP_ServedCellsToUpdate-E-UTRA.h"
 
-#include "ServedCells-E-UTRA.h"
-#include "ServedCells-ToModify-E-UTRA.h"
-#include "ProtocolExtensionContainer.h"
-#include "E-UTRA-CGI.h"
+#include "ASN_XNAP_ServedCells-E-UTRA.h"
+#include "ASN_XNAP_ServedCells-ToModify-E-UTRA.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
+#include "ASN_XNAP_E-UTRA-CGI.h"
 static int
 memb_served_Cells_ToDelete_E_UTRA_constraint_1(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {

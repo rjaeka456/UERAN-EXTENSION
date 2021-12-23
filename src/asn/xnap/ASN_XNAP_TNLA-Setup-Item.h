@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "CPTransportLayerInformation.h"
+#include "ASN_XNAP_CPTransportLayerInformation.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,12 +20,12 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* TNLA-Setup-Item */
-typedef struct TNLA_Setup_Item {
-	CPTransportLayerInformation_t	 tNLAssociationTransportLayerAddress;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_TNLA_Setup_Item {
+    ASN_XNAP_CPTransportLayerInformation_t	 tNLAssociationTransportLayerAddress;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -33,7 +33,7 @@ typedef struct TNLA_Setup_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} TNLA_Setup_Item_t;
+} ASN_XNAP_TNLA_Setup_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_TNLA_Setup_Item;

@@ -21,13 +21,13 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* AS-SecurityInformation */
-typedef struct AS_SecurityInformation {
+typedef struct ASN_XNAP_AS_SecurityInformation {
 	BIT_STRING_t	 key_NG_RAN_Star;
 	long	 ncc;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -35,7 +35,7 @@ typedef struct AS_SecurityInformation {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} AS_SecurityInformation_t;
+} ASN_XNAP_AS_SecurityInformation_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_AS_SecurityInformation;

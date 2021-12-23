@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "UEContextRefAtSN-HORequest.h"
+#include "ASN_XNAP_UEContextRefAtSN-HORequest.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 static asn_TYPE_member_t asn_MBR_UEContextRefAtSN_HORequest_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct UEContextRefAtSN_HORequest, globalNG_RANNode_ID),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_UEContextRefAtSN_HORequest, globalNG_RANNode_ID),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_GlobalNG_RANNode_ID,
@@ -18,7 +18,7 @@ static asn_TYPE_member_t asn_MBR_UEContextRefAtSN_HORequest_1[] = {
 		0, 0, /* No default value */
 		"globalNG-RANNode-ID"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct UEContextRefAtSN_HORequest, sN_NG_RANnodeUEXnAPID),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_UEContextRefAtSN_HORequest, sN_NG_RANnodeUEXnAPID),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NG_RANnodeUEXnAPID,
@@ -27,7 +27,7 @@ static asn_TYPE_member_t asn_MBR_UEContextRefAtSN_HORequest_1[] = {
 		0, 0, /* No default value */
 		"sN-NG-RANnodeUEXnAPID"
 		},
-	{ ATF_POINTER, 1, offsetof(struct UEContextRefAtSN_HORequest, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_UEContextRefAtSN_HORequest, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -47,8 +47,8 @@ static const asn_TYPE_tag2member_t asn_MAP_UEContextRefAtSN_HORequest_tag2el_1[]
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* iE-Extensions */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_UEContextRefAtSN_HORequest_specs_1 = {
-	sizeof(struct UEContextRefAtSN_HORequest),
-	offsetof(struct UEContextRefAtSN_HORequest, _asn_ctx),
+	sizeof(struct ASN_XNAP_UEContextRefAtSN_HORequest),
+	offsetof(struct ASN_XNAP_UEContextRefAtSN_HORequest, _asn_ctx),
 	asn_MAP_UEContextRefAtSN_HORequest_tag2el_1,
 	3,	/* Count of tags in the map */
 	asn_MAP_UEContextRefAtSN_HORequest_oms_1,	/* Optional members */

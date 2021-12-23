@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* RFSP-Index */
-typedef long	 RFSP_Index_t;
+typedef long	 ASN_XNAP_RFSP_Index_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_RFSP_Index_constr_1;

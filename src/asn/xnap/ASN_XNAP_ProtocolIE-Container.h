@@ -20,11 +20,11 @@ extern "C" {
 #endif
 
    /* Forward declarations */
-   struct ASN_XNAP_ProtocolIE_Field;
+   struct ASN_XNAP_XnSetupRequestIEs;
 
    /* ProtocolIE-Container */
-   typedef struct ProtocolIE_Container_5952P0 {
-       A_SEQUENCE_OF(struct ProtocolIE_Field) list;
+   typedef struct ASN_XNAP_ProtocolIE_Container_5952P0 {
+       A_SEQUENCE_OF(struct ASN_XNAP_XnSetupRequestIEs) list;
 
        /* Context for parsing across buffer boundaries */
        asn_struct_ctx_t _asn_ctx;

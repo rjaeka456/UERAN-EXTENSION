@@ -86,7 +86,7 @@ asn_per_constraints_t asn_PER_type_I_RNTI_constr_1 CC_NOTUSED = {
 	0, 0	/* No PER value map */
 };
 asn_TYPE_member_t asn_MBR_I_RNTI_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct I_RNTI, choice.i_RNTI_full),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_I_RNTI, choice.i_RNTI_full),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_BIT_STRING,
@@ -95,7 +95,7 @@ asn_TYPE_member_t asn_MBR_I_RNTI_1[] = {
 		0, 0, /* No default value */
 		"i-RNTI-full"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct I_RNTI, choice.i_RNTI_short),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_I_RNTI, choice.i_RNTI_short),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_BIT_STRING,
@@ -104,7 +104,7 @@ asn_TYPE_member_t asn_MBR_I_RNTI_1[] = {
 		0, 0, /* No default value */
 		"i-RNTI-short"
 		},
-	{ ATF_POINTER, 0, offsetof(struct I_RNTI, choice.choice_extension),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_I_RNTI, choice.choice_extension),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolIE_Single_Container_5954P0,
@@ -120,10 +120,10 @@ static const asn_TYPE_tag2member_t asn_MAP_I_RNTI_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* choice-extension */
 };
 asn_CHOICE_specifics_t asn_SPC_I_RNTI_specs_1 = {
-	sizeof(struct I_RNTI),
-	offsetof(struct I_RNTI, _asn_ctx),
-	offsetof(struct I_RNTI, present),
-	sizeof(((struct I_RNTI *)0)->present),
+	sizeof(struct ASN_XNAP_I_RNTI),
+	offsetof(struct ASN_XNAP_I_RNTI, _asn_ctx),
+	offsetof(struct ASN_XNAP_I_RNTI, present),
+	sizeof(((struct ASN_XNAP_I_RNTI *)0)->present),
 	asn_MAP_I_RNTI_tag2el_1,
 	3,	/* Count of tags in the map */
 	0, 0,

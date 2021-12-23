@@ -12,9 +12,9 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "I-RNTI.h"
-#include "C-RNTI.h"
-#include "NG-RAN-CellPCI.h"
+#include "ASN_XNAP_I-RNTI.h"
+#include "ASN_XNAP_C-RNTI.h"
+#include "ASN_XNAP_NG-RAN-CellPCI.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -22,14 +22,14 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* UEContextIDforRRCResume */
-typedef struct UEContextIDforRRCResume {
-	I_RNTI_t	 i_rnti;
-	C_RNTI_t	 allocated_c_rnti;
-	NG_RAN_CellPCI_t	 accessPCI;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+typedef struct ASN_XNAP_UEContextIDforRRCResume {
+    ASN_XNAP_I_RNTI_t	 i_rnti;
+    ASN_XNAP_C_RNTI_t	 allocated_c_rnti;
+    ASN_XNAP_NG_RAN_CellPCI_t	 accessPCI;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -37,7 +37,7 @@ typedef struct UEContextIDforRRCResume {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} UEContextIDforRRCResume_t;
+} ASN_XNAP_UEContextIDforRRCResume_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_UEContextIDforRRCResume;

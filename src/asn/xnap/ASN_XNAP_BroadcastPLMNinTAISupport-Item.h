@@ -38,9 +38,9 @@ typedef struct ASN_XNAP_BroadcastPLMNinTAISupport_Item {
 } ASN_XNAP_BroadcastPLMNinTAISupport_Item_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_BroadcastPLMNinTAISupport_Item;
-extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_BroadcastPLMNinTAISupport_Item_specs_1;
-extern asn_TYPE_member_t asn_MBR_ASN_XNAP_BroadcastPLMNinTAISupport_Item_1[3];
+extern asn_TYPE_descriptor_t asn_DEF_BroadcastPLMNinTAISupport_Item;
+extern asn_SEQUENCE_specifics_t asn_SPC_BroadcastPLMNinTAISupport_Item_specs_1;
+extern asn_TYPE_member_t asn_MBR_BroadcastPLMNinTAISupport_Item_1[3];
 
 #ifdef __cplusplus
 }

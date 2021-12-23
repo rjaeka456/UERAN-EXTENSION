@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "SharedResourceType-UL-OnlySharing.h"
+#include "ASN_XNAP_SharedResourceType-UL-OnlySharing.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_SharedResourceType_UL_OnlySharing_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct SharedResourceType_UL_OnlySharing, ul_resourceBitmap),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_SharedResourceType_UL_OnlySharing, ul_resourceBitmap),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_DataTrafficResources,
@@ -18,7 +18,7 @@ asn_TYPE_member_t asn_MBR_SharedResourceType_UL_OnlySharing_1[] = {
 		0, 0, /* No default value */
 		"ul-resourceBitmap"
 		},
-	{ ATF_POINTER, 1, offsetof(struct SharedResourceType_UL_OnlySharing, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_SharedResourceType_UL_OnlySharing, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -37,8 +37,8 @@ static const asn_TYPE_tag2member_t asn_MAP_SharedResourceType_UL_OnlySharing_tag
     { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_SharedResourceType_UL_OnlySharing_specs_1 = {
-	sizeof(struct SharedResourceType_UL_OnlySharing),
-	offsetof(struct SharedResourceType_UL_OnlySharing, _asn_ctx),
+	sizeof(struct ASN_XNAP_SharedResourceType_UL_OnlySharing),
+	offsetof(struct ASN_XNAP_SharedResourceType_UL_OnlySharing, _asn_ctx),
 	asn_MAP_SharedResourceType_UL_OnlySharing_tag2el_1,
 	2,	/* Count of tags in the map */
 	asn_MAP_SharedResourceType_UL_OnlySharing_oms_1,	/* Optional members */

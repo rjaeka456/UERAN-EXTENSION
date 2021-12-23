@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "BitRate.h"
+#include "ASN_XNAP_BitRate.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,13 +20,13 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* UEAggregateMaximumBitRate */
-typedef struct UEAggregateMaximumBitRate {
+typedef struct ASN_XNAP_UEAggregateMaximumBitRate {
 	BitRate_t	 dl_UE_AMBR;
 	BitRate_t	 ul_UE_AMBR;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -34,7 +34,7 @@ typedef struct UEAggregateMaximumBitRate {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} UEAggregateMaximumBitRate_t;
+} ASN_XNAP_UEAggregateMaximumBitRate_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_UEAggregateMaximumBitRate;

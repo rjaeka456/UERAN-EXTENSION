@@ -19,16 +19,16 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum LowerLayerPresenceStatusChange {
-	LowerLayerPresenceStatusChange_release_lower_layers	= 0,
-	LowerLayerPresenceStatusChange_re_establish_lower_layers	= 1
+typedef enum ASN_XNAP_LowerLayerPresenceStatusChange {
+    ASN_XNAP_LowerLayerPresenceStatusChange_release_lower_layers	= 0,
+    ASN_XNAP_LowerLayerPresenceStatusChange_re_establish_lower_layers	= 1
 	/*
 	 * Enumeration is extensible
 	 */
-} e_LowerLayerPresenceStatusChange;
+} e_ASN_XNAP_LowerLayerPresenceStatusChange;
 
 /* LowerLayerPresenceStatusChange */
-typedef long	 LowerLayerPresenceStatusChange_t;
+typedef long	 ASN_XNAP_LowerLayerPresenceStatusChange_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_LowerLayerPresenceStatusChange_constr_1;

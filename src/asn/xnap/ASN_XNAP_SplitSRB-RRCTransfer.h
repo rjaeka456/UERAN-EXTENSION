@@ -14,7 +14,7 @@
 /* Including external dependencies */
 #include <OCTET_STRING.h>
 #include <NativeEnumerated.h>
-#include "DeliveryStatus.h"
+#include "ASN_XNAP_DeliveryStatus.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -22,23 +22,23 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum SplitSRB_RRCTransfer__srbType {
-	SplitSRB_RRCTransfer__srbType_srb1	= 0,
-	SplitSRB_RRCTransfer__srbType_srb2	= 1
+typedef enum ASN_XNAP_SplitSRB_RRCTransfer__srbType {
+    ASN_XNAP_SplitSRB_RRCTransfer__srbType_srb1	= 0,
+    ASN_XNAP_SplitSRB_RRCTransfer__srbType_srb2	= 1
 	/*
 	 * Enumeration is extensible
 	 */
-} e_SplitSRB_RRCTransfer__srbType;
+} e_ASN_XNAP_SplitSRB_RRCTransfer__srbType;
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* SplitSRB-RRCTransfer */
-typedef struct SplitSRB_RRCTransfer {
+typedef struct ASN_XNAP_SplitSRB_RRCTransfer {
 	OCTET_STRING_t	*rrcContainer	/* OPTIONAL */;
 	long	 srbType;
-	DeliveryStatus_t	*deliveryStatus	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+    ASN_XNAP_DeliveryStatus_t	*deliveryStatus	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -46,7 +46,7 @@ typedef struct SplitSRB_RRCTransfer {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} SplitSRB_RRCTransfer_t;
+} ASN_XNAP_SplitSRB_RRCTransfer_t;
 
 /* Implementation */
 /* extern asn_TYPE_descriptor_t asn_DEF_srbType_3;	// (Use -fall-defs-global to expose) */

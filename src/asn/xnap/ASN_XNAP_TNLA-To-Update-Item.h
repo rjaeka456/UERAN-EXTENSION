@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "CPTransportLayerInformation.h"
-#include "TNLAssociationUsage.h"
+#include "ASN_XNAP_CPTransportLayerInformation.h"
+#include "ASN_XNAP_TNLAssociationUsage.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -21,17 +21,17 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* TNLA-To-Update-Item */
-typedef struct TNLA_To_Update_Item {
-	CPTransportLayerInformation_t	 tNLAssociationTransportLayerAddress;
-	TNLAssociationUsage_t	*tNLAssociationUsage	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_TNLA_To_Update_Item {
+    ASN_XNAP_CPTransportLayerInformation_t	 tNLAssociationTransportLayerAddress;
+    ASN_XNAP_TNLAssociationUsage_t	*tNLAssociationUsage	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} TNLA_To_Update_Item_t;
+} ASN_XNAP_TNLA_To_Update_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_TNLA_To_Update_Item;

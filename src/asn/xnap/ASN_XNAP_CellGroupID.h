@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* CellGroupID */
-typedef long	 CellGroupID_t;
+typedef long	 ASN_XNAP_CellGroupID_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_CellGroupID_constr_1;

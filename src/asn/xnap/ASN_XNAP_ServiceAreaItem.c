@@ -96,8 +96,8 @@ static const ber_tlv_tag_t asn_DEF_allowed_TACs_ServiceArea_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_SET_OF_specifics_t asn_SPC_allowed_TACs_ServiceArea_specs_3 = {
-	sizeof(struct ServiceAreaItem__allowed_TACs_ServiceArea),
-	offsetof(struct ServiceAreaItem__allowed_TACs_ServiceArea, _asn_ctx),
+	sizeof(struct ASN_XNAP_ServiceAreaItem__allowed_TACs_ServiceArea),
+	offsetof(struct ASN_XNAP_ServiceAreaItem__allowed_TACs_ServiceArea, _asn_ctx),
 	0,	/* XER encoding is XMLDelimitedItemList */
 };
 static /* Use -fall-defs-global to expose */
@@ -133,8 +133,8 @@ static const ber_tlv_tag_t asn_DEF_not_allowed_TACs_ServiceArea_tags_5[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_SET_OF_specifics_t asn_SPC_not_allowed_TACs_ServiceArea_specs_5 = {
-	sizeof(struct ServiceAreaItem__not_allowed_TACs_ServiceArea),
-	offsetof(struct ServiceAreaItem__not_allowed_TACs_ServiceArea, _asn_ctx),
+	sizeof(struct ASN_XNAP_ServiceAreaItem__not_allowed_TACs_ServiceArea),
+	offsetof(struct ASN_XNAP_ServiceAreaItem__not_allowed_TACs_ServiceArea, _asn_ctx),
 	0,	/* XER encoding is XMLDelimitedItemList */
 };
 static /* Use -fall-defs-global to expose */
@@ -155,7 +155,7 @@ asn_TYPE_descriptor_t asn_DEF_not_allowed_TACs_ServiceArea_5 = {
 };
 
 asn_TYPE_member_t asn_MBR_ServiceAreaItem_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct ServiceAreaItem, plmn_Identity),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ServiceAreaItem, plmn_Identity),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PLMN_Identity,
@@ -164,7 +164,7 @@ asn_TYPE_member_t asn_MBR_ServiceAreaItem_1[] = {
 		0, 0, /* No default value */
 		"plmn-Identity"
 		},
-	{ ATF_POINTER, 3, offsetof(struct ServiceAreaItem, allowed_TACs_ServiceArea),
+	{ ATF_POINTER, 3, offsetof(struct ASN_XNAP_ServiceAreaItem, allowed_TACs_ServiceArea),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		0,
 		&asn_DEF_allowed_TACs_ServiceArea_3,
@@ -173,7 +173,7 @@ asn_TYPE_member_t asn_MBR_ServiceAreaItem_1[] = {
 		0, 0, /* No default value */
 		"allowed-TACs-ServiceArea"
 		},
-	{ ATF_POINTER, 2, offsetof(struct ServiceAreaItem, not_allowed_TACs_ServiceArea),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_ServiceAreaItem, not_allowed_TACs_ServiceArea),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		0,
 		&asn_DEF_not_allowed_TACs_ServiceArea_5,
@@ -182,7 +182,7 @@ asn_TYPE_member_t asn_MBR_ServiceAreaItem_1[] = {
 		0, 0, /* No default value */
 		"not-allowed-TACs-ServiceArea"
 		},
-	{ ATF_POINTER, 1, offsetof(struct ServiceAreaItem, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_ServiceAreaItem, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -203,8 +203,8 @@ static const asn_TYPE_tag2member_t asn_MAP_ServiceAreaItem_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_ServiceAreaItem_specs_1 = {
-	sizeof(struct ServiceAreaItem),
-	offsetof(struct ServiceAreaItem, _asn_ctx),
+	sizeof(struct ASN_XNAP_ServiceAreaItem),
+	offsetof(struct ASN_XNAP_ServiceAreaItem, _asn_ctx),
 	asn_MAP_ServiceAreaItem_tag2el_1,
 	4,	/* Count of tags in the map */
 	asn_MAP_ServiceAreaItem_oms_1,	/* Optional members */

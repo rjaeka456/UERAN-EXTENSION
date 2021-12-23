@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "UEReportRRCTransfer.h"
+#include "ASN_XNAP_UEReportRRCTransfer.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 static asn_TYPE_member_t asn_MBR_UEReportRRCTransfer_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct UEReportRRCTransfer, rrcContainer),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_UEReportRRCTransfer, rrcContainer),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_OCTET_STRING,
@@ -18,7 +18,7 @@ static asn_TYPE_member_t asn_MBR_UEReportRRCTransfer_1[] = {
 		0, 0, /* No default value */
 		"rrcContainer"
 		},
-	{ ATF_POINTER, 1, offsetof(struct UEReportRRCTransfer, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_UEReportRRCTransfer, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -37,8 +37,8 @@ static const asn_TYPE_tag2member_t asn_MAP_UEReportRRCTransfer_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* iE-Extensions */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_UEReportRRCTransfer_specs_1 = {
-	sizeof(struct UEReportRRCTransfer),
-	offsetof(struct UEReportRRCTransfer, _asn_ctx),
+	sizeof(struct ASN_XNAP_UEReportRRCTransfer),
+	offsetof(struct ASN_XNAP_UEReportRRCTransfer, _asn_ctx),
 	asn_MAP_UEReportRRCTransfer_tag2el_1,
 	2,	/* Count of tags in the map */
 	asn_MAP_UEReportRRCTransfer_oms_1,	/* Optional members */

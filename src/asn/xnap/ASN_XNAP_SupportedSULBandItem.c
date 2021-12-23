@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "SupportedSULBandItem.h"
+#include "ASN_XNAP_SupportedSULBandItem.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_SupportedSULBandItem_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct SupportedSULBandItem, sulBandItem),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_SupportedSULBandItem, sulBandItem),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_SUL_FrequencyBand,
@@ -18,7 +18,7 @@ asn_TYPE_member_t asn_MBR_SupportedSULBandItem_1[] = {
 		0, 0, /* No default value */
 		"sulBandItem"
 		},
-	{ ATF_POINTER, 1, offsetof(struct SupportedSULBandItem, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_SupportedSULBandItem, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -37,8 +37,8 @@ static const asn_TYPE_tag2member_t asn_MAP_SupportedSULBandItem_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_SupportedSULBandItem_specs_1 = {
-	sizeof(struct SupportedSULBandItem),
-	offsetof(struct SupportedSULBandItem, _asn_ctx),
+	sizeof(struct ASN_XNAP_SupportedSULBandItem),
+	offsetof(struct ASN_XNAP_SupportedSULBandItem, _asn_ctx),
 	asn_MAP_SupportedSULBandItem_tag2el_1,
 	2,	/* Count of tags in the map */
 	asn_MAP_SupportedSULBandItem_oms_1,	/* Optional members */

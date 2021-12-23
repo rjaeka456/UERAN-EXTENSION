@@ -5,16 +5,16 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "UEContextInfo-SNModRequest.h"
+#include "ASN_XNAP_UEContextInfo-SNModRequest.h"
 
-#include "UESecurityCapabilities.h"
-#include "UEAggregateMaximumBitRate.h"
-#include "PDUSessionsToBeAdded-SNModRequest-List.h"
-#include "PDUSessionsToBeModified-SNModRequest-List.h"
-#include "PDUSessionsToBeReleased-SNModRequest-List.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_UESecurityCapabilities.h"
+#include "ASN_XNAP_UEAggregateMaximumBitRate.h"
+#include "ASN_XNAP_PDUSessionsToBeAdded-SNModRequest-List.h"
+#include "ASN_XNAP_PDUSessionsToBeModified-SNModRequest-List.h"
+#include "ASN_XNAP_PDUSessionsToBeReleased-SNModRequest-List.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 static asn_TYPE_member_t asn_MBR_UEContextInfo_SNModRequest_1[] = {
-	{ ATF_POINTER, 9, offsetof(struct UEContextInfo_SNModRequest, ueSecurityCapabilities),
+	{ ATF_POINTER, 9, offsetof(struct ASN_XNAP_UEContextInfo_SNModRequest, ueSecurityCapabilities),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_UESecurityCapabilities,
@@ -23,7 +23,7 @@ static asn_TYPE_member_t asn_MBR_UEContextInfo_SNModRequest_1[] = {
 		0, 0, /* No default value */
 		"ueSecurityCapabilities"
 		},
-	{ ATF_POINTER, 8, offsetof(struct UEContextInfo_SNModRequest, s_ng_RANnode_SecurityKey),
+	{ ATF_POINTER, 8, offsetof(struct ASN_XNAP_UEContextInfo_SNModRequest, s_ng_RANnode_SecurityKey),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_S_NG_RANnode_SecurityKey,
@@ -32,7 +32,7 @@ static asn_TYPE_member_t asn_MBR_UEContextInfo_SNModRequest_1[] = {
 		0, 0, /* No default value */
 		"s-ng-RANnode-SecurityKey"
 		},
-	{ ATF_POINTER, 7, offsetof(struct UEContextInfo_SNModRequest, s_ng_RANnodeUE_AMBR),
+	{ ATF_POINTER, 7, offsetof(struct ASN_XNAP_UEContextInfo_SNModRequest, s_ng_RANnodeUE_AMBR),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_UEAggregateMaximumBitRate,
@@ -41,7 +41,7 @@ static asn_TYPE_member_t asn_MBR_UEContextInfo_SNModRequest_1[] = {
 		0, 0, /* No default value */
 		"s-ng-RANnodeUE-AMBR"
 		},
-	{ ATF_POINTER, 6, offsetof(struct UEContextInfo_SNModRequest, indexToRatFrequencySelectionPriority),
+	{ ATF_POINTER, 6, offsetof(struct ASN_XNAP_UEContextInfo_SNModRequest, indexToRatFrequencySelectionPriority),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_RFSP_Index,
@@ -50,7 +50,7 @@ static asn_TYPE_member_t asn_MBR_UEContextInfo_SNModRequest_1[] = {
 		0, 0, /* No default value */
 		"indexToRatFrequencySelectionPriority"
 		},
-	{ ATF_POINTER, 5, offsetof(struct UEContextInfo_SNModRequest, lowerLayerPresenceStatusChange),
+	{ ATF_POINTER, 5, offsetof(struct ASN_XNAP_UEContextInfo_SNModRequest, lowerLayerPresenceStatusChange),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_LowerLayerPresenceStatusChange,
@@ -59,7 +59,7 @@ static asn_TYPE_member_t asn_MBR_UEContextInfo_SNModRequest_1[] = {
 		0, 0, /* No default value */
 		"lowerLayerPresenceStatusChange"
 		},
-	{ ATF_POINTER, 4, offsetof(struct UEContextInfo_SNModRequest, pduSessionResourceToBeAdded),
+	{ ATF_POINTER, 4, offsetof(struct ASN_XNAP_UEContextInfo_SNModRequest, pduSessionResourceToBeAdded),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PDUSessionsToBeAdded_SNModRequest_List,
@@ -68,7 +68,7 @@ static asn_TYPE_member_t asn_MBR_UEContextInfo_SNModRequest_1[] = {
 		0, 0, /* No default value */
 		"pduSessionResourceToBeAdded"
 		},
-	{ ATF_POINTER, 3, offsetof(struct UEContextInfo_SNModRequest, pduSessionResourceToBeModified),
+	{ ATF_POINTER, 3, offsetof(struct ASN_XNAP_UEContextInfo_SNModRequest, pduSessionResourceToBeModified),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PDUSessionsToBeModified_SNModRequest_List,
@@ -77,7 +77,7 @@ static asn_TYPE_member_t asn_MBR_UEContextInfo_SNModRequest_1[] = {
 		0, 0, /* No default value */
 		"pduSessionResourceToBeModified"
 		},
-	{ ATF_POINTER, 2, offsetof(struct UEContextInfo_SNModRequest, pduSessionResourceToBeReleased),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_UEContextInfo_SNModRequest, pduSessionResourceToBeReleased),
 		(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PDUSessionsToBeReleased_SNModRequest_List,
@@ -86,7 +86,7 @@ static asn_TYPE_member_t asn_MBR_UEContextInfo_SNModRequest_1[] = {
 		0, 0, /* No default value */
 		"pduSessionResourceToBeReleased"
 		},
-	{ ATF_POINTER, 1, offsetof(struct UEContextInfo_SNModRequest, iE_Extension),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_UEContextInfo_SNModRequest, iE_Extension),
 		(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -112,8 +112,8 @@ static const asn_TYPE_tag2member_t asn_MAP_UEContextInfo_SNModRequest_tag2el_1[]
     { (ASN_TAG_CLASS_CONTEXT | (8 << 2)), 8, 0, 0 } /* iE-Extension */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_UEContextInfo_SNModRequest_specs_1 = {
-	sizeof(struct UEContextInfo_SNModRequest),
-	offsetof(struct UEContextInfo_SNModRequest, _asn_ctx),
+	sizeof(struct ASN_XNAP_UEContextInfo_SNModRequest),
+	offsetof(struct ASN_XNAP_UEContextInfo_SNModRequest, _asn_ctx),
 	asn_MAP_UEContextInfo_SNModRequest_tag2el_1,
 	9,	/* Count of tags in the map */
 	asn_MAP_UEContextInfo_SNModRequest_oms_1,	/* Optional members */

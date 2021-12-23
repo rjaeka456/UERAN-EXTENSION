@@ -12,13 +12,13 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "AMF-UE-NGAP-ID.h"
-#include "CPTransportLayerInformation.h"
-#include "UESecurityCapabilities.h"
-#include "AS-SecurityInformation.h"
-#include "RFSP-Index.h"
-#include "UEAggregateMaximumBitRate.h"
-#include "PDUSessionResourcesToBeSetup-List.h"
+#include "ASN_XNAP_AMF-UE-NGAP-ID.h"
+#include "ASN_XNAP_CPTransportLayerInformation.h"
+#include "ASN_XNAP_UESecurityCapabilities.h"
+#include "ASN_XNAP_AS-SecurityInformation.h"
+#include "ASN_XNAP_RFSP-Index.h"
+#include "ASN_XNAP_UEAggregateMaximumBitRate.h"
+#include "ASN_XNAP_PDUSessionResourcesToBeSetup-List.h"
 #include <OCTET_STRING.h>
 #include <constr_SEQUENCE.h>
 
@@ -27,23 +27,23 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct LocationReportingInformation;
-struct MobilityRestrictionList;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_LocationReportingInformation;
+struct ASN_XNAP_MobilityRestrictionList;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* UEContextInfoHORequest */
-typedef struct UEContextInfoHORequest {
-	AMF_UE_NGAP_ID_t	 ng_c_UE_reference;
-	CPTransportLayerInformation_t	 cp_TNL_info_source;
-	UESecurityCapabilities_t	 ueSecurityCapabilities;
-	AS_SecurityInformation_t	 securityInformation;
-	RFSP_Index_t	*indexToRatFrequencySelectionPriority	/* OPTIONAL */;
-	UEAggregateMaximumBitRate_t	 ue_AMBR;
-	PDUSessionResourcesToBeSetup_List_t	 pduSessionResourcesToBeSetup_List;
+typedef struct ASN_XNAP_UEContextInfoHORequest {
+    ASN_XNAP_AMF_UE_NGAP_ID_t	 ng_c_UE_reference;
+    ASN_XNAP_CPTransportLayerInformation_t	 cp_TNL_info_source;
+    ASN_XNAP_UESecurityCapabilities_t	 ueSecurityCapabilities;
+    ASN_XNAP_AS_SecurityInformation_t	 securityInformation;
+    ASN_XNAP_RFSP_Index_t	*indexToRatFrequencySelectionPriority	/* OPTIONAL */;
+    ASN_XNAP_UEAggregateMaximumBitRate_t	 ue_AMBR;
+    ASN_XNAP_PDUSessionResourcesToBeSetup_List_t	 pduSessionResourcesToBeSetup_List;
 	OCTET_STRING_t	 rrc_Context;
-	struct LocationReportingInformation	*locationReportingInformation	/* OPTIONAL */;
-	struct MobilityRestrictionList	*mrl	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+	struct ASN_XNAP_LocationReportingInformation	*locationReportingInformation	/* OPTIONAL */;
+	struct ASN_XNAP_MobilityRestrictionList	*mrl	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -51,7 +51,7 @@ typedef struct UEContextInfoHORequest {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} UEContextInfoHORequest_t;
+} ASN_XNAP_UEContextInfoHORequest_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_UEContextInfoHORequest;

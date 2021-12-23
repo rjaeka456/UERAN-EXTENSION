@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* C-RNTI */
-typedef BIT_STRING_t	 C_RNTI_t;
+typedef BIT_STRING_t	 ASN_XNAP_C_RNTI_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_C_RNTI_constr_1;

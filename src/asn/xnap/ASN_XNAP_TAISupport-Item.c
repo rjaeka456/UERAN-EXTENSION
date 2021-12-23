@@ -61,8 +61,8 @@ static const ber_tlv_tag_t asn_DEF_broadcastPLMNs_tags_3[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_SET_OF_specifics_t asn_SPC_broadcastPLMNs_specs_3 = {
-	sizeof(struct TAISupport_Item__broadcastPLMNs),
-	offsetof(struct TAISupport_Item__broadcastPLMNs, _asn_ctx),
+	sizeof(struct ASN_XNAP_TAISupport_Item__broadcastPLMNs),
+	offsetof(struct ASN_XNAP_TAISupport_Item__broadcastPLMNs, _asn_ctx),
 	0,	/* XER encoding is XMLDelimitedItemList */
 };
 static /* Use -fall-defs-global to expose */
@@ -83,7 +83,7 @@ asn_TYPE_descriptor_t asn_DEF_broadcastPLMNs_3 = {
 };
 
 asn_TYPE_member_t asn_MBR_TAISupport_Item_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct TAISupport_Item, tac),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_TAISupport_Item, tac),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_TAC,
@@ -92,7 +92,7 @@ asn_TYPE_member_t asn_MBR_TAISupport_Item_1[] = {
 		0, 0, /* No default value */
 		"tac"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct TAISupport_Item, broadcastPLMNs),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_TAISupport_Item, broadcastPLMNs),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		0,
 		&asn_DEF_broadcastPLMNs_3,
@@ -101,7 +101,7 @@ asn_TYPE_member_t asn_MBR_TAISupport_Item_1[] = {
 		0, 0, /* No default value */
 		"broadcastPLMNs"
 		},
-	{ ATF_POINTER, 1, offsetof(struct TAISupport_Item, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_TAISupport_Item, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -121,8 +121,8 @@ static const asn_TYPE_tag2member_t asn_MAP_TAISupport_Item_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_TAISupport_Item_specs_1 = {
-	sizeof(struct TAISupport_Item),
-	offsetof(struct TAISupport_Item, _asn_ctx),
+	sizeof(struct ASN_XNAP_TAISupport_Item),
+	offsetof(struct ASN_XNAP_TAISupport_Item, _asn_ctx),
 	asn_MAP_TAISupport_Item_tag2el_1,
 	3,	/* Count of tags in the map */
 	asn_MAP_TAISupport_Item_oms_1,	/* Optional members */

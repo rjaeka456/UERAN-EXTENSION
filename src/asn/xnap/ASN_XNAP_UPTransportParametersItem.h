@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "UPTransportLayerInformation.h"
-#include "CellGroupID.h"
+#include "ASN_XNAP_UPTransportLayerInformation.h"
+#include "ASN_XNAP_CellGroupID.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -21,13 +21,13 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* UPTransportParametersItem */
-typedef struct UPTransportParametersItem {
-	UPTransportLayerInformation_t	 upTNLInfo;
-	CellGroupID_t	 cellGroupID;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+typedef struct ASN_XNAP_UPTransportParametersItem {
+    ASN_XNAP_UPTransportLayerInformation_t	 upTNLInfo;
+    ASN_XNAP_CellGroupID_t	 cellGroupID;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -35,7 +35,7 @@ typedef struct UPTransportParametersItem {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} UPTransportParametersItem_t;
+} ASN_XNAP_UPTransportParametersItem_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_UPTransportParametersItem;

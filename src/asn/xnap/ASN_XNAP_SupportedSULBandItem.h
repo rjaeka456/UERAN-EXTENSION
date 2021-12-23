@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "SUL-FrequencyBand.h"
+#include "ASN_XNAP_SUL-FrequencyBand.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,12 +20,12 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* SupportedSULBandItem */
-typedef struct SupportedSULBandItem {
-	SUL_FrequencyBand_t	 sulBandItem;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_SupportedSULBandItem {
+    ASN_XNAP_SUL_FrequencyBand_t	 sulBandItem;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -33,7 +33,7 @@ typedef struct SupportedSULBandItem {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} SupportedSULBandItem_t;
+} ASN_XNAP_SupportedSULBandItem_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_SupportedSULBandItem;

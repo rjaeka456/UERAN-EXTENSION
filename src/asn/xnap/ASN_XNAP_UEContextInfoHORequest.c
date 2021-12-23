@@ -5,13 +5,13 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "UEContextInfoHORequest.h"
+#include "ASN_XNAP_UEContextInfoHORequest.h"
 
-#include "LocationReportingInformation.h"
-#include "MobilityRestrictionList.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_LocationReportingInformation.h"
+#include "ASN_XNAP_MobilityRestrictionList.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 static asn_TYPE_member_t asn_MBR_UEContextInfoHORequest_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct UEContextInfoHORequest, ng_c_UE_reference),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_UEContextInfoHORequest, ng_c_UE_reference),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_AMF_UE_NGAP_ID,
@@ -20,7 +20,7 @@ static asn_TYPE_member_t asn_MBR_UEContextInfoHORequest_1[] = {
 		0, 0, /* No default value */
 		"ng-c-UE-reference"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct UEContextInfoHORequest, cp_TNL_info_source),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_UEContextInfoHORequest, cp_TNL_info_source),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_CPTransportLayerInformation,
@@ -29,7 +29,7 @@ static asn_TYPE_member_t asn_MBR_UEContextInfoHORequest_1[] = {
 		0, 0, /* No default value */
 		"cp-TNL-info-source"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct UEContextInfoHORequest, ueSecurityCapabilities),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_UEContextInfoHORequest, ueSecurityCapabilities),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_UESecurityCapabilities,
@@ -38,7 +38,7 @@ static asn_TYPE_member_t asn_MBR_UEContextInfoHORequest_1[] = {
 		0, 0, /* No default value */
 		"ueSecurityCapabilities"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct UEContextInfoHORequest, securityInformation),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_UEContextInfoHORequest, securityInformation),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_AS_SecurityInformation,
@@ -47,7 +47,7 @@ static asn_TYPE_member_t asn_MBR_UEContextInfoHORequest_1[] = {
 		0, 0, /* No default value */
 		"securityInformation"
 		},
-	{ ATF_POINTER, 1, offsetof(struct UEContextInfoHORequest, indexToRatFrequencySelectionPriority),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_UEContextInfoHORequest, indexToRatFrequencySelectionPriority),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_RFSP_Index,
@@ -56,7 +56,7 @@ static asn_TYPE_member_t asn_MBR_UEContextInfoHORequest_1[] = {
 		0, 0, /* No default value */
 		"indexToRatFrequencySelectionPriority"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct UEContextInfoHORequest, ue_AMBR),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_UEContextInfoHORequest, ue_AMBR),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_UEAggregateMaximumBitRate,
@@ -65,7 +65,7 @@ static asn_TYPE_member_t asn_MBR_UEContextInfoHORequest_1[] = {
 		0, 0, /* No default value */
 		"ue-AMBR"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct UEContextInfoHORequest, pduSessionResourcesToBeSetup_List),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_UEContextInfoHORequest, pduSessionResourcesToBeSetup_List),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PDUSessionResourcesToBeSetup_List,
@@ -74,7 +74,7 @@ static asn_TYPE_member_t asn_MBR_UEContextInfoHORequest_1[] = {
 		0, 0, /* No default value */
 		"pduSessionResourcesToBeSetup-List"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct UEContextInfoHORequest, rrc_Context),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_UEContextInfoHORequest, rrc_Context),
 		(ASN_TAG_CLASS_CONTEXT | (7 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_OCTET_STRING,
@@ -83,7 +83,7 @@ static asn_TYPE_member_t asn_MBR_UEContextInfoHORequest_1[] = {
 		0, 0, /* No default value */
 		"rrc-Context"
 		},
-	{ ATF_POINTER, 3, offsetof(struct UEContextInfoHORequest, locationReportingInformation),
+	{ ATF_POINTER, 3, offsetof(struct ASN_XNAP_UEContextInfoHORequest, locationReportingInformation),
 		(ASN_TAG_CLASS_CONTEXT | (8 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_LocationReportingInformation,
@@ -92,7 +92,7 @@ static asn_TYPE_member_t asn_MBR_UEContextInfoHORequest_1[] = {
 		0, 0, /* No default value */
 		"locationReportingInformation"
 		},
-	{ ATF_POINTER, 2, offsetof(struct UEContextInfoHORequest, mrl),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_UEContextInfoHORequest, mrl),
 		(ASN_TAG_CLASS_CONTEXT | (9 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_MobilityRestrictionList,
@@ -101,7 +101,7 @@ static asn_TYPE_member_t asn_MBR_UEContextInfoHORequest_1[] = {
 		0, 0, /* No default value */
 		"mrl"
 		},
-	{ ATF_POINTER, 1, offsetof(struct UEContextInfoHORequest, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_UEContextInfoHORequest, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (10 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -129,8 +129,8 @@ static const asn_TYPE_tag2member_t asn_MAP_UEContextInfoHORequest_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (10 << 2)), 10, 0, 0 } /* iE-Extensions */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_UEContextInfoHORequest_specs_1 = {
-	sizeof(struct UEContextInfoHORequest),
-	offsetof(struct UEContextInfoHORequest, _asn_ctx),
+	sizeof(struct ASN_XNAP_UEContextInfoHORequest),
+	offsetof(struct ASN_XNAP_UEContextInfoHORequest, _asn_ctx),
 	asn_MAP_UEContextInfoHORequest_tag2el_1,
 	11,	/* Count of tags in the map */
 	asn_MAP_UEContextInfoHORequest_oms_1,	/* Optional members */

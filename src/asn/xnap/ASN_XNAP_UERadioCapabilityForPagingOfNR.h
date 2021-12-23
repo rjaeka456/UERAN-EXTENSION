@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* UERadioCapabilityForPagingOfNR */
-typedef OCTET_STRING_t	 UERadioCapabilityForPagingOfNR_t;
+typedef OCTET_STRING_t	 ASN_XNAP_UERadioCapabilityForPagingOfNR_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_UERadioCapabilityForPagingOfNR;

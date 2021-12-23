@@ -20,26 +20,26 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum UEIdentityIndexValue_PR {
-	UEIdentityIndexValue_PR_NOTHING,	/* No components present */
-	UEIdentityIndexValue_PR_indexLength10,
-	UEIdentityIndexValue_PR_choice_extension
-} UEIdentityIndexValue_PR;
+typedef enum ASN_XNAP_UEIdentityIndexValue_PR {
+    ASN_XNAP_UEIdentityIndexValue_PR_NOTHING,	/* No components present */
+    ASN_XNAP_UEIdentityIndexValue_PR_indexLength10,
+    ASN_XNAP_UEIdentityIndexValue_PR_choice_extension
+} ASN_XNAP_UEIdentityIndexValue_PR;
 
 /* Forward declarations */
-struct ProtocolIE_Single_Container;
+struct ASN_XNAP_ProtocolIE_Single_Container;
 
 /* UEIdentityIndexValue */
-typedef struct UEIdentityIndexValue {
-	UEIdentityIndexValue_PR present;
-	union UEIdentityIndexValue_u {
+typedef struct ASN_XNAP_UEIdentityIndexValue {
+    ASN_XNAP_UEIdentityIndexValue_PR present;
+	union ASN_XNAP_UEIdentityIndexValue_u {
 		BIT_STRING_t	 indexLength10;
-		struct ProtocolIE_Single_Container	*choice_extension;
+		struct ASN_XNAP_ProtocolIE_Single_Container	*choice_extension;
 	} choice;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} UEIdentityIndexValue_t;
+} ASN_XNAP_UEIdentityIndexValue_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_UEIdentityIndexValue;

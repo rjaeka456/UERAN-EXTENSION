@@ -63,8 +63,25 @@ inline ASN_XNAP_XnAP_PDU *NewMessagePdu(std::vector<typename XnapMessageToIeType
     default:
         std::terminate();
     }
+}
 
+template <typename T>
+inline typename asn::xnap::XnapMessageToIeUnionType<T>::value *GetProtocolIe(T *msg, int id, int order = 0)
+{
+    int found = -1;
 
+    for (int i = 0; i < msg->protocolIEs.list.count; i++)
+    {
+        auto &item = msg->protocolIEs.list.array[i];
+        if (item->id == id)
+        {
+            found++;
+            if (order == found)
+                return (typename asn::xnap::XnapMessageToIeUnionType<T>::value *)(&item->value.choice);
+        }
+    }
+
+    return nullptr;
 }
 
 

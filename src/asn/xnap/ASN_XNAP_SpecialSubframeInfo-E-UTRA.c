@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "SpecialSubframeInfo-E-UTRA.h"
+#include "ASN_XNAP_SpecialSubframeInfo-E-UTRA.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_SpecialSubframeInfo_E_UTRA_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct SpecialSubframeInfo_E_UTRA, specialSubframePattern),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_SpecialSubframeInfo_E_UTRA, specialSubframePattern),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_SpecialSubframePatterns_E_UTRA,
@@ -18,7 +18,7 @@ asn_TYPE_member_t asn_MBR_SpecialSubframeInfo_E_UTRA_1[] = {
 		0, 0, /* No default value */
 		"specialSubframePattern"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct SpecialSubframeInfo_E_UTRA, cyclicPrefixDL),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_SpecialSubframeInfo_E_UTRA, cyclicPrefixDL),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_CyclicPrefix_E_UTRA_DL,
@@ -27,7 +27,7 @@ asn_TYPE_member_t asn_MBR_SpecialSubframeInfo_E_UTRA_1[] = {
 		0, 0, /* No default value */
 		"cyclicPrefixDL"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct SpecialSubframeInfo_E_UTRA, cyclicPrefixUL),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_SpecialSubframeInfo_E_UTRA, cyclicPrefixUL),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_CyclicPrefix_E_UTRA_UL,
@@ -36,7 +36,7 @@ asn_TYPE_member_t asn_MBR_SpecialSubframeInfo_E_UTRA_1[] = {
 		0, 0, /* No default value */
 		"cyclicPrefixUL"
 		},
-	{ ATF_POINTER, 1, offsetof(struct SpecialSubframeInfo_E_UTRA, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_SpecialSubframeInfo_E_UTRA, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -57,8 +57,8 @@ static const asn_TYPE_tag2member_t asn_MAP_SpecialSubframeInfo_E_UTRA_tag2el_1[]
     { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_SpecialSubframeInfo_E_UTRA_specs_1 = {
-	sizeof(struct SpecialSubframeInfo_E_UTRA),
-	offsetof(struct SpecialSubframeInfo_E_UTRA, _asn_ctx),
+	sizeof(struct ASN_XNAP_SpecialSubframeInfo_E_UTRA),
+	offsetof(struct ASN_XNAP_SpecialSubframeInfo_E_UTRA, _asn_ctx),
 	asn_MAP_SpecialSubframeInfo_E_UTRA_tag2el_1,
 	4,	/* Count of tags in the map */
 	asn_MAP_SpecialSubframeInfo_E_UTRA_oms_1,	/* Optional members */

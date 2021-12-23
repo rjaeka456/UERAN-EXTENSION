@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* AMF-UE-NGAP-ID */
-typedef INTEGER_t	 AMF_UE_NGAP_ID_t;
+typedef INTEGER_t	 ASN_XNAP_AMF_UE_NGAP_ID_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_AMF_UE_NGAP_ID_constr_1;

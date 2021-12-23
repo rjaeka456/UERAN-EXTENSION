@@ -19,30 +19,30 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum UEContextID_PR {
-	UEContextID_PR_NOTHING,	/* No components present */
-	UEContextID_PR_rRCResume,
-	UEContextID_PR_rRRCReestablishment,
-	UEContextID_PR_choice_extension
-} UEContextID_PR;
+typedef enum ASN_XNAP_UEContextID_PR {
+    ASN_XNAP_UEContextID_PR_NOTHING,	/* No components present */
+    ASN_XNAP_UEContextID_PR_rRCResume,
+    ASN_XNAP_UEContextID_PR_rRRCReestablishment,
+    ASN_XNAP_UEContextID_PR_choice_extension
+} ASN_XNAP_UEContextID_PR;
 
 /* Forward declarations */
-struct UEContextIDforRRCResume;
-struct UEContextIDforRRCReestablishment;
-struct ProtocolIE_Single_Container;
+struct ASN_XNAP_UEContextIDforRRCResume;
+struct ASN_XNAP_UEContextIDforRRCReestablishment;
+struct ASN_XNAP_ProtocolIE_Single_Container;
 
 /* UEContextID */
-typedef struct UEContextID {
-	UEContextID_PR present;
-	union UEContextID_u {
-		struct UEContextIDforRRCResume	*rRCResume;
-		struct UEContextIDforRRCReestablishment	*rRRCReestablishment;
-		struct ProtocolIE_Single_Container	*choice_extension;
+typedef struct ASN_XNAP_UEContextID {
+    ASN_XNAP_UEContextID_PR present;
+	union ASN_XNAP_UEContextID_u {
+		struct ASN_XNAP_UEContextIDforRRCResume	*rRCResume;
+		struct ASN_XNAP_UEContextIDforRRCReestablishment	*rRRCReestablishment;
+		struct ASN_XNAP_ProtocolIE_Single_Container	*choice_extension;
 	} choice;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} UEContextID_t;
+} ASN_XNAP_UEContextID_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_UEContextID;

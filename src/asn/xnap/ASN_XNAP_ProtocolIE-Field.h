@@ -37,7 +37,7 @@ extern "C" {
    } ASN_XNAP_ProtocolIE_Field_5957P0__value_PR;
    typedef enum ASN_XNAP_XnSetupRequestIEs__value_PR {
        ASN_XNAP_XnSetupRequestIEs__value_PR_NOTHING,	/* No components present */
-       ASN_XNAP_XnSetupRequestIEs__value_PR_GlobalRANNodeID,
+       ASN_XNAP_XnSetupRequestIEs__value_PR_GlobalNGRANNodeID,
        ASN_XNAP_XnSetupRequestIEs__value_PR_RANNodeName,
        ASN_XNAP_XnSetupRequestIEs__value_PR_SupportedTAList,
        ASN_XNAP_XnSetupRequestIEs__value_PR_PagingDRX,

@@ -75,7 +75,7 @@ static asn_per_constraints_t asn_PER_memb_ncc_constr_3 CC_NOTUSED = {
 	0, 0	/* No PER value map */
 };
 asn_TYPE_member_t asn_MBR_AS_SecurityInformation_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct AS_SecurityInformation, key_NG_RAN_Star),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_AS_SecurityInformation, key_NG_RAN_Star),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_BIT_STRING,
@@ -84,7 +84,7 @@ asn_TYPE_member_t asn_MBR_AS_SecurityInformation_1[] = {
 		0, 0, /* No default value */
 		"key-NG-RAN-Star"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct AS_SecurityInformation, ncc),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_AS_SecurityInformation, ncc),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NativeInteger,
@@ -93,7 +93,7 @@ asn_TYPE_member_t asn_MBR_AS_SecurityInformation_1[] = {
 		0, 0, /* No default value */
 		"ncc"
 		},
-	{ ATF_POINTER, 1, offsetof(struct AS_SecurityInformation, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_AS_SecurityInformation, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -113,8 +113,8 @@ static const asn_TYPE_tag2member_t asn_MAP_AS_SecurityInformation_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_AS_SecurityInformation_specs_1 = {
-	sizeof(struct AS_SecurityInformation),
-	offsetof(struct AS_SecurityInformation, _asn_ctx),
+	sizeof(struct ASN_XNAP_AS_SecurityInformation),
+	offsetof(struct ASN_XNAP_AS_SecurityInformation, _asn_ctx),
 	asn_MAP_AS_SecurityInformation_tag2el_1,
 	3,	/* Count of tags in the map */
 	asn_MAP_AS_SecurityInformation_oms_1,	/* Optional members */

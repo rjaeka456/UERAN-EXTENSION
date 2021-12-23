@@ -20,29 +20,29 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum SharedResourceType_ULDL_Sharing_DL_Resources_PR {
-	SharedResourceType_ULDL_Sharing_DL_Resources_PR_NOTHING,	/* No components present */
-	SharedResourceType_ULDL_Sharing_DL_Resources_PR_unchanged,
-	SharedResourceType_ULDL_Sharing_DL_Resources_PR_changed,
-	SharedResourceType_ULDL_Sharing_DL_Resources_PR_choice_extension
-} SharedResourceType_ULDL_Sharing_DL_Resources_PR;
+typedef enum ASN_XNAP_SharedResourceType_ULDL_Sharing_DL_Resources_PR {
+    ASN_XNAP_SharedResourceType_ULDL_Sharing_DL_Resources_PR_NOTHING,	/* No components present */
+    ASN_XNAP_SharedResourceType_ULDL_Sharing_DL_Resources_PR_unchanged,
+    ASN_XNAP_SharedResourceType_ULDL_Sharing_DL_Resources_PR_changed,
+    ASN_XNAP_SharedResourceType_ULDL_Sharing_DL_Resources_PR_choice_extension
+} ASN_XNAP_SharedResourceType_ULDL_Sharing_DL_Resources_PR;
 
 /* Forward declarations */
-struct SharedResourceType_ULDL_Sharing_DL_ResourcesChanged;
-struct ProtocolIE_Single_Container;
+struct ASN_XNAP_SharedResourceType_ULDL_Sharing_DL_ResourcesChanged;
+struct ASN_XNAP_ProtocolIE_Single_Container;
 
 /* SharedResourceType-ULDL-Sharing-DL-Resources */
-typedef struct SharedResourceType_ULDL_Sharing_DL_Resources {
-	SharedResourceType_ULDL_Sharing_DL_Resources_PR present;
-	union SharedResourceType_ULDL_Sharing_DL_Resources_u {
+typedef struct ASN_XNAP_SharedResourceType_ULDL_Sharing_DL_Resources {
+    ASN_XNAP_SharedResourceType_ULDL_Sharing_DL_Resources_PR present;
+	union ASN_XNAP_SharedResourceType_ULDL_Sharing_DL_Resources_u {
 		NULL_t	 unchanged;
-		struct SharedResourceType_ULDL_Sharing_DL_ResourcesChanged	*changed;
-		struct ProtocolIE_Single_Container	*choice_extension;
+		struct ASN_XNAP_SharedResourceType_ULDL_Sharing_DL_ResourcesChanged	*changed;
+		struct ASN_XNAP_ProtocolIE_Single_Container	*choice_extension;
 	} choice;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} SharedResourceType_ULDL_Sharing_DL_Resources_t;
+} ASN_XNAP_SharedResourceType_ULDL_Sharing_DL_Resources_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_SharedResourceType_ULDL_Sharing_DL_Resources;

@@ -19,17 +19,17 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum S_NG_RANnode_Addition_Trigger_Ind {
-	S_NG_RANnode_Addition_Trigger_Ind_sn_change	= 0,
-	S_NG_RANnode_Addition_Trigger_Ind_inter_MN_HO	= 1,
-	S_NG_RANnode_Addition_Trigger_Ind_intra_MN_HO	= 2
+typedef enum ASN_XNAP_S_NG_RANnode_Addition_Trigger_Ind {
+    ASN_XNAP_S_NG_RANnode_Addition_Trigger_Ind_sn_change	= 0,
+    ASN_XNAP_S_NG_RANnode_Addition_Trigger_Ind_inter_MN_HO	= 1,
+    ASN_XNAP_S_NG_RANnode_Addition_Trigger_Ind_intra_MN_HO	= 2
 	/*
 	 * Enumeration is extensible
 	 */
-} e_S_NG_RANnode_Addition_Trigger_Ind;
+} e_ASN_XNAP_S_NG_RANnode_Addition_Trigger_Ind;
 
 /* S-NG-RANnode-Addition-Trigger-Ind */
-typedef long	 S_NG_RANnode_Addition_Trigger_Ind_t;
+typedef long	 ASN_XNAP_S_NG_RANnode_Addition_Trigger_Ind_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_S_NG_RANnode_Addition_Trigger_Ind;

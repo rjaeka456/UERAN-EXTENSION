@@ -19,20 +19,20 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum Trace_Depth {
-	Trace_Depth_minimum	= 0,
-	Trace_Depth_medium	= 1,
-	Trace_Depth_maximum	= 2,
-	Trace_Depth_minimumWithoutVendorSpecificExtension	= 3,
-	Trace_Depth_mediumWithoutVendorSpecificExtension	= 4,
-	Trace_Depth_maximumWithoutVendorSpecificExtension	= 5
+typedef enum ASN_XNAP_Trace_Depth {
+    ASN_XNAP_Trace_Depth_minimum	= 0,
+    ASN_XNAP_Trace_Depth_medium	= 1,
+    ASN_XNAP_Trace_Depth_maximum	= 2,
+    ASN_XNAP_Trace_Depth_minimumWithoutVendorSpecificExtension	= 3,
+    ASN_XNAP_Trace_Depth_mediumWithoutVendorSpecificExtension	= 4,
+    ASN_XNAP_Trace_Depth_maximumWithoutVendorSpecificExtension	= 5
 	/*
 	 * Enumeration is extensible
 	 */
-} e_Trace_Depth;
+} e_ASN_XNAP_Trace_Depth;
 
 /* Trace-Depth */
-typedef long	 Trace_Depth_t;
+typedef long	 ASN_XNAP_Trace_Depth_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_Trace_Depth_constr_1;

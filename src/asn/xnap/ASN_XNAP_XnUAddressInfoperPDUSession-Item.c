@@ -5,13 +5,13 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "XnUAddressInfoperPDUSession-Item.h"
+#include "ASN_XNAP_XnUAddressInfoperPDUSession-Item.h"
 
-#include "DataForwardingInfoFromTargetNGRANnode.h"
-#include "PDUSessionResourceBearerSetupCompleteInfo-SNterminated.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_DataForwardingInfoFromTargetNGRANnode.h"
+#include "ASN_XNAP_PDUSessionResourceBearerSetupCompleteInfo-SNterminated.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_XnUAddressInfoperPDUSession_Item_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct XnUAddressInfoperPDUSession_Item, pduSession_ID),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_XnUAddressInfoperPDUSession_Item, pduSession_ID),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PDUSession_ID,
@@ -20,7 +20,7 @@ asn_TYPE_member_t asn_MBR_XnUAddressInfoperPDUSession_Item_1[] = {
 		0, 0, /* No default value */
 		"pduSession-ID"
 		},
-	{ ATF_POINTER, 3, offsetof(struct XnUAddressInfoperPDUSession_Item, dataForwardingInfoFromTargetNGRANnode),
+	{ ATF_POINTER, 3, offsetof(struct ASN_XNAP_XnUAddressInfoperPDUSession_Item, dataForwardingInfoFromTargetNGRANnode),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_DataForwardingInfoFromTargetNGRANnode,
@@ -29,7 +29,7 @@ asn_TYPE_member_t asn_MBR_XnUAddressInfoperPDUSession_Item_1[] = {
 		0, 0, /* No default value */
 		"dataForwardingInfoFromTargetNGRANnode"
 		},
-	{ ATF_POINTER, 2, offsetof(struct XnUAddressInfoperPDUSession_Item, pduSessionResourceSetupCompleteInfo_SNterm),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_XnUAddressInfoperPDUSession_Item, pduSessionResourceSetupCompleteInfo_SNterm),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PDUSessionResourceBearerSetupCompleteInfo_SNterminated,
@@ -38,7 +38,7 @@ asn_TYPE_member_t asn_MBR_XnUAddressInfoperPDUSession_Item_1[] = {
 		0, 0, /* No default value */
 		"pduSessionResourceSetupCompleteInfo-SNterm"
 		},
-	{ ATF_POINTER, 1, offsetof(struct XnUAddressInfoperPDUSession_Item, iE_Extension),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_XnUAddressInfoperPDUSession_Item, iE_Extension),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -59,8 +59,8 @@ static const asn_TYPE_tag2member_t asn_MAP_XnUAddressInfoperPDUSession_Item_tag2
     { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* iE-Extension */
 };
 asn_SEQUENCE_specifics_t asn_SPC_XnUAddressInfoperPDUSession_Item_specs_1 = {
-	sizeof(struct XnUAddressInfoperPDUSession_Item),
-	offsetof(struct XnUAddressInfoperPDUSession_Item, _asn_ctx),
+	sizeof(struct ASN_XNAP_XnUAddressInfoperPDUSession_Item),
+	offsetof(struct ASN_XNAP_XnUAddressInfoperPDUSession_Item, _asn_ctx),
 	asn_MAP_XnUAddressInfoperPDUSession_Item_tag2el_1,
 	4,	/* Count of tags in the map */
 	asn_MAP_XnUAddressInfoperPDUSession_Item_oms_1,	/* Optional members */

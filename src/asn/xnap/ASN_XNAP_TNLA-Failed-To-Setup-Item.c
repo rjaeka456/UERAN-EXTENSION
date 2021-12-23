@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "TNLA-Failed-To-Setup-Item.h"
+#include "ASN_XNAP_TNLA-Failed-To-Setup-Item.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_TNLA_Failed_To_Setup_Item_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct TNLA_Failed_To_Setup_Item, tNLAssociationTransportLayerAddress),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_TNLA_Failed_To_Setup_Item, tNLAssociationTransportLayerAddress),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_CPTransportLayerInformation,
@@ -18,7 +18,7 @@ asn_TYPE_member_t asn_MBR_TNLA_Failed_To_Setup_Item_1[] = {
 		0, 0, /* No default value */
 		"tNLAssociationTransportLayerAddress"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct TNLA_Failed_To_Setup_Item, cause),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_TNLA_Failed_To_Setup_Item, cause),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		+1,	/* EXPLICIT tag at current level */
 		&asn_DEF_Cause,
@@ -27,7 +27,7 @@ asn_TYPE_member_t asn_MBR_TNLA_Failed_To_Setup_Item_1[] = {
 		0, 0, /* No default value */
 		"cause"
 		},
-	{ ATF_POINTER, 1, offsetof(struct TNLA_Failed_To_Setup_Item, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_TNLA_Failed_To_Setup_Item, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -47,8 +47,8 @@ static const asn_TYPE_tag2member_t asn_MAP_TNLA_Failed_To_Setup_Item_tag2el_1[] 
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_TNLA_Failed_To_Setup_Item_specs_1 = {
-	sizeof(struct TNLA_Failed_To_Setup_Item),
-	offsetof(struct TNLA_Failed_To_Setup_Item, _asn_ctx),
+	sizeof(struct ASN_XNAP_TNLA_Failed_To_Setup_Item),
+	offsetof(struct ASN_XNAP_TNLA_Failed_To_Setup_Item, _asn_ctx),
 	asn_MAP_TNLA_Failed_To_Setup_Item_tag2el_1,
 	3,	/* Count of tags in the map */
 	asn_MAP_TNLA_Failed_To_Setup_Item_oms_1,	/* Optional members */

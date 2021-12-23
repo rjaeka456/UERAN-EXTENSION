@@ -24,7 +24,7 @@ asn_TYPE_member_t asn_MBR_SharedResourceType_ULDL_Sharing_DL_Resources_1[] = {
 		0, 0, /* No default value */
 		"unchanged"
 		},
-	{ ATF_POINTER, 0, offsetof(struct SharedResourceType_ULDL_Sharing_DL_Resources, choice.changed),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_SharedResourceType_ULDL_Sharing_DL_Resources, choice.changed),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_SharedResourceType_ULDL_Sharing_DL_ResourcesChanged,
@@ -33,7 +33,7 @@ asn_TYPE_member_t asn_MBR_SharedResourceType_ULDL_Sharing_DL_Resources_1[] = {
 		0, 0, /* No default value */
 		"changed"
 		},
-	{ ATF_POINTER, 0, offsetof(struct SharedResourceType_ULDL_Sharing_DL_Resources, choice.choice_extension),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_SharedResourceType_ULDL_Sharing_DL_Resources, choice.choice_extension),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolIE_Single_Container_5954P0,
@@ -49,10 +49,10 @@ static const asn_TYPE_tag2member_t asn_MAP_SharedResourceType_ULDL_Sharing_DL_Re
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* choice-extension */
 };
 asn_CHOICE_specifics_t asn_SPC_SharedResourceType_ULDL_Sharing_DL_Resources_specs_1 = {
-	sizeof(struct SharedResourceType_ULDL_Sharing_DL_Resources),
-	offsetof(struct SharedResourceType_ULDL_Sharing_DL_Resources, _asn_ctx),
-	offsetof(struct SharedResourceType_ULDL_Sharing_DL_Resources, present),
-	sizeof(((struct SharedResourceType_ULDL_Sharing_DL_Resources *)0)->present),
+	sizeof(struct ASN_XNAP_SharedResourceType_ULDL_Sharing_DL_Resources),
+	offsetof(struct ASN_XNAP_SharedResourceType_ULDL_Sharing_DL_Resources, _asn_ctx),
+	offsetof(struct ASN_XNAP_SharedResourceType_ULDL_Sharing_DL_Resources, present),
+	sizeof(((struct ASN_XNAP_SharedResourceType_ULDL_Sharing_DL_Resources *)0)->present),
 	asn_MAP_SharedResourceType_ULDL_Sharing_DL_Resources_tag2el_1,
 	3,	/* Count of tags in the map */
 	0, 0,

@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* S-NG-RANnode-SecurityKey */
-typedef BIT_STRING_t	 S_NG_RANnode_SecurityKey_t;
+typedef BIT_STRING_t	 ASN_XNAP_S_NG_RANnode_SecurityKey_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_S_NG_RANnode_SecurityKey_constr_1;

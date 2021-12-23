@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* UERadioCapabilityForPagingOfEUTRA */
-typedef OCTET_STRING_t	 UERadioCapabilityForPagingOfEUTRA_t;
+typedef OCTET_STRING_t	 ASN_XNAP_UERadioCapabilityForPagingOfEUTRA_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_UERadioCapabilityForPagingOfEUTRA;

@@ -12,9 +12,9 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "S-NG-RANnode-SecurityKey.h"
-#include "RFSP-Index.h"
-#include "LowerLayerPresenceStatusChange.h"
+#include "ASN_XNAP_S-NG-RANnode-SecurityKey.h"
+#include "ASN_XNAP_RFSP-Index.h"
+#include "ASN_XNAP_LowerLayerPresenceStatusChange.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -22,24 +22,24 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct UESecurityCapabilities;
-struct UEAggregateMaximumBitRate;
-struct PDUSessionsToBeAdded_SNModRequest_List;
-struct PDUSessionsToBeModified_SNModRequest_List;
-struct PDUSessionsToBeReleased_SNModRequest_List;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_UESecurityCapabilities;
+struct ASN_XNAP_UEAggregateMaximumBitRate;
+struct ASN_XNAP_PDUSessionsToBeAdded_SNModRequest_List;
+struct ASN_XNAP_PDUSessionsToBeModified_SNModRequest_List;
+struct ASN_XNAP_PDUSessionsToBeReleased_SNModRequest_List;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* UEContextInfo-SNModRequest */
-typedef struct UEContextInfo_SNModRequest {
-	struct UESecurityCapabilities	*ueSecurityCapabilities	/* OPTIONAL */;
-	S_NG_RANnode_SecurityKey_t	*s_ng_RANnode_SecurityKey	/* OPTIONAL */;
-	struct UEAggregateMaximumBitRate	*s_ng_RANnodeUE_AMBR	/* OPTIONAL */;
-	RFSP_Index_t	*indexToRatFrequencySelectionPriority	/* OPTIONAL */;
-	LowerLayerPresenceStatusChange_t	*lowerLayerPresenceStatusChange	/* OPTIONAL */;
-	struct PDUSessionsToBeAdded_SNModRequest_List	*pduSessionResourceToBeAdded	/* OPTIONAL */;
-	struct PDUSessionsToBeModified_SNModRequest_List	*pduSessionResourceToBeModified	/* OPTIONAL */;
-	struct PDUSessionsToBeReleased_SNModRequest_List	*pduSessionResourceToBeReleased	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+typedef struct ASN_XNAP_UEContextInfo_SNModRequest {
+	struct ASN_XNAP_UESecurityCapabilities	*ueSecurityCapabilities	/* OPTIONAL */;
+    ASN_XNAP_S_NG_RANnode_SecurityKey_t	*s_ng_RANnode_SecurityKey	/* OPTIONAL */;
+	struct ASN_XNAP_UEAggregateMaximumBitRate	*s_ng_RANnodeUE_AMBR	/* OPTIONAL */;
+    ASN_XNAP_RFSP_Index_t	*indexToRatFrequencySelectionPriority	/* OPTIONAL */;
+    ASN_XNAP_LowerLayerPresenceStatusChange_t	*lowerLayerPresenceStatusChange	/* OPTIONAL */;
+	struct ASN_XNAP_PDUSessionsToBeAdded_SNModRequest_List	*pduSessionResourceToBeAdded	/* OPTIONAL */;
+	struct ASN_XNAP_PDUSessionsToBeModified_SNModRequest_List	*pduSessionResourceToBeModified	/* OPTIONAL */;
+	struct ASN_XNAP_PDUSessionsToBeReleased_SNModRequest_List	*pduSessionResourceToBeReleased	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -47,7 +47,7 @@ typedef struct UEContextInfo_SNModRequest {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} UEContextInfo_SNModRequest_t;
+} ASN_XNAP_UEContextInfo_SNModRequest_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_UEContextInfo_SNModRequest;

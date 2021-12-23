@@ -20,9 +20,9 @@ extern "C" {
 
    /* Dependencies */
    typedef enum ASN_XNAP_Criticality {
-       Criticality_reject	= 0,
-       Criticality_ignore	= 1,
-       Criticality_notify	= 2
+       ASN_XNAP_Criticality_reject	= 0,
+       ASN_XNAP_Criticality_ignore	= 1,
+       ASN_XNAP_Criticality_notify	= 2
    } e_ASN_XNAP_Criticality;
 
    /* Criticality */

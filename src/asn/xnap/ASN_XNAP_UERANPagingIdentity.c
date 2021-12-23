@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "UERANPagingIdentity.h"
+#include "ASN_XNAP_UERANPagingIdentity.h"
 
-#include "ProtocolIE-Single-Container.h"
+#include "ASN_XNAP_ProtocolIE-Single-Container.h"
 static int
 memb_i_RNTI_full_constraint_1(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {

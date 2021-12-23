@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "UERadioCapabilityForPaging.h"
+#include "ASN_XNAP_UERadioCapabilityForPaging.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 static asn_TYPE_member_t asn_MBR_UERadioCapabilityForPaging_1[] = {
-	{ ATF_POINTER, 3, offsetof(struct UERadioCapabilityForPaging, uERadioCapabilityForPagingOfNR),
+	{ ATF_POINTER, 3, offsetof(struct ASN_XNAP_UERadioCapabilityForPaging, uERadioCapabilityForPagingOfNR),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_UERadioCapabilityForPagingOfNR,
@@ -18,7 +18,7 @@ static asn_TYPE_member_t asn_MBR_UERadioCapabilityForPaging_1[] = {
 		0, 0, /* No default value */
 		"uERadioCapabilityForPagingOfNR"
 		},
-	{ ATF_POINTER, 2, offsetof(struct UERadioCapabilityForPaging, uERadioCapabilityForPagingOfEUTRA),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_UERadioCapabilityForPaging, uERadioCapabilityForPagingOfEUTRA),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_UERadioCapabilityForPagingOfEUTRA,
@@ -27,7 +27,7 @@ static asn_TYPE_member_t asn_MBR_UERadioCapabilityForPaging_1[] = {
 		0, 0, /* No default value */
 		"uERadioCapabilityForPagingOfEUTRA"
 		},
-	{ ATF_POINTER, 1, offsetof(struct UERadioCapabilityForPaging, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_UERadioCapabilityForPaging, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -47,8 +47,8 @@ static const asn_TYPE_tag2member_t asn_MAP_UERadioCapabilityForPaging_tag2el_1[]
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* iE-Extensions */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_UERadioCapabilityForPaging_specs_1 = {
-	sizeof(struct UERadioCapabilityForPaging),
-	offsetof(struct UERadioCapabilityForPaging, _asn_ctx),
+	sizeof(struct ASN_XNAP_UERadioCapabilityForPaging),
+	offsetof(struct ASN_XNAP_UERadioCapabilityForPaging, _asn_ctx),
 	asn_MAP_UERadioCapabilityForPaging_tag2el_1,
 	3,	/* Count of tags in the map */
 	asn_MAP_UERadioCapabilityForPaging_oms_1,	/* Optional members */

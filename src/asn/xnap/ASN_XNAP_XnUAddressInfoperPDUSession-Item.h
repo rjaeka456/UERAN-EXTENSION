@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PDUSession-ID.h"
+#include "ASN_XNAP_PDUSession-ID.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,16 +20,16 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct DataForwardingInfoFromTargetNGRANnode;
-struct PDUSessionResourceBearerSetupCompleteInfo_SNterminated;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_DataForwardingInfoFromTargetNGRANnode;
+struct ASN_XNAP_PDUSessionResourceBearerSetupCompleteInfo_SNterminated;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* XnUAddressInfoperPDUSession-Item */
-typedef struct XnUAddressInfoperPDUSession_Item {
-	PDUSession_ID_t	 pduSession_ID;
-	struct DataForwardingInfoFromTargetNGRANnode	*dataForwardingInfoFromTargetNGRANnode	/* OPTIONAL */;
-	struct PDUSessionResourceBearerSetupCompleteInfo_SNterminated	*pduSessionResourceSetupCompleteInfo_SNterm	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+typedef struct ASN_XNAP_XnUAddressInfoperPDUSession_Item {
+    ASN_XNAP_PDUSession_ID_t	 pduSession_ID;
+	struct ASN_XNAP_DataForwardingInfoFromTargetNGRANnode	*dataForwardingInfoFromTargetNGRANnode	/* OPTIONAL */;
+	struct ASN_XNAP_PDUSessionResourceBearerSetupCompleteInfo_SNterminated	*pduSessionResourceSetupCompleteInfo_SNterm	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -37,7 +37,7 @@ typedef struct XnUAddressInfoperPDUSession_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} XnUAddressInfoperPDUSession_Item_t;
+} ASN_XNAP_XnUAddressInfoperPDUSession_Item_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_XnUAddressInfoperPDUSession_Item;

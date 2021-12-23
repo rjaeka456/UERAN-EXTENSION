@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "NR-CGI.h"
-#include "ServedCellInformation-NR.h"
+#include "ASN_XNAP_NR-CGI.h"
+#include "ASN_XNAP_ServedCellInformation-NR.h"
 #include <NativeEnumerated.h>
 #include <constr_SEQUENCE.h>
 
@@ -22,26 +22,26 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum ServedCells_ToModify_NR_Item__deactivation_indication {
-	ServedCells_ToModify_NR_Item__deactivation_indication_deactivated	= 0
+typedef enum ASN_XNAP_ServedCells_ToModify_NR_Item__deactivation_indication {
+    ASN_XNAP_ServedCells_ToModify_NR_Item__deactivation_indication_deactivated	= 0
 	/*
 	 * Enumeration is extensible
 	 */
-} e_ServedCells_ToModify_NR_Item__deactivation_indication;
+} e_ASN_XNAP_ServedCells_ToModify_NR_Item__deactivation_indication;
 
 /* Forward declarations */
-struct NeighbourInformation_NR;
-struct NeighbourInformation_E_UTRA;
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_NeighbourInformation_NR;
+struct ASN_XNAP_NeighbourInformation_E_UTRA;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* ServedCells-ToModify-NR-Item */
-typedef struct ServedCells_ToModify_NR_Item {
-	NR_CGI_t	 old_NR_CGI;
-	ServedCellInformation_NR_t	 served_cell_info_NR;
-	struct NeighbourInformation_NR	*neighbour_info_NR	/* OPTIONAL */;
-	struct NeighbourInformation_E_UTRA	*neighbour_info_E_UTRA	/* OPTIONAL */;
+typedef struct ASN_XNAP_ServedCells_ToModify_NR_Item {
+    ASN_XNAP_NR_CGI_t	 old_NR_CGI;
+    ASN_XNAP_ServedCellInformation_NR_t	 served_cell_info_NR;
+	struct ASN_XNAP_NeighbourInformation_NR	*neighbour_info_NR	/* OPTIONAL */;
+	struct ASN_XNAP_NeighbourInformation_E_UTRA	*neighbour_info_E_UTRA	/* OPTIONAL */;
 	long	*deactivation_indication	/* OPTIONAL */;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -49,7 +49,7 @@ typedef struct ServedCells_ToModify_NR_Item {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} ServedCells_ToModify_NR_Item_t;
+} ASN_XNAP_ServedCells_ToModify_NR_Item_t;
 
 /* Implementation */
 /* extern asn_TYPE_descriptor_t asn_DEF_deactivation_indication_6;	// (Use -fall-defs-global to expose) */

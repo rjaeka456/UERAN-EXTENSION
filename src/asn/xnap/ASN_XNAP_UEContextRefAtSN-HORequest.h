@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "GlobalNG-RANNode-ID.h"
-#include "NG-RANnodeUEXnAPID.h"
+#include "ASN_XNAP_GlobalNG-RANNode-ID.h"
+#include "ASN_XNAP_NG-RANnodeUEXnAPID.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -21,13 +21,13 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* UEContextRefAtSN-HORequest */
-typedef struct UEContextRefAtSN_HORequest {
-	GlobalNG_RANNode_ID_t	 globalNG_RANNode_ID;
-	NG_RANnodeUEXnAPID_t	 sN_NG_RANnodeUEXnAPID;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_UEContextRefAtSN_HORequest {
+    ASN_XNAP_GlobalNG_RANNode_ID_t	 globalNG_RANNode_ID;
+    ASN_XNAP_NG_RANnodeUEXnAPID_t	 sN_NG_RANnodeUEXnAPID;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -35,7 +35,7 @@ typedef struct UEContextRefAtSN_HORequest {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} UEContextRefAtSN_HORequest_t;
+} ASN_XNAP_UEContextRefAtSN_HORequest_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_UEContextRefAtSN_HORequest;

@@ -5,18 +5,18 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "UEContextID.h"
+#include "ASN_XNAP_UEContextID.h"
 
-#include "UEContextIDforRRCResume.h"
-#include "UEContextIDforRRCReestablishment.h"
-#include "ProtocolIE-Single-Container.h"
+#include "ASN_XNAP_UEContextIDforRRCResume.h"
+#include "ASN_XNAP_UEContextIDforRRCReestablishment.h"
+#include "ASN_XNAP_ProtocolIE-Single-Container.h"
 static asn_per_constraints_t asn_PER_type_UEContextID_constr_1 CC_NOTUSED = {
 	{ APC_CONSTRAINED,	 2,  2,  0,  2 }	/* (0..2) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
 static asn_TYPE_member_t asn_MBR_UEContextID_1[] = {
-	{ ATF_POINTER, 0, offsetof(struct UEContextID, choice.rRCResume),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_UEContextID, choice.rRCResume),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_UEContextIDforRRCResume,
@@ -25,7 +25,7 @@ static asn_TYPE_member_t asn_MBR_UEContextID_1[] = {
 		0, 0, /* No default value */
 		"rRCResume"
 		},
-	{ ATF_POINTER, 0, offsetof(struct UEContextID, choice.rRRCReestablishment),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_UEContextID, choice.rRRCReestablishment),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_UEContextIDforRRCReestablishment,
@@ -34,7 +34,7 @@ static asn_TYPE_member_t asn_MBR_UEContextID_1[] = {
 		0, 0, /* No default value */
 		"rRRCReestablishment"
 		},
-	{ ATF_POINTER, 0, offsetof(struct UEContextID, choice.choice_extension),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_UEContextID, choice.choice_extension),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolIE_Single_Container_5954P0,
@@ -50,10 +50,10 @@ static const asn_TYPE_tag2member_t asn_MAP_UEContextID_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* choice-extension */
 };
 static asn_CHOICE_specifics_t asn_SPC_UEContextID_specs_1 = {
-	sizeof(struct UEContextID),
-	offsetof(struct UEContextID, _asn_ctx),
-	offsetof(struct UEContextID, present),
-	sizeof(((struct UEContextID *)0)->present),
+	sizeof(struct ASN_XNAP_UEContextID),
+	offsetof(struct ASN_XNAP_UEContextID, _asn_ctx),
+	offsetof(struct ASN_XNAP_UEContextID, present),
+	sizeof(((struct ASN_XNAP_UEContextID *)0)->present),
 	asn_MAP_UEContextID_tag2el_1,
 	3,	/* Count of tags in the map */
 	0, 0,

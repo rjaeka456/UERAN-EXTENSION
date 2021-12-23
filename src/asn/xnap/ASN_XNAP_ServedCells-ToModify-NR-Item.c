@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "ServedCells-ToModify-NR-Item.h"
+#include "ASN_XNAP_ServedCells-ToModify-NR-Item.h"
 
-#include "NeighbourInformation-NR.h"
-#include "NeighbourInformation-E-UTRA.h"
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_NeighbourInformation-NR.h"
+#include "ASN_XNAP_NeighbourInformation-E-UTRA.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 /*
  * This type is implemented using NativeEnumerated,
  * so here we adjust the DEF accordingly.
@@ -57,7 +57,7 @@ asn_TYPE_descriptor_t asn_DEF_deactivation_indication_6 = {
 };
 
 asn_TYPE_member_t asn_MBR_ServedCells_ToModify_NR_Item_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct ServedCells_ToModify_NR_Item, old_NR_CGI),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ServedCells_ToModify_NR_Item, old_NR_CGI),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NR_CGI,
@@ -66,7 +66,7 @@ asn_TYPE_member_t asn_MBR_ServedCells_ToModify_NR_Item_1[] = {
 		0, 0, /* No default value */
 		"old-NR-CGI"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct ServedCells_ToModify_NR_Item, served_cell_info_NR),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_ServedCells_ToModify_NR_Item, served_cell_info_NR),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ServedCellInformation_NR,
@@ -75,7 +75,7 @@ asn_TYPE_member_t asn_MBR_ServedCells_ToModify_NR_Item_1[] = {
 		0, 0, /* No default value */
 		"served-cell-info-NR"
 		},
-	{ ATF_POINTER, 4, offsetof(struct ServedCells_ToModify_NR_Item, neighbour_info_NR),
+	{ ATF_POINTER, 4, offsetof(struct ASN_XNAP_ServedCells_ToModify_NR_Item, neighbour_info_NR),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NeighbourInformation_NR,
@@ -84,7 +84,7 @@ asn_TYPE_member_t asn_MBR_ServedCells_ToModify_NR_Item_1[] = {
 		0, 0, /* No default value */
 		"neighbour-info-NR"
 		},
-	{ ATF_POINTER, 3, offsetof(struct ServedCells_ToModify_NR_Item, neighbour_info_E_UTRA),
+	{ ATF_POINTER, 3, offsetof(struct ASN_XNAP_ServedCells_ToModify_NR_Item, neighbour_info_E_UTRA),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_NeighbourInformation_E_UTRA,
@@ -93,7 +93,7 @@ asn_TYPE_member_t asn_MBR_ServedCells_ToModify_NR_Item_1[] = {
 		0, 0, /* No default value */
 		"neighbour-info-E-UTRA"
 		},
-	{ ATF_POINTER, 2, offsetof(struct ServedCells_ToModify_NR_Item, deactivation_indication),
+	{ ATF_POINTER, 2, offsetof(struct ASN_XNAP_ServedCells_ToModify_NR_Item, deactivation_indication),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_deactivation_indication_6,
@@ -102,7 +102,7 @@ asn_TYPE_member_t asn_MBR_ServedCells_ToModify_NR_Item_1[] = {
 		0, 0, /* No default value */
 		"deactivation-indication"
 		},
-	{ ATF_POINTER, 1, offsetof(struct ServedCells_ToModify_NR_Item, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_ServedCells_ToModify_NR_Item, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (5 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -125,8 +125,8 @@ static const asn_TYPE_tag2member_t asn_MAP_ServedCells_ToModify_NR_Item_tag2el_1
     { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 5, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_ServedCells_ToModify_NR_Item_specs_1 = {
-	sizeof(struct ServedCells_ToModify_NR_Item),
-	offsetof(struct ServedCells_ToModify_NR_Item, _asn_ctx),
+	sizeof(struct ASN_XNAP_ServedCells_ToModify_NR_Item),
+	offsetof(struct ASN_XNAP_ServedCells_ToModify_NR_Item, _asn_ctx),
 	asn_MAP_ServedCells_ToModify_NR_Item_tag2el_1,
 	6,	/* Count of tags in the map */
 	asn_MAP_ServedCells_ToModify_NR_Item_oms_1,	/* Optional members */

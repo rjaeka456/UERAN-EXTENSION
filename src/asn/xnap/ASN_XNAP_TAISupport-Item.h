@@ -33,7 +33,7 @@ typedef struct ASN_XNAP_TAISupport_Item {
 		
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
-	} ASN_XNAP_broadcastPLMNs;
+	} broadcastPLMNs;
 	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
@@ -45,9 +45,9 @@ typedef struct ASN_XNAP_TAISupport_Item {
 } ASN_XNAP_TAISupport_Item_t;
 
 /* Implementation */
-extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_TAISupport_Item;
-extern asn_SEQUENCE_specifics_t asn_SPC_ASN_XNAP_TAISupport_Item_specs_1;
-extern asn_TYPE_member_t asn_MBR_ASN_XNAP_TAISupport_Item_1[3];
+extern asn_TYPE_descriptor_t asn_DEF_TAISupport_Item;
+extern asn_SEQUENCE_specifics_t asn_SPC_TAISupport_Item_specs_1;
+extern asn_TYPE_member_t asn_MBR_TAISupport_Item_1[3];
 
 #ifdef __cplusplus
 }

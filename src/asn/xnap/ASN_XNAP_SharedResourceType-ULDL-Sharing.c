@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "SharedResourceType-ULDL-Sharing.h"
+#include "ASN_XNAP_SharedResourceType-ULDL-Sharing.h"
 
-#include "SharedResourceType-ULDL-Sharing-UL-Resources.h"
-#include "SharedResourceType-ULDL-Sharing-DL-Resources.h"
-#include "ProtocolIE-Single-Container.h"
+#include "ASN_XNAP_SharedResourceType-ULDL-Sharing-UL-Resources.h"
+#include "ASN_XNAP_SharedResourceType-ULDL-Sharing-DL-Resources.h"
+#include "ASN_XNAP_ProtocolIE-Single-Container.h"
 asn_per_constraints_t asn_PER_type_SharedResourceType_ULDL_Sharing_constr_1 CC_NOTUSED = {
 	{ APC_CONSTRAINED,	 2,  2,  0,  2 }	/* (0..2) */,
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },

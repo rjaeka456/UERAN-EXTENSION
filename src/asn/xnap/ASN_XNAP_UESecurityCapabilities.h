@@ -20,37 +20,37 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum UESecurityCapabilities__nr_EncyptionAlgorithms {
-	UESecurityCapabilities__nr_EncyptionAlgorithms_nea1_128	= 1,
-	UESecurityCapabilities__nr_EncyptionAlgorithms_nea2_128	= 2,
-	UESecurityCapabilities__nr_EncyptionAlgorithms_nea3_128	= 3
-} e_UESecurityCapabilities__nr_EncyptionAlgorithms;
-typedef enum UESecurityCapabilities__nr_IntegrityProtectionAlgorithms {
-	UESecurityCapabilities__nr_IntegrityProtectionAlgorithms_nia1_128	= 1,
-	UESecurityCapabilities__nr_IntegrityProtectionAlgorithms_nia2_128	= 2,
-	UESecurityCapabilities__nr_IntegrityProtectionAlgorithms_nia3_128	= 3
-} e_UESecurityCapabilities__nr_IntegrityProtectionAlgorithms;
-typedef enum UESecurityCapabilities__e_utra_EncyptionAlgorithms {
-	UESecurityCapabilities__e_utra_EncyptionAlgorithms_eea1_128	= 1,
-	UESecurityCapabilities__e_utra_EncyptionAlgorithms_eea2_128	= 2,
-	UESecurityCapabilities__e_utra_EncyptionAlgorithms_eea3_128	= 3
-} e_UESecurityCapabilities__e_utra_EncyptionAlgorithms;
-typedef enum UESecurityCapabilities__e_utra_IntegrityProtectionAlgorithms {
-	UESecurityCapabilities__e_utra_IntegrityProtectionAlgorithms_eia1_128	= 1,
-	UESecurityCapabilities__e_utra_IntegrityProtectionAlgorithms_eia2_128	= 2,
-	UESecurityCapabilities__e_utra_IntegrityProtectionAlgorithms_eia3_128	= 3
-} e_UESecurityCapabilities__e_utra_IntegrityProtectionAlgorithms;
+typedef enum ASN_XNAP_UESecurityCapabilities__nr_EncyptionAlgorithms {
+    ASN_XNAP_UESecurityCapabilities__nr_EncyptionAlgorithms_nea1_128	= 1,
+    ASN_XNAP_UESecurityCapabilities__nr_EncyptionAlgorithms_nea2_128	= 2,
+    ASN_XNAP_UESecurityCapabilities__nr_EncyptionAlgorithms_nea3_128	= 3
+} e_ASN_XNAP_UESecurityCapabilities__nr_EncyptionAlgorithms;
+typedef enum ASN_XNAP_UESecurityCapabilities__nr_IntegrityProtectionAlgorithms {
+    ASN_XNAP_UESecurityCapabilities__nr_IntegrityProtectionAlgorithms_nia1_128	= 1,
+    ASN_XNAP_UESecurityCapabilities__nr_IntegrityProtectionAlgorithms_nia2_128	= 2,
+    ASN_XNAP_UESecurityCapabilities__nr_IntegrityProtectionAlgorithms_nia3_128	= 3
+} e_ASN_XNAP_UESecurityCapabilities__nr_IntegrityProtectionAlgorithms;
+typedef enum ASN_XNAP_UESecurityCapabilities__e_utra_EncyptionAlgorithms {
+    ASN_XNAP_UESecurityCapabilities__e_utra_EncyptionAlgorithms_eea1_128	= 1,
+    ASN_XNAP_UESecurityCapabilities__e_utra_EncyptionAlgorithms_eea2_128	= 2,
+    ASN_XNAP_UESecurityCapabilities__e_utra_EncyptionAlgorithms_eea3_128	= 3
+} e_ASN_XNAP_UESecurityCapabilities__e_utra_EncyptionAlgorithms;
+typedef enum ASN_XNAP_UESecurityCapabilities__e_utra_IntegrityProtectionAlgorithms {
+    ASN_XNAP_UESecurityCapabilities__e_utra_IntegrityProtectionAlgorithms_eia1_128	= 1,
+    ASN_XNAP_UESecurityCapabilities__e_utra_IntegrityProtectionAlgorithms_eia2_128	= 2,
+    ASN_XNAP_UESecurityCapabilities__e_utra_IntegrityProtectionAlgorithms_eia3_128	= 3
+} e_ASN_XNAP_UESecurityCapabilities__e_utra_IntegrityProtectionAlgorithms;
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* UESecurityCapabilities */
-typedef struct UESecurityCapabilities {
+typedef struct ASN_XNAP_UESecurityCapabilities {
 	BIT_STRING_t	 nr_EncyptionAlgorithms;
 	BIT_STRING_t	 nr_IntegrityProtectionAlgorithms;
 	BIT_STRING_t	 e_utra_EncyptionAlgorithms;
 	BIT_STRING_t	 e_utra_IntegrityProtectionAlgorithms;
-	struct ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extension	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -58,7 +58,7 @@ typedef struct UESecurityCapabilities {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} UESecurityCapabilities_t;
+} ASN_XNAP_UESecurityCapabilities_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_UESecurityCapabilities;

@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "UEIdentityIndexValue.h"
+#include "ASN_XNAP_UEIdentityIndexValue.h"
 
-#include "ProtocolIE-Single-Container.h"
+#include "ASN_XNAP_ProtocolIE-Single-Container.h"
 static int
 memb_indexLength10_constraint_1(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
@@ -50,7 +50,7 @@ static asn_per_constraints_t asn_PER_type_UEIdentityIndexValue_constr_1 CC_NOTUS
 	0, 0	/* No PER value map */
 };
 static asn_TYPE_member_t asn_MBR_UEIdentityIndexValue_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct UEIdentityIndexValue, choice.indexLength10),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_UEIdentityIndexValue, choice.indexLength10),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_BIT_STRING,
@@ -59,7 +59,7 @@ static asn_TYPE_member_t asn_MBR_UEIdentityIndexValue_1[] = {
 		0, 0, /* No default value */
 		"indexLength10"
 		},
-	{ ATF_POINTER, 0, offsetof(struct UEIdentityIndexValue, choice.choice_extension),
+	{ ATF_POINTER, 0, offsetof(struct ASN_XNAP_UEIdentityIndexValue, choice.choice_extension),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolIE_Single_Container_5954P0,
@@ -74,10 +74,10 @@ static const asn_TYPE_tag2member_t asn_MAP_UEIdentityIndexValue_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 } /* choice-extension */
 };
 static asn_CHOICE_specifics_t asn_SPC_UEIdentityIndexValue_specs_1 = {
-	sizeof(struct UEIdentityIndexValue),
-	offsetof(struct UEIdentityIndexValue, _asn_ctx),
-	offsetof(struct UEIdentityIndexValue, present),
-	sizeof(((struct UEIdentityIndexValue *)0)->present),
+	sizeof(struct ASN_XNAP_UEIdentityIndexValue),
+	offsetof(struct ASN_XNAP_UEIdentityIndexValue, _asn_ctx),
+	offsetof(struct ASN_XNAP_UEIdentityIndexValue, present),
+	sizeof(((struct ASN_XNAP_UEIdentityIndexValue *)0)->present),
 	asn_MAP_UEIdentityIndexValue_tag2el_1,
 	2,	/* Count of tags in the map */
 	0, 0,

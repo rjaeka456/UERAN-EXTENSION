@@ -5,7 +5,7 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "TNLAssociationUsage.h"
+#include "ASN_XNAP_TNLAssociationUsage.h"
 
 /*
  * This type is implemented using NativeEnumerated,

@@ -19,17 +19,17 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum TNLAssociationUsage {
-	TNLAssociationUsage_ue	= 0,
-	TNLAssociationUsage_non_ue	= 1,
-	TNLAssociationUsage_both	= 2
+typedef enum ASN_XNAP_TNLAssociationUsage {
+    ASN_XNAP_TNLAssociationUsage_ue	= 0,
+    ASN_XNAP_TNLAssociationUsage_non_ue	= 1,
+    ASN_XNAP_TNLAssociationUsage_both	= 2
 	/*
 	 * Enumeration is extensible
 	 */
-} e_TNLAssociationUsage;
+} e_ASN_XNAP_TNLAssociationUsage;
 
 /* TNLAssociationUsage */
-typedef long	 TNLAssociationUsage_t;
+typedef long	 ASN_XNAP_TNLAssociationUsage_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_TNLAssociationUsage_constr_1;

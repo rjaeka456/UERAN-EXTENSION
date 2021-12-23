@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "DataTrafficResources.h"
+#include "ASN_XNAP_DataTrafficResources.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,12 +20,12 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* SharedResourceType-ULDL-Sharing-DL-ResourcesChanged */
-typedef struct SharedResourceType_ULDL_Sharing_DL_ResourcesChanged {
-	DataTrafficResources_t	 dl_resourceBitmap;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_SharedResourceType_ULDL_Sharing_DL_ResourcesChanged {
+    ASN_XNAP_DataTrafficResources_t	 dl_resourceBitmap;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -33,7 +33,7 @@ typedef struct SharedResourceType_ULDL_Sharing_DL_ResourcesChanged {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} SharedResourceType_ULDL_Sharing_DL_ResourcesChanged_t;
+} ASN_XNAP_SharedResourceType_ULDL_Sharing_DL_ResourcesChanged_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_SharedResourceType_ULDL_Sharing_DL_ResourcesChanged;

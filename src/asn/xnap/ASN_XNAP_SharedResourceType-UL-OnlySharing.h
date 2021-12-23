@@ -12,7 +12,7 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "DataTrafficResources.h"
+#include "ASN_XNAP_DataTrafficResources.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -20,12 +20,12 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* SharedResourceType-UL-OnlySharing */
-typedef struct SharedResourceType_UL_OnlySharing {
-	DataTrafficResources_t	 ul_resourceBitmap;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+typedef struct ASN_XNAP_SharedResourceType_UL_OnlySharing {
+    ASN_XNAP_DataTrafficResources_t	 ul_resourceBitmap;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -33,7 +33,7 @@ typedef struct SharedResourceType_UL_OnlySharing {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} SharedResourceType_UL_OnlySharing_t;
+} ASN_XNAP_SharedResourceType_UL_OnlySharing_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_SharedResourceType_UL_OnlySharing;

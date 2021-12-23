@@ -5,7 +5,7 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "UEContextKeptIndicator.h"
+#include "ASN_XNAP_UEContextKeptIndicator.h"
 
 /*
  * This type is implemented using NativeEnumerated,

@@ -35,8 +35,8 @@ struct ASN_XNAP_ProtocolIE_Single_Container;
 typedef struct ASN_XNAP_GlobalNG_RANNode_ID {
     ASN_XNAP_GlobalNG_RANNode_ID_PR present;
 	union ASN_XNAP_GlobalNG_RANNode_ID_u {
-		struct ASN_XNAP_GlobalgNB_ID	*gNB;
-		struct ASN_XNAP_GlobalngeNB_ID	*ng_eNB;
+		struct ASN_XNAP_GlobalgNB_ID* gNB;
+		struct ASN_XNAP_GlobalngeNB_ID* ng_eNB;
 		struct ASN_XNAP_ProtocolIE_Single_Container	*choice_extension;
 	} choice;
 	

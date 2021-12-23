@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* SUL-FrequencyBand */
-typedef long	 SUL_FrequencyBand_t;
+typedef long	 ASN_XNAP_SUL_FrequencyBand_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_SUL_FrequencyBand_constr_1;

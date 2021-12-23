@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "UESecurityCapabilities.h"
+#include "ASN_XNAP_UESecurityCapabilities.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 static int
 memb_nr_EncyptionAlgorithms_constraint_1(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
@@ -153,7 +153,7 @@ static asn_per_constraints_t asn_PER_memb_e_utra_IntegrityProtectionAlgorithms_c
 	0, 0	/* No PER value map */
 };
 asn_TYPE_member_t asn_MBR_UESecurityCapabilities_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct UESecurityCapabilities, nr_EncyptionAlgorithms),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_UESecurityCapabilities, nr_EncyptionAlgorithms),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_BIT_STRING,
@@ -162,7 +162,7 @@ asn_TYPE_member_t asn_MBR_UESecurityCapabilities_1[] = {
 		0, 0, /* No default value */
 		"nr-EncyptionAlgorithms"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct UESecurityCapabilities, nr_IntegrityProtectionAlgorithms),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_UESecurityCapabilities, nr_IntegrityProtectionAlgorithms),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_BIT_STRING,
@@ -171,7 +171,7 @@ asn_TYPE_member_t asn_MBR_UESecurityCapabilities_1[] = {
 		0, 0, /* No default value */
 		"nr-IntegrityProtectionAlgorithms"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct UESecurityCapabilities, e_utra_EncyptionAlgorithms),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_UESecurityCapabilities, e_utra_EncyptionAlgorithms),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_BIT_STRING,
@@ -180,7 +180,7 @@ asn_TYPE_member_t asn_MBR_UESecurityCapabilities_1[] = {
 		0, 0, /* No default value */
 		"e-utra-EncyptionAlgorithms"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct UESecurityCapabilities, e_utra_IntegrityProtectionAlgorithms),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_UESecurityCapabilities, e_utra_IntegrityProtectionAlgorithms),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_BIT_STRING,
@@ -189,7 +189,7 @@ asn_TYPE_member_t asn_MBR_UESecurityCapabilities_1[] = {
 		0, 0, /* No default value */
 		"e-utra-IntegrityProtectionAlgorithms"
 		},
-	{ ATF_POINTER, 1, offsetof(struct UESecurityCapabilities, iE_Extension),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_UESecurityCapabilities, iE_Extension),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -211,8 +211,8 @@ static const asn_TYPE_tag2member_t asn_MAP_UESecurityCapabilities_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* iE-Extension */
 };
 asn_SEQUENCE_specifics_t asn_SPC_UESecurityCapabilities_specs_1 = {
-	sizeof(struct UESecurityCapabilities),
-	offsetof(struct UESecurityCapabilities, _asn_ctx),
+	sizeof(struct ASN_XNAP_UESecurityCapabilities),
+	offsetof(struct ASN_XNAP_UESecurityCapabilities, _asn_ctx),
 	asn_MAP_UESecurityCapabilities_tag2el_1,
 	5,	/* Count of tags in the map */
 	asn_MAP_UESecurityCapabilities_oms_1,	/* Optional members */

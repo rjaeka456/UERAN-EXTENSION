@@ -5,12 +5,12 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "ServedCellsToUpdate-NR.h"
+#include "ASN_XNAP_ServedCellsToUpdate-NR.h"
 
-#include "ServedCells-NR.h"
-#include "ServedCells-ToModify-NR.h"
-#include "ProtocolExtensionContainer.h"
-#include "NR-CGI.h"
+#include "ASN_XNAP_ServedCells-NR.h"
+#include "ASN_XNAP_ServedCells-ToModify-NR.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
+#include "ASN_XNAP_NR-CGI.h"
 static int
 memb_served_Cells_ToDelete_NR_constraint_1(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {

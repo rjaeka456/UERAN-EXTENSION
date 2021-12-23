@@ -19,30 +19,30 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum Target_CGI_PR {
-	Target_CGI_PR_NOTHING,	/* No components present */
-	Target_CGI_PR_nr,
-	Target_CGI_PR_e_utra,
-	Target_CGI_PR_choice_extension
-} Target_CGI_PR;
+typedef enum ASN_XNAP_Target_CGI_PR {
+    ASN_XNAP_Target_CGI_PR_NOTHING,	/* No components present */
+    ASN_XNAP_Target_CGI_PR_nr,
+    ASN_XNAP_Target_CGI_PR_e_utra,
+    ASN_XNAP_Target_CGI_PR_choice_extension
+} ASN_XNAP_Target_CGI_PR;
 
 /* Forward declarations */
-struct NR_CGI;
-struct E_UTRA_CGI;
-struct ProtocolIE_Single_Container;
+struct ASN_XNAP_NR_CGI;
+struct ASN_XNAP_E_UTRA_CGI;
+struct ASN_XNAP_ProtocolIE_Single_Container;
 
 /* Target-CGI */
-typedef struct Target_CGI {
-	Target_CGI_PR present;
-	union Target_CGI_u {
-		struct NR_CGI	*nr;
-		struct E_UTRA_CGI	*e_utra;
-		struct ProtocolIE_Single_Container	*choice_extension;
+typedef struct ASN_XNAP_Target_CGI {
+    ASN_XNAP_Target_CGI_PR present;
+	union ASN_XNAP_Target_CGI_u {
+		struct ASN_XNAP_NR_CGI	*nr;
+		struct ASN_XNAP_E_UTRA_CGI	*e_utra;
+		struct ASN_XNAP_ProtocolIE_Single_Container	*choice_extension;
 	} choice;
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} Target_CGI_t;
+} ASN_XNAP_Target_CGI_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_Target_CGI;

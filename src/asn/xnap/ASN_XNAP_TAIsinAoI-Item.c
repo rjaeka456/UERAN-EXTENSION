@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "TAIsinAoI-Item.h"
+#include "ASN_XNAP_TAIsinAoI-Item.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_TAIsinAoI_Item_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct TAIsinAoI_Item, pLMN_Identity),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_TAIsinAoI_Item, pLMN_Identity),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_PLMN_Identity,
@@ -18,7 +18,7 @@ asn_TYPE_member_t asn_MBR_TAIsinAoI_Item_1[] = {
 		0, 0, /* No default value */
 		"pLMN-Identity"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct TAIsinAoI_Item, tAC),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_TAIsinAoI_Item, tAC),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_TAC,
@@ -27,7 +27,7 @@ asn_TYPE_member_t asn_MBR_TAIsinAoI_Item_1[] = {
 		0, 0, /* No default value */
 		"tAC"
 		},
-	{ ATF_POINTER, 1, offsetof(struct TAIsinAoI_Item, iE_Extensions),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_TAIsinAoI_Item, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -47,8 +47,8 @@ static const asn_TYPE_tag2member_t asn_MAP_TAIsinAoI_Item_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 } /* iE-Extensions */
 };
 asn_SEQUENCE_specifics_t asn_SPC_TAIsinAoI_Item_specs_1 = {
-	sizeof(struct TAIsinAoI_Item),
-	offsetof(struct TAIsinAoI_Item, _asn_ctx),
+	sizeof(struct ASN_XNAP_TAIsinAoI_Item),
+	offsetof(struct ASN_XNAP_TAIsinAoI_Item, _asn_ctx),
 	asn_MAP_TAIsinAoI_Item_tag2el_1,
 	3,	/* Count of tags in the map */
 	asn_MAP_TAIsinAoI_Item_oms_1,	/* Optional members */

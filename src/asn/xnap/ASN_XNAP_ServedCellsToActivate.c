@@ -5,11 +5,11 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "ServedCellsToActivate.h"
+#include "ASN_XNAP_ServedCellsToActivate.h"
 
-#include "ProtocolIE-Single-Container.h"
-#include "NR-CGI.h"
-#include "E-UTRA-CGI.h"
+#include "ASN_XNAP_ProtocolIE-Single-Container.h"
+#include "ASN_XNAP_NR-CGI.h"
+#include "ASN_XNAP_E-UTRA-CGI.h"
 static int
 memb_nr_cells_constraint_1(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {

@@ -31,9 +31,9 @@ typedef enum ASN_XNAP_CyclicPrefix_E_UTRA_DL {
 typedef long	 ASN_XNAP_CyclicPrefix_E_UTRA_DL_t;
 
 /* Implementation */
-extern asn_per_constraints_t asn_PER_type_ASN_XNAP_CyclicPrefix_E_UTRA_DL_constr_1;
-extern asn_TYPE_descriptor_t asn_DEF_ASN_XNAP_CyclicPrefix_E_UTRA_DL;
-extern const asn_INTEGER_specifics_t asn_SPC_ASN_XNAP_CyclicPrefix_E_UTRA_DL_specs_1;
+extern asn_per_constraints_t asn_PER_type_CyclicPrefix_E_UTRA_DL_constr_1;
+extern asn_TYPE_descriptor_t asn_DEF_CyclicPrefix_E_UTRA_DL;
+extern const asn_INTEGER_specifics_t asn_SPC_CyclicPrefix_E_UTRA_DL_specs_1;
 asn_struct_free_f CyclicPrefix_E_UTRA_DL_free;
 asn_struct_print_f CyclicPrefix_E_UTRA_DL_print;
 asn_constr_check_f CyclicPrefix_E_UTRA_DL_constraint;

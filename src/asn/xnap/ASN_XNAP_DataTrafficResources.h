@@ -19,7 +19,7 @@ extern "C" {
 #endif
 
 /* DataTrafficResources */
-typedef BIT_STRING_t	 DataTrafficResources_t;
+typedef BIT_STRING_t	 ASN_XNAP_DataTrafficResources_t;
 
 /* Implementation */
 extern asn_per_constraints_t asn_PER_type_DataTrafficResources_constr_1;

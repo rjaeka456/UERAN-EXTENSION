@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "TraceActivation.h"
+#include "ASN_XNAP_TraceActivation.h"
 
-#include "ProtocolExtensionContainer.h"
+#include "ASN_XNAP_ProtocolExtensionContainer.h"
 static int
 memb_ng_ran_TraceID_constraint_1(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
@@ -76,7 +76,7 @@ static asn_per_constraints_t asn_PER_memb_interfaces_to_trace_constr_3 CC_NOTUSE
 	0, 0	/* No PER value map */
 };
 static asn_TYPE_member_t asn_MBR_TraceActivation_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct TraceActivation, ng_ran_TraceID),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_TraceActivation, ng_ran_TraceID),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_OCTET_STRING,
@@ -85,7 +85,7 @@ static asn_TYPE_member_t asn_MBR_TraceActivation_1[] = {
 		0, 0, /* No default value */
 		"ng-ran-TraceID"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct TraceActivation, interfaces_to_trace),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_TraceActivation, interfaces_to_trace),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_BIT_STRING,
@@ -94,7 +94,7 @@ static asn_TYPE_member_t asn_MBR_TraceActivation_1[] = {
 		0, 0, /* No default value */
 		"interfaces-to-trace"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct TraceActivation, trace_depth),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_TraceActivation, trace_depth),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_Trace_Depth,
@@ -103,7 +103,7 @@ static asn_TYPE_member_t asn_MBR_TraceActivation_1[] = {
 		0, 0, /* No default value */
 		"trace-depth"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct TraceActivation, trace_coll_address),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_TraceActivation, trace_coll_address),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_TransportLayerAddress,
@@ -112,7 +112,7 @@ static asn_TYPE_member_t asn_MBR_TraceActivation_1[] = {
 		0, 0, /* No default value */
 		"trace-coll-address"
 		},
-	{ ATF_POINTER, 1, offsetof(struct TraceActivation, ie_Extension),
+	{ ATF_POINTER, 1, offsetof(struct ASN_XNAP_TraceActivation, ie_Extension),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolExtensionContainer_6001P0,
@@ -134,8 +134,8 @@ static const asn_TYPE_tag2member_t asn_MAP_TraceActivation_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* ie-Extension */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_TraceActivation_specs_1 = {
-	sizeof(struct TraceActivation),
-	offsetof(struct TraceActivation, _asn_ctx),
+	sizeof(struct ASN_XNAP_TraceActivation),
+	offsetof(struct ASN_XNAP_TraceActivation, _asn_ctx),
 	asn_MAP_TraceActivation_tag2el_1,
 	5,	/* Count of tags in the map */
 	asn_MAP_TraceActivation_oms_1,	/* Optional members */

@@ -5,9 +5,9 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "TNLA-Failed-To-Setup-List.h"
+#include "ASN_XNAP_TNLA-Failed-To-Setup-List.h"
 
-#include "TNLA-Failed-To-Setup-Item.h"
+#include "ASN_XNAP_TNLA-Failed-To-Setup-Item.h"
 static asn_per_constraints_t asn_PER_type_TNLA_Failed_To_Setup_List_constr_1 CC_NOTUSED = {
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	{ APC_CONSTRAINED,	 5,  5,  1,  32 }	/* (SIZE(1..32)) */,

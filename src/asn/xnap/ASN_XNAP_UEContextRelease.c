@@ -5,10 +5,10 @@
  * 	`asn1c -fcompound-names -pdu=all -findirect-choice -fno-include-deps -gen-PER -no-gen-OER -no-gen-example -D xnap`
  */
 
-#include "UEContextRelease.h"
+#include "ASN_XNAP_UEContextRelease.h"
 
 asn_TYPE_member_t asn_MBR_UEContextRelease_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct UEContextRelease, protocolIEs),
+	{ ATF_NOFLAGS, 0, offsetof(struct ASN_XNAP_UEContextRelease, protocolIEs),
 		(ASN_TAG_CLASS_CONTEXT | (0 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_ProtocolIE_Container_5952P0,
@@ -25,8 +25,8 @@ static const asn_TYPE_tag2member_t asn_MAP_UEContextRelease_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 } /* protocolIEs */
 };
 asn_SEQUENCE_specifics_t asn_SPC_UEContextRelease_specs_1 = {
-	sizeof(struct UEContextRelease),
-	offsetof(struct UEContextRelease, _asn_ctx),
+	sizeof(struct ASN_XNAP_UEContextRelease),
+	offsetof(struct ASN_XNAP_UEContextRelease, _asn_ctx),
 	asn_MAP_UEContextRelease_tag2el_1,
 	1,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */

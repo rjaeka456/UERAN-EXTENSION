@@ -28,8 +28,8 @@ static const ber_tlv_tag_t asn_DEF_TAISupport_List_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static asn_SET_OF_specifics_t asn_SPC_TAISupport_List_specs_1 = {
-	sizeof(struct TAISupport_List),
-	offsetof(struct TAISupport_List, _asn_ctx),
+	sizeof(struct ASN_XNAP_TAISupport_List),
+	offsetof(struct ASN_XNAP_TAISupport_List, _asn_ctx),
 	0,	/* XER encoding is XMLDelimitedItemList */
 };
 asn_TYPE_descriptor_t asn_DEF_TAISupport_List = {

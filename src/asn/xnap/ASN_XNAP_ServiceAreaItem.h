@@ -12,8 +12,8 @@
 #include <asn_application.h>
 
 /* Including external dependencies */
-#include "PLMN-Identity.h"
-#include "TAC.h"
+#include "ASN_XNAP_PLMN-Identity.h"
+#include "ASN_XNAP_TAC.h"
 #include <asn_SEQUENCE_OF.h>
 #include <constr_SEQUENCE_OF.h>
 #include <constr_SEQUENCE.h>
@@ -23,24 +23,24 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct ProtocolExtensionContainer;
+struct ASN_XNAP_ProtocolExtensionContainer;
 
 /* ServiceAreaItem */
-typedef struct ServiceAreaItem {
-	PLMN_Identity_t	 plmn_Identity;
-	struct ServiceAreaItem__allowed_TACs_ServiceArea {
-		A_SEQUENCE_OF(TAC_t) list;
+typedef struct ASN_XNAP_ServiceAreaItem {
+    ASN_XNAP_PLMN_Identity_t	 plmn_Identity;
+	struct ASN_XNAP_ServiceAreaItem__allowed_TACs_ServiceArea {
+		A_SEQUENCE_OF(ASN_XNAP_TAC_t) list;
 		
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
 	} *allowed_TACs_ServiceArea;
-	struct ServiceAreaItem__not_allowed_TACs_ServiceArea {
-		A_SEQUENCE_OF(TAC_t) list;
+	struct ASN_XNAP_ServiceAreaItem__not_allowed_TACs_ServiceArea {
+		A_SEQUENCE_OF(ASN_XNAP_TAC_t) list;
 		
 		/* Context for parsing across buffer boundaries */
 		asn_struct_ctx_t _asn_ctx;
 	} *not_allowed_TACs_ServiceArea;
-	struct ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
+	struct ASN_XNAP_ProtocolExtensionContainer	*iE_Extensions	/* OPTIONAL */;
 	/*
 	 * This type is extensible,
 	 * possible extensions are below.
@@ -48,7 +48,7 @@ typedef struct ServiceAreaItem {
 	
 	/* Context for parsing across buffer boundaries */
 	asn_struct_ctx_t _asn_ctx;
-} ServiceAreaItem_t;
+} ASN_XNAP_ServiceAreaItem_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_ServiceAreaItem;
