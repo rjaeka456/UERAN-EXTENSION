@@ -25,6 +25,9 @@
 #include "ASN_XNAP_ServedCells-NR.h"
 #include "ASN_XNAP_ServedCells-E-UTRA.h"
 #include "ASN_XNAP_InterfaceInstanceIndication.h"
+#include "ASN_XNAP_CriticalityDiagnostics.h"
+#include "ASN_XNAP_Cause.h"
+#include "ASN_XNAP_TimeToWait.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -41,9 +44,26 @@ extern "C" {
        ASN_XNAP_XnSetupRequestIEs__value_PR_TAISupportList,
        ASN_XNAP_XnSetupRequestIEs__value_PR_AMFRegionInformation,
        ASN_XNAP_XnSetupRequestIEs__value_PR_ServedCellsNR,
-       ASN_XNAP_NGSetupRequestIEs__value_PR_ServedCellsEUTRA,
-       ASN_XNAP_NGSetupRequestIEs__value_PR_InterfaceInstanceIndication
+       ASN_XNAP_XnSetupRequestIEs__value_PR_ServedCellsEUTRA,
+       ASN_XNAP_XnSetupRequestIEs__value_PR_InterfaceInstanceIndication
    } ASN_XNAP_XnSetupRequestIEs__value_PR;
+   typedef enum ASN_XNAP_XnSetupResponseIEs__value_PR {
+       ASN_XNAP_XnSetupResponseIEs__value_PR_NOTHING,	/* No components present */
+       ASN_XNAP_XnSetupResponseIEs__value_PR_GlobalNGRANNodeID,
+       ASN_XNAP_XnSetupResponseIEs__value_PR_TAISupportList,
+       ASN_XNAP_XnSetupResponseIEs__value_PR_ServedCellsNR,
+       ASN_XNAP_XnSetupResponseIEs__value_PR_ServedCellsEUTRA,
+       ASN_XNAP_XnSetupResponseIEs__value_PR_CriticalityDiagnostics,
+       ASN_XNAP_XnSetupResponseIEs__value_PR_AMFRegionInformation,
+       ASN_XNAP_XnSetupResponseIEs__value_PR_InterfaceInstanceIndication
+   } ASN_XNAP_XnSetupResponseIEs__value_PR;
+   typedef enum ASN_XNAP_XnSetupFailureIEs__value_PR {
+       ASN_XNAP_XnSetupFailureIEs__value_PR_NOTHING,	/* No components present */
+       ASN_XNAP_XnSetupFailureIEs__value_PR_Cause,
+       ASN_XNAP_XnSetupFailureIEs__value_PR_TimeToWait,
+       ASN_XNAP_XnSetupFailureIEs__value_PR_CriticalityDiagnostics,
+       ASN_XNAP_XnSetupFailureIEs__value_PR_InterfaceInstanceIndication
+   } ASN_XNAP_XnSetupFailureIEs__value_PR;
 
    /* ASN_XNAP_ProtocolIE-Field */
    typedef struct ASN_XNAP_ProtocolIE_Field_5957P0 {
@@ -82,6 +102,48 @@ extern "C" {
        /* Context for parsing across buffer boundaries */
        asn_struct_ctx_t _asn_ctx;
    } ASN_XNAP_XnSetupRequestIEs_t;
+   typedef struct ASN_XNAP_XnSetupResponseIEs {
+       ASN_XNAP_ProtocolIE_ID_t	 id;
+       ASN_XNAP_Criticality_t	 criticality;
+       struct ASN_XNAP_XnSetupResponseIEs__value {
+           ASN_XNAP_XnSetupResponseIEs__value_PR present;
+           union ASN_XNAP_XnSetupResponseIEs__ASN_XNAP_value_u {
+               ASN_XNAP_GlobalNG_RANNode_ID_t	 GlobalNGRANNodeID;
+               ASN_XNAP_TAISupport_List_t 	 TAISupportList;
+               ASN_XNAP_ServedCells_NR_t	 ServedCellsNR;
+               ASN_XNAP_ServedCells_E_UTRA_t	 ServedCellsEUTRA;
+               ASN_XNAP_CriticalityDiagnostics_t  CriticalityDiagnostics;
+               ASN_XNAP_AMF_Region_Information_t 	 AMFRegionInformation;
+               ASN_XNAP_InterfaceInstanceIndication_t InterfaceInstanceIndication;
+           } choice;
+
+           /* Context for parsing across buffer boundaries */
+           asn_struct_ctx_t _asn_ctx;
+       } value;
+
+       /* Context for parsing across buffer boundaries */
+       asn_struct_ctx_t _asn_ctx;
+   } ASN_XNAP_XnSetupResponseIEs_t;
+
+   typedef struct ASN_XNAP_XnSetupFailureIEs {
+       ASN_XNAP_ProtocolIE_ID_t	 id;
+       ASN_XNAP_Criticality_t	 criticality;
+       struct ASN_XNAP_XnSetupFailureIEs__value {
+           ASN_XNAP_XnSetupFailureIEs__value_PR present;
+           union ASN_XNAP_XnSetupFailureIEs__ASN_XNAP_value_u {
+               ASN_XNAP_Cause_t	 Cause;
+               ASN_XNAP_TimetoWait_t	 TimetoWait;
+               ASN_XNAP_CriticalityDiagnostics_t  CriticalityDiagnostics;
+               ASN_XNAP_InterfaceInstanceIndication_t InterfaceInstanceIndication;
+           } choice;
+
+           /* Context for parsing across buffer boundaries */
+           asn_struct_ctx_t _asn_ctx;
+       } value;
+
+       /* Context for parsing across buffer boundaries */
+       asn_struct_ctx_t _asn_ctx;
+   } ASN_XNAP_XnSetupFailureIEs_t;
 
    /* Implementation */
    extern asn_TYPE_descriptor_t asn_DEF_ProtocolIE_Field_5957P0;

@@ -21,6 +21,7 @@ extern "C" {
 
    /* Forward declarations */
    struct ASN_XNAP_XnSetupRequestIEs;
+   struct ASN_XNAP_XnSetupResponseIEs;
 
    /* ProtocolIE-Container */
    typedef struct ASN_XNAP_ProtocolIE_Container_5952P0 {
@@ -29,12 +30,24 @@ extern "C" {
        /* Context for parsing across buffer boundaries */
        asn_struct_ctx_t _asn_ctx;
    } ASN_XNAP_ProtocolIE_Container_5952P0_t;
+   /* ProtocolIE-Container */
+   typedef struct ASN_XNAP_ProtocolIE_Container_5952P1 {
+       A_SEQUENCE_OF(struct ASN_XNAP_XnSetupResponseIEs) list;
+
+       /* Context for parsing across buffer boundaries */
+       asn_struct_ctx_t _asn_ctx;
+   } ASN_XNAP_ProtocolIE_Container_5952P1_t;
 
    /* Implementation */
    extern asn_TYPE_descriptor_t asn_DEF_ProtocolIE_Container_5952P0;
    extern asn_SET_OF_specifics_t asn_SPC_ProtocolIE_Container_5952P0_specs_1;
    extern asn_TYPE_member_t asn_MBR_ProtocolIE_Container_5952P0_1[1];
    extern asn_per_constraints_t asn_PER_type_ProtocolIE_Container_5952P0_constr_1;
+
+   extern asn_TYPE_descriptor_t asn_DEF_ProtocolIE_Container_5952P1;
+   extern asn_SET_OF_specifics_t asn_SPC_ProtocolIE_Container_5952P1_specs_1;
+   extern asn_TYPE_member_t asn_MBR_ProtocolIE_Container_5952P1_1[1];
+   extern asn_per_constraints_t asn_PER_type_ProtocolIE_Container_5952P1_constr_1;
 
 #ifdef __cplusplus
 }

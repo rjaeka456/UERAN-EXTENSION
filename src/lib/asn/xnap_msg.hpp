@@ -33,6 +33,11 @@ struct XnapMessageEnumToType<XnapMessageType::XnSetupRequest>
 {
     typedef ASN_XNAP_XnSetupRequest T;
 };
+template <>
+struct XnapMessageEnumToType<XnapMessageType::XnSetupResponse>
+{
+    typedef ASN_XNAP_XnSetupResponse T;
+};
 
 template <typename T>
 struct XnapMessageTypeToEnum;
@@ -44,6 +49,42 @@ struct XnapMessageTypeToEnum<ASN_XNAP_XnSetupRequest>
     {
         V = (int)XnapMessageType::XnSetupRequest
     };
+};
+template <>
+struct XnapMessageTypeToEnum<ASN_XNAP_XnSetupResponse>
+{
+    enum
+    {
+        V = (int)XnapMessageType::XnSetupResponse
+    };
+};
+
+struct XnapMessageToDescription_InitiatingMessage
+{
+    typedef ASN_XNAP_InitiatingMessage T;
+};
+
+struct XnapMessageToDescription_SuccessfulOutcome
+{
+    typedef ASN_XNAP_SuccessfulOutcome T;
+};
+
+struct XnapMessageToDescription_UnsuccessfulOutcome
+{
+    typedef ASN_XNAP_UnsuccessfulOutcome T;
+};
+
+template <typename T>
+struct XnapMessageToDescription;
+
+template <>
+struct XnapMessageToDescription<ASN_XNAP_XnSetupRequest> : XnapMessageToDescription_InitiatingMessage
+{
+};
+
+template <>
+struct XnapMessageToDescription<ASN_XNAP_XnSetupResponse> : XnapMessageToDescription_SuccessfulOutcome
+{
 };
 
 template <typename T>

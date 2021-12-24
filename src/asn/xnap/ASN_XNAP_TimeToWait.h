@@ -19,20 +19,20 @@ extern "C" {
 #endif
 
 /* Dependencies */
-typedef enum TimeToWait {
-	TimeToWait_v1s	= 0,
-	TimeToWait_v2s	= 1,
-	TimeToWait_v5s	= 2,
-	TimeToWait_v10s	= 3,
-	TimeToWait_v20s	= 4,
-	TimeToWait_v60s	= 5
+typedef enum ASN_XNAP_TimeToWait {
+    ASN_XNAP_TimeToWait_v1s	= 0,
+    ASN_XNAP_TimeToWait_v2s	= 1,
+    ASN_XNAP_TimeToWait_v5s	= 2,
+    ASN_XNAP_TimeToWait_v10s	= 3,
+    ASN_XNAP_TimeToWait_v20s	= 4,
+    ASN_XNAP_TimeToWait_v60s	= 5
 	/*
 	 * Enumeration is extensible
 	 */
-} e_TimeToWait;
+} e_ASN_XNAP_TimeToWait;
 
 /* TimeToWait */
-typedef long	 TimeToWait_t;
+typedef long	 ASN_XNAP_TimeToWait_t;
 
 /* Implementation */
 extern asn_TYPE_descriptor_t asn_DEF_TimeToWait;
